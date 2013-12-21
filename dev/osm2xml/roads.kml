@@ -26,7 +26,7 @@
 <Placemark>
 <name>Tallinn</name>
 <ExtendedData>
-<v:copylayers>0,1,2</v:copylayers>
+<v:copylayers>0,1,2,3</v:copylayers>
 </ExtendedData>
 <LineString>
 <coordinates>24.60034,59.33181 24.96926,59.54286 </coordinates>
@@ -34,6 +34,7 @@
 </Placemark>
 
 <!-- 1940 24.70447,59.39941 24.83536,59.45529 -->
+<!-- 
 <Placemark>
 <name>Tallinn, kesklinn</name>
 <ExtendedData>
@@ -43,6 +44,7 @@
 <coordinates>24.70447,59.41194 24.81214,59.45529 </coordinates>
 </LineString>
 </Placemark>
+-->
 
 <!-- 
 DO NOT delete following Placemark, 
