@@ -32,7 +32,7 @@ for($i=0; $i<=$len; $i++) {
 
 
 
-@levels = qw(primary secondary tertiary);
+@levels = qw(trunk primary secondary tertiary);
 $levelLen = scalar(@levels);
 
 for($level = 0; $level < $levelLen+1; $level++) {
@@ -48,7 +48,7 @@ for($level = 0; $level < $levelLen+1; $level++) {
   print DATA $filebase.$conf->{'Document'}{'ExtendedData'}{'v:kmlheader'};
   print DATA <<EndHeader;
   <LatLonBox>
-    <north>>$coords[3]</north>
+    <north>$coords[3]</north>
     <south>$coords[1]</south>
     <east>$coords[2]</east>
     <west>$coords[0]</west>

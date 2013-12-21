@@ -14,6 +14,7 @@
 <v:filextgml>.gml</v:filextgml>
 <v:filextxml>.xml</v:filextxml>
 <v:filextkml>.kml</v:filextkml>
+<v:areasfile>roadareas.kml</v:areasfile>
 <v:kmlheader><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
@@ -26,7 +27,7 @@
 <Placemark>
 <name>Tallinn</name>
 <ExtendedData>
-<v:copylayers>0,1,2,3</v:copylayers>
+<v:copylayers>0,1,2,3,4</v:copylayers>
 </ExtendedData>
 <LineString>
 <coordinates>24.60034,59.33181 24.96926,59.54286 </coordinates>

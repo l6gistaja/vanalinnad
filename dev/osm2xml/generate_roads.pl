@@ -12,6 +12,13 @@ push(@bash, "echo 'Generating road networks'");
 push(@bash, "echo 'Cache at: ".$cachedir."'");
 push(@bash, "echo 'Coordinates order: W,S,E,N'");
 
+$file = $conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
+  .$conf->{'Document'}{'ExtendedData'}{'v:dircache'}
+  .$conf->{'Document'}{'ExtendedData'}{'v:areasfile'};
+open (DATA, '>'.$file);
+binmode DATA, ":utf8";
+print DATA $filebase.$conf->{'Document'}{'ExtendedData'}{'v:kmlheader'};
+
 for($i=0; $i<$len-1; $i++) {
 
   @coords = split(/[,\s]/,$conf->{'Document'}{'Placemark'}[$i]{'LineString'}{'coordinates'});
@@ -19,6 +26,15 @@ for($i=0; $i<$len-1; $i++) {
   $filebase = $cachedir
     .$conf->{'Document'}{'ExtendedData'}{'v:fileprefix'}
     .join('_',@coords);
+
+  print DATA '<Placemark><name>'
+    .$conf->{'Document'}{'Placemark'}[$i]{'name'}
+    .'</name><Polygon><outerBoundaryIs><LinearRing><coordinates>'
+    .$coords[0].', '.$coords[1].', 0. '
+    .$coords[0].', '.$coords[3].', 0. '
+    .$coords[2].', '.$coords[3].', 0. '
+    .$coords[2].', '.$coords[1].', 0. '
+    ."</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>\n";
 
   $file = $filebase.$conf->{'Document'}{'ExtendedData'}{'v:filextosm'};
   push(@bash, "echo '".$bboxs."Fetch OSM'");
@@ -68,5 +84,8 @@ for($i=0; $i<$len-1; $i++) {
   }
 
 }
+
+print DATA $filebase.$conf->{'Document'}{'ExtendedData'}{'v:kmlfooter'};
+close(DATA);
 
 foreach $command (@bash) { print "$command\n"; }
