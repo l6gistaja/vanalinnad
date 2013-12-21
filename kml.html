@@ -15,7 +15,7 @@
           true,
           function() { kmlLayersCtl.unselectAll(); }
       );
-      //feature.popup.closeOnMove = true;
+      feature.popup.setBorder('solid 2px black');
       feature.popup.autoSize = true;
       map.addPopup(feature.popup);
     }
@@ -30,17 +30,14 @@
         projection: new OpenLayers.Projection("EPSG:4326"),
         displayProjection: new OpenLayers.Projection("EPSG:4326"),
         units: "m"
-            };
-
+    };
 
     map = new OpenLayers.Map("mapdiv",options);
     map.addLayer(new OpenLayers.Layer.OSM());
 
-
-
     var kmlLayers = [];
     for(i=0; i<4; i++) {
-      kmlLayers[i] = new OpenLayers.Layer.Vector("Tallinn: roads "+(1+i), {
+      kmlLayers[i] = new OpenLayers.Layer.Vector("Tallinna teed "+(1+i), {
             maxResolution: map.getResolutionForZoom(11+i),
             strategies: [new OpenLayers.Strategy.Fixed()],
             protocol: new OpenLayers.Protocol.HTTP({
@@ -58,18 +55,14 @@
     }
     map.addLayers(kmlLayers);
 
-
     //Add a selector control to the kmllayer with popup functions
     var kmlLayersCtl = new OpenLayers.Control.SelectFeature(kmlLayers, { 
         onSelect: createPopup, 
         onUnselect: destroyPopup,
     });
-    
+
     map.addControl(kmlLayersCtl);
     kmlLayersCtl.activate();
-    
-    //Set start centrepoint and zoom
-    //TODO: Is it possible to just zoom to extents of KML objects instead?
     
     var lonLat = new OpenLayers.LonLat(24.745278,59.437222)
           .transform(
@@ -79,16 +72,9 @@
     var zoom=11;
     map.setCenter (lonLat, zoom);  
     
-    
-
-    //map.addControl(new OpenLayers.Control.PanZoomBar());
     map.addControl(new OpenLayers.Control.MousePosition());
-    //map.addControl(new OpenLayers.Control.MouseDefaults());
     map.addControl(new OpenLayers.Control.KeyboardDefaults());
-    
-    var switcherControl = new OpenLayers.Control.LayerSwitcher();
-    map.addControl(switcherControl);
-    //switcherControl.maximizeControl();
+    map.addControl(new OpenLayers.Control.LayerSwitcher());
 
   </script>
 </body></html>
