@@ -1,0 +1,94 @@
+<html>
+  <head><title>Tallinn</title></head>
+  <body>
+  <div id="mapdiv"></div>
+  <script src="lib/OpenLayers-2.13.1/OpenLayers.js"></script>
+  <script>
+
+    function createPopup(feature) {
+      feature.popup = new OpenLayers.Popup.Anchored("pop",
+          //feature.geometry.getBounds().getCenterLonLat(),
+          map.getCenter(),
+          null,
+          feature.attributes.name,
+          null,
+          true,
+          function() { kmlLayersCtl.unselectAll(); }
+      );
+      //feature.popup.closeOnMove = true;
+      feature.popup.autoSize = true;
+      map.addPopup(feature.popup);
+    }
+
+    function destroyPopup(feature) {
+      feature.popup.destroy();
+      feature.popup = null;
+    }
+
+    var options = {
+        //controls: [],
+        projection: new OpenLayers.Projection("EPSG:4326"),
+        displayProjection: new OpenLayers.Projection("EPSG:4326"),
+        units: "m"
+            };
+
+
+    map = new OpenLayers.Map("mapdiv",options);
+    map.addLayer(new OpenLayers.Layer.OSM());
+
+
+
+    var kmlLayers = [];
+    for(i=0; i<4; i++) {
+      kmlLayers[i] = new OpenLayers.Layer.Vector("Tallinn: roads "+(1+i), {
+            maxResolution: map.getResolutionForZoom(11+i),
+            strategies: [new OpenLayers.Strategy.Fixed()],
+            protocol: new OpenLayers.Protocol.HTTP({
+                url: "vector/roads" + i + ".kml",
+                format: new OpenLayers.Format.KML({
+                    extractAttributes: true,
+                    maxDepth: 0
+                })
+            }),
+          styleMap: new OpenLayers.StyleMap({
+            'default': new OpenLayers.Style({'strokeWidth': 3,'strokeColor': '#ff0000'}),
+            'select': new OpenLayers.Style({'strokeWidth': 5,'strokeColor': '#0000ff'})
+          })
+      });
+    }
+    map.addLayers(kmlLayers);
+
+
+    //Add a selector control to the kmllayer with popup functions
+    var kmlLayersCtl = new OpenLayers.Control.SelectFeature(kmlLayers, { 
+        onSelect: createPopup, 
+        onUnselect: destroyPopup,
+    });
+    
+    map.addControl(kmlLayersCtl);
+    kmlLayersCtl.activate();
+    
+    //Set start centrepoint and zoom
+    //TODO: Is it possible to just zoom to extents of KML objects instead?
+    
+    var lonLat = new OpenLayers.LonLat(24.745278,59.437222)
+          .transform(
+            new OpenLayers.Projection("EPSG:4326"), // transform from WGS 1984
+            map.getProjectionObject() // to Spherical Mercator Projection
+          );
+    var zoom=11;
+    map.setCenter (lonLat, zoom);  
+    
+    
+
+    //map.addControl(new OpenLayers.Control.PanZoomBar());
+    map.addControl(new OpenLayers.Control.MousePosition());
+    //map.addControl(new OpenLayers.Control.MouseDefaults());
+    map.addControl(new OpenLayers.Control.KeyboardDefaults());
+    
+    var switcherControl = new OpenLayers.Control.LayerSwitcher();
+    map.addControl(switcherControl);
+    //switcherControl.maximizeControl();
+
+  </script>
+</body></html>

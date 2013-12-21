@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2" xmlns:v="http://juks.alkohol.ee/vanalinn">
+<Document>
+
+<ExtendedData>
+<v:dirbase>../../</v:dirbase>
+<v:dircache>cache/</v:dircache>
+<v:dirvector>vector/</v:dirvector>
+<!-- ends with coords W,S,E,N -->
+<v:osmexporturl>http://overpass-api.de/api/map?bbox=</v:osmexporturl>
+<v:fileprefix>m</v:fileprefix>
+<v:fileprefixroads>roads</v:fileprefixroads>
+<v:filextosm>.osm</v:filextosm>
+<v:filextgml>.gml</v:filextgml>
+<v:filextxml>.xml</v:filextxml>
+<v:filextkml>.kml</v:filextkml>
+<v:kmlheader><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+]]></v:kmlheader>
+<v:kmlfooter><![CDATA[
+</Document>
+</kml>]]></v:kmlfooter>
+</ExtendedData>
+
+<Placemark>
+<name>Tallinn</name>
+<ExtendedData>
+<v:copylayers>0,1,2</v:copylayers>
+</ExtendedData>
+<LineString>
+<coordinates>24.60034,59.33181 24.96926,59.54286 </coordinates>
+</LineString>
+</Placemark>
+
+<!-- 1940 24.70447,59.39941 24.83536,59.45529 -->
+<Placemark>
+<name>Tallinn, kesklinn</name>
+<ExtendedData>
+<v:copylayers>3</v:copylayers>
+</ExtendedData>
+<LineString>
+<coordinates>24.70447,59.41194 24.81214,59.45529 </coordinates>
+</LineString>
+</Placemark>
+
+<!-- 
+DO NOT delete following Placemark, 
+XML::Simple will otherwise not create array of Placemarks (when there is only 1 Placemark)
+-->
+<Placemark></Placemark>
+
+</Document>
+</kml>
