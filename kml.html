@@ -33,11 +33,7 @@
       feature.popup.destroy();
       feature.popup = null;
     }
-/*
-    function selectArea(feature) {
-      alert(444);
-    }
-*/
+
     var options = {
         //controls: [],
         projection: new OpenLayers.Projection("EPSG:4326"),
@@ -47,51 +43,6 @@
     map = new OpenLayers.Map("mapdiv",options);
     map.addLayer(new OpenLayers.Layer.OSM());
 
-/*
-var graphic = new OpenLayers.Layer.Image(
-                'City Lights',
-                'cache/1968crop_legendless_300x341.jpg',
-                new OpenLayers.Bounds(24.60034, 59.33181, 24.96926, 59.54286),
-//new OpenLayers.Bounds(-180, -88.759, 180, 88.759),
-//59.54286 59.33181 24.96926 24.60034
-                new OpenLayers.Size(300, 341),
-                {numZoomLevels: 3}
-            );
-
-map.addLayer(graphic);
-            graphic.events.on({
-                loadstart: function() {
-                    OpenLayers.Console.log("loadstart");
-                },
-                loadend: function() {
-                    OpenLayers.Console.log("loadend");
-                }
-            });
-
-                function overlay_getTileURL(bounds) {
-                    var res = this.map.getResolution();
-                    var x = Math.round((bounds.left - this.maxExtent.left) / (res * this.tileSize.w));
-                    var y = Math.round((bounds.bottom - this.tileOrigin.lat) / (res * this.tileSize.h));
-                    var z = this.map.getZoom();
-                    if (this.map.baseLayer.name == 'Virtual Earth Roads' || this.map.baseLayer.name == 'Virtual Earth Aerial' || this.map.baseLayer.name == 'Virtual Earth Hybrid') {
-                       z = z + 1;
-                    }
-                        if (mapBounds.intersectsBounds( bounds ) && z >= mapMinZoom && z <= mapMaxZoom ) {
-                       //console.log( this.url + z + "/" + x + "/" + y + "." + this.type);
-console.log(this.url + 'cache/tiles/1968/' + z + "/" + x + "/" + y + "." + this.type);
-                       return this.url + 'cache/tiles/1968/' + z + "/" + x + "/" + y + "." + this.type;
-                } else {
-                   return "http://www.maptiler.org/img/none.png";
-                }
-}
-                    // create TMS Overlay layer
-                    var tmsoverlay = new OpenLayers.Layer.TMS( "TMS Overlay", "",
-                        {   // url: '', serviceVersion: '.', layername: '.',
-                                                type: 'jpg', getURL: overlay_getTileURL, alpha: false, 
-                                                isBaseLayer: false
-                        });
-map.addLayer(tmsoverlay);
-*/
     var areas = new OpenLayers.Layer.Vector("Select area", {
             minResolution: map.getResolutionForZoom(9),
             strategies: [new OpenLayers.Strategy.Fixed()],
@@ -101,16 +52,14 @@ map.addLayer(tmsoverlay);
                     extractAttributes: true,
                     maxDepth: 0
                 })
+            }),
+            styleMap: new OpenLayers.StyleMap({
+                pointRadius: 5,
+                fillColor: "#ffff00"
             })
       });
     map.addLayer(areas);
-/*
-    var areasCtl = new OpenLayers.Control.SelectFeature(areas, { 
-        onSelect: selectArea
-    });
-    map.addControl(areasCtl);
-    //areasCtl.activate();
-*/
+
     var kmlLayers = [];
     for(i=0; i<5; i++) {
       kmlLayers[i] = new OpenLayers.Layer.Vector("Tallinn's roads "+(1+i), {
@@ -140,7 +89,7 @@ map.addLayer(tmsoverlay);
     kmlLayersCtl.activate();
 
     centerTo(24.745278,59.437222, 10);
-    
+
     map.addControl(new OpenLayers.Control.MousePosition());
     map.addControl(new OpenLayers.Control.KeyboardDefaults());
     map.addControl(new OpenLayers.Control.LayerSwitcher());
