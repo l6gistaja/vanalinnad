@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <title>BoundingBox creator</title>
+    <script type="text/javascript">
+
+      function writeResults(x) {
+        y = '';
+          for (i=0; i<x.length; i++) {
+            y += '<strong>' + x[i].prefix + x[i].name + '</strong><br/>'
+              + ('url' in x[i] ? '<a target="_blank" href="'+x[i].value+'">'+x[i].value+'</a>' : x[i].value)
+              + '<br/>';
+          }
+
+        document.getElementById("results").innerHTML = y;
+        return true;
+      }
+
+      function switchElements(array, e0, e1) {
+        temp = array[e0];
+        array[e0] = array[e1];
+        array[e1] = temp;
+        return array;
+      }
+
+      function orderBbox(bbox) {
+        for (i=0; i<4; i++) { bbox[i] = parseFloat(bbox[i]); }
+        if(bbox[0] < bbox[2]) { bbox = switchElements(bbox, 0, 2); }
+        if(bbox[1] < bbox[3]) { bbox = switchElements(bbox, 1, 3); }
+        return bbox;
+      }
+
+      function descBbox(array, bbox, prefix) {
+        array[array.length] = {
+          name: 'MapTiler web',
+          prefix: prefix, 
+          url: true,
+          value: 'http://www.maptiler.org/preview/?points='
+            + bbox[0] + ',' + bbox[3] + ','
+            + bbox[0] + ',' + bbox[1] + ','
+            + bbox[2] + ',' + bbox[1] + ','
+            + bbox[2] + ',' + bbox[3]
+        };
+
+        array[array.length] = {
+          name: 'MapTiler NSEW',
+          prefix: prefix,
+          value: bbox[0] + ' ' + bbox[2] + ' ' + bbox[1] + ' ' + bbox[3]
+        };
+        array[array.length] = {
+          name: 'W,S E,N for roads.kml LineString',
+          prefix: prefix,
+          value: bbox[3] + ',' + bbox[2] + ' ' + bbox[1] + ',' + bbox[0]
+        };
+
+        return array;
+      }
+
+      function newBbox(form) {
+        y=[];
+        return writeResults(y);
+      }
+
+      function realBbox(form) {
+        bbox = form.r0.value.split(/[^0-9\.\-]+/);
+        bbox = switchElements(bbox, 0, 1);
+        a = form.r1.value.split(/[^0-9\.\-]+/);
+        bbox[2] = a[1];
+        bbox[3] = a[0];
+        y = descBbox([], orderBbox(bbox), 'BBox: ');
+        return writeResults(y);
+      }
+
+    </script>
+  </head>
+  <body>
+  <form>
+    <table>
+        <tr>
+          <th align="left">Map BoundixBox S*W*N*E</th>
+          <td><input type="text" name=""/></td>
+        </tr>
+        <tr>
+          <th align="left">Real point0 E*N</th>
+          <td><input type="text" name="r0"/></td>
+        </tr>
+        <tr>
+          <th align="left">Map point0 E*N</th>
+          <td><input type="text" name="m0"/></td>
+        </tr>
+        <tr>
+          <th align="left">Real point1 E*N</th>
+          <td align="left"><input type="text" name="r1"/></td>
+        </tr>
+        <tr>
+          <th align="left">Map point1 E*N</th>
+          <td><input type="text" name="m1"/></td>
+        </tr>
+        <tr>
+          <td align="left" colspan="2">
+            <input type="button" value="Calculate new BBOX" onClick="return newBbox(this.form);"/>
+            <input type="button" value="BBOX from real points" onClick="return realBbox(this.form);"/>
+          </td>
+        </tr>
+    </table>
+  </form>
+  <div id="results"></div>
+  </body>
+</html>

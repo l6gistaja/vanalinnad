@@ -14,7 +14,38 @@
 		        OpenLayers.IMAGE_RELOAD_ATTEMPTS = 3;
 		        OpenLayers.Util.onImageLoadErrorColor = "transparent";
 
-		        function init(){
+            OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {                
+                defaultHandlerOptions: {
+                    'single': true,
+                    'double': false,
+                    'pixelTolerance': 0,
+                    'stopSingle': false,
+                    'stopDouble': false
+                },
+
+                initialize: function(options) {
+                    this.handlerOptions = OpenLayers.Util.extend(
+                        {}, this.defaultHandlerOptions
+                    );
+                    OpenLayers.Control.prototype.initialize.apply(
+                        this, arguments
+                    ); 
+                    this.handler = new OpenLayers.Handler.Click(
+                        this, {
+                            'click': this.trigger
+                        }, this.handlerOptions
+                    );
+                }, 
+
+                trigger: function(e) {
+                    var lonlat = map.getLonLatFromPixel(e.xy);
+                    coord4326 = lonlat.transform(new OpenLayers.Projection("EPSG:900913"), new OpenLayers.Projection("EPSG:4326"));
+
+                    alert("EPSG:4326\n" + coord4326.lon +" , "+coord4326.lat);
+               }
+            });
+
+function init(){
 	            var options = {
 	                //controls: [],
 	                projection: new OpenLayers.Projection("EPSG:900913"),
@@ -28,16 +59,14 @@
 	            // create OSM/OAM layer
 	            var osm = new OpenLayers.Layer.TMS( "OpenStreetMap",
 	                "http://tile.openstreetmap.org/",
-	                { type: 'png', getURL: osm_getTileURL, displayOutsideMaxExtent: true, 
-					  attribution: '<a href="http://www.openstreetmap.org/">OpenStreetMap</a>'} );
+	                { type: 'png', getURL: osm_getTileURL, displayOutsideMaxExtent: true, attribution: ''} );
 
 	            // create TMS Overlay layer
 	            var tmsoverlay = new OpenLayers.Layer.TMS( "TMS Overlay", "",
-	                {   // url: '', serviceVersion: '.', layername: '.',
+	                {
 						type: 'jpg', getURL: overlay_getTileURL, alpha: false, 
 						isBaseLayer: false
 	                });
-				//if (OpenLayers.Util.alphaHack() == false) { tmsoverlay.setOpacity(0.7); }
 
 	            map.addLayers([osm, tmsoverlay]);
 /**/
@@ -90,6 +119,11 @@
     map.addControl(kmlLayersCtl);
     kmlLayersCtl.activate();
 
+    var click = new OpenLayers.Control.Click();
+                map.addControl(click);
+                click.activate();
+
+
 	            var switcherControl = new OpenLayers.Control.LayerSwitcher();
 	            map.addControl(switcherControl);
 	            switcherControl.maximizeControl();
@@ -110,7 +144,7 @@
 	            var limit = Math.pow(2, z);
 
 	            if (y < 0 || y >= limit) {
-	                return "http://www.maptiler.org/img/none.png";
+	                return "raster/none.png";
 	            } else {
 	                x = ((x % limit) + limit) % limit;
 	                return this.url + z + "/" + x + "/" + y + "." + this.type;
@@ -129,7 +163,7 @@
 	               //console.log( this.url + z + "/" + x + "/" + y + "." + this.type);
 	               return 'cache/tiles/1968/' + z + "/" + x + "/" + y + "." + this.type;
                 } else {
-                   return "http://www.maptiler.org/img/none.png";
+                   return "raster/none.png";
                 }
 	        }		
 			
