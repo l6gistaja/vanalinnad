@@ -6,7 +6,8 @@
 		    <script src="lib/OpenLayers-2.13.1/OpenLayers.js"></script>
 		    <script type="text/javascript">
 		        var map;
-			    var mapBounds = new OpenLayers.Bounds( 24.60034, 59.3318136554, 24.9692732994, 59.54286);
+			    var mapBounds = new OpenLayers.Bounds( 24.60708, 59.3364170921, 24.9646964904, 59.54061);
+//24.60034, 59.3318136554, 24.9692732994, 59.54286);
 			    var mapMinZoom = 12;
 			    var mapMaxZoom = 15;
 
@@ -14,36 +15,7 @@
 		        OpenLayers.IMAGE_RELOAD_ATTEMPTS = 3;
 		        OpenLayers.Util.onImageLoadErrorColor = "transparent";
 
-            OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {                
-                defaultHandlerOptions: {
-                    'single': true,
-                    'double': false,
-                    'pixelTolerance': 0,
-                    'stopSingle': false,
-                    'stopDouble': false
-                },
 
-                initialize: function(options) {
-                    this.handlerOptions = OpenLayers.Util.extend(
-                        {}, this.defaultHandlerOptions
-                    );
-                    OpenLayers.Control.prototype.initialize.apply(
-                        this, arguments
-                    ); 
-                    this.handler = new OpenLayers.Handler.Click(
-                        this, {
-                            'click': this.trigger
-                        }, this.handlerOptions
-                    );
-                }, 
-
-                trigger: function(e) {
-                    var lonlat = map.getLonLatFromPixel(e.xy);
-                    coord4326 = lonlat.transform(new OpenLayers.Projection("EPSG:900913"), new OpenLayers.Projection("EPSG:4326"));
-
-                    alert("EPSG:4326\n" + coord4326.lon +" , "+coord4326.lat);
-               }
-            });
 
 function init(){
 	            var options = {
@@ -59,17 +31,50 @@ function init(){
 	            // create OSM/OAM layer
 	            var osm = new OpenLayers.Layer.TMS( "OpenStreetMap",
 	                "http://tile.openstreetmap.org/",
-	                { type: 'png', getURL: osm_getTileURL, displayOutsideMaxExtent: true, attribution: ''} );
+	                {
+                          type: 'png',
+                          getURL: osm_getTileURL,
+                          displayOutsideMaxExtent: true,
+                          attribution: ''
+                        } );
 
 	            // create TMS Overlay layer
-	            var tmsoverlay = new OpenLayers.Layer.TMS( "TMS Overlay", "",
+	            var tmsoverlay = new OpenLayers.Layer.TMS( "1968", "",
 	                {
 						type: 'jpg', getURL: overlay_getTileURL, alpha: false, 
 						isBaseLayer: false
 	                });
 
-	            map.addLayers([osm, tmsoverlay]);
+
+
+//24.782855189778953 , 59.4397431226174
+//24.785312594059988 , 59.43867739587352
+//minx="59.33712609243092" miny="24.60199999999999" maxx="59.54199999999995" maxy="24.96500918950904"
+//SN 0.204
+//WE 0.3631
+//var c = [24.78588, 59.43851, 0.1815, 0.1035];
+var c = [24.78588, 59.43851, 0.1788, 0.1021];
+//grbbox = new OpenLayers.Bounds(24.6019, 59.33712609243092, 24.96500918950904, 59.54199999999995);
+grbbox = new OpenLayers.Bounds(c[0]-c[2], c[1]-c[3], c[0]+c[2], c[1]+c[3]);
+//alert((c[0]-c[2])+', '+(c[1]-c[3])+', '+(c[0]+c[2])+', '+(c[1]+c[3]));
+            var graphic = new OpenLayers.Layer.Image(
+                'tln 1968',
+                'cache/1968crop_legendless.jpg',
+                grbbox.transform(map.displayProjection, map.projection ),
+                new OpenLayers.Size(9820,11150),
+                {numZoomLevels: 15}
+            );
+
+	            map.addLayers([
+osm,
+//graphic,
+                      
+                      tmsoverlay
+                    ]);
 /**/
+
+
+
     function createPopup(feature) {
       feature.popup = new OpenLayers.Popup.Anchored("pop",
           //feature.geometry.getBounds().getCenterLonLat(),
@@ -119,10 +124,6 @@ function init(){
     map.addControl(kmlLayersCtl);
     kmlLayersCtl.activate();
 
-    var click = new OpenLayers.Control.Click();
-                map.addControl(click);
-                click.activate();
-
 
 	            var switcherControl = new OpenLayers.Control.LayerSwitcher();
 	            map.addControl(switcherControl);
@@ -133,6 +134,10 @@ function init(){
 	            map.addControl(new OpenLayers.Control.PanZoomBar());
 	            map.addControl(new OpenLayers.Control.MousePosition());
 	            map.addControl(new OpenLayers.Control.KeyboardDefaults());
+
+
+
+
 
 	        }
 			
@@ -160,8 +165,7 @@ function init(){
 	               z = z + 1;
 	            }
 		        if (mapBounds.intersectsBounds( bounds ) && z >= mapMinZoom && z <= mapMaxZoom ) {
-	               //console.log( this.url + z + "/" + x + "/" + y + "." + this.type);
-	               return 'cache/tiles/1968/' + z + "/" + x + "/" + y + "." + this.type;
+	               return 'raster/places/Tallinn/1968/' + z + "/" + x + "/" + y + "." + this.type;
                 } else {
                    return "raster/none.png";
                 }

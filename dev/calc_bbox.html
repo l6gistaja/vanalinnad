@@ -4,15 +4,17 @@
     <title>BoundingBox creator</title>
     <script type="text/javascript">
 
+      // All BBOXes here are double[4] with order N, E, S, W
+
       function writeResults(x) {
-        y = '';
+        y = '<ol>';
           for (i=0; i<x.length; i++) {
-            y += '<strong>' + x[i].prefix + x[i].name + '</strong><br/>'
+            y += '<li><strong>' + x[i].prefix + x[i].name + '</strong><br/>'
               + ('url' in x[i] ? '<a target="_blank" href="'+x[i].value+'">'+x[i].value+'</a>' : x[i].value)
-              + '<br/>';
+              + '</li>';
           }
 
-        document.getElementById("results").innerHTML = y;
+        document.getElementById("results").innerHTML = y + '</ol>';
         return true;
       }
 
@@ -43,30 +45,71 @@
         };
 
         array[array.length] = {
-          name: 'MapTiler NSEW',
+          name: 'MapTiler N S E W',
           prefix: prefix,
           value: bbox[0] + ' ' + bbox[2] + ' ' + bbox[1] + ' ' + bbox[3]
         };
         array[array.length] = {
-          name: 'W,S E,N for roads.kml LineString',
+          name: 'W,S E,N to LineString',
           prefix: prefix,
           value: bbox[3] + ',' + bbox[2] + ' ' + bbox[1] + ',' + bbox[0]
         };
 
+        array[array.length] = {
+          name: 'OSM download',
+          prefix: prefix, 
+          url: true,
+          value: 'http://overpass-api.de/api/map?bbox=' 
+            + bbox[3] + ',' + bbox[2] + ',' + bbox[1] + ',' + bbox[0]
+
+        };
         return array;
       }
 
+      function coords2Bbox(form, fieldprefix) {
+        bbox = form.elements[fieldprefix + '0'].value.split(/[^0-9\.\-]+/);
+        bbox = switchElements(bbox, 0, 1);
+        a = form.elements[fieldprefix + '1'].value.split(/[^0-9\.\-]+/);
+        bbox[2] = a[1];
+        bbox[3] = a[0];
+        return bbox;
+      }
+
       function newBbox(form) {
-        y=[];
+        y = [];
+        bboxR = orderBbox(coords2Bbox(form, 'r'));
+        bboxM = orderBbox(coords2Bbox(form, 'm'));
+        bbox0 = orderBbox(form.elements['m'].value.split(/[^0-9\.\-]+/));
+
+        dLon = bboxM[1] - bboxM[3];
+        dLat = bboxM[0] - bboxM[2];
+
+        borders = [
+          (bbox0[0] - bboxM[0])/dLat,
+          (bbox0[1] - bboxM[1])/dLon,
+          (bboxM[2] - bbox0[2])/dLat,
+          (bboxM[3] - bbox0[3])/dLon
+        ];
+
+        dLon = bboxR[1] - bboxR[3];
+        dLat = bboxR[0] - bboxR[2];
+
+        bbox1 = [
+          bboxR[0] + borders[0]*dLat,
+          bboxR[1] + borders[1]*dLon,
+          bboxR[2] - borders[2]*dLat,
+          bboxR[3] - borders[3]*dLon
+        ];
+
+        y = descBbox(y, bbox1, 'BBox map 1: ');
+        y = descBbox(y, bbox0, 'BBox map 0: ');
+        y = descBbox(y, bboxM, 'BBox map points: ');
+        y = descBbox(y, bboxR, 'BBox real points: ');
         return writeResults(y);
       }
 
       function realBbox(form) {
-        bbox = form.r0.value.split(/[^0-9\.\-]+/);
-        bbox = switchElements(bbox, 0, 1);
-        a = form.r1.value.split(/[^0-9\.\-]+/);
-        bbox[2] = a[1];
-        bbox[3] = a[0];
+        bbox = coords2Bbox(form, 'r');
         y = descBbox([], orderBbox(bbox), 'BBox: ');
         return writeResults(y);
       }
@@ -77,24 +120,24 @@
   <form>
     <table>
         <tr>
-          <th align="left">Map BoundixBox S*W*N*E</th>
-          <td><input type="text" name=""/></td>
-        </tr>
-        <tr>
-          <th align="left">Real point0 E*N</th>
-          <td><input type="text" name="r0"/></td>
+          <th align="left">Map BoundingSBox S*W*N*E</th>
+          <td><input type="text" name="m" size="100"/></td>
         </tr>
         <tr>
           <th align="left">Map point0 E*N</th>
-          <td><input type="text" name="m0"/></td>
-        </tr>
-        <tr>
-          <th align="left">Real point1 E*N</th>
-          <td align="left"><input type="text" name="r1"/></td>
+          <td><input type="text" name="m0" size="100"/></td>
         </tr>
         <tr>
           <th align="left">Map point1 E*N</th>
-          <td><input type="text" name="m1"/></td>
+          <td><input type="text" name="m1" size="100"/></td>
+        </tr>
+        <tr>
+          <th align="left">Real point0 E*N</th>
+          <td><input type="text" name="r0" size="100"/></td>
+        </tr>
+        <tr>
+          <th align="left">Real point1 E*N</th>
+          <td><input type="text" name="r1" size="100"/></td>
         </tr>
         <tr>
           <td align="left" colspan="2">

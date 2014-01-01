@@ -18,7 +18,8 @@ do
       actualsize=$(du -b "$JPG" | cut -f 1)
       if [ -e "$actualsize".png ]; then
         rm $JPG
-        cp "$actualsize"'.png' $JPG
+        # cp "$actualsize"'.png' $JPG
+        cp none.png $JPG
         replaced=$[$replaced+1]
       else
         echo 'Cant find '"$actualsize"'.png for replacing '"$JPG"
