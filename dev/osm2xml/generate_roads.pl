@@ -4,16 +4,17 @@ use XML::Simple;
 
 $xml = new XML::Simple;
 $conf = $xml->XMLin('roads.kml');
+$mainconf = $xml->XMLin($conf->{'Document'}{'ExtendedData'}{'v:dirbase'}.'conf.xml');
 $len = scalar(@{$conf->{'Document'}{'Placemark'}});
 @bash = qw();
 $cachedir = $conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
-    .$conf->{'Document'}{'ExtendedData'}{'v:dircache'};
+    .$mainconf->{'dircache'};
 push(@bash, "echo 'Generating road networks'");
 push(@bash, "echo 'Cache at: ".$cachedir."'");
 push(@bash, "echo 'Coordinates order: W,S,E,N'");
 
 $file = $conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
-  .$conf->{'Document'}{'ExtendedData'}{'v:dircache'}
+  .$mainconf->{'dircache'}
   .$conf->{'Document'}{'ExtendedData'}{'v:areasfile'};
 open (DATA, '>'.$file);
 binmode DATA, ":utf8";
@@ -69,18 +70,20 @@ for($i=0; $i<$len-1; $i++) {
   push(@bash, "echo '".$bboxs."Convert XML 2 KML'");
   push(@bash, './gen_kml.pl '.$i);
 
+  if(0) {
   push(@bash, "echo '".$bboxs."Copy KMLs'");
   @layers = split(/,/,$conf->{'Document'}{'Placemark'}[$i]{'ExtendedData'}{'v:copylayers'});
   foreach $level (@layers) {
     push(@bash, "mv "
       .$conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
-      .$conf->{'Document'}{'ExtendedData'}{'v:dircache'}
-      .$conf->{'Document'}{'ExtendedData'}{'v:fileprefixroads'}
+      .$mainconf->{'dircache'}
+      .$mainconf->{'fileprefixroads'}
       .$level
       .$conf->{'Document'}{'ExtendedData'}{'v:filextkml'}
       .' '
       .$conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
-      .$conf->{'Document'}{'ExtendedData'}{'v:dirvector'});
+      .$mainconf->{'dirvector'});
+  }
   }
 
 }

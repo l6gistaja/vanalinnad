@@ -4,10 +4,11 @@ use XML::Simple;
 
 $xml = new XML::Simple;
 $conf = $xml->XMLin('roads.kml');
+$mainconf = $xml->XMLin($conf->{'Document'}{'ExtendedData'}{'v:dirbase'}.'conf.xml');
 @coords = split(/[,\s]/,$conf->{'Document'}{'Placemark'}[$ARGV[0]]{'LineString'}{'coordinates'});
 
 $data = $xml->XMLin($conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
-    .$conf->{'Document'}{'ExtendedData'}{'v:dircache'}
+    .$mainconf->{'dircache'}
     .$conf->{'Document'}{'ExtendedData'}{'v:fileprefix'}
     .join('_',@coords)
     .$filebase.$conf->{'Document'}{'ExtendedData'}{'v:filextxml'});
@@ -37,8 +38,8 @@ $levelLen = scalar(@levels);
 
 for($level = 0; $level < $levelLen+1; $level++) {
   $file = $conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
-    .$conf->{'Document'}{'ExtendedData'}{'v:dircache'}
-    .$conf->{'Document'}{'ExtendedData'}{'v:fileprefixroads'}
+    .$mainconf->{'dircache'}
+    .$mainconf->{'fileprefixroads'}
     .$level
     .$conf->{'Document'}{'ExtendedData'}{'v:filextkml'};
   print $file."\n";

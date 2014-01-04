@@ -4,12 +4,9 @@
 
 <ExtendedData>
 <v:dirbase>../../</v:dirbase>
-<v:dircache>cache/</v:dircache>
-<v:dirvector>vector/</v:dirvector>
 <!-- ends with coords W,S,E,N -->
 <v:osmexporturl>http://overpass-api.de/api/map?bbox=</v:osmexporturl>
 <v:fileprefix>m</v:fileprefix>
-<v:fileprefixroads>roads</v:fileprefixroads>
 <v:filextosm>.osm</v:filextosm>
 <v:filextgml>.gml</v:filextgml>
 <v:filextxml>.xml</v:filextxml>
