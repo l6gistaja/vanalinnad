@@ -15,15 +15,10 @@ for JPG in $(find $1 -name *.jpg)
 do
   colorcount=$(identify -format %k $JPG)
   if [ $colorcount -eq 1 ]; then
-      actualsize=$(du -b "$JPG" | cut -f 1)
-      if [ -e "$actualsize".png ]; then
-        rm $JPG
-        # cp "$actualsize"'.png' $JPG
-        cp none.png $JPG
-        replaced=$[$replaced+1]
-      else
-        echo 'Cant find '"$actualsize"'.png for replacing '"$JPG"
-      fi
+      #actualsize=$(du -b "$JPG" | cut -f 1)
+      rm $JPG
+      cp none.png $JPG
+      replaced=$[$replaced+1]
   fi
 done
 

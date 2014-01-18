@@ -152,7 +152,7 @@ osm,
           feature.attributes.name,
           null,
           true,
-          function() { kmlLayersCtl.unselectAll(); }
+          function() { roadLayersCtl.unselectAll(); }
       );
       feature.popup.setBorder('solid 2px black');
       feature.popup.autoSize = true;
@@ -164,9 +164,9 @@ osm,
       feature.popup = null;
     }
 
-    var kmlLayers = [];
+    var roadLayers = [];
     for(i=0; i<5; i++) {
-      kmlLayers[i] = new OpenLayers.Layer.Vector("Roads "+(1+i), {
+      roadLayers[i] = new OpenLayers.Layer.Vector("Roads "+(1+i), {
             projection: new OpenLayers.Projection("EPSG:4326"),
             maxResolution: map.getResolutionForZoom(10+i),
             strategies: [new OpenLayers.Strategy.Fixed()],
@@ -186,15 +186,15 @@ osm,
           })
       });
     }
-    map.addLayers(kmlLayers);
+    map.addLayers(roadLayers);
 
     //Add a selector control to the kmllayer with popup functions
-    var kmlLayersCtl = new OpenLayers.Control.SelectFeature(kmlLayers, { 
+    var roadLayersCtl = new OpenLayers.Control.SelectFeature(roadLayers, { 
         onSelect: createPopup, 
         onUnselect: destroyPopup,
     });
-    map.addControl(kmlLayersCtl);
-    kmlLayersCtl.activate();
+    map.addControl(roadLayersCtl);
+    roadLayersCtl.activate();
 
 
 	            var switcherControl = new OpenLayers.Control.LayerSwitcher();
@@ -206,7 +206,6 @@ osm,
 	            map.addControl(new OpenLayers.Control.PanZoomBar());
 	            map.addControl(new OpenLayers.Control.MousePosition());
 	            map.addControl(new OpenLayers.Control.KeyboardDefaults());
-
 	        }		
 
 </script>
@@ -216,7 +215,7 @@ osm,
 <strong>&nbsp;Could not load local XML</strong>
 <ol>
 <li>Your browser should support JavaScript and <a href="http://enable-javascript.com/" target="_blank">JavaScript should be enabled</a></li>
-<li>If you are using Opera: allow <a href="opera:config#UserPrefs|AllowFileXMLHttpRequest" target="_blank">opera:config#UserPrefs|AllowFileXMLHttpRequest</a></li>
+<li>If you are using Opera, allow <a href="opera:config#UserPrefs|AllowFileXMLHttpRequest" target="_blank">opera:config#UserPrefs|AllowFileXMLHttpRequest</a></li>
 </ol> 
 <script type="text/javascript">
 document.writeln('<strong>&nbsp;Your browser is:</strong> ' + navigator.userAgent);
