@@ -95,7 +95,7 @@ function initAfterConf(){
       if (this.map.baseLayer.name == 'Virtual Earth Roads' || this.map.baseLayer.name == 'Virtual Earth Aerial' || this.map.baseLayer.name == 'Virtual Earth Hybrid') {
           z = z + 1;
       }
-      if (mapBounds.intersectsBounds(bounds) && z >= mapMinZoom && z <= mapMaxZoom ) {
+      if (baseLayersData[map.baseLayer.layername].bounds.intersectsBounds(bounds) && z >= mapMinZoom && z <= mapMaxZoom ) {
       return getXmlValue(confXml, 'dirraster')
               + getXmlValue(confXml, 'dirplaces')
               + areaDir 
@@ -130,6 +130,7 @@ function initAfterConf(){
       dir: layersTags[i].getAttribute('year') + '/',
       bounds: new OpenLayers.Bounds(layerBoundBox[0], layerBoundBox[1], layerBoundBox[2], layerBoundBox[3])
     };
+    baseLayersData[layername].bounds = baseLayersData[layername].bounds.transform(map.displayProjection, map.projection);
     tmsoverlays[tmsoverlays.length] = new OpenLayers.Layer.TMS(layersTags[i].getAttribute('year'), "",
     {
       layername: layername,
@@ -195,7 +196,7 @@ function initAfterConf(){
   var switcherControl = new OpenLayers.Control.LayerSwitcher();
   map.addControl(switcherControl);
   switcherControl.maximizeControl();
-  map.zoomToExtent( mapBounds.transform(map.displayProjection, map.projection ) );
+  map.zoomToExtent(mapBounds.transform(map.displayProjection, map.projection));
   map.addControl(new OpenLayers.Control.PanZoomBar());
   map.addControl(new OpenLayers.Control.MousePosition());
   map.addControl(new OpenLayers.Control.KeyboardDefaults());
