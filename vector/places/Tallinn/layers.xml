@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vanalinnadlayers xmlns="http://juks.alkohol.ee/vanalinnad">
+<minzoom>11</minzoom>
+<maxzoom>15</maxzoom>
+<bounds>24.5945390309,59.334869421,24.9777576321,59.5422156874</bounds>
+<layer type="base" year="1968" bounds="24.5945390309,59.334869421,24.9777576321,59.5422156874"/>
+</vanalinnadlayers>
