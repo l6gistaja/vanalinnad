@@ -13,31 +13,52 @@
     <script src="lib/OpenLayers-2.13.1/OpenLayers.js"></script>
     <script type="text/javascript">
 
-var map;
-var mapBounds = new OpenLayers.Bounds(24.5945390309, 59.334869421, 24.9777576321, 59.5422156874);
-var mapMinZoom = 11;
-var mapMaxZoom = 15;
-
 // avoid pink tiles
 OpenLayers.IMAGE_RELOAD_ATTEMPTS = 3;
 OpenLayers.Util.onImageLoadErrorColor = "transparent";
-
 var areaDir = 'Tallinn/';
+
+var map;
+var mapBounds;
+var mapMinZoom;
+var mapMaxZoom;
 var confXml;
+var layersXml;
 
 function getXmlValue(xmlDocument, tagname) {
   return xmlDocument.getElementsByTagName(tagname)[0].childNodes[0].nodeValue;
 }
 
 function init(){
+
   function xmlHandlerConf(request) {
     if(request.status == 200) {
       document.getElementById('map').innerHTML = '';
       confXml = request.responseXML;
-      initAfterConf();
+      OpenLayers.Request.GET({ 
+          url: getXmlValue(confXml, 'dirvector')
+            + getXmlValue(confXml, 'dirplaces')
+            + areaDir
+            + getXmlValue(confXml, 'filelayers'),
+          callback: xmlHandlerLayers
+      });
     }
   }
+  function xmlHandlerLayers(request) {
+      layersXml = request.responseXML;
+      mapMinZoom = parseInt(getXmlValue(layersXml, 'minzoom'));
+      mapMaxZoom = parseInt(getXmlValue(layersXml, 'maxzoom'));
+      boundBox = getXmlValue(layersXml, 'bounds').split(',');
+      mapBounds = new OpenLayers.Bounds(
+        boundBox[0],
+        boundBox[1],
+        boundBox[2],
+        boundBox[3]
+      );
+      initAfterConf();
+  }
   OpenLayers.Request.GET({ url: "conf.xml", callback: xmlHandlerConf });
+
 }
 
 function initAfterConf(){
