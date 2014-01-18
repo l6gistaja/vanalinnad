@@ -117,21 +117,28 @@ function initAfterConf(){
         attribution: '',
         isBaseLayer: true
       } );
+  map.addLayer(osm);
 
-  // create TMS Overlay layer
-  var tmsoverlay = new OpenLayers.Layer.TMS( "1968", "",
-      {
-        layername: 'tms_1968',
-        type: 'jpg',
-        getURL: overlay_getTileURL,
-        alpha: false,
-        isBaseLayer: true
-      });
-
-  map.addLayers([
-    osm,
-    tmsoverlay,
-  ]);
+  var layersTags = layersXml.getElementsByTagName('layer');
+  var baseLayersData = {};
+  var tmsoverlays = [];
+  for(i = 0; i < layersTags.length; i++) {
+    layername = 'tms_' + layersTags[i].getAttribute('year');
+    layerBoundBox = layersTags[i].getAttribute('bounds').split(',');
+    baseLayersData[layername] = {
+      dir: layersTags[i].getAttribute('year') + '/',
+      bounds: new OpenLayers.Bounds(layerBoundBox[0], layerBoundBox[1], layerBoundBox[2], layerBoundBox[3])
+    };
+    tmsoverlays[tmsoverlays.length] = new OpenLayers.Layer.TMS(layersTags[i].getAttribute('year'), "",
+    {
+      layername: layername,
+      type: 'jpg',
+      getURL: overlay_getTileURL,
+      alpha: false,
+      isBaseLayer: true
+    });
+  }
+  map.addLayers(tmsoverlays);
 
   function createPopup(feature) {
     feature.popup = new OpenLayers.Popup.Anchored("streetPopup",
