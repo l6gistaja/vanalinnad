@@ -7,6 +7,7 @@
 	  <Origin x="59.39326881834094" y="24.66515364135980"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
+	    <TileSet href="10" units-per-pixel="152.87405654296876" order="10"/>
 	    <TileSet href="11" units-per-pixel="76.43702827148438" order="11"/>
 	    <TileSet href="12" units-per-pixel="38.21851413574219" order="12"/>
 	    <TileSet href="13" units-per-pixel="19.10925706787109" order="13"/>
