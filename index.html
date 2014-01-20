@@ -68,7 +68,8 @@ function initAfterConf(){
     //controls: [],
     projection: new OpenLayers.Projection("EPSG:900913"),
     displayProjection: new OpenLayers.Projection("EPSG:4326"),
-    units: "m"
+    units: "m",
+    numZoomLevels: 17
   };
   map = new OpenLayers.Map('map', options);
 
