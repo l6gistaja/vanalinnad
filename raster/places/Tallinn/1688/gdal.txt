@@ -1,0 +1,3 @@
+gdal_translate ~/histmaps/places/Tallinn/1688whited.jpg  ~/histmaps/places/Tallinn/1688georef.png -of PNG -gcp 1713 3252 24.677816397845397 59.42848299610858 -gcp 7572 4927 24.80036116331781 59.412124923859196 -gcp 8821 420 24.835508830248962 59.466283161249564
+
+# Paldiski mnt - Mustj6gi; Vana Tartu mnt - Ylemiste kanal; Pirita klooster
