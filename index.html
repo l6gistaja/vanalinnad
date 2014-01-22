@@ -210,6 +210,21 @@ function initAfterConf(){
   });
   map.addControl(roadLayersCtl);
   roadLayersCtl.activate();
+  
+    var selectorLayer = new OpenLayers.Layer.Vector(' ♁', {
+      projection: new OpenLayers.Projection("EPSG:4326"),
+      minResolution: map.getResolutionForZoom(mapMinZoom - 1),
+      strategies: [new OpenLayers.Strategy.Fixed()],
+      protocol: new OpenLayers.Protocol.HTTP({
+          url: getXmlValue(confXml, 'dirvector')
+                + getXmlValue(confXml, 'fileareaselector'),
+          format: new OpenLayers.Format.KML({
+              extractAttributes: true,
+              maxDepth: 2
+          })
+      })
+    });
+    map.addLayer(selectorLayer);
 
   var switcherControl = new OpenLayers.Control.LayerSwitcher();
   map.addControl(switcherControl);
@@ -225,6 +240,9 @@ function initAfterConf(){
     }
   }
   map.addControl(new OpenLayers.Control.Permalink());
+  for(i in map.controls){
+    if(map.controls[i].CLASS_NAME == 'OpenLayers.Control.Zoom') { map.controls[i].deactivate(); }
+  }
 }
 
 </script>
