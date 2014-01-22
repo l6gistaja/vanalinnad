@@ -14,4 +14,9 @@
 <layer type="tms" year="1792" bounds="24.71667519,59.4290759279,24.7868321096,59.4534588509" disabled="1"/>
 <layer type="tms" year="1688" bounds="24.6376731231,59.4057011587,24.8392756793,59.4713435567"/>
 <!-- 1865,1688 -->
+<layer type="roads" name=" 1 &lt;img src='raster/auto.gif'/&gt;" file="roads0.kml" maxres="10"/>
+<layer type="roads" name=" 2 &lt;img src='raster/auto.gif'/&gt;" file="roads1.kml" maxres="11"/>
+<layer type="roads" name=" 3 &lt;img src='raster/auto.gif'/&gt;" file="roads2.kml" maxres="12"/>
+<layer type="roads" name=" 4 &lt;img src='raster/auto.gif'/&gt;" file="roads3.kml" maxres="13"/>
+<layer type="roads" name=" 5 &lt;img src='raster/auto.gif'/&gt;" file="roads4.kml" maxres="14"/>
 </vanalinnadlayers>

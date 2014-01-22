@@ -139,26 +139,66 @@ function initAfterConf(){
       } );
   map.addLayer(osm);
 
+  var selectorLayer = new OpenLayers.Layer.Vector(' &gt;&gt;', {
+    projection: new OpenLayers.Projection("EPSG:4326"),
+    minResolution: map.getResolutionForZoom(mapMinZoom - 1),
+    strategies: [new OpenLayers.Strategy.Fixed()],
+    protocol: new OpenLayers.Protocol.HTTP({
+        url: getXmlValue(confXml, 'dirvector')
+              + getXmlValue(confXml, 'fileareaselector'),
+        format: new OpenLayers.Format.KML({
+            extractAttributes: true,
+            maxDepth: 0
+        })
+    })
+  });
+  map.addLayer(selectorLayer);
+
   var layersTags = layersXml.getElementsByTagName('layer');
   var tmsoverlays = [];
+  var roadLayers = [];
   for(i = 0; i < layersTags.length; i++) {
-    layername = 'tms_' + layersTags[i].getAttribute('year');
-    layerBoundBox = layersTags[i].getAttribute('bounds').split(',');
-    baseLayersData[layername] = {
-      dir: layersTags[i].getAttribute('year') + '/',
-      bounds: new OpenLayers.Bounds(layerBoundBox[0], layerBoundBox[1], layerBoundBox[2], layerBoundBox[3])
-    };
-    baseLayersData[layername].bounds = baseLayersData[layername].bounds.transform(map.displayProjection, map.projection);
-    tmsoverlays[tmsoverlays.length] = new OpenLayers.Layer.TMS(layersTags[i].getAttribute('year'), "",
-    {
-      layername: layername,
-      type: 'jpg',
-      getURL: overlay_getTileURL,
-      alpha: false,
-      isBaseLayer: true
-    });
+    if(layersTags[i].getAttribute('disabled')) { continue; }
+    if(layersTags[i].getAttribute('type') == 'tms') {
+      layername = 'tms_' + layersTags[i].getAttribute('year');
+      layerBoundBox = layersTags[i].getAttribute('bounds').split(',');
+      baseLayersData[layername] = {
+        dir: layersTags[i].getAttribute('year') + '/',
+        bounds: new OpenLayers.Bounds(layerBoundBox[0], layerBoundBox[1], layerBoundBox[2], layerBoundBox[3])
+      };
+      baseLayersData[layername].bounds = baseLayersData[layername].bounds.transform(map.displayProjection, map.projection);
+      tmsoverlays[tmsoverlays.length] = new OpenLayers.Layer.TMS(layersTags[i].getAttribute('year'), "",
+      {
+        layername: layername,
+        type: 'jpg',
+        getURL: overlay_getTileURL,
+        alpha: false,
+        isBaseLayer: true
+      });
+    } else {
+      roadLayers[roadLayers.length] = new OpenLayers.Layer.Vector(layersTags[i].getAttribute('name'), {
+            projection: new OpenLayers.Projection("EPSG:4326"),
+            maxResolution: map.getResolutionForZoom(parseInt(layersTags[i].getAttribute('maxres'))),
+            strategies: [new OpenLayers.Strategy.Fixed()],
+            protocol: new OpenLayers.Protocol.HTTP({
+                url: getXmlValue(confXml, 'dirvector')
+                      + getXmlValue(confXml, 'dirplaces')
+                      + areaDir 
+                      + layersTags[i].getAttribute('file'),
+                format: new OpenLayers.Format.KML({
+                    extractAttributes: true,
+                    maxDepth: 0
+                })
+            }),
+          styleMap: new OpenLayers.StyleMap({
+            'default': new OpenLayers.Style({'strokeWidth': 3,'strokeColor': '#ff0000'}),
+            'select': new OpenLayers.Style({'strokeWidth': 5,'strokeColor': '#0000ff'})
+          })
+      });
+    }
   }
   map.addLayers(tmsoverlays);
+  map.addLayers(roadLayers);
 
   function createPopup(feature) {
     feature.popup = new OpenLayers.Popup.Anchored("streetPopup",
@@ -179,30 +219,6 @@ function initAfterConf(){
     feature.popup = null;
   }
 
-  var roadLayers = [];
-  for(i=0; i<5; i++) {
-    roadLayers[i] = new OpenLayers.Layer.Vector(' ' + (1+i) + ' <img src="raster/auto.gif"/>', {
-          projection: new OpenLayers.Projection("EPSG:4326"),
-          maxResolution: map.getResolutionForZoom(10+i),
-          strategies: [new OpenLayers.Strategy.Fixed()],
-          protocol: new OpenLayers.Protocol.HTTP({
-              url: getXmlValue(confXml, 'dirvector')
-                    + getXmlValue(confXml, 'dirplaces')
-                    + areaDir 
-                    + getXmlValue(confXml, 'fileprefixroads') + i + ".kml",
-              format: new OpenLayers.Format.KML({
-                  extractAttributes: true,
-                  maxDepth: 0
-              })
-          }),
-        styleMap: new OpenLayers.StyleMap({
-          'default': new OpenLayers.Style({'strokeWidth': 3,'strokeColor': '#ff0000'}),
-          'select': new OpenLayers.Style({'strokeWidth': 5,'strokeColor': '#0000ff'})
-        })
-    });
-  }
-  map.addLayers(roadLayers);
-
   //Add a selector control to the kmllayer with popup functions
   var roadLayersCtl = new OpenLayers.Control.SelectFeature(roadLayers, { 
       onSelect: createPopup, 
@@ -210,21 +226,6 @@ function initAfterConf(){
   });
   map.addControl(roadLayersCtl);
   roadLayersCtl.activate();
-  
-    var selectorLayer = new OpenLayers.Layer.Vector(' ♁', {
-      projection: new OpenLayers.Projection("EPSG:4326"),
-      minResolution: map.getResolutionForZoom(mapMinZoom - 1),
-      strategies: [new OpenLayers.Strategy.Fixed()],
-      protocol: new OpenLayers.Protocol.HTTP({
-          url: getXmlValue(confXml, 'dirvector')
-                + getXmlValue(confXml, 'fileareaselector'),
-          format: new OpenLayers.Format.KML({
-              extractAttributes: true,
-              maxDepth: 2
-          })
-      })
-    });
-    map.addLayer(selectorLayer);
 
   var switcherControl = new OpenLayers.Control.LayerSwitcher();
   map.addControl(switcherControl);
