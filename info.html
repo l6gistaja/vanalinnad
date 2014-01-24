@@ -40,7 +40,7 @@ function init(){
   function rssHandler(request) {
     if(request.status == 200) {
       rssXml = request.responseXML;
-      y = getXmlValue(rssXml, 'title', 1) + '<br/>'
+      y = '<br/>' + getXmlValue(rssXml, 'title', 1) + '<br/>'
         + getXmlValue(rssXml, 'author');
       dateParts = getXmlValue(rssXml, 'pubDate').split(/\s+/);
       if(dateParts.length > 3) { y += ' ' + dateParts[3]; }
@@ -110,7 +110,7 @@ function init(){
 </script>
 </head>
 <body onload="init()">
-<div id="header"><a href="?">Vanalinnad</a></h1>
+<div id="header"><a href="?">Vanalinnad</a></div>
 <div id="content">
 <strong>&nbsp;Could not load local XML</strong>
 <ol>
