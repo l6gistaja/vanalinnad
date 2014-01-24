@@ -17,8 +17,8 @@ function init(){
   var confXml;
   var rssXml;
   var reqParams = OpenLayers.Util.getParameters();
-  if(!('site' in reqParams)) { reqParams['site'] = 'Tallinn'; }
-  if(!('year' in reqParams)) { reqParams['year'] = 'y'; }
+  if(!('site' in reqParams)) { reqParams['site'] = ''; }
+  if(!('year' in reqParams)) { reqParams['year'] = ''; }
   var siteLbl = ' &gt; <a href="?site=' + reqParams['site'] + '">' + reqParams['site'] + '</a>';
 
   function xmlHandlerConf(request) {
@@ -68,7 +68,7 @@ function init(){
 
   function layerHandler(request) {
     if(request.status == 200) {
-      layerXml = request.responseXML;y = 'ffffffffffffffff';
+      layerXml = request.responseXML;
       y = '<ul>';
       links = layerXml.getElementsByTagName('layer');
       for(i=0; i<links.length; i++) {
@@ -82,6 +82,25 @@ function init(){
       document.getElementById('content').innerHTML = y;
       document.getElementById('header').innerHTML += siteLbl;
     } else {
+      OpenLayers.Request.GET({ 
+           url: getXmlValue(confXml, 'dirvector')
+             + getXmlValue(confXml, 'fileareaselector'),
+           callback: selectorHandler
+      });
+    }
+  }
+
+  function selectorHandler(request) {
+    if(request.status == 200) {
+      selectorXml = request.responseXML;
+      y = '<ol>';
+      links = selectorXml.getElementsByTagName('name');
+      for(i=0; i<links.length; i++) {
+         y += '<li><a href="?site=' + links[i].childNodes[0].nodeValue 
+           + '">' + links[i].childNodes[0].nodeValue + '</a></li>';
+      }
+      y += '</ol>';
+      document.getElementById('content').innerHTML = y;
     }
   }
 
@@ -91,9 +110,9 @@ function init(){
 </script>
 </head>
 <body onload="init()">
-<div id="header"><a href="?">vanalinnad</a></div>
-<br/>
-<div id="content"><strong>&nbsp;Could not load local XML</strong>
+<div id="header"><a href="?">Vanalinnad</a></h1>
+<div id="content">
+<strong>&nbsp;Could not load local XML</strong>
 <ol>
 <li>Your browser should support JavaScript and <a href="http://enable-javascript.com/" target="_blank">JavaScript should be enabled</a></li>
 <li>If you are using Opera, allow <a href="opera:config#UserPrefs|AllowFileXMLHttpRequest" target="_blank">opera:config#UserPrefs|AllowFileXMLHttpRequest</a></li>
