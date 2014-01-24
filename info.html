@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml>"
+  <head>
+    <title>Vanalinnad</title>
+    <meta http-equiv='imagetoolbar' content='no'/>
+    <style type="text/css"></style>
+    <script src="lib/OpenLayers-2.13.1/OpenLayers.js"></script>
+    <script type="text/javascript">
+
+function getXmlValue(xmlDocument, tagname) {
+  index = (arguments.length > 2 ) ? arguments[2] : 0 ;
+  return xmlDocument.getElementsByTagName(tagname)[index].childNodes[0].nodeValue;
+}
+
+function init(){
+
+  var confXml;
+  var rssXml;
+  var reqParams = OpenLayers.Util.getParameters();
+  if(!('site' in reqParams)) { reqParams['site'] = 'Tallinn'; }
+  if(!('year' in reqParams)) { reqParams['year'] = 'y'; }
+  var siteLbl = ' &gt; <a href="?site=' + reqParams['site'] + '">' + reqParams['site'] + '</a>';
+
+  function xmlHandlerConf(request) {
+    if(request.status == 200) {
+      if(!('year' in reqParams)) { reqParams['year'] = ''; }
+      confXml = request.responseXML;
+      OpenLayers.Request.GET({ 
+           url: getXmlValue(confXml, 'dirvector')
+             + getXmlValue(confXml, 'dirplaces')
+             + reqParams['site']
+             + '/'
+             + reqParams['year']
+             + '/rss.xml',
+           callback: rssHandler
+      });
+    }
+  }
+
+  function rssHandler(request) {
+    if(request.status == 200) {
+      rssXml = request.responseXML;
+      y = getXmlValue(rssXml, 'title', 1) + '<br/>'
+        + getXmlValue(rssXml, 'author');
+      dateParts = getXmlValue(rssXml, 'pubDate').split(/\s+/);
+      if(dateParts.length > 3) { y += ' ' + dateParts[3]; }
+      y += '<ul>';
+      links = rssXml.getElementsByTagName('link');
+      for(i=0; i<links.length; i++) {
+         y += '<li><a href="' 
+           + links[i].childNodes[0].nodeValue + '">'
+           + links[i].childNodes[0].nodeValue + '</a></li>';
+      }
+      y += '</ul>';
+      document.getElementById('content').innerHTML = y;
+      document.getElementById('header').innerHTML += siteLbl + ' &gt; ' + reqParams['year'];
+    } else {
+      OpenLayers.Request.GET({ 
+           url: getXmlValue(confXml, 'dirvector')
+             + getXmlValue(confXml, 'dirplaces')
+             + reqParams['site']
+             + '/'
+             + getXmlValue(confXml, 'filelayers'),
+           callback: layerHandler
+      });
+    }
+  }
+
+  function layerHandler(request) {
+    if(request.status == 200) {
+      layerXml = request.responseXML;y = 'ffffffffffffffff';
+      y = '<ul>';
+      links = layerXml.getElementsByTagName('layer');
+      for(i=0; i<links.length; i++) {
+         if(links[i].getAttribute('type') != 'tms'){ continue; }
+         y += '<li><a href="?site=' 
+           + reqParams['site'] + '&year='
+           + links[i].getAttribute('year') + '">'
+           + links[i].getAttribute('year') + '</a></li>';
+      }
+      y += '</ul>';
+      document.getElementById('content').innerHTML = y;
+      document.getElementById('header').innerHTML += siteLbl;
+    } else {
+    }
+  }
+
+  OpenLayers.Request.GET({ url: "conf.xml", callback: xmlHandlerConf });
+}
+
+</script>
+</head>
+<body onload="init()">
+<div id="header"><a href="?">vanalinnad</a></div>
+<br/>
+<div id="content"><strong>&nbsp;Could not load local XML</strong>
+<ol>
+<li>Your browser should support JavaScript and <a href="http://enable-javascript.com/" target="_blank">JavaScript should be enabled</a></li>
+<li>If you are using Opera, allow <a href="opera:config#UserPrefs|AllowFileXMLHttpRequest" target="_blank">opera:config#UserPrefs|AllowFileXMLHttpRequest</a></li>
+<li>If you are using Firefox, set security.fileuri.strict_origin_policy to false at <a href="about:config" target="_blank">about:config</a></li>
+</ol>
+</div>
+</body>
+</html>

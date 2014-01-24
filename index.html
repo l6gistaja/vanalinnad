@@ -4,36 +4,37 @@
     <title>Vanalinnad</title>
     <meta http-equiv='imagetoolbar' content='no'/>
     <style type="text/css">
+
         html, body, #map {
             margin: 0;
             width: 100%;
             height: 100%;
         }
+
         .olControlLayerSwitcher .layersDiv {
-                        opacity:0.85;
-                        filter: alpha(opacity = 85);
-                        background-color: #D5D5D5;
-                        -moz-border-radius: 15px 0px 0px 15px;
-                        border-radius: 15px 0px 0px 15px;
-                        width: 100px;
-                        float: right;
+          opacity:0.85;
+          filter: alpha(opacity = 85);
+          -moz-border-radius: 15px 0px 0px 15px;
+          border-radius: 15px 0px 0px 15px;
+          width: 100px;
+          float: right;
         }
 
         .olControlLayerSwitcher {
-                        color:#666666;
-                        -moz-border-radius: 15px 0px 0px 15px;
-                        border-radius: 15px 0px 0px 15px;
-                        width:15em;
+          -moz-border-radius: 15px 0px 0px 15px;
+          border-radius: 15px 0px 0px 15px;
+          width:15em;
         }
         
         .olControlBtnHiLiteItemActive {  
-    position:fixed;
-top:5px;
-right:5px;
-    height: 18px;
-    width : 18px;
-    background: url('http://s11.postimg.org/s3u0s4pjj/marker.png') no-repeat center;
-}
+          position:fixed;
+          top:6px;
+          right:2px;
+          height: 16px;
+          width : 16px;
+          background: url('raster/information.png') no-repeat center;
+        }
+
     </style>
     <script src="lib/OpenLayers-2.13.1/OpenLayers.js"></script>
     <script type="text/javascript">
@@ -255,16 +256,19 @@ function initAfterConf(){
   map.addControl(new OpenLayers.Control.Permalink());
   //for(i in map.controls){ if(map.controls[i].CLASS_NAME == 'OpenLayers.Control.Zoom') { map.controls[i].deactivate(); } }
   
-    function rotate_image() { var win=window.open('vector/places/'+areaID+'/'+map.baseLayer.layername.substr(4)+'/rss.xml', '_blank'); win.focus(); }
-    var btnHiLite = new OpenLayers.Control.Button({
-        displayClass: 'olControlBtnHiLite',
-        title: "Info",
-        id: 'btnHiLite',
-        trigger: rotate_image,
-		});   
-    var panel = new OpenLayers.Control.Panel({defaultControl: btnHiLite});
-    panel.addControls([btnHiLite]);
-    map.addControl(panel);
+  function openInfoPage() {
+    var win=window.open('info.html?site='+areaID+'&year='+map.baseLayer.layername.substr(4), '_blank'); 
+    win.focus();
+  }
+  var btnHiLite = new OpenLayers.Control.Button({
+    displayClass: 'olControlBtnHiLite',
+    title: "Info",
+    id: 'btnHiLite',
+    trigger: openInfoPage
+  });
+  var panel = new OpenLayers.Control.Panel({defaultControl: btnHiLite});
+  panel.addControls([btnHiLite]);
+  map.addControl(panel);
     
 }
 
@@ -276,6 +280,7 @@ function initAfterConf(){
 <ol>
 <li>Your browser should support JavaScript and <a href="http://enable-javascript.com/" target="_blank">JavaScript should be enabled</a></li>
 <li>If you are using Opera, allow <a href="opera:config#UserPrefs|AllowFileXMLHttpRequest" target="_blank">opera:config#UserPrefs|AllowFileXMLHttpRequest</a></li>
+<li>If you are using Firefox, set security.fileuri.strict_origin_policy to false at <a href="about:config" target="_blank">about:config</a></li>
 </ol> 
 <script type="text/javascript">
 document.writeln('<strong>&nbsp;Your browser is:</strong> ' + navigator.userAgent);
