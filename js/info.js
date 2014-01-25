@@ -45,6 +45,7 @@ function vlInitInfo(){
         + getXmlValue(rssXml, 'author');
       dateParts = getXmlValue(rssXml, 'pubDate').split(/\s+/);
       if(dateParts.length > 3) { y += ' ' + dateParts[3]; }
+      y += '<br/>' + getXmlValue(rssXml, 'description');
       y += '<ol>';
       links = rssXml.getElementsByTagName('link');
       for(i=0; i<links.length; i++) {
