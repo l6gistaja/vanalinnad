@@ -45,14 +45,14 @@ function vlInitInfo(){
         + getXmlValue(rssXml, 'author');
       dateParts = getXmlValue(rssXml, 'pubDate').split(/\s+/);
       if(dateParts.length > 3) { y += ' ' + dateParts[3]; }
-      y += '<ul>';
+      y += '<ol>';
       links = rssXml.getElementsByTagName('link');
       for(i=0; i<links.length; i++) {
          y += '<li><a href="' 
            + links[i].childNodes[0].nodeValue + '">'
            + links[i].childNodes[0].nodeValue + '</a></li>';
       }
-      y += '</ul>';
+      y += '</ol>';
       document.getElementById('content').innerHTML = y;
       document.getElementById('header').innerHTML += siteLbl + ' &gt; ' + reqParams['year'];
     } else {
