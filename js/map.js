@@ -213,9 +213,9 @@ function vlInitMapAfterConf(){
         break;
     }
   }
-  map.addControl(new OpenLayers.Control.Permalink());
+  map.addControl(new OpenLayers.Control.Permalink({base: 'index.html?site=Tallinn&'}));
   //for(i in map.controls){ if(map.controls[i].CLASS_NAME == 'OpenLayers.Control.Zoom') { map.controls[i].deactivate(); } }
-  
+
   function openInfoPage() {
     var year = map.baseLayer.layername.substr(4);
     if(year.match(/^\d+$/)) {
