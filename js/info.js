@@ -6,12 +6,14 @@ function vlInitInfo(){
   if(!('site' in reqParams)) { reqParams['site'] = ''; }
   if(!('year' in reqParams)) { reqParams['year'] = ''; }
   var siteLbl = ' &gt; <a href="?site=' + reqParams['site'] + '">' + reqParams['site'] + '</a>';
+  var requestConf = {};
 
   function xmlHandlerConf(request) {
     if(request.status == 200) {
       if(!('year' in reqParams)) { reqParams['year'] = ''; }
       confXml = request.responseXML;
-      OpenLayers.Request.GET({ 
+      requestConf = {
+        year: {
            url: getXmlValue(confXml, 'dirvector')
              + getXmlValue(confXml, 'dirplaces')
              + reqParams['site']
@@ -19,7 +21,25 @@ function vlInitInfo(){
              + reqParams['year']
              + '.xml',
            callback: rssHandler
-      });
+        },
+        site: {
+           url: getXmlValue(confXml, 'dirvector')
+             + getXmlValue(confXml, 'dirplaces')
+             + reqParams['site']
+             + '/'
+             + getXmlValue(confXml, 'filelayers'),
+           callback: layerHandler
+        },
+	selector: {
+           url: getXmlValue(confXml, 'dirvector')
+             + getXmlValue(confXml, 'fileareaselector'),
+           callback: selectorHandler
+      	}
+      };
+      if(reqParams['site'].match(/\S/)) {
+	key = reqParams['year'].match(new RegExp(getXmlValue(confXml, 'regexyearmatcher'))) ? 'year' : 'site';
+      } else { key = 'selector'; }
+      OpenLayers.Request.GET(requestConf[key]);
     }
   }
 
@@ -41,11 +61,20 @@ function vlInitInfo(){
              + '"/>';
         }
       }
-      y += '<br/>' + getXmlValue(rssXml, 'title', 1) + '<br/>'
-        + getXmlValue(rssXml, 'author');
-      dateParts = getXmlValue(rssXml, 'pubDate').split(/\s+/);
-      if(dateParts.length > 3) { y += ' ' + dateParts[3]; }
-      y += '<br/>' + getXmlValue(rssXml, 'description');
+      itemFields = [
+	{tag:'title', no:1},
+	{tag:'author'},
+	{tag:'description'},
+	{tag:'guid'}
+      ]; 
+      for(i in itemFields) {
+        tmp = getXmlValue(rssXml, itemFields[i].tag, 'no' in itemFields[i] ? itemFields[i].no : 0);
+	if(itemFields[i].tag == 'author') {
+          dateParts = getXmlValue(rssXml, 'pubDate').split(/\s+/);
+          if(dateParts.length > 3) { tmp += ' ' + dateParts[3]; }
+        }
+	if(tmp != '') { y += '<br/>' + tmp; }
+      }
       y += '<ol>';
       links = rssXml.getElementsByTagName('link');
       for(i=0; i<links.length; i++) {
@@ -57,14 +86,7 @@ function vlInitInfo(){
       document.getElementById('content').innerHTML = y;
       document.getElementById('header').innerHTML += siteLbl + ' &gt; ' + reqParams['year'];
     } else {
-      OpenLayers.Request.GET({ 
-           url: getXmlValue(confXml, 'dirvector')
-             + getXmlValue(confXml, 'dirplaces')
-             + reqParams['site']
-             + '/'
-             + getXmlValue(confXml, 'filelayers'),
-           callback: layerHandler
-      });
+      OpenLayers.Request.GET(requestConf['site']);
     }
   }
 
@@ -84,11 +106,7 @@ function vlInitInfo(){
       document.getElementById('content').innerHTML = y;
       document.getElementById('header').innerHTML += siteLbl;
     } else {
-      OpenLayers.Request.GET({ 
-           url: getXmlValue(confXml, 'dirvector')
-             + getXmlValue(confXml, 'fileareaselector'),
-           callback: selectorHandler
-      });
+      OpenLayers.Request.GET(requestConf['selector']);
     }
   }
 
@@ -101,7 +119,7 @@ function vlInitInfo(){
          y += '<li><a href="?site=' + links[i].childNodes[0].nodeValue 
            + '">' + links[i].childNodes[0].nodeValue + '</a></li>';
       }
-      y += '</ol>';
+      y += '</ol><a target="_blank" href="README.md">README</a>';
       document.getElementById('content').innerHTML = y;
     }
   }

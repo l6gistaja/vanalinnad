@@ -13,10 +13,6 @@ var mapMaxZoom;
 var confXml;
 var layersXml;
 
-function getXmlValue(xmlDocument, tagname) {
-  return xmlDocument.getElementsByTagName(tagname)[0].childNodes[0].nodeValue;
-}
-
 function vlInitMap(){
 
   function xmlHandlerConf(request) {
@@ -215,13 +211,10 @@ function vlInitMapAfterConf(){
   }
   map.addControl(new OpenLayers.Control.Permalink({base: 'index.html?site=Tallinn&'}));
   //for(i in map.controls){ if(map.controls[i].CLASS_NAME == 'OpenLayers.Control.Zoom') { map.controls[i].deactivate(); } }
-
   function openInfoPage() {
     var year = map.baseLayer.layername.substr(4);
-    if(year.match(/^\d+$/)) {
-      var win=window.open('info.html?site='+areaID+'&year='+year, '_blank'); 
-      win.focus();
-    }
+    var win=window.open('info.html?site='+areaID+(year.match(new RegExp(getXmlValue(confXml, 'regexyearmatcher'))) ? '&year='+year : ''), '_blank'); 
+    win.focus();
   }
   var btnHiLite = new OpenLayers.Control.Button({
     displayClass: 'olControlBtnHiLite',

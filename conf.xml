@@ -9,4 +9,5 @@
 <filelayers>layers.xml</filelayers>
 <fileprefixroads>roads</fileprefixroads>
 <filetransparent>none.png</filetransparent>
+<regexyearmatcher>^\d+$</regexyearmatcher>
 </vanalinnadconf>
