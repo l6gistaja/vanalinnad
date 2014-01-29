@@ -1,6 +1,11 @@
 vanalinnad
 ==========
 
+Historical maps of Tallinn under grid of today's street network.
+
+Author: juks ät alkohol ee
+License: [BSD 3-Clause License](http://www.opensource.org/licenses/BSD-3-Clause)
+
 Adding new historical map to application
 ----------------------------------------
 
