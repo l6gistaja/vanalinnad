@@ -1,0 +1,3 @@
+gdal_translate ~/histmaps/places/Tallinn/1842whited.jpg  ~/histmaps/places/Tallinn/1842georef.png -of PNG -gcp 918 139 24.76051158398355 59.440046772233764 -gcp 217 1732 24.743678040206085 59.43464046905853 -gcp 55 683 24.748978085219512 59.440239059237264
+
+# St. Simeon k; Harjuv2rav; V Rannav2rav S-nurk

@@ -7,6 +7,7 @@
 <layer type="tms" year="1968" bounds="24.5937518727,59.3345071415,24.9786834807,59.5427805619"/>
 <layer type="tms" year="1957" bounds="24.6651536414,59.3932688183,24.8575659835,59.4740931126"/>
 <layer type="tms" year="1940" bounds="24.6425681369,59.3993281973,24.8455300763,59.4774077806"/>
+<layer type="tms" year="1939" bounds="24.6669621557,59.394653741,24.8581524295,59.4671244346"/>
 <layer type="tms" year="1932" bounds="24.6452958646,59.3704497821,24.8752444047,59.4895808627"/>
 <layer type="tms" year="1930" bounds="24.6786551594,59.3999969131,24.8145078854,59.4593356488"/>
 <layer type="tms" year="1924" bounds="24.7262940981,59.3994354215,24.9272619589,59.5002292557"/>
@@ -16,9 +17,10 @@
 <layer type="tms" year="1885" bounds="24.7093546653,59.4123398996,24.8093775608,59.4548343182"/>
 <layer type="tms" year="1865" bounds="24.6007759348,59.3821404792,24.8798753511,59.4837665869"/>
 <layer type="tms" year="1856" bounds="24.7021958556,59.4145469228,24.8082866785,59.4547083273"/>
+<layer type="tms" year="1842" bounds="24.7394666007,59.4287103617,24.7670907504,59.4437192759"/>
 <layer type="tms" year="1792" bounds="24.71667519,59.4290759279,24.7868321096,59.4534588509" disabled="1"/>
 <layer type="tms" year="1688" bounds="24.6376731231,59.4057011587,24.8392756793,59.4713435567"/>
-<!-- 1865,1688 -->
+<!-- 1744,1793,1842,1939 -->
 <layer type="roads" name=" 1 &lt;img src='raster/auto.gif'/&gt;" file="roads0.kml" maxres="10"/>
 <layer type="roads" name=" 2 &lt;img src='raster/auto.gif'/&gt;" file="roads1.kml" maxres="11"/>
 <layer type="roads" name=" 3 &lt;img src='raster/auto.gif'/&gt;" file="roads2.kml" maxres="12"/>

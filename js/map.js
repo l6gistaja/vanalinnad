@@ -2,9 +2,9 @@
 // avoid pink tiles
 OpenLayers.IMAGE_RELOAD_ATTEMPTS = 3;
 OpenLayers.Util.onImageLoadErrorColor = "transparent";
-var areaID = 'Tallinn';
-var areaDir = areaID + '/';
 
+var areaID;
+var areaDir;
 var baseLayersData = {};
 var map;
 var mapBounds;
@@ -39,6 +39,8 @@ function vlInitMap(){
         boundBox[2],
         boundBox[3]
       );
+      areaID = getXmlValue(layersXml, 'defaultsite');
+      areaDir = areaID + '/';
       vlInitMapAfterConf();
   }
   OpenLayers.Request.GET({ url: "conf.xml", callback: xmlHandlerConf });
