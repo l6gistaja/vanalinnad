@@ -3,7 +3,6 @@
 OpenLayers.IMAGE_RELOAD_ATTEMPTS = 3;
 OpenLayers.Util.onImageLoadErrorColor = "transparent";
 
-var areaID;
 var areaDir;
 var baseLayersData = {};
 var map;
@@ -12,6 +11,7 @@ var mapMinZoom;
 var mapMaxZoom;
 var confXml;
 var layersXml;
+var reqParams;
 
 function vlInitMap(){
 
@@ -19,6 +19,9 @@ function vlInitMap(){
     if(request.status == 200) {
       document.getElementById('map').innerHTML = '';
       confXml = request.responseXML;
+      //TODO: change when multiple sites will appear in future 
+      reqParams['site'] = getXmlValue(confXml, 'defaultsite');
+      areaDir = reqParams['site'] + '/';
       OpenLayers.Request.GET({ 
           url: getXmlValue(confXml, 'dirvector')
             + getXmlValue(confXml, 'dirplaces')
@@ -39,10 +42,9 @@ function vlInitMap(){
         boundBox[2],
         boundBox[3]
       );
-      areaID = getXmlValue(layersXml, 'defaultsite');
-      areaDir = areaID + '/';
       vlInitMapAfterConf();
   }
+  reqParams = OpenLayers.Util.getParameters();
   OpenLayers.Request.GET({ url: "conf.xml", callback: xmlHandlerConf });
 
 }
@@ -204,18 +206,25 @@ function vlInitMapAfterConf(){
   map.addControl(new OpenLayers.Control.PanZoomBar());
   map.addControl(new OpenLayers.Control.MousePosition());
   map.addControl(new OpenLayers.Control.KeyboardDefaults());
-  permalinkReqKeys = ['zoom=','lat=','lon=','layers='];
+
+  permalinkReqKeys = ['zoom','lat','lon','layers'];
   for(reqKey in permalinkReqKeys) { 
-    if(location.search.indexOf(permalinkReqKeys[reqKey]) < 0) {
+    if(!(permalinkReqKeys[reqKey] in reqParams)) {
         map.zoomToExtent(mapBounds.transform(map.displayProjection, map.projection));
         break;
     }
   }
-  map.addControl(new OpenLayers.Control.Permalink({base: 'index.html?site=Tallinn&'}));
+  baseurl = '';
+  for(reqKey in reqParams) { 
+    if(!(reqKey in permalinkReqKeys)) {
+      baseurl += (baseurl == '' ? '?' : '&') + reqKey + '=' + reqParams[reqKey];
+    }
+  }
+  map.addControl(new OpenLayers.Control.Permalink({base: baseurl}));
   //for(i in map.controls){ if(map.controls[i].CLASS_NAME == 'OpenLayers.Control.Zoom') { map.controls[i].deactivate(); } }
   function openInfoPage() {
     var year = map.baseLayer.layername.substr(4);
-    var win=window.open('info.html?site='+areaID+(year.match(new RegExp(getXmlValue(confXml, 'regexyearmatcher'))) ? '&year='+year : ''), '_blank'); 
+    var win=window.open('info.html?site=' + reqParams['site'] + (year.match(new RegExp(getXmlValue(confXml, 'regexyearmatcher'))) ? '&year=' + year : ''), '_blank'); 
     win.focus();
   }
   var btnHiLite = new OpenLayers.Control.Button({
