@@ -171,8 +171,8 @@ function vlInitMapAfterConf(){
   map.addLayers(tmsoverlays);
   map.addLayers(roadLayers);
 
-  function createPopup(feature) {
-    feature.popup = new OpenLayers.Popup.Anchored("streetPopup",
+  function createRoadPopup(feature) {
+    feature.popup = new OpenLayers.Popup.Anchored("roadPopup",
         map.getCenter(),
         null,
         feature.attributes.name,
@@ -185,6 +185,20 @@ function vlInitMapAfterConf(){
     map.addPopup(feature.popup);
   }
 
+  function createPoiPopup(feature) {
+    feature.popup = new OpenLayers.Popup.FramedCloud("poiPopup",
+        feature.geometry.getBounds().getCenterLonLat(),
+        null,
+        '<a href="?site=' + feature.attributes.name + '">' + feature.attributes.name + '</a>',
+        null,
+        true,
+        function() { poiLayersCtl.unselectAll(); }
+    );
+    feature.popup.autoSize = true;
+    feature.popup.setBorder('solid 2px black');
+    map.addPopup(feature.popup);
+  }
+
   function destroyPopup(feature) {
     feature.popup.destroy();
     feature.popup = null;
@@ -192,11 +206,18 @@ function vlInitMapAfterConf(){
 
   //Add a selector control to the kmllayer with popup functions
   var roadLayersCtl = new OpenLayers.Control.SelectFeature(roadLayers, { 
-      onSelect: createPopup, 
+      onSelect: createRoadPopup, 
       onUnselect: destroyPopup,
   });
   map.addControl(roadLayersCtl);
   roadLayersCtl.activate();
+  
+  var poiLayersCtl = new OpenLayers.Control.SelectFeature(selectorLayer, { 
+      onSelect: createPoiPopup, 
+      onUnselect: destroyPopup,
+  });
+  map.addControl(poiLayersCtl);
+  poiLayersCtl.activate();
   
   var switcherControl = new OpenLayers.Control.LayerSwitcher();
   map.addControl(switcherControl);
