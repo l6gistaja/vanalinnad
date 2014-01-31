@@ -5,3 +5,7 @@ gdal_translate ~/histmaps/places/Tallinn/1842whited.jpg  ~/histmaps/places/Talli
 gdal_translate ~/histmaps/places/Tallinn/1842whited.jpg  ~/histmaps/places/Tallinn/1842georef.png -of PNG -gcp 918 139 24.76051158398355 59.440046772233764 -gcp 1280 1948 24.752615160643707 59.43013705741204 -gcp 55 683 24.748978085219512 59.440239059237264
 
 # St. Simeon k; Kentmanni - Kentmanni p6ik; V Rannav2rav S-nurk
+
+gdal_translate ~/histmaps/places/Tallinn/1842whited.jpg  ~/histmaps/places/Tallinn/1842georef.png -of PNG -gcp 918 139 24.76051158398355 59.440046772233764 -gcp 1280 1948 24.752615160643707 59.43013705741204 -gcp 53 1838 24.74128148645128 59.43471616872035
+
+# St. Simeon k; Kentmanni - Kentmanni p6ik; Kiek in die Kok

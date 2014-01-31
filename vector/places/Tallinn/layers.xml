@@ -17,10 +17,10 @@
 <layer type="tms" year="1885" bounds="24.7093546653,59.4123398996,24.8093775608,59.4548343182"/>
 <layer type="tms" year="1865" bounds="24.6007759348,59.3821404792,24.8798753511,59.4837665869"/>
 <layer type="tms" year="1856" bounds="24.7021958556,59.4145469228,24.8082866785,59.4547083273"/>
-<layer type="tms" year="1842" bounds="24.7394666007,59.4287103617,24.7670907504,59.4437192759"/>
+<layer type="tms" year="1842" bounds="24.7392876818,59.4287170025,24.7673941402,59.4437458767"/>
 <layer type="tms" year="1792" bounds="24.71667519,59.4290759279,24.7868321096,59.4534588509" disabled="1"/>
 <layer type="tms" year="1688" bounds="24.6376731231,59.4057011587,24.8392756793,59.4713435567"/>
-<!-- 1744,1793,1842,1939 -->
+<!-- 1744,1793 -->
 <layer type="roads" name=" 1 &lt;img src='raster/auto.gif'/&gt;" file="roads0.kml" maxres="10"/>
 <layer type="roads" name=" 2 &lt;img src='raster/auto.gif'/&gt;" file="roads1.kml" maxres="11"/>
 <layer type="roads" name=" 3 &lt;img src='raster/auto.gif'/&gt;" file="roads2.kml" maxres="12"/>
