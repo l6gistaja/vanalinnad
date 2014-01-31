@@ -121,7 +121,8 @@ function vlInitMapAfterConf(){
             extractAttributes: true,
             maxDepth: 0
         })
-    })
+    }),
+    styleMap: mergeCustomStyleWithDefaults(vlLayerStyles['POIs'])
   });
   map.addLayer(selectorLayer);
 
@@ -163,10 +164,7 @@ function vlInitMapAfterConf(){
                     maxDepth: 0
                 })
             }),
-          styleMap: new OpenLayers.StyleMap({
-            'default': new OpenLayers.Style({'strokeWidth': 3,'strokeColor': '#ff0000'}),
-            'select': new OpenLayers.Style({'strokeWidth': 5,'strokeColor': '#0000ff'})
-          })
+          styleMap: mergeCustomStyleWithDefaults(vlLayerStyles['roads'])
       });
     }
   }

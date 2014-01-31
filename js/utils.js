@@ -3,3 +3,24 @@ function getXmlValue(xmlDocument, tagname) {
   tags = xmlDocument.getElementsByTagName(tagname);
   return index < tags.length && tags[index].childNodes.length > 0 ? tags[index].childNodes[0].nodeValue : '';
 }
+
+/**
+  * Merge custom StyleMap-like hash with default styles
+  *
+  * Example: to make points in Layer's (default style)
+  * red, add following to constructor's options hash:
+  * styleMap: mergeCustomStyleWithDefaults({default: {fillColor: "red"}})
+  *
+  * @param {hash} customStyle
+  * @returns OpenLayers.StyleMap
+  */
+function mergeCustomStyleWithDefaults(customStyle) {
+    styleMap = {};
+    for(styleKey in OpenLayers.Feature.Vector.style) {
+        styleMap[styleKey] = OpenLayers.Util.applyDefaults(
+            styleKey in customStyle ? customStyle[styleKey] : {},
+            OpenLayers.Feature.Vector.style[styleKey]
+        );
+    }
+    return new OpenLayers.StyleMap(styleMap);
+}
