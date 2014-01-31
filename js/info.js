@@ -119,7 +119,7 @@ function vlInitInfo(){
          y += '<li><a href="?site=' + links[i].childNodes[0].nodeValue 
            + '">' + links[i].childNodes[0].nodeValue + '</a></li>';
       }
-      y += '</ol><a target="_blank" href="README.md">README</a>';
+      y += '</ol><a href="index.html">Maps</a> | <a target="_blank" href="README.md">Readme</a> | <a href="https://github.com/l6gistaja/vanalinnad">GitHub</a>';
       document.getElementById('content').innerHTML = y;
     }
   }
