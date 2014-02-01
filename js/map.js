@@ -190,19 +190,14 @@ function vlInitMapAfterConf(){
   }
 
   function createPoiPopup(feature) {
-
-    
-    
-    
-    
     feature.popup = new OpenLayers.Popup.FramedCloud(
         "poiPopup",
         feature.geometry.getBounds().getCenterLonLat(),
         null,
         '<a href="?site=' + feature.attributes.name + '">' + feature.attributes.name + '</a>',
         null,
-        true//,
-        //function() { poiLayersCtl.unselectAll(); }
+        true,
+        function() { poiLayersCtl.unselectAll(); }
     );
     feature.popup.autoSize = true;
     feature.popup.setBorder('solid 2px black');
