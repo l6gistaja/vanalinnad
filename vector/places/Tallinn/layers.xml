@@ -19,11 +19,11 @@
 <layer type="tms" year="1856" bounds="24.7021958556,59.4145469228,24.8082866785,59.4547083273"/>
 <layer type="tms" year="1842" bounds="24.7392876818,59.4287170025,24.7673941402,59.4437458767"/>
 <layer type="tms" year="1792" bounds="24.71667519,59.4290759279,24.7868321096,59.4534588509" disabled="1"/>
-<layer type="tms" year="1688" bounds="24.6376731231,59.4057011587,24.8392756793,59.4713435567"/>
+<layer type="tms" year="1688" bounds="24.6415649813,59.4071141243,24.8405194984,59.471981766"/>
 <!-- 1744,1793 -->
-<layer type="roads" name=" 1 &lt;img src='raster/auto.gif'/&gt;" file="roads0.kml" maxres="10"/>
-<layer type="roads" name=" 2 &lt;img src='raster/auto.gif'/&gt;" file="roads1.kml" maxres="11"/>
-<layer type="roads" name=" 3 &lt;img src='raster/auto.gif'/&gt;" file="roads2.kml" maxres="12"/>
-<layer type="roads" name=" 4 &lt;img src='raster/auto.gif'/&gt;" file="roads3.kml" maxres="13"/>
-<layer type="roads" name=" 5 &lt;img src='raster/auto.gif'/&gt;" file="roads4.kml" maxres="14"/>
+<layer type="roads" name=" A &lt;img src='raster/auto.gif'/&gt;" file="roads0.kml" maxres="10"/>
+<layer type="roads" name=" B &lt;img src='raster/auto.gif'/&gt;" file="roads1.kml" maxres="11"/>
+<layer type="roads" name=" C &lt;img src='raster/auto.gif'/&gt;" file="roads2.kml" maxres="12"/>
+<layer type="roads" name=" D &lt;img src='raster/auto.gif'/&gt;" file="roads3.kml" maxres="13"/>
+<layer type="roads" name=" E &lt;img src='raster/auto.gif'/&gt;" file="roads4.kml" maxres="14"/>
 </vanalinnadlayers>

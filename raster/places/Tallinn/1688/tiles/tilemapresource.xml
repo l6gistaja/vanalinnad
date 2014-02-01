@@ -3,8 +3,8 @@
 	  <Title>1688georef.png</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="59.40765506858717" miny="24.64002202668041" maxx="59.47133768655055" maxy="24.83925852029161"/>
-	  <Origin x="59.40765506858717" y="24.64002202668041"/>
+	  <BoundingBox minx="59.40711412434634" miny="24.64156498126216" maxx="59.47198176596394" maxy="24.84051949837835"/>
+	  <Origin x="59.40711412434634" y="24.64156498126216"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="10" units-per-pixel="152.87405654296876" order="10"/>

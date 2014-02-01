@@ -2,7 +2,19 @@ gdal_translate ~/histmaps/places/Tallinn/1688whited.jpg  ~/histmaps/places/Talli
 
 # Paldiski mnt - Mustj6gi; Vana Tartu mnt - Ylemiste kanal; Pirita klooster
 
-
 gdal_translate ~/histmaps/places/Tallinn/1688whited.jpg  ~/histmaps/places/Tallinn/1688georef.png -of PNG -gcp 2928 3357 24.705263442694793 59.42928173023693 -gcp 7572 4927 24.80036116331781 59.412124923859196 -gcp 8821 420 24.835508830248962 59.466283161249564
 
 # Paldiski mnt - Endla; Vana Tartu mnt - Ylemiste kanal; Pirita klooster
+
+gdal_translate ~/histmaps/places/Tallinn/1688whited.jpg  ~/histmaps/places/Tallinn/1688georef.png -of PNG -gcp 2928 3357 24.705263442694793 59.42928173023693 -gcp 7572 4927 24.80036116331781 59.412124923859196 -gcp 8821 420 24.835508830248962 59.466283161249564 -gcp 5800 2734 24.76467705458368 59.43740919338658
+
+# Paldiski mnt - Endla; Vana Tartu mnt - Ylemiste kanal; Pirita klooster; Tartu mnt - Pronksi
+
+
+gdal_translate ~/histmaps/places/Tallinn/1688whited.jpg  ~/histmaps/places/Tallinn/1688georef.png -of PNG -gcp 2928 3357 24.705263442694793 59.42928173023693 -gcp 7572 4927 24.80036116331781 59.412124923859196 -gcp 8821 420 24.835508830248962 59.466283161249564 -gcp 5800 2734 24.76467705458368 59.43740919338658  -gcp 5128 2257 24.74957018285955 59.44256550899305 -gcp 4498 2886 24.736936978399406 59.43514376633951 -gcp 1718 3256 
+
+# Paldiski mnt - Endla; Vana Tartu mnt - Ylemiste kanal; Pirita klooster; Tartu mnt - Pronksi; Paks Margareeta; Pikk Hermann 
+
+gdal_translate ~/histmaps/places/Tallinn/1688whited.jpg  ~/histmaps/places/Tallinn/1688georef.png -of PNG -gcp 2928 3357 24.705263442694793 59.42928173023693 -gcp 7572 4927 24.80036116331781 59.412124923859196 -gcp 8821 420 24.835508830248962 59.466283161249564 -gcp 5800 2734 24.76467705458368 59.43740919338658  -gcp 5128 2257 24.74957018285955 59.44256550899305 -gcp 4498 2886 24.736936978399406 59.43514376633951 -gcp 2850 1266 24.703491173088203 59.45345651126197 -gcp 5232 4323 24.751701197921882 59.418747975146616 -gcp 1718 3257 24.677798292934547 59.42848845294184
+
+# Paldiski mnt - Endla; Vana Tartu mnt - Ylemiste kanal; Pirita klooster; Tartu mnt - Pronksi; Paks Margareeta; Pikk Hermann; Kopli - Sitsi; Veerenni - Tehnika; Paldiski mnt - Mustj6gi

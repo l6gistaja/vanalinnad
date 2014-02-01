@@ -240,7 +240,6 @@ function vlInitMapAfterConf(){
     }
   }
   map.addControl(new OpenLayers.Control.Permalink({base: baseurl}));
-  //for(i in map.controls){ if(map.controls[i].CLASS_NAME == 'OpenLayers.Control.Zoom') { map.controls[i].deactivate(); } }
   function openInfoPage() {
     var year = map.baseLayer.layername.substr(4);
     var win=window.open('info.html?site=' + reqParams['site'] + (year.match(new RegExp(getXmlValue(confXml, 'regexyearmatcher'))) ? '&year=' + year : ''), '_blank'); 
@@ -255,5 +254,13 @@ function vlInitMapAfterConf(){
   var panel = new OpenLayers.Control.Panel({defaultControl: btnHiLite});
   panel.addControls([btnHiLite]);
   map.addControl(panel);
-    
+  
+  // Remove automatically added Zoom
+  for(i in map.controls) { 
+    if(map.controls[i].CLASS_NAME == 'OpenLayers.Control.Zoom') {
+        map.controls[i].destroy();
+        map.controls[i] = null;
+    }
+  }
+
 }
