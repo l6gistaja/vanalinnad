@@ -101,7 +101,7 @@ function vlInitMapAfterConf(){
   var osm = new OpenLayers.Layer.TMS( currentTime.getFullYear(),
       "http://tile.openstreetmap.org/",
       {
-        layername: 'tms_now',
+        layername: getXmlValue(confXml, 'tmslayerprefix') + 'now',
         type: 'png',
         getURL: osm_getTileURL,
         displayOutsideMaxExtent: true,
@@ -129,10 +129,12 @@ function vlInitMapAfterConf(){
   var layersTags = layersXml.getElementsByTagName('layer');
   var tmsoverlays = [];
   var roadLayers = [];
+  var layerUrlSelect = -1;
+  layerYear = ('year' in reqParams) ? reqParams['year'] : '';
   for(i = 0; i < layersTags.length; i++) {
     if(layersTags[i].getAttribute('disabled')) { continue; }
     if(layersTags[i].getAttribute('type') == 'tms') {
-      layername = 'tms_' + layersTags[i].getAttribute('year');
+      layername = getXmlValue(confXml, 'tmslayerprefix') + layersTags[i].getAttribute('year');
       layerBoundBox = layersTags[i].getAttribute('bounds').split(',');
       baseLayersData[layername] = {
         dir: layersTags[i].getAttribute('year') + '/',
@@ -148,7 +150,9 @@ function vlInitMapAfterConf(){
           getURL: overlay_getTileURL,
           alpha: false,
           isBaseLayer: true
-        });
+        }
+      );
+      if(layersTags[i].getAttribute('year') == layerYear) { layerUrlSelect = tmsoverlays.length - 1; }
     } else {
       roadLayers[roadLayers.length] = new OpenLayers.Layer.Vector(layersTags[i].getAttribute('name'), {
             projection: new OpenLayers.Projection("EPSG:4326"),
@@ -186,13 +190,19 @@ function vlInitMapAfterConf(){
   }
 
   function createPoiPopup(feature) {
-    feature.popup = new OpenLayers.Popup.FramedCloud("poiPopup",
+
+    
+    
+    
+    
+    feature.popup = new OpenLayers.Popup.FramedCloud(
+        "poiPopup",
         feature.geometry.getBounds().getCenterLonLat(),
         null,
         '<a href="?site=' + feature.attributes.name + '">' + feature.attributes.name + '</a>',
         null,
-        true,
-        function() { poiLayersCtl.unselectAll(); }
+        true//,
+        //function() { poiLayersCtl.unselectAll(); }
     );
     feature.popup.autoSize = true;
     feature.popup.setBorder('solid 2px black');
@@ -234,14 +244,15 @@ function vlInitMapAfterConf(){
     }
   }
   baseurl = '';
-  for(reqKey in reqParams) { 
+  for(reqKey in reqParams) {
+    if(reqKey == 'year') { continue; }
     if(!(reqKey in permalinkReqKeys)) {
       baseurl += (baseurl == '' ? '?' : '&') + reqKey + '=' + reqParams[reqKey];
     }
   }
   map.addControl(new OpenLayers.Control.Permalink({base: baseurl}));
   function openInfoPage() {
-    var year = map.baseLayer.layername.substr(4);
+    var year = map.baseLayer.layername.substr(getXmlValue(confXml, 'tmslayerprefix').length);
     var win=window.open('info.html?site=' + reqParams['site'] + (year.match(new RegExp(getXmlValue(confXml, 'regexyearmatcher'))) ? '&year=' + year : ''), '_blank'); 
     win.focus();
   }
@@ -262,5 +273,5 @@ function vlInitMapAfterConf(){
         map.controls[i] = null;
     }
   }
-
+  if(layerUrlSelect > -1) { map.setBaseLayer(tmsoverlays[layerUrlSelect]); }
 }

@@ -11,4 +11,5 @@
 <filetransparent>none.png</filetransparent>
 <regexyearmatcher>^\d+$</regexyearmatcher>
 <defaultsite>Tallinn</defaultsite>
+<tmslayerprefix>tms_</tmslayerprefix>
 </vanalinnadconf>

@@ -1,0 +1,20 @@
+<h1>vanalinnad</h1>
+
+<p>Historical maps of Tallinn under grid of today's street network.</p>
+
+<ul>
+<li>Author: juks at alkohol ee</li>
+<li>License: <a href="http://www.opensource.org/licenses/BSD-3-Clause">BSD 3-Clause License</a></li>
+</ul>
+
+<h2>Adding new historical map to application</h2>
+
+<ul>
+<li>Install <a href="http://www.gdal.org/">GDAL utils</a> (in Debian: <code>apt-get install gdal-bin</code>)</li>
+<li><a href="https://github.com/l6gistaja/vanalinnad/blob/master/raster/places/Tallinn/1968/gdal.txt">Georeference</a> source map image: <code>gdal_translate {SOURCE_IMAGE_FILE}  {GEOREFERENCED_PNG_FILE} -of PNG</code> <code>-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}</code> <code>{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP}</code>. Choose and specify image (in pixels) and geographical coordinates of at least 3 G(round)C(ontrol)P(oint)s. For example, GCPs can be narrow crossroads which are on both historic and modern maps.</li>
+<li>Install <a href="http://www.maptiler.org/">MapTiler</a></li>
+<li>Generate tiles: open MapTiler > choose Google Maps compatible > Continue > Add > choose <code>{GEOREFERENCED_PNG_FILE}</code> > Continue > choose WGS84 - Latitude and longitude  > Continue > choose zoom levels > choose JPEG as file format > Continue > choose output directory for tiles (<code>raster/places/{PLACE}/{YEAR}/tiles</code>) > Continue > choose Google Maps and OpenLayers > Continue > Continue > Render</li>
+<li>Optionally, throw away empty tiles:  <code>cd dev/jpg2png/ ; ./replace.bash ../../raster/places/{PLACE}/{YEAR}/tiles/</code>. For that step you need <a href="http://www.imagemagick.org">ImageMagick</a></li>
+<li>Add <code>&lt;layer type="tms" year="{YEAR}" bounds="{WEST_SOUTH_EAST_NORTH}"/&gt;</code> to <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/layers.xml"><code>vector/places/{PLACE}/layers.xml</code></a>. You can get boundingbox from line <code>mapBounds = new OpenLayers.Bounds({WEST,SOUTH,EAST,NORTH});</code> from file <a href="https://github.com/l6gistaja/vanalinnad/blob/master/raster/places/Tallinn/1968/tiles/openlayers.html"><code>raster/places/{PLACE}/{YEAR}/tiles/openlayers.html</code></a>.</li>
+<li>Optionally, add map description to <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/rss1968.xml"><code>vector/places/{PLACE}/rss{YEAR}.xml</code></a>. You can use <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/rsstemplate.xml"><code>vector/rsstemplate.xml</code></a> as template. Extra tag legends is comma separated list of legend image filenames under <a href="https://github.com/l6gistaja/vanalinnad/tree/master/raster/places/Tallinn/1968"><code>raster/places/{PLACE}/{YEAR}/</code></a>.</li>
+</ul>

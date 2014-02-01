@@ -83,8 +83,10 @@ function vlInitInfo(){
            + links[i].childNodes[0].nodeValue + '</a></li>';
       }
       y += '</ol>';
-      document.getElementById('content').innerHTML = y;
-      document.getElementById('header').innerHTML += siteLbl + ' &gt; ' + reqParams['year'];
+      document.getElementById('header').innerHTML += siteLbl + ' &gt; ' 
+        + '<a href="index.html?site=' + reqParams['site'] 
+        + '&year=' + reqParams['year'] + '">' + reqParams['year'] + '</a>';
+      document.getElementById('content').innerHTML = y + document.getElementById('header').innerHTML;
     } else {
       OpenLayers.Request.GET(requestConf['site']);
     }
@@ -93,7 +95,7 @@ function vlInitInfo(){
   function layerHandler(request) {
     if(request.status == 200) {
       layerXml = request.responseXML;
-      y = '<ul>';
+      y = '<ol>';
       links = layerXml.getElementsByTagName('layer');
       for(i=0; i<links.length; i++) {
          if(links[i].getAttribute('disabled') || links[i].getAttribute('type') != 'tms'){ continue; }
@@ -102,7 +104,7 @@ function vlInitInfo(){
            + links[i].getAttribute('year') + '">'
            + links[i].getAttribute('year') + '</a></li>';
       }
-      y += '</ul>';
+      y += '</ol>';
       document.getElementById('content').innerHTML = y;
       document.getElementById('header').innerHTML += siteLbl;
     } else {
@@ -119,7 +121,7 @@ function vlInitInfo(){
          y += '<li><a href="?site=' + links[i].childNodes[0].nodeValue 
            + '">' + links[i].childNodes[0].nodeValue + '</a></li>';
       }
-      y += '</ol><a href="index.html">Maps</a> | <a target="_blank" href="README.md">Readme</a> | <a href="https://github.com/l6gistaja/vanalinnad">GitHub</a>';
+      y += '</ol><a href="index.html">Maps</a> | <a target="_blank" href="readme.html">Readme</a> | <a href="https://github.com/l6gistaja/vanalinnad">GitHub</a>';
       document.getElementById('content').innerHTML = y;
     }
   }
