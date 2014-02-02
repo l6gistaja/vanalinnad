@@ -24,3 +24,18 @@ function mergeCustomStyleWithDefaults(customStyle) {
     }
     return new OpenLayers.StyleMap(styleMap);
 }
+
+
+function getTileURL(layer, bounds) {
+    var res = layer.map.getResolution();
+    var x = Math.round((bounds.left - layer.maxExtent.left) / (res * layer.tileSize.w));
+    var y = Math.round((layer.maxExtent.top - bounds.top) / (res * layer.tileSize.h));
+    var z = layer.map.getZoom();
+    var limit = Math.pow(2, z);
+    if (y < 0 || y >= limit) {
+        return 'raster/none.png';
+    } else {
+        x = ((x % limit) + limit) % limit;
+        return layer.url + z + "/" + x + "/" + y + "." + layer.type;
+    }
+}

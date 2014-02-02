@@ -8,7 +8,6 @@
 <fileareaselector>selector.kml</fileareaselector>
 <filelayers>layers.xml</filelayers>
 <fileprefixroads>roads</fileprefixroads>
-<filetransparent>none.png</filetransparent>
 <regexyearmatcher>^\d+$</regexyearmatcher>
 <defaultsite>Tallinn</defaultsite>
 <tmslayerprefix>tms_</tmslayerprefix>

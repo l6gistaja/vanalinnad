@@ -1,5 +1,7 @@
 function vlInitInfo(){
 
+  var map;
+  var osm;
   var confXml;
   var rssXml;
   var reqParams = OpenLayers.Util.getParameters();
@@ -43,6 +45,10 @@ function vlInitInfo(){
     }
   }
 
+  function osm_getTileURL(bounds) {
+      return getTileURL(osm, bounds);
+  }
+
   function rssHandler(request) {
     if(request.status == 200) {
       rssXml = request.responseXML;
@@ -82,11 +88,45 @@ function vlInitInfo(){
            + links[i].childNodes[0].nodeValue + '">'
            + links[i].childNodes[0].nodeValue + '</a></li>';
       }
-      y += '</ol>';
+      y += '</ol><div id="map" style="height:400px;width:600px;"></div>';
       document.getElementById('header').innerHTML += siteLbl + ' &gt; ' 
         + '<a href="index.html?site=' + reqParams['site'] 
         + '&year=' + reqParams['year'] + '">' + reqParams['year'] + '</a>';
       document.getElementById('content').innerHTML = y + document.getElementById('header').innerHTML;
+
+      map = new OpenLayers.Map('map', {
+        projection: new OpenLayers.Projection("EPSG:900913"),
+        displayProjection: new OpenLayers.Projection("EPSG:4326"),
+        units: "m"
+      });
+      osm = new OpenLayers.Layer.TMS('OSM',
+        "http://tile.openstreetmap.org/",
+        {
+          layername: 'osm',
+          type: 'png',
+          getURL: osm_getTileURL,
+          displayOutsideMaxExtent: true,
+          attribution: '',
+          isBaseLayer: true
+        }
+      );
+      map.addLayer(osm);
+      bbox = new OpenLayers.Layer.Vector('BBox', {
+            projection: new OpenLayers.Projection("EPSG:4326"),
+            strategies: [new OpenLayers.Strategy.Fixed()],
+            protocol: new OpenLayers.Protocol.HTTP({
+                url: getXmlValue(confXml, 'dirvector')
+                      + getXmlValue(confXml, 'dirplaces')
+                      + reqParams['site'] + '/bbox'
+                      + reqParams['year'] + '.kml',
+                format: new OpenLayers.Format.KML({
+                    extractAttributes: true,
+                    maxDepth: 0
+                })
+            })
+      });
+      map.addLayer(bbox);
+      //map.zoomToExtent(bbox.getDataExtent().transform(map.displayProjection, map.projection));
     } else {
       OpenLayers.Request.GET(requestConf['site']);
     }

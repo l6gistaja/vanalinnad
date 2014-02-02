@@ -51,28 +51,15 @@ function vlInitMap(){
 
 function vlInitMapAfterConf(){
 
-  var options = {
-    //controls: [],
+  map = new OpenLayers.Map('map', {
     projection: new OpenLayers.Projection("EPSG:900913"),
     displayProjection: new OpenLayers.Projection("EPSG:4326"),
     units: "m",
     numZoomLevels: 17
-  };
-  map = new OpenLayers.Map('map', options);
+  });
 
   function osm_getTileURL(bounds) {
-      var res = osm.map.getResolution();
-      var x = Math.round((bounds.left - osm.maxExtent.left) / (res * osm.tileSize.w));
-      var y = Math.round((osm.maxExtent.top - bounds.top) / (res * osm.tileSize.h));
-      var z = osm.map.getZoom();
-      var limit = Math.pow(2, z);
-
-      if (y < 0 || y >= limit) {
-          return getXmlValue(confXml, 'dirraster') + getXmlValue(confXml, 'filetransparent');
-      } else {
-          x = ((x % limit) + limit) % limit;
-          return osm.url + z + "/" + x + "/" + y + "." + osm.type;
-      }
+      return getTileURL(osm, bounds);
   }
 
   function overlay_getTileURL(bounds) {
@@ -92,7 +79,6 @@ function vlInitMapAfterConf(){
               + z + "/" + x + "/" + y + "." + this.type;
         } else {
           return osm_getTileURL(bounds);
-          //return getXmlValue(confXml, 'dirraster') + getXmlValue(confXml, 'filetransparent');
         }
   }
 
