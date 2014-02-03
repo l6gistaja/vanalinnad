@@ -32,10 +32,17 @@ function vlInitInfo(){
              + getXmlValue(confXml, 'filelayers'),
            callback: layerHandler
         },
-	selector: {
+	    selector: {
            url: getXmlValue(confXml, 'dirvector')
              + getXmlValue(confXml, 'fileareaselector'),
            callback: selectorHandler
+      	},
+        bbox: {
+           url: getXmlValue(confXml, 'dirvector')
+                + getXmlValue(confXml, 'dirplaces')
+                + reqParams['site'] + '/bbox'
+                + reqParams['year'] + '.kml',
+           callback: bboxHandler
       	}
       };
       if(reqParams['site'].match(/\S/)) {
@@ -75,7 +82,7 @@ function vlInitInfo(){
       ]; 
       for(i in itemFields) {
         tmp = getXmlValue(rssXml, itemFields[i].tag, 'no' in itemFields[i] ? itemFields[i].no : 0);
-	if(itemFields[i].tag == 'author') {
+	    if(itemFields[i].tag == 'author') {
           dateParts = getXmlValue(rssXml, 'pubDate').split(/\s+/);
           if(dateParts.length > 3) { tmp += ' ' + dateParts[3]; }
         }
@@ -88,7 +95,7 @@ function vlInitInfo(){
            + links[i].childNodes[0].nodeValue + '">'
            + links[i].childNodes[0].nodeValue + '</a></li>';
       }
-      y += '</ol><div id="map" style="height:400px;width:600px;"></div>';
+      y += '</ol><a href="'+requestConf.bbox.url+'">BBox &amp; GCP</a><div id="map" style="height:400px;width:600px;"></div>';
       document.getElementById('header').innerHTML += siteLbl + ' &gt; ' 
         + '<a href="index.html?site=' + reqParams['site'] 
         + '&year=' + reqParams['year'] + '">' + reqParams['year'] + '</a>';
@@ -115,10 +122,7 @@ function vlInitInfo(){
             projection: new OpenLayers.Projection("EPSG:4326"),
             strategies: [new OpenLayers.Strategy.Fixed()],
             protocol: new OpenLayers.Protocol.HTTP({
-                url: getXmlValue(confXml, 'dirvector')
-                      + getXmlValue(confXml, 'dirplaces')
-                      + reqParams['site'] + '/bbox'
-                      + reqParams['year'] + '.kml',
+                url: requestConf.bbox.url,
                 format: new OpenLayers.Format.KML({
                     extractAttributes: true,
                     maxDepth: 0
@@ -126,9 +130,31 @@ function vlInitInfo(){
             })
       });
       map.addLayer(bbox);
-      //map.zoomToExtent(bbox.getDataExtent().transform(map.displayProjection, map.projection));
+      OpenLayers.Request.GET(requestConf['bbox']);
     } else {
       OpenLayers.Request.GET(requestConf['site']);
+    }
+  }
+
+  function bboxHandler(request) {
+    if(request.status == 200) {
+      bboxXml = request.responseXML;
+      coords = getXmlValue(bboxXml, 'coordinates').split(/[, ]+/);
+      bbx = [181,91,-181,-91];
+      for(i=0; i<coords.length; i+=2) {
+        if(coords[i] < bbx[0]) { bbx[0] = coords[i]; } //W
+        if(coords[i] > bbx[2]) { bbx[2] = coords[i]; } //E
+        if(coords[i+1] < bbx[1]) { bbx[1] = coords[i+1]; } //S
+        if(coords[i+1] > bbx[3]) { bbx[3] = coords[i+1]; } //N
+      }
+      dlat = (bbx[2] - bbx[0])*0.1;
+      dlon = (bbx[3] - bbx[1])*0.2;
+      bbx[0] -= dlat;
+      bbx[2] += dlat;
+      bbx[1] -= dlon;
+      bbx[3] += dlon;
+      mapBounds = new OpenLayers.Bounds(bbx);
+      map.zoomToExtent(mapBounds.transform(map.displayProjection, map.projection));
     }
   }
 
