@@ -39,3 +39,8 @@ function getTileURL(layer, bounds) {
         return layer.url + z + "/" + x + "/" + y + "." + layer.type;
     }
 }
+
+function destroyPopup(feature) {
+  feature.popup.destroy();
+  feature.popup = null;
+}

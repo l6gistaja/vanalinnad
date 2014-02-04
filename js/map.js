@@ -160,7 +160,7 @@ function vlInitMapAfterConf(){
   }
   map.addLayers(tmsoverlays);
   map.addLayers(roadLayers);
-
+  
   function createRoadPopup(feature) {
     feature.popup = new OpenLayers.Popup.Anchored("roadPopup",
         map.getCenter(),
@@ -179,20 +179,13 @@ function vlInitMapAfterConf(){
     feature.popup = new OpenLayers.Popup.FramedCloud(
         "poiPopup",
         feature.geometry.getBounds().getCenterLonLat(),
-        null,
+        new OpenLayers.Size(100,100),
         '<a href="?site=' + feature.attributes.name + '">' + feature.attributes.name + '</a>',
         null,
         true,
         function() { poiLayersCtl.unselectAll(); }
     );
-    feature.popup.autoSize = true;
-    feature.popup.setBorder('solid 2px black');
     map.addPopup(feature.popup);
-  }
-
-  function destroyPopup(feature) {
-    feature.popup.destroy();
-    feature.popup = null;
   }
 
   //Add a selector control to the kmllayer with popup functions

@@ -5,5 +5,8 @@ var vlLayerStyles = {
   },
   POIs: { 
     default: {fillColor: 'yellow', fillOpacity: 0.8, strokeColor: 'black', strokeWidth: 2, pointRadius: 6}
+  },
+  BBox: { 
+    default: {strokeWidth: 2, strokeColor: 'red'}
   }
 };

@@ -4,6 +4,7 @@ function vlInitInfo(){
   var osm;
   var confXml;
   var rssXml;
+  var bboxLayersCtl;
   var reqParams = OpenLayers.Util.getParameters();
   if(!('site' in reqParams)) { reqParams['site'] = ''; }
   if(!('year' in reqParams)) { reqParams['year'] = ''; }
@@ -46,7 +47,7 @@ function vlInitInfo(){
       	}
       };
       if(reqParams['site'].match(/\S/)) {
-	key = reqParams['year'].match(new RegExp(getXmlValue(confXml, 'regexyearmatcher'))) ? 'year' : 'site';
+	    key = reqParams['year'].match(new RegExp(getXmlValue(confXml, 'regexyearmatcher'))) ? 'year' : 'site';
       } else { key = 'selector'; }
       OpenLayers.Request.GET(requestConf[key]);
     }
@@ -54,6 +55,37 @@ function vlInitInfo(){
 
   function osm_getTileURL(bounds) {
       return getTileURL(osm, bounds);
+  }
+  
+  function createBBoxPopup(feature) {
+  console.log(feature);
+    if(feature.fid == 'bbox') {
+        bounds = new OpenLayers.Bounds(feature.geometry.bounds.toArray()).transform(map.projection, map.displayProjection);
+        feature.popup = new OpenLayers.Popup.Anchored(
+            "bboxPopup",
+            map.getCenter(),
+            null,
+            'BBox:<br/>' + bounds.left + ' <br/>' + bounds.bottom + ' <br/>' + bounds.right + ' <br/>' + bounds.top,
+            null,
+            true,
+            function() { bboxLayersCtl.unselectAll(); }
+        );
+        feature.popup.setBorder('solid 2px black');
+        feature.popup.autoSize = true;
+    } else {
+        center = new OpenLayers.LonLat(feature.geometry.getBounds().getCenterLonLat().lon, feature.geometry.getBounds().getCenterLonLat().lat).transform(map.projection, map.displayProjection); 
+        feature.popup = new OpenLayers.Popup.FramedCloud(
+            "bboxPopup",
+            feature.geometry.getBounds().getCenterLonLat(),
+            null,
+            'GCP ' + feature.attributes.name + ':<br/>'  + center.lon + ' <br/>' + center.lat,
+            null,
+            true,
+            function() { bboxLayersCtl.unselectAll(); }
+        );
+        feature.popup.autoSize = true;
+    }
+    map.addPopup(feature.popup);
   }
 
   function rssHandler(request) {
@@ -95,7 +127,7 @@ function vlInitInfo(){
            + links[i].childNodes[0].nodeValue + '">'
            + links[i].childNodes[0].nodeValue + '</a></li>';
       }
-      y += '</ol><a href="'+requestConf.bbox.url+'">BBox &amp; GCP</a><div id="map" style="height:400px;width:600px;"></div>';
+      y += '</ol><a name="bbox"><a href="'+requestConf.bbox.url+'">BBox &amp; GCP</a></a><div id="map" style="height:400px;width:600px;"></div>';
       document.getElementById('header').innerHTML += siteLbl + ' &gt; ' 
         + '<a href="index.html?site=' + reqParams['site'] 
         + '&year=' + reqParams['year'] + '">' + reqParams['year'] + '</a>';
@@ -104,8 +136,10 @@ function vlInitInfo(){
       map = new OpenLayers.Map('map', {
         projection: new OpenLayers.Projection("EPSG:900913"),
         displayProjection: new OpenLayers.Projection("EPSG:4326"),
-        units: "m"
+        units: "m",
+        numZoomLevels: 18
       });
+      
       osm = new OpenLayers.Layer.TMS('OSM',
         "http://tile.openstreetmap.org/",
         {
@@ -118,6 +152,7 @@ function vlInitInfo(){
         }
       );
       map.addLayer(osm);
+      
       bbox = new OpenLayers.Layer.Vector('BBox', {
             projection: new OpenLayers.Projection("EPSG:4326"),
             strategies: [new OpenLayers.Strategy.Fixed()],
@@ -127,9 +162,18 @@ function vlInitInfo(){
                     extractAttributes: true,
                     maxDepth: 0
                 })
-            })
+            }),
+            styleMap: mergeCustomStyleWithDefaults(vlLayerStyles['BBox'])
       });
       map.addLayer(bbox);
+      
+      bboxLayersCtl = new OpenLayers.Control.SelectFeature(bbox, { 
+        onSelect: createBBoxPopup, 
+        onUnselect: destroyPopup,
+      });
+      map.addControl(bboxLayersCtl);
+      bboxLayersCtl.activate();
+      
       OpenLayers.Request.GET(requestConf['bbox']);
     } else {
       OpenLayers.Request.GET(requestConf['site']);
