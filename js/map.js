@@ -176,7 +176,6 @@ function vlInitMapAfterConf(){
   }
 
   function createPoiPopup(feature) {
-  console.log(feature);
     feature.popup = new OpenLayers.Popup.FramedCloud(
         "poiPopup",
         feature.geometry.getBounds().getCenterLonLat(),

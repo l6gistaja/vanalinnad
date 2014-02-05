@@ -58,14 +58,13 @@ function vlInitInfo(){
   }
   
   function createBBoxPopup(feature) {
-  console.log(feature);
     if(feature.fid == 'bbox') {
         bounds = new OpenLayers.Bounds(feature.geometry.bounds.toArray()).transform(map.projection, map.displayProjection);
         feature.popup = new OpenLayers.Popup.Anchored(
             "bboxPopup",
             map.getCenter(),
             null,
-            'BBox:<br/>' + bounds.left + ' <br/>' + bounds.bottom + ' <br/>' + bounds.right + ' <br/>' + bounds.top,
+            '<strong>BBox</strong><br/>' + bounds.left + ' <br/>' + bounds.bottom + ' <br/>' + bounds.right + ' <br/>' + bounds.top,
             null,
             true,
             function() { bboxLayersCtl.unselectAll(); }
@@ -78,7 +77,7 @@ function vlInitInfo(){
             "bboxPopup",
             feature.geometry.getBounds().getCenterLonLat(),
             null,
-            'GCP ' + feature.attributes.name + ':<br/>'  + center.lon + ' <br/>' + center.lat,
+            '<strong>GCP ' + feature.attributes.name + '</strong><br/>'  + center.lon + ' <br/>' + center.lat,
             null,
             true,
             function() { bboxLayersCtl.unselectAll(); }
@@ -167,7 +166,7 @@ function vlInitInfo(){
       });
       map.addLayer(bbox);
       
-      bboxLayersCtl = new OpenLayers.Control.SelectFeature(bbox, { 
+      bboxLayersCtl = new OpenLayers.Control.SelectFeature([bbox], { 
         onSelect: createBBoxPopup, 
         onUnselect: destroyPopup,
       });
