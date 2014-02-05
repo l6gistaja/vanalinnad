@@ -96,7 +96,7 @@ function vlInitMapAfterConf(){
       } );
   map.addLayer(osm);
 
-  var selectorLayer = new OpenLayers.Layer.Vector(' &#8984;', {
+  var selectorLayer = new OpenLayers.Layer.Vector(' &#8984; POI', {
     projection: new OpenLayers.Projection("EPSG:4326"),
     minResolution: map.getResolutionForZoom(mapMinZoom - 1),
     strategies: [new OpenLayers.Strategy.Fixed()],
@@ -176,6 +176,7 @@ function vlInitMapAfterConf(){
   }
 
   function createPoiPopup(feature) {
+  console.log(feature);
     feature.popup = new OpenLayers.Popup.FramedCloud(
         "poiPopup",
         feature.geometry.getBounds().getCenterLonLat(),
@@ -196,7 +197,7 @@ function vlInitMapAfterConf(){
   map.addControl(roadLayersCtl);
   roadLayersCtl.activate();
   
-  var poiLayersCtl = new OpenLayers.Control.SelectFeature(selectorLayer, { 
+  var poiLayersCtl = new OpenLayers.Control.SelectFeature([selectorLayer], { 
       onSelect: createPoiPopup, 
       onUnselect: destroyPopup,
   });

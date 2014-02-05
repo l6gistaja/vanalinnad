@@ -174,6 +174,7 @@ function vlInitInfo(){
       map.addControl(bboxLayersCtl);
       bboxLayersCtl.activate();
       
+      //map.zoomToExtent(bbox.getDataExtent());
       OpenLayers.Request.GET(requestConf['bbox']);
     } else {
       OpenLayers.Request.GET(requestConf['site']);
