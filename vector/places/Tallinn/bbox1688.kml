@@ -4,10 +4,10 @@
 <Placemark id="bbox">
 <name>BBox</name>
 <LineString>
-<coordinates>24.6415649813,59.4071141243 24.6415649813,59.471981766 24.8405194984,59.471981766 24.8405194984,59.4071141243 24.6415649813,59.4071141243</coordinates>
+<coordinates>24.6463597739,59.4093364097 24.6463597739,59.4715142907 24.83981298,59.4715142907 24.83981298,59.4093364097 24.6463597739,59.4093364097</coordinates>
 </LineString>
 </Placemark>
-<Placemark id="gcp1"><name>1</name><Point><coordinates>24.705263442694793,59.42928173023693 </coordinates></Point></Placemark>
+<Placemark id="gcp1"><name>1</name><Point><coordinates>24.705309040248046,59.42927968397545 </coordinates></Point></Placemark>
 <Placemark id="gcp2"><name>2</name><Point><coordinates>24.80036116331781,59.412124923859196 </coordinates></Point></Placemark>
 <Placemark id="gcp3"><name>3</name><Point><coordinates>24.835508830248962,59.466283161249564 </coordinates></Point></Placemark>
 <Placemark id="gcp4"><name>4</name><Point><coordinates>24.76467705458368,59.43740919338658 </coordinates></Point></Placemark>
@@ -15,6 +15,5 @@
 <Placemark id="gcp6"><name>6</name><Point><coordinates>24.736936978399406,59.43514376633951 </coordinates></Point></Placemark>
 <Placemark id="gcp7"><name>7</name><Point><coordinates>24.703491173088203,59.45345651126197 </coordinates></Point></Placemark>
 <Placemark id="gcp8"><name>8</name><Point><coordinates>24.751701197921882,59.418747975146616 </coordinates></Point></Placemark>
-<Placemark id="gcp9"><name>9</name><Point><coordinates>24.677798292934547,59.42848845294184 </coordinates></Point></Placemark>
 </Document>
 </kml>
