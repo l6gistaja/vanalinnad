@@ -13,7 +13,7 @@ $len = scalar(@{$layers->{'layer'}});
 for($i=0; $i<=$len; $i++) {
   if($layers->{'layer'}[$i]{'type'} eq 'tms') {
     $year = $layers->{'layer'}[$i]{'year'};
-    print $year."\n";
+    print 'BBox & GCP '.$ARGV[1].' '.$year."\n";
     open (DATA, '>'.$ARGV[0].$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[1].'/bbox'.$year.'.kml');
     binmode DATA, ":utf8";
     print DATA $filebase.$conf->{'Document'}{'ExtendedData'}{'v:kmlheader'};
