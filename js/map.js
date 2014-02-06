@@ -98,7 +98,7 @@ function vlInitMapAfterConf(){
 
   var selectorLayer = new OpenLayers.Layer.Vector(' &#8984; POI', {
     layername: 'POIs',
-    projection: new OpenLayers.Projection("EPSG:4326"),
+    projection: map.options.displayProjection,
     minResolution: map.getResolutionForZoom(mapMinZoom - 1),
     strategies: [new OpenLayers.Strategy.Fixed()],
     protocol: new OpenLayers.Protocol.HTTP({
@@ -144,7 +144,7 @@ function vlInitMapAfterConf(){
       layername = 'roads_' + roadLayers.length;
       roadLayers[roadLayers.length] = new OpenLayers.Layer.Vector(layersTags[i].getAttribute('name'), {
             layername: layername,
-            projection: new OpenLayers.Projection("EPSG:4326"),
+            projection: map.options.displayProjection,
             maxResolution: map.getResolutionForZoom(parseInt(layersTags[i].getAttribute('maxres'))),
             strategies: [new OpenLayers.Strategy.Fixed()],
             protocol: new OpenLayers.Protocol.HTTP({
