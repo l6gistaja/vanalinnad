@@ -97,6 +97,7 @@ function vlInitMapAfterConf(){
   map.addLayer(osm);
 
   var selectorLayer = new OpenLayers.Layer.Vector(' &#8984; POI', {
+    layername: 'POIs',
     projection: new OpenLayers.Projection("EPSG:4326"),
     minResolution: map.getResolutionForZoom(mapMinZoom - 1),
     strategies: [new OpenLayers.Strategy.Fixed()],
@@ -140,7 +141,9 @@ function vlInitMapAfterConf(){
       );
       if(layersTags[i].getAttribute('year') == layerYear) { layerUrlSelect = tmsoverlays.length - 1; }
     } else {
+      layername = 'roads_' + roadLayers.length;
       roadLayers[roadLayers.length] = new OpenLayers.Layer.Vector(layersTags[i].getAttribute('name'), {
+            layername: layername,
             projection: new OpenLayers.Projection("EPSG:4326"),
             maxResolution: map.getResolutionForZoom(parseInt(layersTags[i].getAttribute('maxres'))),
             strategies: [new OpenLayers.Strategy.Fixed()],
@@ -158,50 +161,44 @@ function vlInitMapAfterConf(){
       });
     }
   }
+  roadLayers[roadLayers.length] = selectorLayer;
   map.addLayers(tmsoverlays);
   map.addLayers(roadLayers);
   
-  function createRoadPopup(feature) {
-    feature.popup = new OpenLayers.Popup.Anchored("roadPopup",
-        map.getCenter(),
-        null,
-        feature.attributes.name,
-        null,
-        true,
-        function() { roadLayersCtl.unselectAll(); }
-    );
-    feature.popup.setBorder('solid 2px black');
+  function createVectorLayersPopup(feature) {
+    if(feature.layer.getOptions().layername == 'POIs') {
+      feature.popup = new OpenLayers.Popup.FramedCloud(
+          "poiPopup",
+          feature.geometry.getBounds().getCenterLonLat(),
+          null,
+          '<a href="?site=' + feature.attributes.name + '">' + feature.attributes.name + '</a>',
+          null,
+          true,
+          function() { vectorLayersCtl.unselectAll(); }
+      );
+    } else {
+      feature.popup = new OpenLayers.Popup.Anchored(
+          "roadPopup",
+          map.getCenter(),
+          null,
+          feature.attributes.name,
+          null,
+          true,
+          function() { vectorLayersCtl.unselectAll(); }
+      );
+      feature.popup.setBorder('solid 2px black');
+    }
     feature.popup.autoSize = true;
     map.addPopup(feature.popup);
   }
 
-  function createPoiPopup(feature) {
-    feature.popup = new OpenLayers.Popup.FramedCloud(
-        "poiPopup",
-        feature.geometry.getBounds().getCenterLonLat(),
-        new OpenLayers.Size(100,100),
-        '<a href="?site=' + feature.attributes.name + '">' + feature.attributes.name + '</a>',
-        null,
-        true,
-        function() { poiLayersCtl.unselectAll(); }
-    );
-    map.addPopup(feature.popup);
-  }
-
   //Add a selector control to the kmllayer with popup functions
-  var roadLayersCtl = new OpenLayers.Control.SelectFeature(roadLayers, { 
-      onSelect: createRoadPopup, 
+  var vectorLayersCtl = new OpenLayers.Control.SelectFeature(roadLayers, { 
+      onSelect: createVectorLayersPopup, 
       onUnselect: destroyPopup,
   });
-  map.addControl(roadLayersCtl);
-  roadLayersCtl.activate();
-  
-  var poiLayersCtl = new OpenLayers.Control.SelectFeature([selectorLayer], { 
-      onSelect: createPoiPopup, 
-      onUnselect: destroyPopup,
-  });
-  map.addControl(poiLayersCtl);
-  poiLayersCtl.activate();
+  map.addControl(vectorLayersCtl);
+  vectorLayersCtl.activate();
   
   var switcherControl = new OpenLayers.Control.LayerSwitcher();
   map.addControl(switcherControl);
