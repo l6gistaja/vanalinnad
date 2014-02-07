@@ -199,10 +199,13 @@ function vlInitMapAfterConf(){
   });
   map.addControl(vectorLayersCtl);
   vectorLayersCtl.activate();
-  
+
   var switcherControl = new OpenLayers.Control.LayerSwitcher();
   map.addControl(switcherControl);
   switcherControl.maximizeControl();
+  switcherControl.baseLbl.innerHTML = '';
+  switcherControl.dataLbl.innerHTML = '';
+
   map.addControl(new OpenLayers.Control.PanZoomBar());
   map.addControl(new OpenLayers.Control.MousePosition());
   map.addControl(new OpenLayers.Control.KeyboardDefaults());
