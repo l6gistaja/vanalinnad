@@ -73,7 +73,7 @@ function vlInitCoords() {
         trigger: function(e) {
             var lonlat = map.getLonLatFromPixel(e.xy);
             lonlat = lonlat.transform(map.projection, map.displayProjection);
-            prompt("E, N: \n" + lonlat.lon + " " + lonlat.lat, lonlat.lon + " " + lonlat.lat);
+            prompt("EPSG:4326 E, N: \n" + lonlat.lon + " " + lonlat.lat, " -gcp  " + lonlat.lon + " " + lonlat.lat);
         }
 
     });
