@@ -7,12 +7,12 @@
 <coordinates>24.7025128961,59.4142667581 24.7025128961,59.4546274333 24.8084271312,59.4546274333 24.8084271312,59.4142667581 24.7025128961,59.4142667581</coordinates>
 </LineString>
 </Placemark>
-<Placemark id="gcp1"><name>1</name><Point><coordinates>24.740663237273345,59.44782602285434 </coordinates></Point></Placemark>
-<Placemark id="gcp2"><name>2</name><Point><coordinates>24.7852844664451,59.43870618780245 </coordinates></Point></Placemark>
-<Placemark id="gcp3"><name>3</name><Point><coordinates>24.706969327628265,59.42967529255503 </coordinates></Point></Placemark>
-<Placemark id="gcp4"><name>4</name><Point><coordinates>24.736009604632507,59.427675375571404 </coordinates></Point></Placemark>
-<Placemark id="gcp5"><name>5</name><Point><coordinates>24.7258145281669,59.432426690518206 </coordinates></Point></Placemark>
-<Placemark id="gcp6"><name>6</name><Point><coordinates>24.754342503249298,59.427869097121786 </coordinates></Point></Placemark>
-<Placemark id="gcp7"><name>7</name><Point><coordinates>24.747095174491058,59.43970174388225 </coordinates></Point></Placemark>
+<Placemark id="gcp1"><name>1</name><description>2092 583</description><Point><coordinates>24.740663237273345,59.44782602285434</coordinates></Point></Placemark>
+<Placemark id="gcp2"><name>2</name><description>5814 1132</description><Point><coordinates>24.7852844664451,59.43870618780245</coordinates></Point></Placemark>
+<Placemark id="gcp3"><name>3</name><description>217 3927</description><Point><coordinates>24.706969327628265,59.42967529255503</coordinates></Point></Placemark>
+<Placemark id="gcp4"><name>4</name><description>2481 3664</description><Point><coordinates>24.736009604632507,59.427675375571404</coordinates></Point></Placemark>
+<Placemark id="gcp5"><name>5</name><description>1542 3133</description><Point><coordinates>24.7258145281669,59.432426690518206</coordinates></Point></Placemark>
+<Placemark id="gcp6"><name>6</name><description>3863 3288</description><Point><coordinates>24.754342503249298,59.427869097121786</coordinates></Point></Placemark>
+<Placemark id="gcp7"><name>7</name><description>2881 1669</description><Point><coordinates>24.747095174491058,59.43970174388225</coordinates></Point></Placemark>
 </Document>
 </kml>

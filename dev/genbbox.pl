@@ -43,7 +43,7 @@ EndHeader
         for($gi=0; $gi<scalar(@c); $gi++) {
           if($c[$gi] eq '-gcp') {
             $j++;
-            print DATA  '<Placemark id="gcp'.$j.'"><name>'.$j.'</name><Point><coordinates>'.$c[3+$gi].','.$c[4+$gi]." </coordinates></Point></Placemark>\n";
+            print DATA  '<Placemark id="gcp'.$j.'"><name>'.$j.'</name><description>'.$c[1+$gi].' '.$c[2+$gi].'</description><Point><coordinates>'.$c[3+$gi].','.$c[4+$gi]."</coordinates></Point></Placemark>\n";
           }
         }
       }

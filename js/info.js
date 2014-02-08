@@ -77,7 +77,7 @@ function vlInitInfo(){
             "bboxPopup",
             feature.geometry.getBounds().getCenterLonLat(),
             null,
-            '<strong>GCP ' + feature.attributes.name + '</strong><br/>'  + center.lon + ' <br/>' + center.lat,
+            '<strong>GCP ' + feature.attributes.name + '</strong><br/>'  + center.lon + ' <br/>' + center.lat + ' <br/><input type="text" value=" -gcp ' + feature.attributes.description + ' '  + center.lon + ' ' + center.lat + '"/>',
             null,
             true,
             function() { bboxLayersCtl.unselectAll(); }

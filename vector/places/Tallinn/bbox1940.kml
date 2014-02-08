@@ -7,8 +7,24 @@
 <coordinates>24.6425681369,59.3993281973 24.6425681369,59.4774077806 24.8455300763,59.4774077806 24.8455300763,59.3993281973 24.6425681369,59.3993281973</coordinates>
 </LineString>
 </Placemark>
-<Placemark id="gcp1"><name>1</name><Point><coordinates>24.735844648778134,59.44659959722896 </coordinates></Point></Placemark>
-<Placemark id="gcp2"><name>2</name><Point><coordinates>24.834651864468746,59.46917669627521 </coordinates></Point></Placemark>
-<Placemark id="gcp3"><name>3</name><Point><coordinates>24.70499388068884,59.42922989153454 </coordinates></Point></Placemark>
+<Placemark id="gcp1"><name>1</name><description>10704 858</description><Point><coordinates>24.834651864468746,59.46917669627521</coordinates></Point></Placemark>
+<Placemark id="gcp2"><name>2</name><description>3394 5018</description><Point><coordinates>24.70499388068884,59.42922989153454</coordinates></Point></Placemark>
+<Placemark id="gcp3"><name>3</name><description>10167 1422</description><Point><coordinates>24.825153350831446,59.46369045988775</coordinates></Point></Placemark>
+<Placemark id="gcp4"><name>4</name><description>9828 2134</description><Point><coordinates>24.818480014801878,59.45673407278613</coordinates></Point></Placemark>
+<Placemark id="gcp5"><name>5</name><description>7910 4068</description><Point><coordinates>24.785284996033994,59.438687680354455</coordinates></Point></Placemark>
+<Placemark id="gcp6"><name>6</name><description>5424 3066</description><Point><coordinates>24.74063158035477,59.44781842782393</coordinates></Point></Placemark>
+<Placemark id="gcp7"><name>7</name><description>5460 5658</description><Point><coordinates>24.741189479831,59.42361164611495</coordinates></Point></Placemark>
+<Placemark id="gcp8"><name>8</name><description>1166 1924</description><Point><coordinates>24.666238147583574,59.45893928145028</coordinates></Point></Placemark>
+<Placemark id="gcp9"><name>9</name><description>8862 5870</description><Point><coordinates>24.802161771621748,59.421949596503126</coordinates></Point></Placemark>
+<Placemark id="gcp10"><name>10</name><description>3998 7114</description><Point><coordinates>24.715247470703737,59.4111849388349</coordinates></Point></Placemark>
+<Placemark id="gcp11"><name>11</name><description>5682 3902</description><Point><coordinates>24.74579246696578,59.44014129121679</coordinates></Point></Placemark>
+<Placemark id="gcp12"><name>12</name><description>3068 2394</description><Point><coordinates>24.698767978517036,59.45398312348805</coordinates></Point></Placemark>
+<Placemark id="gcp13"><name>13</name><description>3990 3530</description><Point><coordinates>24.71563370880274,59.44406862774444</coordinates></Point></Placemark>
+<Placemark id="gcp14"><name>14</name><description>2656 6566</description><Point><coordinates>24.692523795931006,59.416256545167094</coordinates></Point></Placemark>
+<Placemark id="gcp15"><name>15</name><description>340 5002</description><Point><coordinates>24.650166351166796,59.4304682810424</coordinates></Point></Placemark>
+<Placemark id="gcp16"><name>16</name><description>4602 7258</description><Point><coordinates>24.72832055744202,59.40903105064123</coordinates></Point></Placemark>
+<Placemark id="gcp17"><name>17</name><description>986 7186</description><Point><coordinates>24.66466100868298,59.41078638430095</coordinates></Point></Placemark>
+<Placemark id="gcp18"><name>18</name><description>5886 6740</description><Point><coordinates>24.748807269897014,59.41294834987765</coordinates></Point></Placemark>
+<Placemark id="gcp19"><name>19</name><description>7006 3974</description><Point><coordinates>24.769610483015573,59.43953578626987</coordinates></Point></Placemark>
 </Document>
 </kml>

@@ -7,8 +7,8 @@
 <coordinates>24.6651536414,59.3932688183 24.6651536414,59.4740931126 24.8575659835,59.4740931126 24.8575659835,59.3932688183 24.6651536414,59.3932688183</coordinates>
 </LineString>
 </Placemark>
-<Placemark id="gcp1"><name>1</name><Point><coordinates>24.67128790110315,59.46015597983299 </coordinates></Point></Placemark>
-<Placemark id="gcp2"><name>2</name><Point><coordinates>24.725728697478424,59.39971601134549 </coordinates></Point></Placemark>
-<Placemark id="gcp3"><name>3</name><Point><coordinates>24.834173090159545,59.46823855583312 </coordinates></Point></Placemark>
+<Placemark id="gcp1"><name>1</name><description>238 315</description><Point><coordinates>24.67128790110315,59.46015597983299</coordinates></Point></Placemark>
+<Placemark id="gcp2"><name>2</name><description>2035 5676</description><Point><coordinates>24.725728697478424,59.39971601134549</coordinates></Point></Placemark>
+<Placemark id="gcp3"><name>3</name><description>7568 457</description><Point><coordinates>24.834173090159545,59.46823855583312</coordinates></Point></Placemark>
 </Document>
 </kml>
