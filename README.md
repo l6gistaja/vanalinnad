@@ -10,7 +10,7 @@ Historical maps of Tallinn under grid of today's street network.
 Adding new historical map to application
 ----------------------------------------
 
-Following describes new map adding process with Debian Linux 5.0.1.
+Following describes new map adding process with Debian Linux 6.0.8.
 
 * Optionally, cut away (or make white) edges, legends, empty areas etc from original map. It makes tile generation speed, repo size and download speed smaller.
 * Install [GDAL utils](http://www.gdal.org/) (in Debian: ```apt-get install gdal-bin```)
