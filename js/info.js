@@ -94,6 +94,7 @@ function vlInitInfo(){
       if(rssXml.getElementsByTagName('legends').length) {
         legends = getXmlValue(rssXml, 'legends').split(',');
         for(i=0; i<legends.length; i++) {
+          if(legends[i] == '') { continue; }
           y += '<br/><img src="'
              + getXmlValue(confXml, 'dirraster')
              + getXmlValue(confXml, 'dirplaces')
