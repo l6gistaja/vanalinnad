@@ -209,6 +209,7 @@ function vlInitMapAfterConf(){
   map.addControl(new OpenLayers.Control.PanZoomBar());
   map.addControl(new OpenLayers.Control.MousePosition());
   map.addControl(new OpenLayers.Control.KeyboardDefaults());
+  map.addControl(new OpenLayers.Control.ScaleLine());
 
   permalinkReqKeys = ['zoom','lat','lon','layers'];
   for(reqKey in permalinkReqKeys) { 
