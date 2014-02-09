@@ -5,13 +5,17 @@
 <ul>
 <li>Author: juks at alkohol ee</li>
 <li>License: <a href="http://www.opensource.org/licenses/BSD-3-Clause">BSD 3-Clause License</a></li>
+<li>GitHub: <a href="https://github.com/l6gistaja/vanalinnad">https://github.com/l6gistaja/vanalinnad</a></li>
 </ul>
 
 <h2>Adding new historical map to application</h2>
 
+<p>Following describes new map adding process with Debian Linux 5.0.1.</p>
+
 <ul>
+<li>Optionally, cut away (or make white) edges, legends, empty areas etc from original map. It makes tile generation speed, repo size and download speed smaller.</li>
 <li>Install <a href="http://www.gdal.org/">GDAL utils</a> (in Debian: <code>apt-get install gdal-bin</code>)</li>
-<li><a href="https://github.com/l6gistaja/vanalinnad/blob/master/raster/places/Tallinn/1968/gdal.txt">Georeference</a> source map image: <code>gdal_translate {SOURCE_IMAGE_FILE}  {GEOREFERENCED_PNG_FILE} -of PNG</code> <code>-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}</code> <code>{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP}</code>. Choose and specify image (in pixels) and geographical coordinates of at least 3 G(round)C(ontrol)P(oint)s. For example, GCPs can be narrow crossroads which are on both historic and modern maps.</li>
+<li><a href="https://github.com/l6gistaja/vanalinnad/blob/master/raster/places/Tallinn/1968/gdal.txt">Georeference</a> source map image: <code>gdal_translate {SOURCE_IMAGE_FILE}  {GEOREFERENCED_PNG_FILE} -of PNG</code> <code>-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}</code> <code>{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP}</code>. Choose and specify image (in pixels) and geographical coordinates of at least 3 G(round)C(ontrol)P(oint)s. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use <code>dev/coords.html</code> for finding GCPs geographical coordinates.</li>
 <li>Install <a href="http://www.maptiler.org/">MapTiler</a></li>
 <li>Generate tiles: open MapTiler > choose Google Maps compatible > Continue > Add > choose <code>{GEOREFERENCED_PNG_FILE}</code> > Continue > choose WGS84 - Latitude and longitude  > Continue > choose zoom levels > choose JPEG as file format > Continue > choose output directory for tiles (<code>raster/places/{PLACE}/{YEAR}/tiles</code>) > Continue > choose Google Maps and OpenLayers > Continue > Continue > Render</li>
 <li>Optionally, throw away empty tiles:  <code>cd dev/jpg2png/ ; ./replace.bash ../../raster/places/{PLACE}/{YEAR}/tiles/</code>. For that step you need <a href="http://www.imagemagick.org">ImageMagick</a></li>
@@ -19,3 +23,19 @@
 <li>Regenerate BBoxes info: <code>dev/genbbox.pl {VANALINNAD_ROOT_DIR} {PLACE}</code></li>
 <li>Optionally, add map description to <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/rss1968.xml"><code>vector/places/{PLACE}/rss{YEAR}.xml</code></a>. You can use <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/rsstemplate.xml"><code>vector/rsstemplate.xml</code></a> as template. Extra tag legends is comma separated list of legend image filenames under <a href="https://github.com/l6gistaja/vanalinnad/tree/master/raster/places/Tallinn/1968"><code>raster/places/{PLACE}/{YEAR}/</code></a>.</li>
 </ul>
+
+<h2>License</h2>
+
+<p>Copyright (c) 2013, juks at alkohol ee</p>
+
+<p>All rights reserved.</p>
+
+<p>Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:</p>
+
+<ol>
+<li><p>Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.</p></li>
+<li><p>Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.</p></li>
+<li><p>Neither the name of the copyright holder nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.</p></li>
+</ol>
+
+<p>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
