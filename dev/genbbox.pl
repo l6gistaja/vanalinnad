@@ -10,8 +10,10 @@ $xml = new XML::Simple;
 $mainconf = $xml->XMLin($ARGV[0].'conf.xml');
 $layers = $xml->XMLin($ARGV[0].$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[1].'/'.$mainconf->{'filelayers'});
 $len = scalar(@{$layers->{'layer'}});
+@max = qw(181 91 -181 -91);
 for($i=0; $i<=$len; $i++) {
   if($layers->{'layer'}[$i]{'type'} eq 'tms') {
+
     $year = $layers->{'layer'}[$i]{'year'};
     print 'BBox & GCP '.$ARGV[1].' '.$year."\n";
     open (DATA, '>'.$ARGV[0].$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[1].'/bbox'.$year.'.kml');
@@ -32,6 +34,12 @@ EndHeader
 </LineString>
 </Placemark>
 EndHeader
+
+    if($c[0] < $max[0]) { $max[0] = $c[0]; }
+    if($c[1] < $max[1]) { $max[1] = $c[1]; }
+    if($c[2] > $max[2]) { $max[2] = $c[2]; }
+    if($c[3] > $max[3]) { $max[3] = $c[3]; }
+
     $file = $ARGV[0].$mainconf->{'dirraster'}.$mainconf->{'dirplaces'}.$ARGV[1].'/'.$year.'/gdal.txt';
     if(-e $file) {
       @c = qw();
@@ -55,3 +63,5 @@ EndHeader
     close(DATA);
   }
 }
+
+print 'BBox '.join(',', @max)."\n";
