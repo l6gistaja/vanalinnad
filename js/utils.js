@@ -1,4 +1,9 @@
-function getXmlValue(xmlDocument, tagname) {
+if (!vlUtils) {
+    var vlUtils = {};
+}
+
+
+vlUtils.getXmlValue = function(xmlDocument, tagname) {
   index = (arguments.length > 2 ) ? arguments[2] : 0 ;
   tags = xmlDocument.getElementsByTagName(tagname);
   return index < tags.length && tags[index].childNodes.length > 0 ? tags[index].childNodes[0].nodeValue : '';
@@ -14,7 +19,7 @@ function getXmlValue(xmlDocument, tagname) {
   * @param {hash} customStyle
   * @returns OpenLayers.StyleMap
   */
-function mergeCustomStyleWithDefaults(customStyle) {
+vlUtils.mergeCustomStyleWithDefaults = function(customStyle) {
     styleMap = {};
     for(styleKey in OpenLayers.Feature.Vector.style) {
         styleMap[styleKey] = OpenLayers.Util.applyDefaults(
@@ -26,7 +31,7 @@ function mergeCustomStyleWithDefaults(customStyle) {
 }
 
 
-function getTileURL(layer, bounds) {
+vlUtils.getTodaysTileURL = function(layer, bounds) {
     var res = layer.map.getResolution();
     var x = Math.round((bounds.left - layer.maxExtent.left) / (res * layer.tileSize.w));
     var y = Math.round((layer.maxExtent.top - bounds.top) / (res * layer.tileSize.h));
@@ -40,7 +45,7 @@ function getTileURL(layer, bounds) {
     }
 }
 
-function destroyPopup(feature) {
+vlUtils.destroyPopup = function(feature) {
   feature.popup.destroy();
   feature.popup = null;
 }

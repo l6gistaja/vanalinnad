@@ -17,8 +17,8 @@ function vlInitInfo(){
       confXml = request.responseXML;
       requestConf = {
         year: {
-           url: getXmlValue(confXml, 'dirvector')
-             + getXmlValue(confXml, 'dirplaces')
+           url: vlUtils.getXmlValue(confXml, 'dirvector')
+             + vlUtils.getXmlValue(confXml, 'dirplaces')
              + reqParams['site']
              + '/rss'
              + reqParams['year']
@@ -26,35 +26,35 @@ function vlInitInfo(){
            callback: rssHandler
         },
         site: {
-           url: getXmlValue(confXml, 'dirvector')
-             + getXmlValue(confXml, 'dirplaces')
+           url: vlUtils.getXmlValue(confXml, 'dirvector')
+             + vlUtils.getXmlValue(confXml, 'dirplaces')
              + reqParams['site']
              + '/'
-             + getXmlValue(confXml, 'filelayers'),
+             + vlUtils.getXmlValue(confXml, 'filelayers'),
            callback: layerHandler
         },
 	    selector: {
-           url: getXmlValue(confXml, 'dirvector')
-             + getXmlValue(confXml, 'fileareaselector'),
+           url: vlUtils.getXmlValue(confXml, 'dirvector')
+             + vlUtils.getXmlValue(confXml, 'fileareaselector'),
            callback: selectorHandler
       	},
         bbox: {
-           url: getXmlValue(confXml, 'dirvector')
-                + getXmlValue(confXml, 'dirplaces')
+           url: vlUtils.getXmlValue(confXml, 'dirvector')
+                + vlUtils.getXmlValue(confXml, 'dirplaces')
                 + reqParams['site'] + '/bbox'
                 + reqParams['year'] + '.kml',
            callback: bboxHandler
       	}
       };
       if(reqParams['site'].match(/\S/)) {
-	    key = reqParams['year'].match(new RegExp(getXmlValue(confXml, 'regexyearmatcher'))) ? 'year' : 'site';
+	    key = reqParams['year'].match(new RegExp(vlUtils.getXmlValue(confXml, 'regexyearmatcher'))) ? 'year' : 'site';
       } else { key = 'selector'; }
       OpenLayers.Request.GET(requestConf[key]);
     }
   }
 
   function osm_getTileURL(bounds) {
-      return getTileURL(osm, bounds);
+      return vlUtils.getTodaysTileURL(osm, bounds);
   }
   
   function createBBoxPopup(feature) {
@@ -92,12 +92,12 @@ function vlInitInfo(){
       rssXml = request.responseXML;
       y = '';
       if(rssXml.getElementsByTagName('legends').length) {
-        legends = getXmlValue(rssXml, 'legends').split(',');
+        legends = vlUtils.getXmlValue(rssXml, 'legends').split(',');
         for(i=0; i<legends.length; i++) {
           if(legends[i] == '') { continue; }
           y += '<br/><img src="'
-             + getXmlValue(confXml, 'dirraster')
-             + getXmlValue(confXml, 'dirplaces')
+             + vlUtils.getXmlValue(confXml, 'dirraster')
+             + vlUtils.getXmlValue(confXml, 'dirplaces')
              + reqParams['site']
              + '/'
              + reqParams['year']
@@ -113,9 +113,9 @@ function vlInitInfo(){
 	{tag:'guid'}
       ]; 
       for(i in itemFields) {
-        tmp = getXmlValue(rssXml, itemFields[i].tag, 'no' in itemFields[i] ? itemFields[i].no : 0);
+        tmp = vlUtils.getXmlValue(rssXml, itemFields[i].tag, 'no' in itemFields[i] ? itemFields[i].no : 0);
 	    if(itemFields[i].tag == 'author') {
-          dateParts = getXmlValue(rssXml, 'pubDate').split(/\s+/);
+          dateParts = vlUtils.getXmlValue(rssXml, 'pubDate').split(/\s+/);
           if(dateParts.length > 3) { tmp += ' ' + dateParts[3]; }
         }
 	if(tmp != '') { y += '<br/>' + tmp; }
@@ -163,13 +163,13 @@ function vlInitInfo(){
                     maxDepth: 0
                 })
             }),
-            styleMap: mergeCustomStyleWithDefaults(vlLayerStyles['BBox'])
+            styleMap: vlUtils.mergeCustomStyleWithDefaults(vlLayerStyles['BBox'])
       });
       map.addLayer(bbox);
       
       bboxLayersCtl = new OpenLayers.Control.SelectFeature([bbox], { 
         onSelect: createBBoxPopup, 
-        onUnselect: destroyPopup,
+        onUnselect: vlUtils.destroyPopup,
       });
       map.addControl(bboxLayersCtl);
       bboxLayersCtl.activate();
@@ -184,7 +184,7 @@ function vlInitInfo(){
   function bboxHandler(request) {
     if(request.status == 200) {
       bboxXml = request.responseXML;
-      coords = getXmlValue(bboxXml, 'coordinates').split(/[, ]+/);
+      coords = vlUtils.getXmlValue(bboxXml, 'coordinates').split(/[, ]+/);
       bbx = [181,91,-181,-91];
       for(i=0; i<coords.length; i+=2) {
         if(coords[i] < bbx[0]) { bbx[0] = coords[i]; } //W

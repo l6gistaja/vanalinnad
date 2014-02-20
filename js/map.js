@@ -20,22 +20,22 @@ function vlInitMap(){
       document.getElementById('map').innerHTML = '';
       confXml = request.responseXML;
       //TODO: change when multiple sites will appear in future 
-      reqParams['site'] = getXmlValue(confXml, 'defaultsite');
+      reqParams['site'] = vlUtils.getXmlValue(confXml, 'defaultsite');
       areaDir = reqParams['site'] + '/';
       OpenLayers.Request.GET({ 
-          url: getXmlValue(confXml, 'dirvector')
-            + getXmlValue(confXml, 'dirplaces')
+          url: vlUtils.getXmlValue(confXml, 'dirvector')
+            + vlUtils.getXmlValue(confXml, 'dirplaces')
             + areaDir
-            + getXmlValue(confXml, 'filelayers'),
+            + vlUtils.getXmlValue(confXml, 'filelayers'),
           callback: xmlHandlerLayers
       });
     }
   }
   function xmlHandlerLayers(request) {
       layersXml = request.responseXML;
-      mapMinZoom = parseInt(getXmlValue(layersXml, 'minzoom'));
-      mapMaxZoom = parseInt(getXmlValue(layersXml, 'maxzoom'));
-      boundBox = getXmlValue(layersXml, 'bounds').split(',');
+      mapMinZoom = parseInt(vlUtils.getXmlValue(layersXml, 'minzoom'));
+      mapMaxZoom = parseInt(vlUtils.getXmlValue(layersXml, 'maxzoom'));
+      boundBox = vlUtils.getXmlValue(layersXml, 'bounds').split(',');
       mapBounds = new OpenLayers.Bounds(
         boundBox[0],
         boundBox[1],
@@ -59,7 +59,7 @@ function vlInitMapAfterConf(){
   });
 
   function osm_getTileURL(bounds) {
-      return getTileURL(osm, bounds);
+      return vlUtils.getTodaysTileURL(osm, bounds);
   }
 
   function overlay_getTileURL(bounds) {
@@ -71,11 +71,11 @@ function vlInitMapAfterConf(){
           z = z + 1;
       }
       if (baseLayersData[map.baseLayer.layername].bounds.intersectsBounds(bounds) && z >= mapMinZoom && z <= mapMaxZoom ) {
-      return getXmlValue(confXml, 'dirraster')
-              + getXmlValue(confXml, 'dirplaces')
+      return vlUtils.getXmlValue(confXml, 'dirraster')
+              + vlUtils.getXmlValue(confXml, 'dirplaces')
               + areaDir 
               + baseLayersData[map.baseLayer.layername].dir
-              + getXmlValue(confXml, 'dirtiles')
+              + vlUtils.getXmlValue(confXml, 'dirtiles')
               + z + "/" + x + "/" + y + "." + this.type;
         } else {
           return osm_getTileURL(bounds);
@@ -87,7 +87,7 @@ function vlInitMapAfterConf(){
   var osm = new OpenLayers.Layer.TMS( currentTime.getFullYear(),
       "http://tile.openstreetmap.org/",
       {
-        layername: getXmlValue(confXml, 'tmslayerprefix') + 'now',
+        layername: vlUtils.getXmlValue(confXml, 'tmslayerprefix') + 'now',
         type: 'png',
         getURL: osm_getTileURL,
         displayOutsideMaxExtent: true,
@@ -102,14 +102,14 @@ function vlInitMapAfterConf(){
     minResolution: map.getResolutionForZoom(mapMinZoom - 1),
     strategies: [new OpenLayers.Strategy.Fixed()],
     protocol: new OpenLayers.Protocol.HTTP({
-        url: getXmlValue(confXml, 'dirvector')
-              + getXmlValue(confXml, 'fileareaselector'),
+        url: vlUtils.getXmlValue(confXml, 'dirvector')
+              + vlUtils.getXmlValue(confXml, 'fileareaselector'),
         format: new OpenLayers.Format.KML({
             extractAttributes: true,
             maxDepth: 0
         })
     }),
-    styleMap: mergeCustomStyleWithDefaults(vlLayerStyles['POIs'])
+    styleMap: vlUtils.mergeCustomStyleWithDefaults(vlLayerStyles['POIs'])
   });
   map.addLayer(selectorLayer);
 
@@ -121,7 +121,7 @@ function vlInitMapAfterConf(){
   for(i = 0; i < layersTags.length; i++) {
     if(layersTags[i].getAttribute('disabled')) { continue; }
     if(layersTags[i].getAttribute('type') == 'tms') {
-      layername = getXmlValue(confXml, 'tmslayerprefix') + layersTags[i].getAttribute('year');
+      layername = vlUtils.getXmlValue(confXml, 'tmslayerprefix') + layersTags[i].getAttribute('year');
       layerBoundBox = layersTags[i].getAttribute('bounds').split(',');
       baseLayersData[layername] = {
         dir: layersTags[i].getAttribute('year') + '/',
@@ -148,8 +148,8 @@ function vlInitMapAfterConf(){
             maxResolution: map.getResolutionForZoom(parseInt(layersTags[i].getAttribute('maxres'))),
             strategies: [new OpenLayers.Strategy.Fixed()],
             protocol: new OpenLayers.Protocol.HTTP({
-                url: getXmlValue(confXml, 'dirvector')
-                      + getXmlValue(confXml, 'dirplaces')
+                url: vlUtils.getXmlValue(confXml, 'dirvector')
+                      + vlUtils.getXmlValue(confXml, 'dirplaces')
                       + areaDir 
                       + layersTags[i].getAttribute('file'),
                 format: new OpenLayers.Format.KML({
@@ -157,7 +157,7 @@ function vlInitMapAfterConf(){
                     maxDepth: 0
                 })
             }),
-          styleMap: mergeCustomStyleWithDefaults(vlLayerStyles['roads'])
+          styleMap: vlUtils.mergeCustomStyleWithDefaults(vlLayerStyles['roads'])
       });
     }
   }
@@ -195,7 +195,7 @@ function vlInitMapAfterConf(){
   //Add a selector control to the kmllayer with popup functions
   var vectorLayersCtl = new OpenLayers.Control.SelectFeature(roadLayers, { 
       onSelect: createVectorLayersPopup, 
-      onUnselect: destroyPopup,
+      onUnselect: vlUtils.destroyPopup,
   });
   map.addControl(vectorLayersCtl);
   vectorLayersCtl.activate();
@@ -227,8 +227,8 @@ function vlInitMapAfterConf(){
   }
   map.addControl(new OpenLayers.Control.Permalink({base: baseurl}));
   function openInfoPage() {
-    var year = map.baseLayer.layername.substr(getXmlValue(confXml, 'tmslayerprefix').length);
-    var win=window.open('info.html?site=' + reqParams['site'] + (year.match(new RegExp(getXmlValue(confXml, 'regexyearmatcher'))) ? '&year=' + year : ''), '_blank'); 
+    var year = map.baseLayer.layername.substr(vlUtils.getXmlValue(confXml, 'tmslayerprefix').length);
+    var win=window.open('info.html?site=' + reqParams['site'] + (year.match(new RegExp(vlUtils.getXmlValue(confXml, 'regexyearmatcher'))) ? '&year=' + year : ''), '_blank'); 
     win.focus();
   }
   var btnHiLite = new OpenLayers.Control.Button({
