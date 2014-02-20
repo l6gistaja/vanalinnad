@@ -11,4 +11,5 @@
 <regexyearmatcher>^\d+$</regexyearmatcher>
 <defaultsite>Tallinn</defaultsite>
 <tmslayerprefix>tms_</tmslayerprefix>
+<infourlprefix>info.html?</infourlprefix>
 </vanalinnadconf>
