@@ -1,20 +1,19 @@
-
-// avoid pink tiles
-OpenLayers.IMAGE_RELOAD_ATTEMPTS = 3;
-OpenLayers.Util.onImageLoadErrorColor = "transparent";
-
-var areaDir;
-var baseLayersData = {};
-var map;
-var mapBounds;
-var mapMinZoom;
-var mapMaxZoom;
-var confXml;
-var layersXml;
-var reqParams;
-var input;
-
 function vlMap(inputParams){
+
+  // avoid pink tiles
+  OpenLayers.IMAGE_RELOAD_ATTEMPTS = 3;
+  OpenLayers.Util.onImageLoadErrorColor = "transparent";
+
+  var areaDir;
+  var baseLayersData = {};
+  var map;
+  var mapBounds;
+  var mapMinZoom;
+  var mapMaxZoom;
+  var confXml;
+  var layersXml;
+  var reqParams;
+  var input;
 
   var xmlHandlerConf = function(request) {
     if(request.status == 200) {
