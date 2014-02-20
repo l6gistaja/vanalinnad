@@ -22,7 +22,7 @@
 function vlInitCoords() {
 
   function osm_getTileURL(bounds) {
-      return getTileURL(osm, bounds);
+      return vlUtils.getTodaysTileURL(osm, bounds);
   }
 
   var map = new OpenLayers.Map('map', {
