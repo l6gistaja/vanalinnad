@@ -4,11 +4,12 @@
 <Placemark id="bbox">
 <name>BBox</name>
 <LineString>
-<coordinates>24.7119091052,59.4226621461 24.7119091052,59.455549533 24.7683676299,59.455549533 24.7683676299,59.4226621461 24.7119091052,59.4226621461</coordinates>
+<coordinates>24.7119476767,59.4227380349 24.7119476767,59.4555371387 24.76830955,59.4555371387 24.76830955,59.4227380349 24.7119476767,59.4227380349</coordinates>
 </LineString>
 </Placemark>
 <Placemark id="gcp1"><name>1</name><description>1091 1624</description><Point><coordinates>24.743517637254193,59.42922706695654</coordinates></Point></Placemark>
 <Placemark id="gcp2"><name>2</name><description>577 392</description><Point><coordinates>24.740642309190225,59.44781842782439</coordinates></Point></Placemark>
 <Placemark id="gcp3"><name>3</name><description>408 1607</description><Point><coordinates>24.725793600083215,59.432451829197795</coordinates></Point></Placemark>
+<Placemark id="gcp4"><name>4</name><description>1275 438</description><Point><coordinates>24.758452177047577,59.44431969012505</coordinates></Point></Placemark>
 </Document>
 </kml>
