@@ -4,7 +4,7 @@ vanalinnad
 Historical maps of Tallinn under grid of today's street network.
 
 * Author: juks at alkohol ee
-* License: [BSD 2-clause License](http://openlayers.org/dev/license.txt), inherited from [OpenLayers](http://openlayers.org) library
+* License: [BSD 2-clause License](http://openlayers.org/dev/license.txt), inherited from used [OpenLayers](http://openlayers.org) library
 * GitHub: [https://github.com/l6gistaja/vanalinnad](https://github.com/l6gistaja/vanalinnad)
 
 Adding new historical map to application
