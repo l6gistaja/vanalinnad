@@ -210,9 +210,14 @@ function vlMap(inputParams){
 
     permalinkReqKeys = ['zoom','lat','lon','layers'];
     for(reqKey in permalinkReqKeys) { 
-      if(!(permalinkReqKeys[reqKey] in reqParams)) {
-          map.zoomToExtent(mapBounds.transform(map.displayProjection, map.projection));
-          break;
+      if(!(permalinkReqKeys[reqKey] in reqParams)) { 
+        if(layerUrlSelect > -1) {
+          zoomBounds = baseLayersData[vlUtils.getXmlValue(confXml, 'tmslayerprefix') + reqParams['year']].bounds;
+        } else {
+          zoomBounds = mapBounds.transform(map.displayProjection, map.projection);
+        }
+        map.zoomToExtent(zoomBounds);
+        break;
       }
     }
     baseurl = '';
