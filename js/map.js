@@ -210,16 +210,24 @@ function vlMap(inputParams){
 
     permalinkReqKeys = ['zoom','lat','lon','layers'];
     for(reqKey in permalinkReqKeys) { 
-      if(!(permalinkReqKeys[reqKey] in reqParams)) { 
+      if(
+        !(permalinkReqKeys[reqKey] in reqParams) 
+        || (reqKey < 3 && isNaN(parseFloat(reqParams[permalinkReqKeys[reqKey]])))
+      ) { 
         if(layerUrlSelect > -1) {
-          zoomBounds = baseLayersData[vlUtils.getXmlValue(confXml, 'tmslayerprefix') + reqParams['year']].bounds;
+          if(reqKey == 3) {
+            lonlat = new OpenLayers.LonLat(reqParams['lon'],reqParams['lat']);
+            map.setCenter(lonlat.transform(map.displayProjection, map.projection),reqParams['zoom']);
+          } else {
+            map.zoomToExtent(baseLayersData[vlUtils.getXmlValue(confXml, 'tmslayerprefix') + reqParams['year']].bounds);
+          }
         } else {
-          zoomBounds = mapBounds.transform(map.displayProjection, map.projection);
+          map.zoomToExtent(mapBounds.transform(map.displayProjection, map.projection));
         }
-        map.zoomToExtent(zoomBounds);
         break;
       }
     }
+    //alert(layerFromYear + reqKey + ', ' + layerUrlSelect);
     baseurl = '';
     for(reqKey in reqParams) {
       if(reqKey == 'year') { continue; }
