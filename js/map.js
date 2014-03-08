@@ -174,7 +174,7 @@ function vlMap(inputParams){
             function() { vectorLayersCtl.unselectAll(); }
         );
       } else {
-        feature.popup = new OpenLayers.Popup.Anchored(
+        feature.popup = new OpenLayers.Popup.Anchored (
             "roadPopup",
             map.getCenter(),
             null,
