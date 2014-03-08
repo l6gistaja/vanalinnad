@@ -192,12 +192,6 @@ function vlInitInfo(){
         if(coords[i+1] < bbx[1]) { bbx[1] = coords[i+1]; } //S
         if(coords[i+1] > bbx[3]) { bbx[3] = coords[i+1]; } //N
       }
-      dlat = (bbx[2] - bbx[0])*0.1;
-      dlon = (bbx[3] - bbx[1])*0.2;
-      bbx[0] -= dlat;
-      bbx[2] += dlat;
-      bbx[1] -= dlon;
-      bbx[3] += dlon;
       mapBounds = new OpenLayers.Bounds(bbx);
       map.zoomToExtent(mapBounds.transform(map.displayProjection, map.projection));
     }
