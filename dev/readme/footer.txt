@@ -1,0 +1,5 @@
+
+<a href="index.html">Vanalinnad</a> | <a href="readme.html"><strong>Readme</strong></a> | <a href="info.html">Info</a>
+</div>
+</body>
+</html>

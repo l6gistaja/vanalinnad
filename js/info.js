@@ -95,7 +95,8 @@ function vlInitInfo(){
         legends = vlUtils.getXmlValue(rssXml, 'legends').split(',');
         for(i=0; i<legends.length; i++) {
           if(legends[i] == '') { continue; }
-          y += '<br/><img src="'
+          y += ( i > -1 ? '<br/>' : '' )
+             + '<img src="'
              + vlUtils.getXmlValue(confXml, 'dirraster')
              + vlUtils.getXmlValue(confXml, 'dirplaces')
              + reqParams['site']
@@ -131,7 +132,8 @@ function vlInitInfo(){
       document.getElementById('header').innerHTML += siteLbl + ' &gt; ' 
         + '<a href="index.html?site=' + reqParams['site'] 
         + '&year=' + reqParams['year'] + '">' + reqParams['year'] + '</a>';
-      document.getElementById('content').innerHTML = y + document.getElementById('header').innerHTML;
+      document.getElementById('content').innerHTML = y;
+      document.getElementById('footer').innerHTML = document.getElementById('header').innerHTML;
 
       map = new OpenLayers.Map('map', {
         projection: new OpenLayers.Projection("EPSG:900913"),
@@ -212,6 +214,7 @@ function vlInitInfo(){
       y += '</ol>';
       document.getElementById('content').innerHTML = y;
       document.getElementById('header').innerHTML += siteLbl;
+      document.getElementById('footer').innerHTML = document.getElementById('header').innerHTML;
     } else {
       OpenLayers.Request.GET(requestConf['selector']);
     }
@@ -226,8 +229,9 @@ function vlInitInfo(){
          y += '<li><a href="?site=' + links[i].childNodes[0].nodeValue 
            + '">' + links[i].childNodes[0].nodeValue + '</a></li>';
       }
-      y += '</ol><a href="index.html">Maps</a> | <a target="_blank" href="readme.html">Readme</a> | <a href="https://github.com/l6gistaja/vanalinnad">GitHub</a>';
+      y += '</ol>';
       document.getElementById('content').innerHTML = y;
+      document.getElementById('footer').innerHTML = document.getElementById('header').innerHTML;
     }
   }
 

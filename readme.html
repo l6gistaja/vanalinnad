@@ -1,19 +1,31 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!-- saved from url=(0014)about:internet -->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8"/>
+<title>Vanalinnad</title>
+<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+</head>
+<body>
+<a href="index.html">Vanalinnad</a> | <a href="readme.html"><strong>Readme</strong></a> | <a href="info.html">Info</a>
+<br/>
 <h1>vanalinnad</h1>
 
 <p>Historical maps of Tallinn under grid of today's street network.</p>
 
 <ul>
-<li>Author: juks at alkohol ee</li>
 <li>License: <a href="http://openlayers.org/dev/license.txt">BSD 2-clause License</a>, inherited from used <a href="http://openlayers.org">OpenLayers</a> library</li>
+<li>Vector data: © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a></li>
 <li>GitHub: <a href="https://github.com/l6gistaja/vanalinnad">https://github.com/l6gistaja/vanalinnad</a></li>
+<li>Author: juks at alkohol ee</li>
 </ul>
 
 <h2>Adding new historical map to application</h2>
 
 <p>Following describes new map adding process with Debian Linux 6.0.8.</p>
 
-<ul>
-<li>Optionally, cut away (or make white) edges, legends, empty areas etc from original map. It makes tile generation speed, repo size and download speed smaller.</li>
+<ol>
+<li>Optionally, cut away (or whiten) edges, legends, empty areas etc from original map. It makes tile generation speed, repo size and download speed smaller.</li>
 <li>Install <a href="http://www.gdal.org/">GDAL utils</a> (in Debian: <code>apt-get install gdal-bin</code>)</li>
 <li><a href="https://github.com/l6gistaja/vanalinnad/blob/master/raster/places/Tallinn/1968/gdal.txt">Georeference</a> source map image: <code>gdal_translate {SOURCE_IMAGE_FILE}  {GEOREFERENCED_PNG_FILE} -of PNG</code> <code>-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}</code> <code>{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP}</code>. Choose and specify image (in pixels) and geographical coordinates of at least 3 G(round)C(ontrol)P(oint)s. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use <code>dev/coords.html</code> for finding GCPs geographical coordinates.</li>
 <li>Install <a href="http://www.maptiler.org/">MapTiler</a></li>
@@ -22,7 +34,7 @@
 <li>Add <code>&lt;layer type="tms" year="{YEAR}" bounds="{WEST_SOUTH_EAST_NORTH}"/&gt;</code> to <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/layers.xml"><code>vector/places/{PLACE}/layers.xml</code></a>. You can get boundingbox from line <code>mapBounds = new OpenLayers.Bounds({WEST,SOUTH,EAST,NORTH});</code> from file <a href="https://github.com/l6gistaja/vanalinnad/blob/master/raster/places/Tallinn/1968/tiles/openlayers.html"><code>raster/places/{PLACE}/{YEAR}/tiles/openlayers.html</code></a>.</li>
 <li>Regenerate BBoxes info: <code>dev/genbbox.pl {VANALINNAD_ROOT_DIR} {PLACE}</code></li>
 <li>Optionally, add map description to <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/rss1968.xml"><code>vector/places/{PLACE}/rss{YEAR}.xml</code></a>. You can use <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/rsstemplate.xml"><code>vector/rsstemplate.xml</code></a> as template. Extra tag legends is comma separated list of legend image filenames under <a href="https://github.com/l6gistaja/vanalinnad/tree/master/raster/places/Tallinn/1968"><code>raster/places/{PLACE}/{YEAR}/</code></a>.</li>
-</ul>
+</ol>
 
 <h2>License</h2>
 
@@ -39,7 +51,7 @@ this list of conditions and the following disclaimer in the documentation and/or
 other materials provided with the distribution.</p></li>
 </ol>
 
-<p>THIS SOFTWARE IS PROVIDED BY OPENLAYERS CONTRIBUTORS ``AS IS'' AND ANY EXPRESS
+<p>THIS SOFTWARE IS PROVIDED BY juks at alkohol ee ``AS IS'' AND ANY EXPRESS
 OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
 MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT
 SHALL COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
@@ -52,4 +64,9 @@ ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</p>
 
 <p>The views and conclusions contained in the software and documentation are those
 of the authors and should not be interpreted as representing official policies,
-either expressed or implied, of OpenLayers Contributors.</p>
+either expressed or implied, of juks at alkohol ee.</p>
+
+<a href="index.html">Vanalinnad</a> | <a href="readme.html"><strong>Readme</strong></a> | <a href="info.html">Info</a>
+</div>
+</body>
+</html>
