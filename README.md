@@ -8,20 +8,30 @@ Historical maps of Tallinn under grid of today's street network.
 * GitHub: [https://github.com/l6gistaja/vanalinnad](https://github.com/l6gistaja/vanalinnad)
 * Author: juks at alkohol ee
 
+Map URL examples
+----------------
+
+1. [index.html?site=Tallinn](index.html?site=Tallinn) : all maps of Tallinn.
+1. [index.html?site=Tallinn&year=1968](index.html?site=Tallinn&year=1968) : Tallinn in year 1968.
+1. [index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081](index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081) : Tallinn in year 1968, Kadriorg area.
+1. [index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081&years=1911.1885.1856](index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081&years=1911.1885.1856) : Tallinn in year 1968, Kadriorg area. Selectable are maps only from years 1968 and 1911, 1885, 1856.
+
 Adding new historical map to application
 ----------------------------------------
 
 Following describes new map adding process with Debian Linux 6.0.8.
+
+NB! You can run ```./dev/postproc.bash {PLACE} {YEAR}``` from ```{VANALINNAD_ROOT_DIR}``` instead of steps 7 and 8.
 
 1. Optionally, cut away (or whiten) edges, legends, empty areas etc from original map. It makes tile generation speed, repo size and download speed smaller.
 1. Install [GDAL utils](http://www.gdal.org/) (in Debian: ```apt-get install gdal-bin```)
 1. [Georeference](https://github.com/l6gistaja/vanalinnad/blob/master/raster/places/Tallinn/1968/gdal.txt) source map image: ```gdal_translate {SOURCE_IMAGE_FILE}  {GEOREFERENCED_PNG_FILE} -of PNG ``` ```-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}``` ```{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP}```. Choose and specify image (in pixels) and geographical coordinates of at least 3 G(round)C(ontrol)P(oint)s. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use ```dev/coords.html``` for finding GCPs geographical coordinates.
 1. Install [MapTiler](http://www.maptiler.org/)
 1. Generate tiles: open MapTiler > choose Google Maps compatible > Continue > Add > choose ```{GEOREFERENCED_PNG_FILE}``` > Continue > choose WGS84 - Latitude and longitude  > Continue > choose zoom levels > choose JPEG as file format > Continue > choose output directory for tiles (```raster/places/{PLACE}/{YEAR}/tiles```) > Continue > choose Google Maps and OpenLayers > Continue > Continue > Render
-1. Optionally, throw away empty tiles:  ```cd dev/jpg2png/ ; ./replace.bash ../../raster/places/{PLACE}/{YEAR}/tiles/```. For that step you need [ImageMagick](http://www.imagemagick.org)
 1. Add ```<layer type="tms" year="{YEAR}" bounds="{WEST_SOUTH_EAST_NORTH}"/>``` to [```vector/places/{PLACE}/layers.xml```](https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/layers.xml). You can get boundingbox from line ```mapBounds = new OpenLayers.Bounds({WEST,SOUTH,EAST,NORTH});``` from file [```raster/places/{PLACE}/{YEAR}/tiles/openlayers.html```](https://github.com/l6gistaja/vanalinnad/blob/master/raster/places/Tallinn/1968/tiles/openlayers.html).
 1. Regenerate BBoxes info: ```dev/genbbox.pl {VANALINNAD_ROOT_DIR} {PLACE}```
-1. Optionally, add map description to [```vector/places/{PLACE}/rss{YEAR}.xml```](https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/rss1968.xml). You can use [```vector/rsstemplate.xml```](https://github.com/l6gistaja/vanalinnad/blob/master/vector/rsstemplate.xml) as template. Extra tag legends is comma separated list of legend image filenames under [```raster/places/{PLACE}/{YEAR}/```](https://github.com/l6gistaja/vanalinnad/tree/master/raster/places/Tallinn/1968).
+1. Optionally, throw away empty tiles:  ```cd dev/jpg2png/ ; ./replace.bash ../../raster/places/{PLACE}/{YEAR}/tiles/```. For that step you need [ImageMagick](http://www.imagemagick.org)
+1. Add map description to [```vector/places/{PLACE}/rss{YEAR}.xml```](https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/rss1968.xml). You can use [```vector/rsstemplate.xml```](https://github.com/l6gistaja/vanalinnad/blob/master/vector/rsstemplate.xml) as template. Extra tag legends is comma separated list of legend image filenames under [```raster/places/{PLACE}/{YEAR}/```](https://github.com/l6gistaja/vanalinnad/tree/master/raster/places/Tallinn/1968).
 
 License
 -------

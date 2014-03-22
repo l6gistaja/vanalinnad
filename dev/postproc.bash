@@ -5,6 +5,7 @@ if [ $# -ne 2 ]; then
   exit
 fi
 
+dev/readme/md2html.bash
 cd dev
 ./genbbox.pl ../ $1
 cd jpg2png

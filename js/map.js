@@ -48,6 +48,8 @@ function vlMap(inputParams){
   
   var vlInitMapAfterConf = function(){
 
+    yearMatcher = new RegExp(vlUtils.getXmlValue(confXml, 'regexyearmatcher'));
+
     map = new OpenLayers.Map(inputParams.divMap, {
       projection: new OpenLayers.Projection("EPSG:900913"),
       displayProjection: new OpenLayers.Projection("EPSG:4326"),
@@ -114,10 +116,32 @@ function vlMap(inputParams){
     var tmsoverlays = [];
     var roadLayers = [];
     var layerUrlSelect = -1;
-    layerYear = ('year' in reqParams) ? reqParams['year'] : '';
+
+    visibleBaseLayers = ('years' in reqParams) ? reqParams['years'].split('.') : [];
+    for(i = visibleBaseLayers.length - 1; i > -1; i--) {
+      if(!visibleBaseLayers[i].match(yearMatcher)) {
+        visibleBaseLayers.splice(i, 1);
+      };
+    }
+    if('year' in reqParams) {
+      layerYear = reqParams['year'];
+      if(
+        visibleBaseLayers.length > 0
+        && OpenLayers.Util.indexOf(visibleBaseLayers, layerYear) < 0
+      ) {
+        visibleBaseLayers[visibleBaseLayers.length] = layerYear
+      }
+    } else {
+      layerYear = '';
+    }
+
     for(i = 0; i < layersTags.length; i++) {
       if(layersTags[i].getAttribute('disabled')) { continue; }
       if(layersTags[i].getAttribute('type') == 'tms') {
+        if(
+          visibleBaseLayers.length > 0
+          && OpenLayers.Util.indexOf(visibleBaseLayers, layersTags[i].getAttribute('year')) < 0
+        ) { continue; }
         layername = vlUtils.getXmlValue(confXml, 'tmslayerprefix') + layersTags[i].getAttribute('year');
         layerBoundBox = layersTags[i].getAttribute('bounds').split(',');
         baseLayersData[layername] = {
@@ -241,7 +265,7 @@ function vlMap(inputParams){
       var win=window.open(
         vlUtils.getXmlValue(confXml, 'infourlprefix')
         + 'site=' + reqParams['site']
-        + (year.match(new RegExp(vlUtils.getXmlValue(confXml, 'regexyearmatcher'))) 
+        + (year.match(yearMatcher) 
           ? '&year=' + year : '')
       ,'_blank'); 
       win.focus();
