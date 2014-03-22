@@ -125,11 +125,8 @@ function vlMap(inputParams){
     }
     if('year' in reqParams) {
       layerYear = reqParams['year'];
-      if(
-        visibleBaseLayers.length > 0
-        && OpenLayers.Util.indexOf(visibleBaseLayers, layerYear) < 0
-      ) {
-        visibleBaseLayers[visibleBaseLayers.length] = layerYear
+      if(visibleBaseLayers.length > 0) {
+        visibleBaseLayers[visibleBaseLayers.length] = layerYear;
       }
     } else {
       layerYear = '';
