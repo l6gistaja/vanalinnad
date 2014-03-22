@@ -33,7 +33,7 @@ function vlInitInfo(){
              + vlUtils.getXmlValue(confXml, 'filelayers'),
            callback: layerHandler
         },
-	    selector: {
+	selector: {
            url: vlUtils.getXmlValue(confXml, 'dirvector')
              + vlUtils.getXmlValue(confXml, 'fileareaselector'),
            callback: selectorHandler
@@ -42,8 +42,7 @@ function vlInitInfo(){
            url: vlUtils.getXmlValue(confXml, 'dirvector')
                 + vlUtils.getXmlValue(confXml, 'dirplaces')
                 + reqParams['site'] + '/bbox'
-                + reqParams['year'] + '.kml',
-           callback: bboxHandler
+                + reqParams['year'] + '.kml'
       	}
       };
       if(reqParams['site'].match(/\S/)) {
@@ -155,7 +154,7 @@ function vlInitInfo(){
       );
       map.addLayer(osm);
       
-      bbox = new OpenLayers.Layer.Vector('BBox', {
+      var bbox = new OpenLayers.Layer.Vector('BBox', {
             projection: new OpenLayers.Projection("EPSG:4326"),
             strategies: [new OpenLayers.Strategy.Fixed()],
             protocol: new OpenLayers.Protocol.HTTP({
@@ -167,35 +166,18 @@ function vlInitInfo(){
             }),
             styleMap: vlUtils.mergeCustomStyleWithDefaults(vlLayerStyles['BBox'])
       });
+      bbox.events.register('loadend', bbox, function(){map.zoomToExtent(bbox.getDataExtent());});
       map.addLayer(bbox);
-      
+
       bboxLayersCtl = new OpenLayers.Control.SelectFeature([bbox], { 
         onSelect: createBBoxPopup, 
         onUnselect: vlUtils.destroyPopup,
       });
       map.addControl(bboxLayersCtl);
       bboxLayersCtl.activate();
-      
-      //map.zoomToExtent(bbox.getDataExtent());
-      OpenLayers.Request.GET(requestConf['bbox']);
+
     } else {
       OpenLayers.Request.GET(requestConf['site']);
-    }
-  }
-
-  function bboxHandler(request) {
-    if(request.status == 200) {
-      bboxXml = request.responseXML;
-      coords = vlUtils.getXmlValue(bboxXml, 'coordinates').split(/[, ]+/);
-      bbx = [181,91,-181,-91];
-      for(i=0; i<coords.length; i+=2) {
-        if(coords[i] < bbx[0]) { bbx[0] = coords[i]; } //W
-        if(coords[i] > bbx[2]) { bbx[2] = coords[i]; } //E
-        if(coords[i+1] < bbx[1]) { bbx[1] = coords[i+1]; } //S
-        if(coords[i+1] > bbx[3]) { bbx[3] = coords[i+1]; } //N
-      }
-      mapBounds = new OpenLayers.Bounds(bbx);
-      map.zoomToExtent(mapBounds.transform(map.displayProjection, map.projection));
     }
   }
 
