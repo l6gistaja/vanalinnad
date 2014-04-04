@@ -13,12 +13,6 @@ html, body, #map {
   float: right;
 }
 
-.olControlLayerSwitcher {
-  -moz-border-radius: 15px 0px 0px 15px;
-  border-radius: 15px 0px 0px 15px;
-  width:15em;
-}
-
 .olControlBtnHiLiteItemActive {  
   position:fixed;
   top:6px;
