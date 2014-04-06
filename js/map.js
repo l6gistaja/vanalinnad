@@ -10,7 +10,7 @@ function vlMap(inputParams){
   var mapBounds;
   var mapMinZoom;
   var mapMaxZoom;
-  var confXml;
+  var conf;
   var layersXml;
   var reqParams;
   var input;
@@ -18,15 +18,15 @@ function vlMap(inputParams){
   var xmlHandlerConf = function(request) {
     if(request.status == 200) {
       document.getElementById(inputParams.divMap).innerHTML = '';
-      confXml = request.responseXML;
+      conf = vlUtils.xmlDoc2Hash(request.responseXML);
       //TODO: change when multiple sites will appear in future 
-      reqParams['site'] = vlUtils.getXmlValue(confXml, 'defaultsite');
+      reqParams['site'] = conf.defaultsite;
       areaDir = reqParams['site'] + '/';
       OpenLayers.Request.GET({ 
-          url: vlUtils.getXmlValue(confXml, 'dirvector')
-            + vlUtils.getXmlValue(confXml, 'dirplaces')
+          url: conf.dirvector
+            + conf.dirplaces
             + areaDir
-            + vlUtils.getXmlValue(confXml, 'filelayers'),
+            + conf.filelayers,
           callback: xmlHandlerLayers
       });
     }
@@ -48,7 +48,7 @@ function vlMap(inputParams){
   
   var vlInitMapAfterConf = function(){
 
-    yearMatcher = new RegExp(vlUtils.getXmlValue(confXml, 'regexyearmatcher'));
+    yearMatcher = new RegExp(conf.regexyearmatcher);
 
     map = new OpenLayers.Map(inputParams.divMap, {
       projection: new OpenLayers.Projection("EPSG:900913"),
@@ -70,11 +70,11 @@ function vlMap(inputParams){
             z = z + 1;
         }
         if (baseLayersData[map.baseLayer.layername].bounds.intersectsBounds(bounds) && z >= mapMinZoom && z <= mapMaxZoom ) {
-        return vlUtils.getXmlValue(confXml, 'dirraster')
-                + vlUtils.getXmlValue(confXml, 'dirplaces')
+        return conf.dirraster
+                + conf.dirplaces
                 + areaDir 
                 + baseLayersData[map.baseLayer.layername].dir
-                + vlUtils.getXmlValue(confXml, 'dirtiles')
+                + conf.dirtiles
                 + z + "/" + x + "/" + y + "." + this.type;
           } else {
             return osm_getTileURL(bounds);
@@ -86,7 +86,7 @@ function vlMap(inputParams){
     var osm = new OpenLayers.Layer.TMS( currentTime.getFullYear(),
         "http://tile.openstreetmap.org/",
         {
-          layername: vlUtils.getXmlValue(confXml, 'tmslayerprefix') + 'now',
+          layername: conf.tmslayerprefix + 'now',
           type: 'png',
           getURL: osm_getTileURL,
           displayOutsideMaxExtent: true,
@@ -101,8 +101,8 @@ function vlMap(inputParams){
       minResolution: map.getResolutionForZoom(mapMinZoom - 1),
       strategies: [new OpenLayers.Strategy.Fixed()],
       protocol: new OpenLayers.Protocol.HTTP({
-          url: vlUtils.getXmlValue(confXml, 'dirvector')
-                + vlUtils.getXmlValue(confXml, 'fileareaselector'),
+          url: conf.dirvector
+               + conf.fileareaselector,
           format: new OpenLayers.Format.KML({
               extractAttributes: true,
               maxDepth: 0
@@ -139,7 +139,7 @@ function vlMap(inputParams){
           visibleBaseLayers.length > 0
           && OpenLayers.Util.indexOf(visibleBaseLayers, layersTags[i].getAttribute('year')) < 0
         ) { continue; }
-        layername = vlUtils.getXmlValue(confXml, 'tmslayerprefix') + layersTags[i].getAttribute('year');
+        layername = conf.tmslayerprefix + layersTags[i].getAttribute('year');
         layerBoundBox = layersTags[i].getAttribute('bounds').split(',');
         baseLayersData[layername] = {
           dir: layersTags[i].getAttribute('year') + '/',
@@ -166,8 +166,8 @@ function vlMap(inputParams){
               maxResolution: map.getResolutionForZoom(parseInt(layersTags[i].getAttribute('maxres'))),
               strategies: [new OpenLayers.Strategy.Fixed()],
               protocol: new OpenLayers.Protocol.HTTP({
-                  url: vlUtils.getXmlValue(confXml, 'dirvector')
-                        + vlUtils.getXmlValue(confXml, 'dirplaces')
+                  url: conf.dirvector
+                        + conf.dirplaces
                         + areaDir 
                         + layersTags[i].getAttribute('file'),
                   format: new OpenLayers.Format.KML({
@@ -240,7 +240,7 @@ function vlMap(inputParams){
             lonlat = new OpenLayers.LonLat(reqParams['lon'],reqParams['lat']);
             map.setCenter(lonlat.transform(map.displayProjection, map.projection),reqParams['zoom']);
           } else {
-            map.zoomToExtent(baseLayersData[vlUtils.getXmlValue(confXml, 'tmslayerprefix') + reqParams['year']].bounds);
+            map.zoomToExtent(baseLayersData[conf.tmslayerprefix + reqParams['year']].bounds);
           }
         } else {
           map.zoomToExtent(mapBounds.transform(map.displayProjection, map.projection));
@@ -258,9 +258,9 @@ function vlMap(inputParams){
     }
     map.addControl(new OpenLayers.Control.Permalink({base: baseurl}));
     function openInfoPage() {
-      var year = map.baseLayer.layername.substr(vlUtils.getXmlValue(confXml, 'tmslayerprefix').length);
+      var year = map.baseLayer.layername.substr(conf.tmslayerprefix.length);
       var win=window.open(
-        vlUtils.getXmlValue(confXml, 'infourlprefix')
+        conf.infourlprefix
         + 'site=' + reqParams['site']
         + (year.match(yearMatcher) 
           ? '&year=' + year : '')

@@ -2,7 +2,7 @@ function vlInitInfo(){
 
   var map;
   var osm;
-  var confXml;
+  var conf;
   var rssXml;
   var bboxLayersCtl;
   var reqParams = OpenLayers.Util.getParameters();
@@ -14,11 +14,11 @@ function vlInitInfo(){
   function xmlHandlerConf(request) {
     if(request.status == 200) {
       if(!('year' in reqParams)) { reqParams['year'] = ''; }
-      confXml = request.responseXML;
+      conf = vlUtils.xmlDoc2Hash(request.responseXML);
       requestConf = {
         year: {
-           url: vlUtils.getXmlValue(confXml, 'dirvector')
-             + vlUtils.getXmlValue(confXml, 'dirplaces')
+           url: conf.dirvector
+             + conf.dirplaces
              + reqParams['site']
              + '/rss'
              + reqParams['year']
@@ -26,27 +26,27 @@ function vlInitInfo(){
            callback: rssHandler
         },
         site: {
-           url: vlUtils.getXmlValue(confXml, 'dirvector')
-             + vlUtils.getXmlValue(confXml, 'dirplaces')
+           url: conf.dirvector
+             + conf.dirplaces
              + reqParams['site']
              + '/'
-             + vlUtils.getXmlValue(confXml, 'filelayers'),
+             + conf.filelayers,
            callback: layerHandler
         },
 	selector: {
-           url: vlUtils.getXmlValue(confXml, 'dirvector')
-             + vlUtils.getXmlValue(confXml, 'fileareaselector'),
+           url: conf.dirvector
+             + conf.fileareaselector,
            callback: selectorHandler
       	},
         bbox: {
-           url: vlUtils.getXmlValue(confXml, 'dirvector')
-                + vlUtils.getXmlValue(confXml, 'dirplaces')
-                + reqParams['site'] + '/bbox'
-                + reqParams['year'] + '.kml'
+           url: conf.dirvector
+             + conf.dirplaces
+             + reqParams['site'] + '/bbox'
+             + reqParams['year'] + '.kml'
       	}
       };
       if(reqParams['site'].match(/\S/)) {
-	    key = reqParams['year'].match(new RegExp(vlUtils.getXmlValue(confXml, 'regexyearmatcher'))) ? 'year' : 'site';
+	    key = reqParams['year'].match(new RegExp(conf.regexyearmatcher)) ? 'year' : 'site';
       } else { key = 'selector'; }
       OpenLayers.Request.GET(requestConf[key]);
     }
@@ -96,8 +96,8 @@ function vlInitInfo(){
           if(legends[i] == '') { continue; }
           y += ( i > -1 ? '<br/>' : '' )
              + '<img src="'
-             + vlUtils.getXmlValue(confXml, 'dirraster')
-             + vlUtils.getXmlValue(confXml, 'dirplaces')
+             + conf.dirraster
+             + conf.dirplaces
              + reqParams['site']
              + '/'
              + reqParams['year']

@@ -49,3 +49,13 @@ vlUtils.destroyPopup = function(feature) {
   feature.popup.destroy();
   feature.popup = null;
 }
+
+vlUtils.xmlDoc2Hash = function(xmlDoc) {
+  y = {};
+  x = xmlDoc.documentElement.childNodes;
+  for (i=0;i<x.length;i++) {
+    if(x[i].childNodes.length < 1) { continue; }
+    y[x[i].nodeName] = x[i].childNodes[0].nodeValue;
+  }
+  return y;
+}
