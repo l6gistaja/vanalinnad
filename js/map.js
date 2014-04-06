@@ -287,9 +287,9 @@ function vlMap(inputParams){
     if(layerUrlSelect > -1) { map.setBaseLayer(tmsoverlays[layerUrlSelect]); }
   }
 
-  var _init = function(inputParams) {
+  var _init = function() {
     reqParams = OpenLayers.Util.getParameters();
-    OpenLayers.Request.GET({ url: "conf.xml", callback: xmlHandlerConf });
+    OpenLayers.Request.GET({ url: inputParams.conf, callback: xmlHandlerConf });
   }
 
   _init();

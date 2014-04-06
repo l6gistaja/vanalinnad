@@ -1,4 +1,4 @@
-function vlInitInfo(){
+function vlInitInfo(inputParams){
 
   var map;
   var osm;
@@ -128,11 +128,11 @@ function vlInitInfo(){
            + links[i].childNodes[0].nodeValue + '</a></li>';
       }
       y += '</ol><a name="bbox"><a href="'+requestConf.bbox.url+'">BBox &amp; GCP</a></a><div id="map" style="height:400px;width:600px;"></div>';
-      document.getElementById('header').innerHTML += siteLbl + ' &gt; ' 
+      document.getElementById(inputParams.divHeader).innerHTML += siteLbl + ' &gt; ' 
         + '<a href="index.html?site=' + reqParams['site'] 
         + '&year=' + reqParams['year'] + '">' + reqParams['year'] + '</a>';
-      document.getElementById('content').innerHTML = y;
-      document.getElementById('footer').innerHTML = document.getElementById('header').innerHTML;
+      document.getElementById(inputParams.divContent).innerHTML = y;
+      document.getElementById(inputParams.divFooter).innerHTML = document.getElementById(inputParams.divHeader).innerHTML;
 
       map = new OpenLayers.Map('map', {
         projection: new OpenLayers.Projection("EPSG:900913"),
@@ -194,9 +194,9 @@ function vlInitInfo(){
            + links[i].getAttribute('year') + '</a></li>';
       }
       y += '</ol>';
-      document.getElementById('content').innerHTML = y;
-      document.getElementById('header').innerHTML += siteLbl;
-      document.getElementById('footer').innerHTML = document.getElementById('header').innerHTML;
+      document.getElementById(inputParams.divContent).innerHTML = y;
+      document.getElementById(inputParams.divHeader).innerHTML += siteLbl;
+      document.getElementById(inputParams.divFooter).innerHTML = document.getElementById(inputParams.divHeader).innerHTML;
     } else {
       OpenLayers.Request.GET(requestConf['selector']);
     }
@@ -212,10 +212,10 @@ function vlInitInfo(){
            + '">' + links[i].childNodes[0].nodeValue + '</a></li>';
       }
       y += '</ol>';
-      document.getElementById('content').innerHTML = y;
-      document.getElementById('footer').innerHTML = document.getElementById('header').innerHTML;
+      document.getElementById(inputParams.divContent).innerHTML = y;
+      document.getElementById(inputParams.divFooter).innerHTML = document.getElementById(inputParams.divHeader).innerHTML;
     }
   }
 
-  OpenLayers.Request.GET({ url: "conf.xml", callback: xmlHandlerConf });
+  OpenLayers.Request.GET({ url: inputParams.conf, callback: xmlHandlerConf });
 }
