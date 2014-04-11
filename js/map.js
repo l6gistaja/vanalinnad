@@ -195,9 +195,13 @@ function vlMap(inputParams){
             function() { vectorLayersCtl.unselectAll(); }
         );
       } else {
-        feature.popup = new OpenLayers.Popup.Anchored (
+        distanceDetails = feature.geometry.distanceTo(
+          new OpenLayers.Geometry.Point(map.getCenter().lon, map.getCenter().lat), 
+          {details: true}
+        );
+        feature.popup = new OpenLayers.Popup.FramedCloud (
             "roadPopup",
-            map.getCenter(),
+            new OpenLayers.​LonLat(distanceDetails.x0, distanceDetails.y0),
             null,
             feature.attributes.name,
             null,
