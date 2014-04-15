@@ -201,7 +201,7 @@ function vlMap(inputParams){
         );
         feature.popup = new OpenLayers.Popup.FramedCloud (
             "roadPopup",
-            new OpenLayers.​LonLat(distanceDetails.x0, distanceDetails.y0),
+            new OpenLayers.LonLat(distanceDetails.x0, distanceDetails.y0),
             null,
             feature.attributes.name,
             null,
@@ -217,7 +217,7 @@ function vlMap(inputParams){
     //Add a selector control to the kmllayer with popup functions
     var vectorLayersCtl = new OpenLayers.Control.SelectFeature(roadLayers, { 
         onSelect: createVectorLayersPopup, 
-        onUnselect: vlUtils.destroyPopup,
+        onUnselect: vlUtils.destroyPopup
     });
     map.addControl(vectorLayersCtl);
     vectorLayersCtl.activate();
@@ -252,7 +252,6 @@ function vlMap(inputParams){
         break;
       }
     }
-    //alert(layerFromYear + reqKey + ', ' + layerUrlSelect);
     baseurl = '';
     for(reqKey in reqParams) {
       if(reqKey == 'year') { continue; }

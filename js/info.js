@@ -171,7 +171,7 @@ function vlInitInfo(inputParams){
 
       bboxLayersCtl = new OpenLayers.Control.SelectFeature([bbox], { 
         onSelect: createBBoxPopup, 
-        onUnselect: vlUtils.destroyPopup,
+        onUnselect: vlUtils.destroyPopup
       });
       map.addControl(bboxLayersCtl);
       bboxLayersCtl.activate();
