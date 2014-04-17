@@ -37,7 +37,7 @@ for($i=0; $i<$len-1; $i++) {
     .$coords[2].', '.$coords[1].', 0. '
     ."</coordinates></LinearRing></outerBoundaryIs></Polygon></Placemark>\n";
 
-  $file = $filebase.$conf->{'Document'}{'ExtendedData'}{'v:filextosm'};
+  $file = $filebase.'.osm';
   push(@bash, "echo '".$bboxs."Fetch OSM'");
   if(!(-e $file)) {
     push(@bash, 'wget -O '
@@ -48,7 +48,7 @@ for($i=0; $i<$len-1; $i++) {
   }
   
   $osmfile = $file;
-  $file = $filebase.$conf->{'Document'}{'ExtendedData'}{'v:filextgml'};
+  $file = $filebase.'.gml';
   push(@bash, "echo '".$bboxs."Convert OSM 2 GML'");
   if(!(-e $file)) {
     push(@bash, 'xsltproc osm2gml.xslt '
@@ -58,7 +58,7 @@ for($i=0; $i<$len-1; $i++) {
   }
 
   $gmlfile = $file;
-  $file = $filebase.$conf->{'Document'}{'ExtendedData'}{'v:filextxml'};
+  $file = $filebase.'.xml';
   push(@bash, "echo '".$bboxs."Convert GML 2 XML'");
   if(!(-e $file)) {
     push(@bash, 'xsltproc xml_mini.xslt '
@@ -70,21 +70,6 @@ for($i=0; $i<$len-1; $i++) {
   push(@bash, "echo '".$bboxs."Convert XML 2 KML'");
   push(@bash, './gen_kml.pl '.$i);
 
-  if(0) {
-  push(@bash, "echo '".$bboxs."Copy KMLs'");
-  @layers = split(/,/,$conf->{'Document'}{'Placemark'}[$i]{'ExtendedData'}{'v:copylayers'});
-  foreach $level (@layers) {
-    push(@bash, "mv "
-      .$conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
-      .$mainconf->{'dircache'}
-      .$mainconf->{'fileprefixroads'}
-      .$level
-      .$conf->{'Document'}{'ExtendedData'}{'v:filextkml'}
-      .' '
-      .$conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
-      .$mainconf->{'dirvector'});
-  }
-  }
 
 }
 

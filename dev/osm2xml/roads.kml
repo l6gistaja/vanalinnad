@@ -7,10 +7,6 @@
 <!-- ends with coords W,S,E,N -->
 <v:osmexporturl>http://overpass-api.de/api/map?bbox=</v:osmexporturl>
 <v:fileprefix>m</v:fileprefix>
-<v:filextosm>.osm</v:filextosm>
-<v:filextgml>.gml</v:filextgml>
-<v:filextxml>.xml</v:filextxml>
-<v:filextkml>.kml</v:filextkml>
 <v:areasfile>roadareas.kml</v:areasfile>
 <v:kmlheader><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
@@ -24,25 +20,11 @@
 <Placemark>
 <name>Tallinn</name>
 <ExtendedData>
-<v:copylayers>0,1,2,3,4</v:copylayers>
 </ExtendedData>
 <LineString>
 <coordinates>24.5937518727,59.3345071415 24.9786834807,59.5427805619 </coordinates>
 </LineString>
 </Placemark>
-
-<!-- 1940 24.70447,59.39941 24.83536,59.45529 -->
-<!-- 
-<Placemark>
-<name>Tallinn, kesklinn</name>
-<ExtendedData>
-<v:copylayers>3</v:copylayers>
-</ExtendedData>
-<LineString>
-<coordinates>24.70447,59.41194 24.81214,59.45529 </coordinates>
-</LineString>
-</Placemark>
--->
 
 <!-- 
 DO NOT delete following Placemark, 

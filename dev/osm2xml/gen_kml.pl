@@ -11,9 +11,14 @@ $data = $xml->XMLin($conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
     .$mainconf->{'dircache'}
     .$conf->{'Document'}{'ExtendedData'}{'v:fileprefix'}
     .join('_',@coords)
-    .$filebase.$conf->{'Document'}{'ExtendedData'}{'v:filextxml'});
+    .$filebase.'.xml');
 $len = scalar(@{$data->{'w'}});
 %index = qw();
+%max = qw();
+
+@levels = qw(trunk primary secondary tertiary);
+# pedestrian unclassified service # residential? footway?
+$levelLen = scalar(@levels);
 
 for($i=0; $i<=$len; $i++) {
 
@@ -23,25 +28,30 @@ for($i=0; $i<=$len; $i++) {
   $name =~ s/\s+$//;
   if($name eq '') { next; }
 
+  $currentLevel = $levelLen;
+  for($l=0; $l<$levelLen; $l++) {
+    if($levels[$l] eq $data->{'w'}[$i]{'h'}) {
+      $currentLevel = $l;
+      break;
+    }
+  }
+
   if(exists $index{$name}) {
     push(@{$index{$name}}, $i);
+    if($currentLevel < $max{$name}) { $max{$name} = $currentLevel; }
   } else {
     $index{$name} = [$i];
+    $max{$name} = $currentLevel;
   }
 
 }
 
-
-
-@levels = qw(trunk primary secondary tertiary);
-$levelLen = scalar(@levels);
-
-for($level = 0; $level < $levelLen+1; $level++) {
+for($level = 0; $level <= $levelLen; $level++) {
   $file = $conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
     .$mainconf->{'dircache'}
     .$mainconf->{'fileprefixroads'}
     .$level
-    .$conf->{'Document'}{'ExtendedData'}{'v:filextkml'};
+    .'.kml';
   print $file."\n";
   open (DATA, '>'.$file);
   binmode DATA, ":utf8";
@@ -57,22 +67,13 @@ for($level = 0; $level < $levelLen+1; $level++) {
 EndHeader
 
   while ( ($k, $v) = each %index ) {
-    $next = 0;
+
+    if($max{$k} != $level) { next; }
     @parts = @{$v};
     $partslen = scalar(@parts);
-    if ($level == $levelLen) {
-      for($i = 0; $i < $levelLen; $i++) {
-        if($levels[$i] eq $data->{'w'}[$parts[0]]{'h'}) {
-          $next = 1;
-          break;
-        }
-      }
-    } else {
-      if($data->{'w'}[$parts[0]]{'h'} ne $levels[$level]) { $next = 1; }
-    }
     @linestrings = qw();
     for($i = 0; $i < $partslen; $i++) { push(@linestrings, $data->{'w'}[$parts[$i]]{'g'}); }
-    if($next) { next; }
+    
     print DATA '<Placemark><name>'.$data->{'w'}[$parts[0]]{'n'}.'</name>';
     if($partslen > 1) { print DATA '<MultiGeometry>'; }
     print DATA '<LineString><coordinates>'
