@@ -2,8 +2,8 @@
 
 echo
 
-if [ $# -ne 1 ]; then
-  echo 'Usage: '"$0"' /directory/where/one-colored/JPGs/will/be/replaced/with/transparent/PNGs'
+if [ $# -lt 1 ]; then
+  echo 'Usage: '"$0"' /directory/where/one-colored/JPGs/will/be/replaced/with/transparent/PNGs [logfile]'
   echo 'Dependencies: identify (ImageMagick), du, cut, find'
   echo
   exit
@@ -15,8 +15,9 @@ for JPG in $(find $1 -name *.jpg)
 do
   colorcount=$(identify -format %k $JPG)
   if [ $colorcount -eq 1 ]; then
-      #actualsize=$(du -b "$JPG" | cut -f 1)
-      rm $JPG
+      if [ $# -gt 1 ]; then
+        echo $JPG >> $2
+      fi
       cp none.png $JPG
       replaced=$[$replaced+1]
   fi

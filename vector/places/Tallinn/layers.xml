@@ -20,11 +20,12 @@
 <layer type="tms" year="1856" bounds="24.7025128961,59.4142667581,24.8084271312,59.4546274333"/>
 <layer type="tms" year="1842" bounds="24.7394018636,59.4287252066,24.7674167132,59.4437167585"/>
 <layer type="tms" year="1827" bounds="24.7119476767,59.4227380349,24.76830955,59.4555371387"/>
+<!-- layer type="tms" year="1801" bounds="24.6266464345,59.4150012053,24.8591068782,59.5292324372"/ -->
 <layer type="tms" year="1792" bounds="24.71667519,59.4290759279,24.7868321096,59.4534588509" disabled="1"/>
 <layer type="tms" year="1744" bounds="24.7171184531,59.4237239971,24.7459781721,59.4407785749"/>
 <layer type="tms" year="1688" bounds="24.6463597739,59.4093364097,24.83981298,59.4715142907"/>
-<layer type="roads" name=" &amp;#9661; 1" file="roads1.kml" maxres="10"/>
-<layer type="roads" name=" &amp;#9661; 2" file="roads2.kml" maxres="12"/>
-<layer type="roads" name=" &amp;#9661; 3" file="roads3.kml" maxres="14"/>
-<layer type="roads" name=" &amp;#9661; 4" file="roads4.kml" maxres="15"/>
+<layer type="roads" name=" ⚠ 1" file="roads1.kml" maxres="10"/>
+<layer type="roads" name=" ⚠ 2" file="roads2.kml" maxres="12"/>
+<layer type="roads" name=" ⚠ 3" file="roads3.kml" maxres="14"/>
+<layer type="roads" name=" ⚠ 4" file="roads4.kml" maxres="15"/>
 </vanalinnadlayers>

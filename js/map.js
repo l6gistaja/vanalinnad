@@ -14,6 +14,7 @@ function vlMap(inputParams){
   var layersXml;
   var reqParams;
   var input;
+  var emptyTiles;
 
   var xmlHandlerConf = function(request) {
     if(request.status == 200) {
@@ -43,10 +44,47 @@ function vlMap(inputParams){
         boundBox[2],
         boundBox[3]
       );
+      OpenLayers.Request.GET({ 
+          url: conf.dirvector
+            + conf.dirplaces
+            + areaDir
+            + 'empty.json',
+          callback: loadEmptyTilesData
+      });
+  }
+
+  var loadEmptyTilesData = function(request) {
+      emptyTiles = (request.status == 200) ? JSON.parse(request.responseText) : {};
       vlInitMapAfterConf();
   }
   
   var vlInitMapAfterConf = function(){
+
+    function existsInStruct(path) {
+      var pointer = emptyTiles;
+      var lastIndex = 3;
+      var i;
+      for(i=0; i<lastIndex; i++) {
+        if(path[i] in pointer) {
+          pointer = pointer[path[i]];
+        } else {
+          return false;
+        }
+      }
+      var lastValue;
+      for(i=0; i<pointer.length; i++) {
+        if(isNaN(pointer[i])) {
+          if(path[lastIndex] >= pointer[i][0] && path[lastIndex] <= pointer[i][1]) { return true; }
+          lastValue = pointer[i][1];
+        } else {
+          if(pointer[i] == path[lastIndex]) { return true; }
+          lastValue = pointer[i];
+        }
+        // when values array is in ascending order 
+        if(lastValue > path[lastIndex]) {return false;}
+      }
+      return false;
+    }
 
     yearMatcher = new RegExp(conf.regexyearmatcher);
 
@@ -69,7 +107,13 @@ function vlMap(inputParams){
         if (this.map.baseLayer.name == 'Virtual Earth Roads' || this.map.baseLayer.name == 'Virtual Earth Aerial' || this.map.baseLayer.name == 'Virtual Earth Hybrid') {
             z = z + 1;
         }
-        if (baseLayersData[map.baseLayer.layername].bounds.intersectsBounds(bounds) && z >= mapMinZoom && z <= mapMaxZoom ) {
+        if (
+          (baseLayersData[map.baseLayer.layername].bounds.intersectsBounds(bounds)
+            && z >= mapMinZoom && z <= mapMaxZoom)
+          && !existsInStruct([
+            baseLayersData[map.baseLayer.layername].year,
+            ''+z, ''+x, y])
+        ) {
         return conf.dirraster
                 + conf.dirplaces
                 + areaDir 
@@ -143,6 +187,7 @@ function vlMap(inputParams){
         layerBoundBox = layersTags[i].getAttribute('bounds').split(',');
         baseLayersData[layername] = {
           dir: layersTags[i].getAttribute('year') + '/',
+          year: layersTags[i].getAttribute('year'),
           bounds: new OpenLayers.Bounds(layerBoundBox[0], layerBoundBox[1], layerBoundBox[2], layerBoundBox[3])
         };
         baseLayersData[layername].bounds = baseLayersData[layername].bounds.transform(map.displayProjection, map.projection);
