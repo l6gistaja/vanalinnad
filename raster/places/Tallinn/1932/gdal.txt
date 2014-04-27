@@ -1,6 +1,0 @@
-gdal_translate ~/histmaps/places/Tallinn/1932whited.jpg ~/histmaps/places/Tallinn/1932georef.png -of PNG -gcp  4138 6404 24.7359720537063 59.414292263112806 -gcp 4353 3547 24.74066591948236 59.447825341132365 -gcp 6390 4328 24.785289830863128 59.438702778305924
-
-# Marta - Magdaleena; Kyti - Kalamaja; Poska - Weizenbergi
-
-
-gdal_translate ~/histmaps/places/Tallinn/1932whited.jpg ~/histmaps/places/Tallinn/1932georef.png -of PNG  -gcp 2420 3101 24.698306322097828 59.45302086961797 -gcp 7907 2800 24.818469285964625 59.45673407278613 -gcp 3649 7635 24.725702404975067 59.399709770887895
