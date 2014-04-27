@@ -38,7 +38,7 @@ Following describes data adding process with Debian Linux 6.0.8.
  1. Set transparency for color white > Continue
  1. Choose WGS84 - Latitude and longitude  > Continue
  1. Choose zoom levels > choose JPEG as file format > Continue
- 1. Choose output directory for tiles (```raster/places/{PLACE}/{YEAR}/tiles```) > Continue
+ 1. Choose output directory for tiles (```raster/places/{PLACE}/{YEAR}```) > Continue
  1. Choose Google Maps and OpenLayers > Continue > Continue > Render
 1. Add ```<layer type="tms" year="{YEAR}" bounds="{WEST_SOUTH_EAST_NORTH}"/>``` to [```vector/places/{PLACE}/layers.xml```](https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/layers.xml). You can get boundingbox from line ```mapBounds = new OpenLayers.Bounds({WEST,SOUTH,EAST,NORTH});``` from file [```raster/places/{PLACE}/{YEAR}/tiles/openlayers.html```](https://github.com/l6gistaja/vanalinnad/blob/master/raster/places/Tallinn/1968/tiles/openlayers.html).
 1. Run ```./dev/postproc.bash {PLACE} {YEAR}``` from ```{VANALINNAD_ROOT_DIR}```

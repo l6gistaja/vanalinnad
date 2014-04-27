@@ -57,7 +57,7 @@
 <li>Set transparency for color white > Continue</li>
 <li>Choose WGS84 - Latitude and longitude  > Continue</li>
 <li>Choose zoom levels > choose JPEG as file format > Continue</li>
-<li>Choose output directory for tiles (<code>raster/places/{PLACE}/{YEAR}/tiles</code>) > Continue</li>
+<li>Choose output directory for tiles (<code>raster/places/{PLACE}/{YEAR}</code>) > Continue</li>
 <li>Choose Google Maps and OpenLayers > Continue > Continue > Render</li>
 </ol></li>
 <li>Add <code>&lt;layer type="tms" year="{YEAR}" bounds="{WEST_SOUTH_EAST_NORTH}"/&gt;</code> to <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/layers.xml"><code>vector/places/{PLACE}/layers.xml</code></a>. You can get boundingbox from line <code>mapBounds = new OpenLayers.Bounds({WEST,SOUTH,EAST,NORTH});</code> from file <a href="https://github.com/l6gistaja/vanalinnad/blob/master/raster/places/Tallinn/1968/tiles/openlayers.html"><code>raster/places/{PLACE}/{YEAR}/tiles/openlayers.html</code></a>.</li>
