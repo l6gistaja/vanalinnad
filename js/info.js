@@ -96,11 +96,9 @@ function vlInitInfo(inputParams){
           if(legends[i] == '') { continue; }
           y += ( i > -1 ? '<br/>' : '' )
              + '<img src="'
-             + conf.dirraster
+             + conf.dirlegends
              + conf.dirplaces
              + reqParams['site']
-             + '/'
-             + reqParams['year']
              + '/'
              + legends[i]
              + '"/>';

@@ -71,7 +71,7 @@ $document = <FILE>;
 close (FILE);
 
 %doc = %{decode_json($document)};
-$doc{"".$coords[-5]} = \%json;
+$doc{"".$coords[-4]} = \%json;
 
 open(FILE, '>'.$ARGV[1]) or die "Can't read file 'filename' [$!]\n";
 print FILE encode_json(\%doc);

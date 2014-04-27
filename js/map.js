@@ -118,7 +118,6 @@ function vlMap(inputParams){
                 + conf.dirplaces
                 + areaDir 
                 + baseLayersData[map.baseLayer.layername].dir
-                + conf.dirtiles
                 + z + "/" + x + "/" + y + "." + this.type;
           } else {
             return osm_getTileURL(bounds);

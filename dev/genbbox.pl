@@ -40,7 +40,7 @@ EndHeader
     if($c[2] > $max[2]) { $max[2] = $c[2]; }
     if($c[3] > $max[3]) { $max[3] = $c[3]; }
 
-    $file = $ARGV[0].$mainconf->{'dirraster'}.$mainconf->{'dirplaces'}.$ARGV[1].'/'.$year.'/gdal.txt';
+    $file = $ARGV[0].$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[1].'/gdal'.$year.'.txt';
     if(-e $file) {
       @c = qw();
       open(INFO, $file) or die("Could not open file.");

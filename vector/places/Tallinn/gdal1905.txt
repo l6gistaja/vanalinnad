@@ -1,0 +1,3 @@
+gdal_translate ~/histmaps/places/Tallinn/1905whited.jpg  ~/histmaps/places/Tallinn/1905georef.png -of PNG -gcp 2358 3587 24.741199679076324 59.42358036104977 -gcp 2149 869 24.74066591948236 59.447825341132365 -gcp 4810 1732 24.785289830863128 59.438702778305924
+
+# Luha - U Maailm; Kyti - Kalamaja; Poska - Weizenbergi

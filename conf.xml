@@ -4,7 +4,7 @@
 <dirvector>vector/</dirvector>
 <dirraster>raster/</dirraster>
 <dirplaces>places/</dirplaces>
-<dirtiles>tiles/</dirtiles>
+<dirlegends>legends/</dirlegends>
 <fileareaselector>selector.kml</fileareaselector>
 <filelayers>layers.xml</filelayers>
 <fileprefixroads>roads</fileprefixroads>

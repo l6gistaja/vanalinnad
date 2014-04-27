@@ -48,7 +48,7 @@
 
 <ol>
 <li>Cut away and whiten original maps edges, legends, empty areas etc. It makes tile generation speed, repo size and download speed smaller.</li>
-<li><a href="https://github.com/l6gistaja/vanalinnad/blob/master/raster/places/Tallinn/1968/gdal.txt">Georeference</a> source map image: <code>gdal_translate {SOURCE_IMAGE_FILE}  {GEOREFERENCED_PNG_FILE} -of PNG</code> <code>-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}</code> <code>{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP}</code>. Choose and specify image (in pixels) and geographical coordinates of at least 3 G(round)C(ontrol)P(oint)s. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use <a href="dev/coords.html">dev/coords.html</a> for finding GCPs geographical coordinates.</li>
+<li><a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/gdal1968.txt">Georeference</a> source map image: <code>gdal_translate {SOURCE_IMAGE_FILE}  {GEOREFERENCED_PNG_FILE} -of PNG</code> <code>-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}</code> <code>{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP}</code>. Choose and specify image (in pixels) and geographical coordinates of at least 3 G(round)C(ontrol)P(oint)s. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use <a href="dev/coords.html">dev/coords.html</a> for finding GCPs geographical coordinates.</li>
 <li>Generate tiles: 
 <ol>
 <li>Open MapTiler </li>
@@ -62,7 +62,7 @@
 </ol></li>
 <li>Add <code>&lt;layer type="tms" year="{YEAR}" bounds="{WEST_SOUTH_EAST_NORTH}"/&gt;</code> to <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/layers.xml"><code>vector/places/{PLACE}/layers.xml</code></a>. You can get boundingbox from line <code>mapBounds = new OpenLayers.Bounds({WEST,SOUTH,EAST,NORTH});</code> from file <a href="https://github.com/l6gistaja/vanalinnad/blob/master/raster/places/Tallinn/1968/tiles/openlayers.html"><code>raster/places/{PLACE}/{YEAR}/tiles/openlayers.html</code></a>.</li>
 <li>Run <code>./dev/postproc.bash {PLACE} {YEAR}</code> from <code>{VANALINNAD_ROOT_DIR}</code></li>
-<li>Add map description to <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/rss1968.xml"><code>vector/places/{PLACE}/rss{YEAR}.xml</code></a>. You can use <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/rsstemplate.xml"><code>vector/rsstemplate.xml</code></a> as template. Extra tag legends is comma separated list of legend image filenames under <a href="https://github.com/l6gistaja/vanalinnad/tree/master/raster/places/Tallinn/1968"><code>raster/places/{PLACE}/{YEAR}/</code></a>.</li>
+<li>Add map description to <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/rss1968.xml"><code>vector/places/{PLACE}/rss{YEAR}.xml</code></a>. You can use <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/rsstemplate.xml"><code>vector/rsstemplate.xml</code></a> as template. Extra tag legends is comma separated list of legend image filenames under <a href="https://github.com/l6gistaja/vanalinnad/tree/master/legends/places/Tallinn"><code>legends/places/{PLACE}/</code></a>.</li>
 </ol>
 
 <h2>License</h2>
