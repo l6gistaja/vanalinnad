@@ -226,14 +226,19 @@ function vlMap(inputParams){
     roadLayers[roadLayers.length] = selectorLayer;
     map.addLayers(tmsoverlays);
     map.addLayers(roadLayers);
-    
+
+    function yearURL() {
+      var year = map.baseLayer.layername.substr(conf.tmslayerprefix.length);
+      return year.match(yearMatcher) ? '&year=' + year : ''; 
+    }
+
     function createVectorLayersPopup(feature) {
       if(feature.layer.getOptions().layername == 'POIs') {
         feature.popup = new OpenLayers.Popup.FramedCloud(
             "poiPopup",
             feature.geometry.getBounds().getCenterLonLat(),
             null,
-            '<a href="?site=' + feature.attributes.name + '">' + feature.attributes.name + '</a>',
+            '<a href="?site=' + feature.attributes.name + yearURL() + '">' + feature.attributes.name + '</a>',
             null,
             true,
             function() { vectorLayersCtl.unselectAll(); }
@@ -305,12 +310,10 @@ function vlMap(inputParams){
     }
     map.addControl(new OpenLayers.Control.Permalink({base: baseurl}));
     function openInfoPage() {
-      var year = map.baseLayer.layername.substr(conf.tmslayerprefix.length);
       var win=window.open(
         conf.infourlprefix
         + 'site=' + reqParams['site']
-        + (year.match(yearMatcher) 
-          ? '&year=' + year : '')
+        + yearURL()
       ,'_blank'); 
       win.focus();
     }
