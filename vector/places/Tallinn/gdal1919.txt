@@ -2,4 +2,4 @@ gdal_translate ~/histmaps/places/Tallinn/1919whited.jpg  ~/histmaps/places/Talli
 
 gdal_translate ~/histmaps/places/Tallinn/1919whited.jpg  ~/histmaps/places/Tallinn/1919georef.png -of PNG -gcp 2981 6615 24.707140989005218 59.42534926618113 -gcp 4978 2315 24.740663237273345 59.44782602284788 -gcp 9169 2998 24.7852844664451 59.43870618779564
 
-gdal_translate ~/histmaps/places/Tallinn/1919whited.jpg  ~/histmaps/places/Tallinn/1919georef.png -of PNG -gcp 5955 6240 24.74120236128534 59.423578314438636 -gcp 4978 2315 24.740663237273345 59.44782602284788 -gcp 9169 2998 24.7852844664451 59.43870618779564
+gdal_translate ~/histmaps/places/Tallinn/1919whited2.jpg  ~/histmaps/places/Tallinn/1919georef.png -of PNG -gcp 5955 6240 24.74120236128534 59.423578314438636 -gcp 4978 2315 24.740663237273345 59.44782602284788 -gcp 9169 2998 24.7852844664451 59.43870618779564
