@@ -2,7 +2,6 @@
 <rss version="2.0">
 <channel>
 <title>DIGAR</title>
-<link>http://digar.nlib.ee/digar/show.action?id=112759</link>
 <language>de</language>
 <copyright>0</copyright>
 <item>
@@ -11,6 +10,7 @@
 <guid>isbn=9789949539093;nlib.ee=AR 884/Nottbeck</guid>
 <pubDate>Tue, 01 Jan 1884 00:00:00 +0000</pubDate>
 <legends>legend1688a.jpg,legend1688b.jpg</legends>
+<link>http://digar.nlib.ee/digar/show.action?id=112759</link>
 <link>http://www.nlib.ee/e-naitused/index.php?id=17178</link>
 </item>
 </channel>

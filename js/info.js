@@ -88,44 +88,68 @@ function vlInitInfo(inputParams){
 
   function rssHandler(request) {
     if(request.status == 200) {
+
       rssXml = request.responseXML;
       y = '';
-      if(rssXml.getElementsByTagName('legends').length) {
-        legends = vlUtils.getXmlValue(rssXml, 'legends').split(',');
-        for(i=0; i<legends.length; i++) {
-          if(legends[i] == '') { continue; }
-          y += ( i > -1 ? '<br/>' : '' )
-             + '<img src="'
-             + conf.dirlegends
-             + conf.dirplaces
-             + reqParams['site']
-             + '/'
-             + legends[i]
-             + '"/>';
-        }
-      }
+      items = rssXml.getElementsByTagName('item');
       itemFields = [
-	{tag:'title', no:1},
-	{tag:'author'},
-	{tag:'description'},
-	{tag:'guid'}
-      ]; 
-      for(i in itemFields) {
-        tmp = vlUtils.getXmlValue(rssXml, itemFields[i].tag, 'no' in itemFields[i] ? itemFields[i].no : 0);
-	    if(itemFields[i].tag == 'author') {
-          dateParts = vlUtils.getXmlValue(rssXml, 'pubDate').split(/\s+/);
-          if(dateParts.length > 3) { tmp += ' ' + dateParts[3]; }
+        {tag:'title'},
+        {tag:'author'},
+        {tag:'description'},
+        {tag:'guid'}
+      ];
+
+      for(m=0;m<items.length;m++) {
+
+        dateParts = vlUtils.getXmlValue(items[m], 'pubDate').split(/\s+/);
+        pubYear = (dateParts.length > 3) ? dateParts[3] : '';
+        mapAnchor = '';
+        if(items.length > 1) {
+          mapAnchor =  (pubYear == '') ? vlUtils.getXmlValue(items[m], 'anchor')
+            : pubYear;
+          if(mapAnchor == '') { mapAnchor = String.fromCharCode(65 + m); }
+          y += '<hr/><a name="map.'+mapAnchor+'"><a href="#map.'+mapAnchor+
+            '"><strong>'+mapAnchor+'</strong></a></a><br/>';
         }
-	if(tmp != '') { y += '<br/>' + tmp; }
+        
+        // legends
+        if(items[m].getElementsByTagName('legends').length) {
+          legends = vlUtils.getXmlValue(items[m], 'legends').split(',');
+          for(i=0; i<legends.length; i++) {
+            if(legends[i] == '') { continue; }
+            y += ( i > -1 ? '<br/>' : '' )
+              + '<img src="'
+              + conf.dirlegends
+              + conf.dirplaces
+              + reqParams['site']
+              + '/'
+              + legends[i]
+              + '"/>';
+          }
+        }
+
+        // texts
+        for(i in itemFields) {
+          tmp = vlUtils.getXmlValue(items[m], itemFields[i].tag, 0);
+          if(itemFields[i].tag == 'author' && pubYear != '') {
+            tmp += ' ' + pubYear;
+          }
+          if(tmp != '') { y += '<br/>' + tmp; }
+        }
+
+        // links
+        y += '<ol>';
+        links = items[m].getElementsByTagName('link');
+        for(i=0; i<links.length; i++) {
+          y += '<li><a href="' 
+            + links[i].childNodes[0].nodeValue + '">'
+            + links[i].childNodes[0].nodeValue + '</a></li>';
+        }
+        y += '</ol>';
+
       }
-      y += '<ol>';
-      links = rssXml.getElementsByTagName('link');
-      for(i=0; i<links.length; i++) {
-         y += '<li><a href="' 
-           + links[i].childNodes[0].nodeValue + '">'
-           + links[i].childNodes[0].nodeValue + '</a></li>';
-      }
-      y += '</ol><a name="bbox"><a href="'+requestConf.bbox.url+'">BBox &amp; GCP</a></a><div id="map" style="height:400px;width:600px;"></div>';
+      
+      y += '<a name="bbox"><a href="'+requestConf.bbox.url+'">BBox &amp; GCP</a></a><div id="map" style="height:400px;width:600px;"></div>';
       document.getElementById(inputParams.divHeader).innerHTML += siteLbl + ' &gt; ' 
         + '<a href="index.html?site=' + reqParams['site'] 
         + '&year=' + reqParams['year'] + '">' + reqParams['year'] + '</a>';

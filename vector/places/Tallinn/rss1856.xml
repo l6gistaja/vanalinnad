@@ -2,16 +2,28 @@
 <rss version="2.0">
 <channel>
 <title>DIGAR</title>
-<link>http://digar.nlib.ee/digar/show.action?id=43978</link>
 <language>de</language>
 <copyright>0</copyright>
+
 <item>
 <title>Geometrischer Plan der Gouvernements-Stadt Reval</title>
 <author>Verlag von Franz Kluge</author>
+<link>http://digar.nlib.ee/digar/show.action?id=43978</link>
 <link>http://www.nlib.ee/e-naitused/index.php?id=17314</link>
 <guid>isbn=9789949539048;nlib.ee=KTC 2(D)</guid>
 <pubDate>Tue, 01 Jan 1856 00:00:00 +0000</pubDate>
 <legends>legend1856.jpg</legends>
 </item>
+
+<!--
+<item>
+<title>Karte von Reval</title>
+<author>Lith. F. W. Macdonald</author>
+<link>http://digar.nlib.ee/digar/show.action?id=46504</link>
+<guid>isbn=9789949539062;nlib.ee=ARKtB 5.234</guid>
+<pubDate>Sun, 01 Jan 1860 00:00:00 +0000</pubDate>
+</item>
+-->
+
 </channel>
 </rss>

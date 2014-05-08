@@ -2,7 +2,6 @@
 <rss version="2.0">
 <channel>
 <title>DIGAR</title>
-<link>http://digar.nlib.ee/digar/show.action?id=112751</link>
 <language>et</language>
 <copyright>0</copyright>
 <item>
@@ -11,6 +10,7 @@
 <pubDate>Fri, 01 Jan 1932 00:00:00 +0000</pubDate>
 <guid>isbn=9789949539376;nlib.ee=KTC 8.917</guid>
 <legends>legend1932b.jpg</legends>
+<link>http://digar.nlib.ee/digar/show.action?id=112751</link>
 </item>
 </channel>
 </rss>
