@@ -1,14 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox">
-<name>BBox</name>
-<LineString>
-<coordinates>24.6748133776,59.4001232571 24.6748133776,59.462181768 24.8154975694,59.462181768 24.8154975694,59.4001232571 24.6748133776,59.4001232571</coordinates>
-</LineString>
-</Placemark>
-<Placemark id="gcp1"><name>1</name><description>2094 992</description><Point><coordinates>24.735844648778134,59.44659959722896</coordinates></Point></Placemark>
-<Placemark id="gcp2"><name>2</name><description>2385 3312</description><Point><coordinates>24.739614493548522,59.414619808616244</coordinates></Point></Placemark>
-<Placemark id="gcp3"><name>3</name><description>3985 1437</description><Point><coordinates>24.785284996033095,59.43868768035537</coordinates></Point></Placemark>
+
+<Placemark id="bbox"><name></name><LineString><coordinates>24.6748133776,59.4001232571 24.6748133776,59.462181768 24.8154975694,59.462181768 24.8154975694,59.4001232571 24.6748133776,59.4001232571</coordinates></LineString></Placemark><Placemark id="gcp.1"><name>#1</name><description>2094 992</description><Point><coordinates>24.735844648778134,59.44659959722896</coordinates></Point></Placemark>
+<Placemark id="gcp.2"><name>#2</name><description>2385 3312</description><Point><coordinates>24.739614493548522,59.414619808616244</coordinates></Point></Placemark>
+<Placemark id="gcp.3"><name>#3</name><description>3985 1437</description><Point><coordinates>24.785284996033095,59.43868768035537</coordinates></Point></Placemark>
+
 </Document>
 </kml>

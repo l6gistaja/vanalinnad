@@ -57,13 +57,15 @@ function vlInitInfo(inputParams){
   }
   
   function createBBoxPopup(feature) {
-    if(feature.fid == 'bbox') {
+    if(feature.fid.substring(0, 4) == 'bbox') {
         bounds = new OpenLayers.Bounds(feature.geometry.bounds.toArray()).transform(map.projection, map.displayProjection);
         feature.popup = new OpenLayers.Popup.Anchored(
             "bboxPopup",
             map.getCenter(),
             null,
-            '<strong>BBox</strong><br/>' + bounds.left + ' <br/>' + bounds.bottom + ' <br/>' + bounds.right + ' <br/>' + bounds.top,
+            '<strong>BBox ' + ( feature.attributes.name == null ? '' : feature.attributes.name )  + 
+              '</strong><br/>' + bounds.left + ' <br/>' + bounds.bottom + ' <br/>' + bounds.right + ' <br/>' +
+              bounds.top,
             null,
             true,
             function() { bboxLayersCtl.unselectAll(); }

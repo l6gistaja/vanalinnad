@@ -5,6 +5,7 @@
 <dirraster>raster/</dirraster>
 <dirplaces>places/</dirplaces>
 <dirlegends>legends/</dirlegends>
+<dirdev>dev/</dirdev>
 <fileareaselector>selector.kml</fileareaselector>
 <filelayers>layers.xml</filelayers>
 <fileprefixroads>roads</fileprefixroads>
