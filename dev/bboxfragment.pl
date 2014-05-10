@@ -15,7 +15,7 @@ if(scalar(@ARGV) > 2) {
       $ARGV[1].
       '</name><LineString><coordinates>'.
       $c[0].','.$c[1].' '.$c[0].','.$c[3].' '.$c[2].','.$c[3].' '.$c[2].','.$c[1].' '.$c[0].','.$c[1].
-      '</coordinates></LineString></Placemark>';
+      "</coordinates></LineString></Placemark>\n";
 }
 
 if(-e $ARGV[0]) {

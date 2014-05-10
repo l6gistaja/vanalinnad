@@ -2,7 +2,8 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox"><name></name><LineString><coordinates>24.7259680584,59.3994840649 24.7259680584,59.500305688 24.9273860564,59.500305688 24.9273860564,59.3994840649 24.7259680584,59.3994840649</coordinates></LineString></Placemark><Placemark id="gcp.1"><name>#1</name><description>422 2706</description><Point><coordinates>24.741232395171945,59.44813474168575</coordinates></Point></Placemark>
+<Placemark id="bbox"><name></name><LineString><coordinates>24.7259680584,59.3994840649 24.7259680584,59.500305688 24.9273860564,59.500305688 24.9273860564,59.3994840649 24.7259680584,59.3994840649</coordinates></LineString></Placemark>
+<Placemark id="gcp.1"><name>#1</name><description>422 2706</description><Point><coordinates>24.741232395171945,59.44813474168575</coordinates></Point></Placemark>
 <Placemark id="gcp.2"><name>#2</name><description>273 4467</description><Point><coordinates>24.73590016365029,59.41424508192281</coordinates></Point></Placemark>
 <Placemark id="gcp.3"><name>#3</name><description>5028 1693</description><Point><coordinates>24.90409023255075,59.4672649606221</coordinates></Point></Placemark>
 <Placemark id="gcp.4"><name>#4</name><description>2606 2264</description><Point><coordinates>24.818458557128267,59.456728620511925</coordinates></Point></Placemark>
