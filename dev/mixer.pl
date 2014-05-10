@@ -11,14 +11,14 @@ use Data::Dumper;
 
 %data = qw();
 $rootdir = '';
-$data{'site'} = $ARGV[0];
-$data{'year'} = $ARGV[1];
+$site = $ARGV[0];
+$year = $ARGV[1];
 
 use XML::Simple;
 $xml = new XML::Simple;
 $mainconf = $xml->XMLin($rootdir.'conf.xml');
-$gdaldir = $rootdir.$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$data{'site'}.'/';
-$bboxfile = $gdaldir.'bbox'.$data{'year'}.'.kml';
+$gdaldir = $rootdir.$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$site.'/';
+$bboxfile = $gdaldir.'bbox'.$year.'.kml';
 $bboxdata = $xml->XMLin($bboxfile);
 
 #print Dumper($bboxdata);
@@ -129,7 +129,7 @@ close(DATA);
 
 # MERGE MAPS
 
-$destinationdir = $rootdir.$mainconf->{'dirraster'}.$mainconf->{'dirplaces'}.$data{'site'}.'/'.$data{'year'}.'/';
+$destinationdir = $rootdir.$mainconf->{'dirraster'}.$mainconf->{'dirplaces'}.$site.'/'.$year.'/';
 if(-e $destinationdir) {
   $command = 'rm -rf '.$destinationdir.'*';
 } else {
@@ -179,4 +179,4 @@ for($z=$data{'zmin'}; $z<=$data{'zmax'}; $z++) {
 }
 
 %json = minify_empty_tiles_json(\%json);
-add_empty_tiles_json($gdaldir.$mainconf->{'fileemptytiles'}, $data{'year'}, \%json);
+add_empty_tiles_json($gdaldir.$mainconf->{'fileemptytiles'}, $year, \%json);
