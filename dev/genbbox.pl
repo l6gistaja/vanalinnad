@@ -5,6 +5,9 @@ if(scalar(@ARGV) < 2) {
   exit;
 }
 
+use lib './dev';
+use VlHelper qw(bbox_fragment);
+
 use XML::Simple;
 $xml = new XML::Simple;
 $mainconf = $xml->XMLin($ARGV[0].'conf.xml');
@@ -36,12 +39,9 @@ EndHeader
     if($c[2] > $max[2]) { $max[2] = $c[2]; }
     if($c[3] > $max[3]) { $max[3] = $c[3]; }
     
-    $command = $ARGV[0].$mainconf->{'dirdev'}.'bboxfragment.pl '.
-      $ARGV[0].$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[1].'/gdal'.$year.'.txt'.
-      ' \'\' '.
-      join(',', @c);
-    print DATA `$command`;
-
+    print DATA bbox_fragment(
+      $ARGV[0].$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[1].'/gdal'.$year.'.txt',
+      '', join(',', @c));
     print DATA <<EndHeader;
 </Document>
 </kml>

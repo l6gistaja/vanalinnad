@@ -48,7 +48,7 @@ function vlMap(inputParams){
           url: conf.dirvector
             + conf.dirplaces
             + areaDir
-            + 'empty.json',
+            + conf.fileemptytiles,
           callback: loadEmptyTilesData
       });
   }

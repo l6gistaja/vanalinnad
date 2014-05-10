@@ -34,7 +34,7 @@
 
 <p>Following describes data adding process with Debian Linux 6.0.8.</p>
 
-<h3>Preparations for adding</h3>
+<h3>Dependencies</h3>
 
 <ol>
 <li>Create writable directory <code>{VANALINNAD_ROOT_DIR}/cache</code></li>
@@ -64,6 +64,34 @@
 <li>Run <code>./dev/postproc.bash {PLACE} {YEAR}</code> from <code>{VANALINNAD_ROOT_DIR}</code></li>
 <li>Add map description to <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/rss1968.xml"><code>vector/places/{PLACE}/rss{YEAR}.xml</code></a>. You can use <a href="https://github.com/l6gistaja/vanalinnad/blob/master/vector/rsstemplate.xml"><code>vector/rsstemplate.xml</code></a> as template. Extra tag legends is comma separated list of legend image filenames under <a href="https://github.com/l6gistaja/vanalinnad/tree/master/legends/places/Tallinn"><code>legends/places/{PLACE}/</code></a>.</li>
 </ol>
+
+<h3>Merging multiple historical maps into one map</h3>
+
+<p>Prev. ch. means previous chapter "Adding new historical map" here.</p>
+
+<ol>
+<li>Create multiple maps (prev. ch. steps 1-3) as subdirectories in writable directory <code>{MERGE_DIR}</code>.</li>
+<li>Using template below, create  <code>vector/places/{PLACE}/bbox{YEAR}.kml</code>.</li>
+<li>Run <code>./dev/mixer.pl {PLACE} {YEAR}</code> from <code>{VANALINNAD_ROOT_DIR}</code></li>
+<li>Prev. ch. step 4. Boundingbox value can be extracted from <code>vector/places/{PLACE}/bbox{YEAR}.kml</code>, from tag /ExtendedData/Data[@name=bbox]/value .</li>
+<li>Prev. ch. step 6. You can add item for every used map.</li>
+</ol>
+
+<p>Multimap BBox template: </p>
+
+<pre><code>&lt;?xml version="1.0" encoding="UTF-8"?&gt;
+&lt;kml xmlns="http://www.opengis.net/kml/2.2"&gt;
+&lt;Document&gt;
+&lt;ExtendedData&gt;
+&lt;Data name="sourcedir"&gt;&lt;value&gt;{MERGE_DIR}&lt;/value&gt;&lt;/Data&gt;
+&lt;Data name="maps"&gt;&lt;value&gt;{YEAR1_SUBDIR},{YEAR2_SUBDIR},...&lt;/value&gt;&lt;/Data&gt;
+&lt;Data name="zmin"&gt;&lt;value&gt;{MINIMUM_ZOOM_LEVEL}&lt;/value&gt;&lt;/Data&gt;
+&lt;Data name="zmax"&gt;&lt;value&gt;{MAXIMUM_ZOOM_LEVEL}&lt;/value&gt;&lt;/Data&gt;
+&lt;Data name="tileext"&gt;&lt;value&gt;.jpg&lt;/value&gt;&lt;/Data&gt;
+&lt;/ExtendedData&gt;
+&lt;/Document&gt;
+&lt;/kml&gt;
+</code></pre>
 
 <h2>License</h2>
 

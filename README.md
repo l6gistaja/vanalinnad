@@ -19,7 +19,7 @@ Historical maps of Tallinn under grid of today's street network.
 
 Following describes data adding process with Debian Linux 6.0.8.
 
-### Preparations for adding
+### Dependencies
 
 1. Create writable directory ```{VANALINNAD_ROOT_DIR}/cache```
 1. Install [GDAL utils](http://www.gdal.org/) (in Debian: ```apt-get install gdal-bin```)
@@ -43,6 +43,31 @@ Following describes data adding process with Debian Linux 6.0.8.
 1. Add ```<layer type="tms" year="{YEAR}" bounds="{WEST_SOUTH_EAST_NORTH}"/>``` to [```vector/places/{PLACE}/layers.xml```](https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/layers.xml). You can get boundingbox from line ```mapBounds = new OpenLayers.Bounds({WEST,SOUTH,EAST,NORTH});``` from file [```raster/places/{PLACE}/{YEAR}/tiles/openlayers.html```](https://github.com/l6gistaja/vanalinnad/blob/master/raster/places/Tallinn/1968/tiles/openlayers.html).
 1. Run ```./dev/postproc.bash {PLACE} {YEAR}``` from ```{VANALINNAD_ROOT_DIR}```
 1. Add map description to [```vector/places/{PLACE}/rss{YEAR}.xml```](https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/rss1968.xml). You can use [```vector/rsstemplate.xml```](https://github.com/l6gistaja/vanalinnad/blob/master/vector/rsstemplate.xml) as template. Extra tag legends is comma separated list of legend image filenames under [```legends/places/{PLACE}/```](https://github.com/l6gistaja/vanalinnad/tree/master/legends/places/Tallinn).
+
+### Merging multiple historical maps into one map
+
+Prev. ch. means previous chapter "Adding new historical map" here.
+
+1. Create multiple maps (prev. ch. steps 1-3) as subdirectories in writable directory ```{MERGE_DIR}```.
+1. Using template below, create  ```vector/places/{PLACE}/bbox{YEAR}.kml```.
+1. Run ```./dev/mixer.pl {PLACE} {YEAR}``` from ```{VANALINNAD_ROOT_DIR}```
+1. Prev. ch. step 4. Boundingbox value can be extracted from ```vector/places/{PLACE}/bbox{YEAR}.kml```, from tag /ExtendedData/Data[@name=bbox]/value .
+1. Prev. ch. step 6. You can add item for every used map.
+
+Multimap BBox template: 
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <kml xmlns="http://www.opengis.net/kml/2.2">
+    <Document>
+    <ExtendedData>
+    <Data name="sourcedir"><value>{MERGE_DIR}</value></Data>
+    <Data name="maps"><value>{YEAR1_SUBDIR},{YEAR2_SUBDIR},...</value></Data>
+    <Data name="zmin"><value>{MINIMUM_ZOOM_LEVEL}</value></Data>
+    <Data name="zmax"><value>{MAXIMUM_ZOOM_LEVEL}</value></Data>
+    <Data name="tileext"><value>.jpg</value></Data>
+    </ExtendedData>
+    </Document>
+    </kml>
 
 License
 -------

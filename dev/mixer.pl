@@ -1,20 +1,28 @@
 #!/usr/bin/perl
 
 if(scalar(@ARGV) < 2) {
-  print "\nUsage: mixer.pl VANALINNAD_ROOT_DIR RELATIVE/PATH/TO/BBOX_FILE\n\n";
+  print "\nUsage: dev/mixer.pl SITE YEAR\n\n";
   exit;
 }
 
-use XML::Simple;
-$xml = new XML::Simple;
-
-$bboxdata = $xml->XMLin($ARGV[0].$ARGV[1]);
-$mainconf = $xml->XMLin($ARGV[0].'conf.xml');
-
+use lib './dev';
+use VlHelper qw(minify_empty_tiles_json add_empty_tiles_json bbox_fragment);
 use Data::Dumper;
-#print Dumper($bboxdata);
 
 %data = qw();
+$rootdir = '';
+$data{'site'} = $ARGV[0];
+$data{'year'} = $ARGV[1];
+
+use XML::Simple;
+$xml = new XML::Simple;
+$mainconf = $xml->XMLin($rootdir.'conf.xml');
+$gdaldir = $rootdir.$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$data{'site'}.'/';
+$bboxfile = $gdaldir.'bbox'.$data{'year'}.'.kml';
+$bboxdata = $xml->XMLin($bboxfile);
+
+#print Dumper($bboxdata);
+
 foreach $key (keys %{$bboxdata->{'Document'}->{'ExtendedData'}->{'Data'}}) {
   $data{$key} = $bboxdata->{'Document'}->{'ExtendedData'}->{'Data'}->{$key}->{'value'};
 }
@@ -60,7 +68,7 @@ for($m=0; $m<$maplen; $m++) {
 
 # GENERATE BBOX KML
 
-open (DATA, '>'.$ARGV[0].$ARGV[1]) or die("Could not open file ".$ARGV[0].$ARGV[1]);
+open (DATA, '>'.$bboxfile) or die("Could not open file ".$bboxfile);
 binmode DATA, ":utf8";
 
 print DATA <<EndHeader;
@@ -69,41 +77,36 @@ print DATA <<EndHeader;
 <Document>
 EndHeader
 
-$gdaldir = '/home/jux/vanalinnad/vector/places/Tallinn/';
 @bounds = qw();
 for($m=0; $m<$maplen; $m++) {
   $renderdata = $xml->XMLin($data{'sourcedir'}.$maps[$m].'/tilemapresource.xml');
   # OpenLayers bounds are in order W,S,E,N
-  $command = $ARGV[0].$mainconf->{'dirdev'}.'bboxfragment.pl '.
-    $gdaldir.'gdal'.$maps[$m].'.txt'.
-    ' \''.$maps[$m].'\' '.
+  print DATA bbox_fragment($gdaldir.'gdal'.$maps[$m].'.txt', ''.$maps[$m],
     join(',',
-      $renderdata->{'BoundingBox'}->{'miny'},
-      $renderdata->{'BoundingBox'}->{'minx'},
-      $renderdata->{'BoundingBox'}->{'maxy'},
-      $renderdata->{'BoundingBox'}->{'maxx'},
-      );
-      if(scalar(@bounds) == 0) {
-        push(@bounds,$renderdata->{'BoundingBox'}->{'miny'});
-        push(@bounds,$renderdata->{'BoundingBox'}->{'minx'});
-        push(@bounds,$renderdata->{'BoundingBox'}->{'maxy'});
-        push(@bounds,$renderdata->{'BoundingBox'}->{'maxx'});
-      } else {
-        if($bounds[0] > $renderdata->{'BoundingBox'}->{'miny'}) {
-          $bounds[0] = $renderdata->{'BoundingBox'}->{'miny'};
-        }
-        if($bounds[1] > $renderdata->{'BoundingBox'}->{'minx'}) {
-          $bounds[1] = $renderdata->{'BoundingBox'}->{'minx'};
-        }
-        if($bounds[2] < $renderdata->{'BoundingBox'}->{'maxy'}) {
-          $bounds[2] = $renderdata->{'BoundingBox'}->{'maxy'};
-        }
-        if($bounds[3] < $renderdata->{'BoundingBox'}->{'maxx'}) {
-          $bounds[3] = $renderdata->{'BoundingBox'}->{'maxx'};
-        }
-      }
-  print $command."\n";
-  print DATA `$command`;
+        $renderdata->{'BoundingBox'}->{'miny'},
+        $renderdata->{'BoundingBox'}->{'minx'},
+        $renderdata->{'BoundingBox'}->{'maxy'},
+        $renderdata->{'BoundingBox'}->{'maxx'},
+        ));
+  if(scalar(@bounds) == 0) {
+    push(@bounds,$renderdata->{'BoundingBox'}->{'miny'});
+    push(@bounds,$renderdata->{'BoundingBox'}->{'minx'});
+    push(@bounds,$renderdata->{'BoundingBox'}->{'maxy'});
+    push(@bounds,$renderdata->{'BoundingBox'}->{'maxx'});
+  } else {
+    if($bounds[0] > $renderdata->{'BoundingBox'}->{'miny'}) {
+      $bounds[0] = $renderdata->{'BoundingBox'}->{'miny'};
+    }
+    if($bounds[1] > $renderdata->{'BoundingBox'}->{'minx'}) {
+      $bounds[1] = $renderdata->{'BoundingBox'}->{'minx'};
+    }
+    if($bounds[2] < $renderdata->{'BoundingBox'}->{'maxy'}) {
+      $bounds[2] = $renderdata->{'BoundingBox'}->{'maxy'};
+    }
+    if($bounds[3] < $renderdata->{'BoundingBox'}->{'maxx'}) {
+      $bounds[3] = $renderdata->{'BoundingBox'}->{'maxx'};
+    }
+  }
 }
 $data{'bbox'} = join(',',@bounds);
 
@@ -126,28 +129,30 @@ close(DATA);
 
 # MERGE MAPS
 
-if(-e $data{'destinationdir'}) {
-  $command = 'rm -rf '.$data{'destinationdir'}.'*';
+$destinationdir = $rootdir.$mainconf->{'dirraster'}.$mainconf->{'dirplaces'}.$data{'site'}.'/'.$data{'year'}.'/';
+if(-e $destinationdir) {
+  $command = 'rm -rf '.$destinationdir.'*';
 } else {
-  $command = 'mkdir '.$data{'destinationdir'};
+  $command = 'mkdir '.$destinationdir;
 }
 print $command."\n";
 system($command);
 
-$tilewhite = $ARGV[0].$mainconf->{'dirdev'}.'whitetile'.$data{'tileext'};
+%json = qw();
+$tilewhite = $rootdir.$mainconf->{'dirdev'}.'whitetile'.$data{'tileext'};
 $tilewritable = $data{'sourcedir'}.'tilewritable'.$data{'tileext'};
 $tiletransparent = $data{'sourcedir'}.'tiletransparent.png';
-$tilemerged = $data{'sourcedir'}.'tilemerged'.$data{'tileext'};
 for($z=$data{'zmin'}; $z<=$data{'zmax'}; $z++) {
-  $zdir = $data{'destinationdir'}.$z;
+  $zdir = $destinationdir.$z;
   system('mkdir '.$zdir);
   for($x=$tiles{'xmin'.$z}; $x<=$tiles{'xmax'.$z}; $x++) {
     $xdir = $zdir.'/'.$x;
     system('mkdir '.$xdir);
-    for($y=$tiles{'ymin'.$z}; $y<=$tiles{'ymax'.$z}; $y++) {
+    for($y=$tiles{'ymin'.$z}; $y<=$tiles{'ymax'.$z}; $y++) { 
       $emptytile = 1;
       for($m=0; $m<$maplen; $m++) {
         $mapfile = $data{'sourcedir'}.$maps[$m].'/'.$z.'/'.$x.'/'.$y.$data{'tileext'};
+        # if current map tile doesnt exist or is monocolor, then continue with other maps
         if(!(-e $mapfile) || (0 + `identify -format %k $mapfile` < 2)) {
           next;
         }
@@ -155,12 +160,23 @@ for($z=$data{'zmin'}; $z<=$data{'zmax'}; $z++) {
           system('cp '.$mapfile.' '.$tilewritable);
         } else {
           system('convert -transparent white '.$mapfile.' '.$tiletransparent);
-          system('composite '.$tiletransparent.' '.$tilewritable.' -gravity center '.$tilemerged);
-          system('cp '.$tilemerged.' '.$tilewritable);
+          system('composite '.$tiletransparent.' '.$tilewritable.' -gravity center '.$tilewritable);
         }
         $emptytile = 0;
       }
-      system('cp '.($emptytile ? $tilewhite : $tilewritable).' '.$xdir.'/'.$y.$data{'tileext'});
+      if($emptytile) {
+        if(!exists $json{$z}) { $json{$z} = qw(); }
+        if(!exists $json{$z}{$x}) {
+          $json{$z}{$x} = [$y];
+        } else {
+          push(@{$json{$z}{$x}}, $y);
+        }
+      } else {
+        system('cp '.$tilewritable.' '.$xdir.'/'.$y.$data{'tileext'});
+      }
     }
   }
 }
+
+%json = minify_empty_tiles_json(\%json);
+add_empty_tiles_json($gdaldir.$mainconf->{'fileemptytiles'}, $data{'year'}, \%json);

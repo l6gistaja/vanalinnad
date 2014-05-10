@@ -8,6 +8,7 @@
 <dirdev>dev/</dirdev>
 <fileareaselector>selector.kml</fileareaselector>
 <filelayers>layers.xml</filelayers>
+<fileemptytiles>empty.json</fileemptytiles>
 <fileprefixroads>roads</fileprefixroads>
 <regexyearmatcher>^\d+$</regexyearmatcher>
 <defaultsite>Tallinn</defaultsite>
