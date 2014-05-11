@@ -1,0 +1,2 @@
+2014-05-11 17:23:00+03:00; 1485 files; 17M ../raster/places/Tallinn/1940
+2014-05-11 17:23:37+03:00; 1104 files; 15M ../raster/places/Tallinn/1940

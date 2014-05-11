@@ -1,0 +1,2 @@
+2014-05-11 17:48:02+03:00; 1152 files; 9.9M ../raster/places/Tallinn/1688
+2014-05-11 17:48:27+03:00; 690 files; 8.1M ../raster/places/Tallinn/1688

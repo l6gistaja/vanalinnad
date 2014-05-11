@@ -1,0 +1,2 @@
+2014-05-11 17:31:12+03:00; 1886 files; 29M ../raster/places/Tallinn/1924
+2014-05-11 17:32:21+03:00; 1852 files; 29M ../raster/places/Tallinn/1924
