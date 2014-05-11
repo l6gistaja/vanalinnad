@@ -13,10 +13,34 @@
 <Placemark id="gcp1913.2.2"><name>1913.2 #2</name><description>78 1693</description><Point><coordinates>24.738582372665203,59.436336413882685</coordinates></Point></Placemark>
 <Placemark id="gcp1913.2.3"><name>1913.2 #3</name><description>1271 1017</description><Point><coordinates>24.760726690291673,59.440133273519365</coordinates></Point></Placemark>
 
+
+<Placemark id="bbox.1913.3"><name>1913.3</name><LineString><coordinates>24.76200434745168,59.43099454827031 24.76200434745168,59.45035485902105 24.79151174909045,59.45035485902105 24.79151174909045,59.43099454827031 24.76200434745168,59.43099454827031</coordinates></LineString></Placemark>
+<Placemark id="gcp1913.3.1"><name>1913.3 #1</name><description>60 1190</description><Point><coordinates>24.765401780605725,59.43983120420475</coordinates></Point></Placemark>
+<Placemark id="gcp1913.3.2"><name>1913.3 #2</name><description>1207 1100</description><Point><coordinates>24.785271584988095,59.43869108984653</coordinates></Point></Placemark>
+<Placemark id="gcp1913.3.3"><name>1913.3 #3</name><description>499 1908</description><Point><coordinates>24.77064818143921,59.43280443367531</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1913.4"><name>1913.4</name><LineString><coordinates>24.75601475460805,59.41453113310153 24.75601475460805,59.43316251372732 24.78856080201212,59.43316251372732 24.78856080201212,59.41453113310153 24.75601475460805,59.41453113310153</coordinates></LineString></Placemark>
+<Placemark id="gcp1913.4.1"><name>1913.4 #1</name><description>580 1212</description><Point><coordinates>24.7677835822107,59.42224516798809</coordinates></Point></Placemark>
+<Placemark id="gcp1913.4.2"><name>1913.4 #2</name><description>450 171</description><Point><coordinates>24.768877923488667,59.43106933868388</coordinates></Point></Placemark>
+<Placemark id="gcp1913.4.3"><name>1913.4 #3</name><description>1056 0</description><Point><coordinates>24.77930635213929,59.431576781328694</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1913.5"><name>1913.5</name><LineString><coordinates>24.73052155458297,59.41590211872229 24.73052155458297,59.43570650207273 24.76212650241818,59.43570650207273 24.76212650241818,59.41590211872229 24.73052155458297,59.41590211872229</coordinates></LineString></Placemark>
+<Placemark id="gcp1913.5.1"><name>1913.5 #1</name><description>1228 1561</description><Point><coordinates>24.752900004385975,59.419901628511305</coordinates></Point></Placemark>
+<Placemark id="gcp1913.5.2"><name>1913.5 #2</name><description>1290 20</description><Point><coordinates>24.759036898612017,59.43339164496628</coordinates></Point></Placemark>
+<Placemark id="gcp1913.5.3"><name>1913.5 #3</name><description>8 63</description><Point><coordinates>24.73693549632918,59.435137532408596</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1913.6"><name>1913.6</name><LineString><coordinates>24.70485245758415,59.41765202464683 24.70485245758415,59.43804506811868 24.73702077328391,59.43804506811868 24.73702077328391,59.41765202464683 24.70485245758415,59.41765202464683</coordinates></LineString></Placemark>
+<Placemark id="gcp1913.6.1"><name>1913.6 #1</name><description>531 143</description><Point><coordinates>24.72033798694524,59.43592315236959</coordinates></Point></Placemark>
+<Placemark id="gcp1913.6.2"><name>1913.6 #2</name><description>1190 3</description><Point><coordinates>24.73238646984009,59.43613046570621</coordinates></Point></Placemark>
+<Placemark id="gcp1913.6.3"><name>1913.6 #3</name><description>1396 1169</description><Point><coordinates>24.73219335079104,59.42537031711688</coordinates></Point></Placemark>
+
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.71222290209782,59.43323722098373,24.76794483316828,59.45438525792136</value></Data>
-<Data name="maps"><value>1913.1,1913.2</value></Data>
+<Data name="bbox"><value>24.70485245758415,59.41453113310153,24.79151174909045,59.45438525792136</value></Data>
+<Data name="maps"><value>1913.1,1913.2,1913.3,1913.4,1913.5,1913.6</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1913/</value></Data>
