@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1913.1"><name>1913.1</name><LineString><coordinates>24.71222290209782,59.43585912791725 24.71222290209782,59.45438525792136 24.74314662846259,59.45438525792136 24.74314662846259,59.43585912791725 24.71222290209782,59.43585912791725</coordinates></LineString></Placemark>
+<Placemark id="gcp1913.1.1"><name>1913.1 #1</name><description>718 1718</description><Point><coordinates>24.72489422355624,59.43813974275126</coordinates></Point></Placemark>
+<Placemark id="gcp1913.1.2"><name>1913.1 #2</name><description>1373 155</description><Point><coordinates>24.74116986785843,59.45073362449931</coordinates></Point></Placemark>
+<Placemark id="gcp1913.1.3"><name>1913.1 #3</name><description>312 373</description><Point><coordinates>24.722308574065853,59.4505972931582</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1913.2"><name>1913.2</name><LineString><coordinates>24.73701812965480,59.43323722098373 24.73701812965480,59.45102441983224 24.76794483316828,59.45102441983224 24.76794483316828,59.43323722098373 24.73701812965480,59.43323722098373</coordinates></LineString></Placemark>
+<Placemark id="gcp1913.2.1"><name>1913.2 #1</name><description>213 711</description><Point><coordinates>24.744032621383205,59.444551496101184</coordinates></Point></Placemark>
+<Placemark id="gcp1913.2.2"><name>1913.2 #2</name><description>78 1693</description><Point><coordinates>24.738582372665203,59.436336413882685</coordinates></Point></Placemark>
+<Placemark id="gcp1913.2.3"><name>1913.2 #3</name><description>1271 1017</description><Point><coordinates>24.760726690291673,59.440133273519365</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.71222290209782,59.43323722098373,24.76794483316828,59.45438525792136</value></Data>
+<Data name="maps"><value>1913.1,1913.2</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1913/</value></Data>
+</ExtendedData>
+
+</Document>
+</kml>
