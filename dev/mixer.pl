@@ -148,7 +148,7 @@ for($z=$data{'zmin'}; $z<=$data{'zmax'}; $z++) {
   for($x=$tiles{'xmin'.$z}; $x<=$tiles{'xmax'.$z}; $x++) {
     $xdir = $zdir.'/'.$x;
     system('mkdir '.$xdir);
-    for($y=$tiles{'ymin'.$z}; $y<=$tiles{'ymax'.$z}; $y++) { 
+    for($y=0+$tiles{'ymin'.$z}; $y<=$tiles{'ymax'.$z}; $y++) { 
       $emptytile = 1;
       for($m=0; $m<$maplen; $m++) {
         $mapfile = $data{'sourcedir'}.$maps[$m].'/'.$z.'/'.$x.'/'.$y.$data{'tileext'};
@@ -167,9 +167,9 @@ for($z=$data{'zmin'}; $z<=$data{'zmax'}; $z++) {
       if($emptytile) {
         if(!exists $json{$z}) { $json{$z} = qw(); }
         if(!exists $json{$z}{$x}) {
-          $json{$z}{$x} = [$y];
+          $json{$z}{$x} = [0+$y];
         } else {
-          push(@{$json{$z}{$x}}, $y);
+          push(@{$json{$z}{$x}}, 0+$y);
         }
       } else {
         system('cp '.$tilewritable.' '.$xdir.'/'.$y.$data{'tileext'});
