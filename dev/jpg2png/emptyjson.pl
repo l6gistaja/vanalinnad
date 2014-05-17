@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 use lib '..';
-use VlHelper qw(minify_empty_tiles_json add_empty_tiles_json);
+use VlHelper qw(minify_empty_tiles_json add_empty_tiles_json add_to_tree);
 
 %json = qw();
 
@@ -11,17 +11,9 @@ foreach $line (<INFO>)  {
   $line =~ s/\.[a-z]+\s*$//i;
   @coords = split(/\//,$line);
   $z = ''.$coords[-3];
-  if(!exists $json{$z}) { $json{$z} = qw(); }
   $x = ''.$coords[-2];
   $y = 0 + $coords[-1];
-  if(!exists $json{$z}{$x}) {
-    $json{$z}{$x} = [$y];
-  } else {
-    # if not duplicate
-    if ( !($y ~~ @{$json{$z}{$x}}) ) {
-      push(@{$json{$z}{$x}}, $y);
-    }
-  }
+  add_to_tree([$z, $x, $y], \%json);
 }
 
 close(INFO);

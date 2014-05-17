@@ -30,7 +30,7 @@ Following describes data adding process with Debian Linux 6.0.8.
 ### Adding new historical map
 
 1. Cut away and whiten original maps edges, legends, empty areas etc. It makes tile generation speed, repo size and download speed smaller.
-1. [Georeference](https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/gdal1968.txt) source map image: ```gdal_translate {SOURCE_IMAGE_FILE}  {GEOREFERENCED_PNG_FILE} -of PNG ``` ```-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}``` ```{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP}```. Choose and specify image (in pixels) and geographical coordinates of at least 3 G(round)C(ontrol)P(oint)s. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use [dev/coords.html](dev/coords.html) for finding GCPs geographical coordinates.
+1. [Georeference](https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/gdal1968.txt) source map image: ```gdal_translate {SOURCE_IMAGE_FILE}  {GEOREFERENCED_PNG_FILE} -of PNG ``` ```-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}``` ```{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP}```. Choose and specify image (in pixels) and geographical coordinates of at least 3 G(round)C(ontrol)P(oint)s. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use [dev/coords.html](dev/coords.html) for finding GCPs geographical coordinates. Append ```gdal_translate ...``` to the end of ```{VANALINNAD_ROOT_DIR}/vector/places/{PLACE}/gdal{YEAR}.txt```.
 1. Generate tiles: 
  1. Open MapTiler 
  1. Choose Google Maps compatible > Continue
@@ -49,7 +49,7 @@ Following describes data adding process with Debian Linux 6.0.8.
 Prev. ch. means previous chapter "Adding new historical map" here.
 
 1. Create multiple maps (prev. ch. steps 1-3) as subdirectories in writable directory ```{MERGE_DIR}```.
-1. Using template below, create  ```vector/places/{PLACE}/bbox{YEAR}.kml```.
+1. Using template below, create  ```vector/places/{PLACE}/bbox{YEAR}.kml```. If you want to hide merger lines at lower zoom levels, try to add ```<Data name="montage"><value>yes</value></Data>``` to ```<ExtendedData>```.
 1. Run ```./dev/mixer.pl {PLACE} {YEAR}``` from ```{VANALINNAD_ROOT_DIR}```
 1. Prev. ch. step 4. Boundingbox value can be extracted from ```vector/places/{PLACE}/bbox{YEAR}.kml```, from tag /ExtendedData/Data[@name=bbox]/value .
 1. Prev. ch. step 6. You can add item for every used map.

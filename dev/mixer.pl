@@ -6,8 +6,9 @@ if(scalar(@ARGV) < 2) {
 }
 
 use lib './dev';
-use VlHelper qw(minify_empty_tiles_json add_empty_tiles_json bbox_fragment);
+use VlHelper qw(minify_empty_tiles_json add_empty_tiles_json bbox_fragment add_to_tree);
 use Data::Dumper;
+use POSIX;
 
 %data = qw();
 $rootdir = '';
@@ -139,10 +140,11 @@ print $command."\n";
 system($command);
 
 %json = qw();
+%montage = qw();
 $tilewhite = $rootdir.$mainconf->{'dirdev'}.'whitetile'.$data{'tileext'};
 $tilewritable = $data{'sourcedir'}.'tilewritable'.$data{'tileext'};
 $tiletransparent = $data{'sourcedir'}.'tiletransparent.png';
-for($z=$data{'zmin'}; $z<=$data{'zmax'}; $z++) {
+for($z=$data{'zmax'}; $z>=$data{'zmin'}; $z--) {
   $zdir = $destinationdir.$z;
   system('mkdir '.$zdir);
   for($x=$tiles{'xmin'.$z}; $x<=$tiles{'xmax'.$z}; $x++) {
@@ -150,6 +152,34 @@ for($z=$data{'zmin'}; $z<=$data{'zmax'}; $z++) {
     system('mkdir '.$xdir);
     for($y=0+$tiles{'ymin'.$z}; $y<=$tiles{'ymax'.$z}; $y++) { 
       $emptytile = 1;
+      $cmd = '';
+      
+      # montage lower zoom levels tiles from one level higher tiles,
+      # if higher level tiles were composed/montaged from many overlapping maps.
+      # it helps to hide ugly composition lines from higher levels.
+      if(exists $data{'montage'} && $z < $data{'zmax'} && exists $montage{$z} && exists $montage{$z}{$x}) {
+        $yl = scalar(@{$montage{$z}{$x}});
+        for($ym=0;$ym<$yl;$ym++) {
+          if($montage{$z}{$x}[$ym] == $y) {
+            @src = qw();
+            for($yy=1;$yy>-1;$yy--) {
+              for($yx=0;$yx<2;$yx++) {
+                $mtile = $destinationdir.(1+$z).'/'.($yx + ($x << 1)).'/'.($yy + ($y << 1)).$data{'tileext'};
+                push(@src, 
+                  !(-e $mtile) || (0 + `identify -format %k $mtile` < 2)
+                  ? $tilewhite
+                  : $mtile);
+              }
+            }
+            $cmd = 'montage '.join(' ', @src).' -tile 2x2 -geometry 128x128+0+0 '.$xdir.'/'.$y.$data{'tileext'};
+            system($cmd);
+            add_to_tree([$z - 1, $x >> 1, $y >> 1], \%montage);
+            last;
+          }
+        }
+      }
+
+      if($cmd ne ''){ next; }
       for($m=0; $m<$maplen; $m++) {
         $mapfile = $data{'sourcedir'}.$maps[$m].'/'.$z.'/'.$x.'/'.$y.$data{'tileext'};
         # if current map tile doesnt exist or is monocolor, then continue with other maps
@@ -159,18 +189,16 @@ for($z=$data{'zmin'}; $z<=$data{'zmax'}; $z++) {
         if($emptytile) {
           system('cp '.$mapfile.' '.$tilewritable);
         } else {
-          system('convert -transparent white '.$mapfile.' '.$tiletransparent);
-          system('composite '.$tiletransparent.' '.$tilewritable.' -gravity center '.$tilewritable);
+          if(!exists $data{'montage'} || $z == $data{'zmax'}) {
+            system('convert -transparent white '.$mapfile.' '.$tiletransparent);
+            system('composite '.$tiletransparent.' '.$tilewritable.' -gravity center '.$tilewritable);
+            add_to_tree([$z - 1, $x >> 1, $y >> 1], \%montage);
+          }
         }
         $emptytile = 0;
       }
       if($emptytile) {
-        if(!exists $json{$z}) { $json{$z} = qw(); }
-        if(!exists $json{$z}{$x}) {
-          $json{$z}{$x} = [0+$y];
-        } else {
-          push(@{$json{$z}{$x}}, 0+$y);
-        }
+        add_to_tree([$z,$x,0+$y],\%json);
       } else {
         system('cp '.$tilewritable.' '.$xdir.'/'.$y.$data{'tileext'});
       }

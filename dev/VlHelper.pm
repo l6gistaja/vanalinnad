@@ -4,8 +4,8 @@ use Exporter qw(import);
 use Storable qw(dclone);
 use JSON;
 
-our @EXPORT_OK = qw(minify_empty_tiles_json add_empty_tiles_json bbox_fragment);
- 
+our @EXPORT_OK = qw(minify_empty_tiles_json add_empty_tiles_json bbox_fragment add_to_tree);
+
 sub minify_empty_tiles_json {
   %json = %{dclone($_[0])};
 
@@ -96,6 +96,20 @@ sub bbox_fragment {
   }
 
   return $y."\n";
+}
+
+sub add_to_tree {
+  $z = ''.$_[0][0];
+  $x = ''.$_[0][1];
+  if(!exists $_[1]{$z}) { $_[1]{$z} = qw(); }
+  if(!exists $_[1]{$z}{$x}) {
+    $_[1]{$z}{$x} = [$_[0][2]];
+  } else {
+    # if not duplicate
+    if ( !($_[0][2] ~~ @{$_[1]{$z}{$x}}) ) {
+      push(@{$_[1]{$z}{$x}}, $_[0][2]);
+    }
+  }
 }
 
 1;

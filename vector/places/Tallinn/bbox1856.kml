@@ -23,6 +23,7 @@
 <Data name="maps"><value>1860c,1856</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1856/</value></Data>
 </ExtendedData>
 
