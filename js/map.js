@@ -71,7 +71,14 @@ function vlMap(inputParams){
           return false;
         }
       }
+
       var lastValue;
+      lastValue = isNaN(pointer[0]) ? pointer[0][0] : pointer[0];
+      if(path[lastIndex] < lastValue) { return false; }
+      lastValue = pointer.length - 1;
+      lastValue = isNaN(pointer[lastValue]) ? pointer[lastValue][1] : pointer[lastValue];
+      if(path[lastIndex] > lastValue) { return false; }
+
       for(i=0; i<pointer.length; i++) {
         if(isNaN(pointer[i])) {
           if(path[lastIndex] >= pointer[i][0] && path[lastIndex] <= pointer[i][1]) { return true; }
@@ -80,9 +87,8 @@ function vlMap(inputParams){
           if(pointer[i] == path[lastIndex]) { return true; }
           lastValue = pointer[i];
         }
-        // when values array is in ascending order 
-        if(lastValue > path[lastIndex]) {return false;}
       }
+
       return false;
     }
 
