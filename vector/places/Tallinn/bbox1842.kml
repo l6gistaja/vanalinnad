@@ -1,12 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://earth.google.com/kml/2.2">
+<kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 
-<Placemark id="bbox"><name></name><LineString><coordinates>24.7394018636,59.4287252066 24.7394018636,59.4437167585 24.7674167132,59.4437167585 24.7674167132,59.4287252066 24.7394018636,59.4287252066</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>918 139</description><Point><coordinates>24.76051158398355,59.440046772233764</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>1280 1948</description><Point><coordinates>24.752615160643707,59.43013705741204</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>76 594</description><Point><coordinates>24.749828345477233,59.44060317418601</coordinates></Point></Placemark>
-<Placemark id="gcp.4"><name>#4</name><description>162 1527</description><Point><coordinates>24.744249271163323,59.435820100381946</coordinates></Point></Placemark>
+<Placemark id="bbox.1840c"><name>1840c</name><LineString><coordinates>24.71821727882618,59.42545865245580 24.71821727882618,59.43762521697712 24.74728232420861,59.43762521697712 24.74728232420861,59.42545865245580 24.71821727882618,59.42545865245580</coordinates></LineString></Placemark>
+<Placemark id="gcp1840c.1"><name>1840c #1</name><description>657 178</description><Point><coordinates>24.729614911421667,59.435395628934565</coordinates></Point></Placemark>
+<Placemark id="gcp1840c.2"><name>1840c #2</name><description>1948 874</description><Point><coordinates>24.740815816267606,59.42912097395872</coordinates></Point></Placemark>
+<Placemark id="gcp1840c.3"><name>1840c #3</name><description>496 772</description><Point><coordinates>24.72580617462061,59.432454870285284</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1842"><name>1842</name><LineString><coordinates>24.73940186355793,59.42872520656272 24.73940186355793,59.44371675852125 24.76741671321818,59.44371675852125 24.76741671321818,59.42872520656272 24.73940186355793,59.42872520656272</coordinates></LineString></Placemark>
+<Placemark id="gcp1842.1"><name>1842 #1</name><description>918 139</description><Point><coordinates>24.76051158398355,59.440046772233764</coordinates></Point></Placemark>
+<Placemark id="gcp1842.2"><name>1842 #2</name><description>1280 1948</description><Point><coordinates>24.752615160643707,59.43013705741204</coordinates></Point></Placemark>
+<Placemark id="gcp1842.3"><name>1842 #3</name><description>76 594</description><Point><coordinates>24.749828345477233,59.44060317418601</coordinates></Point></Placemark>
+<Placemark id="gcp1842.4"><name>1842 #4</name><description>162 1527</description><Point><coordinates>24.744249271163323,59.435820100381946</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.71821727882618,59.42545865245580,24.76741671321818,59.44371675852125</value></Data>
+<Data name="maps"><value>1840c,1842</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1842/</value></Data>
+</ExtendedData>
 
 </Document>
 </kml>
