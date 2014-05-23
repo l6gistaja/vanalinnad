@@ -21,3 +21,22 @@ html, body, #map {
   width : 16px;
   background: url('raster/information.png') no-repeat center;
 }
+
+#MapCenter
+{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 1px;
+  height: 1px;
+  font-size: 1px;
+  z-index: 10000;
+}
+
+#MapCenter .crosshairs {
+  width: 25px;
+  height: 25px;
+  position: absolute;
+  left: -12px;
+  top: -12px;
+}
