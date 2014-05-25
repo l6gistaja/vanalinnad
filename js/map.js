@@ -341,6 +341,13 @@ function vlMap(inputParams){
       }
     }
     if(layerUrlSelect > -1) { map.setBaseLayer(tmsoverlays[layerUrlSelect]); }
+    
+    if('debug' in reqParams) {
+      OpenLayers.Control.Click = vlUtils.coordsPrompt(map);
+      var click = new OpenLayers.Control.Click();
+      map.addControl(click);
+      click.activate();
+    }
   }
 
   var _init = function() {

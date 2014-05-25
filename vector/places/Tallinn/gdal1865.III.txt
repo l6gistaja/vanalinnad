@@ -1,0 +1,5 @@
+gdal_translate ~/histmaps/places/Tallinn/composed/1865c/1865.III_whited.jpg  ~/histmaps/places/Tallinn/composed/1865c/1865.III_georef.png -of PNG -gcp 3361 618 24.759655652390162 59.43267311718339  -gcp 4333 2312 24.775341210709733 59.42415498760007  -gcp 6860 2272 24.805596528397302 59.42769673809984
+
+gdal_translate ~/histmaps/places/Tallinn/composed/1865c/1865.III_whited.jpg  ~/histmaps/places/Tallinn/composed/1865c/1865.III_georef.png -of PNG  -gcp 4333 2312 24.775341210709733 59.42415498760007  -gcp 6860 2272 24.805596528397302 59.42769673809984  -gcp 3268 312 24.756882883605975 59.43521520962138
+
+gdal_translate ~/histmaps/places/Tallinn/composed/1865c/1865.III_whited4.jpg  ~/histmaps/places/Tallinn/composed/1865c/1865.III_georef.png -of PNG  -gcp 4338 2304 24.775341210709733 59.42415498760007 -gcp 3347 189 24.75752483062712 59.43602824975197  -gcp 7060 2077 24.80739246063256 59.42964457939814

@@ -59,3 +59,36 @@ vlUtils.xmlDoc2Hash = function(xmlDoc) {
   }
   return y;
 }
+
+vlUtils.coordsPrompt = function(map) {
+  return OpenLayers.Class(OpenLayers.Control, {                
+    defaultHandlerOptions: {
+        'single': true,
+        'double': false,
+        'pixelTolerance': 0,
+        'stopSingle': false,
+        'stopDouble': false
+    },
+
+    initialize: function(options) {
+        this.handlerOptions = OpenLayers.Util.extend(
+            {}, this.defaultHandlerOptions
+        );
+        OpenLayers.Control.prototype.initialize.apply(
+            this, arguments
+        ); 
+        this.handler = new OpenLayers.Handler.Click(
+            this, {
+                'click': this.trigger
+            }, this.handlerOptions
+        );
+    }, 
+
+    trigger: function(e) {
+        var lonlat = map.getLonLatFromPixel(e.xy);
+        lonlat = lonlat.transform(map.projection, map.displayProjection);
+        prompt("EPSG:4326 E, N: \n" + lonlat.lon + " " + lonlat.lat, " -gcp  " + lonlat.lon + " " + lonlat.lat);
+    }
+
+  });
+}

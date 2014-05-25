@@ -46,41 +46,11 @@ function vlInitCoords() {
   map.addLayer(osm);
   
   map.addControl(new OpenLayers.Control.Permalink());
-  
-    OpenLayers.Control.Click = OpenLayers.Class(OpenLayers.Control, {                
-        defaultHandlerOptions: {
-            'single': true,
-            'double': false,
-            'pixelTolerance': 0,
-            'stopSingle': false,
-            'stopDouble': false
-        },
 
-        initialize: function(options) {
-            this.handlerOptions = OpenLayers.Util.extend(
-                {}, this.defaultHandlerOptions
-            );
-            OpenLayers.Control.prototype.initialize.apply(
-                this, arguments
-            ); 
-            this.handler = new OpenLayers.Handler.Click(
-                this, {
-                    'click': this.trigger
-                }, this.handlerOptions
-            );
-        }, 
-
-        trigger: function(e) {
-            var lonlat = map.getLonLatFromPixel(e.xy);
-            lonlat = lonlat.transform(map.projection, map.displayProjection);
-            prompt("EPSG:4326 E, N: \n" + lonlat.lon + " " + lonlat.lat, " -gcp  " + lonlat.lon + " " + lonlat.lat);
-        }
-
-    });
-    
-    var click = new OpenLayers.Control.Click();
-    map.addControl(click);
-    click.activate();
+  OpenLayers.Control.Click = vlUtils.coordsPrompt(map);
+  var click = new OpenLayers.Control.Click();
+  map.addControl(click);
+  click.activate();
 }
 
 </script>

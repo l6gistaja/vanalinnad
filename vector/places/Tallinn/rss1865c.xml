@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title>DIGAR</title>
+<language>de</language>
+<copyright>0</copyright>
+
+<item>
+<title>Karte sämmtlicher Laendereien des 1-ten Vorstadt-quartals</title>
+<author>Johann Heinrich Schmidt</author>
+<pubDate>Sun, 01 Jan 1865 00:00:00 +0000</pubDate>
+<guid>nlib.ee=KD 3.949</guid>
+<link>http://digar.nlib.ee/digar/show.action?id=44048</link>
+<anchor>1865.I</anchor>
+</item>
+
+<item>
+<title>Karte sämmtlicher Laendereien des 2-ten Vorstadt-quartals</title>
+<author>Johann Heinrich Schmidt</author>
+<pubDate>Sun, 01 Jan 1865 00:00:00 +0000</pubDate>
+<guid>nlib.ee=KD 3.949</guid>
+<link>http://digar.nlib.ee/digar/show.action?id=113199</link>
+<anchor>1865.II</anchor>
+</item>
+
+<item>
+<title>Karte sämmtlicher Laendereien des 3-ten Vorstadt-quartals</title>
+<author>Johann Heinrich Schmidt</author>
+<pubDate>Sun, 01 Jan 1865 00:00:00 +0000</pubDate>
+<guid>nlib.ee=KD 3.949</guid>
+<link>http://digar.nlib.ee/digar/show.action?id=113202</link>
+<anchor>1865.III</anchor>
+</item>
+
+<item>
+<title>Karte sämmtlicher Laendereien des 4-ten Vorstadt-quartals</title>
+<author>Johann Heinrich Schmidt</author>
+<pubDate>Sun, 01 Jan 1865 00:00:00 +0000</pubDate>
+<guid>nlib.ee=KD 3.949</guid>
+<link>http://digar.nlib.ee/digar/show.action?id=113203</link>
+<anchor>1865.IV</anchor>
+</item>
+
+<item>
+<title> Special-Karte des Dom-territoriums in Reval</title>
+<author>Johann Heinrich Schmidt</author>
+<pubDate>Sun, 01 Jan 1865 00:00:00 +0000</pubDate>
+<guid>nlib.ee=KD 3.949</guid>
+<link>http://digar.nlib.ee/digar/show.action?id=43977</link>
+<anchor>1865.Dom</anchor>
+</item>
+
+</channel>
+</rss>
+

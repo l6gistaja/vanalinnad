@@ -110,7 +110,7 @@ function vlInitInfo(inputParams){
         pubYear = (dateParts.length > 3) ? dateParts[3] : '';
         mapAnchor = '';
         if(items.length > 1) {
-          mapAnchor =  (pubYear == '') ? vlUtils.getXmlValue(items[m], 'anchor')
+          mapAnchor =  (vlUtils.getXmlValue(items[m], 'anchor') != '') ? vlUtils.getXmlValue(items[m], 'anchor')
             : pubYear;
           if(mapAnchor == '') { mapAnchor = String.fromCharCode(65 + m); }
           y += '<hr/><a name="map.'+mapAnchor+'"><a href="#map.'+mapAnchor+
