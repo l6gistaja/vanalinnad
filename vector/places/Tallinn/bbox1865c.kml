@@ -20,6 +20,12 @@
 <Placemark id="gcp1865.IV.3"><name>1865.IV #3</name><description>5965 5650</description><Point><coordinates>24.72720092331031,59.40865205895708</coordinates></Point></Placemark>
 
 
+<Placemark id="bbox.1865.IVb"><name>1865.IVb</name><LineString><coordinates>24.66088820990301,59.39464138109966 24.66088820990301,59.45466468907087 24.77877597495290,59.45466468907087 24.77877597495290,59.39464138109966 24.66088820990301,59.39464138109966</coordinates></LineString></Placemark>
+<Placemark id="gcp1865.IVb.1"><name>1865.IVb #1</name><description>697 2917</description><Point><coordinates>24.693544564592507,59.4163771165732</coordinates></Point></Placemark>
+<Placemark id="gcp1865.IVb.2"><name>1865.IVb #2</name><description>5390 4391</description><Point><coordinates>24.746845422136353,59.43109625169254</coordinates></Point></Placemark>
+<Placemark id="gcp1865.IVb.3"><name>1865.IVb #3</name><description>1698 5662</description><Point><coordinates>24.72720092331031,59.40865205895708</coordinates></Point></Placemark>
+
+
 <Placemark id="bbox.1865.I"><name>1865.I</name><LineString><coordinates>24.67919296011873,59.43227770044299 24.67919296011873,59.46190375713449 24.77636974837111,59.46190375713449 24.77636974837111,59.43227770044299 24.67919296011873,59.43227770044299</coordinates></LineString></Placemark>
 <Placemark id="gcp1865.I.1"><name>1865.I #1</name><description>4399 1968</description><Point><coordinates>24.73597711120673,59.44831229807439</coordinates></Point></Placemark>
 <Placemark id="gcp1865.I.2"><name>1865.I #2</name><description>7128 3351</description><Point><coordinates>24.769998250351723,59.43883801054601</coordinates></Point></Placemark>
@@ -31,10 +37,16 @@
 <Placemark id="gcp1865.Dom.2"><name>1865.Dom #2</name><description>4180 775</description><Point><coordinates>24.73953908477964,59.43716323471351</coordinates></Point></Placemark>
 <Placemark id="gcp1865.Dom.3"><name>1865.Dom #3</name><description>2131 2379</description><Point><coordinates>24.72579544578695,59.43244395790313</coordinates></Point></Placemark>
 
+
+<Placemark id="bbox.1865.12"><name>1865.12</name><LineString><coordinates>24.73379845269964,59.43161396279844 24.73379845269964,59.44435135234561 24.75661599337442,59.44435135234561 24.75661599337442,59.43161396279844 24.73379845269964,59.43161396279844</coordinates></LineString></Placemark>
+<Placemark id="gcp1865.12.1"><name>1865.12 #1</name><description>2658 78</description><Point><coordinates>24.749570546494006,59.44254731656561</coordinates></Point></Placemark>
+<Placemark id="gcp1865.12.2"><name>1865.12 #2</name><description>805 5776</description><Point><coordinates>24.736921248780174,59.435139209316105</coordinates></Point></Placemark>
+<Placemark id="gcp1865.12.3"><name>1865.12 #3</name><description>3646 4210</description><Point><coordinates>24.747349677429902,59.43569569197844</coordinates></Point></Placemark>
+
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
 <Data name="bbox"><value>24.62492010816182,59.37488893538811,24.88145020715426,59.46194674033583</value></Data>
-<Data name="maps"><value>1865.II,1865.III,1865.IV,1865.I,1865.Dom</value></Data>
+<Data name="maps"><value>1865.II,1865.III,1865.IV,1865.IVb,1865.I,1865.Dom,1865.12</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="montage"><value>yes</value></Data>
