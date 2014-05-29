@@ -14,7 +14,7 @@
 <Placemark id="gcp1913.2.3"><name>1913.2 #3</name><description>1271 1017</description><Point><coordinates>24.760726690291673,59.440133273519365</coordinates></Point></Placemark>
 
 
-<Placemark id="bbox.1913.3"><name>1913.3</name><LineString><coordinates>24.76200434745168,59.43099454827031 24.76200434745168,59.45035485902105 24.79151174909045,59.45035485902105 24.79151174909045,59.43099454827031 24.76200434745168,59.43099454827031</coordinates></LineString></Placemark>
+<Placemark id="bbox.1913.3"><name>1913.3</name><LineString><coordinates>24.76200434745168,59.43099456450495 24.76200434745168,59.45035485902105 24.79152928826884,59.45035485902105 24.79152928826884,59.43099456450495 24.76200434745168,59.43099456450495</coordinates></LineString></Placemark>
 <Placemark id="gcp1913.3.1"><name>1913.3 #1</name><description>60 1190</description><Point><coordinates>24.765401780605725,59.43983120420475</coordinates></Point></Placemark>
 <Placemark id="gcp1913.3.2"><name>1913.3 #2</name><description>1207 1100</description><Point><coordinates>24.785271584988095,59.43869108984653</coordinates></Point></Placemark>
 <Placemark id="gcp1913.3.3"><name>1913.3 #3</name><description>499 1908</description><Point><coordinates>24.77064818143921,59.43280443367531</coordinates></Point></Placemark>
@@ -39,11 +39,12 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.70485245758415,59.41453113310153,24.79151174909045,59.45438525792136</value></Data>
+<Data name="bbox"><value>24.70485245758415,59.41453113310153,24.79152928826884,59.45438525792136</value></Data>
 <Data name="maps"><value>1913.1,1913.2,1913.3,1913.4,1913.5,1913.6</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1913/</value></Data>
+<Data name="montage"><value>yes</value></Data>
 </ExtendedData>
 
 </Document>

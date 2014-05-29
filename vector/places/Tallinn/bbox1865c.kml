@@ -8,6 +8,12 @@
 <Placemark id="gcp1865.II.3"><name>1865.II #3</name><description>3481 2769</description><Point><coordinates>24.796444831238237,59.43763785387251</coordinates></Point></Placemark>
 
 
+<Placemark id="bbox.1865.IIIb"><name>1865.IIIb</name><LineString><coordinates>24.81201086229114,59.40328217339862 24.81201086229114,59.42508918592140 24.87262864114712,59.42508918592140 24.87262864114712,59.40328217339862 24.81201086229114,59.40328217339862</coordinates></LineString></Placemark>
+<Placemark id="gcp1865.IIIb.1"><name>1865.IIIb #1</name><description>2487 1172</description><Point><coordinates>24.845200498047156,59.41469437958333</coordinates></Point></Placemark>
+<Placemark id="gcp1865.IIIb.2"><name>1865.IIIb #2</name><description>65 651</description><Point><coordinates>24.81462331527783,59.41431224369463</coordinates></Point></Placemark>
+<Placemark id="gcp1865.IIIb.3"><name>1865.IIIb #3</name><description>1814 287</description><Point><coordinates>24.834621865692906,59.419246924015624</coordinates></Point></Placemark>
+
+
 <Placemark id="bbox.1865.III"><name>1865.III</name><LineString><coordinates>24.71680479917616,59.39600239473397 24.71680479917616,59.44649867693090 24.84780170166906,59.44649867693090 24.84780170166906,59.39600239473397 24.71680479917616,59.39600239473397</coordinates></LineString></Placemark>
 <Placemark id="gcp1865.III.1"><name>1865.III #1</name><description>4338 2304</description><Point><coordinates>24.775341210709733,59.42415498760007</coordinates></Point></Placemark>
 <Placemark id="gcp1865.III.2"><name>1865.III #2</name><description>3347 189</description><Point><coordinates>24.75752483062712,59.43602824975197</coordinates></Point></Placemark>
@@ -46,7 +52,7 @@
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
 <Data name="bbox"><value>24.62492010816182,59.37488893538811,24.88145020715426,59.46194674033583</value></Data>
-<Data name="maps"><value>1865.II,1865.III,1865.IV,1865.IVb,1865.I,1865.Dom,1865.12</value></Data>
+<Data name="maps"><value>1865.II,1865.IIIb,1865.III,1865.IV,1865.IVb,1865.I,1865.Dom,1865.12</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="montage"><value>yes</value></Data>
