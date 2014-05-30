@@ -25,8 +25,8 @@
 <!-- layer type="tms" year="1801" bounds="24.6266464345,59.4150012053,24.8591068782,59.5292324372"/ -->
 <layer type="tms" year="1744" bounds="24.7171184531,59.4237239971,24.7459781721,59.4407785749"/>
 <layer type="tms" year="1688" bounds="24.6463597739,59.4093364097,24.83981298,59.4715142907"/>
-<layer type="roads" name=" ⚠ 1" file="roads1.kml" maxres="10"/>
-<layer type="roads" name=" ⚠ 2" file="roads2.kml" maxres="12"/>
-<layer type="roads" name=" ⚠ 3" file="roads3.kml" maxres="14"/>
-<layer type="roads" name=" ⚠ 4" file="roads4.kml" maxres="15"/>
+<layer type="roads" name=" &amp;#9316; 1" file="roads1.kml" maxres="10"/>
+<layer type="roads" name=" &amp;#9316; 2" file="roads2.kml" maxres="12"/>
+<layer type="roads" name=" &amp;#9316; 3" file="roads3.kml" maxres="14"/>
+<layer type="roads" name=" &amp;#9316; 4" file="roads4.kml" maxres="15"/>
 </vanalinnadlayers>
