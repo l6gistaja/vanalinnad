@@ -15,6 +15,8 @@ Historical maps of Tallinn under grid of today's street network.
 1. [index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081](index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081) : Tallinn in year 1968, Kadriorg area.
 1. [index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081&years=1968.1911.1885.1856](index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081&years=1968.1911.1885.1856) : Tallinn in year 1968, Kadriorg area. Selectable are maps only from years 1968, 1911, 1885 and 1856.
 
+Hint: for debug mode, append ```&debug=1``` to URLs.
+
 ## Adding new data to application
 
 Following describes data adding process with Debian Linux 6.0.8.
@@ -22,10 +24,10 @@ Following describes data adding process with Debian Linux 6.0.8.
 ### Dependencies
 
 1. Create writable directory ```{VANALINNAD_ROOT_DIR}/cache```
-1. Install [GDAL utils](http://www.gdal.org/) (in Debian: ```apt-get install gdal-bin```)
+1. Install [GDAL utils](http://www.gdal.org/) and [markdown](http://daringfireball.net/projects/markdown/) (```sudo apt-get install gdal-bin markdown```)
 1. Install [MapTiler](http://www.maptiler.org/)
 1. Install [ImageMagick](http://www.imagemagick.org)
-1. Install missing Perl modules. As a root: ```cpan XML::Simple JSON Storable```
+1. Install missing Perl modules (```sudo cpan XML::Simple JSON Storable```)
 
 ### Adding new historical map
 

@@ -30,6 +30,8 @@
 <li><a href="index.html?site=Tallinn&amp;year=1968&amp;zoom=15&amp;lat=59.43736&amp;lon=24.78081&amp;years=1968.1911.1885.1856">index.html?site=Tallinn&amp;year=1968&amp;zoom=15&amp;lat=59.43736&amp;lon=24.78081&amp;years=1968.1911.1885.1856</a> : Tallinn in year 1968, Kadriorg area. Selectable are maps only from years 1968, 1911, 1885 and 1856.</li>
 </ol>
 
+<p>Hint: for debug mode, append <code>&amp;debug=1</code> to URLs.</p>
+
 <h2>Adding new data to application</h2>
 
 <p>Following describes data adding process with Debian Linux 6.0.8.</p>
@@ -38,10 +40,10 @@
 
 <ol>
 <li>Create writable directory <code>{VANALINNAD_ROOT_DIR}/cache</code></li>
-<li>Install <a href="http://www.gdal.org/">GDAL utils</a> (in Debian: <code>apt-get install gdal-bin</code>)</li>
+<li>Install <a href="http://www.gdal.org/">GDAL utils</a> and <a href="http://daringfireball.net/projects/markdown/">markdown</a> (<code>sudo apt-get install gdal-bin markdown</code>)</li>
 <li>Install <a href="http://www.maptiler.org/">MapTiler</a></li>
 <li>Install <a href="http://www.imagemagick.org">ImageMagick</a></li>
-<li>Install missing Perl modules. As a root: <code>cpan XML::Simple JSON Storable</code></li>
+<li>Install missing Perl modules (<code>sudo cpan XML::Simple JSON Storable</code>)</li>
 </ol>
 
 <h3>Adding new historical map</h3>
