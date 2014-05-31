@@ -4,6 +4,7 @@
 <title>DIGAR</title>
 <language>et</language>
 <copyright>0</copyright>
+
 <item>
 <title>Tallinna linna plaan : kuulub Riigi teataja nr. 59, 1932. a. avaldatud linna Ehitusmääruse juurde</title>
 <author>Tallinna Linnavalitsus</author>
@@ -12,6 +13,16 @@
 <legends>legend1932b.jpg</legends>
 <link>http://digar.nlib.ee/digar/show.action?id=112751</link>
 </item>
+
+<item>
+<title>Nõmme linna plaan</title>
+<author>Maamõõtjate ja kultuurtehnikute artell</author>
+<pubDate>Wed, 01 Jan 1930 00:00:00 +0000</pubDate>
+<guid>isbn=9789949539024;nlib.ee=ARKT-00415</guid>
+<link>http://digar.nlib.ee/digar/show.action?id=44633</link>
+<anchor>1930.Nomme</anchor>
+</item>
+
 </channel>
 </rss>
 

@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://earth.google.com/kml/2.2">
+<kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 
-<Placemark id="bbox"><name></name><LineString><coordinates>24.6452958646,59.3704497821 24.6452958646,59.4895808627 24.8752444047,59.4895808627 24.8752444047,59.3704497821 24.6452958646,59.3704497821</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>2420 3101</description><Point><coordinates>24.698306322097828,59.45302086961797</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>7907 2800</description><Point><coordinates>24.818469285964625,59.45673407278613</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>3649 7635</description><Point><coordinates>24.725702404975067,59.399709770887895</coordinates></Point></Placemark>
+<Placemark id="bbox.1932"><name>1932</name><LineString><coordinates>24.64497096285843,59.37020895911599 24.64497096285843,59.48976127061410 24.87593716774978,59.48976127061410 24.87593716774978,59.37020895911599 24.64497096285843,59.37020895911599</coordinates></LineString></Placemark>
+<Placemark id="gcp1932.1"><name>1932 #1</name><description>2420 3101</description><Point><coordinates>24.698306322097828,59.45302086961797</coordinates></Point></Placemark>
+<Placemark id="gcp1932.2"><name>1932 #2</name><description>7907 2800</description><Point><coordinates>24.818469285964625,59.45673407278613</coordinates></Point></Placemark>
+<Placemark id="gcp1932.3"><name>1932 #3</name><description>3649 7635</description><Point><coordinates>24.725702404975067,59.399709770887895</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1930.Nomme"><name>1930.Nomme</name><LineString><coordinates>24.61567772186019,59.35686913029861 24.61567772186019,59.39614424103214 24.72960298380337,59.39614424103214 24.72960298380337,59.35686913029861 24.61567772186019,59.35686913029861</coordinates></LineString></Placemark>
+<Placemark id="gcp1930.Nomme.1"><name>1930.Nomme #1</name><description>676 4696</description><Point><coordinates>24.625276980742605,59.36690629079265</coordinates></Point></Placemark>
+<Placemark id="gcp1930.Nomme.2"><name>1930.Nomme #2</name><description>4010 579</description><Point><coordinates>24.659040627821295,59.39148684554842</coordinates></Point></Placemark>
+<Placemark id="gcp1930.Nomme.3"><name>1930.Nomme #3</name><description>9226 1262</description><Point><coordinates>24.71540993247816,59.38859690435489</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.61567772186019,59.35686913029861,24.87593716774978,59.48976127061410</value></Data>
+<Data name="maps"><value>1932,1930.Nomme</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1932/</value></Data>
+</ExtendedData>
 
 </Document>
 </kml>
