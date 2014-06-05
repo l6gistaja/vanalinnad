@@ -250,15 +250,18 @@ function vlMap(inputParams){
             function() { vectorLayersCtl.unselectAll(); }
         );
       } else {
-        distanceDetails = feature.geometry.distanceTo(
-          new OpenLayers.Geometry.Point(map.getCenter().lon, map.getCenter().lat), 
-          {details: true}
-        );
+
+        var clickXYg = map.getLonLatFromPixel(vectorLayersCtl.handlers.feature.evt.xy);
+        var clickXY = new OpenLayers.LonLat(clickXYg.lon, clickXYg.lat);
+        clickXYg.transform(map.options.projection, map.options.displayProjection);
+        
         feature.popup = new OpenLayers.Popup.FramedCloud (
             "roadPopup",
-            new OpenLayers.LonLat(distanceDetails.x0, distanceDetails.y0),
+            new OpenLayers.LonLat(clickXY.lon, clickXY.lat),
             null,
-            feature.attributes.name,
+            '<a target="_blank" title="Google Street View" href="https://maps.google.com/maps?cbp=0,0,0,0,0&layer=c&cbll=' +
+              clickXYg.lat + ',' + clickXYg.lon +
+              '&q=">' + feature.attributes.name + '</a>',
             null,
             true,
             function() { vectorLayersCtl.unselectAll(); }
