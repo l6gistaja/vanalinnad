@@ -261,7 +261,9 @@ function vlMap(inputParams){
             null,
             '<a target="_blank" title="Google Street View" href="https://maps.google.com/maps?cbp=0,0,0,0,0&layer=c&cbll=' +
               clickXYg.lat + ',' + clickXYg.lon +
-              '&q=">' + feature.attributes.name + '</a>',
+              '&z=' + map.getZoom() +
+              '&q=' + feature.attributes.name + ', ' + vlUtils.getXmlValue(layersXml, 'city') + ', ' + vlUtils.getXmlValue(layersXml, 'country') +
+              '">' + feature.attributes.name + '</a>',
             null,
             true,
             function() { vectorLayersCtl.unselectAll(); }
