@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://earth.google.com/kml/2.2">
+<kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 
-<Placemark id="bbox"><name></name><LineString><coordinates>24.6786551594,59.3999969131 24.6786551594,59.4593356488 24.8145078854,59.4593356488 24.8145078854,59.3999969131 24.6786551594,59.3999969131</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>2967 4212</description><Point><coordinates>24.735969371497326,59.41428748639065</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>2469 711</description><Point><coordinates>24.74066591948236,59.447825341132365</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>5010 1149</description><Point><coordinates>24.785289830863128,59.43871027917851</coordinates></Point></Placemark>
+<Placemark id="bbox.1930.Kopli"><name>1930.Kopli</name><LineString><coordinates>24.64214121388610,59.44962837439942 24.64214121388610,59.47077026337892 24.69866950997073,59.47077026337892 24.69866950997073,59.44962837439942 24.64214121388610,59.44962837439942</coordinates></LineString></Placemark>
+<Placemark id="gcp1930.Kopli.1"><name>1930.Kopli #1</name><description>2420 1435</description><Point><coordinates>24.693995175705165,59.45356919179282</coordinates></Point></Placemark>
+<Placemark id="gcp1930.Kopli.2"><name>1930.Kopli #2</name><description>1098 748</description><Point><coordinates>24.666969237671495,59.46194908432161</coordinates></Point></Placemark>
+<Placemark id="gcp1930.Kopli.3"><name>1930.Kopli #3</name><description>1938 889</description><Point><coordinates>24.684575257646127,59.459724826095105</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1930"><name>1930</name><LineString><coordinates>24.67865515938262,59.39999691307349 24.67865515938262,59.45933564883153 24.81450788542133,59.45933564883153 24.81450788542133,59.39999691307349 24.67865515938262,59.39999691307349</coordinates></LineString></Placemark>
+<Placemark id="gcp1930.1"><name>1930 #1</name><description>2967 4212</description><Point><coordinates>24.735969371497326,59.41428748639065</coordinates></Point></Placemark>
+<Placemark id="gcp1930.2"><name>1930 #2</name><description>2469 711</description><Point><coordinates>24.74066591948236,59.447825341132365</coordinates></Point></Placemark>
+<Placemark id="gcp1930.3"><name>1930 #3</name><description>5010 1149</description><Point><coordinates>24.785289830863128,59.43871027917851</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.64214121388610,59.39999691307349,24.81450788542133,59.47077026337892</value></Data>
+<Data name="maps"><value>1930.Kopli,1930</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1930/</value></Data>
+</ExtendedData>
 
 </Document>
 </kml>
