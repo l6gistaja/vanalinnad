@@ -2,10 +2,10 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1932"><name>1932</name><LineString><coordinates>24.64497096285843,59.37020895911599 24.64497096285843,59.48976127061410 24.87593716774978,59.48976127061410 24.87593716774978,59.37020895911599 24.64497096285843,59.37020895911599</coordinates></LineString></Placemark>
+<Placemark id="bbox.1932"><name>1932</name><LineString><coordinates>24.64521716876205,59.37023356142100 24.64521716876205,59.48979843148451 24.87538559228982,59.48979843148451 24.87538559228982,59.37023356142100 24.64521716876205,59.37023356142100</coordinates></LineString></Placemark>
 <Placemark id="gcp1932.1"><name>1932 #1</name><description>2420 3101</description><Point><coordinates>24.698306322097828,59.45302086961797</coordinates></Point></Placemark>
-<Placemark id="gcp1932.2"><name>1932 #2</name><description>7907 2800</description><Point><coordinates>24.818469285964625,59.45673407278613</coordinates></Point></Placemark>
-<Placemark id="gcp1932.3"><name>1932 #3</name><description>3649 7635</description><Point><coordinates>24.725702404975067,59.399709770887895</coordinates></Point></Placemark>
+<Placemark id="gcp1932.2"><name>1932 #2</name><description>2882 8281</description><Point><coordinates>24.70852201972863,59.39211506103336</coordinates></Point></Placemark>
+<Placemark id="gcp1932.3"><name>1932 #3</name><description>8277 2129</description><Point><coordinates>24.82664650474401,59.46467469139371</coordinates></Point></Placemark>
 
 
 <Placemark id="bbox.1930.Nomme"><name>1930.Nomme</name><LineString><coordinates>24.61567772186019,59.35686913029861 24.61567772186019,59.39614424103214 24.72960298380337,59.39614424103214 24.72960298380337,59.35686913029861 24.61567772186019,59.35686913029861</coordinates></LineString></Placemark>
@@ -15,7 +15,7 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.61567772186019,59.35686913029861,24.87593716774978,59.48976127061410</value></Data>
+<Data name="bbox"><value>24.61567772186019,59.35686913029861,24.87538559228982,59.48979843148451</value></Data>
 <Data name="maps"><value>1932,1930.Nomme</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
