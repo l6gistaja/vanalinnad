@@ -27,7 +27,7 @@ Following describes data adding process with Debian Linux 6.0.8.
 1. Install [GDAL utils](http://www.gdal.org/) and [markdown](http://daringfireball.net/projects/markdown/) (```sudo apt-get install gdal-bin markdown```)
 1. Install [MapTiler](http://www.maptiler.org/)
 1. Install [ImageMagick](http://www.imagemagick.org)
-1. Install missing Perl modules (```sudo cpan XML::Simple JSON Storable```)
+1. Install missing Perl modules (```sudo cpan XML::Simple JSON Storable Math::Round```)
 
 ### Adding new historical map
 

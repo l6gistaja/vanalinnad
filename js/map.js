@@ -144,7 +144,7 @@ function vlMap(inputParams){
         } );
     map.addLayer(osm);
 
-    var selectorLayer = new OpenLayers.Layer.Vector(' &#8984; POI', {
+    var selectorLayer = new OpenLayers.Layer.Vector('&#8984; POI', {
       layername: 'POIs',
       projection: map.options.displayProjection,
       minResolution: map.getResolutionForZoom(mapMinZoom - 1),
@@ -209,7 +209,7 @@ function vlMap(inputParams){
         );
         if(layersTags[i].getAttribute('year') == layerYear) { layerUrlSelect = tmsoverlays.length - 1; }
       } else {
-        layername = 'roads_' + roadLayers.length;
+        layername = layersTags[i].getAttribute('type') + '_' + roadLayers.length;
         roadLayers[roadLayers.length] = new OpenLayers.Layer.Vector(layersTags[i].getAttribute('name'), {
               layername: layername,
               projection: map.options.displayProjection,
@@ -225,8 +225,13 @@ function vlMap(inputParams){
                       maxDepth: 0
                   })
               }),
-            styleMap: vlUtils.mergeCustomStyleWithDefaults(vlLayerStyles['roads'])
+            styleMap: vlUtils.mergeCustomStyleWithDefaults(vlLayerStyles[
+              layersTags[i].hasAttribute('style') ? layersTags[i].getAttribute('style') : 'roads'
+            ])
         });
+        if(layersTags[i].hasAttribute('hide')) {
+          roadLayers[roadLayers.length-1].setVisibility(false);
+        }
       }
     }
     roadLayers[roadLayers.length] = selectorLayer;
@@ -259,11 +264,13 @@ function vlMap(inputParams){
             "roadPopup",
             new OpenLayers.LonLat(clickXY.lon, clickXY.lat),
             null,
-            '<a target="_blank" title="Google Street View" href="https://maps.google.com/maps?cbp=0,0,0,0,0&layer=c&cbll=' +
+            feature.layer.getOptions().layername.substr(0,6) == 'roads_'
+              ? '<a target="_blank" title="Google Street View" href="https://maps.google.com/maps?cbp=0,0,0,0,0&layer=c&cbll=' +
               clickXYg.lat + ',' + clickXYg.lon +
               '&z=' + map.getZoom() +
               '&q=' + feature.attributes.name + ', ' + vlUtils.getXmlValue(layersXml, 'city') + ', ' + vlUtils.getXmlValue(layersXml, 'country') +
-              '">' + feature.attributes.name + '</a>',
+              '">' + feature.attributes.name + '</a>'
+              : feature.attributes.name,
             null,
             true,
             function() { vectorLayersCtl.unselectAll(); }
