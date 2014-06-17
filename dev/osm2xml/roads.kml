@@ -22,7 +22,10 @@
 <ExtendedData>
 </ExtendedData>
 <LineString>
+<!--
 <coordinates>24.5937518727,59.3345071415 24.9786834807,59.5427805619 </coordinates>
+-->
+<coordinates>24.600442887573614,59.335555120650355 24.96921444061323,59.54099914277051 </coordinates>
 </LineString>
 </Placemark>
 
