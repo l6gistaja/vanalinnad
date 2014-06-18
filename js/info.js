@@ -215,11 +215,11 @@ function vlInitInfo(inputParams){
       y = '<ol>';
       links = layerXml.getElementsByTagName('layer');
       for(i=0; i<links.length; i++) {
-         if(links[i].getAttribute('disabled') || links[i].getAttribute('type') != 'tms'){ continue; }
+         if(links[i].getAttribute('disabled') || !links[i].hasAttribute('year')){ continue; }
          y += '<li><a href="?site=' 
            + reqParams['site'] + '&year='
            + links[i].getAttribute('year') + '">'
-           + links[i].getAttribute('year') + '</a></li>';
+           + links[i].getAttribute(links[i].getAttribute('name') ? 'name' : 'year') + '</a></li>';
       }
       y += '</ol>';
       document.getElementById(inputParams.divContent).innerHTML = y;

@@ -229,7 +229,10 @@ function vlMap(inputParams){
               layersTags[i].hasAttribute('style') ? layersTags[i].getAttribute('style') : 'roads'
             ])
         });
-        if(layersTags[i].hasAttribute('hide')) {
+        if(
+          layersTags[i].hasAttribute('hide')
+          && !(layersTags[i].hasAttribute('year') && layersTags[i].getAttribute('year') == layerYear)
+        ) {
           roadLayers[roadLayers.length-1].setVisibility(false);
         }
       }
