@@ -46,7 +46,8 @@ function vlInitInfo(inputParams){
       	}
       };
       if(reqParams['site'].match(/\S/)) {
-	    key = reqParams['year'].match(new RegExp(conf.regexyearmatcher)) ? 'year' : 'site';
+	    key = reqParams['year'].match(new RegExp(conf.regexyearmatcher)) || 
+              reqParams['year'].match(new RegExp('^[A-Za-z_]+$')) ? 'year' : 'site';
       } else { key = 'selector'; }
       OpenLayers.Request.GET(requestConf[key]);
     }
