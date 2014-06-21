@@ -1,0 +1,4 @@
+gdal_translate ~/histmaps/places/Tallinn/composed/1842/18XX.Tatari.whitened2.jpg  ~/histmaps/places/Tallinn/composed/1842/18XX.Tatari.georef.png -of PNG -gcp 352 54 24.746840057716376 59.43109897989705 -gcp 1197 582 24.754350242958502 59.42788500259879  -gcp 648 942 24.74859958683057 59.426417057449974
+
+
+
