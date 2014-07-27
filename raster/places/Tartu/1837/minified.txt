@@ -1,0 +1,2 @@
+2014-07-27 23:39:04+03:00; 247 files; 2.2M ../raster/places/Tartu/1837
+2014-07-27 23:39:14+03:00; 109 files; 1.7M ../raster/places/Tartu/1837
