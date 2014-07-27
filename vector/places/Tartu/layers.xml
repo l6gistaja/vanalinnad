@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vanalinnadlayers xmlns="http://juks.alkohol.ee/vanalinnad">
+<country>Estonia</country>
+<city>Tartu</city>
+<minzoom>12</minzoom>
+<maxzoom>16</maxzoom>
+<!-- OpenLayers bounds are in order W,S,E,N -->
+<bounds>26.65583991678161,58.33714636136231,26.79297546665623,58.40912076248009</bounds>
+<layer type="tms" year="1978" bounds="26.65583991678161,58.33714636136231,26.79297546665623,58.40912076248009"/>
+<layer type="tms" year="1941" bounds="26.6836820096,58.352651254,26.7566518485,58.3999353387"/>
+<layer type="roads" name="&amp;#9316; 1" file="roads3min.kml" maxres="12"/>
+<layer type="roads" name="&amp;#9316; 2" file="roads4min.kml" maxres="15"/>
+</vanalinnadlayers>

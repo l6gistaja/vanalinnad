@@ -10,8 +10,7 @@
 <filelayers>layers.xml</filelayers>
 <fileemptytiles>empty.json</fileemptytiles>
 <fileprefixroads>roads</fileprefixroads>
-<regexyearmatcher>^\d+c?$</regexyearmatcher>
-<defaultsite>Tallinn</defaultsite>
+<regexyearmatcher>^\d+[A-Za-z]?$</regexyearmatcher>
 <tmslayerprefix>tms_</tmslayerprefix>
 <infourlprefix>info.html?</infourlprefix>
 </vanalinnadconf>

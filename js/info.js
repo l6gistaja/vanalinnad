@@ -212,7 +212,7 @@ function vlInitInfo(inputParams){
   function layerHandler(request) {
     if(request.status == 200) {
       layerXml = request.responseXML;
-      y = '<ol>';
+      y = 'vvv<ol>';
       links = layerXml.getElementsByTagName('layer');
       for(i=0; i<links.length; i++) {
          if(links[i].getAttribute('disabled') || !links[i].hasAttribute('year')){ continue; }

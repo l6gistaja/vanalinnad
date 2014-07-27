@@ -4,7 +4,15 @@
     <Placemark>
       <name>Tallinn</name>
       <Point>
-        <coordinates>24.745278,59.437222 </coordinates>
+        <coordinates>24.745278,59.437222</coordinates>
+      </Point>
+    </Placemark>
+  </Document>
+  <Document>
+    <Placemark>
+      <name>Tartu</name>
+      <Point>
+        <coordinates>26.722128156279933,58.380080595332885</coordinates>
       </Point>
     </Placemark>
   </Document>

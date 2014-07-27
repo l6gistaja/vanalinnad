@@ -15,25 +15,30 @@ function vlMap(inputParams){
   var reqParams;
   var input;
   var emptyTiles;
+  var isAtSite;
 
   var xmlHandlerConf = function(request) {
     if(request.status == 200) {
       document.getElementById(inputParams.divMap).innerHTML = '';
       conf = vlUtils.xmlDoc2Hash(request.responseXML);
-      //TODO: change when multiple sites will appear in future 
-      reqParams['site'] = conf.defaultsite;
-      areaDir = reqParams['site'] + '/';
-      OpenLayers.Request.GET({ 
-          url: conf.dirvector
-            + conf.dirplaces
-            + areaDir
-            + conf.filelayers,
-          callback: xmlHandlerLayers
-      });
+      isAtSite = 'site' in reqParams && reqParams['site'].match(/^[A-Z][A-Za-z-]*$/);
+      if(isAtSite) {
+        areaDir = reqParams['site'] + '/';
+        OpenLayers.Request.GET({ 
+            url: conf.dirvector
+              + conf.dirplaces
+              + areaDir
+              + conf.filelayers,
+            callback: xmlHandlerLayers
+        });
+      } else {
+        vlInitMapAfterConf();
+      }
     }
   }
 
   var xmlHandlerLayers = function(request) {
+    if(request.status == 200) {
       layersXml = request.responseXML;
       mapMinZoom = parseInt(vlUtils.getXmlValue(layersXml, 'minzoom'));
       mapMaxZoom = parseInt(vlUtils.getXmlValue(layersXml, 'maxzoom'));
@@ -51,6 +56,10 @@ function vlMap(inputParams){
             + conf.fileemptytiles,
           callback: loadEmptyTilesData
       });
+    } else {
+      isAtSite = false;
+      vlInitMapAfterConf();
+    }
   }
 
   var loadEmptyTilesData = function(request) {
@@ -159,9 +168,7 @@ function vlMap(inputParams){
       }),
       styleMap: vlUtils.mergeCustomStyleWithDefaults(vlLayerStyles['POIs'])
     });
-    map.addLayer(selectorLayer);
 
-    var layersTags = layersXml.getElementsByTagName('layer');
     var tmsoverlays = [];
     var roadLayers = [];
     var layerUrlSelect = -1;
@@ -180,60 +187,63 @@ function vlMap(inputParams){
     } else {
       layerYear = '';
     }
-
-    for(i = 0; i < layersTags.length; i++) {
-      if(layersTags[i].getAttribute('disabled')) { continue; }
-      if(layersTags[i].getAttribute('type') == 'tms') {
-        if(
-          visibleBaseLayers.length > 0
-          && OpenLayers.Util.indexOf(visibleBaseLayers, layersTags[i].getAttribute('year')) < 0
-        ) { continue; }
-        layername = conf.tmslayerprefix + layersTags[i].getAttribute('year');
-        layerBoundBox = layersTags[i].getAttribute('bounds').split(',');
-        baseLayersData[layername] = {
-          dir: layersTags[i].getAttribute('year') + '/',
-          year: layersTags[i].getAttribute('year'),
-          bounds: new OpenLayers.Bounds(layerBoundBox[0], layerBoundBox[1], layerBoundBox[2], layerBoundBox[3])
-        };
-        baseLayersData[layername].bounds = baseLayersData[layername].bounds.transform(map.displayProjection, map.projection);
-        tmsoverlays[tmsoverlays.length] = new OpenLayers.Layer.TMS(
-          layersTags[i].getAttribute('year'),
-          "",
-          {
-            layername: layername,
-            type: 'jpg',
-            getURL: overlay_getTileURL,
-            alpha: false,
-            isBaseLayer: true
-          }
-        );
-        if(layersTags[i].getAttribute('year') == layerYear) { layerUrlSelect = tmsoverlays.length - 1; }
-      } else {
-        layername = layersTags[i].getAttribute('type') + '_' + roadLayers.length;
-        roadLayers[roadLayers.length] = new OpenLayers.Layer.Vector(layersTags[i].getAttribute('name'), {
+    
+    if(isAtSite) {
+      var layersTags = layersXml.getElementsByTagName('layer');
+      for(i = 0; i < layersTags.length; i++) {
+        if(layersTags[i].getAttribute('disabled')) { continue; }
+        if(layersTags[i].getAttribute('type') == 'tms') {
+          if(
+            visibleBaseLayers.length > 0
+            && OpenLayers.Util.indexOf(visibleBaseLayers, layersTags[i].getAttribute('year')) < 0
+          ) { continue; }
+          layername = conf.tmslayerprefix + layersTags[i].getAttribute('year');
+          layerBoundBox = layersTags[i].getAttribute('bounds').split(',');
+          baseLayersData[layername] = {
+            dir: layersTags[i].getAttribute('year') + '/',
+            year: layersTags[i].getAttribute('year'),
+            bounds: new OpenLayers.Bounds(layerBoundBox[0], layerBoundBox[1], layerBoundBox[2], layerBoundBox[3])
+          };
+          baseLayersData[layername].bounds = baseLayersData[layername].bounds.transform(map.displayProjection, map.projection);
+          tmsoverlays[tmsoverlays.length] = new OpenLayers.Layer.TMS(
+            layersTags[i].getAttribute('year'),
+            "",
+            {
               layername: layername,
-              projection: map.options.displayProjection,
-              maxResolution: map.getResolutionForZoom(parseInt(layersTags[i].getAttribute('maxres'))),
-              strategies: [new OpenLayers.Strategy.Fixed()],
-              protocol: new OpenLayers.Protocol.HTTP({
-                  url: conf.dirvector
-                        + conf.dirplaces
-                        + areaDir 
-                        + layersTags[i].getAttribute('file'),
-                  format: new OpenLayers.Format.KML({
-                      extractAttributes: true,
-                      maxDepth: 0
-                  })
-              }),
-            styleMap: vlUtils.mergeCustomStyleWithDefaults(vlLayerStyles[
-              layersTags[i].hasAttribute('style') ? layersTags[i].getAttribute('style') : 'roads'
-            ])
-        });
-        if(
-          layersTags[i].hasAttribute('hide')
-          && !(layersTags[i].hasAttribute('year') && layersTags[i].getAttribute('year') == layerYear)
-        ) {
-          roadLayers[roadLayers.length-1].setVisibility(false);
+              type: 'jpg',
+              getURL: overlay_getTileURL,
+              alpha: false,
+              isBaseLayer: true
+            }
+          );
+          if(layersTags[i].getAttribute('year') == layerYear) { layerUrlSelect = tmsoverlays.length - 1; }
+        } else {
+          layername = layersTags[i].getAttribute('type') + '_' + roadLayers.length;
+          roadLayers[roadLayers.length] = new OpenLayers.Layer.Vector(layersTags[i].getAttribute('name'), {
+                layername: layername,
+                projection: map.options.displayProjection,
+                maxResolution: map.getResolutionForZoom(parseInt(layersTags[i].getAttribute('maxres'))),
+                strategies: [new OpenLayers.Strategy.Fixed()],
+                protocol: new OpenLayers.Protocol.HTTP({
+                    url: conf.dirvector
+                          + conf.dirplaces
+                          + areaDir 
+                          + layersTags[i].getAttribute('file'),
+                    format: new OpenLayers.Format.KML({
+                        extractAttributes: true,
+                        maxDepth: 0
+                    })
+                }),
+              styleMap: vlUtils.mergeCustomStyleWithDefaults(vlLayerStyles[
+                layersTags[i].hasAttribute('style') ? layersTags[i].getAttribute('style') : 'roads'
+              ])
+          });
+          if(
+            layersTags[i].hasAttribute('hide')
+            && !(layersTags[i].hasAttribute('year') && layersTags[i].getAttribute('year') == layerYear)
+          ) {
+            roadLayers[roadLayers.length-1].setVisibility(false);
+          }
         }
       }
     }
@@ -252,7 +262,7 @@ function vlMap(inputParams){
             "poiPopup",
             feature.geometry.getBounds().getCenterLonLat(),
             null,
-            '<a href="?site=' + feature.attributes.name + yearURL() + '">' + feature.attributes.name + '</a>',
+            htmlSites([feature]),
             null,
             true,
             function() { vectorLayersCtl.unselectAll(); }
@@ -303,25 +313,45 @@ function vlMap(inputParams){
     map.addControl(new OpenLayers.Control.KeyboardDefaults());
     map.addControl(new OpenLayers.Control.ScaleLine());
 
-    permalinkReqKeys = ['zoom','lat','lon','layers'];
-    for(reqKey in permalinkReqKeys) { 
-      if(
-        !(permalinkReqKeys[reqKey] in reqParams) 
-        || (reqKey < 3 && isNaN(parseFloat(reqParams[permalinkReqKeys[reqKey]])))
-      ) { 
-        if(layerUrlSelect > -1) {
-          if(reqKey == 3) {
-            lonlat = new OpenLayers.LonLat(reqParams['lon'],reqParams['lat']);
-            map.setCenter(lonlat.transform(map.displayProjection, map.projection),reqParams['zoom']);
+    var permalinkReqKeys = ['zoom','lat','lon','layers'];
+    if(isAtSite) {
+      for(reqKey in permalinkReqKeys) { 
+        if(
+          !(permalinkReqKeys[reqKey] in reqParams) 
+          || (reqKey < 3 && isNaN(parseFloat(reqParams[permalinkReqKeys[reqKey]])))
+        ) { 
+          if(layerUrlSelect > -1) {
+            if(reqKey == 3) {
+              lonlat = new OpenLayers.LonLat(reqParams['lon'],reqParams['lat']);
+              map.setCenter(lonlat.transform(map.displayProjection, map.projection),reqParams['zoom']);
+            } else {
+              map.zoomToExtent(baseLayersData[conf.tmslayerprefix + reqParams['year']].bounds);
+            }
           } else {
-            map.zoomToExtent(baseLayersData[conf.tmslayerprefix + reqParams['year']].bounds);
+            map.zoomToExtent(mapBounds.transform(map.displayProjection, map.projection));
           }
-        } else {
-          map.zoomToExtent(mapBounds.transform(map.displayProjection, map.projection));
+          break;
         }
-        break;
       }
+    } else {
+      selectorLayer.events.register('loadend', selectorLayer, function(){
+        map.zoomToExtent(selectorLayer.getDataExtent());
+        //console.log(selectorLayer.features);
+        sitesPopup = new OpenLayers.Popup.Anchored(
+            "sitesPopup",
+            map.getCenter(),
+            null,
+            htmlSites(selectorLayer.features),
+            null,
+            true,
+            null
+        );
+        sitesPopup.setBorder('solid 2px black');
+        sitesPopup.autoSize = true;
+        map.addPopup(sitesPopup);
+      });
     }
+    
     baseurl = '';
     for(reqKey in reqParams) {
       if(reqKey == 'year') { continue; }
@@ -333,7 +363,7 @@ function vlMap(inputParams){
     function openInfoPage() {
       var win=window.open(
         conf.infourlprefix
-        + 'site=' + reqParams['site']
+        + (isAtSite ? 'site=' + reqParams['site'] : '')
         + yearURL()
       ,'_blank'); 
       win.focus();
@@ -365,6 +395,18 @@ function vlMap(inputParams){
     }
   }
 
+  var htmlSites = function(s) {
+    y = '';
+    for(f in s) {
+      y += (i > 0 ? '<br/>' : '') +  '&nbsp;&nbsp;' +
+        '<a href="' + conf.infourlprefix + 'site=' + s[f].attributes.name + '" title="Info">' +
+        '<img src="raster/information.png" border="0"/></a>&nbsp;&nbsp;'+
+        '<a href="?site=' + s[f].attributes.name + '">' +
+        s[f].attributes.name + '</a>';
+    }
+    return y;
+  }
+  
   var _init = function() {
     reqParams = OpenLayers.Util.getParameters();
     OpenLayers.Request.GET({ url: inputParams.conf, callback: xmlHandlerConf });
