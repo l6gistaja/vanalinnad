@@ -2,6 +2,12 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 
+<Placemark id="bbox.1767.k4"><name>1767.k4</name><LineString><coordinates>26.73159432733646,58.37142482283994 26.73159432733646,58.37936870200252 26.74996480984558,58.37936870200252 26.74996480984558,58.37142482283994 26.73159432733646,58.37142482283994</coordinates></LineString></Placemark>
+<Placemark id="gcp1767.k4.1"><name>1767.k4 #1</name><description>37 1175</description><Point><coordinates>26.73533651393974,58.37212016183242</coordinates></Point></Placemark>
+<Placemark id="gcp1767.k4.2"><name>1767.k4 #2</name><description>454 358</description><Point><coordinates>26.735508175316074,58.37545071785066</coordinates></Point></Placemark>
+<Placemark id="gcp1767.k4.3"><name>1767.k4 #3</name><description>2193 403</description><Point><coordinates>26.746537418785675,58.37790342632891</coordinates></Point></Placemark>
+
+
 <Placemark id="bbox.1767.k3"><name>1767.k3</name><LineString><coordinates>26.71421187013073,58.36726786910218 26.71421187013073,58.37761710657220 26.74031631269585,58.37761710657220 26.74031631269585,58.36726786910218 26.71421187013073,58.36726786910218</coordinates></LineString></Placemark>
 <Placemark id="gcp1767.k3.1"><name>1767.k3 #1</name><description>74 38</description><Point><coordinates>26.715042118987732,58.37233495389756</coordinates></Point></Placemark>
 <Placemark id="gcp1767.k3.2"><name>1767.k3 #2</name><description>1843 41</description><Point><coordinates>26.730985169372712,58.376228049102885</coordinates></Point></Placemark>
@@ -21,8 +27,8 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.70306165880038,58.36726786910218,26.74761408634633,58.39250307826137</value></Data>
-<Data name="maps"><value>1767.k3,1767.k1,1767.k2</value></Data>
+<Data name="bbox"><value>26.70306165880038,58.36726786910218,26.74996480984558,58.39250307826137</value></Data>
+<Data name="maps"><value>1767.k4,1767.k3,1767.k1,1767.k2</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="montage"><value>yes</value></Data>
