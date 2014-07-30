@@ -2,6 +2,12 @@
 <kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 
+<Placemark id="bbox.1767.k3"><name>1767.k3</name><LineString><coordinates>26.71421187013073,58.36726786910218 26.71421187013073,58.37761710657220 26.74031631269585,58.37761710657220 26.74031631269585,58.36726786910218 26.71421187013073,58.36726786910218</coordinates></LineString></Placemark>
+<Placemark id="gcp1767.k3.1"><name>1767.k3 #1</name><description>74 38</description><Point><coordinates>26.715042118987732,58.37233495389756</coordinates></Point></Placemark>
+<Placemark id="gcp1767.k3.2"><name>1767.k3 #2</name><description>1843 41</description><Point><coordinates>26.730985169372712,58.376228049102885</coordinates></Point></Placemark>
+<Placemark id="gcp1767.k3.3"><name>1767.k3 #3</name><description>880 395</description><Point><coordinates>26.723839764556878,58.37242497251078</coordinates></Point></Placemark>
+
+
 <Placemark id="bbox.1767.k1"><name>1767.k1</name><LineString><coordinates>26.70306165880038,58.37042908947127 26.70306165880038,58.39008878951977 26.73730005423866,58.39008878951977 26.73730005423866,58.37042908947127 26.70306165880038,58.37042908947127</coordinates></LineString></Placemark>
 <Placemark id="gcp1767.k1.1"><name>1767.k1 #1</name><description>1111 679</description><Point><coordinates>26.72127285186797,58.38378106918765</coordinates></Point></Placemark>
 <Placemark id="gcp1767.k1.2"><name>1767.k1 #2</name><description>553 953</description><Point><coordinates>26.71581187431361,58.380209429038274</coordinates></Point></Placemark>
@@ -15,8 +21,8 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.70306165880038,58.37042908947127,26.74761408634633,58.39250307826137</value></Data>
-<Data name="maps"><value>1767.k1,1767.k2</value></Data>
+<Data name="bbox"><value>26.70306165880038,58.36726786910218,26.74761408634633,58.39250307826137</value></Data>
+<Data name="maps"><value>1767.k3,1767.k1,1767.k2</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="montage"><value>yes</value></Data>
