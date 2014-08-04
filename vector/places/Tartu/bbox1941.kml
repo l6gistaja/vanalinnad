@@ -3,6 +3,9 @@
 <Document>
 
 <Placemark id="bbox"><name></name><LineString><coordinates>26.6836820096,58.352651254 26.6836820096,58.3999353387 26.7566518485,58.3999353387 26.7566518485,58.352651254 26.6836820096,58.352651254</coordinates></LineString></Placemark>
+<Placemark id="gcp.1"><name>#1</name><description>67 222</description><Point><coordinates>26.725804349365628,58.392832490554085</coordinates></Point></Placemark>
+<Placemark id="gcp.2"><name>#2</name><description>1345 6684</description><Point><coordinates>26.69962312130721,58.36292114603749</coordinates></Point></Placemark>
+<Placemark id="gcp.3"><name>#3</name><description>3226 871</description><Point><coordinates>26.71923543362328,58.39486060416505</coordinates></Point></Placemark>
 
 </Document>
 </kml>
