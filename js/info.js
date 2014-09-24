@@ -215,7 +215,7 @@ function vlInitInfo(inputParams){
       y = '<br/><a href="index.html?site=' + reqParams['site'] + '">' + reqParams['site'] + '</a><ol>';
       links = layerXml.getElementsByTagName('layer');
       for(i=0; i<links.length; i++) {
-         if(links[i].getAttribute('disabled') || !links[i].hasAttribute('year')){ continue; }
+         if(links[i].getAttribute('disabled') || links[i].getAttribute('year') == null){ continue; }
          y += '<li><a href="?site=' 
            + reqParams['site'] + '&year='
            + links[i].getAttribute('year') + '">'

@@ -235,12 +235,12 @@ function vlMap(inputParams){
                     })
                 }),
               styleMap: vlUtils.mergeCustomStyleWithDefaults(vlLayerStyles[
-                layersTags[i].hasAttribute('style') ? layersTags[i].getAttribute('style') : 'roads'
+                layersTags[i].getAttribute('style') !=null ? layersTags[i].getAttribute('style') : 'roads'
               ])
           });
           if(
-            layersTags[i].hasAttribute('hide')
-            && !(layersTags[i].hasAttribute('year') && layersTags[i].getAttribute('year') == layerYear)
+            layersTags[i].getAttribute('hide') !=null
+            && !(layersTags[i].getAttribute('year') !=null && layersTags[i].getAttribute('year') == layerYear)
           ) {
             roadLayers[roadLayers.length-1].setVisibility(false);
           }
