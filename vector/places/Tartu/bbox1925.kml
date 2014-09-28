@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1925E"><name>1925E</name><LineString><coordinates>26.72554212797890,58.33922455341857 26.72554212797890,58.40076194227137 26.80838793293961,58.40076194227137 26.80838793293961,58.33922455341857 26.72554212797890,58.33922455341857</coordinates></LineString></Placemark>
+<Placemark id="gcp1925E.1"><name>1925E #1</name><description>63 231</description><Point><coordinates>26.730332507934968,58.39127104503988</coordinates></Point></Placemark>
+<Placemark id="gcp1925E.2"><name>1925E #2</name><description>53 1003</description><Point><coordinates>26.73067588407721,58.36225476123939</coordinates></Point></Placemark>
+<Placemark id="gcp1925E.3"><name>1925E #3</name><description>923 1211</description><Point><coordinates>26.792758600616907,58.35509698070949</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1925W"><name>1925W</name><LineString><coordinates>26.63642924289191,58.33881033749330 26.63642924289191,58.40050705954194 26.72837414647161,58.40050705954194 26.72837414647161,58.33881033749330 26.63642924289191,58.33881033749330</coordinates></LineString></Placemark>
+<Placemark id="gcp1925W.1"><name>1925W #1</name><description>1167 150</description><Point><coordinates>26.719248256073236,58.394866744038666</coordinates></Point></Placemark>
+<Placemark id="gcp1925W.2"><name>1925W #2</name><description>1182 1089</description><Point><coordinates>26.721372565612818,58.3597633046872</coordinates></Point></Placemark>
+<Placemark id="gcp1925W.3"><name>1925W #3</name><description>378 1388</description><Point><coordinates>26.664769772033942,58.34833899472703</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>26.63642924289191,58.33881033749330,26.80838793293961,58.40076194227137</value></Data>
+<Data name="maps"><value>1925E,1925W</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1925/</value></Data>
+</ExtendedData>
+
+</Document>
+</kml>
