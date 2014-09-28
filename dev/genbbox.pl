@@ -20,6 +20,13 @@ for($i=0; $i<=$len; $i++) {
     $year = $layers->{'layer'}[$i]{'year'};
     $filebbox = $ARGV[0].$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[1].'/bbox'.$year.'.kml';
     print 'BBox & GCP '.$ARGV[1].' '.$year;
+
+    @c = split(/[,\s]/, $layers->{'layer'}[$i]{'bounds'});
+    if($c[0] < $max[0]) { $max[0] = $c[0]; }
+    if($c[1] < $max[1]) { $max[1] = $c[1]; }
+    if($c[2] > $max[2]) { $max[2] = $c[2]; }
+    if($c[3] > $max[3]) { $max[3] = $c[3]; }
+
     if(!(`cat $filebbox | grep sourcedir | wc -l` =~ /^0\s*$/)) {
       print " IGNORED: composite\n";
       next;
@@ -33,11 +40,6 @@ for($i=0; $i<=$len; $i++) {
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 EndHeader
-    @c = split(/[,\s]/, $layers->{'layer'}[$i]{'bounds'});
-    if($c[0] < $max[0]) { $max[0] = $c[0]; }
-    if($c[1] < $max[1]) { $max[1] = $c[1]; }
-    if($c[2] > $max[2]) { $max[2] = $c[2]; }
-    if($c[3] > $max[3]) { $max[3] = $c[3]; }
     
     print DATA bbox_fragment(
       $ARGV[0].$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[1].'/gdal'.$year.'.txt',
@@ -50,4 +52,4 @@ EndHeader
   }
 }
 
-print 'BBox '.join(',', @max)."\n";
+print 'BBox max '.join(',', @max)."\n";
