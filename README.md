@@ -77,7 +77,7 @@ If not already installed, ```apt-get install wget``` .
 
 1. ```cd {VANALINNAD_ROOT_DIR}```
 1. ```./dev/postproc.bash {PLACE} {SOME_EXISTING_YEAR} | grep 'BBox max'```
-1. Add boundingbox from previous step to ```dev/osm2xml/roads.kml```, into tag /Placemark[0]/
+1. Add boundingbox from previous step to ```dev/osm2xml/roads.kml```, into tag /Placemark[0]/LineString/coordinates
 1. ```cd dev/osm2xml/```
 1. ```./generate_roads.pl | bash```
 1. Original KML files roads0.kml ... roads4.kml were generated into ```{VANALINNAD_ROOT_DIR}/cache/```. You can merge those files into fewer files.

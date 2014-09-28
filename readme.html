@@ -102,7 +102,7 @@
 <ol>
 <li><code>cd {VANALINNAD_ROOT_DIR}</code></li>
 <li><code>./dev/postproc.bash {PLACE} {SOME_EXISTING_YEAR} | grep 'BBox max'</code></li>
-<li>Add boundingbox from previous step to <code>dev/osm2xml/roads.kml</code>, into tag /Placemark[0]/</li>
+<li>Add boundingbox from previous step to <code>dev/osm2xml/roads.kml</code>, into tag /Placemark[0]/LineString/coordinates</li>
 <li><code>cd dev/osm2xml/</code></li>
 <li><code>./generate_roads.pl | bash</code></li>
 <li>Original KML files roads0.kml ... roads4.kml were generated into <code>{VANALINNAD_ROOT_DIR}/cache/</code>. You can merge those files into fewer files.</li>
