@@ -8,14 +8,14 @@
 <Placemark id="gcp1900.k1.3"><name>1900.k1 #3</name><description>1548 1010</description><Point><coordinates>26.745159361734494,58.38087801526536</coordinates></Point></Placemark>
 
 
-<Placemark id="bbox.1900.k2"><name>1900.k2</name><LineString><coordinates>26.72341390762720,58.36626539171118 26.72341390762720,58.39753090843327 26.75993233187882,58.39753090843327 26.75993233187882,58.36626539171118 26.72341390762720,58.36626539171118</coordinates></LineString></Placemark>
-<Placemark id="gcp1900.k2.1"><name>1900.k2 #1</name><description>67 222</description><Point><coordinates>26.725787962951284,58.392821726272786</coordinates></Point></Placemark>
-<Placemark id="gcp1900.k2.2"><name>1900.k2 #2</name><description>191 1804</description><Point><coordinates>26.73351686778537,58.37129698006352</coordinates></Point></Placemark>
-<Placemark id="gcp1900.k2.3"><name>1900.k2 #3</name><description>711 1161</description><Point><coordinates>26.745204571069937,58.38090612124038</coordinates></Point></Placemark>
+<Placemark id="bbox.1900.k2"><name>1900.k2</name><LineString><coordinates>26.72318813069026,58.36624625640698 26.72318813069026,58.39760235388018 26.76008701477025,58.39760235388018 26.76008701477025,58.36624625640698 26.72318813069026,58.36624625640698</coordinates></LineString></Placemark>
+<Placemark id="gcp1900.k2.1"><name>1900.k2 #1</name><description>191 1804</description><Point><coordinates>26.73351686778537,58.37129698006352</coordinates></Point></Placemark>
+<Placemark id="gcp1900.k2.2"><name>1900.k2 #2</name><description>711 1161</description><Point><coordinates>26.745204571069937,58.38090612124038</coordinates></Point></Placemark>
+<Placemark id="gcp1900.k2.3"><name>1900.k2 #3</name><description>150 476</description><Point><coordinates>26.728516537017494,58.38962661010283</coordinates></Point></Placemark>
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.69581599753869,58.36473816238860,26.75993233187882,58.39753090843327</value></Data>
+<Data name="bbox"><value>26.69581599753869,58.36473816238860,26.76008701477025,58.39760235388018</value></Data>
 <Data name="maps"><value>1900.k1,1900.k2</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>

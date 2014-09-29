@@ -2,3 +2,6 @@ gdal_translate ~/histmaps/places/Tartu/composed/1900/1900.k2.jpg  ~/histmaps/pla
 
 gdal_translate ~/histmaps/places/Tartu/composed/1900/1900.k2.jpg  ~/histmaps/places/Tartu/composed/1900/1900.k2_georef.png -of PNG  -gcp 67 222 26.725787962951284 58.392821726272786 -gcp 191 1804 26.73351686778537 58.37129698006352  -gcp 711 1161 26.745204571069937 58.38090612124038
 
+gdal_translate ~/histmaps/places/Tartu/composed/1900/1900.k2.jpg  ~/histmaps/places/Tartu/composed/1900/1900.k2_georef.png -of PNG -gcp 191 1804 26.73351686778537 58.37129698006352  -gcp 711 1161 26.745204571069937 58.38090612124038 -gcp 200 416 26.729554092559596 58.390600806320265
+
+gdal_translate ~/histmaps/places/Tartu/composed/1900/1900.k2.jpg  ~/histmaps/places/Tartu/composed/1900/1900.k2_georef.png -of PNG -gcp 191 1804 26.73351686778537 58.37129698006352  -gcp 711 1161 26.745204571069937 58.38090612124038 -gcp 150 476 26.728516537017494 58.38962661010283
