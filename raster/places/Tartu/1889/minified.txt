@@ -1,2 +1,2 @@
-2014-09-26 23:56:00+03:00; 244 files; 2.8M ../raster/places/Tartu/1889
-2014-09-26 23:56:10+03:00; 172 files; 2.6M ../raster/places/Tartu/1889
+2014-09-30 20:24:07+03:00; 244 files; 2.8M ../raster/places/Tartu/1889
+2014-09-30 20:24:14+03:00; 169 files; 2.5M ../raster/places/Tartu/1889
