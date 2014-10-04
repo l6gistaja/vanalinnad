@@ -11,7 +11,7 @@
 <br/>
 <h1>vanalinnad</h1>
 
-<p>Historical maps of Tallinn under grid of today's street network.</p>
+<p>Historical maps of Estonian cities under grid of today's street network.</p>
 
 <ul>
 <li>License: <a href="http://openlayers.org/dev/license.txt">BSD 2-clause License</a>, inherited from used <a href="http://openlayers.org">OpenLayers</a> library</li>
@@ -103,8 +103,7 @@
 <li><code>cd {VANALINNAD_ROOT_DIR}</code></li>
 <li><code>./dev/postproc.bash {PLACE} {SOME_EXISTING_YEAR} | grep 'BBox max'</code></li>
 <li>Add boundingbox from previous step to <code>dev/osm2xml/roads.kml</code>, into tag /Placemark[0]/LineString/coordinates</li>
-<li><code>cd dev/osm2xml/</code></li>
-<li><code>./generate_roads.pl | bash</code></li>
+<li><code>cd dev/osm2xml/ ; ./generate_roads.pl | bash</code></li>
 <li>Original KML files roads0.kml ... roads4.kml were generated into <code>{VANALINNAD_ROOT_DIR}/cache/</code>. You can merge those files into fewer files.</li>
 <li>For every {SOURCE_KML} created in previous step: <code>../kml_minify.pl .00001 ../../cache/{SOURCE_KML} ../../vector/places/{PLACE}/{FINAL_KML}</code></li>
 <li>For every {FINAL_KML} created in previous step, add tag <code>&lt;layer type="roads" name="{LAYER_NAME}" file="{FINAL_KML}" maxres="{MIN_ZOOM_LEVEL}"/&gt;</code> to <code>{VANALINNAD_ROOT_DIR}/vector/places/{PLACE}/layers.xml</code></li>

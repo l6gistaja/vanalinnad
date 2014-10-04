@@ -402,7 +402,7 @@ function vlMap(inputParams){
         '<a href="' + conf.infourlprefix + 'site=' + s[f].attributes.name + '" title="Info">' +
         '<img src="raster/information.png" border="0"/></a>&nbsp;&nbsp;'+
         '<a href="?site=' + s[f].attributes.name + '">' +
-        s[f].attributes.name + '</a>';
+        ('description' in s[f].attributes ? s[f].attributes.description : s[f].attributes.name) + '</a>';
     }
     return y;
   }

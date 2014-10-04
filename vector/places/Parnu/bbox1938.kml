@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1938W"><name>1938W</name><LineString><coordinates>24.45075469154656,58.35744241510546 24.45075469154656,58.42190619158546 24.58320524263329,58.42190619158546 24.58320524263329,58.35744241510546 24.45075469154656,58.35744241510546</coordinates></LineString></Placemark>
+<Placemark id="gcp1938W.1"><name>1938W #1</name><description>478 4543</description><Point><coordinates>24.460445862426326,58.388588893592456</coordinates></Point></Placemark>
+<Placemark id="gcp1938W.2"><name>1938W #2</name><description>4709 3637</description><Point><coordinates>24.52463024871824,58.375612318546125</coordinates></Point></Placemark>
+<Placemark id="gcp1938W.3"><name>1938W #3</name><description>622 912</description><Point><coordinates>24.493855457915984,58.41266083727343</coordinates></Point></Placemark>
+<Placemark id="gcp1938W.4"><name>1938W #4</name><description>4269 676</description><Point><coordinates>24.54381331756611,58.3983901633554</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1938E"><name>1938E</name><LineString><coordinates>24.53575030026170,58.34124909129962 24.53575030026170,58.37856168865155 24.60443251538922,58.37856168865155 24.60443251538922,58.34124909129962 24.53575030026170,58.34124909129962</coordinates></LineString></Placemark>
+<Placemark id="gcp1938E.1"><name>1938E #1</name><description>69 921</description><Point><coordinates>24.55363839981054,58.36691593687475</coordinates></Point></Placemark>
+<Placemark id="gcp1938E.2"><name>1938E #2</name><description>428 1225</description><Point><coordinates>24.5571360003662,58.36039922940889</coordinates></Point></Placemark>
+<Placemark id="gcp1938E.3"><name>1938E #3</name><description>989 1365</description><Point><coordinates>24.567736090393165,58.35425283825425</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.45075469154656,58.34124909129962,24.60443251538922,58.42190619158546</value></Data>
+<Data name="maps"><value>1938W,1938E</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1938/</value></Data>
+</ExtendedData>
+
+</Document>
+</kml>

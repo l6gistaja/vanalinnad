@@ -1,6 +1,6 @@
 # vanalinnad
 
-Historical maps of Tallinn under grid of today's street network.
+Historical maps of Estonian cities under grid of today's street network.
 
 * License: [BSD 2-clause License](http://openlayers.org/dev/license.txt), inherited from used [OpenLayers](http://openlayers.org) library
 * Vector data: © [OpenStreetMap contributors](http://www.openstreetmap.org/copyright)
@@ -78,8 +78,7 @@ If not already installed, ```apt-get install wget``` .
 1. ```cd {VANALINNAD_ROOT_DIR}```
 1. ```./dev/postproc.bash {PLACE} {SOME_EXISTING_YEAR} | grep 'BBox max'```
 1. Add boundingbox from previous step to ```dev/osm2xml/roads.kml```, into tag /Placemark[0]/LineString/coordinates
-1. ```cd dev/osm2xml/```
-1. ```./generate_roads.pl | bash```
+1. ```cd dev/osm2xml/ ; ./generate_roads.pl | bash```
 1. Original KML files roads0.kml ... roads4.kml were generated into ```{VANALINNAD_ROOT_DIR}/cache/```. You can merge those files into fewer files.
 1. For every {SOURCE_KML} created in previous step: ```../kml_minify.pl .00001 ../../cache/{SOURCE_KML} ../../vector/places/{PLACE}/{FINAL_KML}```
 1. For every {FINAL_KML} created in previous step, add tag ```<layer type="roads" name="{LAYER_NAME}" file="{FINAL_KML}" maxres="{MIN_ZOOM_LEVEL}"/>``` to ```{VANALINNAD_ROOT_DIR}/vector/places/{PLACE}/layers.xml```
