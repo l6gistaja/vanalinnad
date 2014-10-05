@@ -1,0 +1,2 @@
+2014-10-05 23:49:47+03:00; 123 files; 1.2M ../raster/places/Parnu/1866
+2014-10-05 23:49:50+03:00; 77 files; 1008K ../raster/places/Parnu/1866
