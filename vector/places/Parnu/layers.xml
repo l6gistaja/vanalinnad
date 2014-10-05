@@ -7,6 +7,7 @@
 <!-- OpenLayers bounds are in order W,S,E,N -->
 <bounds>24.45075469154656,58.34124909129962,24.60443251538922,58.42190619158546</bounds>
 <layer type="tms" year="1938" bounds="24.45075469154656,58.34124909129962,24.60443251538922,58.42190619158546"/>
+<layer type="tms" year="191X" bounds="24.4495875202,58.3597204517,24.5733349467,58.4177515794"/>
 <layer type="roads" name="&amp;#9316; 1" file="roads3min.kml" maxres="12"/>
 <layer type="roads" name="&amp;#9316; 2" file="roads4min.kml" maxres="14"/>
 </vanalinnadlayers>
