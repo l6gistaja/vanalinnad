@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vanalinnadlayers xmlns="http://juks.alkohol.ee/vanalinnad">
 <country>Estonia</country>
-<city>Tallinn</city>
+<city>Pärnu</city>
 <minzoom>12</minzoom>
 <maxzoom>16</maxzoom>
 <!-- OpenLayers bounds are in order W,S,E,N -->
