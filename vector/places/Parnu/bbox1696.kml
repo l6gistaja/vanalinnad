@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox"><name></name><LineString><coordinates>24.4907830606,58.3812465752 24.4907830606,58.3879212414 24.5064807778,58.3879212414 24.5064807778,58.3812465752 24.4907830606,58.3812465752</coordinates></LineString></Placemark>
+<Placemark id="gcp.1"><name>#1</name><description>1202 819</description><Point><coordinates>24.50135932022045,58.38395291294701</coordinates></Point></Placemark>
+<Placemark id="gcp.2"><name>#2</name><description>552 810</description><Point><coordinates>24.4961021905515,58.38373918821587</coordinates></Point></Placemark>
+<Placemark id="gcp.3"><name>#3</name><description>1012 446</description><Point><coordinates>24.499428129730827,58.38558392745221</coordinates></Point></Placemark>
+
+</Document>
+</kml>

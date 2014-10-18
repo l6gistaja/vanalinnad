@@ -14,6 +14,8 @@
 <layer type="tms" year="1800" bounds="24.46887054738884,58.36892926306223,24.54178547621379,58.40086514632925"/>
 <layer type="tms" year="1767" bounds="24.4976062379,58.373169332,24.5309421102,58.3927665557"/>
 <layer type="tms" year="1700" bounds="24.4825735074,58.3775721736,24.5262020703,58.393142925"/>
+<layer type="tms" year="1696" bounds="24.4907830606,58.3812465752,24.5064807778,58.3879212414"/>
+<layer type="tms" year="1640" bounds="24.4922164195,58.384081142,24.5038980018,58.3879778576"/>
 <layer type="roads" name="&amp;#9316; 1" file="roads3min.kml" maxres="12"/>
 <layer type="roads" name="&amp;#9316; 2" file="roads4min.kml" maxres="15"/>
 </vanalinnadlayers>
