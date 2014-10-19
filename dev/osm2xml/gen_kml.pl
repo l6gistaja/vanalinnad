@@ -72,8 +72,25 @@ EndHeader
     @parts = @{$v};
     $partslen = scalar(@parts);
     @linestrings = qw();
-    for($i = 0; $i < $partslen; $i++) { push(@linestrings, $data->{'w'}[$parts[$i]]{'g'}); }
-    
+    for($i = 0; $i < $partslen; $i++) {
+      $data->{'w'}[$parts[$i]]{'g'} =~ s/\s+$//;
+      @cf = split(/[,\s]/,$data->{'w'}[$parts[$i]]{'g'});
+      $cfLen = scalar(@cf);
+      @cfp = qw();
+      for($cfi = 0; $cfi < $cfLen; $cfi +=2) {
+        # discard points outside boundingbox
+        if($cf[$cfi] < $coords[0] || $cf[$cfi] > $coords[2] || $cf[$cfi+1] < $coords[1] || $cf[$cfi+1] > $coords[3]) {
+          if(scalar(@cfp) > 1) { push(@linestrings, join(' ', @cfp)); }
+          @cfp = qw();
+        } else {
+          push(@cfp, $cf[$cfi].','.$cf[$cfi+1]);
+        }
+      }
+      if(scalar(@cfp) > 1) { push(@linestrings, join(' ', @cfp)); }
+    }
+
+    $partslen = scalar(@linestrings);
+    if($partslen < 1) { next; }
     print DATA '<Placemark><name>'.$data->{'w'}[$parts[0]]{'n'}.'</name>';
     if($partslen > 1) { print DATA '<MultiGeometry>'; }
     print DATA '<LineString><coordinates>'
