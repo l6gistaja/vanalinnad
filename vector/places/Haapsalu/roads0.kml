@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+  <LatLonBox>
+    <north>58.96303240448135</north>
+    <south>58.90388737412488</south>
+    <east>23.58983102491678</east>
+    <west>23.48405131667638</west>
+  </LatLonBox>
+
+</Document>
+</kml>

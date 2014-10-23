@@ -2,22 +2,24 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
   <Document>
     <Placemark>
+      <name>Haapsalu</name>
+      <Point>
+        <coordinates>23.538866061929436,58.94705081764011</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>Parnu</name>
       <description>Pärnu</description>
       <Point>
         <coordinates>24.496625365124014,58.38583746340555</coordinates>
       </Point>
     </Placemark>
-  </Document>
-  <Document>
     <Placemark>
       <name>Tallinn</name>
       <Point>
         <coordinates>24.745278,59.437222</coordinates>
       </Point>
     </Placemark>
-  </Document>
-  <Document>
     <Placemark>
       <name>Tartu</name>
       <Point>

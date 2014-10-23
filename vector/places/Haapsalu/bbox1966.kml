@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1966S"><name>1966S</name><LineString><coordinates>23.53074541943962,58.90395117751554 23.53074541943962,58.93043790337727 23.57525766782426,58.93043790337727 23.57525766782426,58.90395117751554 23.53074541943962,58.90395117751554</coordinates></LineString></Placemark>
+<Placemark id="gcp1966S.1"><name>1966S #1</name><description>45 56</description><Point><coordinates>23.532275219574032,58.929366778451815</coordinates></Point></Placemark>
+<Placemark id="gcp1966S.2"><name>1966S #2</name><description>977 70</description><Point><coordinates>23.56377508224498,58.92920066529109</coordinates></Point></Placemark>
+<Placemark id="gcp1966S.3"><name>1966S #3</name><description>907 1248</description><Point><coordinates>23.561598546538548,58.90883044469918</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1966NW"><name>1966NW</name><LineString><coordinates>23.48405131667638,58.91583247274340 23.48405131667638,58.96303240448135 23.55032155863363,58.96303240448135 23.55032155863363,58.91583247274340 23.48405131667638,58.91583247274340</coordinates></LineString></Placemark>
+<Placemark id="gcp1966NW.1"><name>1966NW #1</name><description>847 1463</description><Point><coordinates>23.521794219512426,58.9299920100698</coordinates></Point></Placemark>
+<Placemark id="gcp1966NW.2"><name>1966NW #2</name><description>1397 1688</description><Point><coordinates>23.54599847366302,58.9250083578075</coordinates></Point></Placemark>
+<Placemark id="gcp1966NW.3"><name>1966NW #3</name><description>1140 510</description><Point><coordinates>23.5342384390262,58.9514954183761</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1966NE"><name>1966NE</name><LineString><coordinates>23.52979369456330,58.91209692099563 23.52979369456330,58.95527787358336 23.58983102491678,58.95527787358336 23.58983102491678,58.91209692099563 23.52979369456330,58.91209692099563</coordinates></LineString></Placemark>
+<Placemark id="gcp1966NE.1"><name>1966NE #1</name><description>120 168</description><Point><coordinates>23.535021883545127,58.95141043713597</coordinates></Point></Placemark>
+<Placemark id="gcp1966NE.2"><name>1966NE #2</name><description>370 1348</description><Point><coordinates>23.54598675399748,58.925005273855014</coordinates></Point></Placemark>
+<Placemark id="gcp1966NE.3"><name>1966NE #3</name><description>773 714</description><Point><coordinates>23.563439645691695,58.9392373387387</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>23.48405131667638,58.90395117751554,23.58983102491678,58.96303240448135</value></Data>
+<Data name="maps"><value>1966S,1966NW,1966NE</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Haapsalu/composed/1966/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+</ExtendedData>
+
+</Document>
+</kml>
