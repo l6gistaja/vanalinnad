@@ -1,0 +1,2 @@
+2014-11-01 18:26:35+02:00; 75 files; 536K ../raster/places/Haapsalu/1783
+2014-11-01 18:26:36+02:00; 38 files; 388K ../raster/places/Haapsalu/1783
