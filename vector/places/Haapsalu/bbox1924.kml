@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1924.k1"><name>1924.k1</name><LineString><coordinates>23.46099124927495,58.91922606926929 23.46099124927495,58.96295266744486 23.53519347108779,58.96295266744486 23.53519347108779,58.91922606926929 23.46099124927495,58.91922606926929</coordinates></LineString></Placemark>
+<Placemark id="gcp1924.k1.1"><name>1924.k1 #1</name><description>1535 2012</description><Point><coordinates>23.532535311888484,58.925525014619296</coordinates></Point></Placemark>
+<Placemark id="gcp1924.k1.2"><name>1924.k1 #2</name><description>1580 37</description><Point><coordinates>23.51777243347054,58.962187313296994</coordinates></Point></Placemark>
+<Placemark id="gcp1924.k1.3"><name>1924.k1 #3</name><description>1377 625</description><Point><coordinates>23.515390631865557,58.95056851922535</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1924.k4"><name>1924.k4</name><LineString><coordinates>23.54184329073809,58.90188573631474 23.54184329073809,58.92804756447374 23.57953361833478,58.92804756447374 23.57953361833478,58.90188573631474 23.54184329073809,58.90188573631474</coordinates></LineString></Placemark>
+<Placemark id="gcp1924.k4.1"><name>1924.k4 #1</name><description>17 50</description><Point><coordinates>23.54257304499158,58.92395869444032</coordinates></Point></Placemark>
+<Placemark id="gcp1924.k4.2"><name>1924.k4 #2</name><description>724 204</description><Point><coordinates>23.560983727669704,58.92415806040342</coordinates></Point></Placemark>
+<Placemark id="gcp1924.k4.3"><name>1924.k4 #3</name><description>974 1296</description><Point><coordinates>23.573927161407436,58.910463659813246</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1924.k2"><name>1924.k2</name><LineString><coordinates>23.50944300619592,58.91793436493610 23.50944300619592,58.96693311340418 23.57330776088777,58.96693311340418 23.57330776088777,58.91793436493610 23.50944300619592,58.91793436493610</coordinates></LineString></Placemark>
+<Placemark id="gcp1924.k2.1"><name>1924.k2 #1</name><description>540 700</description><Point><coordinates>23.534261884903298,58.9514832919375</coordinates></Point></Placemark>
+<Placemark id="gcp1924.k2.2"><name>1924.k2 #2</name><description>778 1171</description><Point><coordinates>23.54655420790567,58.94385734403063</coordinates></Point></Placemark>
+<Placemark id="gcp1924.k2.3"><name>1924.k2 #3</name><description>525 1984</description><Point><coordinates>23.54443145767165,58.928101014371826</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1925"><name>1925</name><LineString><coordinates>23.50306772006613,58.92944802821333 23.50306772006613,58.96729343130139 23.56824482005443,58.96729343130139 23.56824482005443,58.92944802821333 23.50306772006613,58.92944802821333</coordinates></LineString></Placemark>
+<Placemark id="gcp1925.1"><name>1925 #1</name><description>261 902</description><Point><coordinates>23.526449372710477,58.94899720182111</coordinates></Point></Placemark>
+<Placemark id="gcp1925.2"><name>1925 #2</name><description>307 1227</description><Point><coordinates>23.533702065886303,58.9452781915252</coordinates></Point></Placemark>
+<Placemark id="gcp1925.3"><name>1925 #3</name><description>585 1550</description><Point><coordinates>23.546576669158256,58.94385025070443</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>23.46099124927495,58.90188573631474,23.57953361833478,58.96729343130139</value></Data>
+<Data name="maps"><value>1924.k1,1924.k4,1924.k2,1925</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Haapsalu/composed/1924/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+</ExtendedData>
+
+</Document>
+</kml>
