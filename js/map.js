@@ -16,6 +16,7 @@ function vlMap(inputParams){
   var input;
   var emptyTiles;
   var isAtSite;
+  var baseLayersCount = 0;
 
   var xmlHandlerConf = function(request) {
     if(request.status == 200) {
@@ -202,8 +203,10 @@ function vlMap(inputParams){
           baseLayersData[layername] = {
             dir: layersTags[i].getAttribute('year') + '/',
             year: layersTags[i].getAttribute('year'),
-            bounds: new OpenLayers.Bounds(layerBoundBox[0], layerBoundBox[1], layerBoundBox[2], layerBoundBox[3])
+            bounds: new OpenLayers.Bounds(layerBoundBox[0], layerBoundBox[1], layerBoundBox[2], layerBoundBox[3]),
+            no: baseLayersCount
           };
+          baseLayersCount++;
           baseLayersData[layername].bounds = baseLayersData[layername].bounds.transform(map.displayProjection, map.projection);
           tmsoverlays[tmsoverlays.length] = new OpenLayers.Layer.TMS(
             layersTags[i].getAttribute('year'),
@@ -351,7 +354,31 @@ function vlMap(inputParams){
         map.addPopup(sitesPopup);
       });
     }
-    
+
+    var keyboardControl = new OpenLayers.Control();                
+    var handler = new OpenLayers.Handler.Keyboard(
+      new OpenLayers.Control(),
+      { keydown: function(evt) {
+            if(baseLayersCount < 1) { return; }
+            var dir = 0;
+            if(evt.keyCode > 47 && evt.keyCode < 58) { dir = -1; }
+            if(evt.keyCode == 32) { dir = 1; }
+            if(dir != 0) {
+              var mapIndex = -1;
+              if(map.baseLayer.layername in baseLayersData) {
+                mapIndex = baseLayersData[map.baseLayer.layername].no + dir;
+              } else {
+                mapIndex = dir > 0 ? dir - 1 : baseLayersCount + dir;
+              }
+              if(mapIndex >= baseLayersCount) { mapIndex = -1; }
+              map.setBaseLayer(mapIndex < 0 ? osm : tmsoverlays[mapIndex]);
+            }
+        }
+      }, {}
+    );
+    handler.activate();
+    map.addControl(keyboardControl);
+
     baseurl = '';
     for(reqKey in reqParams) {
       if(reqKey == 'year') { continue; }

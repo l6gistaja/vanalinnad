@@ -2,6 +2,8 @@
 
 Historical maps of Estonian cities under grid of today's street network.
 
+By OpenLayers defaults arrow keys pan, +/- keys zoom & Page Up/Page Down/Home/End scroll by three quarters of a page. Additionally, spacebar displays next and numbers (0-9) will display previous historical map.
+
 * License: [BSD 2-clause License](http://openlayers.org/dev/license.txt), inherited from used [OpenLayers](http://openlayers.org) library
 * Vector data: © [OpenStreetMap contributors](http://www.openstreetmap.org/copyright)
 * Tiles and initial JavaScript: [MapTiler](http://www.maptiler.org/)/[GDAL2Tiles](http://www.klokan.cz/projects/gdal2tiles/), © 2008 [Klokan Petr Pridal](http://www.klokan.cz/), [GDAL](http://www.gdal.org/) & [OSGeo](http://www.osgeo.org/) [GSoC](http://code.google.com/soc/)
