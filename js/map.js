@@ -275,7 +275,7 @@ function vlMap(inputParams){
         var clickXYg = map.getLonLatFromPixel(vectorLayersCtl.handlers.feature.evt.xy);
         var clickXY = new OpenLayers.LonLat(clickXYg.lon, clickXYg.lat);
         clickXYg.transform(map.options.projection, map.options.displayProjection);
-        
+
         feature.popup = new OpenLayers.Popup.FramedCloud (
             "roadPopup",
             new OpenLayers.LonLat(clickXY.lon, clickXY.lat),
@@ -339,10 +339,13 @@ function vlMap(inputParams){
     } else {
       selectorLayer.events.register('loadend', selectorLayer, function(){
         map.zoomToExtent(selectorLayer.getDataExtent());
-        //console.log(selectorLayer.features);
+        
+        var cornerXYg = map.getLonLatFromPixel({x:55, y:20});
+        var cornerXY = new OpenLayers.LonLat(cornerXYg.lon, cornerXYg.lat);
+        cornerXYg.transform(map.options.projection, map.options.displayProjection);
         sitesPopup = new OpenLayers.Popup.Anchored(
             "sitesPopup",
-            map.getCenter(),
+            new OpenLayers.LonLat(cornerXY.lon, cornerXY.lat), //map.getCenter(),
             null,
             htmlSites(selectorLayer.features),
             null,
