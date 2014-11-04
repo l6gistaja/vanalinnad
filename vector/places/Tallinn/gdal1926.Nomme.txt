@@ -1,0 +1,1 @@
+gdal_translate ~/histmaps/places/Tallinn/composed/1924/1926.Nomme.jpg  ~/histmaps/places/Tallinn/composed/1924/1926.Nomme_georef.png -of PNG -gcp 450 484 24.666112830505654 59.387424958949715 -gcp 2908 297 24.69336407409655 59.389118585701176 -gcp 1368 2411 24.67737810836884 59.37676956012964

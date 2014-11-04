@@ -1,13 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://earth.google.com/kml/2.2">
+<kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 
-<Placemark id="bbox"><name></name><LineString><coordinates>24.7259680584,59.3994840649 24.7259680584,59.500305688 24.9273860564,59.500305688 24.9273860564,59.3994840649 24.7259680584,59.3994840649</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>422 2706</description><Point><coordinates>24.741232395171945,59.44813474168575</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>273 4467</description><Point><coordinates>24.73590016365029,59.41424508192281</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>5028 1693</description><Point><coordinates>24.90409023255075,59.4672649606221</coordinates></Point></Placemark>
-<Placemark id="gcp.4"><name>#4</name><description>2606 2264</description><Point><coordinates>24.818458557128267,59.456728620511925</coordinates></Point></Placemark>
-<Placemark id="gcp.5"><name>#5</name><description>2158 4067</description><Point><coordinates>24.80216145515426,59.42194703237856</coordinates></Point></Placemark>
+<Placemark id="bbox.1926.Nomme"><name>1926.Nomme</name><LineString><coordinates>24.66084151894376,59.37481786789588 24.66084151894376,59.39090755551315 24.69940050885730,59.39090755551315 24.69940050885730,59.37481786789588 24.66084151894376,59.37481786789588</coordinates></LineString></Placemark>
+<Placemark id="gcp1926.Nomme.1"><name>1926.Nomme #1</name><description>450 484</description><Point><coordinates>24.666112830505654,59.387424958949715</coordinates></Point></Placemark>
+<Placemark id="gcp1926.Nomme.2"><name>1926.Nomme #2</name><description>2908 297</description><Point><coordinates>24.69336407409655,59.389118585701176</coordinates></Point></Placemark>
+<Placemark id="gcp1926.Nomme.3"><name>1926.Nomme #3</name><description>1368 2411</description><Point><coordinates>24.67737810836884,59.37676956012964</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1924"><name>1924</name><LineString><coordinates>24.72596805839885,59.39948406490147 24.72596805839885,59.50030568796804 24.92738605638693,59.50030568796804 24.92738605638693,59.39948406490147 24.72596805839885,59.39948406490147</coordinates></LineString></Placemark>
+<Placemark id="gcp1924.1"><name>1924 #1</name><description>422 2706</description><Point><coordinates>24.741232395171945,59.44813474168575</coordinates></Point></Placemark>
+<Placemark id="gcp1924.2"><name>1924 #2</name><description>273 4467</description><Point><coordinates>24.73590016365029,59.41424508192281</coordinates></Point></Placemark>
+<Placemark id="gcp1924.3"><name>1924 #3</name><description>5028 1693</description><Point><coordinates>24.90409023255075,59.4672649606221</coordinates></Point></Placemark>
+<Placemark id="gcp1924.4"><name>1924 #4</name><description>2606 2264</description><Point><coordinates>24.818458557128267,59.456728620511925</coordinates></Point></Placemark>
+<Placemark id="gcp1924.5"><name>1924 #5</name><description>2158 4067</description><Point><coordinates>24.80216145515426,59.42194703237856</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.66084151894376,59.37481786789588,24.92738605638693,59.50030568796804</value></Data>
+<Data name="maps"><value>1926.Nomme,1924</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1924/</value></Data>
+</ExtendedData>
 
 </Document>
 </kml>

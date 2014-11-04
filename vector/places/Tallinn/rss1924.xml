@@ -4,6 +4,7 @@
 <title>DIGAR</title>
 <language>et</language>
 <copyright>0</copyright>
+
 <item>
 <title>III-29 [Tallinn : Harjumaa]</title>
 <author>Eduard-Adolf Bach, Sõjaväe Topograafia jaoskond</author>
@@ -12,5 +13,15 @@
 <pubDate>Wed, 01 Oct 1924 00:00:00 +0000</pubDate>
 <link>http://digar.nlib.ee/digar/show.action?id=113829</link>
 </item>
+
+<item>
+<title>Nõmme</title>
+<author>Karl Puhvel</author>
+<description></description>
+<guid>isbn=9789949539017;nlib.ee=KTA 5.095</guid>
+<pubDate>Fri, 01 Jan 1926 00:00:00 +0000</pubDate>
+<link>http://digar.nlib.ee/digar/show.action?id=113815</link>
+</item>
+
 </channel>
 </rss>
