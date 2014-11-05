@@ -2,6 +2,6 @@ gdal_translate ~/histmaps/places/Tallinn/1939_crop.jpg  ~/histmaps/places/Tallin
 
 # Virve - Laine; Kaluri - Systa; Lepa - Saare
 
-gdal_translate ~/histmaps/places/Tallinn/1939_crop.jpg ~/histmaps/places/Tallinn/1939georef.png -of PNG -gcp 2799 4671 24.7359720537063 59.414292263112806 -gcp 3225 1470 24.74066591948236 59.447825341132365 -gcp 5168 2503 24.785289830863128 59.438702778305924
+gdal_translate ~/histmaps/places/Tallinn/composed/1939/1939_crop.jpg ~/histmaps/places/Tallinn/composed/1939/1939georef.png -of PNG -gcp 2799 4671 24.7359720537063 59.414292263112806 -gcp 3225 1470 24.74066591948236 59.447825341132365 -gcp 5168 2503 24.785289830863128 59.438702778305924
 
 # Marta - Magdaleena; Kyti - Kalamaja; Poska - Weizenbergi

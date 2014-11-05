@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://earth.google.com/kml/2.2">
+<kml xmlns="http://www.opengis.net/kml/2.2">
 <Document>
 
-<Placemark id="bbox"><name></name><LineString><coordinates>24.6669621557,59.394653741 24.6669621557,59.4671244346 24.8581524295,59.4671244346 24.8581524295,59.394653741 24.6669621557,59.394653741</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>2799 4671</description><Point><coordinates>24.7359720537063,59.414292263112806</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>3225 1470</description><Point><coordinates>24.74066591948236,59.447825341132365</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>5168 2503</description><Point><coordinates>24.785289830863128,59.438702778305924</coordinates></Point></Placemark>
+<Placemark id="bbox.1939.Nomme"><name>1939.Nomme</name><LineString><coordinates>24.61392979836162,59.35678957676252 24.61392979836162,59.39626042112515 24.73157086295780,59.39626042112515 24.73157086295780,59.35678957676252 24.61392979836162,59.35678957676252</coordinates></LineString></Placemark>
+<Placemark id="gcp1939.Nomme.1"><name>1939.Nomme #1</name><description>3113 1039</description><Point><coordinates>24.660627409585796,59.386673070160946</coordinates></Point></Placemark>
+<Placemark id="gcp1939.Nomme.2"><name>1939.Nomme #2</name><description>653 3837</description><Point><coordinates>24.6276684252115,59.364341573156246</coordinates></Point></Placemark>
+<Placemark id="gcp1939.Nomme.3"><name>1939.Nomme #3</name><description>6686 1129</description><Point><coordinates>24.712508540038765,59.387292714920754</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1939"><name>1939</name><LineString><coordinates>24.66696215573167,59.39465374103588 24.66696215573167,59.46712443458402 24.85815242950569,59.46712443458402 24.85815242950569,59.39465374103588 24.66696215573167,59.39465374103588</coordinates></LineString></Placemark>
+<Placemark id="gcp1939.1"><name>1939 #1</name><description>2799 4671</description><Point><coordinates>24.7359720537063,59.414292263112806</coordinates></Point></Placemark>
+<Placemark id="gcp1939.2"><name>1939 #2</name><description>3225 1470</description><Point><coordinates>24.74066591948236,59.447825341132365</coordinates></Point></Placemark>
+<Placemark id="gcp1939.3"><name>1939 #3</name><description>5168 2503</description><Point><coordinates>24.785289830863128,59.438702778305924</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.61392979836162,59.35678957676252,24.85815242950569,59.46712443458402</value></Data>
+<Data name="maps"><value>1939.Nomme,1939</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1939/</value></Data>
+</ExtendedData>
 
 </Document>
 </kml>

@@ -4,6 +4,7 @@
 <title>DIGAR</title>
 <language>et</language>
 <copyright>0</copyright>
+
 <item>
 <title>Tallinna linna plaan 1940</title>
 <author>Tarbetrükk</author>
@@ -12,5 +13,16 @@
 <legends>legend1939.jpg</legends>
 <link>http://digar.nlib.ee/digar/show.action?id=113092</link>
 </item>
+
+<item>
+<title>Nõmme linna plaan</title>
+<author>Julius Männik, J. Müller</author>
+<guid>isbn=9789949539031;nlib.ee=KTC 7.953</guid>
+<pubDate>Mon, 01 Jan 1939 00:00:00 +0000</pubDate>
+<legends>legend1939.Nomme.jpg</legends>
+<link>http://digar.nlib.ee/digar/show.action?id=112831</link>
+<anchor>1939.Nomme</anchor>
+</item>
+
 </channel>
 </rss>
