@@ -4,6 +4,7 @@
 <title>DIGAR</title>
 <language>et</language>
 <copyright>0</copyright>
+
 <item>
 <title>Tallinna plaan</title>
 <author>Sõjaväe topograafia osakond</author>
@@ -13,5 +14,16 @@
 <pubDate>Wed, 01 Jan 1919 00:00:00 +0000</pubDate>
 <legends>legend1919.jpg</legends>
 </item>
+
+<item>
+<title>3-29 [Piirita]</title>
+<author>Sõjawäe Topograafia Osakond</author>
+<link>http://digar.nlib.ee/digar/show.action?id=46335</link>
+<guid>isbn=9789949540396;nlib.ee=ARKtC 10.277</guid>
+<pubDate>Thu, 01 Jan 1920 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1920.Pirita</anchor>
+</item>
+
 </channel>
 </rss>
