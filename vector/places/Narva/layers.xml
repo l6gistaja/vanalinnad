@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vanalinnadlayers xmlns="http://juks.alkohol.ee/vanalinnad">
+<country>Estonia</country>
+<city>Narva</city>
+<minzoom>10</minzoom>
+<maxzoom>16</maxzoom>
+<!-- OpenLayers bounds are in order W,S,E,N -->
+<bounds>28.1232125207,59.3349152344,28.2387125802,59.4144542103</bounds>
+<layer type="tms" year="1943" bounds="28.1518188966,59.3439598218,28.2387125802,59.3985713122"/>
+<layer type="tms" year="1940" bounds="28.1232125207,59.3357105316,28.2383796861,59.412726653"/>
+<layer type="tms" year="1905" bounds="28.1479740727,59.3349152344,28.238582061,59.4144542103"/>
+<layer type="roads" name="&amp;#9316; 3" file="roads3min.kml" maxres="10"/>
+<layer type="roads" name="&amp;#9316; 4" file="roads4min.kml" maxres="15"/>
+</vanalinnadlayers>

@@ -8,6 +8,12 @@
       </Point>
     </Placemark>
     <Placemark>
+      <name>Narva</name>
+      <Point>
+        <coordinates>28.20004659975203,59.3758806532303</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>Parnu</name>
       <description>Pärnu</description>
       <Point>

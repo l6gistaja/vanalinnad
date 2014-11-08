@@ -1,0 +1,2 @@
+2014-11-08 00:58:15+02:00; 506 files; 8.7M ../raster/places/Narva/1943
+2014-11-08 00:58:33+02:00; 492 files; 8.7M ../raster/places/Narva/1943
