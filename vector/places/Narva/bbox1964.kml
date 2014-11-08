@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1964.k2"><name>1964.k2</name><LineString><coordinates>28.13793745904866,59.34250266567732 28.13793745904866,59.36371404762502 28.21378507089275,59.36371404762502 28.21378507089275,59.34250266567732 28.13793745904866,59.34250266567732</coordinates></LineString></Placemark>
+<Placemark id="gcp1964.k2.1"><name>1964.k2 #1</name><description>2431 68</description><Point><coordinates>28.213468494719937,59.36175333159764</coordinates></Point></Placemark>
+<Placemark id="gcp1964.k2.2"><name>1964.k2 #2</name><description>525 27</description><Point><coordinates>28.154931965178964,59.36309833089375</coordinates></Point></Placemark>
+<Placemark id="gcp1964.k2.3"><name>1964.k2 #3</name><description>1034 466</description><Point><coordinates>28.170274200744064,59.35605562961634</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1964.k1"><name>1964.k1</name><LineString><coordinates>28.13940924672701,59.35502313780841 28.13940924672701,59.40737003336280 28.21556187475191,59.40737003336280 28.21556187475191,59.35502313780841 28.13940924672701,59.35502313780841</coordinates></LineString></Placemark>
+<Placemark id="gcp1964.k1.1"><name>1964.k1 #1</name><description>1295 896</description><Point><coordinates>28.198107230472747,59.38651145808864</coordinates></Point></Placemark>
+<Placemark id="gcp1964.k1.2"><name>1964.k1 #2</name><description>1496 2262</description><Point><coordinates>28.205745531768052,59.35566545338912</coordinates></Point></Placemark>
+<Placemark id="gcp1964.k1.3"><name>1964.k1 #3</name><description>576 1627</description><Point><coordinates>28.16555531188974,59.37044923529476</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>28.13793745904866,59.34250266567732,28.21556187475191,59.40737003336280</value></Data>
+<Data name="maps"><value>1964.k2,1964.k1</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1964/</value></Data>
+</ExtendedData>
+
+</Document>
+</kml>
