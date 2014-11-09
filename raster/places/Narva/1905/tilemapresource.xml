@@ -3,8 +3,8 @@
 	  <Title>1905georef.png</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="59.33491523442741" miny="28.14797407265429" maxx="59.41445421027932" maxy="28.23858206101998"/>
-	  <Origin x="59.33491523442741" y="28.14797407265429"/>
+	  <BoundingBox minx="59.33496155482504" miny="28.14781469137308" maxx="59.41437352375337" maxy="28.23871082909337"/>
+	  <Origin x="59.33496155482504" y="28.14781469137308"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="10" units-per-pixel="152.87405654296876" order="10"/>
