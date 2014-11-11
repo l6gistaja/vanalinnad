@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xsl:stylesheet version="1.0"
+  xmlns:xsl="http://www.w3.org/1999/XSL/Transform"
+  xmlns:osm="http://www.openstreetmap.org/gml/"
+  xmlns:gml="http://www.opengis.net/gml">
+
+<xsl:output method="xml"/>
+<xsl:output indent="no"/>
+<xsl:output encoding="UTF-8"/>
+
+<xsl:template match="/">
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+<Placemark>
+<name>&lt;a href="http://et.wikipedia.org/wiki/Narva_veehoidla" target="_blank"&gt;Narva veehoidla&lt;/a&gt;</name>
+<color>#0000FF</color>
+<MultiGeometry>
+<xsl:for-each select="osm:FeatureCollection/gml:featureMember">
+<xsl:if test="osm:way/osm:geometryProperty/gml:LineString and not(osm:way/osm:highway) and not(osm:way/osm:waterway) and not(osm:way/osm:wood) and not(osm:way/osm:cables) and not(osm:way/osm:admin_level) and not(osm:way/osm:place) and not(osm:way/osm:wetland) and not(osm:way/osm:building) and not(osm:way/osm:power) and not(osm:way/osm:leisure) and not(osm:way/osm:barrier) and not(osm:way/osm:source_zoomlevel) and not(osm:way/osm:railway) and not(osm:way/osm:landuse) and not(osm:way/osm:natural and contains('wood,scrub,wetland', osm:way/osm:natural)) and not(osm:way/osm:source and contains(osm:way/osm:source,'Corine')) and not(contains('34600934,264633671,45487837,45531137,141101735,40169961,40181176,40181176,287935773,248270589,248270587,233276228', osm:way/@fid))">
+<LineString><coordinates><xsl:value-of select="osm:way/osm:geometryProperty/gml:LineString/gml:coordinates"/></coordinates></LineString>
+</xsl:if>
+</xsl:for-each>
+</MultiGeometry>
+</Placemark>
+</Document>
+</kml>
+</xsl:template>
+
+</xsl:stylesheet>
