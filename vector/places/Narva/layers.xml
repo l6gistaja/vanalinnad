@@ -12,6 +12,7 @@
 <layer type="tms" year="1927" bounds="28.1197920134,59.3377452399,28.2302948765,59.4144818473"/>
 <layer type="tms" year="1919" bounds="28.126093786,59.2995988539,28.4254007148,59.4000977434"/>
 <layer type="tms" year="1905" bounds="28.1479740727,59.3349152344,28.238582061,59.4144542103"/>
+<layer type="tms" year="18XX" bounds="28.11836035203705,59.36253097268665,28.23119381649864,59.41243144305069"/>
 <layer type="custom" name="&amp;#9875; vh." file="Narva_veehoidla.kml" maxres="10" style="multiColor"/>
 <layer type="roads" name="&amp;#9316; 1" file="roads3min.kml" maxres="10"/>
 <layer type="roads" name="&amp;#9316; 2" file="roads4min.kml" maxres="15"/>
