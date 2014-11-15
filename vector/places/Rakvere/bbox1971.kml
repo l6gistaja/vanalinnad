@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1971.k1"><name>1971.k1</name><LineString><coordinates>26.32529435950411,59.34834271264710 26.32529435950411,59.38408888213295 26.42104201865930,59.38408888213295 26.42104201865930,59.34834271264710 26.32529435950411,59.34834271264710</coordinates></LineString></Placemark>
+<Placemark id="gcp1971.k1.1"><name>1971.k1 #1</name><description>346 1491</description><Point><coordinates>26.34032360561373,59.35133230045888</coordinates></Point></Placemark>
+<Placemark id="gcp1971.k1.2"><name>1971.k1 #2</name><description>1176 1326</description><Point><coordinates>26.3760291720202,59.3551605694275</coordinates></Point></Placemark>
+<Placemark id="gcp1971.k1.3"><name>1971.k1 #3</name><description>1740 744</description><Point><coordinates>26.39983215495595,59.36784828410181</coordinates></Point></Placemark>
+<Placemark id="gcp1971.k1.4"><name>1971.k1 #4</name><description>1962 108</description><Point><coordinates>26.409460524633275,59.38169160199932</coordinates></Point></Placemark>
+
+
+<Placemark id="bbox.1971.k2"><name>1971.k2</name><LineString><coordinates>26.32550674746501,59.32228610120640 26.32550674746501,59.35293135258735 26.39577718801887,59.35293135258735 26.39577718801887,59.32228610120640 26.32550674746501,59.32228610120640</coordinates></LineString></Placemark>
+<Placemark id="gcp1971.k2.1"><name>1971.k2 #1</name><description>346 71</description><Point><coordinates>26.340351616363492,59.35132927810802</coordinates></Point></Placemark>
+<Placemark id="gcp1971.k2.2"><name>1971.k2 #2</name><description>852 1063</description><Point><coordinates>26.362066780548226,59.329784481674174</coordinates></Point></Placemark>
+<Placemark id="gcp1971.k2.3"><name>1971.k2 #3</name><description>970 37</description><Point><coordinates>26.36708774730252,59.352144566902425</coordinates></Point></Placemark>
+<Placemark id="gcp1971.k2.4"><name>1971.k2 #4</name><description>281 715</description><Point><coordinates>26.337562550048773,59.337412232598055</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>26.32529435950411,59.32228610120640,26.42104201865930,59.38408888213295</value></Data>
+<Data name="maps"><value>1971.k1,1971.k2</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Rakvere/composed/1971/</value></Data>
+</ExtendedData>
+
+</Document>
+</kml>

@@ -134,7 +134,7 @@ $destinationdir = $rootdir.$mainconf->{'dirraster'}.$mainconf->{'dirplaces'}.$si
 if(-e $destinationdir) {
   $command = 'rm -rf '.$destinationdir.'*';
 } else {
-  $command = 'mkdir '.$destinationdir;
+  $command = 'mkdir -p '.$destinationdir;
 }
 print $command."\n";
 system($command);
