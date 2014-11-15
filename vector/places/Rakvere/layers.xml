@@ -8,6 +8,7 @@
 <bounds>26.32487811772224,59.32225820424799,26.42148182646629,59.38415728517850</bounds>
 <layer type="tms" year="1971" bounds="26.32487811772224,59.32225820424799,26.42148182646629,59.38415728517850"/>
 <layer type="tms" year="1930" bounds="26.3348701725,59.3219801906,26.3926141143,59.3674325469"/>
-<layer type="roads" name="&amp;#9316; 1" file="roads3min.kml" maxres="10"/>
+<layer type="tms" year="1881" bounds="26.3476271479,59.3227974186,26.3953223455,59.3553224937"/>
+<layer type="roads" name="&amp;#9316; 1" file="roads3min.kml" maxres="12"/>
 <layer type="roads" name="&amp;#9316; 2" file="roads4min.kml" maxres="15"/>
 </vanalinnadlayers>

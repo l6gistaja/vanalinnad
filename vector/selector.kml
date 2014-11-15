@@ -21,6 +21,12 @@
       </Point>
     </Placemark>
     <Placemark>
+      <name>Rakvere</name>
+      <Point>
+        <coordinates>26.35361070632957,59.35047727357414</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>Tallinn</name>
       <Point>
         <coordinates>24.745278,59.437222</coordinates>
