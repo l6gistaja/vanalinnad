@@ -1,0 +1,2 @@
+2014-11-17 12:32:05+02:00; 128 files; 1.5M ../raster/places/Rakvere/1703
+2014-11-17 12:32:07+02:00; 105 files; 1.4M ../raster/places/Rakvere/1703
