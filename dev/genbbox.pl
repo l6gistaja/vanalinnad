@@ -6,9 +6,12 @@ if(scalar(@ARGV) < 2) {
 }
 
 use lib './dev';
-use VlHelper qw(bbox_fragment);
-
+use VlHelper qw(bbox_fragment kml_envelope gdal_mapindex gdal_tlast bbox_box bbox_points);
 use XML::Simple;
+use Data::Dumper;
+
+$gdaltxtformat = 0;
+
 $xml = new XML::Simple;
 $mainconf = $xml->XMLin($ARGV[0].'conf.xml');
 $layers = $xml->XMLin($ARGV[0].$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[1].'/'.$mainconf->{'filelayers'});
@@ -32,22 +35,22 @@ for($i=0; $i<=$len; $i++) {
       next;
     }
     print "\n";
+
+    if($gdaltxtformat) {
+      $bboxdata = print bbox_fragment(
+        $ARGV[0].$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[1].'/gdal'.$year.'.txt',
+        '', join(',', @c)
+      );
+    } else {
+      $gdal = $xml->XMLin($ARGV[0].$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[1].'/gdal.xml', ForceArray => 1);
+      %gx = qw();
+      $gx{'y'} = gdal_mapindex($gdal, $year);
+      $gx{'tlast'} = gdal_tlast($gdal, $gx{'y'});
+      $bboxdata = bbox_box('', join(',', @c)).bbox_points($gdal->{'translate'}[$gx{'y'}]{'t'}[$gx{'tlast'}]{'gcps'}, '');
+    }
     open (DATA, '>'.$filebbox) or die("Could not open file ".$filebbox);
     binmode DATA, ":utf8";
-    print DATA $filebase.$conf->{'Document'}{'ExtendedData'}{'v:kmlheader'};
-    print DATA <<EndHeader;
-<?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://earth.google.com/kml/2.2">
-<Document>
-EndHeader
-    
-    print DATA bbox_fragment(
-      $ARGV[0].$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[1].'/gdal'.$year.'.txt',
-      '', join(',', @c));
-    print DATA <<EndHeader;
-</Document>
-</kml>
-EndHeader
+    print DATA kml_envelope($bboxdata);
     close(DATA);
   }
 }

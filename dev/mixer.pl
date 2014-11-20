@@ -6,7 +6,7 @@ if(scalar(@ARGV) < 2) {
 }
 
 use lib './dev';
-use VlHelper qw(minify_empty_tiles_json add_empty_tiles_json bbox_fragment add_to_tree);
+use VlHelper qw(minify_empty_tiles_json add_empty_tiles_json bbox_fragment add_to_tree kml_envelope);
 use Data::Dumper;
 use POSIX;
 
@@ -69,20 +69,12 @@ for($m=0; $m<$maplen; $m++) {
 
 # GENERATE BBOX KML
 
-open (DATA, '>'.$bboxfile) or die("Could not open file ".$bboxfile);
-binmode DATA, ":utf8";
-
-print DATA <<EndHeader;
-<?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
-<Document>
-EndHeader
-
+$kmldata = '';
 @bounds = qw();
 for($m=0; $m<$maplen; $m++) {
   $renderdata = $xml->XMLin($data{'sourcedir'}.$maps[$m].'/tilemapresource.xml');
   # OpenLayers bounds are in order W,S,E,N
-  print DATA bbox_fragment($gdaldir.'gdal'.$maps[$m].'.txt', ''.$maps[$m],
+  $kmldata .= bbox_fragment($gdaldir.'gdal'.$maps[$m].'.txt', ''.$maps[$m],
     join(',',
         $renderdata->{'BoundingBox'}->{'miny'},
         $renderdata->{'BoundingBox'}->{'minx'},
@@ -111,21 +103,15 @@ for($m=0; $m<$maplen; $m++) {
 }
 $data{'bbox'} = join(',',@bounds);
 
-print DATA <<EndHeader;
-<ExtendedData>
-EndHeader
-
+$kmldata .= "\n<ExtendedData>\n";
 foreach $key (keys %data) {
-  print DATA '<Data name="'.$key.'"><value>'.$data{$key}."</value></Data>\n";
+  $kmldata .= '<Data name="'.$key.'"><value>'.$data{$key}."</value></Data>\n";
 }
+$kmldata .= "\n</ExtendedData>\n";
 
-print DATA <<EndHeader;
-</ExtendedData>
-
-</Document>
-</kml>
-EndHeader
-
+open (DATA, '>'.$bboxfile) or die("Could not open file ".$bboxfile);
+binmode DATA, ":utf8";
+print DATA kml_envelope($kmldata);
 close(DATA);
 
 # MERGE MAPS

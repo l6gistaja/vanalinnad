@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
+<kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
 <Placemark id="bbox.1971.k1"><name>1971.k1</name><LineString><coordinates>26.32529435950411,59.34834271264710 26.32529435950411,59.38408888213295 26.42104201865930,59.38408888213295 26.42104201865930,59.34834271264710 26.32529435950411,59.34834271264710</coordinates></LineString></Placemark>
@@ -15,6 +15,7 @@
 <Placemark id="gcp1971.k2.3"><name>1971.k2 #3</name><description>970 37</description><Point><coordinates>26.36708774730252,59.352144566902425</coordinates></Point></Placemark>
 <Placemark id="gcp1971.k2.4"><name>1971.k2 #4</name><description>281 715</description><Point><coordinates>26.337562550048773,59.337412232598055</coordinates></Point></Placemark>
 
+
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
 <Data name="bbox"><value>26.32529435950411,59.32228610120640,26.42104201865930,59.38408888213295</value></Data>
@@ -23,6 +24,7 @@
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="montage"><value>yes</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Rakvere/composed/1971/</value></Data>
+
 </ExtendedData>
 
 </Document>
