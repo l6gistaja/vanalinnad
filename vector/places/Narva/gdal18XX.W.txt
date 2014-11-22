@@ -1,1 +1,0 @@
-gdal_translate ~/histmaps/places/Narva/composed/18XX/18XX.W.crop2.jpg  ~/histmaps/places/Narva/composed/18XX/18XX.W_georef.png -of PNG -gcp 1019 718 28.16239386230494 59.39671751750341 -gcp 767 1230 28.15554886489814 59.385649798058054  -gcp 1395 1648 28.182542616424534 59.37896152725038

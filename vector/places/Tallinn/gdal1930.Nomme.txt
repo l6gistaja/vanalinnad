@@ -1,4 +1,0 @@
-gdal_translate ~/histmaps/places/Tallinn/composed/1932/1930_whitened.jpg  ~/histmaps/places/Tallinn/composed/1932/1930.Nomme_georef.png -of PNG  -gcp 10059 726 24.724325595245443 59.391798223373996  -gcp 676 4696 24.625276980742605 59.36690629079265  -gcp 4010 579 24.659040627821295 59.39148684554842
-
-gdal_translate ~/histmaps/places/Tallinn/composed/1932/1930_whitened2.jpg  ~/histmaps/places/Tallinn/composed/1932/1930.Nomme_georef.png -of PNG  -gcp 676 4696 24.625276980742605 59.36690629079265  -gcp 4010 579 24.659040627821295 59.39148684554842  -gcp 9226 1262 24.71540993247816 59.38859690435489
-

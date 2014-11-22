@@ -1,9 +1,0 @@
-gdal_translate ~/histmaps/places/Tallinn/1865whited.jpg  ~/histmaps/places/Tallinn/1865georef.png -of PNG -gcp 2709 3242 24.677816397845397 59.42848299610858 -gcp 6524 4294 24.80036116331781 59.412124923859196 -gcp 7736 1028 24.835980899035583 59.46651209134061
-
-# Paldiski mnt - Mustj6gi; Vana Tartu mnt - Ylemiste kanal; Pirita klooster
-
-gdal_translate ~/histmaps/places/Tallinn/1865whited.jpg  ~/histmaps/places/Tallinn/1865georef.png -of PNG -gcp 3460 3212 24.70696128100122 59.42967529255455 -gcp 6524 4294 24.80036116331781 59.412124923859196 -gcp 7736 1028 24.835980899035583 59.46651209134061
-
-# Paldiski mnt - Mineraali; Vana Tartu mnt - Ylemiste kanal; Pirita klooster
-
-gdal_translate ~/histmaps/places/Tallinn/1865whited2.jpg  ~/histmaps/places/Tallinn/1865georef.png -of PNG -gcp 3460 3212 24.70696128100122 59.42967529255455 -gcp 6524 4294 24.80036116331781 59.412124923859196 -gcp 7736 1028 24.835980899035583 59.46651209134061

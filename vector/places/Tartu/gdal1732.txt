@@ -1,1 +1,0 @@
-gdal_translate ~/histmaps/places/Tartu/1732_whit2.jpg  ~/histmaps/places/Tartu/1732_georef.png -of PNG 

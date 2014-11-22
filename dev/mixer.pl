@@ -37,7 +37,7 @@ if($gdaltxtformat) {
     print 'No composite '.$year.' in '.$vdir.$mainconf->{'filegdal'};
     exit;
   }
-  if(!exists $gdal->{'composite'}{$year}{'montage'}) {
+  if(exists $gdal->{'composite'}{$year}{'montage'}) {
     $data{'montage'} = 'yes';
   }
   $data{'maps'} = $gdal->{'composite'}{$year}{'maps'};

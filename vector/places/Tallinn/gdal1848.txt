@@ -1,2 +1,0 @@
-gdal_translate ~/histmaps/places/Tallinn/composed/1842/1848whited.jpg  ~/histmaps/places/Tallinn/composed/1842/1848georef.png -of PNG  -gcp 1196 510 24.776108322486866 59.424376016769685  -gcp 653 320 24.77203136478495 59.42466526263941  -gcp 53 566 24.768236201171206 59.423544787782745
-

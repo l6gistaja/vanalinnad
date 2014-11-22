@@ -1,2 +1,0 @@
-
-gdal_translate ~/histmaps/places/Tallinn/composed/1930/1930_crop.Kopli.jpg  ~/histmaps/places/Tallinn/composed/1930/1930.Kopli_georef.png -of PNG  -gcp 2420 1435 24.693995175705165 59.45356919179282  -gcp 1098 748 24.666969237671495 59.46194908432161  -gcp 1938 889 24.684575257646127 59.459724826095105

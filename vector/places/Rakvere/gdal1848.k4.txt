@@ -1,1 +1,0 @@
-gdal_translate ~/histmaps/places/Rakvere/composed/1848/1848.k4.sharp.jpg  ~/histmaps/places/Rakvere/composed/1848/1848.k4_georef.png -of PNG -gcp 4 7 26.363693494720515 59.33694549477485 -gcp 1479 78 26.388562936706432 59.33951704075015 -gcp 829 313 26.378756780548393 59.33610286076968
