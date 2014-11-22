@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vanalinnadlayers xmlns="http://juks.alkohol.ee/vanalinnad">
+  <bounds></bounds>
+  <city></city>
+  <country>Estonia</country>
+  <layer bounds="" type="tms" year="" />
+  <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
+  <maxzoom>16</maxzoom>
+  <minzoom>12</minzoom>
+</vanalinnadlayers>
