@@ -6,9 +6,11 @@ if(scalar(@ARGV) < 2) {
 }
 
 use lib './dev';
-use VlHelper qw(minify_empty_tiles_json add_empty_tiles_json bbox_fragment add_to_tree kml_envelope);
+use VlHelper qw(minify_empty_tiles_json add_empty_tiles_json bbox_fragment add_to_tree kml_envelope gdal_tlast bbox_box bbox_points);
 use Data::Dumper;
 use POSIX;
+
+$gdaltxtformat = 0;
 
 %data = qw();
 $rootdir = '';
@@ -21,11 +23,28 @@ $mainconf = $xml->XMLin($rootdir.'conf.xml');
 $gdaldir = $rootdir.$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$site.'/';
 $bboxfile = $gdaldir.'bbox'.$year.'.kml';
 $bboxdata = $xml->XMLin($bboxfile);
-
 #print Dumper($bboxdata);
 
-foreach $key (keys %{$bboxdata->{'Document'}->{'ExtendedData'}->{'Data'}}) {
-  $data{$key} = $bboxdata->{'Document'}->{'ExtendedData'}->{'Data'}->{$key}->{'value'};
+if($gdaltxtformat) {
+  foreach $key (keys %{$bboxdata->{'Document'}->{'ExtendedData'}->{'Data'}}) {
+    $data{$key} = $bboxdata->{'Document'}->{'ExtendedData'}->{'Data'}->{$key}->{'value'};
+  }
+} else {
+  $vdir = $mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$site.'/';
+  $layers = $xml->XMLin($vdir.$mainconf->{'filelayers'}, ForceArray => 1);
+  $gdal = $xml->XMLin($vdir.$mainconf->{'filegdal'}, ForceArray => 1);
+  if(!exists $gdal->{'composite'}{$year}) {
+    print 'No composite '.$year.' in '.$vdir.$mainconf->{'filegdal'};
+    exit;
+  }
+  if(!exists $gdal->{'composite'}{$year}{'montage'}) {
+    $data{'montage'} = 'yes';
+  }
+  $data{'maps'} = $gdal->{'composite'}{$year}{'maps'};
+  $data{'zmin'} = $layers->{'minzoom'}[0];
+  $data{'zmax'} = $layers->{'maxzoom'}[0];
+  $data{'tileext'} = '.jpg';
+  $data{'sourcedir'} = $mainconf->{'dirsource'}.$site.'/'.$mainconf->{'dircomposite'}.$year.'/';
 }
 
 # DISCOVER TILES 
@@ -71,16 +90,20 @@ for($m=0; $m<$maplen; $m++) {
 
 $kmldata = '';
 @bounds = qw();
+%compositebboxes = qw();
 for($m=0; $m<$maplen; $m++) {
   $renderdata = $xml->XMLin($data{'sourcedir'}.$maps[$m].'/tilemapresource.xml');
+  $coords = join(',',
+    $renderdata->{'BoundingBox'}->{'miny'},
+    $renderdata->{'BoundingBox'}->{'minx'},
+    $renderdata->{'BoundingBox'}->{'maxy'},
+    $renderdata->{'BoundingBox'}->{'maxx'});
   # OpenLayers bounds are in order W,S,E,N
-  $kmldata .= bbox_fragment($gdaldir.'gdal'.$maps[$m].'.txt', ''.$maps[$m],
-    join(',',
-        $renderdata->{'BoundingBox'}->{'miny'},
-        $renderdata->{'BoundingBox'}->{'minx'},
-        $renderdata->{'BoundingBox'}->{'maxy'},
-        $renderdata->{'BoundingBox'}->{'maxx'},
-        ));
+  if($gdaltxtformat) {
+    $kmldata .= bbox_fragment($gdaldir.'gdal'.$maps[$m].'.txt', ''.$maps[$m], $coords);
+  } else {
+    $compositebboxes{$maps[$m]} = $coords;
+  }
   if(scalar(@bounds) == 0) {
     push(@bounds,$renderdata->{'BoundingBox'}->{'miny'});
     push(@bounds,$renderdata->{'BoundingBox'}->{'minx'});
@@ -101,6 +124,18 @@ for($m=0; $m<$maplen; $m++) {
     }
   }
 }
+
+if(!$gdaltxtformat) {
+  $ts = scalar(@{$gdal->{'translate'}});
+  for($i = 0; $i < $ts; $i++) {
+    if($gdal->{'translate'}[$i]{'composite'} eq $year) {
+      $tlast = gdal_tlast($gdal, $i);
+      $kmldata .= "\n".bbox_box($gdal->{'translate'}[$i]{'map'}, $compositebboxes{$gdal->{'translate'}[$i]{'map'}})
+        .bbox_points($gdal->{'translate'}[$i]{'t'}[$tlast]{'gcps'}, $gdal->{'translate'}[$i]{'map'});
+    }
+  }
+}
+
 $data{'bbox'} = join(',',@bounds);
 
 $kmldata .= "\n<ExtendedData>\n";

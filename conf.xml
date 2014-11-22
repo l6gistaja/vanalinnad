@@ -6,8 +6,11 @@
 <dirplaces>places/</dirplaces>
 <dirlegends>legends/</dirlegends>
 <dirdev>dev/</dirdev>
+<dirsource>/home/jux/histmaps/places/</dirsource>
+<dircomposite>composed/</dircomposite>
 <fileareaselector>selector.kml</fileareaselector>
 <filelayers>layers.xml</filelayers>
+<filegdal>gdal.xml</filegdal>
 <fileemptytiles>empty.json</fileemptytiles>
 <fileprefixroads>roads</fileprefixroads>
 <regexyearmatcher>^\d+[A-Za-z]{0,2}$</regexyearmatcher>

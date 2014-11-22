@@ -42,7 +42,7 @@ for($i=0; $i<=$len; $i++) {
         '', join(',', @c)
       );
     } else {
-      $gdal = $xml->XMLin($ARGV[0].$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[1].'/gdal.xml', ForceArray => 1);
+      $gdal = $xml->XMLin($ARGV[0].$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[1].'/'.$mainconf->{'filegdal'}, ForceArray => 1);
       %gx = qw();
       $gx{'y'} = gdal_mapindex($gdal, $year);
       $gx{'tlast'} = gdal_tlast($gdal, $gx{'y'});

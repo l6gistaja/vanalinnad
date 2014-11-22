@@ -12,12 +12,13 @@ if(!exists $opts{'s'} || !exists $opts{'y'}) {
   exit;
 }
 
-%c = qw();
 $xml = new XML::Simple;
-$c{'dirvector'} = 'vector/places/'.$opts{'s'}.'/';
-$c{'filegdal'} = $c{'dirvector'}.'gdal.xml';
+$mainconf = $xml->XMLin('conf.xml');
+%c = qw();
+$c{'dirvector'} = $mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$opts{'s'}.'/';
+$c{'filegdal'} = $c{'dirvector'}.$mainconf->{'filegdal'};
 $gdal = $xml->XMLin($c{'filegdal'}, ForceArray => 1);
-#print Dumper($gdal);
+print Dumper($gdal);
 
 $c{'y'} = gdal_mapindex($gdal, $opts{'y'});
 
@@ -26,14 +27,21 @@ if($c{'y'} < 0) {
   exit;
 }
 
+if(exists $gdal->{'translate'}[$c{'y'}]{'composite'}) {
+  $c{'composite'} = $gdal->{'translate'}[$c{'y'}]{'composite'};
+  $c{'dirsrcimg'} = $mainconf->{'dirsource'}.$opts{'s'}.'/'.$mainconf->{'dircomposite'}.$c{'composite'}.'/';
+  $c{'dirraster'} = $c{'dirsrcimg'}.$opts{'y'};
+} else {
+  $c{'dirsrcimg'} = $mainconf->{'dirsource'}.$opts{'s'}.'/';
+  $c{'dirraster'} = $mainconf->{'dirraster'}.$mainconf->{'dirplaces'}.$opts{'s'}.'/'.$opts{'y'};
+}
 $c{'tlast'} = gdal_tlast($gdal, $c{'y'});
-$c{'dirsrcimg'} = '/home/jux/histmaps/places/'.$opts{'s'}.'/';
 $c{'filesrcimg'} = $c{'dirsrcimg'}.$gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'file'};
 $c{'filegeoref'} = $c{'filesrcimg'}.'_georef.png';
-$c{'dirraster'} = 'raster/places/'.$opts{'s'}.'/'.$opts{'y'};
-$c{'filelayers'} = $c{'dirvector'}.'layers.xml';
+$c{'filelayers'} = $c{'dirvector'}.$mainconf->{'filelayers'};
 
 $layers = $xml->XMLin($c{'filelayers'}, ForceArray => 1);
+print Dumper($layers); exit;
 
 $cmd = 'gdal_translate '.$c{'filesrcimg'}.' '.$c{'filegeoref'}.' -of PNG '.$gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'gcps'};
 sheller($cmd);
@@ -41,16 +49,30 @@ sheller($cmd);
 $cmd = 'rm -rf '.$c{'dirraster'};
 sheller($cmd);
 
-$cmd = 'dev/gdal2tiles.py --profile mercator --s_srs \'GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.01745329251994328,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]]\' --zoom '.$layers->{'minzoom'}[0].'-'.$layers->{'maxzoom'}[0].' --title \''.$opts{'s'}.' '.$opts{'y'}.'\' --tile-format jpeg --webviewer all '.$c{'filegeoref'}.' '.$c{'dirraster'};
+$cmd = $mainconf->{'dirdev'}.'gdal2tiles.py --profile mercator --s_srs \'GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.01745329251994328,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]]\' --zoom '.$layers->{'minzoom'}[0].'-'.$layers->{'maxzoom'}[0].' --title \''.$opts{'s'}.' '.$opts{'y'}.'\' --tile-format jpeg --webviewer all '.$c{'filegeoref'}.' '.$c{'dirraster'};
 sheller($cmd);
 
-$tilemapres = $xml->XMLin($c{'dirraster'}.'/tilemapresource.xml', ForceArray => 1);
-# OpenLayers bounds are in order W,S,E,N
-$c{'bbox'} = $tilemapres->{'BoundingBox'}[0]{'miny'}.','.$tilemapres->{'BoundingBox'}[0]{'minx'}.','.$tilemapres->{'BoundingBox'}[0]{'maxy'}.','.$tilemapres->{'BoundingBox'}[0]{'maxx'};
+if(exists $c{'composite'}) {
+  $cmd = $mainconf->{'dirdev'}.'mixer.pl '.$opts{'s'}.' '.$c{'composite'};
+  sheller($cmd);
+
+  $compositebbox = $xml->XMLin($c{'dirvector'}.'bbox'.$c{'composite'}.'.kml', ForceArray => 1);
+  $c{'bbox'} = $compositebbox->{'Document'}[0]{'ExtendedData'}[0]{'Data'}{'bbox'}{'value'}[0];
+  $c{'layeryear'} = $c{'composite'};
+} else {
+  $tilemapres = $xml->XMLin($c{'dirraster'}.'/tilemapresource.xml', ForceArray => 1);
+  # OpenLayers bounds are in order W,S,E,N
+  $c{'bbox'} = $tilemapres->{'BoundingBox'}[0]{'miny'}.','.$tilemapres->{'BoundingBox'}[0]{'minx'}.','.$tilemapres->{'BoundingBox'}[0]{'maxy'}.','.$tilemapres->{'BoundingBox'}[0]{'maxx'};
+  $c{'layeryear'} = $opts{'y'};
+
+  $cmd = $mainconf->{'dirdev'}.'postproc.bash '.$opts{'s'}.' '.$opts{'y'};
+  sheller($cmd);
+}
+
 $c{'ls'} = scalar(@{$layers->{'layer'}});
 $isNewLayer = 1;
 for($i = 0; $i < $c{'ls'}; $i++) {
-  if($layers->{'layer'}[$i]{'type'} eq 'tms' && $layers->{'layer'}[$i]{'year'} eq $opts{'y'}) {
+  if($layers->{'layer'}[$i]{'type'} eq 'tms' && $layers->{'layer'}[$i]{'year'} eq $c{'layeryear'}) {
     $layers->{'layer'}[$i]{'bounds'} = $c{'bbox'};
     $isNewLayer = 0;
     break;
@@ -59,19 +81,15 @@ for($i = 0; $i < $c{'ls'}; $i++) {
 if($isNewLayer) {
   push(@{$layers->{'layer'}}, {'type' => 'tms', 'bounds' => $c{'bbox'}, 'year' => $opts{'y'}});
 }
+$xml->XMLout($layers, RootName => 'vanalinnadlayers', OutputFile => $c{'filelayers'});
 
-print $xml->XMLout($layers, RootName => 'vanalinnadlayers', OutputFile => $c{'filelayers'});
-
-$cmd = 'dev/postproc.bash '.$opts{'s'}.' '.$opts{'y'};
-sheller($cmd);
-
-$cmd = $c{'dirvector'}.'rss'.$opts{'y'}.'.xml';
+$cmd = $c{'dirvector'}.'rss'.$c{'layeryear'}.'.xml';
 if(! -e $cmd) {
-  $cmd = 'cp vector/rsstemplate.xml '.$cmd;
+  $cmd = 'cp '.$mainconf->{'dirvector'}.'rsstemplate.xml '.$cmd;
   sheller($cmd);
 }
 
 sub sheller {
- print $_[0]."\n";
+ print "\n".$_[0]."\n";
  system($_[0]);
 }
