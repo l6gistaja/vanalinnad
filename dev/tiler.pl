@@ -18,7 +18,7 @@ $mainconf = $xml->XMLin('conf.xml');
 $c{'dirvector'} = $mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$opts{'s'}.'/';
 $c{'filegdal'} = $c{'dirvector'}.$mainconf->{'filegdal'};
 $gdal = $xml->XMLin($c{'filegdal'}, ForceArray => 1);
-print Dumper($gdal);
+#print Dumper($gdal);
 
 $c{'y'} = gdal_mapindex($gdal, $opts{'y'});
 
@@ -41,7 +41,7 @@ $c{'filegeoref'} = $c{'filesrcimg'}.'_georef.png';
 $c{'filelayers'} = $c{'dirvector'}.$mainconf->{'filelayers'};
 
 $layers = $xml->XMLin($c{'filelayers'}, ForceArray => 1);
-print Dumper($layers); exit;
+#print Dumper($layers); exit;
 
 $cmd = 'gdal_translate '.$c{'filesrcimg'}.' '.$c{'filegeoref'}.' -of PNG '.$gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'gcps'};
 sheller($cmd);
@@ -83,10 +83,20 @@ if($isNewLayer) {
 }
 $xml->XMLout($layers, RootName => 'vanalinnadlayers', OutputFile => $c{'filelayers'});
 
-$cmd = $c{'dirvector'}.'rss'.$c{'layeryear'}.'.xml';
-if(! -e $cmd) {
-  $cmd = 'cp '.$mainconf->{'dirvector'}.'rsstemplate.xml '.$cmd;
-  sheller($cmd);
+$rss = $c{'dirvector'}.'rss'.$c{'layeryear'}.'.xml';
+if(! -e $rss) {
+  if($c{'layeryear'} =~ /^\d{4}[^\d]*$/) {
+    $rssdate = $c{'layeryear'};
+    $rssdate =~ s/[^\d]*$//;
+    $rssdate = 'date -d '.$rssdate.'0101 "+%a, %d %b %Y 00:00:00 +0000"';
+    $rssdate = `$rssdate`;
+    $rssdate =~ s/\s+$//;
+    $cmd = 'cat '.$mainconf->{'dirvector'}.'rsstemplate.xml | sed "s/<pubDate>.*<\/pubDate>/<pubDate>'.$rssdate.'<\/pubDate>/" > '.$rss;
+    sheller($cmd);
+  } else {
+    $cmd = 'cp '.$mainconf->{'dirvector'}.'rsstemplate.xml '.$rss;
+    sheller($cmd);
+  }
 }
 
 sub sheller {
