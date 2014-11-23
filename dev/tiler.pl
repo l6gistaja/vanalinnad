@@ -6,7 +6,7 @@ use Data::Dumper;
 use lib './dev';
 use VlHelper qw(gdal_mapindex gdal_tlast);
 
-getopt('s:y:', \%opts);
+getopt('s:y:r', \%opts);
 if(!exists $opts{'s'} || !exists $opts{'y'}) {
   print "\nUsage: dev/tiler.pl -s SITE -y MAPYEAR\n\n";
   exit;
@@ -43,14 +43,16 @@ $c{'filelayers'} = $c{'dirvector'}.$mainconf->{'filelayers'};
 $layers = $xml->XMLin($c{'filelayers'}, ForceArray => 1);
 #print Dumper($layers); exit;
 
-$cmd = 'gdal_translate '.$c{'filesrcimg'}.' '.$c{'filegeoref'}.' -of PNG '.$gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'gcps'};
-sheller($cmd);
+if(!exists $opts{'r'}) {
+  $cmd = 'gdal_translate '.$c{'filesrcimg'}.' '.$c{'filegeoref'}.' -of PNG '.$gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'gcps'};
+  sheller($cmd);
 
-$cmd = 'rm -rf '.$c{'dirraster'};
-sheller($cmd);
+  $cmd = 'rm -rf '.$c{'dirraster'};
+  sheller($cmd);
 
-$cmd = $mainconf->{'dirdev'}.'gdal2tiles.py --profile mercator --s_srs \'GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.01745329251994328,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]]\' --zoom '.$layers->{'minzoom'}[0].'-'.$layers->{'maxzoom'}[0].' --title \''.$opts{'s'}.' '.$opts{'y'}.'\' --tile-format jpeg --webviewer all '.$c{'filegeoref'}.' '.$c{'dirraster'};
-sheller($cmd);
+  $cmd = $mainconf->{'dirdev'}.'gdal2tiles.py --profile mercator --s_srs \'GEOGCS["WGS 84",DATUM["WGS_1984",SPHEROID["WGS 84",6378137,298.257223563,AUTHORITY["EPSG","7030"]],AUTHORITY["EPSG","6326"]],PRIMEM["Greenwich",0,AUTHORITY["EPSG","8901"]],UNIT["degree",0.01745329251994328,AUTHORITY["EPSG","9122"]],AUTHORITY["EPSG","4326"]]\' --zoom '.$layers->{'minzoom'}[0].'-'.$layers->{'maxzoom'}[0].' --title \''.$opts{'s'}.' '.$opts{'y'}.'\' --tile-format jpeg --webviewer all '.$c{'filegeoref'}.' '.$c{'dirraster'};
+  sheller($cmd);
+}
 
 if(exists $c{'composite'}) {
   $cmd = $mainconf->{'dirdev'}.'mixer.pl '.$opts{'s'}.' '.$c{'composite'};
