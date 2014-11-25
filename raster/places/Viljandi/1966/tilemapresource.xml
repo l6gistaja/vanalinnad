@@ -3,8 +3,8 @@
 	  <Title>Viljandi 1966</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="58.32091114092598" miny="25.53201826066503" maxx="58.39286867106841" maxy="25.64988879122350"/>
-	  <Origin x="58.32091114092598" y="25.53201826066503"/>
+	  <BoundingBox minx="58.32112209656304" miny="25.53183904900284" maxx="58.39293590781561" maxy="25.65035228469729"/>
+	  <Origin x="58.32112209656304" y="25.53183904900284"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="12" units-per-pixel="38.21851413574219" order="12"/>

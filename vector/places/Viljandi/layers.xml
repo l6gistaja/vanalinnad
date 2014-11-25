@@ -2,8 +2,8 @@
   <bounds>25.53058400968398,58.31977549612473,25.65006511447886,58.39315709584433</bounds>
   <city>Viljandi</city>
   <country>Estonia</country>
-  <layer bounds="25.53201826066503,58.32091114092598,25.64988879122350,58.39286867106841" type="tms" year="1966" />
-  <layer bounds="25.55645286168031,58.33835657842204,25.63396421031548,58.38359759166768" type="tms" year="1926" />
+  <layer bounds="25.53183904900284,58.32112209656304,25.65035228469729,58.39293590781561" type="tms" year="1966" />
+  <layer bounds="25.55645286168031,58.33834849926578,25.63415803173989,58.38359759166768" type="tms" year="1926" />
   <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
   <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>

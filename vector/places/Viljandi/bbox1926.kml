@@ -11,14 +11,14 @@
 <Placemark id="gcp1926.6"><name>1926 #6</name><description>4288 2595</description><Point><coordinates>25.615666072854843,58.366525527812804</coordinates></Point></Placemark>
 <Placemark id="gcp1926.7"><name>1926 #7</name><description>3912 2086</description><Point><coordinates>25.610945384988522,58.3698678650012</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1925"><name>1925</name><LineString><coordinates>25.57772051396525,58.33835657842204 25.57772051396525,58.36443146147800 25.63396421031548,58.36443146147800 25.63396421031548,58.33835657842204 25.57772051396525,58.33835657842204</coordinates></LineString></Placemark>
+<Placemark id="bbox.1925"><name>1925</name><LineString><coordinates>25.57761895788962,58.33834849926578 25.57761895788962,58.36443175570737 25.63415803173989,58.36443175570737 25.63415803173989,58.33834849926578 25.57761895788962,58.33834849926578</coordinates></LineString></Placemark>
 <Placemark id="gcp1925.1"><name>1925 #1</name><description>731 1031</description><Point><coordinates>25.603422214202805,58.345755835634606</coordinates></Point></Placemark>
 <Placemark id="gcp1925.2"><name>1925 #2</name><description>233 455</description><Point><coordinates>25.586190107833136,58.3562003795606</coordinates></Point></Placemark>
-<Placemark id="gcp1925.3"><name>1925 #3</name><description>1454 21</description><Point><coordinates>25.62904107905544,58.36387715005409</coordinates></Point></Placemark>
+<Placemark id="gcp1925.3"><name>1925 #3</name><description>1578 129</description><Point><coordinates>25.633496153289386,58.36191808153516</coordinates></Point></Placemark>
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>25.55645286168031,58.33835657842204,25.63396421031548,58.38359759166768</value></Data>
+<Data name="bbox"><value>25.55645286168031,58.33834849926578,25.63415803173989,58.38359759166768</value></Data>
 <Data name="maps"><value>1925,1926</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>

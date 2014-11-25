@@ -1,2 +1,2 @@
-2014-11-23 01:52:34+02:00; 845 files; 12M ../raster/places/Viljandi/1966
-2014-11-23 01:53:04+02:00; 616 files; 11M ../raster/places/Viljandi/1966
+2014-11-25 23:30:00+02:00; 803 files; 12M ../raster/places/Viljandi/1966
+2014-11-25 23:30:29+02:00; 618 files; 11M ../raster/places/Viljandi/1966
