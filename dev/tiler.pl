@@ -39,6 +39,7 @@ $c{'tlast'} = gdal_tlast($gdal, $c{'y'});
 $c{'filesrcimg'} = $c{'dirsrcimg'}.$gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'file'};
 $c{'filegeoref'} = $c{'filesrcimg'}.'_georef.png';
 $c{'filelayers'} = $c{'dirvector'}.$mainconf->{'filelayers'};
+#print Dumper(\%c); exit;
 
 $layers = $xml->XMLin($c{'filelayers'}, ForceArray => 1);
 #print Dumper($layers); exit;

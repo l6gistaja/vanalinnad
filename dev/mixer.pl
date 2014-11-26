@@ -22,10 +22,10 @@ $xml = new XML::Simple;
 $mainconf = $xml->XMLin($rootdir.'conf.xml');
 $gdaldir = $rootdir.$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$site.'/';
 $bboxfile = $gdaldir.'bbox'.$year.'.kml';
-$bboxdata = $xml->XMLin($bboxfile);
-#print Dumper($bboxdata);
 
 if($gdaltxtformat) {
+  $bboxdata = $xml->XMLin($bboxfile);
+  #print Dumper($bboxdata);
   foreach $key (keys %{$bboxdata->{'Document'}->{'ExtendedData'}->{'Data'}}) {
     $data{$key} = $bboxdata->{'Document'}->{'ExtendedData'}->{'Data'}->{$key}->{'value'};
   }
