@@ -2,14 +2,14 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1926"><name>1926</name><LineString><coordinates>25.55645286168031,58.35251183400038 25.55645286168031,58.38359759166768 25.62425420489158,58.38359759166768 25.62425420489158,58.35251183400038 25.55645286168031,58.35251183400038</coordinates></LineString></Placemark>
+<Placemark id="bbox.1926"><name>1926</name><LineString><coordinates>25.56521714915300,58.35311528745806 25.56521714915300,58.38430757356591 25.62540113646508,58.38430757356591 25.62540113646508,58.35311528745806 25.56521714915300,58.35311528745806</coordinates></LineString></Placemark>
 <Placemark id="gcp1926.1"><name>1926 #1</name><description>94 4096</description><Point><coordinates>25.566509240569978,58.35675247335683</coordinates></Point></Placemark>
-<Placemark id="gcp1926.2"><name>1926 #2</name><description>4670 2944</description><Point><coordinates>25.618823045196745,58.36410273130588</coordinates></Point></Placemark>
-<Placemark id="gcp1926.3"><name>1926 #3</name><description>2914 1536</description><Point><coordinates>25.599318021240656,58.37352188084066</coordinates></Point></Placemark>
-<Placemark id="gcp1926.4"><name>1926 #4</name><description>1556 4186</description><Point><coordinates>25.58377997208579,58.356203923537215</coordinates></Point></Placemark>
-<Placemark id="gcp1926.5"><name>1926 #5</name><description>998 2980</description><Point><coordinates>25.57702080536806,58.36402700843496</coordinates></Point></Placemark>
-<Placemark id="gcp1926.6"><name>1926 #6</name><description>4288 2595</description><Point><coordinates>25.615666072854843,58.366525527812804</coordinates></Point></Placemark>
-<Placemark id="gcp1926.7"><name>1926 #7</name><description>3912 2086</description><Point><coordinates>25.610945384988522,58.3698678650012</coordinates></Point></Placemark>
+<Placemark id="gcp1926.2"><name>1926 #2</name><description>2914 1536</description><Point><coordinates>25.599318021240656,58.37352188084066</coordinates></Point></Placemark>
+<Placemark id="gcp1926.3"><name>1926 #3</name><description>1556 4186</description><Point><coordinates>25.58377997208579,58.356203923537215</coordinates></Point></Placemark>
+<Placemark id="gcp1926.4"><name>1926 #4</name><description>998 2980</description><Point><coordinates>25.57702080536806,58.36402700843496</coordinates></Point></Placemark>
+<Placemark id="gcp1926.5"><name>1926 #5</name><description>4288 2595</description><Point><coordinates>25.615666072854843,58.366525527812804</coordinates></Point></Placemark>
+<Placemark id="gcp1926.6"><name>1926 #6</name><description>3912 2086</description><Point><coordinates>25.610945384988522,58.3698678650012</coordinates></Point></Placemark>
+<Placemark id="gcp1926.7"><name>1926 #7</name><description>4764 2913</description><Point><coordinates>25.621138963012207,58.36450501937931</coordinates></Point></Placemark>
 
 <Placemark id="bbox.1925"><name>1925</name><LineString><coordinates>25.57761895788962,58.33834849926578 25.57761895788962,58.36443175570737 25.63415803173989,58.36443175570737 25.63415803173989,58.33834849926578 25.57761895788962,58.33834849926578</coordinates></LineString></Placemark>
 <Placemark id="gcp1925.1"><name>1925 #1</name><description>731 1031</description><Point><coordinates>25.603422214202805,58.345755835634606</coordinates></Point></Placemark>
@@ -18,7 +18,7 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>25.55645286168031,58.33834849926578,25.63415803173989,58.38359759166768</value></Data>
+<Data name="bbox"><value>25.56521714915300,58.33834849926578,25.63415803173989,58.38430757356591</value></Data>
 <Data name="maps"><value>1925,1926</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
