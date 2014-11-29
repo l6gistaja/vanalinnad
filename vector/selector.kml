@@ -38,5 +38,11 @@
         <coordinates>26.722128156279933,58.380080595332885</coordinates>
       </Point>
     </Placemark>
+    <Placemark>
+      <name>Viljandi</name>
+      <Point>
+        <coordinates>25.595892132263483,58.36354098379499</coordinates>
+      </Point>
+    </Placemark>
   </Document>
 </kml>

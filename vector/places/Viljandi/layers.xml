@@ -3,9 +3,10 @@
   <city>Viljandi</city>
   <country>Estonia</country>
   <layer bounds="25.53183904900284,58.32112209656304,25.65035228469729,58.39293590781561" type="tms" year="1966" />
-  <layer bounds="25.55645286168031,58.33834849926578,25.63415803173989,58.38359759166768" type="tms" year="1926" />
+  <layer bounds="25.56521714915300,58.33834849926578,25.63415803173989,58.38430757356591" type="tms" year="1926" />
   <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
   <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="15" type="roads" />
+  <layer bounds="25.55083477666110,58.34331693361299,25.63764518017728,58.39046091525336" type="tms" year="1922" />
   <maxzoom>16</maxzoom>
   <minzoom>12</minzoom>
 </vanalinnadlayers>
