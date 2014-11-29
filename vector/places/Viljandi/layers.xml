@@ -7,6 +7,8 @@
   <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
   <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="15" type="roads" />
   <layer bounds="25.55083477666110,58.34331693361299,25.63764518017728,58.39046091525336" type="tms" year="1922" />
+  <layer bounds="25.58483237255148,58.35653643791246,25.61931546149097,58.36880344137576" type="tms" year="1900" />
+  <layer bounds="25.56887359117449,58.35007135301977,25.64016905211753,58.37434409608014" type="tms" year="1875" />
   <maxzoom>16</maxzoom>
   <minzoom>12</minzoom>
 </vanalinnadlayers>
