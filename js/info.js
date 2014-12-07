@@ -8,9 +8,21 @@ function vlInitInfo(inputParams){
   var reqParams = OpenLayers.Util.getParameters();
   if(!('site' in reqParams)) { reqParams['site'] = ''; }
   if(!('year' in reqParams)) { reqParams['year'] = ''; }
-  var siteLbl = ' &gt; <a href="?site=' + reqParams['site'] + '">' + reqParams['site'] + '</a>';
   var requestConf = {};
-
+  var siteName = reqParams['site'];
+  var level = '';
+  var years = ['', ''];
+  
+  function getSiteLbl() {
+    baseURL = '?site=' + reqParams['site'];
+    baseYear = baseURL + '&year=';
+    return ' : ' + vlUtils.link({u:baseURL, l:siteName})
+      + (level != 'year' ? ''
+        : ' : ' + vlUtils.link({u:baseYear + years[0], l:'&lt;&lt;'})
+        + ' ' + vlUtils.link({u:'index.html' + baseYear + reqParams['year'], l:reqParams['year']})
+        + ' ' + vlUtils.link({u:baseYear + years[1], l:'&gt;&gt;'}));
+  }
+  
   function xmlHandlerConf(request) {
     if(request.status == 200) {
       if(!('year' in reqParams)) { reqParams['year'] = ''; }
@@ -46,10 +58,10 @@ function vlInitInfo(inputParams){
       	}
       };
       if(reqParams['site'].match(/\S/)) {
-	    key = reqParams['year'].match(new RegExp(conf.regexyearmatcher)) || 
+	    level = reqParams['year'].match(new RegExp(conf.regexyearmatcher)) || 
               reqParams['year'].match(new RegExp('^[A-Za-z_]+$')) ? 'year' : 'site';
-      } else { key = 'selector'; }
-      OpenLayers.Request.GET(requestConf[key]);
+      } else { level = 'selector'; }
+      OpenLayers.Request.GET(level == 'year' ? requestConf['site'] : requestConf[level]);
     }
   }
 
@@ -114,8 +126,7 @@ function vlInitInfo(inputParams){
           mapAnchor =  (vlUtils.getXmlValue(items[m], 'anchor') != '') ? vlUtils.getXmlValue(items[m], 'anchor')
             : pubYear;
           if(mapAnchor == '') { mapAnchor = String.fromCharCode(65 + m); }
-          y += '<hr/><a name="map.'+mapAnchor+'"><a href="#map.'+mapAnchor+
-            '"><strong>'+mapAnchor+'</strong></a></a><br/>';
+          y += '<hr/><a name="map.'+mapAnchor+'">'+ vlUtils.link({u:'#map.'+mapAnchor, l:'<strong>'+mapAnchor+'</strong>'}) + '</a><br/>';
         }
         
         // legends
@@ -147,18 +158,14 @@ function vlInitInfo(inputParams){
         y += '<ol>';
         links = items[m].getElementsByTagName('link');
         for(i=0; i<links.length; i++) {
-          y += '<li><a href="' 
-            + links[i].childNodes[0].nodeValue + '">'
-            + links[i].childNodes[0].nodeValue + '</a></li>';
+          y += '<li>' + vlUtils.link({u: links[i].childNodes[0].nodeValue}) + '</li>';
         }
         y += '</ol>';
 
       }
       
-      y += '<a name="bbox"><a href="'+requestConf.bbox.url+'">BBox &amp; GCP</a></a><div id="map" style="height:400px;width:600px;"></div>';
-      document.getElementById(inputParams.divHeader).innerHTML += siteLbl + ' &gt; ' 
-        + '<a href="index.html?site=' + reqParams['site'] 
-        + '&year=' + reqParams['year'] + '">' + reqParams['year'] + '</a>';
+      y += '<a name="bbox">'+vlUtils.link({u:requestConf.bbox.url, l:'BBox &amp; GCP'})+'</a><div id="map" style="height:400px;width:600px;"></div>';
+      document.getElementById(inputParams.divHeader).innerHTML += getSiteLbl();
       document.getElementById(inputParams.divContent).innerHTML = y;
       document.getElementById(inputParams.divFooter).innerHTML = document.getElementById(inputParams.divHeader).innerHTML;
 
@@ -212,19 +219,33 @@ function vlInitInfo(inputParams){
   function layerHandler(request) {
     if(request.status == 200) {
       layerXml = request.responseXML;
-      y = '<br/><a href="index.html?site=' + reqParams['site'] + '">' + reqParams['site'] + '</a><ol>';
+      siteName = vlUtils.getXmlValue(layerXml, 'city');
       links = layerXml.getElementsByTagName('layer');
-      for(i=0; i<links.length; i++) {
-         if(links[i].getAttribute('disabled') || links[i].getAttribute('year') == null){ continue; }
-         y += '<li><a href="?site=' 
-           + reqParams['site'] + '&year='
-           + links[i].getAttribute('year') + '">'
-           + links[i].getAttribute(links[i].getAttribute('name') ? 'name' : 'year') + '</a></li>';
+      if(level == 'year') {
+        l = 0;
+        y = -1;
+        for(i=0; i<links.length; i++) {
+          if(links[i].getAttribute('disabled') || links[i].getAttribute('year') == null){ continue; }
+          if(links[i].getAttribute('year') == reqParams['year']) { y = i; }
+          l++;
+        }
+        years[0] = links[y < 1 ? l - 1 : y - 1].getAttribute('year');
+        years[1] = links[y > l - 2 ? 0 : y + 1].getAttribute('year');
+        OpenLayers.Request.GET(requestConf['year']);
+      } else {
+        y = '<br/>' + vlUtils.link({u:'index.html?site=' + reqParams['site'], l:siteName}) + '<ol>';
+        for(i=0; i<links.length; i++) {
+          if(links[i].getAttribute('disabled') || links[i].getAttribute('year') == null){ continue; }
+          y += '<li>' + vlUtils.link({
+            u: '?site=' + reqParams['site'] + '&year='+ links[i].getAttribute('year'),
+            l: links[i].getAttribute(links[i].getAttribute('name') ? 'name' : 'year')
+          })  + '</li>';
+        }
+        y += '</ol>';
+        document.getElementById(inputParams.divContent).innerHTML = y;
+        document.getElementById(inputParams.divHeader).innerHTML += getSiteLbl();
+        document.getElementById(inputParams.divFooter).innerHTML = document.getElementById(inputParams.divHeader).innerHTML;
       }
-      y += '</ol>';
-      document.getElementById(inputParams.divContent).innerHTML = y;
-      document.getElementById(inputParams.divHeader).innerHTML += siteLbl;
-      document.getElementById(inputParams.divFooter).innerHTML = document.getElementById(inputParams.divHeader).innerHTML;
     } else {
       OpenLayers.Request.GET(requestConf['selector']);
     }
@@ -234,10 +255,11 @@ function vlInitInfo(inputParams){
     if(request.status == 200) {
       selectorXml = request.responseXML;
       y = '<ol>';
-      links = selectorXml.getElementsByTagName('name');
-      for(i=0; i<links.length; i++) {
-         y += '<li><a href="?site=' + links[i].childNodes[0].nodeValue 
-           + '">' + links[i].childNodes[0].nodeValue + '</a></li>';
+      placemarks = selectorXml.getElementsByTagName('Placemark');
+      for(i=0; i<placemarks.length; i++) {
+        name = vlUtils.getXmlValue(placemarks[i], 'name');
+        descr = vlUtils.getXmlValue(placemarks[i], 'description');
+        y +=  '<li>' + vlUtils.link({u:'?site=' + name, l:descr != '' ? descr : name}) + '</li>';
       }
       y += '</ol>';
       document.getElementById(inputParams.divContent).innerHTML = y;

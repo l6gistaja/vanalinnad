@@ -89,6 +89,12 @@ vlUtils.coordsPrompt = function(map) {
         lonlat = lonlat.transform(map.projection, map.displayProjection);
         prompt("EPSG:4326 E, N: \n" + lonlat.lon + " " + lonlat.lat, " -gcp  " + lonlat.lon + " " + lonlat.lat);
     }
-
   });
+}
+
+vlUtils.link = function(data) {
+  return '<a href="' + data.u + '"'
+    + ('t' in data ? ' target="' + data.t + '"' : '')
+    + ('h' in data ? ' title="' + data.h + '"' : '')
+    + '>' + ('l' in data ? data.l : data.u)  + '</a>';
 }

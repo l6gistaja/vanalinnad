@@ -281,11 +281,15 @@ function vlMap(inputParams){
             new OpenLayers.LonLat(clickXY.lon, clickXY.lat),
             null,
             feature.layer.getOptions().layername.substr(0,6) == 'roads_'
-              ? '<a target="_blank" title="Google Street View" href="https://maps.google.com/maps?cbp=0,0,0,0,0&layer=c&cbll=' +
-              clickXYg.lat + ',' + clickXYg.lon +
-              '&z=' + map.getZoom() +
-              '&q=' + feature.attributes.name + ', ' + vlUtils.getXmlValue(layersXml, 'city') + ', ' + vlUtils.getXmlValue(layersXml, 'country') +
-              '">' + feature.attributes.name + '</a>'
+              ? vlUtils.link({
+                t: '_blank',
+                h: 'Google Street View',
+                l: feature.attributes.name,
+                u: 'https://maps.google.com/maps?cbp=0,0,0,0,0&layer=c&cbll='
+                  + clickXYg.lat + ',' + clickXYg.lon + '&z=' + map.getZoom()
+                  + '&q=' + feature.attributes.name + ', ' + vlUtils.getXmlValue(layersXml, 'city')
+                  + ', ' + vlUtils.getXmlValue(layersXml, 'country')
+              })
               : feature.attributes.name,
             null,
             true,
@@ -428,11 +432,17 @@ function vlMap(inputParams){
   var htmlSites = function(s) {
     y = '';
     for(f in s) {
-      y += (i > 0 ? '<br/>' : '') +  '&nbsp;&nbsp;' +
-        '<a href="' + conf.infourlprefix + 'site=' + s[f].attributes.name + '" title="Info">' +
-        '<img src="raster/information.png" border="0"/></a>&nbsp;&nbsp;'+
-        '<a href="?site=' + s[f].attributes.name + '">' +
-        ('description' in s[f].attributes ? s[f].attributes.description : s[f].attributes.name) + '</a>';
+      y += (i > 0 ? '<br/>' : '') +  '&nbsp;&nbsp;'
+        + vlUtils.link({
+            u: conf.infourlprefix + 'site=' + s[f].attributes.name,
+            h: 'Info',
+            l:  '<img src="raster/information.png" border="0"/>'
+          })
+        + '&nbsp;&nbsp;'
+        + vlUtils.link({
+            u: '?site=' + s[f].attributes.name,
+            l:  'description' in s[f].attributes ? s[f].attributes.description : s[f].attributes.name
+          });
     }
     return y;
   }
