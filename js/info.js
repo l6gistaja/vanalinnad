@@ -233,7 +233,10 @@ function vlInitInfo(inputParams){
         years[1] = links[y > l - 2 ? 0 : y + 1].getAttribute('year');
         OpenLayers.Request.GET(requestConf['year']);
       } else {
-        y = '<br/>' + vlUtils.link({u:'index.html?site=' + reqParams['site'], l:siteName}) + '<ol>';
+        y = '<br/>' 
+          + vlUtils.link({u:'index.html?site=' + reqParams['site'], l:siteName}) + ' ('
+          + vlUtils.link({u:'http://et.wikipedia.org/wiki/' + siteName, l:'Wikipedia'})
+          + ')<ol>';
         for(i=0; i<links.length; i++) {
           if(links[i].getAttribute('disabled') || links[i].getAttribute('year') == null){ continue; }
           y += '<li>' + vlUtils.link({
