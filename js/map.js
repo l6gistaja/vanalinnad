@@ -440,7 +440,7 @@ function vlMap(inputParams){
           })
         + '&nbsp;&nbsp;'
         + vlUtils.link({
-            u: '?site=' + s[f].attributes.name,
+            u: '?site=' + s[f].attributes.name + ('debug' in reqParams ? '&debug=' + reqParams['debug'] : ''),
             l:  'description' in s[f].attributes ? s[f].attributes.description : s[f].attributes.name
           });
     }

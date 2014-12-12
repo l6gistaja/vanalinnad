@@ -2,7 +2,7 @@
 
 Historical maps of Estonian cities under grid of today's street network.
 
-By OpenLayers defaults arrow keys pan, +/- keys zoom & Page Up/Page Down/Home/End scroll by three quarters of a page. Additionally, spacebar displays next and numbers (0-9) will display previous historical map.
+**Shortcut keys:** F11 enables/disables fullscreen. By OpenLayers defaults arrow keys pan, +/- keys zoom & Page Up/Page Down/Home/End scroll by three quarters of a page. Additionally, spacebar displays next and numbers (0-9) will display previous historical map.
 
 * License: [BSD 2-clause License](http://openlayers.org/dev/license.txt), inherited from used [OpenLayers](http://openlayers.org) library
 * Vector data: © [OpenStreetMap contributors](http://www.openstreetmap.org/copyright)
@@ -31,47 +31,22 @@ Following describes data adding process with Debian Linux 6.0.8.
 1. Install [ImageMagick](http://www.imagemagick.org)
 1. Install missing Perl modules (```sudo cpan XML::Simple JSON Storable Math::Round```)
 
-### Adding new historical map
+### Creating new site
+
+Run ```dev/newsite/newsite.pl {PLACE}``` . Add new ```<Placemark>``` with ```<name>{PLACE}</name>``` to vector/selector.kml to make new site visible on main page. NB! Dont use symbols outside standard latin alphabet in {PLACE}, it will be included in catalogue names. You can add "real name" into ```/Document/Placemark[x]/description``` @ vector/selector.kml and into ```/city``` @ vector/places/{PLACE}/layers.xml .
+
+### Adding new historical map to site
+
+In following, {SOURCE_FILE_DIR} is /dirsource from conf.xml.
 
 1. Cut away and whiten original maps edges, legends, empty areas etc. It makes tile generation speed, repo size and download speed smaller.
-1. [Georeference](https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/gdal1968.txt) source map image: ```gdal_translate {SOURCE_IMAGE_FILE}  {GEOREFERENCED_PNG_FILE} -of PNG ``` ```-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}``` ```{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP}```. Choose and specify image (in pixels) and geographical coordinates of at least 3 G(round)C(ontrol)P(oint)s. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use [dev/coords.html](dev/coords.html) for finding GCPs geographical coordinates. Append ```gdal_translate ...``` to the end of ```{VANALINNAD_ROOT_DIR}/vector/places/{PLACE}/gdal{YEAR}.txt```.
-1. Generate tiles: 
- 1. Open MapTiler 
- 1. Choose Google Maps compatible > Continue
- 1. Add > choose ```{GEOREFERENCED_PNG_FILE}```
- 1. Set transparency for color white > Continue
- 1. Choose WGS84 - Latitude and longitude  > Continue
- 1. Choose zoom levels > choose JPEG as file format > Continue
- 1. Choose output directory for tiles (```raster/places/{PLACE}/{YEAR}```) > Continue
- 1. Choose Google Maps and OpenLayers > Continue > Continue > Render
-1. Add ```<layer type="tms" year="{YEAR}" bounds="{WEST_SOUTH_EAST_NORTH}"/>``` to [```vector/places/{PLACE}/layers.xml```](https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/layers.xml). You can get boundingbox from line ```mapBounds = new OpenLayers.Bounds({WEST,SOUTH,EAST,NORTH});``` from file [```raster/places/{PLACE}/{YEAR}/tiles/openlayers.html```](https://github.com/l6gistaja/vanalinnad/blob/master/raster/places/Tallinn/1968/tiles/openlayers.html).
-1. Run ```./dev/postproc.bash {PLACE} {YEAR}``` from ```{VANALINNAD_ROOT_DIR}```
-1. Add map description to [```vector/places/{PLACE}/rss{YEAR}.xml```](https://github.com/l6gistaja/vanalinnad/blob/master/vector/places/Tallinn/rss1968.xml). You can use [```vector/rsstemplate.xml```](https://github.com/l6gistaja/vanalinnad/blob/master/vector/rsstemplate.xml) as template. Extra tag legends is comma separated list of legend image filenames under [```legends/places/{PLACE}/```](https://github.com/l6gistaja/vanalinnad/tree/master/legends/places/Tallinn).
-
-### Merging multiple historical maps into one map
-
-Prev. ch. means previous chapter "Adding new historical map" here.
-
-1. Create multiple maps (prev. ch. steps 1-3) as subdirectories in writable directory ```{MERGE_DIR}```.
-1. Using template below, create  ```vector/places/{PLACE}/bbox{YEAR}.kml```. If you want to hide merger lines at lower zoom levels, try to add ```<Data name="montage"><value>yes</value></Data>``` to ```<ExtendedData>```.
-1. Run ```./dev/mixer.pl {PLACE} {YEAR}``` from ```{VANALINNAD_ROOT_DIR}```
-1. Prev. ch. step 4. Boundingbox value can be extracted from ```vector/places/{PLACE}/bbox{YEAR}.kml```, from tag /ExtendedData/Data[@name=bbox]/value .
-1. Prev. ch. step 6. You can add item for every used map.
-
-Multimap BBox template: 
-
-    <?xml version="1.0" encoding="UTF-8"?>
-    <kml xmlns="http://www.opengis.net/kml/2.2">
-    <Document>
-    <ExtendedData>
-    <Data name="sourcedir"><value>{MERGE_DIR}</value></Data>
-    <Data name="maps"><value>{YEAR1_SUBDIR},{YEAR2_SUBDIR},...</value></Data>
-    <Data name="zmin"><value>{MINIMUM_ZOOM_LEVEL}</value></Data>
-    <Data name="zmax"><value>{MAXIMUM_ZOOM_LEVEL}</value></Data>
-    <Data name="tileext"><value>.jpg</value></Data>
-    </ExtendedData>
-    </Document>
-    </kml>
+1. Save this file as {SOURCE_FILE} to:
+ 1. {SOURCE_FILE_DIR}/places/{PLACE}/composed/{YEAR}, if new map is composite (composed from more then one map).
+ 1. {SOURCE_FILE_DIR}/places/{PLACE}, if new map is NOT composite.
+1. Georeference image @ vector/places/{PLACE}/gdal.xml . In following, {GEOREFERENCE} is at last 3 GCPs in form ```-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}``` ```{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP} ```. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use [index.html?debug=1](index.html?debug=1) for finding GCPs geographical coordinates.
+ 1. If new map is composite, add ```<translate map="{YEAR}" composite="{COMPOSITE_YEAR}"><t file="{SOURCE_FILE}" gcps="{GEOREFERENCE}"/></translate>``` and ```<composite id="{COMPOSITE_YEAR}" maps="{YEAR}" montage="yes"/>``` to gdal.xml. Later, new composite map years can be added to attribute ```maps```, separated by comma. NB! Order of this list decides, how component maps overwrite eachother. Remove attribute montage="yes", when component maps dont touch eachother.
+ 1. If new map is NOT composite, add ```<translate map="{YEAR}"><t file="{SOURCE_FILE}" gcps="{GEOREFERENCE}"/></translate>``` to gdal.xml.
+1. Run ```dev/tiler.pl -s {PLACE} -y {YEAR}```. (If you for some reason dont want to generate map tiles but still want to generate misc data files, add -r flag.) NB! Only last ```<t>``` from ```<translate>``` added in previous step is taken into account while rendering tiles.
 
 ### Adding road layers from OpenStreetMap
 
