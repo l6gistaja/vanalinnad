@@ -33,7 +33,7 @@ Following describes data adding process with Debian Linux 6.0.8.
 
 ### Creating new site
 
-Run ```dev/newsite/newsite.pl {PLACE}``` . Add new ```<Placemark>``` with ```<name>{PLACE}</name>``` to vector/selector.kml to make new site visible on main page. NB! Dont use symbols outside standard latin alphabet in {PLACE}, it will be included in catalogue names. You can add "real name" into ```/Document/Placemark[x]/description``` @ vector/selector.kml and into ```/city``` @ vector/places/{PLACE}/layers.xml .
+Run ```dev/newsite/newsite.pl {SITE}``` . Add new ```<Placemark>``` with ```<name>{SITE}</name>``` to vector/selector.kml to make new site visible on main page. NB! Dont use symbols outside standard latin alphabet in {SITE}, it will be included in catalogue names. You can add "real name" into ```/Document/Placemark[x]/description``` @ vector/selector.kml and into ```/city``` @ vector/places/{SITE}/layers.xml .
 
 ### Adding new historical map to site
 
@@ -41,24 +41,24 @@ In following, {SOURCE_FILE_DIR} is /dirsource from conf.xml.
 
 1. Cut away and whiten original maps edges, legends, empty areas etc. It makes tile generation speed, repo size and download speed smaller.
 1. Save this file as {SOURCE_FILE} to:
- 1. ```{SOURCE_FILE_DIR}/places/{PLACE}/composed/{COMPOSITE_YEAR}```, if new map is composite (composed from more then one map).
- 1. ```{SOURCE_FILE_DIR}/places/{PLACE}```, if new map is NOT composite.
-1. Georeference image @ vector/places/{PLACE}/gdal.xml . In following, {GEOREFERENCE} is at last 3 GCPs in form ```-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}``` ```{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP} ```. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use [index.html?debug=1](index.html?debug=1) for finding GCPs geographical coordinates.
+ 1. ```{SOURCE_FILE_DIR}/places/{SITE}/composed/{COMPOSITE_YEAR}```, if new map is composite (composed from more then one map).
+ 1. ```{SOURCE_FILE_DIR}/places/{SITE}```, if new map is NOT composite.
+1. Georeference image @ vector/places/{SITE}/gdal.xml . In following, {GEOREFERENCE} is at last 3 GCPs in form ```-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}``` ```{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP} ```. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use [index.html?debug=1](index.html?debug=1) for finding GCPs geographical coordinates.
  1. If new map is composite, add ```<translate map="{YEAR}" composite="{COMPOSITE_YEAR}"><t file="{SOURCE_FILE}" gcps="{GEOREFERENCE}"/></translate>``` and ```<composite id="{COMPOSITE_YEAR}" maps="{YEAR}" montage="yes"/>``` to gdal.xml. Later, new composite map years can be added to attribute ```maps```, separated by comma. NB! Order of this list decides, how component maps overwrite eachother. Remove attribute montage="yes", when component maps dont touch eachother.
  1. If new map is NOT composite, add ```<translate map="{YEAR}"><t file="{SOURCE_FILE}" gcps="{GEOREFERENCE}"/></translate>``` to gdal.xml.
-1. Run ```dev/tiler.pl -s {PLACE} -y {YEAR}```. (If you for some reason dont want to generate map tiles but still want to generate misc data files, add -r flag.) NB! Only last ```<t>``` from ```<translate>``` added in previous step is taken into account while rendering tiles.
+1. Run ```dev/tiler.pl -s {SITE} -y {YEAR}```. (If you for some reason dont want to generate map tiles but still want to generate misc data files, add -r flag.) NB! Only last ```<t>``` from ```<translate>``` added in previous step is taken into account while rendering tiles.
 
 ### Adding road layers from OpenStreetMap
 
 If not already installed, ```apt-get install wget``` .
 
 1. ```cd {VANALINNAD_ROOT_DIR}```
-1. ```./dev/postproc.bash {PLACE} {SOME_EXISTING_YEAR} | grep 'BBox max'```
+1. ```./dev/postproc.bash {SITE} {SOME_EXISTING_YEAR} | grep 'BBox max'```
 1. Add boundingbox from previous step to ```dev/osm2xml/roads.kml```, into tag /Placemark[0]/LineString/coordinates
 1. ```cd dev/osm2xml/ ; ./generate_roads.pl | bash```
 1. Original KML files roads0.kml ... roads4.kml were generated into ```{VANALINNAD_ROOT_DIR}/cache/```. You can merge those files into fewer files.
-1. For every {SOURCE_KML} created in previous step: ```../kml_minify.pl .00001 ../../cache/{SOURCE_KML} ../../vector/places/{PLACE}/{FINAL_KML}```
-1. For every {FINAL_KML} created in previous step, add tag ```<layer type="roads" name="{LAYER_NAME}" file="{FINAL_KML}" maxres="{MIN_ZOOM_LEVEL}"/>``` to ```{VANALINNAD_ROOT_DIR}/vector/places/{PLACE}/layers.xml```
+1. For every {SOURCE_KML} created in previous step: ```../kml_minify.pl .00001 ../../cache/{SOURCE_KML} ../../vector/places/{SITE}/{FINAL_KML}```
+1. For every {FINAL_KML} created in previous step, add tag ```<layer type="roads" name="{LAYER_NAME}" file="{FINAL_KML}" maxres="{MIN_ZOOM_LEVEL}"/>``` to ```{VANALINNAD_ROOT_DIR}/vector/places/{SITE}/layers.xml```
 
 
 License

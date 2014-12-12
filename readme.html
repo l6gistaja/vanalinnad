@@ -50,7 +50,7 @@
 
 <h3>Creating new site</h3>
 
-<p>Run <code>dev/newsite/newsite.pl {PLACE}</code> . Add new <code>&lt;Placemark&gt;</code> with <code>&lt;name&gt;{PLACE}&lt;/name&gt;</code> to vector/selector.kml to make new site visible on main page. NB! Dont use symbols outside standard latin alphabet in {PLACE}, it will be included in catalogue names. You can add "real name" into <code>/Document/Placemark[x]/description</code> @ vector/selector.kml and into <code>/city</code> @ vector/places/{PLACE}/layers.xml .</p>
+<p>Run <code>dev/newsite/newsite.pl {SITE}</code> . Add new <code>&lt;Placemark&gt;</code> with <code>&lt;name&gt;{SITE}&lt;/name&gt;</code> to vector/selector.kml to make new site visible on main page. NB! Dont use symbols outside standard latin alphabet in {SITE}, it will be included in catalogue names. You can add "real name" into <code>/Document/Placemark[x]/description</code> @ vector/selector.kml and into <code>/city</code> @ vector/places/{SITE}/layers.xml .</p>
 
 <h3>Adding new historical map to site</h3>
 
@@ -60,15 +60,15 @@
 <li>Cut away and whiten original maps edges, legends, empty areas etc. It makes tile generation speed, repo size and download speed smaller.</li>
 <li>Save this file as {SOURCE_FILE} to:
 <ol>
-<li><code>{SOURCE_FILE_DIR}/places/{PLACE}/composed/{COMPOSITE_YEAR}</code>, if new map is composite (composed from more then one map).</li>
-<li><code>{SOURCE_FILE_DIR}/places/{PLACE}</code>, if new map is NOT composite.</li>
+<li><code>{SOURCE_FILE_DIR}/places/{SITE}/composed/{COMPOSITE_YEAR}</code>, if new map is composite (composed from more then one map).</li>
+<li><code>{SOURCE_FILE_DIR}/places/{SITE}</code>, if new map is NOT composite.</li>
 </ol></li>
-<li>Georeference image @ vector/places/{PLACE}/gdal.xml . In following, {GEOREFERENCE} is at last 3 GCPs in form <code>-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}</code> <code>{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP}</code>. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use <a href="index.html?debug=1">index.html?debug=1</a> for finding GCPs geographical coordinates.
+<li>Georeference image @ vector/places/{SITE}/gdal.xml . In following, {GEOREFERENCE} is at last 3 GCPs in form <code>-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}</code> <code>{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP}</code>. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use <a href="index.html?debug=1">index.html?debug=1</a> for finding GCPs geographical coordinates.
 <ol>
 <li>If new map is composite, add <code>&lt;translate map="{YEAR}" composite="{COMPOSITE_YEAR}"&gt;&lt;t file="{SOURCE_FILE}" gcps="{GEOREFERENCE}"/&gt;&lt;/translate&gt;</code> and <code>&lt;composite id="{COMPOSITE_YEAR}" maps="{YEAR}" montage="yes"/&gt;</code> to gdal.xml. Later, new composite map years can be added to attribute <code>maps</code>, separated by comma. NB! Order of this list decides, how component maps overwrite eachother. Remove attribute montage="yes", when component maps dont touch eachother.</li>
 <li>If new map is NOT composite, add <code>&lt;translate map="{YEAR}"&gt;&lt;t file="{SOURCE_FILE}" gcps="{GEOREFERENCE}"/&gt;&lt;/translate&gt;</code> to gdal.xml.</li>
 </ol></li>
-<li>Run <code>dev/tiler.pl -s {PLACE} -y {YEAR}</code>. (If you for some reason dont want to generate map tiles but still want to generate misc data files, add -r flag.) NB! Only last <code>&lt;t&gt;</code> from <code>&lt;translate&gt;</code> added in previous step is taken into account while rendering tiles.</li>
+<li>Run <code>dev/tiler.pl -s {SITE} -y {YEAR}</code>. (If you for some reason dont want to generate map tiles but still want to generate misc data files, add -r flag.) NB! Only last <code>&lt;t&gt;</code> from <code>&lt;translate&gt;</code> added in previous step is taken into account while rendering tiles.</li>
 </ol>
 
 <h3>Adding road layers from OpenStreetMap</h3>
@@ -77,12 +77,12 @@
 
 <ol>
 <li><code>cd {VANALINNAD_ROOT_DIR}</code></li>
-<li><code>./dev/postproc.bash {PLACE} {SOME_EXISTING_YEAR} | grep 'BBox max'</code></li>
+<li><code>./dev/postproc.bash {SITE} {SOME_EXISTING_YEAR} | grep 'BBox max'</code></li>
 <li>Add boundingbox from previous step to <code>dev/osm2xml/roads.kml</code>, into tag /Placemark[0]/LineString/coordinates</li>
 <li><code>cd dev/osm2xml/ ; ./generate_roads.pl | bash</code></li>
 <li>Original KML files roads0.kml ... roads4.kml were generated into <code>{VANALINNAD_ROOT_DIR}/cache/</code>. You can merge those files into fewer files.</li>
-<li>For every {SOURCE_KML} created in previous step: <code>../kml_minify.pl .00001 ../../cache/{SOURCE_KML} ../../vector/places/{PLACE}/{FINAL_KML}</code></li>
-<li>For every {FINAL_KML} created in previous step, add tag <code>&lt;layer type="roads" name="{LAYER_NAME}" file="{FINAL_KML}" maxres="{MIN_ZOOM_LEVEL}"/&gt;</code> to <code>{VANALINNAD_ROOT_DIR}/vector/places/{PLACE}/layers.xml</code></li>
+<li>For every {SOURCE_KML} created in previous step: <code>../kml_minify.pl .00001 ../../cache/{SOURCE_KML} ../../vector/places/{SITE}/{FINAL_KML}</code></li>
+<li>For every {FINAL_KML} created in previous step, add tag <code>&lt;layer type="roads" name="{LAYER_NAME}" file="{FINAL_KML}" maxres="{MIN_ZOOM_LEVEL}"/&gt;</code> to <code>{VANALINNAD_ROOT_DIR}/vector/places/{SITE}/layers.xml</code></li>
 </ol>
 
 <h2>License</h2>
