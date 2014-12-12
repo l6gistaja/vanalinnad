@@ -71,7 +71,7 @@
 </translate>
 
 <translate map="1832">
-    <t file="1832sharp.jpg" gcps=""/>
+    <t file="1832sharp.jpg" gcps="-gcp 1071 172 25.600366752633377 58.36677311920024 -gcp 944 461 25.59819952774927 58.36189975120347 -gcp 1284 247 25.606804054269354 58.36610912019827"/>
 </translate>
 
 <translate map="1790">
