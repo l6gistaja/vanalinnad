@@ -60,8 +60,8 @@
 <li>Cut away and whiten original maps edges, legends, empty areas etc. It makes tile generation speed, repo size and download speed smaller.</li>
 <li>Save this file as {SOURCE_FILE} to:
 <ol>
-<li>{SOURCE<em>FILE</em>DIR}/places/{PLACE}/composed/{YEAR}, if new map is composite (composed from more then one map).</li>
-<li>{SOURCE<em>FILE</em>DIR}/places/{PLACE}, if new map is NOT composite.</li>
+<li><code>{SOURCE_FILE_DIR}/places/{PLACE}/composed/{COMPOSITE_YEAR}</code>, if new map is composite (composed from more then one map).</li>
+<li><code>{SOURCE_FILE_DIR}/places/{PLACE}</code>, if new map is NOT composite.</li>
 </ol></li>
 <li>Georeference image @ vector/places/{PLACE}/gdal.xml . In following, {GEOREFERENCE} is at last 3 GCPs in form <code>-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}</code> <code>{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP}</code>. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use <a href="index.html?debug=1">index.html?debug=1</a> for finding GCPs geographical coordinates.
 <ol>

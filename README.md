@@ -41,8 +41,8 @@ In following, {SOURCE_FILE_DIR} is /dirsource from conf.xml.
 
 1. Cut away and whiten original maps edges, legends, empty areas etc. It makes tile generation speed, repo size and download speed smaller.
 1. Save this file as {SOURCE_FILE} to:
- 1. {SOURCE_FILE_DIR}/places/{PLACE}/composed/{YEAR}, if new map is composite (composed from more then one map).
- 1. {SOURCE_FILE_DIR}/places/{PLACE}, if new map is NOT composite.
+ 1. ```{SOURCE_FILE_DIR}/places/{PLACE}/composed/{COMPOSITE_YEAR}```, if new map is composite (composed from more then one map).
+ 1. ```{SOURCE_FILE_DIR}/places/{PLACE}```, if new map is NOT composite.
 1. Georeference image @ vector/places/{PLACE}/gdal.xml . In following, {GEOREFERENCE} is at last 3 GCPs in form ```-gcp {X_COORDINATE_OF_GCP_ON_SOURCE_IMAGE} {Y_COORDINATE_OF_GCP_ON_SOURCE_IMAGE}``` ```{EAST_COORDINATE_OF_GCP} {NORTH_COORDINATE_OF_GCP} ```. For example, GCPs can be narrow crossroads which are on both historic and modern maps. You can use [index.html?debug=1](index.html?debug=1) for finding GCPs geographical coordinates.
  1. If new map is composite, add ```<translate map="{YEAR}" composite="{COMPOSITE_YEAR}"><t file="{SOURCE_FILE}" gcps="{GEOREFERENCE}"/></translate>``` and ```<composite id="{COMPOSITE_YEAR}" maps="{YEAR}" montage="yes"/>``` to gdal.xml. Later, new composite map years can be added to attribute ```maps```, separated by comma. NB! Order of this list decides, how component maps overwrite eachother. Remove attribute montage="yes", when component maps dont touch eachother.
  1. If new map is NOT composite, add ```<translate map="{YEAR}"><t file="{SOURCE_FILE}" gcps="{GEOREFERENCE}"/></translate>``` to gdal.xml.
