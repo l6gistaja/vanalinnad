@@ -3,17 +3,18 @@
 use XML::Simple;
 
 $xml = new XML::Simple;
-$conf = $xml->XMLin('roads.kml');
-$mainconf = $xml->XMLin($conf->{'Document'}{'ExtendedData'}{'v:dirbase'}.'conf.xml');
+$dirbase = '';
+$mainconf = $xml->XMLin($dirbase.'conf.xml');
+$dirosm = $dirbase.$mainconf->{'dirdev'}.'osm2xml/';
+$conf = $xml->XMLin($dirosm.'roads.kml');
 $len = scalar(@{$conf->{'Document'}{'Placemark'}});
 @bash = qw();
-$cachedir = $conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
-    .$mainconf->{'dircache'};
+$cachedir = $dirbase.$mainconf->{'dircache'};
 push(@bash, "echo 'Generating road networks'");
 push(@bash, "echo 'Cache at: ".$cachedir."'");
 push(@bash, "echo 'Coordinates order: W,S,E,N'");
 
-$file = $conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
+$file = $dirbase
   .$mainconf->{'dircache'}
   .$conf->{'Document'}{'ExtendedData'}{'v:areasfile'};
 open (DATA, '>'.$file);
@@ -22,7 +23,9 @@ print DATA $filebase.$conf->{'Document'}{'ExtendedData'}{'v:kmlheader'};
 
 for($i=0; $i<$len-1; $i++) {
 
-  @coords = split(/[,\s]/,$conf->{'Document'}{'Placemark'}[$i]{'LineString'}{'coordinates'});
+  @coords = scalar(@ARGV) < 1 
+    ? split(/[,\s]/, $conf->{'Document'}{'Placemark'}[$i]{'LineString'}{'coordinates'})
+    : split(/[,]/, $ARGV[0]);
   $bboxs = 'BBox='.join(',',@coords).': ';
   $filebase = $cachedir
     .$conf->{'Document'}{'ExtendedData'}{'v:fileprefix'}
@@ -51,7 +54,7 @@ for($i=0; $i<$len-1; $i++) {
   $file = $filebase.'.gml';
   push(@bash, "echo '".$bboxs."Convert OSM 2 GML'");
   if(!(-e $file)) {
-    push(@bash, 'xsltproc osm2gml.xslt '
+    push(@bash, 'xsltproc '.$dirosm.'osm2gml.xslt '
       .$osmfile
       .' > '
       .$file);
@@ -61,14 +64,14 @@ for($i=0; $i<$len-1; $i++) {
   $file = $filebase.'.xml';
   push(@bash, "echo '".$bboxs."Convert GML 2 XML'");
   if(!(-e $file)) {
-    push(@bash, 'xsltproc xml_mini.xslt '
+    push(@bash, 'xsltproc '.$dirosm.'xml_mini.xslt '
       .$gmlfile
       .' > '
       .$file);
   }
   
   push(@bash, "echo '".$bboxs."Convert XML 2 KML'");
-  push(@bash, './gen_kml.pl '.$i);
+  push(@bash, $dirosm.'gen_kml.pl '.$i.(scalar(@ARGV) < 1 ? '' : ' '.$ARGV[0]));
 
 
 }

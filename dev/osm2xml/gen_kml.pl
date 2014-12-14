@@ -3,11 +3,16 @@
 use XML::Simple;
 
 $xml = new XML::Simple;
-$conf = $xml->XMLin('roads.kml');
-$mainconf = $xml->XMLin($conf->{'Document'}{'ExtendedData'}{'v:dirbase'}.'conf.xml');
-@coords = split(/[,\s]/,$conf->{'Document'}{'Placemark'}[$ARGV[0]]{'LineString'}{'coordinates'});
+$dirbase = '';
+$mainconf = $xml->XMLin($dirbase.'conf.xml');
+$dirosm = $dirbase.$mainconf->{'dirdev'}.'osm2xml/';
+$conf = $xml->XMLin($dirosm.'roads.kml');
 
-$data = $xml->XMLin($conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
+@coords = scalar(@ARGV) < 2
+    ? split(/[,\s]/, $conf->{'Document'}{'Placemark'}[$ARGV[0]]{'LineString'}{'coordinates'})
+    : split(/[,]/, $ARGV[1]);
+
+$data = $xml->XMLin($dirbase
     .$mainconf->{'dircache'}
     .$conf->{'Document'}{'ExtendedData'}{'v:fileprefix'}
     .join('_',@coords)
@@ -47,7 +52,7 @@ for($i=0; $i<=$len; $i++) {
 }
 
 for($level = 0; $level <= $levelLen; $level++) {
-  $file = $conf->{'Document'}{'ExtendedData'}{'v:dirbase'}
+  $file = $dirbase
     .$mainconf->{'dircache'}
     .$mainconf->{'fileprefixroads'}
     .$level
