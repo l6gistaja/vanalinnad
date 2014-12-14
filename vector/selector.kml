@@ -8,6 +8,12 @@
       </Point>
     </Placemark>
     <Placemark>
+      <name>Kuressaare</name>
+      <Point>
+        <coordinates>22.48527391540559,58.25304863575001</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>Narva</name>
       <Point>
         <coordinates>28.20004659975203,59.3758806532303</coordinates>
