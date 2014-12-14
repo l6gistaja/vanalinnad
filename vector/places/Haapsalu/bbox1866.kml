@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
+<kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
 <Placemark id="bbox.1859"><name>1859</name><LineString><coordinates>23.50101208217461,58.89927990001888 23.50101208217461,58.96722952325667 23.57984832372298,58.96722952325667 23.57984832372298,58.89927990001888 23.50101208217461,58.89927990001888</coordinates></LineString></Placemark>
 <Placemark id="gcp1859.1"><name>1859 #1</name><description>553 487</description><Point><coordinates>23.535031437977086,58.95140551498216</coordinates></Point></Placemark>
 <Placemark id="gcp1859.2"><name>1859 #2</name><description>376 538</description><Point><coordinates>23.526469826801527,58.948992799811215</coordinates></Point></Placemark>
 <Placemark id="gcp1859.3"><name>1859 #3</name><description>812 2305</description><Point><coordinates>23.56884872923756,58.90427170993969</coordinates></Point></Placemark>
-
 
 <Placemark id="bbox.1866"><name>1866</name><LineString><coordinates>23.50834374119611,58.93883304609987 23.50834374119611,58.96590858817036 23.55214741525907,58.96590858817036 23.55214741525907,58.93883304609987 23.50834374119611,58.93883304609987</coordinates></LineString></Placemark>
 <Placemark id="gcp1866.1"><name>1866 #1</name><description>568 1389</description><Point><coordinates>23.52646982680243,58.94900429408867</coordinates></Point></Placemark>
@@ -23,6 +22,7 @@
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Haapsalu/composed/1866/</value></Data>
 <Data name="montage"><value>yes</value></Data>
+
 </ExtendedData>
 
 </Document>
