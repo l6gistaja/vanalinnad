@@ -5,6 +5,7 @@
   <layer bounds="22.46127661595613,58.23592523455979,22.50843595880820,58.26619977356382" type="tms" year="1931" />
   <layer bounds="22.45959824415303,58.24021563931544,22.50315811041349,58.26723947927039" type="tms" year="1911" />
   <layer bounds="22.46030864323622,58.24024857805841,22.50325286912211,58.26662578873538" type="tms" year="1902" />
+  <layer bounds="22.45860388032468,58.23976502027836,22.50058252585167,58.26630372488221" type="tms" year="1862" />
   <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="13" type="roads" />
   <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="14" type="roads" />
   <maxzoom>16</maxzoom>

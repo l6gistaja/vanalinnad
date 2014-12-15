@@ -1,0 +1,2 @@
+2014-12-15 23:05:40+02:00; 150 files; 1.2M ../raster/places/Kuressaare/1862
+2014-12-15 23:05:46+02:00; 68 files; 880K ../raster/places/Kuressaare/1862
