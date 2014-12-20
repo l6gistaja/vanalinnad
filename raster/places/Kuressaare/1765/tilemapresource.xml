@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<TileMap version="1.0.0" tilemapservice="http://tms.osgeo.org/1.0.0">
+	  <Title>Kuressaare 1765</Title>
+	  <Abstract></Abstract>
+	  <SRS>EPSG:900913</SRS>
+	  <BoundingBox minx="58.24295241590323" miny="22.45603961581853" maxx="58.26675516245272" maxy="22.49838038811252"/>
+	  <Origin x="58.24295241590323" y="22.45603961581853"/>
+	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
+	  <TileSets profile="mercator">
+	    <TileSet href="13" units-per-pixel="19.10925706787109" order="13"/>
+	    <TileSet href="14" units-per-pixel="9.55462853393555" order="14"/>
+	    <TileSet href="15" units-per-pixel="4.77731426696777" order="15"/>
+	    <TileSet href="16" units-per-pixel="2.38865713348389" order="16"/>
+	  </TileSets>
+	</TileMap>
+	
