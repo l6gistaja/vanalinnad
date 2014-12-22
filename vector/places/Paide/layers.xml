@@ -1,0 +1,10 @@
+<vanalinnadlayers xmlns="http://juks.alkohol.ee/vanalinnad">
+  <bounds>25.49761624209207,58.86124986051747,25.61608275165267,58.91263308274196</bounds>
+  <city>Paide</city>
+  <country>Estonia</country>
+  <layer bounds="25.49711857837931,58.86118540266647,25.61572943302349,58.91260548044265" type="tms" year="1974" />
+  <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
+  <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="14" type="roads" />
+  <maxzoom>16</maxzoom>
+  <minzoom>12</minzoom>
+</vanalinnadlayers>

@@ -20,6 +20,12 @@
       </Point>
     </Placemark>
     <Placemark>
+      <name>Paide</name>
+      <Point>
+        <coordinates>25.557408640147518,58.8858298320806</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>Parnu</name>
       <description>Pärnu</description>
       <Point>
