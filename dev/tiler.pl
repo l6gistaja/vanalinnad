@@ -82,7 +82,7 @@ for($i = 0; $i < $c{'ls'}; $i++) {
   }
 }
 if($isNewLayer) {
-  push(@{$layers->{'layer'}}, {'type' => 'tms', 'bounds' => $c{'bbox'}, 'year' => $opts{'y'}});
+  push(@{$layers->{'layer'}}, {'type' => 'tms', 'bounds' => $c{'bbox'}, 'year' => $c{'layeryear'}});
 }
 $xml->XMLout($layers, RootName => 'vanalinnadlayers', OutputFile => $c{'filelayers'});
 
