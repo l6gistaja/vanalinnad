@@ -3,6 +3,7 @@
   <city>Paide</city>
   <country>Estonia</country>
   <layer bounds="25.49711857837931,58.86118540266647,25.61572943302349,58.91260548044265" type="tms" year="1974" />
+  <layer bounds="25.54558994284147,58.87401660420738,25.57766848665606,58.89695008226006" type="tms" year="1939" />
   <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
   <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="14" type="roads" />
   <maxzoom>16</maxzoom>
