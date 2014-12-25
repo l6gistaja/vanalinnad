@@ -37,10 +37,15 @@
 <Placemark id="gcp1939.2.k1.4"><name>1939.2.k1 #4</name><description>474 1542</description><Point><coordinates>25.550013417968113,58.88806245452897</coordinates></Point></Placemark>
 <Placemark id="gcp1939.2.k1.5"><name>1939.2.k1 #5</name><description>872 1431</description><Point><coordinates>25.553296441802004,58.888528123481834</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1939.1.k2"><name>1939.1.k2</name><LineString><coordinates>25.53685615001302,58.87990235510720 25.53685615001302,58.88757155206891 25.54647109365581,58.88757155206891 25.54647109365581,58.87990235510720 25.53685615001302,58.87990235510720</coordinates></LineString></Placemark>
+<Placemark id="gcp1939.1.k2.1"><name>1939.1.k2 #1</name><description>551 1281</description><Point><coordinates>25.54171476715103,58.88193216719831</coordinates></Point></Placemark>
+<Placemark id="gcp1939.1.k2.2"><name>1939.1.k2 #2</name><description>986 1030</description><Point><coordinates>25.545512775115732,58.88304108904247</coordinates></Point></Placemark>
+<Placemark id="gcp1939.1.k2.3"><name>1939.1.k2 #3</name><description>690 535</description><Point><coordinates>25.54315243118257,58.885214472723916</coordinates></Point></Placemark>
+
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>25.54558994284147,58.87401660420738,25.57766848665606,58.89695008226006</value></Data>
-<Data name="maps"><value>1939.2.k1,1939.2.k3,1939.2.k2,1939.3.k3,1939.3.k5,1939.3.k4</value></Data>
+<Data name="bbox"><value>25.53685615001302,58.87401660420738,25.57766848665606,58.89695008226006</value></Data>
+<Data name="maps"><value>1939.2.k1,1939.2.k3,1939.2.k2,1939.1.k2,1939.3.k3,1939.3.k5,1939.3.k4</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Paide/composed/1939/</value></Data>
