@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1925.k1"><name>1925.k1</name><LineString><coordinates>25.49138166426435,58.86294437795986 25.49138166426435,58.94250338547050 25.60051351744065,58.94250338547050 25.60051351744065,58.86294437795986 25.49138166426435,58.86294437795986</coordinates></LineString></Placemark>
+<Placemark id="gcp1925.k1.1"><name>1925.k1 #1</name><description>940 1452</description><Point><coordinates>25.56926163772576,58.89054315044844</coordinates></Point></Placemark>
+<Placemark id="gcp1925.k1.2"><name>1925.k1 #2</name><description>416 1598</description><Point><coordinates>25.53774031738299,58.88229370988503</coordinates></Point></Placemark>
+<Placemark id="gcp1925.k1.3"><name>1925.k1 #3</name><description>1123 1775</description><Point><coordinates>25.58498998686091,58.8806524574613</coordinates></Point></Placemark>
+<Placemark id="gcp1925.k1.4"><name>1925.k1 #4</name><description>895 1560</description><Point><coordinates>25.56797706619295,58.886632699455056</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1925.k2"><name>1925.k2</name><LineString><coordinates>25.56180145398856,58.87315775992226 25.56180145398856,58.91926686416988 25.62915874003423,58.91926686416988 25.62915874003423,58.87315775992226 25.56180145398856,58.87315775992226</coordinates></LineString></Placemark>
+<Placemark id="gcp1925.k2.1"><name>1925.k2 #1</name><description>25 1137</description><Point><coordinates>25.57782156616185,58.87570159753198</coordinates></Point></Placemark>
+<Placemark id="gcp1925.k2.2"><name>1925.k2 #2</name><description>328 878</description><Point><coordinates>25.59376461654683,58.886380961051096</coordinates></Point></Placemark>
+<Placemark id="gcp1925.k2.3"><name>1925.k2 #3</name><description>350 244</description><Point><coordinates>25.587112738189084,58.90806223002409</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>25.49138166426435,58.86294437795986,25.62915874003423,58.94250338547050</value></Data>
+<Data name="maps"><value>1925.k2,1925.k1</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Paide/composed/1925/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
