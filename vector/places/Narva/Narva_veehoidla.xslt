@@ -13,7 +13,7 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 <Placemark>
-<name>&lt;a href="http://et.wikipedia.org/wiki/Narva_veehoidla" target="_blank"&gt;Narva veehoidla&lt;/a&gt;</name>
+<name>&lt;a href="http://et.wikipedia.org/wiki/Narva_veehoidla" target="_blank"&gt;Narva veehoidla&lt;/a&gt; / &lt;br /&gt;&lt;a href="https://ru.wikipedia.org/wiki/%D0%9D%D0%B0%D1%80%D0%B2%D1%81%D0%BA%D0%BE%D0%B5_%D0%B2%D0%BE%D0%B4%D0%BE%D1%85%D1%80%D0%B0%D0%BD%D0%B8%D0%BB%D0%B8%D1%89%D0%B5" target="_blank"&gt;Нарвское водохранилище&lt;/a&gt;</name>
 <color>#0044FF</color>
 <MultiGeometry>
 <xsl:for-each select="osm:FeatureCollection/gml:featureMember">
