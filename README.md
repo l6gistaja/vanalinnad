@@ -4,7 +4,9 @@ Historical maps of Estonian cities under grid of today's street network.
 
 **Shortcut keys:** F11 enables/disables fullscreen. By OpenLayers defaults arrow keys pan, +/- keys zoom & Page Up/Page Down/Home/End scroll by three quarters of a page. Additionally, spacebar displays next and numbers (0-9) will display previous historical map.
 
-* License: [BSD 2-clause License](http://openlayers.org/dev/license.txt), inherited from used [OpenLayers](http://openlayers.org) library
+See also: [old map symbols](http://www.ra.ee/kaardid/index.php/et/site/page?view=symbols)
+
+* License: [BSD 2-clause License](http://openlayers.org/dev/license.txt), inherited from used [OpenLayers 2](http://openlayers.org) library
 * Vector data: © [OpenStreetMap contributors](http://www.openstreetmap.org/copyright)
 * Tiles and initial JavaScript: [MapTiler](http://www.maptiler.org/)/[GDAL2Tiles](http://www.klokan.cz/projects/gdal2tiles/), © 2008 [Klokan Petr Pridal](http://www.klokan.cz/), [GDAL](http://www.gdal.org/) & [OSGeo](http://www.osgeo.org/) [GSoC](http://code.google.com/soc/)
 * GitHub: [https://github.com/l6gistaja/vanalinnad](https://github.com/l6gistaja/vanalinnad)
@@ -26,9 +28,7 @@ Following describes data adding process with Debian Linux 6.0.8.
 ### Dependencies
 
 1. Create writable directory ```{VANALINNAD_ROOT_DIR}/cache```
-1. Install [GDAL utils](http://www.gdal.org/) and [markdown](http://daringfireball.net/projects/markdown/) (```sudo apt-get install gdal-bin markdown```)
-1. Install [MapTiler](http://www.maptiler.org/)
-1. Install [ImageMagick](http://www.imagemagick.org)
+1. Install [GDAL utils](http://www.gdal.org/), [markdown](http://daringfireball.net/projects/markdown/) and [ImageMagick](http://www.imagemagick.org) (```sudo apt-get install gdal-bin markdown imagemagick```)
 1. Install missing Perl modules (```sudo cpan XML::Simple JSON Storable Math::Round```)
 
 ### Creating new site
@@ -52,7 +52,7 @@ In following, {SOURCE_FILE_DIR} is /dirsource from conf.xml.
 
 If not already installed, ```apt-get install wget``` .
 
-1. ```./dev/osm2xml/osmroads.pl {SITE}```
+1. Run ```./dev/osm2xml/osmroads.pl {SITE}```
 1. Original KML files roads0.kml ... roads4.kml were generated into ```{VANALINNAD_ROOT_DIR}/cache/```. You can merge those files into fewer files.
 1. For every {SOURCE_KML} created in previous step: ```./dev/kml_minify.pl .00001 cache/{SOURCE_KML} vector/places/{SITE}/{FINAL_KML}```
 1. For every {FINAL_KML} created in previous step, add tag ```<layer type="roads" name="{LAYER_NAME}" file="{FINAL_KML}" maxres="{MIN_ZOOM_LEVEL}"/>``` to ```{VANALINNAD_ROOT_DIR}/vector/places/{SITE}/layers.xml```
@@ -61,7 +61,7 @@ If not already installed, ```apt-get install wget``` .
 License
 -------
 
-Copyright 2013-2014, juks at alkohol ee. All rights reserved.
+Copyright 2013-2015, juks at alkohol ee. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:

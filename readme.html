@@ -15,8 +15,10 @@
 
 <p><strong>Shortcut keys:</strong> F11 enables/disables fullscreen. By OpenLayers defaults arrow keys pan, +/- keys zoom &amp; Page Up/Page Down/Home/End scroll by three quarters of a page. Additionally, spacebar displays next and numbers (0-9) will display previous historical map.</p>
 
+<p>See also: <a href="http://www.ra.ee/kaardid/index.php/et/site/page?view=symbols">old map symbols</a></p>
+
 <ul>
-<li>License: <a href="http://openlayers.org/dev/license.txt">BSD 2-clause License</a>, inherited from used <a href="http://openlayers.org">OpenLayers</a> library</li>
+<li>License: <a href="http://openlayers.org/dev/license.txt">BSD 2-clause License</a>, inherited from used <a href="http://openlayers.org">OpenLayers 2</a> library</li>
 <li>Vector data: © <a href="http://www.openstreetmap.org/copyright">OpenStreetMap contributors</a></li>
 <li>Tiles and initial JavaScript: <a href="http://www.maptiler.org/">MapTiler</a>/<a href="http://www.klokan.cz/projects/gdal2tiles/">GDAL2Tiles</a>, © 2008 <a href="http://www.klokan.cz/">Klokan Petr Pridal</a>, <a href="http://www.gdal.org/">GDAL</a> &amp; <a href="http://www.osgeo.org/">OSGeo</a> <a href="http://code.google.com/soc/">GSoC</a></li>
 <li>GitHub: <a href="https://github.com/l6gistaja/vanalinnad">https://github.com/l6gistaja/vanalinnad</a></li>
@@ -42,9 +44,7 @@
 
 <ol>
 <li>Create writable directory <code>{VANALINNAD_ROOT_DIR}/cache</code></li>
-<li>Install <a href="http://www.gdal.org/">GDAL utils</a> and <a href="http://daringfireball.net/projects/markdown/">markdown</a> (<code>sudo apt-get install gdal-bin markdown</code>)</li>
-<li>Install <a href="http://www.maptiler.org/">MapTiler</a></li>
-<li>Install <a href="http://www.imagemagick.org">ImageMagick</a></li>
+<li>Install <a href="http://www.gdal.org/">GDAL utils</a>, <a href="http://daringfireball.net/projects/markdown/">markdown</a> and <a href="http://www.imagemagick.org">ImageMagick</a> (<code>sudo apt-get install gdal-bin markdown imagemagick</code>)</li>
 <li>Install missing Perl modules (<code>sudo cpan XML::Simple JSON Storable Math::Round</code>)</li>
 </ol>
 
@@ -76,7 +76,7 @@
 <p>If not already installed, <code>apt-get install wget</code> .</p>
 
 <ol>
-<li><code>./dev/osm2xml/osmroads.pl {SITE}</code></li>
+<li>Run <code>./dev/osm2xml/osmroads.pl {SITE}</code></li>
 <li>Original KML files roads0.kml ... roads4.kml were generated into <code>{VANALINNAD_ROOT_DIR}/cache/</code>. You can merge those files into fewer files.</li>
 <li>For every {SOURCE_KML} created in previous step: <code>./dev/kml_minify.pl .00001 cache/{SOURCE_KML} vector/places/{SITE}/{FINAL_KML}</code></li>
 <li>For every {FINAL_KML} created in previous step, add tag <code>&lt;layer type="roads" name="{LAYER_NAME}" file="{FINAL_KML}" maxres="{MIN_ZOOM_LEVEL}"/&gt;</code> to <code>{VANALINNAD_ROOT_DIR}/vector/places/{SITE}/layers.xml</code></li>
@@ -84,7 +84,7 @@
 
 <h2>License</h2>
 
-<p>Copyright 2013-2014, juks at alkohol ee. All rights reserved.</p>
+<p>Copyright 2013-2015, juks at alkohol ee. All rights reserved.</p>
 
 <p>Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:</p>
