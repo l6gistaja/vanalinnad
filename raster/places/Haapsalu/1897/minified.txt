@@ -1,0 +1,2 @@
+2015-01-21 00:17:00+02:00; 214 files; 2.1M ../raster/places/Haapsalu/1897
+2015-01-21 00:17:09+02:00; 107 files; 1.7M ../raster/places/Haapsalu/1897
