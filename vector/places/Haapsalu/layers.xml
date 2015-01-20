@@ -11,6 +11,7 @@
   <layer bounds="23.50418982912138,58.90068151054169,23.57708063685293,58.96625267888905" type="tms" year="1846" />
   <layer bounds="23.49816571480932,58.89892955149909,23.58343917525738,58.96750198250582" type="tms" year="1800" />
   <layer bounds="23.5159874513,58.9416314351,23.552224066,58.9580729452" type="tms" year="1783" />
+  <layer bounds="23.52473383976939,58.94197344799106,23.54935375289864,58.95308628486492" type="tms" year="1683" />
   <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
   <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>
