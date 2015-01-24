@@ -1,0 +1,2 @@
+2015-01-24 19:57:50+02:00; 347 files; 3.6M ../raster/places/Narva/1871
+2015-01-24 19:58:03+02:00; 205 files; 3.0M ../raster/places/Narva/1871
