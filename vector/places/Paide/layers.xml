@@ -9,6 +9,7 @@
   <layer bounds="25.50833069016803,58.86367441783313,25.58713820722355,58.89856826376975" type="tms" year="1790" />
   <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
   <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="14" type="roads" />
+  <layer bounds="25.55858279718062,58.87909133718734,25.58083783673058,58.89298886682141" type="tms" year="1683" />
   <maxzoom>16</maxzoom>
   <minzoom>12</minzoom>
 </vanalinnadlayers>
