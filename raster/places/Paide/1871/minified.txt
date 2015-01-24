@@ -1,0 +1,2 @@
+2015-01-25 00:06:40+02:00; 152 files; 1.7M ../raster/places/Paide/1871
+2015-01-25 00:06:46+02:00; 106 files; 1.5M ../raster/places/Paide/1871
