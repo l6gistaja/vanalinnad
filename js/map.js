@@ -309,11 +309,8 @@ function vlMap(inputParams){
     map.addControl(vectorLayersCtl);
     vectorLayersCtl.activate();
 
-    var switcherControl = new OpenLayers.Control.LayerSwitcher();
-    map.addControl(switcherControl);
+    var switcherControl = vlUtils.addSwitcher(map);
     switcherControl.maximizeControl();
-    switcherControl.baseLbl.innerHTML = '';
-    switcherControl.dataLbl.innerHTML = '';
 
     map.addControl(new OpenLayers.Control.PanZoomBar());
     //map.addControl(new OpenLayers.Control.MousePosition());

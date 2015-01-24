@@ -175,8 +175,10 @@ function vlInitInfo(inputParams){
         units: "m",
         numZoomLevels: 18
       });
-      
-      osm = new OpenLayers.Layer.TMS('OSM',
+
+      // create OSM/OAM layer
+      currentTime = new Date();
+      osm = new OpenLayers.Layer.TMS( currentTime.getFullYear(),
         "http://tile.openstreetmap.org/",
         {
           layername: 'osm',
@@ -210,6 +212,8 @@ function vlInitInfo(inputParams){
       });
       map.addControl(bboxLayersCtl);
       bboxLayersCtl.activate();
+
+      //vlUtils.addSwitcher(map);
 
     } else {
       OpenLayers.Request.GET(requestConf['site']);

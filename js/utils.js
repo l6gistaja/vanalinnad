@@ -98,3 +98,11 @@ vlUtils.link = function(data) {
     + ('h' in data ? ' title="' + data.h + '"' : '')
     + '>' + ('l' in data ? data.l : data.u)  + '</a>';
 }
+
+vlUtils.addSwitcher = function(map) {
+  var switcherCtl = new OpenLayers.Control.LayerSwitcher();
+  map.addControl(switcherCtl);
+  switcherCtl.baseLbl.innerHTML = '';
+  switcherCtl.dataLbl.innerHTML = '';
+  return switcherCtl;
+}
