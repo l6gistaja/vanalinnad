@@ -70,38 +70,6 @@ function vlMap(inputParams){
   
   var vlInitMapAfterConf = function(){
 
-    function existsInStruct(path) {
-      var pointer = emptyTiles;
-      var lastIndex = 3;
-      var i;
-      for(i=0; i<lastIndex; i++) {
-        if(path[i] in pointer) {
-          pointer = pointer[path[i]];
-        } else {
-          return false;
-        }
-      }
-
-      var lastValue;
-      lastValue = isNaN(pointer[0]) ? pointer[0][0] : pointer[0];
-      if(path[lastIndex] < lastValue) { return false; }
-      lastValue = pointer.length - 1;
-      lastValue = isNaN(pointer[lastValue]) ? pointer[lastValue][1] : pointer[lastValue];
-      if(path[lastIndex] > lastValue) { return false; }
-
-      for(i=0; i<pointer.length; i++) {
-        if(isNaN(pointer[i])) {
-          if(path[lastIndex] >= pointer[i][0] && path[lastIndex] <= pointer[i][1]) { return true; }
-          lastValue = pointer[i][1];
-        } else {
-          if(pointer[i] == path[lastIndex]) { return true; }
-          lastValue = pointer[i];
-        }
-      }
-
-      return false;
-    }
-
     yearMatcher = new RegExp(conf.regexyearmatcher);
 
     map = new OpenLayers.Map(inputParams.divMap, {
@@ -116,28 +84,17 @@ function vlMap(inputParams){
     }
 
     function overlay_getTileURL(bounds) {
-        var res = this.map.getResolution();
-        var x = Math.round((bounds.left - this.maxExtent.left) / (res * this.tileSize.w));
-        var y = Math.round((bounds.bottom - this.tileOrigin.lat) / (res * this.tileSize.h));
-        var z = this.map.getZoom();
-        if (this.map.baseLayer.name == 'Virtual Earth Roads' || this.map.baseLayer.name == 'Virtual Earth Aerial' || this.map.baseLayer.name == 'Virtual Earth Hybrid') {
-            z = z + 1;
-        }
-        if (
-          (baseLayersData[map.baseLayer.layername].bounds.intersectsBounds(bounds)
-            && z >= mapMinZoom && z <= mapMaxZoom)
-          && !existsInStruct([
-            baseLayersData[map.baseLayer.layername].year,
-            ''+z, ''+x, y])
-        ) {
-        return conf.dirraster
-                + conf.dirplaces
-                + areaDir 
-                + baseLayersData[map.baseLayer.layername].dir
-                + z + "/" + x + "/" + y + "." + this.type;
-          } else {
-            return osm_getTileURL(bounds);
-          }
+        return vlUtils.getBasemapTileUrl({
+            layer: this,   
+            layerToday: osm,                       
+            bounds: bounds,
+            layerdata: baseLayersData[map.baseLayer.layername],
+            mapMinZoom: mapMinZoom,
+            mapMaxZoom: mapMaxZoom,
+            emptyTiles: emptyTiles,
+            areaDir: areaDir,
+            conf: conf
+        });
     }
 
     // create OSM/OAM layer
@@ -199,13 +156,7 @@ function vlMap(inputParams){
             && OpenLayers.Util.indexOf(visibleBaseLayers, layersTags[i].getAttribute('year')) < 0
           ) { continue; }
           layername = conf.tmslayerprefix + layersTags[i].getAttribute('year');
-          layerBoundBox = layersTags[i].getAttribute('bounds').split(',');
-          baseLayersData[layername] = {
-            dir: layersTags[i].getAttribute('year') + '/',
-            year: layersTags[i].getAttribute('year'),
-            bounds: new OpenLayers.Bounds(layerBoundBox[0], layerBoundBox[1], layerBoundBox[2], layerBoundBox[3]),
-            no: baseLayersCount
-          };
+          baseLayersData[layername] = vlUtils.createBaseLayerData(layersTags[i], {no: baseLayersCount});
           baseLayersCount++;
           baseLayersData[layername].bounds = baseLayersData[layername].bounds.transform(map.displayProjection, map.projection);
           tmsoverlays[tmsoverlays.length] = new OpenLayers.Layer.TMS(
