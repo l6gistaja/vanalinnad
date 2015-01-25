@@ -12,6 +12,12 @@ function vlInitInfo(inputParams){
   var siteName = reqParams['site'];
   var level = '';
   var years = ['', ''];
+  var emptyTiles = {};
+  var mapMinZoom;
+  var mapMaxZoom;
+  var baseLayerData;
+  var histBaseLayer;
+  var mapTag = null;
   
   function getSiteLbl() {
     baseURL = '?site=' + reqParams['site'];
@@ -55,7 +61,13 @@ function vlInitInfo(inputParams){
              + conf.dirplaces
              + reqParams['site'] + '/bbox'
              + reqParams['year'] + '.kml'
-      	}
+      	},
+        emptytiles: {
+           url: conf.dirvector
+             + conf.dirplaces
+             + reqParams['site'] + '/empty.json',
+           callback: loadEmptyTilesData
+        }
       };
       if(reqParams['site'].match(/\S/)) {
 	    level = reqParams['year'].match(new RegExp(conf.regexyearmatcher)) || 
@@ -68,6 +80,21 @@ function vlInitInfo(inputParams){
   function osm_getTileURL(bounds) {
       return vlUtils.getTodaysTileURL(osm, bounds);
   }
+  
+  function overlay_getTileURL(bounds) {
+      return vlUtils.getBasemapTileUrl({
+          layer: this,   
+          layerToday: osm,                       
+          bounds: bounds,
+          layerdata: baseLayerData,
+          mapMinZoom: mapMinZoom,
+          mapMaxZoom: mapMaxZoom,
+          emptyTiles: emptyTiles,
+          areaDir: reqParams['site'] + '/',
+          conf: conf
+      });
+  }
+  
   
   function createBBoxPopup(feature) {
     if(feature.fid.substring(0, 4) == 'bbox') {
@@ -176,7 +203,8 @@ function vlInitInfo(inputParams){
         numZoomLevels: 18
       });
 
-      // create OSM/OAM layer
+      // OSM/OAM layer
+
       currentTime = new Date();
       osm = new OpenLayers.Layer.TMS( currentTime.getFullYear(),
         "http://tile.openstreetmap.org/",
@@ -191,6 +219,8 @@ function vlInitInfo(inputParams){
       );
       map.addLayer(osm);
       
+      // BBox layer
+
       var bbox = new OpenLayers.Layer.Vector('BBox', {
             projection: new OpenLayers.Projection("EPSG:4326"),
             strategies: [new OpenLayers.Strategy.Fixed()],
@@ -203,7 +233,9 @@ function vlInitInfo(inputParams){
             }),
             styleMap: vlUtils.mergeCustomStyleWithDefaults(vlLayerStyles['BBox'])
       });
-      bbox.events.register('loadend', bbox, function(){map.zoomToExtent(bbox.getDataExtent());});
+      bbox.events.register('loadend', bbox, function(){
+        map.zoomToExtent(bbox.getDataExtent());
+      });
       map.addLayer(bbox);
 
       bboxLayersCtl = new OpenLayers.Control.SelectFeature([bbox], { 
@@ -212,12 +244,34 @@ function vlInitInfo(inputParams){
       });
       map.addControl(bboxLayersCtl);
       bboxLayersCtl.activate();
+      
+      // historical base layer
 
-      //vlUtils.addSwitcher(map);
+      if(mapTag != null) {
+        baseLayerData = vlUtils.createBaseLayerData(mapTag, {no: 0}, map);
+        histBaseLayer = new OpenLayers.Layer.TMS(
+          reqParams['year'],
+          "",
+          {
+            layername: conf.tmslayerprefix + reqParams['year'],
+            type: 'jpg',
+            getURL: overlay_getTileURL,
+            alpha: false,
+            isBaseLayer: true
+          }
+        );
+        map.addLayer(histBaseLayer);
+        vlUtils.addSwitcher(map);
+        OpenLayers.Request.GET(requestConf['emptytiles']);
+      }
 
     } else {
       OpenLayers.Request.GET(requestConf['site']);
     }
+  }
+
+  function loadEmptyTilesData(request) {
+      emptyTiles = (request.status == 200) ? JSON.parse(request.responseText) : {};
   }
 
   function layerHandler(request) {
@@ -225,6 +279,8 @@ function vlInitInfo(inputParams){
       layerXml = request.responseXML;
       siteName = vlUtils.getXmlValue(layerXml, 'city');
       links = layerXml.getElementsByTagName('layer');
+      mapMinZoom = parseInt(vlUtils.getXmlValue(layerXml, 'minzoom'));
+      mapMaxZoom = parseInt(vlUtils.getXmlValue(layerXml, 'maxzoom'));
       if(level == 'year') {
         l = 0;
         y = -1;
@@ -233,6 +289,7 @@ function vlInitInfo(inputParams){
           if(links[i].getAttribute('year') == reqParams['year']) { y = i; }
           l++;
         }
+        if(y > -1 && links[y].getAttribute('type') == 'tms') { mapTag = links[y]; }
         years[0] = links[y < 1 ? l - 1 : y - 1].getAttribute('year');
         years[1] = links[y > l - 2 ? 0 : y + 1].getAttribute('year');
         OpenLayers.Request.GET(requestConf['year']);

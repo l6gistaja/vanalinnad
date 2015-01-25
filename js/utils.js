@@ -30,20 +30,6 @@ vlUtils.mergeCustomStyleWithDefaults = function(customStyle) {
     return new OpenLayers.StyleMap(styleMap);
 }
 
-vlUtils.getTodaysTileURL = function(layer, bounds) {
-    var res = layer.map.getResolution();
-    var x = Math.round((bounds.left - layer.maxExtent.left) / (res * layer.tileSize.w));
-    var y = Math.round((layer.maxExtent.top - bounds.top) / (res * layer.tileSize.h));
-    var z = layer.map.getZoom();
-    var limit = Math.pow(2, z);
-    if (y < 0 || y >= limit) {
-        return 'raster/none.png';
-    } else {
-        x = ((x % limit) + limit) % limit;
-        return layer.url + z + "/" + x + "/" + y + "." + layer.type;
-    }
-}
-
 vlUtils.destroyPopup = function(feature) {
   feature.popup.destroy();
   feature.popup = null;
@@ -138,11 +124,12 @@ vlUtils.existsInStruct = function(path, struct) {
       return false;
 }
 
-vlUtils.createBaseLayerData = function(layerNode, obj) {
+vlUtils.createBaseLayerData = function(layerNode, obj, map) {
   var layerBoundBox = layerNode.getAttribute('bounds').split(',');
   obj.dir = layerNode.getAttribute('year') + '/';
   obj.year = layerNode.getAttribute('year');
   obj.bounds = new OpenLayers.Bounds(layerBoundBox[0], layerBoundBox[1], layerBoundBox[2], layerBoundBox[3]);
+  obj.bounds = obj.bounds.transform(map.displayProjection, map.projection);
   return obj;
 }
 
@@ -170,5 +157,19 @@ vlUtils.getBasemapTileUrl = function(input) {
       + z + "/" + x + "/" + y + "." + input.layer.type;
     } else {
       return vlUtils.getTodaysTileURL(input.layerToday, input.bounds);
+    }
+}
+
+vlUtils.getTodaysTileURL = function(layer, bounds) {
+    var res = layer.map.getResolution();
+    var x = Math.round((bounds.left - layer.maxExtent.left) / (res * layer.tileSize.w));
+    var y = Math.round((layer.maxExtent.top - bounds.top) / (res * layer.tileSize.h));
+    var z = layer.map.getZoom();
+    var limit = Math.pow(2, z);
+    if (y < 0 || y >= limit) {
+        return 'raster/none.png';
+    } else {
+        x = ((x % limit) + limit) % limit;
+        return layer.url + z + "/" + x + "/" + y + "." + layer.type;
     }
 }

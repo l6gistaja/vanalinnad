@@ -156,9 +156,8 @@ function vlMap(inputParams){
             && OpenLayers.Util.indexOf(visibleBaseLayers, layersTags[i].getAttribute('year')) < 0
           ) { continue; }
           layername = conf.tmslayerprefix + layersTags[i].getAttribute('year');
-          baseLayersData[layername] = vlUtils.createBaseLayerData(layersTags[i], {no: baseLayersCount});
+          baseLayersData[layername] = vlUtils.createBaseLayerData(layersTags[i], {no: baseLayersCount}, map);
           baseLayersCount++;
-          baseLayersData[layername].bounds = baseLayersData[layername].bounds.transform(map.displayProjection, map.projection);
           tmsoverlays[tmsoverlays.length] = new OpenLayers.Layer.TMS(
             layersTags[i].getAttribute('year'),
             "",
