@@ -18,6 +18,7 @@ function vlInitInfo(inputParams){
   var baseLayerData;
   var histBaseLayer;
   var mapTag = null;
+  var areaDir;
   
   function getSiteLbl() {
     baseURL = '?site=' + reqParams['site'];
@@ -90,7 +91,7 @@ function vlInitInfo(inputParams){
           mapMinZoom: mapMinZoom,
           mapMaxZoom: mapMaxZoom,
           emptyTiles: emptyTiles,
-          areaDir: reqParams['site'] + '/',
+          areaDir: areaDir,
           conf: conf
       });
   }
@@ -282,6 +283,7 @@ function vlInitInfo(inputParams){
       mapMinZoom = parseInt(vlUtils.getXmlValue(layerXml, 'minzoom'));
       mapMaxZoom = parseInt(vlUtils.getXmlValue(layerXml, 'maxzoom'));
       if(level == 'year') {
+        areaDir = reqParams['site'] + '/';
         l = 0;
         y = -1;
         for(i=0; i<links.length; i++) {
