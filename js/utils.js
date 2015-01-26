@@ -2,7 +2,6 @@ if (!vlUtils) {
     var vlUtils = {};
 }
 
-
 vlUtils.getXmlValue = function(xmlDocument, tagname) {
   index = (arguments.length > 2 ) ? arguments[2] : 0 ;
   tags = xmlDocument.getElementsByTagName(tagname);

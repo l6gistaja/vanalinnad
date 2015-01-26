@@ -248,20 +248,6 @@ function vlInitInfo(inputParams){
       // historical base layer
 
       if(mapTag != null) {
-        baseLayerData = vlUtils.createBaseLayerData(mapTag, {no: 0}, map);
-        histBaseLayer = new OpenLayers.Layer.TMS(
-          reqParams['year'],
-          "",
-          {
-            layername: conf.tmslayerprefix + reqParams['year'],
-            type: 'jpg',
-            getURL: overlay_getTileURL,
-            alpha: false,
-            isBaseLayer: true
-          }
-        );
-        map.addLayer(histBaseLayer);
-        vlUtils.addSwitcher(map);
         OpenLayers.Request.GET(requestConf['emptytiles']);
       }
 
@@ -272,6 +258,20 @@ function vlInitInfo(inputParams){
 
   function loadEmptyTilesData(request) {
       emptyTiles = (request.status == 200) ? JSON.parse(request.responseText) : {};
+      baseLayerData = vlUtils.createBaseLayerData(mapTag, {no: 0}, map);
+      histBaseLayer = new OpenLayers.Layer.TMS(
+        reqParams['year'],
+        "",
+        {
+          layername: conf.tmslayerprefix + reqParams['year'],
+          type: 'jpg',
+          getURL: overlay_getTileURL,
+          alpha: false,
+          isBaseLayer: true
+        }
+      );
+      map.addLayer(histBaseLayer);
+      vlUtils.addSwitcher(map);
   }
 
   function layerHandler(request) {
