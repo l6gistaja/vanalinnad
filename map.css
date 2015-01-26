@@ -41,3 +41,14 @@ html, body, #map {
   top: -12px;
 }
 
+#infoMap {
+    border: 1px solid;
+}
+
+body .bodyContent {
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+

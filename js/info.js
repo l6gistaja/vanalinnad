@@ -192,12 +192,12 @@ function vlInitInfo(inputParams){
 
       }
       
-      y += '<a name="bbox">'+vlUtils.link({u:requestConf.bbox.url, l:'BBox &amp; GCP'})+'</a><div id="map" style="height:400px;width:600px;"></div>';
+      y += '<a name="bbox">'+vlUtils.link({u:requestConf.bbox.url, l:'BBox &amp; GCP'})+'</a><div id="infoMap" style="height:400px;width:600px;"></div>';
       document.getElementById(inputParams.divHeader).innerHTML += getSiteLbl();
       document.getElementById(inputParams.divContent).innerHTML = y;
       document.getElementById(inputParams.divFooter).innerHTML = document.getElementById(inputParams.divHeader).innerHTML;
 
-      map = new OpenLayers.Map('map', {
+      map = new OpenLayers.Map('infoMap', {
         projection: new OpenLayers.Projection("EPSG:900913"),
         displayProjection: new OpenLayers.Projection("EPSG:4326"),
         units: "m",
