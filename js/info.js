@@ -169,7 +169,7 @@ function vlInitInfo(inputParams){
               + reqParams['site']
               + '/'
               + legends[i]
-              + '"/>';
+              + '" title="Legend"/>';
           }
         }
 
