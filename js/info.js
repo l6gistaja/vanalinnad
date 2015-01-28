@@ -272,7 +272,9 @@ function vlInitInfo(inputParams){
         }
       );
       map.addLayer(histBaseLayer);
-      vlUtils.addSwitcher(map);
+      var switcherControl = vlUtils.addSwitcher(map);
+      switcherControl.maximizeControl();
+      map.setBaseLayer(histBaseLayer);
   }
 
   function layerHandler(request) {
