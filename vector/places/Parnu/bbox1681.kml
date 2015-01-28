@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1681"><name>1681</name><LineString><coordinates>24.47919860276604,58.37881315108576 24.47919860276604,58.39416496769158 24.51318910496078,58.39416496769158 24.51318910496078,58.37881315108576 24.47919860276604,58.37881315108576</coordinates></LineString></Placemark>
+<Placemark id="gcp1681.1"><name>1681 #1</name><description>1180 1375</description><Point><coordinates>24.496115198469433,58.38373801376311</coordinates></Point></Placemark>
+<Placemark id="gcp1681.2"><name>1681 #2</name><description>1594 1378</description><Point><coordinates>24.50135087046656,58.3839517385018</coordinates></Point></Placemark>
+<Placemark id="gcp1681.3"><name>1681 #3</name><description>1466 1138</description><Point><coordinates>24.499441137647857,58.38558275306132</coordinates></Point></Placemark>
+<Placemark id="gcp1681.4"><name>1681 #4</name><description>1102 1179</description><Point><coordinates>24.49480332275315,58.38497992293804</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1686"><name>1686</name><LineString><coordinates>24.48313240640107,58.36749244949056 24.48313240640107,58.39454902056644 24.55008906405109,58.39454902056644 24.55008906405109,58.36749244949056 24.48313240640107,58.36749244949056</coordinates></LineString></Placemark>
+<Placemark id="gcp1686.1"><name>1686 #1</name><description>336 279</description><Point><coordinates>24.49261340469391,58.38695711053515</coordinates></Point></Placemark>
+<Placemark id="gcp1686.2"><name>1686 #2</name><description>756 307</description><Point><coordinates>24.503513902130805,58.38747449992192</coordinates></Point></Placemark>
+<Placemark id="gcp1686.3"><name>1686 #3</name><description>428 703</description><Point><coordinates>24.49623975128227,58.38198528649838</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.47919860276604,58.36749244949056,24.55008906405109,58.39454902056644</value></Data>
+<Data name="maps"><value>1686,1681</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1681/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
