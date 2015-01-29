@@ -1,2 +1,2 @@
-2015-01-29 21:48:49+02:00; 115 files; 1.2M ../raster/places/Rakvere/1889
-2015-01-29 21:48:54+02:00; 60 files; 916K ../raster/places/Rakvere/1889
+2015-01-29 22:09:59+02:00; 115 files; 1.3M ../raster/places/Rakvere/1889
+2015-01-29 22:10:04+02:00; 59 files; 1.1M ../raster/places/Rakvere/1889
