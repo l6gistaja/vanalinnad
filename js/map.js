@@ -260,7 +260,7 @@ function vlMap(inputParams){
     vectorLayersCtl.activate();
 
     var switcherControl = vlUtils.addSwitcher(map);
-    switcherControl.maximizeControl();
+    if(isAtSite) { switcherControl.maximizeControl(); }
 
     map.addControl(new OpenLayers.Control.PanZoomBar());
     //map.addControl(new OpenLayers.Control.MousePosition());
