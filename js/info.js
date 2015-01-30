@@ -66,7 +66,8 @@ function vlInitInfo(inputParams){
         emptytiles: {
            url: conf.dirvector
              + conf.dirplaces
-             + reqParams['site'] + '/empty.json',
+             + reqParams['site'] + '/'
+             + conf.fileemptytiles,
            callback: loadEmptyTilesData
         }
       };
