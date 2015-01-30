@@ -1,0 +1,10 @@
+<vanalinnadlayers xmlns="http://juks.alkohol.ee/vanalinnad">
+  <bounds>26.94680508482802,57.80657925637665,27.06169665915002,57.87500391694799</bounds>
+  <city>Võru</city>
+  <country>Estonia</country>
+  <layer bounds="26.94699168373746,57.80657925637665,27.06169665915002,57.87503658873872" type="tms" year="1971" />
+  <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
+  <layer name="&amp;#9316; 1" file="roads4min.kml" maxres="13" type="roads" />
+  <maxzoom>16</maxzoom>
+  <minzoom>12</minzoom>
+</vanalinnadlayers>

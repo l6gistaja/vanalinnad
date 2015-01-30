@@ -56,5 +56,12 @@
         <coordinates>25.595892132263483,58.36354098379499</coordinates>
       </Point>
     </Placemark>
+    <Placemark>
+      <name>Voru</name>
+      <description>Võru</description>
+      <Point>
+        <coordinates>27.005887338876786,57.842473782023994</coordinates>
+      </Point>
+    </Placemark>
   </Document>
 </kml>

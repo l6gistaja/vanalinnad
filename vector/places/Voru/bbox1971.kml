@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1971.k1"><name>1971.k1</name><LineString><coordinates>26.94699168373746,57.82383465792027 26.94699168373746,57.87503658873872 27.04212468375973,57.87503658873872 27.04212468375973,57.82383465792027 26.94699168373746,57.82383465792027</coordinates></LineString></Placemark>
+<Placemark id="gcp1971.k1.1"><name>1971.k1 #1</name><description>716 372</description><Point><coordinates>26.98054316116282,57.85735688475967</coordinates></Point></Placemark>
+<Placemark id="gcp1971.k1.2"><name>1971.k1 #2</name><description>575 1596</description><Point><coordinates>27.00207692596404,57.83243447114503</coordinates></Point></Placemark>
+<Placemark id="gcp1971.k1.3"><name>1971.k1 #3</name><description>1159 1358</description><Point><coordinates>27.017698111266366,57.843685358230026</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1971.k2"><name>1971.k2</name><LineString><coordinates>26.97165369195239,57.80657925637665 26.97165369195239,57.85200209046270 27.06169665915002,57.85200209046270 27.06169665915002,57.80657925637665 26.97165369195239,57.80657925637665</coordinates></LineString></Placemark>
+<Placemark id="gcp1971.k2.1"><name>1971.k2 #1</name><description>448 784</description><Point><coordinates>27.003192724915618,57.82346551214218</coordinates></Point></Placemark>
+<Placemark id="gcp1971.k2.2"><name>1971.k2 #2</name><description>964 955</description><Point><coordinates>27.02417832824777,57.82600218294394</coordinates></Point></Placemark>
+<Placemark id="gcp1971.k2.3"><name>1971.k2 #3</name><description>971 12</description><Point><coordinates>27.004651846619865,57.84309149061188</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>26.94699168373746,57.80657925637665,27.06169665915002,57.87503658873872</value></Data>
+<Data name="maps"><value>1971.k1,1971.k2</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Voru/composed/1971/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
