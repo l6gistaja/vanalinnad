@@ -4,6 +4,7 @@
   <country>Estonia</country>
   <layer bounds="26.94699168373746,57.80657925637665,27.06169665915002,57.87503658873872" type="tms" year="1971" />
   <layer bounds="26.96198078897124,57.80866081939967,27.03648577006103,57.86566400931762" type="tms" year="1950" />
+  <layer bounds="26.96522111144820,57.81900729726915,27.04193066786461,57.85498338609634" type="tms" year="1936" />
   <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
   <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="14" type="roads" />
   <maxzoom>16</maxzoom>
