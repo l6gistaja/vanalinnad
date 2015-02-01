@@ -1,0 +1,2 @@
+2015-02-01 15:08:41+02:00; 227 files; 1.5M ../raster/places/Voru/1850
+2015-02-01 15:08:49+02:00; 88 files; 920K ../raster/places/Voru/1850
