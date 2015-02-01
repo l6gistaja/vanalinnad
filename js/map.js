@@ -374,6 +374,8 @@ function vlMap(inputParams){
       map.addControl(click);
       click.activate();
     }
+
+    if(isAtSite) { window.document.title += ': ' + vlUtils.getXmlValue(layersXml, 'city'); }
   }
 
   var htmlSites = function(s) {

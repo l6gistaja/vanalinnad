@@ -135,7 +135,7 @@ function vlInitInfo(inputParams){
 
   function rssHandler(request) {
     if(request.status == 200) {
-
+      window.document.title += ' ' + reqParams['year'];
       rssXml = request.responseXML;
       y = '';
       items = rssXml.getElementsByTagName('item');
@@ -283,6 +283,7 @@ function vlInitInfo(inputParams){
     if(request.status == 200) {
       layerXml = request.responseXML;
       siteName = vlUtils.getXmlValue(layerXml, 'city');
+      window.document.title += ': ' + siteName;
       links = layerXml.getElementsByTagName('layer');
       mapMinZoom = parseInt(vlUtils.getXmlValue(layerXml, 'minzoom'));
       mapMaxZoom = parseInt(vlUtils.getXmlValue(layerXml, 'maxzoom'));
