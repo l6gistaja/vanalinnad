@@ -1,21 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?>
 <vanalinnadlayers xmlns="http://juks.alkohol.ee/vanalinnad">
-<country>Estonia</country>
-<city>Tartu</city>
-<minzoom>12</minzoom>
-<maxzoom>16</maxzoom>
-<!-- OpenLayers bounds are in order W,S,E,N -->
-<bounds>26.65583991678161,58.33714636136231,26.79297546665623,58.40912076248009</bounds>
-<layer type="tms" year="1978" bounds="26.65583991678161,58.33714636136231,26.79297546665623,58.40912076248009"/>
-<layer type="tms" year="1941" bounds="26.6836820096,58.352651254,26.7566518485,58.3999353387"/>
-<layer type="tms" year="1925" bounds="26.63642924289191,58.33881033749330,26.80838793293961,58.40076194227137"/>
-<layer type="tms" year="1910" bounds="26.68938945,58.3558547708,26.7710662752,58.3996702758"/>
-<layer type="tms" year="1904" bounds="26.7017056227,58.3642386828,26.7674772909,58.3969619942"/>
-<!-- layer type="tms" year="1900" bounds="26.69581599753869,58.36473816238860,26.76005130638587,58.39767081844209"/ -->
-<layer type="tms" year="1889" bounds="26.6990457892,58.3663925916,26.768748234,58.397820034"/>
-<layer type="tms" year="1837" bounds="26.6944627345,58.3626810999,26.7631859183,58.3957838691"/>
-<layer type="tms" year="1767" bounds="26.70306165880038,58.36726786910218,26.74996480984558,58.39250307826137"/>
-<layer type="tms" year="1696" bounds="26.705465761,58.3678785545,26.7384989565,58.3880951553"/>
-<layer type="roads" name="&amp;#9316; 1" file="roads3min.kml" maxres="12"/>
-<layer type="roads" name="&amp;#9316; 2" file="roads4min.kml" maxres="15"/>
+  <bounds>26.65583991678161,58.33714636136231,26.79297546665623,58.40912076248009</bounds>
+  <city>Tartu</city>
+  <country>Estonia</country>
+  <layer bounds="26.65583991678161,58.33714636136231,26.79297546665623,58.40912076248009" type="tms" year="1978" />
+  <layer bounds="26.6836820096,58.352651254,26.7566518485,58.3999353387" type="tms" year="1941" />
+  <layer bounds="26.63642924289191,58.33881033749330,26.80838793293961,58.40076194227137" type="tms" year="1925" />
+  <layer bounds="26.68938945,58.3558547708,26.7710662752,58.3996702758" type="tms" year="1910" />
+  <layer bounds="26.7017056227,58.3642386828,26.7674772909,58.3969619942" type="tms" year="1904" />
+  <layer bounds="26.6990457892,58.3663925916,26.768748234,58.397820034" type="tms" year="1889" />
+  <layer bounds="26.68157140785741,58.32998013032425,26.76318591834610,58.39578386911514" type="tms" year="1837" />
+  <layer bounds="26.70306165880038,58.36726786910218,26.74996480984558,58.39250307826137" type="tms" year="1767" />
+  <layer bounds="26.705465761,58.3678785545,26.7384989565,58.3880951553" type="tms" year="1696" />
+  <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
+  <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="15" type="roads" />
+  <maxzoom>16</maxzoom>
+  <minzoom>12</minzoom>
 </vanalinnadlayers>

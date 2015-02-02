@@ -2,10 +2,25 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox"><name></name><LineString><coordinates>26.6944627345,58.3626810999 26.6944627345,58.3957838691 26.7631859183,58.3957838691 26.7631859183,58.3626810999 26.6944627345,58.3626810999</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>744 160</description><Point><coordinates>26.708034780426,58.386279093065546</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>1334 319</description><Point><coordinates>26.7194502619937,58.391362774762506</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>151 1863</description><Point><coordinates>26.73441698829706,58.367692676411046</coordinates></Point></Placemark>
+<Placemark id="bbox.1837"><name>1837</name><LineString><coordinates>26.69446273450053,58.36268109990377 26.69446273450053,58.39578386911514 26.76318591834610,58.39578386911514 26.76318591834610,58.36268109990377 26.69446273450053,58.36268109990377</coordinates></LineString></Placemark>
+<Placemark id="gcp1837.1"><name>1837 #1</name><description>744 160</description><Point><coordinates>26.708034780426,58.386279093065546</coordinates></Point></Placemark>
+<Placemark id="gcp1837.2"><name>1837 #2</name><description>1334 319</description><Point><coordinates>26.7194502619937,58.391362774762506</coordinates></Point></Placemark>
+<Placemark id="gcp1837.3"><name>1837 #3</name><description>151 1863</description><Point><coordinates>26.73441698829706,58.367692676411046</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1841.Soinaste"><name>1841.Soinaste</name><LineString><coordinates>26.68157140785741,58.32998013032425 26.68157140785741,58.35331545841535 26.75790242815150,58.35331545841535 26.75790242815150,58.32998013032425 26.68157140785741,58.32998013032425</coordinates></LineString></Placemark>
+<Placemark id="gcp1841.Soinaste.1"><name>1841.Soinaste #1</name><description>991 359</description><Point><coordinates>26.714444187775197,58.34336142746163</coordinates></Point></Placemark>
+<Placemark id="gcp1841.Soinaste.2"><name>1841.Soinaste #2</name><description>2221 807</description><Point><coordinates>26.755257172798363,58.3398363774666</coordinates></Point></Placemark>
+<Placemark id="gcp1841.Soinaste.3"><name>1841.Soinaste #3</name><description>958 648</description><Point><coordinates>26.714874243165006,58.33849371873274</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>26.68157140785741,58.32998013032425,26.76318591834610,58.39578386911514</value></Data>
+<Data name="maps"><value>1837,1841.Soinaste</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1837/</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
