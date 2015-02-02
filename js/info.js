@@ -330,7 +330,7 @@ function vlInitInfo(inputParams){
       for(i=0; i<placemarks.length; i++) {
         name = vlUtils.getXmlValue(placemarks[i], 'name');
         descr = vlUtils.getXmlValue(placemarks[i], 'description');
-        y +=  '<li>' + vlUtils.link({u:'?site=' + name, l:descr != '' ? descr : name}) + '</li>';
+        y +=  '<li>' + vlUtils.link({u:'?site=' + (descr != '' ? descr : name), l:name}) + '</li>';
       }
       y += '</ol>';
       document.getElementById(inputParams.divContent).innerHTML = y;

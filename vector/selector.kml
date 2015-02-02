@@ -26,8 +26,8 @@
       </Point>
     </Placemark>
     <Placemark>
-      <name>Parnu</name>
-      <description>Pärnu</description>
+      <name>Pärnu</name>
+      <description>Parnu</description>
       <Point>
         <coordinates>24.496625365124014,58.38583746340555</coordinates>
       </Point>
@@ -57,8 +57,8 @@
       </Point>
     </Placemark>
     <Placemark>
-      <name>Voru</name>
-      <description>Võru</description>
+      <name>Võru</name>
+      <description>Voru</description>
       <Point>
         <coordinates>27.005887338876786,57.842473782023994</coordinates>
       </Point>
