@@ -2,6 +2,7 @@
   <bounds>26.94680508482802,57.80657925637665,27.06169665915002,57.87500391694799</bounds>
   <city>Võru</city>
   <country>Estonia</country>
+  <url_ajapaik>{"h":"Ajapaik.ee", "l":"Ajapaik", "t":"_blank", "U":"http://ajapaik.ee/map/?area=12&amp;lat=@Y@&amp;lng=@X@&amp;zoom=@Z@"}</url_ajapaik>
   <layer bounds="26.94699168373746,57.80657925637665,27.06169665915002,57.87503658873872" type="tms" year="1971" />
   <layer bounds="26.96198078897124,57.80866081939967,27.03648577006103,57.86566400931762" type="tms" year="1950" />
   <layer bounds="26.96522111144820,57.81900729726915,27.04193066786461,57.85498338609634" type="tms" year="1936" />

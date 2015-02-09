@@ -300,11 +300,22 @@ function vlInitInfo(inputParams){
         years[0] = links[y < 1 ? l - 1 : y - 1].getAttribute('year');
         years[1] = links[y > l - 2 ? 0 : y + 1].getAttribute('year');
         OpenLayers.Request.GET(requestConf['year']);
-      } else {
+      } else { 
+        var bbx = vlUtils.getXmlValue(layerXml, 'bounds').split(',');
+        var locData = {
+          X: (parseFloat(bbx[0]) + parseFloat(bbx[2])) / 2,
+          Y: (parseFloat(bbx[1]) + parseFloat(bbx[3])) / 2,
+          Z: vlUtils.getXmlValue(layerXml, 'minzoom'),
+          T: vlUtils.getXmlValue(layerXml, 'city'),
+          C: vlUtils.getXmlValue(layerXml, 'country')
+        };        
+        var urlData = [vlUtils.mergeHashes(JSON.parse(conf.url_wikipedia), locData)];
+        var ajapaik = vlUtils.getXmlValue(layerXml, 'url_ajapaik');
+        if(ajapaik != '') { urlData[urlData.length] = vlUtils.mergeHashes(JSON.parse(ajapaik), locData); }
         y = '<br/>' 
-          + vlUtils.link({u:'index.html?site=' + reqParams['site'], l:siteName}) + ' ('
-          + vlUtils.link({u:'http://et.wikipedia.org/wiki/' + siteName, l:'Wikipedia'})
-          + ')<ol>';
+          + vlUtils.link({u:'index.html?site=' + reqParams['site'], l:siteName}) + ' ( '
+          + vlUtils.links(urlData)
+          + ' )<ol>';
         for(i=0; i<links.length; i++) {
           if(links[i].getAttribute('disabled') || links[i].getAttribute('year') == null){ continue; }
           y += '<li>' + vlUtils.link({

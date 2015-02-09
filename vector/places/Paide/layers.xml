@@ -2,6 +2,7 @@
   <bounds>25.49761624209207,58.86124986051747,25.61608275165267,58.91263308274196</bounds>
   <city>Paide</city>
   <country>Estonia</country>
+  <url_ajapaik>{"h":"Ajapaik.ee", "l":"Ajapaik", "t":"_blank", "U":"http://ajapaik.ee/map/?area=9&amp;lat=@Y@&amp;lng=@X@&amp;zoom=@Z@"}</url_ajapaik>
   <layer bounds="25.49711857837931,58.86118540266647,25.61572943302349,58.91260548044265" type="tms" year="1974" />
   <layer bounds="25.53685615001302,58.87401660420738,25.57766848665606,58.89695008226006" type="tms" year="1939" />
   <layer bounds="25.49138166426435,58.86294437795986,25.62915874003423,58.94250338547050" type="tms" year="1925" />

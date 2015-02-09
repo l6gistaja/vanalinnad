@@ -16,4 +16,6 @@
 <regexyearmatcher>^\d+[A-Za-z]{0,2}$</regexyearmatcher>
 <tmslayerprefix>tms_</tmslayerprefix>
 <infourlprefix>info.html?</infourlprefix>
+<url_googlestreetview>{"h":"Google Street View", "l":"StreetView", "t":"_blank", "U":"https://maps.google.com/maps?cbp=0,0,0,0,0&amp;layer=c&amp;cbll=@Y@,@X@&amp;z=@Z@&amp;q=@S@, @T@, @C@"}</url_googlestreetview>
+<url_wikipedia>{"l":"Wikipedia", "t":"_blank", "U":"http://et.wikipedia.org/wiki/@T@"}</url_wikipedia>
 </vanalinnadconf>

@@ -2,6 +2,7 @@
   <bounds>23.48405131667638,58.90388737412488,23.58983102491678,58.96303240448135</bounds>
   <city>Haapsalu</city>
   <country>Estonia</country>
+  <url_ajapaik>{"h":"Ajapaik.ee", "l":"Ajapaik", "t":"_blank", "U":"http://ajapaik.ee/map/?area=14&amp;lat=@Y@&amp;lng=@X@&amp;zoom=@Z@"}</url_ajapaik>
   <layer bounds="23.48405131667638,58.90388737412488,23.58983102491678,58.96303240448135" type="tms" year="1966" />
   <layer bounds="23.5069357762,58.9332124281,23.5596751872,58.9630056789" type="tms" year="1941" />
   <layer bounds="23.46099124927495,58.90188573631474,23.57953361833478,58.96693311340418" type="tms" year="1924" />

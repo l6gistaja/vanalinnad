@@ -2,6 +2,7 @@
   <bounds>26.65583991678161,58.33714636136231,26.79297546665623,58.40912076248009</bounds>
   <city>Tartu</city>
   <country>Estonia</country>
+  <url_ajapaik>{"h":"Ajapaik.ee", "l":"Ajapaik", "t":"_blank", "U":"http://ajapaik.ee/map/?area=2&amp;lat=@Y@&amp;lng=@X@&amp;zoom=@Z@"}</url_ajapaik>
   <layer bounds="26.65583991678161,58.33714636136231,26.79297546665623,58.40912076248009" type="tms" year="1978" />
   <layer bounds="26.6836820096,58.352651254,26.7566518485,58.3999353387" type="tms" year="1941" />
   <layer bounds="26.63642924289191,58.33881033749330,26.80838793293961,58.40076194227137" type="tms" year="1925" />

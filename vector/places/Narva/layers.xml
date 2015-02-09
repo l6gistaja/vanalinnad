@@ -2,6 +2,7 @@
   <bounds>28.1232125207,59.3349152344,28.2387125802,59.4144542103</bounds>
   <city>Narva</city>
   <country>Estonia</country>
+  <url_ajapaik>{"h":"Ajapaik.ee", "l":"Ajapaik", "t":"_blank", "U":"http://ajapaik.ee/map/?area=5&amp;lat=@Y@&amp;lng=@X@&amp;zoom=@Z@"}</url_ajapaik>
   <layer bounds="28.13793745904866,59.34250266567732,28.21556187475191,59.40737003336280" type="tms" year="1964" />
   <layer bounds="28.1518188966,59.3439598218,28.2387125802,59.3985713122" type="tms" year="1943" />
   <layer bounds="28.1232125207,59.3357105316,28.2383796861,59.412726653" type="tms" year="1940" />

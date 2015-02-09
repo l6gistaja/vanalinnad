@@ -2,6 +2,7 @@
   <bounds>24.5945390309,59.334869421,24.9777576321,59.5422156874</bounds>
   <city>Tallinn</city>
   <country>Estonia</country>
+  <url_ajapaik>{"h":"Ajapaik.ee", "l":"Ajapaik", "t":"_blank", "U":"http://ajapaik.ee/map/?area=1&amp;lat=@Y@&amp;lng=@X@&amp;zoom=@Z@"}</url_ajapaik>
   <layer bounds="24.5940904565,59.3345396753,24.978127996,59.5426872437" type="tms" year="1968" />
   <layer bounds="24.6651536414,59.3932688183,24.8575659835,59.4740931126" type="tms" year="1957" />
   <layer bounds="24.645088278,59.39994761,24.8432692192,59.4772931356" type="tms" year="1940" />

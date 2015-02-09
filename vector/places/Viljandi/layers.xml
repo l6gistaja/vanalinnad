@@ -2,6 +2,7 @@
   <bounds>25.53058400968398,58.31977549612473,25.65006511447886,58.39315709584433</bounds>
   <city>Viljandi</city>
   <country>Estonia</country>
+  <url_ajapaik>{"h":"Ajapaik.ee", "l":"Ajapaik", "t":"_blank", "U":"http://ajapaik.ee/map/?area=4&amp;lat=@Y@&amp;lng=@X@&amp;zoom=@Z@"}</url_ajapaik>
   <layer bounds="25.53183904900284,58.32112209656304,25.65035228469729,58.39293590781561" type="tms" year="1966" />
   <layer bounds="25.56681767042937,58.35323958141758,25.62500716225430,58.37818236331402" type="tms" year="1940" />
   <layer bounds="25.56521714915300,58.33834849926578,25.63415803173989,58.38430757356591" type="tms" year="1926" />

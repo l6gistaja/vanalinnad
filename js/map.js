@@ -225,21 +225,24 @@ function vlMap(inputParams){
         var clickXYg = map.getLonLatFromPixel(vectorLayersCtl.handlers.feature.evt.xy);
         var clickXY = new OpenLayers.LonLat(clickXYg.lon, clickXYg.lat);
         clickXYg.transform(map.options.projection, map.options.displayProjection);
+        var locData = {
+          X: clickXYg.lon,
+          Y: clickXYg.lat,
+          Z: map.getZoom(),
+          S: feature.attributes.name,
+          T: vlUtils.getXmlValue(layersXml, 'city'),
+          C: vlUtils.getXmlValue(layersXml, 'country')
+        };        
+        var urlData = [vlUtils.mergeHashes(JSON.parse(conf.url_googlestreetview), locData)];
+        var ajapaik = vlUtils.getXmlValue(layersXml, 'url_ajapaik');
+        if(ajapaik != '') { urlData[urlData.length] = vlUtils.mergeHashes(JSON.parse(ajapaik), locData); }
 
         feature.popup = new OpenLayers.Popup.FramedCloud (
             "roadPopup",
             new OpenLayers.LonLat(clickXY.lon, clickXY.lat),
             null,
             feature.layer.getOptions().layername.substr(0,6) == 'roads_'
-              ? vlUtils.link({
-                t: '_blank',
-                h: 'Google Street View',
-                l: feature.attributes.name,
-                u: 'https://maps.google.com/maps?cbp=0,0,0,0,0&layer=c&cbll='
-                  + clickXYg.lat + ',' + clickXYg.lon + '&z=' + map.getZoom()
-                  + '&q=' + feature.attributes.name + ', ' + vlUtils.getXmlValue(layersXml, 'city')
-                  + ', ' + vlUtils.getXmlValue(layersXml, 'country')
-              })
+              ? '<strong>' + feature.attributes.name +'</strong><br />' + vlUtils.links(urlData)
               : feature.attributes.name,
             null,
             true,

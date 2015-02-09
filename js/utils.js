@@ -76,11 +76,59 @@ vlUtils.coordsPrompt = function(map) {
   });
 }
 
+/**
+  * Create HTML link
+  *
+  * Keys in data:
+  *
+  * u : URL
+  * t : HTML target
+  * h : HTML title
+  * l : link text (default: u)
+  *
+  * @param {hash} data
+  * @returns string HTML link
+  */
 vlUtils.link = function(data) {
   return '<a href="' + data.u + '"'
     + ('t' in data ? ' target="' + data.t + '"' : '')
     + ('h' in data ? ' title="' + data.h + '"' : '')
     + '>' + ('l' in data ? data.l : data.u)  + '</a>';
+}
+
+/**
+  * Create HTML of links
+  *
+  * Keys in data[x] are the same as in vlUtils.link. Additionally:
+  *
+  * U : URL template
+  * X : x, longitude
+  * Y : y, latitude
+  * Z : zoom level
+  * C : country
+  * T : town or city
+  * S : street
+  *
+  * @param {hash[]} data
+  * @returns string of HTML links
+  */
+vlUtils.links = function(data) {
+  var y = '';
+  var l = data.length;
+  for(var i = 0; i < l; i++) {
+    data[i].u = data[i].U;
+    for(var k in data[i]) {
+      if(k.charCodeAt(0) < 67) { continue; } 
+      data[i].u = data[i].u.replace('@' + k + '@', data[i][k]); 
+    }
+    y += ((y == '') ? '' : ' | ') + vlUtils.link(data[i]);
+  }
+  return y;
+}
+
+vlUtils.mergeHashes = function(h0, h1) {
+  for(k in h1) { h0[k] = h1[k]; }
+  return h0;
 }
 
 vlUtils.addSwitcher = function(map) {
