@@ -2,7 +2,6 @@
   <bounds>24.5945390309,59.334869421,24.9777576321,59.5422156874</bounds>
   <city>Tallinn</city>
   <country>Estonia</country>
-  <url_ajapaik>{"h":"Ajapaik.ee", "l":"Ajapaik", "t":"_blank", "U":"http://ajapaik.ee/map/?area=1&amp;lat=@Y@&amp;lng=@X@&amp;zoom=@Z@"}</url_ajapaik>
   <layer bounds="24.5940904565,59.3345396753,24.978127996,59.5426872437" type="tms" year="1968" />
   <layer bounds="24.6651536414,59.3932688183,24.8575659835,59.4740931126" type="tms" year="1957" />
   <layer bounds="24.645088278,59.39994761,24.8432692192,59.4772931356" type="tms" year="1940" />
@@ -17,7 +16,7 @@
   <layer bounds="24.6748133776,59.4001232571,24.8154975694,59.462181768" type="tms" year="1901" />
   <layer bounds="24.7093546653,59.4123398996,24.8093775608,59.4548343182" type="tms" year="1885" />
   <layer bounds="24.62492010816182,59.37488893538811,24.88145020715426,59.46194674033583" type="tms" year="1865c" />
-  <layer bounds="24.6007759348,59.3821404792,24.8798753511,59.4837665869" type="tms" year="1865" />
+  <layer bounds="24.60077593484253,59.38214047921841,24.87987535111836,59.48376658687961" type="tms" year="1865" />
   <layer bounds="24.66123953948447,59.38856573073566,24.84309560224416,59.46748381521798" type="tms" year="1856" />
   <layer bounds="24.71821727882618,59.42236856240336,24.77886380142179,59.44371675852125" type="tms" year="1842" />
   <layer bounds="24.71194767666576,59.42273803493904,24.80548438925663,59.45553713868084" type="tms" year="1827" />
@@ -30,4 +29,5 @@
   <layer name="&amp;#9316; 4" file="roads4min.kml" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>10</minzoom>
+  <url_ajapaik>{&quot;h&quot;:&quot;Ajapaik.ee&quot;, &quot;l&quot;:&quot;Ajapaik&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://ajapaik.ee/map/?area=1&amp;lat=@Y@&amp;lng=@X@&amp;zoom=@Z@&quot;}</url_ajapaik>
 </vanalinnadlayers>
