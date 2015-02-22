@@ -7,22 +7,42 @@ use File::Fetch;
 use POSIX ();
 use File::Path qw(make_path);
 
-%self = qw(workPath ./cache/dezoomify/ resultFile result.jpg zoomifyXML ImageProperties.xml zoomifyExt .jpg downloadLock downloadlock.xml tileFile tiles.txt partPrefix c);
+$t0 = time();
+%self = qw(
+    workPath ./cache/dezoomify/
+    resultFile result.jpg
+    zoomifyXML ImageProperties.xml
+    zoomifyExt .jpg 
+    downloadLock downloadlock.xml
+    tileFile tiles.txt
+    partPrefix column
+);
 
-getopt('u:wsz', \%opts);
+getopt('u:wszpr', \%opts);
 if(!exists $opts{'u'}) {
   print <<EndUsage;
-Usage: dezoomify.pl -u ... [-w ...] [-s] [-z ...]
+
+Usage: dezoomify.pl -u ... [-w ...] [-s] [-z #] [-p ...] [-r #]
 
 -u : on webpage, which contains Zoomify applet, open page source. URL for -u can be copied from variable zoomifyImagePath.
 -w : working directory, to which Zoomify tiles will be downloaded and where result file ($self{resultFile}) will be composed.
      Optional, default value is '$self{workPath}'.
 -s : show statistics instead processing, useful for finding appropriate zoom level (-z flag).
 -z : zoom level number, see -s flag. Default: maximum zoom.
+-p : if exists, only given parts of script will run: 'd' - download, 'm' - merging (already downloaded) tiles.
+-r : percentage of tiles resize before final merger (0 < integer < 100).
+
 Translated to Perl from dezoomify 1.4's dezoomify.py, comments with beginning ## are from there.
 See: http://sourceforge.net/projects/dezoomify/
-Dependency: ImageMagick's convert.
-NB! Maximum zoomlevel might not be reasonable choice, as machine might run out of memory while trying to merge very large tilesets.
+Needs ImageMagick's convert for tile merging.
+
+Example: running 'dezoomify.pl -u http://site.org/zoomifygal/' might run out of memory while trying to merge tiles
+at default maximum zoomlevel. There are 2 alternatives:
+1) Run statstics 'dezoomify.pl -u http://site.org/zoomifygal/ -s', if max zoom level is for ex. 7, try lower zoomlevels:
+'dezoomify.pl -u http://site.org/zoomifygal/ -z 6'.
+2) Try to resize tiles before final merger, for ex. changing height & width to 50% reduces merger (and result) size 4x:
+'dezoomify.pl -u http://site.org/zoomifygal/ -p m -r 50'.
+
 EndUsage
   exit;
 }
@@ -71,8 +91,6 @@ while(true) {
 ## make the 0th level the smallest zoom, and higher levels, higher zoom
 @levels = reverse(@levels);
 
-# TODO: here, only max zoom is supported
-# original dezoomify.py allows user to specify desired zoomlevel
 $self{'max_zoom'} = scalar(@levels) - 1;
 $show_stats = exists $opts{'s'};
 if(exists $opts{'z'}) {
@@ -103,45 +121,78 @@ $self{'maxy_tiles'} = 0 + $levels[scalar(@levels) - 1][1];
 $self{'x_tiles'} = 0 + $levels[$self{'zoom_level'}][0];
 $self{'y_tiles'} = 0 + $levels[$self{'zoom_level'}][1];
 
-$levelIndexIncrement = 0;
-for($i = 0; $i < $self{'zoom_level'}; $i++) {
-    $levelIndexIncrement += POSIX::ceil(POSIX::floor($self{'width'} / 2 ** ($self{'max_zoom'} - $i)) / $self{'tile_size'}) *
-              POSIX::ceil(POSIX::floor($self{'height'} / 2 ** ($self{'max_zoom'} - $i)) / $self{'tile_size'});
-}
+# DOWNLOAD
+if(!exists $opts{'p'} || $opts{'p'} =~ /d/) {
 
-# download
-unlink glob($self{'workPath'}.'*-*'.$self{'zoomifyExt'});
-for($x = 0; $x < $self{'x_tiles'}; $x++) {
-    for($y = 0; $y < $self{'y_tiles'}; $y++) {
-        $tile_index = $x + $y * POSIX::ceil(POSIX::floor($self{'width'} / 2 ** ($self{'max_zoom'} - $self{'zoom_level'})) / $self{'tile_size'});
-        $tile_index = POSIX::floor(($tile_index + $levelIndexIncrement) / $self{'tile_size'});
-        ## Return the full URL of an image at a given position in the Zoomify structure.
-        $filename = $self{'zoom_level'}.'-'.$x.'-'.$y.$self{'zoomifyExt'};
-        $url = $self{'zoomifyURL'}.'TileGroup'.$tile_index.'/'.$filename;
-        print $url."\n";
-        $ff = File::Fetch->new(uri => $url);
-        $where = $ff->fetch('to' => $self{'workPath'}) or die $ff->error;
-        rename($self{'workPath'}.$filename, $self{'workPath'}.$x.'-'.$y.$self{'zoomifyExt'});
+    print "\nDOWNLOADING TILES\n\n";
+
+    $levelIndexIncrement = 0;
+    $totalSize = 0;
+    for($i = 0; $i < $self{'zoom_level'}; $i++) {
+        $levelIndexIncrement += POSIX::ceil(POSIX::floor($self{'width'} / 2 ** ($self{'max_zoom'} - $i)) / $self{'tile_size'}) *
+                  POSIX::ceil(POSIX::floor($self{'height'} / 2 ** ($self{'max_zoom'} - $i)) / $self{'tile_size'});
     }
+
+    unlink glob($self{'workPath'}.'*-*'.$self{'zoomifyExt'});
+    for($x = 0; $x < $self{'x_tiles'}; $x++) {
+        for($y = 0; $y < $self{'y_tiles'}; $y++) {
+            $tile_index = $x + $y * POSIX::ceil(POSIX::floor($self{'width'} / 2 ** ($self{'max_zoom'} - $self{'zoom_level'})) / $self{'tile_size'});
+            $tile_index = POSIX::floor(($tile_index + $levelIndexIncrement) / $self{'tile_size'});
+            ## Return the full URL of an image at a given position in the Zoomify structure.
+            $filename = $self{'zoom_level'}.'-'.$x.'-'.$y.$self{'zoomifyExt'};
+            $url = $self{'zoomifyURL'}.'TileGroup'.$tile_index.'/'.$filename;
+            print $url."\n";
+            $ff = File::Fetch->new(uri => $url);
+            $where = $ff->fetch('to' => $self{'workPath'}) or die $ff->error;
+            @fs = stat($self{'workPath'}.$filename);
+            $totalSize += $fs[7];
+            rename($self{'workPath'}.$filename, $self{'workPath'}.$x.'-'.$y.$self{'zoomifyExt'});
+        }
+    }
+
+    print "Downloaded ".($totalSize >> 20)." MB, $self{width} x $self{height} px, $self{x_tiles} x $self{y_tiles} tiles.\n";
+    $xml->XMLout(\%self, RootName => 'dezoomifyvars', OutputFile => $self{'workPath'}.$self{'downloadLock'});
 }
 
-$xml->XMLout(\%self, RootName => 'dezoomifyvars', OutputFile => $self{'workPath'}.$self{'downloadLock'});
+# TILE MERGING
+if(!exists $opts{'p'} || $opts{'p'} =~ /m/) {
 
-print "Composing columns :";
-for($x = 0; $x < $self{'x_tiles'}; $x++) {
+    print "\nMERGING TILES\n\n";
+
+    $resize = 0;
+    if(exists $opts{'r'}) {
+      if($opts{'r'} =~ /^[1-9]\d*$/) {
+          $resize = 0 + $opts{'r'};
+          print "Resizing $opts{r}%.\n";
+      } else {
+          print "Will not resize, -r flag should be positive integer, not '$opts{r}'!\n";
+      }
+    }
+
+    print "Composing columns :";
+    for($x = 0; $x < $self{'x_tiles'}; $x++) {
+        $filename = $self{'workPath'}.$self{'partPrefix'}.$x.$self{'zoomifyExt'};
+        $cmd = 'convert';
+        for($y = 0; $y < $self{'y_tiles'}; $y++) {
+            $cmd .= ' '.$self{'workPath'}.$x.'-'.$y.$self{'zoomifyExt'};
+        }
+        print ' '.$x;
+        system($cmd.' -append '.$filename);
+        if($resize) {
+            $fileresize = $self{'workPath'}.$self{'partPrefix'}.'_resize'.$self{'zoomifyExt'};
+            system("convert $filename -resize $resize% $fileresize");
+            rename($fileresize, $filename);
+        }
+    }
+
+    $result = $self{'workPath'}.$self{'resultFile'};
+    print "\nMerging columns into result image @ $result\n";
     $cmd = 'convert';
-    for($y = 0; $y < $self{'y_tiles'}; $y++) {
-        $cmd .= ' '.$self{'workPath'}.$x.'-'.$y.$self{'zoomifyExt'};
+    for($x = 0; $x < $self{'x_tiles'}; $x++) {
+        $cmd .= ' '.$self{'workPath'}.$self{'partPrefix'}.$x.$self{'zoomifyExt'};
     }
-    print ' '.$x;
-    system($cmd . ' -append '.$self{'workPath'}.$self{'partPrefix'}.$x.$self{'zoomifyExt'});
+    system($cmd . ' +append '.$result);
+    unlink glob($self{'workPath'}.$self{'partPrefix'}.'*'.$self{'zoomifyExt'});
 }
 
-$result = $self{'workPath'}.$self{'resultFile'};
-print "\nMerging columns into result image @ $result\n";
-$cmd = 'convert';
-for($x = 0; $x < $self{'x_tiles'}; $x++) {
-    $cmd .= ' '.$self{'workPath'}.$self{'partPrefix'}.$x.$self{'zoomifyExt'};
-}
-system($cmd . ' +append '.$result);
-unlink glob($self{'workPath'}.$self{'partPrefix'}.'*'.$self{'zoomifyExt'});
+print "FINISHED! Running time ".(time() - $t0)." seconds.\n";
