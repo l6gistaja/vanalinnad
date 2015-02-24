@@ -1,10 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>24.7093546653,59.4123398996 24.7093546653,59.4548343182 24.8093775608,59.4548343182 24.8093775608,59.4123398996 24.7093546653,59.4123398996</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>4702 9362</description><Point><coordinates>24.74120236128534,59.423582407654706</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>3172 2336</description><Point><coordinates>24.738836652934204,59.445866720223584</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>9472 4370</description><Point><coordinates>24.776687986552368,59.43598803412626</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1885"><name>1885</name><LineString><coordinates>24.70935466534207,59.41233989961346 24.70935466534207,59.45483431822678 24.80937756078657,59.45483431822678 24.80937756078657,59.41233989961346 24.70935466534207,59.41233989961346</coordinates></LineString></Placemark>
+<Placemark id="gcp1885.1"><name>1885 #1</name><description>4702 9362</description><Point><coordinates>24.74120236128534,59.423582407654706</coordinates></Point></Placemark>
+<Placemark id="gcp1885.2"><name>1885 #2</name><description>3172 2336</description><Point><coordinates>24.738836652934204,59.445866720223584</coordinates></Point></Placemark>
+<Placemark id="gcp1885.3"><name>1885 #3</name><description>9472 4370</description><Point><coordinates>24.776687986552368,59.43598803412626</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1881.Lasnamae"><name>1881.Lasnamae</name><LineString><coordinates>24.77763875367776,59.41009420100237 24.77763875367776,59.44113693190525 24.85314569274468,59.44113693190525 24.85314569274468,59.41009420100237 24.77763875367776,59.41009420100237</coordinates></LineString></Placemark>
+<Placemark id="gcp1881.Lasnamae.1"><name>1881.Lasnamae #1</name><description>426 4544</description><Point><coordinates>24.780495674895576,59.42641865555049</coordinates></Point></Placemark>
+<Placemark id="gcp1881.Lasnamae.2"><name>1881.Lasnamae #2</name><description>3359 1223</description><Point><coordinates>24.799356968689054,59.4371348274249</coordinates></Point></Placemark>
+<Placemark id="gcp1881.Lasnamae.3"><name>1881.Lasnamae #3</name><description>1432 5467</description><Point><coordinates>24.78691134918235,59.42341746040905</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1881.Maarjamae"><name>1881.Maarjamae</name><LineString><coordinates>24.78637194343828,59.43350785176587 24.78637194343828,59.45893470753698 24.87475163421221,59.45893470753698 24.87475163421221,59.43350785176587 24.78637194343828,59.43350785176587</coordinates></LineString></Placemark>
+<Placemark id="gcp1881.Maarjamae.1"><name>1881.Maarjamae #1</name><description>735 6437</description><Point><coordinates>24.791021889897216,59.4415106659774</coordinates></Point></Placemark>
+<Placemark id="gcp1881.Maarjamae.2"><name>1881.Maarjamae #2</name><description>3850 1383</description><Point><coordinates>24.810762948246886,59.453999691403176</coordinates></Point></Placemark>
+<Placemark id="gcp1881.Maarjamae.3"><name>1881.Maarjamae #3</name><description>10250 7243</description><Point><coordinates>24.840867613830472,59.43628815542605</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1881.Nehatu"><name>1881.Nehatu</name><LineString><coordinates>24.82885153003274,59.40864621057652 24.82885153003274,59.44286051891346 24.87800283924497,59.44286051891346 24.87800283924497,59.40864621057652 24.82885153003274,59.40864621057652</coordinates></LineString></Placemark>
+<Placemark id="gcp1881.Nehatu.1"><name>1881.Nehatu #1</name><description>1110 2453</description><Point><coordinates>24.840997944487743,59.43466738128932</coordinates></Point></Placemark>
+<Placemark id="gcp1881.Nehatu.2"><name>1881.Nehatu #2</name><description>5200 24</description><Point><coordinates>24.868785629882165,59.44118101924857</coordinates></Point></Placemark>
+<Placemark id="gcp1881.Nehatu.3"><name>1881.Nehatu #3</name><description>536 8234</description><Point><coordinates>24.833487759246516,59.41634173279006</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.70935466534207,59.40864621057652,24.87800283924497,59.45893470753698</value></Data>
+<Data name="maps"><value>1881.Maarjamae,1881.Lasnamae,1881.Nehatu,1885</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1885/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>

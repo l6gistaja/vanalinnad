@@ -4,6 +4,7 @@
 <title>DIGAR</title>
 <language>de</language>
 <copyright>0</copyright>
+
 <item>
 <title>Situatsionplan der Stadt Reval</title>
 <author>Verlag von Ferd. Wassermann</author>
@@ -12,5 +13,36 @@
 <legends>legend1885.jpg</legends>
 <link>http://digar.nlib.ee/digar/show.action?id=50538</link>
 </item>
+
+<item>
+<title>Folio 3. Stadt Weide auf dem Grossen Laaks Berge, Torfmor, Höfchen Weimarshof, Neustadt, Steinbrüche.</title>
+<author>Eurich</author>
+<guid>tla=149-5-1411</guid>
+<pubDate>Fri, 01 Jan 1881 00:00:00 +0000</pubDate>
+<legends></legends>
+<link>http://www.biblioserver.com/linnaarhiiv/index.php?m=search&amp;ftype=data&amp;q=149-5-1411</link>
+<anchor>1881.Lasnamae</anchor>
+</item>
+
+<item>
+<title>Folio 1. Stadt Weide auf dem Laaks Berge,Höfch. Marienberg u. Carlowa.</title>
+<author>Eurich</author>
+<guid>tla=149-5-1409</guid>
+<pubDate>Fri, 01 Jan 1881 00:00:00 +0000</pubDate>
+<legends></legends>
+<link>http://www.biblioserver.com/linnaarhiiv/index.php?m=search&amp;ftype=data&amp;q=149-5-1409</link>
+<anchor>1881.Maarjamae</anchor>
+</item>
+
+<item>
+<title>Folio 2. Stadt Heuschläge.</title>
+<author>Eurich</author>
+<guid>tla=149-5-1410</guid>
+<pubDate>Fri, 01 Jan 1881 00:00:00 +0000</pubDate>
+<legends></legends>
+<link>http://www.biblioserver.com/linnaarhiiv/index.php?m=search&amp;ftype=data&amp;q=149-5-1410</link>
+<anchor>1881.Nehatu</anchor>
+</item>
+
 </channel>
 </rss>
