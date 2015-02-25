@@ -22,10 +22,30 @@
 <Placemark id="gcp1881.Nehatu.2"><name>1881.Nehatu #2</name><description>5200 24</description><Point><coordinates>24.868785629882165,59.44118101924857</coordinates></Point></Placemark>
 <Placemark id="gcp1881.Nehatu.3"><name>1881.Nehatu #3</name><description>536 8234</description><Point><coordinates>24.833487759246516,59.41634173279006</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1881.Kristiine"><name>1881.Kristiine</name><LineString><coordinates>24.67124477249350,59.39376330846563 24.67124477249350,59.43702191902923 24.75745069846680,59.43702191902923 24.75745069846680,59.39376330846563 24.67124477249350,59.39376330846563</coordinates></LineString></Placemark>
+<Placemark id="gcp1881.Kristiine.1"><name>1881.Kristiine #1</name><description>9457 8212</description><Point><coordinates>24.735898877561944,59.41424989946308</coordinates></Point></Placemark>
+<Placemark id="gcp1881.Kristiine.2"><name>1881.Kristiine #2</name><description>1933 4024</description><Point><coordinates>24.690558816373773,59.414216061710086</coordinates></Point></Placemark>
+<Placemark id="gcp1881.Kristiine.3"><name>1881.Kristiine #3</name><description>7494 525</description><Point><coordinates>24.706922767258497,59.429661877190725</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1881.Pelgulinna"><name>1881.Pelgulinna</name><LineString><coordinates>24.65409349774143,59.42053542183977 24.65409349774143,59.46197903010131 24.74251165251838,59.46197903010131 24.74251165251838,59.42053542183977 24.65409349774143,59.42053542183977</coordinates></LineString></Placemark>
+<Placemark id="gcp1881.Pelgulinna.1"><name>1881.Pelgulinna #1</name><description>2653 9630</description><Point><coordinates>24.69267144958523,59.42430672876535</coordinates></Point></Placemark>
+<Placemark id="gcp1881.Pelgulinna.2"><name>1881.Pelgulinna #2</name><description>12567 4197</description><Point><coordinates>24.72220446858424,59.45062432559709</coordinates></Point></Placemark>
+<Placemark id="gcp1881.Pelgulinna.3"><name>1881.Pelgulinna #3</name><description>11205 7712</description><Point><coordinates>24.725809357500783,59.44055610863215</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1881.J2rvevana"><name>1881.J2rvevana</name><LineString><coordinates>24.71225709449691,59.39261042098591 24.71225709449691,59.42693353660049 24.80745530404417,59.42693353660049 24.80745530404417,59.39261042098591 24.71225709449691,59.39261042098591</coordinates></LineString></Placemark>
+<Placemark id="gcp1881.J2rvevana.1"><name>1881.J2rvevana #1</name><description>4397 628</description><Point><coordinates>24.740349415434856,59.41803997569873</coordinates></Point></Placemark>
+<Placemark id="gcp1881.J2rvevana.2"><name>1881.J2rvevana #2</name><description>1422 4975</description><Point><coordinates>24.728826645507166,59.40211920736512</coordinates></Point></Placemark>
+<Placemark id="gcp1881.J2rvevana.3"><name>1881.J2rvevana #3</name><description>12024 1349</description><Point><coordinates>24.788500431670638,59.421576908025784</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1881.Nomme"><name>1881.Nomme</name><LineString><coordinates>24.66149891272511,59.38214604253013 24.66149891272511,59.41379155426709 24.73133707457050,59.41379155426709 24.73133707457050,59.38214604253013 24.66149891272511,59.38214604253013</coordinates></LineString></Placemark>
+<Placemark id="gcp1881.Nomme.1"><name>1881.Nomme #1</name><description>9569 1619</description><Point><coordinates>24.728810166168394,59.402668099993065</coordinates></Point></Placemark>
+<Placemark id="gcp1881.Nomme.2"><name>1881.Nomme #2</name><description>3510 518</description><Point><coordinates>24.692439411926607,59.4099522799718</coordinates></Point></Placemark>
+<Placemark id="gcp1881.Nomme.3"><name>1881.Nomme #3</name><description>9517 4357</description><Point><coordinates>24.72518381958004,59.394005859810676</coordinates></Point></Placemark>
+
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.70935466534207,59.40864621057652,24.87800283924497,59.45893470753698</value></Data>
-<Data name="maps"><value>1881.Maarjamae,1881.Lasnamae,1881.Nehatu,1885</value></Data>
+<Data name="bbox"><value>24.65409349774143,59.38214604253013,24.87800283924497,59.46197903010131</value></Data>
+<Data name="maps"><value>1881.Kristiine,1881.Pelgulinna,1881.J2rvevana,1881.Nomme,1881.Maarjamae,1881.Lasnamae,1881.Nehatu,1885</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1885/</value></Data>
