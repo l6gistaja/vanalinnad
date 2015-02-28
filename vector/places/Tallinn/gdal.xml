@@ -81,6 +81,25 @@
     <t file="1924whited.jpg" gcps="-gcp 422 2706 24.741232395171945 59.44813474168575 -gcp 273 4467 24.73590016365029 59.41424508192281 -gcp 5028 1693 24.90409023255075 59.4672649606221 -gcp 2606 2264 24.818458557128267 59.456728620511925 -gcp 2158 4067 24.80216145515426 59.42194703237856"/>
 </translate>
 
+<!-- 
+
+Workaround for 1919.Kakumae, which is away from the composite id="1919"
+
+* dev/tiler.pl -s Tallinn -y 1919
+* save vector/Tallinn/1919 as histmaps/places/Tallinn/composed/1919/1919trick
+* add correct max* and min* from layers.xml to histmaps/places/Tallinn/composed/1919/1919trick/tilemapresource.xml
+* save vector/places/Tallinn/bbox1919,kml to histmaps/places/Tallinn/composed/1919/
+* change <composite id="1919" to <ignocomposite id="1919"
+* change <trickcomposite id="1919" maps="1919.Kakumae,1919trick"/> to <composite id="1919" maps="1919.Kakumae"/>
+* dev/tiler.pl -s Tallinn -y 1919.Kakumae
+* copy <Placemark id="*1919.Kakumae*"> from vector/.../bbox1919,kml to histmaps/places/Tallinn/composed/1919/bbox1919,kml
+* change <composite id="1919" maps="1919.Kakumae"/> to <composite id="1919" maps="1919.Kakumae,1919trick"/>
+* dev/tiler.pl -s Tallinn -y 1919.Kakumae -r
+* copy histmaps/places/Tallinn/composed/1919/bbox1919,kml to vector/places/Tallinn/
+* change <composite id="1919" to <trickcomposite id="1919" and <ignocomposite id="1919" to <composite id="1919"
+
+-->
+<trickcomposite id="1919" maps="1919.Kakumae,1919trick"/>
 <composite id="1919" maps="1920.Pirita,1919" montage="yes"/>
 
 <translate map="1920.Pirita" composite="1919">
@@ -93,6 +112,10 @@
     <t file="1919whited.jpg" gcps="-gcp 4600 2578 24.735844648778134 59.44659959722896 -gcp 6123 7750 24.739614493548522 59.414619808616244 -gcp 9124 2676 24.78558219164575 59.44055408026294"/>
     <t file="1919whited.jpg" gcps="-gcp 2981 6615 24.707140989005218 59.42534926618113 -gcp 4978 2315 24.740663237273345 59.44782602284788 -gcp 9169 2998 24.7852844664451 59.43870618779564"/>
     <t file="1919whited4.jpg" gcps="-gcp 5955 6240 24.74120236128534 59.423578314438636 -gcp 4978 2315 24.740663237273345 59.44782602284788 -gcp 9169 2998 24.7852844664451 59.43870618779564"/>
+</translate>
+
+<translate map="1919.Kakumae" composite="1919">
+    <t file="1919.Kakumae.bright.jpg" gcps="-gcp 574 3238 24.555608770751583 59.43015610465412 -gcp 1606 867 24.580306551361165 59.45729706094858 -gcp 2774 4716 24.608137152099225 59.4131491902114"/>
 </translate>
 
 <composite id="1913" maps="1913.1,1913.2,1913.3,1913.4,1913.5,1913.6" montage="yes"/>
