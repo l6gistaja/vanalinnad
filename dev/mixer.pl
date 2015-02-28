@@ -187,7 +187,7 @@ for($z=$data{'zmax'}; $z>=$data{'zmin'}; $z--) {
               for($yx=0;$yx<2;$yx++) {
                 $mtile = $destinationdir.(1+$z).'/'.($yx + ($x << 1)).'/'.($yy + ($y << 1)).$data{'tileext'};
                 push(@src, 
-                  !(-e $mtile) || (0 + `identify -format %k $mtile` < 2)
+                  !(-e $mtile) #|| (0 + `identify -format %k $mtile` < 2)
                   ? $tilewhite
                   : $mtile);
               }
