@@ -268,7 +268,7 @@ function vlMap(inputParams){
     map.addControl(new OpenLayers.Control.PanZoomBar());
     //map.addControl(new OpenLayers.Control.MousePosition());
     map.addControl(new OpenLayers.Control.KeyboardDefaults());
-    map.addControl(new OpenLayers.Control.ScaleLine());
+    map.addControl(new OpenLayers.Control.ScaleLine({geodesic: true})); //EPSG:900913 needs geodesic:true
 
     var permalinkReqKeys = ['zoom','lat','lon','layers'];
     if(isAtSite) {
