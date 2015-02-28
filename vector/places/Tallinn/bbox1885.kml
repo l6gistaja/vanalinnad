@@ -42,10 +42,15 @@
 <Placemark id="gcp1881.Nomme.2"><name>1881.Nomme #2</name><description>3510 518</description><Point><coordinates>24.692439411926607,59.4099522799718</coordinates></Point></Placemark>
 <Placemark id="gcp1881.Nomme.3"><name>1881.Nomme #3</name><description>9517 4357</description><Point><coordinates>24.72518381958004,59.394005859810676</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1881.Kopli"><name>1881.Kopli</name><LineString><coordinates>24.63901301486516,59.44110913256046 24.63901301486516,59.49191883676355 24.73961073707524,59.49191883676355 24.73961073707524,59.44110913256046 24.63901301486516,59.44110913256046</coordinates></LineString></Placemark>
+<Placemark id="gcp1881.Kopli.1"><name>1881.Kopli #1</name><description>6214 10141</description><Point><coordinates>24.703397674407658,59.45373778872693</coordinates></Point></Placemark>
+<Placemark id="gcp1881.Kopli.2"><name>1881.Kopli #2</name><description>4086 11263</description><Point><coordinates>24.69462148651123,59.44735745973722</coordinates></Point></Placemark>
+<Placemark id="gcp1881.Kopli.3"><name>1881.Kopli #3</name><description>2573 9303</description><Point><coordinates>24.680415690460144,59.450926793819974</coordinates></Point></Placemark>
+
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.65409349774143,59.38214604253013,24.87800283924497,59.46197903010131</value></Data>
-<Data name="maps"><value>1881.Kristiine,1881.Pelgulinna,1881.J2rvevana,1881.Nomme,1881.Maarjamae,1881.Lasnamae,1881.Nehatu,1885</value></Data>
+<Data name="bbox"><value>24.63901301486516,59.38214604253013,24.87800283924497,59.49191883676355</value></Data>
+<Data name="maps"><value>1881.Kristiine,1881.Pelgulinna,1881.Kopli,1881.J2rvevana,1881.Nomme,1881.Maarjamae,1881.Lasnamae,1881.Nehatu,1885</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1885/</value></Data>
