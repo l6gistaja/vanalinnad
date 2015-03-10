@@ -1,25 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
+<kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
+
+<Placemark id="bbox.1849.Haabersti"><name>1849.Haabersti</name><LineString><coordinates>24.54468474757502,59.38908180947417 24.54468474757502,59.47412202419262 24.71395217000768,59.47412202419262 24.71395217000768,59.38908180947417 24.54468474757502,59.38908180947417</coordinates></LineString></Placemark>
+<Placemark id="gcp1849.Haabersti.1"><name>1849.Haabersti #1</name><description>7979 15504</description><Point><coordinates>24.67774840209918,59.42849681323666</coordinates></Point></Placemark>
+<Placemark id="gcp1849.Haabersti.2"><name>1849.Haabersti #2</name><description>29 21007</description><Point><coordinates>24.665045102996572,59.389556613510244</coordinates></Point></Placemark>
+<Placemark id="gcp1849.Haabersti.3"><name>1849.Haabersti #3</name><description>2696 7297</description><Point><coordinates>24.60142310516388,59.435939387687164</coordinates></Point></Placemark>
 
 <Placemark id="bbox.18XX.Tatari"><name>18XX.Tatari</name><LineString><coordinates>24.74207331050554,59.42494473899939 24.74207331050554,59.43159843568625 24.75561080013549,59.43159843568625 24.75561080013549,59.42494473899939 24.74207331050554,59.42494473899939</coordinates></LineString></Placemark>
 <Placemark id="gcp18XX.Tatari.1"><name>18XX.Tatari #1</name><description>352 54</description><Point><coordinates>24.746840057716376,59.43109897989705</coordinates></Point></Placemark>
 <Placemark id="gcp18XX.Tatari.2"><name>18XX.Tatari #2</name><description>1197 582</description><Point><coordinates>24.754350242958502,59.42788500259879</coordinates></Point></Placemark>
 <Placemark id="gcp18XX.Tatari.3"><name>18XX.Tatari #3</name><description>648 942</description><Point><coordinates>24.74859958683057,59.426417057449974</coordinates></Point></Placemark>
 
-
 <Placemark id="bbox.1840c"><name>1840c</name><LineString><coordinates>24.71821727882618,59.42545865245580 24.71821727882618,59.43762521697712 24.74728232420861,59.43762521697712 24.74728232420861,59.42545865245580 24.71821727882618,59.42545865245580</coordinates></LineString></Placemark>
 <Placemark id="gcp1840c.1"><name>1840c #1</name><description>657 178</description><Point><coordinates>24.729614911421667,59.435395628934565</coordinates></Point></Placemark>
 <Placemark id="gcp1840c.2"><name>1840c #2</name><description>1948 874</description><Point><coordinates>24.740815816267606,59.42912097395872</coordinates></Point></Placemark>
 <Placemark id="gcp1840c.3"><name>1840c #3</name><description>496 772</description><Point><coordinates>24.72580617462061,59.432454870285284</coordinates></Point></Placemark>
-
 
 <Placemark id="bbox.1842"><name>1842</name><LineString><coordinates>24.73938835064695,59.42872224313046 24.73938835064695,59.44370700806420 24.76743578952330,59.44370700806420 24.76743578952330,59.42872224313046 24.73938835064695,59.42872224313046</coordinates></LineString></Placemark>
 <Placemark id="gcp1842.1"><name>1842 #1</name><description>887 149</description><Point><coordinates>24.760149178848256,59.4401035841912</coordinates></Point></Placemark>
 <Placemark id="gcp1842.2"><name>1842 #2</name><description>1280 1949</description><Point><coordinates>24.752638993606126,59.43011954037037</coordinates></Point></Placemark>
 <Placemark id="gcp1842.3"><name>1842 #3</name><description>162 1526</description><Point><coordinates>24.74424904380781,59.435815716449646</coordinates></Point></Placemark>
 <Placemark id="gcp1842.4"><name>1842 #4</name><description>75 593</description><Point><coordinates>24.749795852050337,59.44058907186093</coordinates></Point></Placemark>
-
 
 <Placemark id="bbox.1848"><name>1848</name><LineString><coordinates>24.76698605165378,59.42236856240336 24.76698605165378,59.42615972345023 24.77886380142179,59.42615972345023 24.77886380142179,59.42236856240336 24.76698605165378,59.42236856240336</coordinates></LineString></Placemark>
 <Placemark id="gcp1848.1"><name>1848 #1</name><description>1196 510</description><Point><coordinates>24.776108322486866,59.424376016769685</coordinates></Point></Placemark>
@@ -28,12 +30,13 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.71821727882618,59.42236856240336,24.77886380142179,59.44370700806420</value></Data>
-<Data name="maps"><value>18XX.Tatari,1840c,1842,1848</value></Data>
+<Data name="bbox"><value>24.54468474757502,59.38908180947417,24.77886380142179,59.47412202419262</value></Data>
+<Data name="maps"><value>1849.Haabersti,18XX.Tatari,1840c,1842,1848</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1842/</value></Data>
 <Data name="montage"><value>yes</value></Data>
+
 </ExtendedData>
 
 </Document>
