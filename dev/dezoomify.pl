@@ -17,6 +17,8 @@ $t0 = time();
     tileFile tiles.txt
     partPrefix column
 );
+# sites might try to avoid robots, set user-agent to random browser 
+$File::Fetch::USER_AGENT = 'Mozilla/5.0 (Windows NT 6.2; WOW64; rv:24.0) Gecko/20100101 Firefox/24.0';
 
 getopt('u:wszpr', \%opts);
 if(!exists $opts{'u'}) {
@@ -25,6 +27,7 @@ if(!exists $opts{'u'}) {
 Usage: dezoomify.pl -u ... [-w ...] [-s] [-z #] [-p ...] [-r #]
 
 -u : on webpage, which contains Zoomify applet, open page source. URL for -u can be copied from variable zoomifyImagePath.
+     Usually has slash (/) in the end,
 -w : working directory, to which Zoomify tiles will be downloaded and where result file ($self{resultFile}) will be composed.
      Optional, default value is '$self{workPath}'.
 -s : show statistics instead processing, useful for finding appropriate zoom level (-z flag).
