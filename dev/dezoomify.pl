@@ -27,7 +27,7 @@ if(!exists $opts{'u'}) {
 Usage: dezoomify.pl -u ... [-w ...] [-s] [-z #] [-p ...] [-r #]
 
 -u : on webpage, which contains Zoomify applet, open page source. URL for -u can be copied from variable zoomifyImagePath.
-     Usually has slash (/) in the end.
+     Has slash (/) in the end.
 -w : working directory, to which Zoomify tiles will be downloaded and where result file ($self{resultFile}) will be composed.
      Optional, default value is '$self{workPath}'.
 -s : show statistics instead processing, useful for finding appropriate zoom level (-z flag).
