@@ -2,11 +2,6 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1823"><name>1823</name><LineString><coordinates>24.77268302620440,59.42626618509557 24.77268302620440,59.44569265038214 24.80548438925663,59.44569265038214 24.80548438925663,59.42626618509557 24.77268302620440,59.42626618509557</coordinates></LineString></Placemark>
-<Placemark id="gcp1823.1"><name>1823 #1</name><description>332 1709</description><Point><coordinates>24.780882654534082,59.43319963203051</coordinates></Point></Placemark>
-<Placemark id="gcp1823.2"><name>1823 #2</name><description>231 931</description><Point><coordinates>24.785270748482294,59.4386934484738</coordinates></Point></Placemark>
-<Placemark id="gcp1823.3"><name>1823 #3</name><description>936 676</description><Point><coordinates>24.796439466820054,59.43764603690237</coordinates></Point></Placemark>
-
 <Placemark id="bbox.1827"><name>1827</name><LineString><coordinates>24.71194767666576,59.42273803493904 24.71194767666576,59.45553713868084 24.76830954996749,59.45553713868084 24.76830954996749,59.42273803493904 24.71194767666576,59.42273803493904</coordinates></LineString></Placemark>
 <Placemark id="gcp1827.1"><name>1827 #1</name><description>1091 1624</description><Point><coordinates>24.743517637254193,59.42922706695654</coordinates></Point></Placemark>
 <Placemark id="gcp1827.2"><name>1827 #2</name><description>577 392</description><Point><coordinates>24.740642309190225,59.44781842782439</coordinates></Point></Placemark>
@@ -18,10 +13,15 @@
 <Placemark id="gcp1820.Kopli.2"><name>1820.Kopli #2</name><description>3927 11067</description><Point><coordinates>24.6944351802287,59.44700685672294</coordinates></Point></Placemark>
 <Placemark id="gcp1820.Kopli.3"><name>1820.Kopli #3</name><description>11065 6456</description><Point><coordinates>24.72033459047713,59.47146395145538</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1829.Kadriorg"><name>1829.Kadriorg</name><LineString><coordinates>24.76925478629580,59.42766198146145 24.76925478629580,59.44622783440787 24.80641085271327,59.44622783440787 24.80641085271327,59.42766198146145 24.76925478629580,59.42766198146145</coordinates></LineString></Placemark>
+<Placemark id="gcp1829.Kadriorg.1"><name>1829.Kadriorg #1</name><description>3019 8845</description><Point><coordinates>24.780882654534082,59.43319963203051</coordinates></Point></Placemark>
+<Placemark id="gcp1829.Kadriorg.2"><name>1829.Kadriorg #2</name><description>1605 5254</description><Point><coordinates>24.785270748482294,59.4386934484738</coordinates></Point></Placemark>
+<Placemark id="gcp1829.Kadriorg.3"><name>1829.Kadriorg #3</name><description>4596 3258</description><Point><coordinates>24.796439466820054,59.43764603690237</coordinates></Point></Placemark>
+
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.63972159590817,59.42273803493904,24.80548438925663,59.49131205619217</value></Data>
-<Data name="maps"><value>1820.Kopli,1823,1827</value></Data>
+<Data name="bbox"><value>24.63972159590817,59.42273803493904,24.80641085271327,59.49131205619217</value></Data>
+<Data name="maps"><value>1820.Kopli,1829.Kadriorg,1827</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1827/</value></Data>
