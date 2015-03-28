@@ -72,12 +72,7 @@ function vlMap(inputParams){
 
     yearMatcher = new RegExp(conf.regexyearmatcher);
 
-    map = new OpenLayers.Map(inputParams.divMap, {
-      projection: new OpenLayers.Projection("EPSG:900913"),
-      displayProjection: new OpenLayers.Projection("EPSG:4326"),
-      units: "m",
-      numZoomLevels: 17
-    });
+    map = new OpenLayers.Map(inputParams.divMap, JSON.parse(conf.mapoptions));
 
     function osm_getTileURL(bounds) {
         return vlUtils.getTodaysTileURL(osm, bounds);
