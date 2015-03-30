@@ -172,11 +172,13 @@ vlUtils.existsInStruct = function(path, struct) {
 }
 
 vlUtils.createBaseLayerData = function(layerNode, obj, map) {
-  var layerBoundBox = layerNode.getAttribute('bounds').split(',');
   obj.dir = layerNode.getAttribute('year') + '/';
   obj.year = layerNode.getAttribute('year');
-  obj.bounds = new OpenLayers.Bounds(layerBoundBox[0], layerBoundBox[1], layerBoundBox[2], layerBoundBox[3]);
-  obj.bounds = obj.bounds.transform(map.displayProjection, map.projection);
+  if(layerNode.getAttribute('bounds') != null) {
+    var layerBoundBox = layerNode.getAttribute('bounds').split(',');
+    obj.bounds = new OpenLayers.Bounds(layerBoundBox[0], layerBoundBox[1], layerBoundBox[2], layerBoundBox[3]);
+    obj.bounds = obj.bounds.transform(map.displayProjection, map.projection);
+  }
   return obj;
 }
 
@@ -219,4 +221,27 @@ vlUtils.getTodaysTileURL = function(layer, bounds) {
         x = ((x % limit) + limit) % limit;
         return layer.url + z + "/" + x + "/" + y + "." + layer.type;
     }
+}
+
+vlUtils.getURLs = function(urlKeys, data, jsonConf) {
+  var urlData = [];
+  var urlKey;
+  var locData;
+  for(urlKey in urlKeys) {
+    locData = vlUtils.mergeHashes({},data);
+    switch (urlKeys[urlKey]) {
+      case 'ajapaik':
+        if('site' in locData && 'ajapaik' in jsonConf.urls && locData['site'] in jsonConf.ajapaikIDs) {
+          locData['ajapaikID'] = jsonConf.ajapaikIDs[locData['site']];
+          urlData[urlData.length] = vlUtils.mergeHashes(jsonConf.urls.ajapaik, locData);
+        }
+        break;
+      default:
+        if(urlKeys[urlKey] in jsonConf.urls) {
+          urlData[urlData.length] = vlUtils.mergeHashes(jsonConf.urls[urlKeys[urlKey]], locData);
+        }
+        break;
+    }
+  }
+  return vlUtils.links(urlData);
 }

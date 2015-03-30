@@ -17,11 +17,13 @@ function vlMap(inputParams){
   var emptyTiles;
   var isAtSite;
   var baseLayersCount = 0;
+  var jsonConf = {};
 
   var xmlHandlerConf = function(request) {
     if(request.status == 200) {
       document.getElementById(inputParams.divMap).innerHTML = '';
       conf = vlUtils.xmlDoc2Hash(request.responseXML);
+      jsonConf = JSON.parse(conf.json);
       isAtSite = 'site' in reqParams && reqParams['site'].match(/^[A-Z][A-Za-z-]*$/);
       if(isAtSite) {
         areaDir = reqParams['site'] + '/';
@@ -72,7 +74,7 @@ function vlMap(inputParams){
 
     yearMatcher = new RegExp(conf.regexyearmatcher);
 
-    map = new OpenLayers.Map(inputParams.divMap, JSON.parse(conf.mapoptions));
+    map = new OpenLayers.Map(inputParams.divMap, jsonConf.mapoptions);
 
     function osm_getTileURL(bounds) {
         return vlUtils.getTodaysTileURL(osm, bounds);
@@ -227,17 +229,16 @@ function vlMap(inputParams){
           S: feature.attributes.name,
           T: vlUtils.getXmlValue(layersXml, 'city'),
           C: vlUtils.getXmlValue(layersXml, 'country')
-        };        
-        var urlData = [vlUtils.mergeHashes(JSON.parse(conf.url_googlestreetview), locData)];
-        var ajapaik = vlUtils.getXmlValue(layersXml, 'url_ajapaik');
-        if(ajapaik != '') { urlData[urlData.length] = vlUtils.mergeHashes(JSON.parse(ajapaik), locData); }
+        };
+        if(isAtSite) { locData.site = reqParams['site']; }
 
         feature.popup = new OpenLayers.Popup.FramedCloud (
             "roadPopup",
             new OpenLayers.LonLat(clickXY.lon, clickXY.lat),
             null,
             feature.layer.getOptions().layername.substr(0,6) == 'roads_'
-              ? '<strong>' + feature.attributes.name +'</strong><br />' + vlUtils.links(urlData)
+              ? '<strong>' + feature.attributes.name +'</strong><br />' 
+                + vlUtils.getURLs(['googlestreetview','ajapaik'], locData, jsonConf)
               : feature.attributes.name,
             null,
             true,
@@ -378,17 +379,29 @@ function vlMap(inputParams){
 
   var htmlSites = function(s) {
     y = '';
+    var siteParam;
     for(f in s) {
+      siteParam = 'site=' + ('description' in s[f].attributes ? s[f].attributes.description : s[f].attributes.name)
+        + ('debug' in reqParams ? '&debug=' + reqParams['debug'] : '');
       y += (i > 0 ? '<br/>' : '') +  '&nbsp;&nbsp;'
         + vlUtils.link({
-            u: conf.infourlprefix + 'site=' + s[f].attributes.name,
+            u: conf.infourlprefix + siteParam,
             h: 'Info',
             l:  '<img src="raster/information.png" border="0"/>'
-          })
-        + '&nbsp;&nbsp;'
+          });
+      /*
+      for(w in wmsList) {
+        y += '&nbsp;'
+          + vlUtils.link({
+            u: '?' + siteParam + '&wms=' + w,
+            h: wmsList[w].name,
+            l:  '<img src="raster/information.png" border="0"/>'
+          });
+      }
+      */
+      y += '&nbsp;&nbsp;'
         + vlUtils.link({
-            u: '?site=' + ('description' in s[f].attributes ? s[f].attributes.description : s[f].attributes.name)
-              + ('debug' in reqParams ? '&debug=' + reqParams['debug'] : ''),
+            u: '?' + siteParam,
             l:  s[f].attributes.name
           });
     }

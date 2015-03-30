@@ -29,5 +29,4 @@
   <layer name="&amp;#9316; 4" file="roads4min.kml" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>10</minzoom>
-  <url_ajapaik>{&quot;h&quot;:&quot;Ajapaik.ee&quot;, &quot;l&quot;:&quot;Ajapaik&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://ajapaik.ee/map/?area=1&amp;lat=@Y@&amp;lng=@X@&amp;zoom=@Z@&quot;}</url_ajapaik>
 </vanalinnadlayers>

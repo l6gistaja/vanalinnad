@@ -19,6 +19,7 @@ function vlInitInfo(inputParams){
   var histBaseLayer;
   var mapTag = null;
   var areaDir;
+  var jsonConf = {};
   
   function getSiteLbl() {
     baseURL = '?site=' + reqParams['site'];
@@ -34,6 +35,7 @@ function vlInitInfo(inputParams){
     if(request.status == 200) {
       if(!('year' in reqParams)) { reqParams['year'] = ''; }
       conf = vlUtils.xmlDoc2Hash(request.responseXML);
+      jsonConf = JSON.parse(conf.json);
       requestConf = {
         year: {
            url: conf.dirvector
@@ -199,12 +201,7 @@ function vlInitInfo(inputParams){
       document.getElementById(inputParams.divContent).innerHTML = y;
       document.getElementById(inputParams.divFooter).innerHTML = document.getElementById(inputParams.divHeader).innerHTML;
 
-      map = new OpenLayers.Map('infoMap', {
-        projection: new OpenLayers.Projection("EPSG:900913"),
-        displayProjection: new OpenLayers.Projection("EPSG:4326"),
-        units: "m",
-        numZoomLevels: 18
-      });
+      map = new OpenLayers.Map('infoMap', jsonConf.mapoptions);
 
       // OSM/OAM layer
 
@@ -307,14 +304,13 @@ function vlInitInfo(inputParams){
           Y: (parseFloat(bbx[1]) + parseFloat(bbx[3])) / 2,
           Z: vlUtils.getXmlValue(layerXml, 'minzoom'),
           T: vlUtils.getXmlValue(layerXml, 'city'),
-          C: vlUtils.getXmlValue(layerXml, 'country')
+          C: vlUtils.getXmlValue(layerXml, 'country'),
+          site: reqParams['site']
         };        
-        var urlData = [vlUtils.mergeHashes(JSON.parse(conf.url_wikipedia), locData)];
-        var ajapaik = vlUtils.getXmlValue(layerXml, 'url_ajapaik');
-        if(ajapaik != '') { urlData[urlData.length] = vlUtils.mergeHashes(JSON.parse(ajapaik), locData); }
+        
         y = '<br/>' 
           + vlUtils.link({u:'index.html?site=' + reqParams['site'], l:siteName}) + ' ( '
-          + vlUtils.links(urlData)
+          + vlUtils.getURLs(['wikipedia','ajapaik'], locData, jsonConf)
           + ' )<ol>';
         for(i=0; i<links.length; i++) {
           if(links[i].getAttribute('disabled') || links[i].getAttribute('year') == null){ continue; }

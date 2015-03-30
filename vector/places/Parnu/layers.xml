@@ -2,7 +2,6 @@
   <bounds>24.45075469154656,58.34124909129962,24.60443251538922,58.42190619158546</bounds>
   <city>Pärnu</city>
   <country>Estonia</country>
-  <url_ajapaik>{"h":"Ajapaik.ee", "l":"Ajapaik", "t":"_blank", "U":"http://ajapaik.ee/map/?area=3&amp;lat=@Y@&amp;lng=@X@&amp;zoom=@Z@"}</url_ajapaik>
   <layer bounds="24.45075469154656,58.34124909129962,24.60443251538922,58.42190619158546" type="tms" year="1938" />
   <layer bounds="24.4495875202,58.3597204517,24.5733349467,58.4177515794" type="tms" year="1912" />
   <layer bounds="24.4507456275,58.3629345504,24.5632566721,58.4175632623" type="tms" year="1898" />

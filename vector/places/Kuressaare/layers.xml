@@ -2,7 +2,6 @@
   <bounds>22.46191935291008,58.23536741918275,22.50721423578300,58.26707200942217</bounds>
   <city>Kuressaare</city>
   <country>Estonia</country>
-  <url_ajapaik>{"h":"Ajapaik.ee", "l":"Ajapaik", "t":"_blank", "U":"http://ajapaik.ee/map/?area=7&amp;lat=@Y@&amp;lng=@X@&amp;zoom=@Z@"}</url_ajapaik>
   <layer bounds="22.46373966000846,58.24135206934148,22.49984734358742,58.26298646161354" type="tms" year="1970" />
   <layer bounds="22.46127661595613,58.23592523455979,22.50843595880820,58.26619977356382" type="tms" year="1931" />
   <layer bounds="22.45945055781233,58.24007424245781,22.50393211453530,58.26737100676026" type="tms" year="1918" />
