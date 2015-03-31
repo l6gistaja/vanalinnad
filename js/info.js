@@ -271,8 +271,8 @@ function vlInitInfo(inputParams){
         }
       );
       map.addLayer(histBaseLayer);
-      var switcherControl = vlUtils.addSwitcher(map);
-      switcherControl.maximizeControl();
+      var automaticCtls = vlUtils.mapMapUI({map: map, add: ['OpenLayers.Control.LayerSwitcher']});
+      automaticCtls['OpenLayers.Control.LayerSwitcher'].maximizeControl();
       map.setBaseLayer(histBaseLayer);
   }
 

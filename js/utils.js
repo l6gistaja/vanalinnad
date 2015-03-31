@@ -127,16 +127,11 @@ vlUtils.links = function(data) {
 }
 
 vlUtils.mergeHashes = function(h0, h1) {
-  for(k in h1) { h0[k] = h1[k]; }
-  return h0;
-}
-
-vlUtils.addSwitcher = function(map) {
-  var switcherCtl = new OpenLayers.Control.LayerSwitcher();
-  map.addControl(switcherCtl);
-  switcherCtl.baseLbl.innerHTML = '';
-  switcherCtl.dataLbl.innerHTML = '';
-  return switcherCtl;
+  var y = {};
+  var k;
+  for(k in h0) { y[k] = h0[k]; }
+  for(k in h1) { y[k] = h1[k]; }
+  return y;
 }
 
 vlUtils.existsInStruct = function(path, struct) {
@@ -225,10 +220,24 @@ vlUtils.getTodaysTileURL = function(layer, bounds) {
 
 vlUtils.getURLs = function(urlKeys, data, jsonConf) {
   var urlData = [];
-  var urlKey;
-  var locData;
+  var urlKey, locData, locUrl, p4;
   for(urlKey in urlKeys) {
     locData = vlUtils.mergeHashes({},data);
+    locUrl = vlUtils.mergeHashes({},jsonConf.urls[urlKeys[urlKey]]);
+    if('flags' in locData) {
+      if(locData.flags.indexOf('useIcon') > -1 && 'icon' in locUrl) {
+        locUrl.l = '<img src="' + locUrl.icon + '" border="0"/>';
+      }
+    }
+    if('srs0' in locData && 'srs' in locUrl && 'X'  in locData && 'Y'  in locData && locData.srs0 != locUrl.srs) {
+      try {
+        p4 = proj4(jsonConf.proj4[locData.srs0.replace(':','_')],jsonConf.proj4[locUrl.srs.replace(':','_')],[locData.X, locData.Y]);
+        locData.X = p4[0];
+        locData.Y = p4[1];
+      } catch(err) {
+         continue;
+      }
+    }
     switch (urlKeys[urlKey]) {
       case 'ajapaik':
         if('site' in locData && 'ajapaik' in jsonConf.urls && locData['site'] in jsonConf.ajapaikIDs) {
@@ -238,10 +247,55 @@ vlUtils.getURLs = function(urlKeys, data, jsonConf) {
         break;
       default:
         if(urlKeys[urlKey] in jsonConf.urls) {
-          urlData[urlData.length] = vlUtils.mergeHashes(jsonConf.urls[urlKeys[urlKey]], locData);
+          urlData[urlData.length] = vlUtils.mergeHashes(locUrl, locData);
         }
         break;
     }
   }
   return vlUtils.links(urlData);
+}
+
+vlUtils.mapDispatcher = function(initConf) {
+  var reqParams = OpenLayers.Util.getParameters();
+  if('wms' in reqParams && reqParams.wms.match(/^[a-z]+$/)) {
+    new vlWms(initConf);
+  } else {
+    new vlMap(initConf);
+  }
+  return true;
+}
+
+vlUtils.mapMapUI = function(x) {
+  var y = {};
+  var i, j, param, ns, nsLen, clazz;
+  for(i in x.add) {
+    param = null;
+    if(x.add[i] == 'OpenLayers.Control.ScaleLine' && x.map.options.projection == 'EPSG:900913') {
+      param = {geodesic: true};
+    }
+    ns = x.add[i].split(".");
+    nsLen = ns.length;
+    clazz = window;
+    for (j = 0; j < nsLen; j++) {
+        clazz = clazz[ns[j]];
+    }
+    y[x.add[i]] = new clazz(param);
+    x.map.addControl(y[x.add[i]]);
+    if(x.add[i] == 'OpenLayers.Control.LayerSwitcher') {
+        y[x.add[i]].baseLbl.innerHTML = '';
+        y[x.add[i]].dataLbl.innerHTML = '';
+    }
+  }
+  
+  if('remove' in x) { vlUtils.mapRemoveCtl(x.map, x.remove); }
+  return y;
+}
+
+vlUtils.mapRemoveCtl = function(map, ctl) {
+  for(i in map.controls) { 
+    if(map.controls[i].CLASS_NAME == ctl) {
+        map.controls[i].destroy();
+        map.controls[i] = null;
+    }
+  }
 }

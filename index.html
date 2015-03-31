@@ -9,11 +9,13 @@
 <link rel="stylesheet" type="text/css" href="map.css"/>
 <meta http-equiv='imagetoolbar' content='no'/>
 <script src="lib/OpenLayers-2.13.1/OpenLayers.js"></script>
+<script src="lib/proj4.js"></script>
 <script src="js/utils.js"></script>
 <script src="js/styles.js"></script>
 <script src="js/map.js"></script>
+<script src="js/wms.js"></script>
 </head>
-<body onload="m = new vlMap({conf: 'conf.xml', divMap: 'map'}); return true;">
+<body onload="return vlUtils.mapDispatcher({conf: 'conf.xml', divMap: 'map'});">
 <div id="map">
 <iframe src="xhrsop.html" width="100%" height="100%"></iframe>
 </div>

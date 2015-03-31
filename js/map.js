@@ -13,7 +13,6 @@ function vlMap(inputParams){
   var conf;
   var layersXml;
   var reqParams;
-  var input;
   var emptyTiles;
   var isAtSite;
   var baseLayersCount = 0;
@@ -258,14 +257,6 @@ function vlMap(inputParams){
     map.addControl(vectorLayersCtl);
     vectorLayersCtl.activate();
 
-    var switcherControl = vlUtils.addSwitcher(map);
-    if(isAtSite) { switcherControl.maximizeControl(); }
-
-    map.addControl(new OpenLayers.Control.PanZoomBar());
-    //map.addControl(new OpenLayers.Control.MousePosition());
-    map.addControl(new OpenLayers.Control.KeyboardDefaults());
-    map.addControl(new OpenLayers.Control.ScaleLine({geodesic: true})); //EPSG:900913 needs geodesic:true
-
     var permalinkReqKeys = ['zoom','lat','lon','layers'];
     if(isAtSite) {
       for(reqKey in permalinkReqKeys) { 
@@ -357,14 +348,15 @@ function vlMap(inputParams){
     var panel = new OpenLayers.Control.Panel({defaultControl: btnHiLite});
     panel.addControls([btnHiLite]);
     map.addControl(panel);
+
+    var automaticCtls = vlUtils.mapMapUI({map: map, add: [
+      'OpenLayers.Control.PanZoomBar',
+      'OpenLayers.Control.KeyboardDefaults',
+      'OpenLayers.Control.ScaleLine',
+      'OpenLayers.Control.LayerSwitcher'
+    ], remove: 'OpenLayers.Control.Zoom'});
+    if(isAtSite) { automaticCtls['OpenLayers.Control.LayerSwitcher'].maximizeControl(); }
     
-    // Remove automatically added Zoom
-    for(i in map.controls) { 
-      if(map.controls[i].CLASS_NAME == 'OpenLayers.Control.Zoom') {
-          map.controls[i].destroy();
-          map.controls[i] = null;
-      }
-    }
     if(layerUrlSelect > -1) { map.setBaseLayer(tmsoverlays[layerUrlSelect]); }
     
     if('debug' in reqParams) {
@@ -379,26 +371,30 @@ function vlMap(inputParams){
 
   var htmlSites = function(s) {
     y = '';
-    var siteParam;
+    var siteParam, siteName, sitePoint;
+    var wmsLinks = [];
     for(f in s) {
-      siteParam = 'site=' + ('description' in s[f].attributes ? s[f].attributes.description : s[f].attributes.name)
-        + ('debug' in reqParams ? '&debug=' + reqParams['debug'] : '');
+      siteName = 'description' in s[f].attributes ? s[f].attributes.description : s[f].attributes.name;
+      siteParam = 'site=' + siteName + ('debug' in reqParams ? '&debug=' + reqParams['debug'] : '');
       y += (i > 0 ? '<br/>' : '') +  '&nbsp;&nbsp;'
         + vlUtils.link({
             u: conf.infourlprefix + siteParam,
             h: 'Info',
             l:  '<img src="raster/information.png" border="0"/>'
           });
-      /*
-      for(w in wmsList) {
+      for(w in jsonConf.urls) {
+        if(!('type' in jsonConf.urls[w])) { continue; }
+        sitePoint = new OpenLayers.LonLat(s[f].geometry.x, s[f].geometry.y);
+        sitePoint.transform(map.options.projection, map.options.displayProjection);
         y += '&nbsp;'
-          + vlUtils.link({
-            u: '?' + siteParam + '&wms=' + w,
-            h: wmsList[w].name,
-            l:  '<img src="raster/information.png" border="0"/>'
-          });
+          + vlUtils.getURLs([w], {
+            site: siteName,
+            flags: 'useIcon',
+            X: sitePoint.lon,
+            Y: sitePoint.lat,
+            srs0: map.options.displayProjection
+          }, jsonConf);
       }
-      */
       y += '&nbsp;&nbsp;'
         + vlUtils.link({
             u: '?' + siteParam,

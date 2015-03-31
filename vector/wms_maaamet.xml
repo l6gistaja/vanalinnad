@@ -1,10 +1,11 @@
 <vanalinnadlayers xmlns="http://juks.alkohol.ee/vanalinnad">
   <bounds>300000,6300000,800000,6700000</bounds>
   <defaultwmsurl>http://kaart.maaamet.ee/wms/ajalooline?</defaultwmsurl>
-  <defaultformat>image/png</defaultformat>
+  <defaultformat>image/jpeg</defaultformat>
   <defaultzoom>8</defaultzoom>
-  <mapoptions>{"maxResolution":"auto","projection":"EPSG:3301","displayProjection":"EPSG:3301","units":"m","resolutions":[1.40625,0.703125,0.3515625,0.17578125,0.087890625,0.0439453125,0.02197265625,0.010986328125,0.0054931640625,0.00274658203125,0.00137329101]}</mapoptions>
-  <layer type="wms" year="2014" layername="pk_vr2014"/>
+  <mapoptions>{"maxResolution":"auto","projection":"EPSG:3301","units":"m"}</mapoptions>
+  <layer type="wms" year="@NOW@" layername="pohi_vr2" wmsurl="http://kaart.maaamet.ee/wms/alus?"/>
+  <!-- layer type="wms" year="2014" layername="pk_vr2014"/ -->
   <layer type="wms" year="1978-1989" layername="lehman"/>
   <layer type="wms" year="1963-1989" layername="nltopo_c63_25T_uuem"/>
   <layer type="wms" year="1946-1989" layername="nltopo_o42_10T"/>
