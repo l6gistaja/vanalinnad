@@ -286,7 +286,7 @@ function vlMap(inputParams){
         cornerXYg.transform(map.options.projection, map.options.displayProjection);
         sitesPopup = new OpenLayers.Popup.Anchored(
             "sitesPopup",
-            new OpenLayers.LonLat(cornerXY.lon, cornerXY.lat), //map.getCenter(),
+            new OpenLayers.LonLat(cornerXY.lon, cornerXY.lat),
             null,
             htmlSites(selectorLayer.features),
             null,
@@ -298,30 +298,6 @@ function vlMap(inputParams){
         map.addPopup(sitesPopup);
       });
     }
-
-    var keyboardControl = new OpenLayers.Control();                
-    var handler = new OpenLayers.Handler.Keyboard(
-      new OpenLayers.Control(),
-      { keydown: function(evt) {
-            if(baseLayersCount < 1) { return; }
-            var dir = 0;
-            if(evt.keyCode > 47 && evt.keyCode < 58) { dir = -1; }
-            if(evt.keyCode == 32) { dir = 1; }
-            if(dir != 0) {
-              var mapIndex = -1;
-              if(map.baseLayer.layername in baseLayersData) {
-                mapIndex = baseLayersData[map.baseLayer.layername].no + dir;
-              } else {
-                mapIndex = dir > 0 ? dir - 1 : baseLayersCount + dir;
-              }
-              if(mapIndex >= baseLayersCount) { mapIndex = -1; }
-              map.setBaseLayer(mapIndex < 0 ? osm : tmsoverlays[mapIndex]);
-            }
-        }
-      }, {}
-    );
-    handler.activate();
-    map.addControl(keyboardControl);
 
     baseurl = '';
     for(reqKey in reqParams) {

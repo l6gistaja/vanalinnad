@@ -286,7 +286,33 @@ vlUtils.mapMapUI = function(x) {
         y[x.add[i]].dataLbl.innerHTML = '';
     }
   }
-  
+
+  y['OpenLayers.Control_baseLayerScroller'] = new OpenLayers.Control();                
+  var handler = new OpenLayers.Handler.Keyboard(
+    y['OpenLayers.Control_baseLayerScroller'],
+    { keydown: function(evt) {
+          var dir = 0;
+          if(evt.keyCode > 47 && evt.keyCode < 58) { dir = -1; }
+          if(evt.keyCode == 32) { dir = 1; }
+          if(dir != 0) {
+            var i;
+            var bl = [];
+            var currentBl = -1;
+            for(i=0; i < x.map.layers.length; i++) {
+              if(x.map.layers[i].isBaseLayer) { bl[bl.length] = i };
+              if(x.map.layers[i].id == x.map.baseLayer.id) { currentBl = i };
+            }
+            currentBl += dir;
+            if(currentBl + 1 > bl.length) { currentBl = 0; }
+            if(currentBl < 0) { currentBl = bl.length - 1; }
+            x.map.setBaseLayer(x.map.layers[bl[currentBl]]);
+          }
+      }
+    }, {}
+  );
+  handler.activate();
+  x.map.addControl(y['OpenLayers.Control_baseLayerScroller']);
+
   if('remove' in x) { vlUtils.mapRemoveCtl(x.map, x.remove); }
   return y;
 }
