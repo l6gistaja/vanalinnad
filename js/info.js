@@ -305,12 +305,17 @@ function vlInitInfo(inputParams){
           Z: vlUtils.getXmlValue(layerXml, 'minzoom'),
           T: vlUtils.getXmlValue(layerXml, 'city'),
           C: vlUtils.getXmlValue(layerXml, 'country'),
-          site: reqParams['site']
+          site: reqParams['site'],
+          srs0: jsonConf.mapoptions.displayProjection
         };        
         
+        var urlKeys = ['wikipedia','ajapaik'];
+        for(w in jsonConf.urls) {
+          if('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS') { urlKeys[urlKeys.length] = w; }
+        }
         y = '<br/>' 
           + vlUtils.link({u:'index.html?site=' + reqParams['site'], l:siteName}) + ' ( '
-          + vlUtils.getURLs(['wikipedia','ajapaik'], locData, jsonConf)
+          + vlUtils.getURLs(urlKeys, locData, jsonConf)
           + ' )<ol>';
         for(i=0; i<links.length; i++) {
           if(links[i].getAttribute('disabled') || links[i].getAttribute('year') == null){ continue; }

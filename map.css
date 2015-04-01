@@ -51,3 +51,7 @@ body .bodyContent {
   margin-top: 5px;
   margin-bottom: 5px;
 }
+
+#roadPopup_contentDiv {
+  line-height: 150%;
+}

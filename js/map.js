@@ -229,9 +229,10 @@ function vlMap(inputParams){
           T: vlUtils.getXmlValue(layersXml, 'city'),
           C: vlUtils.getXmlValue(layersXml, 'country'),
           site: reqParams['site'],
-          srs0: map.options.displayProjection
+          srs0: map.options.displayProjection,
+          flags: 'useIcon',
+          delimiter: ' '
         };
-        if(isAtSite) { locData.site = reqParams['site']; }
         
         var urlKeys = ['googlestreetview','ajapaik'];
         for(w in jsonConf.urls) {

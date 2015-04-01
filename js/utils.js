@@ -108,6 +108,7 @@ vlUtils.link = function(data) {
   * C : country
   * T : town or city
   * S : street
+  * delimiter : ...between links 
   *
   * @param {hash[]} data
   * @returns string of HTML links
@@ -121,7 +122,7 @@ vlUtils.links = function(data) {
       if(k.charCodeAt(0) < 67) { continue; } 
       data[i].u = data[i].u.replace('@' + k + '@', data[i][k]); 
     }
-    y += ((y == '') ? '' : ' | ') + vlUtils.link(data[i]);
+    y += ((y == '') ? '' : 'delimiter' in data[i] ? data[i].delimiter : ' | ') + vlUtils.link(data[i]);
   }
   return y;
 }
@@ -240,9 +241,9 @@ vlUtils.getURLs = function(urlKeys, data, jsonConf) {
     }
     switch (urlKeys[urlKey]) {
       case 'ajapaik':
-        if('site' in locData && 'ajapaik' in jsonConf.urls && locData['site'] in jsonConf.ajapaikIDs) {
+        if(urlKeys[urlKey] in jsonConf.urls && 'site' in locData && locData['site'] in jsonConf.ajapaikIDs) {
           locData['ajapaikID'] = jsonConf.ajapaikIDs[locData['site']];
-          urlData[urlData.length] = vlUtils.mergeHashes(jsonConf.urls.ajapaik, locData);
+          urlData[urlData.length] = vlUtils.mergeHashes(locUrl, locData);
         }
         break;
       default:
