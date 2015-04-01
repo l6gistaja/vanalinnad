@@ -120,7 +120,7 @@ function vlMap(inputParams){
               maxDepth: 0
           })
       }),
-      styleMap: vlUtils.mergeCustomStyleWithDefaults(vlLayerStyles['POIs'])
+      styleMap: vlUtils.mergeCustomStyleWithDefaults(jsonConf.olLayerStyles['POIs'])
     });
 
     var tmsoverlays = [];
@@ -183,7 +183,7 @@ function vlMap(inputParams){
                         maxDepth: 0
                     })
                 }),
-              styleMap: vlUtils.mergeCustomStyleWithDefaults(vlLayerStyles[
+              styleMap: vlUtils.mergeCustomStyleWithDefaults(jsonConf.olLayerStyles[
                 layersTags[i].getAttribute('style') !=null ? layersTags[i].getAttribute('style') : 'roads'
               ])
           });
@@ -227,17 +227,23 @@ function vlMap(inputParams){
           Z: map.getZoom(),
           S: feature.attributes.name,
           T: vlUtils.getXmlValue(layersXml, 'city'),
-          C: vlUtils.getXmlValue(layersXml, 'country')
+          C: vlUtils.getXmlValue(layersXml, 'country'),
+          site: reqParams['site'],
+          srs0: map.options.displayProjection
         };
         if(isAtSite) { locData.site = reqParams['site']; }
-
+        
+        var urlKeys = ['googlestreetview','ajapaik'];
+        for(w in jsonConf.urls) {
+          if('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS') { urlKeys[urlKeys.length] = w; }
+        }
         feature.popup = new OpenLayers.Popup.FramedCloud (
             "roadPopup",
             new OpenLayers.LonLat(clickXY.lon, clickXY.lat),
             null,
             feature.layer.getOptions().layername.substr(0,6) == 'roads_'
               ? '<strong>' + feature.attributes.name +'</strong><br />' 
-                + vlUtils.getURLs(['googlestreetview','ajapaik'], locData, jsonConf)
+                + vlUtils.getURLs(urlKeys, locData, jsonConf)
               : feature.attributes.name,
             null,
             true,
@@ -359,7 +365,7 @@ function vlMap(inputParams){
             l:  '<img src="raster/information.png" border="0"/>'
           });
       for(w in jsonConf.urls) {
-        if(!('type' in jsonConf.urls[w])) { continue; }
+        if(!('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS')) { continue; }
         sitePoint = new OpenLayers.LonLat(s[f].geometry.x, s[f].geometry.y);
         sitePoint.transform(map.options.projection, map.options.displayProjection);
         y += '&nbsp;'

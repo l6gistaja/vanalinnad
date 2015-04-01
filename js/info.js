@@ -231,7 +231,7 @@ function vlInitInfo(inputParams){
                     maxDepth: 0
                 })
             }),
-            styleMap: vlUtils.mergeCustomStyleWithDefaults(vlLayerStyles['BBox'])
+            styleMap: vlUtils.mergeCustomStyleWithDefaults(jsonConf.olLayerStyles['BBox'])
       });
       bbox.events.register('loadend', bbox, function(){
         map.zoomToExtent(bbox.getDataExtent());
