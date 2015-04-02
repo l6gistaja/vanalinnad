@@ -233,19 +233,24 @@ function vlMap(inputParams){
           flags: 'useIcon',
           delimiter: ' '
         };
-        
         var urlKeys = ['googlestreetview','ajapaik'];
         for(w in jsonConf.urls) {
           if('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS') { urlKeys[urlKeys.length] = w; }
         }
+        
+        var popupContent = feature.attributes.name;
+        if(feature.layer.getOptions().layername.substr(0,6) == 'roads_') {
+          popupContent = '<strong>' + feature.attributes.name +'</strong><br />' 
+                + vlUtils.getURLs(urlKeys, locData, jsonConf);
+          locData.site = '';
+          popupContent +=  locData.delimiter + vlUtils.getURLs(['vanalinnad'], locData, jsonConf);
+        }
+        
         feature.popup = new OpenLayers.Popup.FramedCloud (
             "roadPopup",
             new OpenLayers.LonLat(clickXY.lon, clickXY.lat),
             null,
-            feature.layer.getOptions().layername.substr(0,6) == 'roads_'
-              ? '<strong>' + feature.attributes.name +'</strong><br />' 
-                + vlUtils.getURLs(urlKeys, locData, jsonConf)
-              : feature.attributes.name,
+            popupContent,
             null,
             true,
             function() { vectorLayersCtl.unselectAll(); }
@@ -265,28 +270,36 @@ function vlMap(inputParams){
     vectorLayersCtl.activate();
 
     var permalinkReqKeys = ['zoom','lat','lon','layers'];
-    if(isAtSite) {
-      for(reqKey in permalinkReqKeys) { 
+    var reqiredCoordCount, centerLonlat;
+    for(reqiredCoordCount in permalinkReqKeys) { 
         if(
-          !(permalinkReqKeys[reqKey] in reqParams) 
-          || (reqKey < 3 && isNaN(parseFloat(reqParams[permalinkReqKeys[reqKey]])))
-        ) { 
-          if(layerUrlSelect > -1) {
-            if(reqKey == 3) {
-              lonlat = new OpenLayers.LonLat(reqParams['lon'],reqParams['lat']);
-              map.setCenter(lonlat.transform(map.displayProjection, map.projection),reqParams['zoom']);
-            } else {
-              map.zoomToExtent(baseLayersData[conf.tmslayerprefix + reqParams['year']].bounds);
-            }
-          } else {
-            map.zoomToExtent(mapBounds.transform(map.displayProjection, map.projection));
-          }
-          break;
+          !(permalinkReqKeys[reqiredCoordCount] in reqParams) 
+          || (reqiredCoordCount < 3 && isNaN(parseFloat(reqParams[permalinkReqKeys[reqiredCoordCount]])))
+        ) {  break; }
+    }
+    // if reqiredCoordCount == 3, we have all necessary params for centering
+    
+    if(isAtSite) {
+      if(reqiredCoordCount == 3) {
+          centerLonlat = new OpenLayers.LonLat(reqParams['lon'],reqParams['lat']);
+          map.setCenter(centerLonlat.transform(map.displayProjection, map.projection),reqParams['zoom']);
+      } else {
+        if(layerUrlSelect > -1) { // if layer is selected from URL
+          map.zoomToExtent(baseLayersData[conf.tmslayerprefix + map.layers[layerUrlSelect+1].name].bounds);
+        } else {
+          map.zoomToExtent(mapBounds.transform(map.displayProjection, map.projection));
         }
       }
     } else {
+
       selectorLayer.events.register('loadend', selectorLayer, function(){
-        map.zoomToExtent(selectorLayer.getDataExtent());
+
+        if(reqiredCoordCount == 3) {
+            centerLonlat = new OpenLayers.LonLat(reqParams['lon'],reqParams['lat']);
+            map.setCenter(centerLonlat.transform(map.displayProjection, map.projection),reqParams['zoom']);
+        } else {
+          map.zoomToExtent(selectorLayer.getDataExtent());
+        }
         
         var cornerXYg = map.getLonLatFromPixel({x:55, y:20});
         var cornerXY = new OpenLayers.LonLat(cornerXYg.lon, cornerXYg.lat);
@@ -341,26 +354,23 @@ function vlMap(inputParams){
     if(isAtSite) { automaticCtls['OpenLayers.Control.LayerSwitcher'].maximizeControl(); }
     
     if(layerUrlSelect > -1) { map.setBaseLayer(tmsoverlays[layerUrlSelect]); }
-    
+
     // coordinates popup
     if(!isAtSite || 'debug' in reqParams) {
       var clickData = {
         jsonConf: jsonConf,
-        locData: { srs0: jsonConf.mapoptions.displayProjection },
+        locData: {
+          srs0: jsonConf.mapoptions.displayProjection,
+          site: isAtSite ? reqParams['site'] : ''
+        },
         links: ['googlestreetview'],
-        isAtSite: isAtSite,
         debug: 'debug' in reqParams
       };
       for(w in jsonConf.urls) {
         if(!('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS')) { continue; }
         clickData.links[clickData.links.length] = w;
       }
-      if(isAtSite) { clickData.locData.site = reqParams['site']; }
-      
-      OpenLayers.Control.Click = vlUtils.coordsPrompt(map, clickData);
-      var click = new OpenLayers.Control.Click();
-      map.addControl(click);
-      click.activate();
+      vlUtils.mapAddCoordsPromptCtl(map, clickData);
     }
 
     if(isAtSite) { window.document.title += ': ' + vlUtils.getXmlValue(layersXml, 'city'); }

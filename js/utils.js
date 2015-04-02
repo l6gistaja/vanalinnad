@@ -375,10 +375,17 @@ vlUtils.mapMapUI = function(x) {
 }
 
 vlUtils.mapRemoveCtl = function(map, ctl) {
-  for(i in map.controls) { 
+  for(i in map.controls) {
     if(map.controls[i].CLASS_NAME == ctl) {
         map.controls[i].destroy();
         map.controls[i] = null;
     }
   }
+}
+
+vlUtils.mapAddCoordsPromptCtl = function(map, clickData) {
+  OpenLayers.Control.Click = vlUtils.coordsPrompt(map, clickData);
+  var click = new OpenLayers.Control.Click();
+  map.addControl(click);
+  click.activate();
 }
