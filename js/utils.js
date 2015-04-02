@@ -84,7 +84,7 @@ vlUtils.coordsPrompt = function(map, data) {
           ? '<strong>GDAL GCP</strong> : <input type="text" value=" -gcp  ' + lonlat.lon + ' ' + lonlat.lat + '"/>'
           : '';
         var coords = {};
-        coords[data.locData.srs0] = {x:lonlat.lon, y:lonlat.lat};
+        coords[data.jsonConf.urls[data.locData.baseUrlID].srs] = {x:lonlat.lon, y:lonlat.lat};
         y += '<table id="coordsTable"><tr><th>&nbsp;</th><th>' 
           + vlUtils.link({u:'http://en.wikipedia.org/wiki/Longitude',l:'X',t:'_blank',h:'Longitude'}) + '</th><th>'
           + vlUtils.link({u:'http://en.wikipedia.org/wiki/Latitude',l:'Y',t:'_blank',h:'Latitude'}) +  '</th></tr>';
@@ -107,7 +107,7 @@ vlUtils.coordsPrompt = function(map, data) {
           C: '',
           site: '',
           flags: 'useIcon',
-          delimiter: ' '
+          delimiter: ' ',
         }, data.locData), data.jsonConf);
 
         var popup = new OpenLayers.Popup.FramedCloud (
@@ -278,6 +278,8 @@ vlUtils.getTodaysTileURL = function(layer, bounds) {
 vlUtils.getURLs = function(urlKeys, data, jsonConf) {
   var urlData = [];
   var urlKey, locData, locUrl, p4;
+  var baseUrl = jsonConf.urls[data.baseUrlID];
+
   for(urlKey in urlKeys) {
     locData = vlUtils.mergeHashes({},data);
     locUrl = vlUtils.mergeHashes({},jsonConf.urls[urlKeys[urlKey]]);
@@ -286,9 +288,9 @@ vlUtils.getURLs = function(urlKeys, data, jsonConf) {
         locUrl.l = '<img src="' + locUrl.icon + '" border="0"/>';
       }
     }
-    if('srs0' in locData && 'srs' in locUrl && 'X'  in locData && 'Y'  in locData && locData.srs0 != locUrl.srs) {
+    if('srs' in baseUrl && 'srs' in locUrl && 'X'  in locData && 'Y'  in locData && baseUrl.srs != locUrl.srs) {
       try {
-        p4 = proj4(jsonConf.proj4[locData.srs0.replace(':','_')],jsonConf.proj4[locUrl.srs.replace(':','_')],[locData.X, locData.Y]);
+        p4 = proj4(jsonConf.proj4[baseUrl.srs.replace(':','_')],jsonConf.proj4[locUrl.srs.replace(':','_')],[locData.X, locData.Y]);
         locData.X = p4[0];
         locData.Y = p4[1];
       } catch(err) {

@@ -360,8 +360,8 @@ function vlMap(inputParams){
       var clickData = {
         jsonConf: jsonConf,
         locData: {
-          srs0: jsonConf.mapoptions.displayProjection,
-          site: isAtSite ? reqParams['site'] : ''
+          site: isAtSite ? reqParams['site'] : '',
+          baseUrlID: 'vanalinnad'
         },
         links: ['googlestreetview'],
         debug: 'debug' in reqParams
@@ -399,7 +399,7 @@ function vlMap(inputParams){
             flags: 'useIcon',
             X: sitePoint.lon,
             Y: sitePoint.lat,
-            srs0: map.options.displayProjection
+            baseUrlID: 'vanalinnad'
           }, jsonConf);
       }
       y += '&nbsp;&nbsp;'
