@@ -342,8 +342,22 @@ function vlMap(inputParams){
     
     if(layerUrlSelect > -1) { map.setBaseLayer(tmsoverlays[layerUrlSelect]); }
     
-    if('debug' in reqParams) {
-      OpenLayers.Control.Click = vlUtils.coordsPrompt(map);
+    // coordinates popup
+    if(!isAtSite || 'debug' in reqParams) {
+      var clickData = {
+        jsonConf: jsonConf,
+        locData: { srs0: jsonConf.mapoptions.displayProjection },
+        links: ['googlestreetview'],
+        isAtSite: isAtSite,
+        debug: 'debug' in reqParams
+      };
+      for(w in jsonConf.urls) {
+        if(!('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS')) { continue; }
+        clickData.links[clickData.links.length] = w;
+      }
+      if(isAtSite) { clickData.locData.site = reqParams['site']; }
+      
+      OpenLayers.Control.Click = vlUtils.coordsPrompt(map, clickData);
       var click = new OpenLayers.Control.Click();
       map.addControl(click);
       click.activate();

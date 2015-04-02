@@ -44,7 +44,7 @@ vlUtils.xmlDoc2Hash = function(xmlDoc) {
   return y;
 }
 
-vlUtils.coordsPrompt = function(map) {
+vlUtils.coordsPrompt = function(map, data) {
   return OpenLayers.Class(OpenLayers.Control, {                
     defaultHandlerOptions: {
         'single': true,
@@ -69,11 +69,67 @@ vlUtils.coordsPrompt = function(map) {
     }, 
 
     trigger: function(e) {
+      
+        var i;
+        for(i = map.popups.length - 1; i > -1; i--) {
+          if(map.popups[i].id == 'coordsPromptPopup') { map.removePopup(map.popups[i]); }
+        }
+
         var lonlat = map.getLonLatFromPixel(e.xy);
-        lonlat = lonlat.transform(map.projection, map.displayProjection);
-        prompt("EPSG:4326 E, N: \n" + lonlat.lon + " " + lonlat.lat, " -gcp  " + lonlat.lon + " " + lonlat.lat);
+        if('displayProjection' in map.options && map.options.projection != map.options.displayProjection) {
+          lonlat = lonlat.transform(map.projection, map.displayProjection);
+        }
+
+        var y =  'debug' in data && data.debug
+          ? '<strong>GDAL GCP</strong> : <input type="text" value=" -gcp  ' + lonlat.lon + ' ' + lonlat.lat + '"/>'
+          : '';
+        var coords = {};
+        coords[data.locData.srs0] = {x:lonlat.lon, y:lonlat.lat};
+        y += '<table id="coordsTable"><tr><th>&nbsp;</th><th>' 
+          + vlUtils.link({u:'http://en.wikipedia.org/wiki/Longitude',l:'X',t:'_blank',h:'Longitude'}) + '</th><th>'
+          + vlUtils.link({u:'http://en.wikipedia.org/wiki/Latitude',l:'Y',t:'_blank',h:'Latitude'}) +  '</th></tr>';
+        var srs, decimalPlaces;
+        for (srs in coords) {
+          decimalPlaces = srs == 'EPSG:4326' ? 6 : 0;
+          y += '<tr><th>'
+            + vlUtils.link({u:'http://spatialreference.org/ref/' + srs.toLowerCase().replace(':','/') + '/',l:srs,t:'_blank'})
+            + '</th><td>' + vlUtils.decimalRound(coords[srs].x, decimalPlaces)
+            + '</td><td>' + vlUtils.decimalRound(coords[srs].y, decimalPlaces) +  '</td></tr>';
+        }
+        y += '</table><br/>';
+
+        y += vlUtils.getURLs(data.links, vlUtils.mergeHashes({
+          X: lonlat.lon,
+          Y: lonlat.lat,
+          Z: map.getZoom(),
+          S: '',
+          T: '',
+          C: '',
+          site: '',
+          flags: 'useIcon',
+          delimiter: ' '
+        }, data.locData), data.jsonConf);
+
+        var popup = new OpenLayers.Popup.FramedCloud (
+            'coordsPromptPopup',
+            map.getLonLatFromPixel(e.xy),
+            null,
+            y,
+            null,
+            true,
+            null
+        );
+        popup.setBorder('solid 2px black');
+        popup.autoSize = true;
+        map.addPopup(popup);
     }
   });
+}
+
+vlUtils.decimalRound = function(x, decimalPlaces) {
+  if(decimalPlaces < 1) { return Math.round(x); }
+  var factor = Math.pow(10, decimalPlaces);
+  return Math.round(x * factor) / factor;
 }
 
 /**
