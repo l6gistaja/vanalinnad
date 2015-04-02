@@ -69,7 +69,6 @@ vlUtils.coordsPrompt = function(map, data) {
     }, 
 
     trigger: function(e) {
-      
         var i;
         for(i = map.popups.length - 1; i > -1; i--) {
           if(map.popups[i].id == 'coordsPromptPopup') { map.removePopup(map.popups[i]); }
@@ -84,7 +83,17 @@ vlUtils.coordsPrompt = function(map, data) {
           ? '<strong>GDAL GCP</strong> : <input type="text" value=" -gcp  ' + lonlat.lon + ' ' + lonlat.lat + '"/>'
           : '';
         var coords = {};
+        var p4;
         coords[data.jsonConf.urls[data.locData.baseUrlID].srs] = {x:lonlat.lon, y:lonlat.lat};
+        if(data.jsonConf.urls[data.locData.baseUrlID].srs != 'EPSG:4326') {
+          try {
+            p4 = proj4(
+              data.jsonConf.proj4[data.jsonConf.urls[data.locData.baseUrlID].srs.replace(':','_')],
+              data.jsonConf.proj4['EPSG_4326'],
+              [lonlat.lon, lonlat.lat]);
+            coords['EPSG:4326'] = {x:p4[0], y:p4[1]};
+          } catch(err) { }
+        }
         y += '<table id="coordsTable"><tr><th>&nbsp;</th><th>' 
           + vlUtils.link({u:'http://en.wikipedia.org/wiki/Longitude',l:'X',t:'_blank',h:'Longitude'}) + '</th><th>'
           + vlUtils.link({u:'http://en.wikipedia.org/wiki/Latitude',l:'Y',t:'_blank',h:'Latitude'}) +  '</th></tr>';
@@ -97,7 +106,7 @@ vlUtils.coordsPrompt = function(map, data) {
             + '</td><td>' + vlUtils.decimalRound(coords[srs].y, decimalPlaces) +  '</td></tr>';
         }
         y += '</table><br/>';
-
+        
         y += vlUtils.getURLs(data.links, vlUtils.mergeHashes({
           X: lonlat.lon,
           Y: lonlat.lat,
@@ -107,7 +116,7 @@ vlUtils.coordsPrompt = function(map, data) {
           C: '',
           site: '',
           flags: 'useIcon',
-          delimiter: ' ',
+          delimiter: ' '
         }, data.locData), data.jsonConf);
 
         var popup = new OpenLayers.Popup.FramedCloud (
@@ -277,10 +286,11 @@ vlUtils.getTodaysTileURL = function(layer, bounds) {
 
 vlUtils.getURLs = function(urlKeys, data, jsonConf) {
   var urlData = [];
-  var urlKey, locData, locUrl, p4;
+  var urlKey, locData, locUrl, p4, zooms;
   var baseUrl = jsonConf.urls[data.baseUrlID];
 
   for(urlKey in urlKeys) {
+    if(!(urlKeys[urlKey]) in jsonConf.urls) { continue; }
     locData = vlUtils.mergeHashes({},data);
     locUrl = vlUtils.mergeHashes({},jsonConf.urls[urlKeys[urlKey]]);
     if('flags' in locData) {
@@ -297,19 +307,8 @@ vlUtils.getURLs = function(urlKeys, data, jsonConf) {
          continue;
       }
     }
-    switch (urlKeys[urlKey]) {
-      case 'ajapaik':
-        if(urlKeys[urlKey] in jsonConf.urls && 'site' in locData && locData['site'] in jsonConf.ajapaikIDs) {
-          locData['ajapaikID'] = jsonConf.ajapaikIDs[locData['site']];
-          urlData[urlData.length] = vlUtils.mergeHashes(locUrl, locData);
-        }
-        break;
-      default:
-        if(urlKeys[urlKey] in jsonConf.urls) {
-          urlData[urlData.length] = vlUtils.mergeHashes(locUrl, locData);
-        }
-        break;
-    }
+    locData.Z = parseInt(locData.Z) + ('zoomdiff' in locUrl ? locUrl.zoomdiff : 0) - ('zoomdiff' in baseUrl ? baseUrl.zoomdiff : 0);
+    urlData[urlData.length] = vlUtils.mergeHashes(locUrl, locData);
   }
   return vlUtils.links(urlData);
 }

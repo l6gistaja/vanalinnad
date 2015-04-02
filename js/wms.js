@@ -20,7 +20,8 @@ function vlWms(inputParams){
     }
   }
   
-    var xmlHandlerLayers = function(request) {
+  var xmlHandlerLayers = function(request) {
+
     if(request.status == 200) {
       layersXml = request.responseXML;
       var options = JSON.parse(vlUtils.getXmlValue(layersXml, 'mapoptions'));
@@ -55,6 +56,21 @@ function vlWms(inputParams){
         'OpenLayers.Control.ScaleLine'
       ], remove: 'OpenLayers.Control.Zoom'});
       automaticCtls['OpenLayers.Control.LayerSwitcher'].maximizeControl();
+
+      var clickData = {
+        jsonConf: jsonConf,
+        locData: {
+          site: isAtSite ? reqParams['site'] : '',
+          baseUrlID: 'maaamet'
+        },
+        links: ['googlestreetview','ajapaik','vanalinnad'],
+        debug: 'debug' in reqParams
+      };
+      vlUtils.mapAddCoordsPromptCtl(map, clickData);
+      
+    } else {
+      document.getElementById(inputParams.divMap).innerHTML = '<h1><a href="?">Vanalinnad</a></h1>';
+      document.location = '?';
     }
   }
 

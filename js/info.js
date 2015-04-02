@@ -306,7 +306,7 @@ function vlInitInfo(inputParams){
           T: vlUtils.getXmlValue(layerXml, 'city'),
           C: vlUtils.getXmlValue(layerXml, 'country'),
           site: reqParams['site'],
-          srs0: jsonConf.mapoptions.displayProjection
+          baseUrlID: 'vanalinnad'
         };        
         
         var urlKeys = ['wikipedia','ajapaik'];

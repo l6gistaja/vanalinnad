@@ -221,25 +221,25 @@ function vlMap(inputParams){
         var clickXYg = map.getLonLatFromPixel(vectorLayersCtl.handlers.feature.evt.xy);
         var clickXY = new OpenLayers.LonLat(clickXYg.lon, clickXYg.lat);
         clickXYg.transform(map.options.projection, map.options.displayProjection);
-        var locData = {
-          X: clickXYg.lon,
-          Y: clickXYg.lat,
-          Z: map.getZoom(),
-          S: feature.attributes.name,
-          T: vlUtils.getXmlValue(layersXml, 'city'),
-          C: vlUtils.getXmlValue(layersXml, 'country'),
-          site: reqParams['site'],
-          srs0: map.options.displayProjection,
-          flags: 'useIcon',
-          delimiter: ' '
-        };
-        var urlKeys = ['googlestreetview','ajapaik'];
-        for(w in jsonConf.urls) {
-          if('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS') { urlKeys[urlKeys.length] = w; }
-        }
         
         var popupContent = feature.attributes.name;
         if(feature.layer.getOptions().layername.substr(0,6) == 'roads_') {
+          var locData = {
+            X: clickXYg.lon,
+            Y: clickXYg.lat,
+            Z: map.getZoom(),
+            S: feature.attributes.name,
+            T: vlUtils.getXmlValue(layersXml, 'city'),
+            C: vlUtils.getXmlValue(layersXml, 'country'),
+            site: reqParams['site'],
+            baseUrlID: 'vanalinnad',
+            flags: 'useIcon',
+            delimiter: ' '
+          };
+          var urlKeys = ['googlestreetview','ajapaik'];
+          for(w in jsonConf.urls) {
+            if('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS') { urlKeys[urlKeys.length] = w; }
+          }
           popupContent = '<strong>' + feature.attributes.name +'</strong><br />' 
                 + vlUtils.getURLs(urlKeys, locData, jsonConf);
           locData.site = '';
@@ -363,7 +363,7 @@ function vlMap(inputParams){
           site: isAtSite ? reqParams['site'] : '',
           baseUrlID: 'vanalinnad'
         },
-        links: ['googlestreetview'],
+        links: ['googlestreetview','ajapaik'],
         debug: 'debug' in reqParams
       };
       for(w in jsonConf.urls) {
