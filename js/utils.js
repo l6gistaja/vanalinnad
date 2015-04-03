@@ -94,7 +94,8 @@ vlUtils.coordsPrompt = function(map, data) {
             coords['EPSG:4326'] = {x:p4[0], y:p4[1]};
           } catch(err) { }
         }
-        y += '<table id="coordsTable"><tr><th>&nbsp;</th><th>' 
+        y += '<table id="coordsTable"><tr><th>'
+          + vlUtils.link({u:'http://en.wikipedia.org/wiki/Spatial_reference_system',l:'SRS',t:'_blank',h:'Spatial reference system'}) + '</th><th>'
           + vlUtils.link({u:'http://en.wikipedia.org/wiki/Longitude',l:'X',t:'_blank',h:'Longitude'}) + '</th><th>'
           + vlUtils.link({u:'http://en.wikipedia.org/wiki/Latitude',l:'Y',t:'_blank',h:'Latitude'}) +  '</th></tr>';
         var srs, decimalPlaces;
