@@ -128,7 +128,6 @@ vlUtils.coordsPrompt = function(map, data) {
             true,
             null
         );
-        popup.setBorder('solid 2px black');
         popup.autoSize = true;
         map.addPopup(popup);
     }
@@ -304,7 +303,11 @@ vlUtils.getURLs = function(urlKeys, data, jsonConf) {
         locData.X = p4[0];
         locData.Y = p4[1];
       } catch(err) {
-         continue;
+         if('coords' in locUrl && locUrl.coords == 'yes') {
+           continue;
+         } else {
+           locData.X = locData.Y = '';
+         }
       }
     }
     locData.Z = parseInt(locData.Z) + ('zoomdiff' in locUrl ? locUrl.zoomdiff : 0) - ('zoomdiff' in baseUrl ? baseUrl.zoomdiff : 0);

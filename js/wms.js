@@ -52,7 +52,22 @@ function vlWms(inputParams){
       map.addLayers(layers);
 
       if(!vlUtils.fullOLPermalinkCoords(reqParams) && 'defaults' in jsonConfWMS) {
-          map.setCenter(new OpenLayers.LonLat(jsonConfWMS.defaults.xy),jsonConfWMS.defaults.z);
+          var mapCenter = new OpenLayers.LonLat(jsonConfWMS.defaults.xy);
+          map.setCenter(mapCenter,jsonConfWMS.defaults.z);
+          var popup = new OpenLayers.Popup.FramedCloud (
+              'coordsPromptPopup',
+              mapCenter,
+              null,
+              'Wrong or missing lon, lat or zoom URL parameters;&nbsp;&nbsp;&nbsp;<br/>zoomed to [ '
+                + jsonConfWMS.defaults.xy[0] + ', '
+                + jsonConfWMS.defaults.xy[1] + ', '
+                + jsonConfWMS.defaults.z
+                + ' ] instead.&nbsp;&nbsp;&nbsp;',
+              null,
+              true,
+              null
+          );
+          map.addPopup(popup);
       }
       if('info' in jsonConfWMS) {
         function openInfoPage() { var win=window.open(jsonConfWMS.info, '_blank'); win.focus(); }
