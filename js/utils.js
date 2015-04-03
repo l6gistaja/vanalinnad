@@ -390,3 +390,13 @@ vlUtils.mapAddCoordsPromptCtl = function(map, clickData) {
   map.addControl(click);
   click.activate();
 }
+
+vlUtils.fullOLPermalinkCoords = function(urlParamArray) {
+  if(!('zoom' in urlParamArray) || isNaN(parseInt(urlParamArray['zoom']))) { return false; }
+  var ll = ['lat','lon'];
+  for(req in ll) { if(
+      !(ll[req] in urlParamArray)
+      || isNaN(parseFloat(urlParamArray[ll[req]]))
+  ) { return false; } }
+  return true;
+}

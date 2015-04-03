@@ -270,17 +270,11 @@ function vlMap(inputParams){
     vectorLayersCtl.activate();
 
     var permalinkReqKeys = ['zoom','lat','lon','layers'];
-    var reqiredCoordCount, centerLonlat;
-    for(reqiredCoordCount in permalinkReqKeys) { 
-        if(
-          !(permalinkReqKeys[reqiredCoordCount] in reqParams) 
-          || (reqiredCoordCount < 3 && isNaN(parseFloat(reqParams[permalinkReqKeys[reqiredCoordCount]])))
-        ) {  break; }
-    }
-    // if reqiredCoordCount == 3, we have all necessary params for centering
+    var centerLonlat;
+    var hasCoords = vlUtils.fullOLPermalinkCoords(reqParams);
     
     if(isAtSite) {
-      if(reqiredCoordCount == 3) {
+      if(hasCoords) {
           centerLonlat = new OpenLayers.LonLat(reqParams['lon'],reqParams['lat']);
           map.setCenter(centerLonlat.transform(map.displayProjection, map.projection),reqParams['zoom']);
       } else {
@@ -294,7 +288,7 @@ function vlMap(inputParams){
 
       selectorLayer.events.register('loadend', selectorLayer, function(){
 
-        if(reqiredCoordCount == 3) {
+        if(hasCoords) {
             centerLonlat = new OpenLayers.LonLat(reqParams['lon'],reqParams['lat']);
             map.setCenter(centerLonlat.transform(map.displayProjection, map.projection),reqParams['zoom']);
         } else {

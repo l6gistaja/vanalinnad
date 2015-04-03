@@ -9,6 +9,7 @@ function vlWms(inputParams){
   var reqParams;
   var isAtSite;
   var jsonConf = {};
+  var jsonConfWMS = {};
 
   var xmlHandlerConf = function(request) {
     if(request.status == 200) {
@@ -16,7 +17,7 @@ function vlWms(inputParams){
       conf = vlUtils.xmlDoc2Hash(request.responseXML);
       jsonConf = JSON.parse(conf.json);
       isAtSite = 'site' in reqParams && reqParams['site'].match(/^[A-Z][A-Za-z-]*$/);
-      OpenLayers.Request.GET({url: conf.dirvector + 'wms_' + reqParams['wms'] + '.xml', callback: xmlHandlerLayers });
+      OpenLayers.Request.GET({url: conf.dirvector + 'wms/' + reqParams['wms'] + '.xml', callback: xmlHandlerLayers });
     }
   }
   
@@ -24,9 +25,9 @@ function vlWms(inputParams){
 
     if(request.status == 200) {
       layersXml = request.responseXML;
-      var options = JSON.parse(vlUtils.getXmlValue(layersXml, 'mapoptions'));
+      jsonConfWMS = JSON.parse(vlUtils.getXmlValue(layersXml, 'json'));
       if(vlUtils.getXmlValue(layersXml, 'bounds') != null) {
-        options.maxExtent = new OpenLayers.Bounds(vlUtils.getXmlValue(layersXml, 'bounds').split(','));
+        jsonConfWMS.mapoptions.maxExtent = new OpenLayers.Bounds(vlUtils.getXmlValue(layersXml, 'bounds').split(','));
       }
       var currentTime = new Date();
       var layers = [];
@@ -43,12 +44,29 @@ function vlWms(inputParams){
               "layers": layersTags[i].getAttribute('layername'),
               "format": vlUtils.getXmlValue(layersXml, 'defaultformat')
           },
-          options
+          jsonConfWMS.mapoptions
         );
       }
       
-      map = new OpenLayers.Map(inputParams.divMap, options);
+      map = new OpenLayers.Map(inputParams.divMap, jsonConfWMS.mapoptions);
       map.addLayers(layers);
+
+      if(!vlUtils.fullOLPermalinkCoords(reqParams) && 'defaults' in jsonConfWMS) {
+          map.setCenter(new OpenLayers.LonLat(jsonConfWMS.defaults.xy),jsonConfWMS.defaults.z);
+      }
+      if('info' in jsonConfWMS) {
+        function openInfoPage() { var win=window.open(jsonConfWMS.info, '_blank'); win.focus(); }
+        var btnHiLite = new OpenLayers.Control.Button({
+          displayClass: 'olControlBtnHiLite',
+          title: "Info",
+          id: 'btnHiLite',
+          trigger: openInfoPage
+        });
+        var panel = new OpenLayers.Control.Panel({defaultControl: btnHiLite});
+        panel.addControls([btnHiLite]);
+        map.addControl(panel);
+      }
+
       var automaticCtls = vlUtils.mapMapUI({map: map, add: [
         'OpenLayers.Control.LayerSwitcher',
         'OpenLayers.Control.PanZoomBar',
