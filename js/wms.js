@@ -13,7 +13,8 @@ function vlWms(inputParams){
 
   var xmlHandlerConf = function(request) {
     if(request.status == 200) {
-      document.getElementById(inputParams.divMap).innerHTML = '';
+      document.getElementById(inputParams.divMap).innerHTML
+        = '<center><a href="?"><h1>Error occured.<br/>Click here.</h1><img src="apple-touch-icon.png" border="0"/></a></center>';
       conf = vlUtils.xmlDoc2Hash(request.responseXML);
       jsonConf = JSON.parse(conf.json);
       isAtSite = 'site' in reqParams && reqParams['site'].match(/^[A-Z][A-Za-z-]*$/);
@@ -22,8 +23,8 @@ function vlWms(inputParams){
   }
   
   var xmlHandlerLayers = function(request) {
-
     if(request.status == 200) {
+      document.getElementById(inputParams.divMap).innerHTML = ''; 
       layersXml = request.responseXML;
       jsonConfWMS = JSON.parse(vlUtils.getXmlValue(layersXml, 'json'));
       if(vlUtils.getXmlValue(layersXml, 'bounds') != null) {
@@ -104,8 +105,7 @@ function vlWms(inputParams){
       vlUtils.mapAddCoordsPromptCtl(map, clickData);
       
     } else {
-      document.getElementById(inputParams.divMap).innerHTML = '<h1><a href="?">Vanalinnad</a></h1>';
-      document.location = '?';
+      window.location.replace('?');
     }
   }
 

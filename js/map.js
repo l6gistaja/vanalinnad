@@ -141,7 +141,7 @@ function vlMap(inputParams){
     } else {
       layerYear = '';
     }
-    
+
     if(isAtSite) {
       var layersTags = layersXml.getElementsByTagName('layer');
       for(i = 0; i < layersTags.length; i++) {
@@ -194,6 +194,17 @@ function vlMap(inputParams){
             roadLayers[roadLayers.length-1].setVisibility(false);
           }
         }
+      }
+
+      // when someone accesses page with outdated layers parameter, redirect
+      var layerUrlParts;
+      if(
+        (layerUrlParts = window.location.href.match(/([?&]layers=)([B0]*)([TF]+)/)) != null
+        && layerUrlParts.length > 2
+        && layerUrlParts[2].length < baseLayersCount + 1
+      ) {
+        while(layerUrlParts[2].length < baseLayersCount + 1) { layerUrlParts[2] += '0'; }
+        window.location.replace(window.location.href.replace(layerUrlParts[0],layerUrlParts[1]+layerUrlParts[2]+layerUrlParts[3]));
       }
     }
     roadLayers[roadLayers.length] = selectorLayer;
