@@ -298,6 +298,8 @@ vlUtils.getURLs = function(urlKeys, data, jsonConf) {
         locUrl.l = '<img src="' + locUrl.icon + '" border="0"/>';
       }
     }
+    
+    // handle coordinate conversions
     if('srs' in baseUrl && 'srs' in locUrl && 'X'  in locData && 'Y'  in locData && baseUrl.srs != locUrl.srs) {
       try {
         p4 = proj4(jsonConf.proj4[baseUrl.srs.replace(':','_')],jsonConf.proj4[locUrl.srs.replace(':','_')],[locData.X, locData.Y]);
@@ -306,12 +308,17 @@ vlUtils.getURLs = function(urlKeys, data, jsonConf) {
       } catch(err) {
          if('coords' in locUrl && locUrl.coords == 'yes') {
            continue;
-         } else {
+         } else { // if conversion failed and target site doesnt care about them, just ignore coordinates
            locData.X = locData.Y = '';
          }
       }
     }
+    
+    // handle zoom levels
     locData.Z = parseInt(locData.Z) + ('zoomdiff' in locUrl ? locUrl.zoomdiff : 0) - ('zoomdiff' in baseUrl ? baseUrl.zoomdiff : 0);
+    if('maxzoom' in locUrl && locData.Z > locUrl.maxzoom) { locData.Z = locUrl.maxzoom; }
+    if('minzoom' in locUrl && locData.Z < locUrl.minzoom) { locData.Z = locUrl.minzoom; }
+
     urlData[urlData.length] = vlUtils.mergeHashes(locUrl, locData);
   }
   return vlUtils.links(urlData);

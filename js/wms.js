@@ -51,24 +51,26 @@ function vlWms(inputParams){
       map = new OpenLayers.Map(inputParams.divMap, jsonConfWMS.mapoptions);
       map.addLayers(layers);
 
-      if(!vlUtils.fullOLPermalinkCoords(reqParams) && 'defaults' in jsonConfWMS) {
-          var mapCenter = new OpenLayers.LonLat(jsonConfWMS.defaults.xy);
-          map.setCenter(mapCenter,jsonConfWMS.defaults.z);
-          var popup = new OpenLayers.Popup.FramedCloud (
-              'coordsPromptPopup',
-              mapCenter,
-              null,
-              'Wrong or missing lon, lat or zoom URL parameters;&nbsp;&nbsp;&nbsp;<br/>zoomed to [ '
-                + jsonConfWMS.defaults.xy[0] + ', '
-                + jsonConfWMS.defaults.xy[1] + ', '
-                + jsonConfWMS.defaults.z
-                + ' ] instead.&nbsp;&nbsp;&nbsp;',
-              null,
-              true,
-              null
-          );
-          map.addPopup(popup);
+      if('defaults' in jsonConfWMS) {
+        var xyz = {ll: ['lon','lat'], xy: []};
+        if(!( 'zoom' in reqParams && !isNaN(xyz.z = parseInt(reqParams['zoom'])) )) {
+          xyz.z = jsonConfWMS.defaults.z
+        }
+        for(xyz.tmp in xyz.ll) {
+          if(!( xyz.ll[xyz.tmp] in reqParams && !isNaN(xyz.xy[xyz.tmp] = parseFloat(reqParams[xyz.ll[xyz.tmp]])) )) {
+            xyz.xy = jsonConfWMS.defaults.xy;
+            xyz.msg = 'Wrong or missing lon or lat URL parameters;&nbsp;&nbsp;&nbsp;<br/>centered and zoomed to [ '
+              + xyz.xy[0] + ', ' + xyz.xy[1] + ', ' + xyz.z + ' ] instead.&nbsp;&nbsp;&nbsp;';
+            break;
+          }
+        }
+        xyz.mapCenter = new OpenLayers.LonLat(xyz.xy);
+        map.setCenter(xyz.mapCenter, xyz.z);
+        if('msg' in xyz) {
+          map.addPopup(new OpenLayers.Popup.FramedCloud('coordsPromptPopup', xyz.mapCenter, null, xyz.msg, null, true, null));
+        }
       }
+
       if('info' in jsonConfWMS) {
         function openInfoPage() { var win=window.open(jsonConfWMS.info, '_blank'); win.focus(); }
         var btnHiLite = new OpenLayers.Control.Button({
