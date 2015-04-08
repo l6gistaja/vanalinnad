@@ -88,6 +88,7 @@ function vlWms(inputParams){
       var automaticCtls = vlUtils.mapMapUI({map: map, add: [
         'OpenLayers.Control.LayerSwitcher',
         'OpenLayers.Control.PanZoomBar',
+        'OpenLayers.Control.KeyboardDefaults',
         'OpenLayers.Control.Permalink',
         'OpenLayers.Control.ScaleLine'
       ], remove: 'OpenLayers.Control.Zoom'});
