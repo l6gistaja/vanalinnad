@@ -43,7 +43,10 @@ function vlWms(inputParams){
             : layersTags[i].getAttribute('wmsurl'),
           {
               "layers": layersTags[i].getAttribute('layername'),
-              "format": vlUtils.getXmlValue(layersXml, 'defaultformat')
+              "format": layersTags[i].getAttribute('format') == null
+                ? vlUtils.getXmlValue(layersXml, 'defaultformat')
+                : layersTags[i].getAttribute('format'),
+              "transparent": layersTags[i].getAttribute('transparent')
           },
           jsonConfWMS.mapoptions
         );
