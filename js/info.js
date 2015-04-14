@@ -335,7 +335,8 @@ function vlInitInfo(inputParams){
             l: links[i].getAttribute(links[i].getAttribute('name') ? 'name' : 'year')
           })  + '</li>';
         }
-        y += '</ol></td><td class="infoTableCell"><ol><li>' + vlUtils.getURLs(urlKeys, locData, jsonConf) + '</li></ol></td></tr></table>';
+        y += '</ol></td><td class="infoTableCell"><ol type="A"><li>' + vlUtils.getURLs(urlKeys, locData, jsonConf)
+          + '</li></ol></td></tr></table>';
         document.getElementById(inputParams.divContent).innerHTML = y;
         document.getElementById(inputParams.divHeader).innerHTML += getSiteLbl();
         document.getElementById(inputParams.divFooter).innerHTML = document.getElementById(inputParams.divHeader).innerHTML;
