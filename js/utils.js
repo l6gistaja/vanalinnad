@@ -94,17 +94,17 @@ vlUtils.coordsPrompt = function(map, data) {
             coords['EPSG:4326'] = {x:p4[0], y:p4[1]};
           } catch(err) { }
         }
-        y += '<table id="coordsTable"><tr><th>'
-          + vlUtils.link({u:'http://en.wikipedia.org/wiki/Spatial_reference_system',l:'SRS',t:'_blank',h:'Spatial reference system'}) + '</th><th>'
-          + vlUtils.link({u:'http://en.wikipedia.org/wiki/Longitude',l:'X',t:'_blank',h:'Longitude'}) + '</th><th>'
+        y += '<table id="coordsTable"><tr><th class="ctC">'
+          + vlUtils.link({u:'http://en.wikipedia.org/wiki/Spatial_reference_system',l:'SRS',t:'_blank',h:'Spatial reference system'}) + '</th><th class="ctC">'
+          + vlUtils.link({u:'http://en.wikipedia.org/wiki/Longitude',l:'X',t:'_blank',h:'Longitude'}) + '</th><th class="ctC">'
           + vlUtils.link({u:'http://en.wikipedia.org/wiki/Latitude',l:'Y',t:'_blank',h:'Latitude'}) +  '</th></tr>';
         var srs, decimalPlaces;
         for (srs in coords) {
           decimalPlaces = srs == 'EPSG:4326' ? 6 : 0;
-          y += '<tr><th>'
+          y += '<tr><th class="ctC">'
             + vlUtils.link({u:'http://spatialreference.org/ref/' + srs.toLowerCase().replace(':','/') + '/',l:srs,t:'_blank'})
-            + '</th><td>' + vlUtils.decimalRound(coords[srs].x, decimalPlaces)
-            + '</td><td>' + vlUtils.decimalRound(coords[srs].y, decimalPlaces) +  '</td></tr>';
+            + '</th><td class="ctC">' + vlUtils.decimalRound(coords[srs].x, decimalPlaces)
+            + '</td><td class="ctC">' + vlUtils.decimalRound(coords[srs].y, decimalPlaces) +  '</td></tr>';
         }
         y += '</table><br/>';
         

@@ -56,11 +56,23 @@ body .bodyContent {
   line-height: 130%;
 }
 
-table {
-   border-collapse: collapse;
-}
-
-table, th, td {
+#coordsTable {
+  border-collapse: collapse;
   border: 1px solid black;
   padding: 3px;
+}
+
+.ctC {
+  border: 1px solid black;
+  padding: 3px;
+}
+
+#infoTable {
+  border-collapse: collapse;
+  padding: 3px;
+}
+
+.infoTableCell {
+  padding: 3px 3px 3px 15px;
+  vertical-align: top;
 }

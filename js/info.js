@@ -306,17 +306,28 @@ function vlInitInfo(inputParams){
           T: vlUtils.getXmlValue(layerXml, 'city'),
           C: vlUtils.getXmlValue(layerXml, 'country'),
           site: reqParams['site'],
-          baseUrlID: 'vanalinnad'
+          baseUrlID: 'vanalinnad',
+          delimiter: '</li><li>'
         };        
         
+        var w;
         var urlKeys = ['wikipedia','ajapaik'];
         for(w in jsonConf.urls) {
           if('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS') { urlKeys[urlKeys.length] = w; }
         }
-        y = '<br/>' 
-          + vlUtils.link({u:'index.html?site=' + reqParams['site'], l:siteName}) + ' ( '
-          + vlUtils.getURLs(urlKeys, locData, jsonConf)
-          + ' )<ol>';
+        var siteConf = vlUtils.getXmlValue(layerXml, 'json');
+        if(siteConf != '') {
+          siteConf = JSON.parse(siteConf);
+          if('urls' in siteConf) {
+            for(w in siteConf.urls) {
+              jsonConf.urls[w] = siteConf.urls[w];
+              urlKeys[urlKeys.length] = w;
+            }
+          }
+        }
+
+        y = '<br/><strong>' + vlUtils.link({u:'index.html?site=' + reqParams['site'], l:siteName})
+          + '</strong><table id="infoTable"><tr><td class="infoTableCell"><ol>';
         for(i=0; i<links.length; i++) {
           if(links[i].getAttribute('disabled') || links[i].getAttribute('year') == null){ continue; }
           y += '<li>' + vlUtils.link({
@@ -324,7 +335,7 @@ function vlInitInfo(inputParams){
             l: links[i].getAttribute(links[i].getAttribute('name') ? 'name' : 'year')
           })  + '</li>';
         }
-        y += '</ol>';
+        y += '</ol></td><td class="infoTableCell"><ol><li>' + vlUtils.getURLs(urlKeys, locData, jsonConf) + '</li></ol></td></tr></table>';
         document.getElementById(inputParams.divContent).innerHTML = y;
         document.getElementById(inputParams.divHeader).innerHTML += getSiteLbl();
         document.getElementById(inputParams.divFooter).innerHTML = document.getElementById(inputParams.divHeader).innerHTML;
