@@ -19,9 +19,9 @@
   <!-- layer type="wms" year="tugimnt" layername="HYB_tugimnt" format="image/png" transparent="true"/ -->
   <layer type="wms" year="korvalmnt" layername="HYB_korvalmnt" format="image/png" transparent="true"/>
   <!-- layer type="wms" year="mnt_muu" layername="HYB_mnt_muu" format="image/png" transparent="true"/ -->
+  <layer type="wms" year="tee_muu" layername="HYB_tee_muu" format="image/png" transparent="true"/>
   <layer type="wms" year="tan._pohi" layername="HYB_tanavad_pohi_1" format="image/png" transparent="true"/>
   <layer type="wms" year="tanavad" layername="HYB_tanavad_10T" format="image/png" transparent="true"/>
   <!-- layer type="wms" year="yhesuunal" layername="HYB_tanavad_suunad" format="image/png" transparent="true"/ -->
-  <layer type="wms" year="tee_muu" layername="HYB_tee_muu" format="image/png" transparent="true"/>
   <minzoom>5</minzoom>
 </vanalinnadlayers>
