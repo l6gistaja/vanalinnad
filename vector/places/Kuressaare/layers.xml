@@ -19,4 +19,14 @@
   <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>13</minzoom>
+    <json><![CDATA[{
+"urls": {
+ "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-genshtab_o-34/?x=@X@&y=@Y@", "srs":"EPSG:4326"},
+ "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта", "l":"ЭтоМесто: трехверстовка", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/5-2/"},
+ "ra1917m": {"h":"Rahvusarhiiv < 1917", "l":"Rahvusarhiiv < 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139257&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
+ "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10928035&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
+ "kuressaare": {"h":"Kuressaare kaardirakendused", "l":"Kuressaare kaardirakendused", "t":"_blank", "U":"http://www.kuressaare.ee/uus/kaardid/"},
+  "": {"h":"Saaremaa genealoogiaselts", "l":"Saaremaa genealoogiaselts", "t":"_blank", "U":"http://www.genealoogia.ee/saaremaa/tulemused.html"}
+}
+}]]></json>
 </vanalinnadlayers>
