@@ -1,0 +1,2 @@
+2015-04-16 10:37:32+03:00; 555 files; 4.9M ../raster/places/Tartu/1732
+2015-04-16 10:37:44+03:00; 290 files; 3.9M ../raster/places/Tartu/1732
