@@ -2,15 +2,15 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1850.SW"><name>1850.SW</name><LineString><coordinates>26.72205131522117,58.36507828259952 26.72205131522117,58.38252496231350 26.74911030077051,58.38252496231350 26.74911030077051,58.36507828259952 26.72205131522117,58.36507828259952</coordinates></LineString></Placemark>
-<Placemark id="gcp1850.SW.1"><name>1850.SW #1</name><description>249 529</description><Point><coordinates>26.72880421432518,58.376214995613914</coordinates></Point></Placemark>
-<Placemark id="gcp1850.SW.2"><name>1850.SW #2</name><description>41 1696</description><Point><coordinates>26.734383209075883,58.36771938967598</coordinates></Point></Placemark>
-<Placemark id="gcp1850.SW.3"><name>1850.SW #3</name><description>533 1015</description><Point><coordinates>26.73568789947543,58.37401380005957</coordinates></Point></Placemark>
+<Placemark id="bbox.1850.SW"><name>1850.SW</name><LineString><coordinates>26.72266110538254,58.36512019604822 26.72266110538254,58.38202632934901 26.74877125431914,58.38202632934901 26.74877125431914,58.36512019604822 26.72266110538254,58.36512019604822</coordinates></LineString></Placemark>
+<Placemark id="gcp1850.SW.1"><name>1850.SW #1</name><description>1336 2635</description><Point><coordinates>26.72880421432518,58.376214995613914</coordinates></Point></Placemark>
+<Placemark id="gcp1850.SW.2"><name>1850.SW #2</name><description>171 9244</description><Point><coordinates>26.734383209075883,58.36771938967598</coordinates></Point></Placemark>
+<Placemark id="gcp1850.SW.3"><name>1850.SW #3</name><description>2944 5391</description><Point><coordinates>26.73568789947543,58.37401380005957</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1850.E"><name>1850.E</name><LineString><coordinates>26.70596326620035,58.37314307966312 26.70596326620035,58.39455711540180 26.75341259355481,58.39455711540180 26.75341259355481,58.37314307966312 26.70596326620035,58.37314307966312</coordinates></LineString></Placemark>
-<Placemark id="gcp1850.E.1"><name>1850.E #1</name><description>676 304</description><Point><coordinates>26.718409910022174,58.3906674985325</coordinates></Point></Placemark>
-<Placemark id="gcp1850.E.2"><name>1850.E #2</name><description>688 1980</description><Point><coordinates>26.74516762715498,58.38090418997577</coordinates></Point></Placemark>
-<Placemark id="gcp1850.E.3"><name>1850.E #3</name><description>404 1348</description><Point><coordinates>26.731928243456743,58.38226536631411</coordinates></Point></Placemark>
+<Placemark id="bbox.1850.E"><name>1850.E</name><LineString><coordinates>26.70628744006828,58.37330325343355 26.70628744006828,58.39475168186392 26.75372955396066,58.39475168186392 26.75372955396066,58.37330325343355 26.70628744006828,58.37330325343355</coordinates></LineString></Placemark>
+<Placemark id="gcp1850.E.1"><name>1850.E #1</name><description>4962 2244</description><Point><coordinates>26.718409910022174,58.3906674985325</coordinates></Point></Placemark>
+<Placemark id="gcp1850.E.2"><name>1850.E #2</name><description>5058 14956</description><Point><coordinates>26.74516762715498,58.38090418997577</coordinates></Point></Placemark>
+<Placemark id="gcp1850.E.3"><name>1850.E #3</name><description>2912 10166</description><Point><coordinates>26.731928243456743,58.38226536631411</coordinates></Point></Placemark>
 
 <Placemark id="bbox.1846"><name>1846</name><LineString><coordinates>26.71339205462676,58.37689867327875 26.71339205462676,58.38706834394390 26.72866996276174,58.38706834394390 26.72866996276174,58.37689867327875 26.71339205462676,58.37689867327875</coordinates></LineString></Placemark>
 <Placemark id="gcp1846.1"><name>1846 #1</name><description>697 1407</description><Point><coordinates>26.722567523803612,58.379047689944905</coordinates></Point></Placemark>
@@ -24,7 +24,7 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.70596326620035,58.36507828259952,26.75341259355481,58.39455711540180</value></Data>
+<Data name="bbox"><value>26.70628744006828,58.36512019604822,26.75372955396066,58.39475168186392</value></Data>
 <Data name="maps"><value>1846,1850.SW,1850.E,1850.N</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
