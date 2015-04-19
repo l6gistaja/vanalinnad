@@ -1,27 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
+<kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.18XX.W"><name>18XX.W</name><LineString><coordinates>28.11836035203705,59.37359735200043 28.11836035203705,59.41243144305069 28.18475421782738,59.41243144305069 28.18475421782738,59.37359735200043 28.11836035203705,59.37359735200043</coordinates></LineString></Placemark>
-<Placemark id="gcp18XX.W.1"><name>18XX.W #1</name><description>1019 718</description><Point><coordinates>28.16239386230494,59.39671751750341</coordinates></Point></Placemark>
-<Placemark id="gcp18XX.W.2"><name>18XX.W #2</name><description>767 1230</description><Point><coordinates>28.15554886489814,59.385649798058054</coordinates></Point></Placemark>
-<Placemark id="gcp18XX.W.3"><name>18XX.W #3</name><description>1395 1648</description><Point><coordinates>28.182542616424534,59.37896152725038</coordinates></Point></Placemark>
+<Placemark id="bbox.18XX.W"><name>18XX.W</name><LineString><coordinates>28.11820340526638,59.37369286138450 28.11820340526638,59.41245181642782 28.18495118181627,59.41245181642782 28.18495118181627,59.37369286138450 28.11820340526638,59.37369286138450</coordinates></LineString></Placemark>
+<Placemark id="gcp18XX.W.1"><name>18XX.W #1</name><description>6400 4522</description><Point><coordinates>28.16239386230494,59.39671751750341</coordinates></Point></Placemark>
+<Placemark id="gcp18XX.W.2"><name>18XX.W #2</name><description>4834 7747</description><Point><coordinates>28.15554886489814,59.385649798058054</coordinates></Point></Placemark>
+<Placemark id="gcp18XX.W.3"><name>18XX.W #3</name><description>8765 10362</description><Point><coordinates>28.182542616424534,59.37896152725038</coordinates></Point></Placemark>
 
-
-<Placemark id="bbox.18XX"><name>18XX</name><LineString><coordinates>28.14391843839471,59.36253097268665 28.14391843839471,59.40463777839631 28.23119381649864,59.40463777839631 28.23119381649864,59.36253097268665 28.14391843839471,59.36253097268665</coordinates></LineString></Placemark>
-<Placemark id="gcp18XX.1"><name>18XX #1</name><description>1194 642</description><Point><coordinates>28.198105749758106,59.38652325804312</coordinates></Point></Placemark>
-<Placemark id="gcp18XX.2"><name>18XX #2</name><description>1790 931</description><Point><coordinates>28.2182545038777,59.3781301391178</coordinates></Point></Placemark>
-<Placemark id="gcp18XX.3"><name>18XX #3</name><description>1020 1286</description><Point><coordinates>28.18606799569871,59.37490566745586</coordinates></Point></Placemark>
-<Placemark id="gcp18XX.4"><name>18XX #4</name><description>1864 1369</description><Point><coordinates>28.217118727970746,59.3692639643447</coordinates></Point></Placemark>
+<Placemark id="bbox.18XX"><name>18XX</name><LineString><coordinates>28.14460211315040,59.36249698298700 28.14460211315040,59.40445556947247 28.23124557511018,59.40445556947247 28.23124557511018,59.36249698298700 28.14460211315040,59.36249698298700</coordinates></LineString></Placemark>
+<Placemark id="gcp18XX.1"><name>18XX #1</name><description>7185 3927</description><Point><coordinates>28.198105749758106,59.38652325804312</coordinates></Point></Placemark>
+<Placemark id="gcp18XX.2"><name>18XX #2</name><description>10840 5701</description><Point><coordinates>28.2182545038777,59.3781301391178</coordinates></Point></Placemark>
+<Placemark id="gcp18XX.3"><name>18XX #3</name><description>6126 7873</description><Point><coordinates>28.18606799569871,59.37490566745586</coordinates></Point></Placemark>
+<Placemark id="gcp18XX.4"><name>18XX #4</name><description>11295 8394</description><Point><coordinates>28.217118727970746,59.3692639643447</coordinates></Point></Placemark>
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>28.11836035203705,59.36253097268665,28.23119381649864,59.41243144305069</value></Data>
+<Data name="bbox"><value>28.11820340526638,59.36249698298700,28.23124557511018,59.41245181642782</value></Data>
 <Data name="maps"><value>18XX.W,18XX</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="montage"><value>yes</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/18XX/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
 </ExtendedData>
 
 </Document>
