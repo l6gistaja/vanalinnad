@@ -1,2 +1,2 @@
-2014-12-26 00:53:25+02:00; 440 files; 3.1M ../raster/places/Paide/1848
-2014-12-26 00:53:39+02:00; 160 files; 2.0M ../raster/places/Paide/1848
+2015-04-22 22:41:58+03:00; 440 files; 3.4M ../raster/places/Paide/1848
+2015-04-22 22:42:17+03:00; 160 files; 2.3M ../raster/places/Paide/1848

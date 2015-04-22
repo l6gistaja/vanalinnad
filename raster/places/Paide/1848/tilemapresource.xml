@@ -3,8 +3,8 @@
 	  <Title>Paide 1848</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="58.85812119221316" miny="25.50199173892026" maxx="58.90123630938233" maxy="25.59918541577609"/>
-	  <Origin x="58.85812119221316" y="25.50199173892026"/>
+	  <BoundingBox minx="58.85812406685741" miny="25.50207588438900" maxx="58.90118766763027" maxy="25.59904592753140"/>
+	  <Origin x="58.85812406685741" y="25.50207588438900"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="12" units-per-pixel="38.21851413574219" order="12"/>

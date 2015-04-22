@@ -3,8 +3,8 @@
 	  <Title>Paide 1790</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="58.86367441783313" miny="25.50833069016803" maxx="58.89856826376975" maxy="25.58713820722355"/>
-	  <Origin x="58.86367441783313" y="25.50833069016803"/>
+	  <BoundingBox minx="58.86369466964052" miny="25.50775334964582" maxx="58.89962981417140" maxy="25.58745457768417"/>
+	  <Origin x="58.86369466964052" y="25.50775334964582"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="12" units-per-pixel="38.21851413574219" order="12"/>
