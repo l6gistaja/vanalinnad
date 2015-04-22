@@ -109,7 +109,7 @@ function vlWms(inputParams){
       vlUtils.mapAddCoordsPromptCtl(map, clickData);
       
     } else {
-      window.location.replace('?');
+      window.location.replace('?error=nonexisting_wms');
     }
   }
 
