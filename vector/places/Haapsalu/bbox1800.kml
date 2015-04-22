@@ -1,28 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
+<kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1798"><name>1798</name><LineString><coordinates>23.49816571480932,58.89892955149909 23.49816571480932,58.96750198250582 23.58343917525738,58.96750198250582 23.58343917525738,58.89892955149909 23.49816571480932,58.89892955149909</coordinates></LineString></Placemark>
-<Placemark id="gcp1798.1"><name>1798 #1</name><description>580 493</description><Point><coordinates>23.542139918059693,58.949348069422335</coordinates></Point></Placemark>
-<Placemark id="gcp1798.2"><name>1798 #2</name><description>398 497</description><Point><coordinates>23.530810267180158,58.947787478008614</coordinates></Point></Placemark>
-<Placemark id="gcp1798.3"><name>1798 #3</name><description>652 1920</description><Point><coordinates>23.56884872923756,58.90427170993969</coordinates></Point></Placemark>
+<Placemark id="bbox.1798"><name>1798</name><LineString><coordinates>23.49857677451832,58.89902645882892 23.49857677451832,58.96740628664590 23.58309446271324,58.96740628664590 23.58309446271324,58.89902645882892 23.49857677451832,58.89902645882892</coordinates></LineString></Placemark>
+<Placemark id="gcp1798.1"><name>1798 #1</name><description>2941 2514</description><Point><coordinates>23.542139918059693,58.949348069422335</coordinates></Point></Placemark>
+<Placemark id="gcp1798.2"><name>1798 #2</name><description>2258 2688</description><Point><coordinates>23.53433538345367,58.94711746140291</coordinates></Point></Placemark>
+<Placemark id="gcp1798.3"><name>1798 #3</name><description>3312 9776</description><Point><coordinates>23.56884872923756,58.90427170993969</coordinates></Point></Placemark>
+<Placemark id="gcp1798.4"><name>1798 #4</name><description>4186 4764</description><Point><coordinates>23.56420013511011,58.937035895183044</coordinates></Point></Placemark>
 
-
-<Placemark id="bbox.1800"><name>1800</name><LineString><coordinates>23.50808417457390,58.94458714080793 23.50808417457390,58.96306829265613 23.55148072527284,58.96306829265613 23.55148072527284,58.94458714080793 23.50808417457390,58.94458714080793</coordinates></LineString></Placemark>
-<Placemark id="gcp1800.1"><name>1800 #1</name><description>898 1058</description><Point><coordinates>23.530838949736804,58.94777699075635</coordinates></Point></Placemark>
-<Placemark id="gcp1800.2"><name>1800 #2</name><description>1267 1126</description><Point><coordinates>23.54013012176493,58.94622965138551</coordinates></Point></Placemark>
-<Placemark id="gcp1800.3"><name>1800 #3</name><description>1344 912</description><Point><coordinates>23.542528569159312,58.94896353032777</coordinates></Point></Placemark>
-<Placemark id="gcp1800.4"><name>1800 #4</name><description>68 315</description><Point><coordinates>23.51275420105053,58.958843890012226</coordinates></Point></Placemark>
-<Placemark id="gcp1800.5"><name>1800 #5</name><description>1025 840</description><Point><coordinates>23.534662484283412,58.95033406508839</coordinates></Point></Placemark>
+<Placemark id="bbox.1800"><name>1800</name><LineString><coordinates>23.50798748437971,58.94461498947756 23.50798748437971,58.96295671244533 23.55154438045502,58.96295671244533 23.55154438045502,58.94461498947756 23.50798748437971,58.94461498947756</coordinates></LineString></Placemark>
+<Placemark id="gcp1800.1"><name>1800 #1</name><description>3650 4293</description><Point><coordinates>23.530838949736804,58.94777699075635</coordinates></Point></Placemark>
+<Placemark id="gcp1800.2"><name>1800 #2</name><description>5145 4568</description><Point><coordinates>23.54013012176493,58.94622965138551</coordinates></Point></Placemark>
+<Placemark id="gcp1800.3"><name>1800 #3</name><description>5458 3704</description><Point><coordinates>23.542528569159312,58.94896353032777</coordinates></Point></Placemark>
+<Placemark id="gcp1800.4"><name>1800 #4</name><description>282 1246</description><Point><coordinates>23.51275420105053,58.958843890012226</coordinates></Point></Placemark>
+<Placemark id="gcp1800.5"><name>1800 #5</name><description>4158 3412</description><Point><coordinates>23.534662484283412,58.95033406508839</coordinates></Point></Placemark>
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>23.49816571480932,58.89892955149909,23.58343917525738,58.96750198250582</value></Data>
+<Data name="bbox"><value>23.49857677451832,58.89902645882892,23.58309446271324,58.96740628664590</value></Data>
 <Data name="maps"><value>1798,1800</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Haapsalu/composed/1800/</value></Data>
 <Data name="montage"><value>yes</value></Data>
+
 </ExtendedData>
 
 </Document>
