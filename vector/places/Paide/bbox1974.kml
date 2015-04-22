@@ -2,10 +2,10 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1974.k1"><name>1974.k1</name><LineString><coordinates>25.49711857837931,58.86118540266647 25.49711857837931,58.89934137323414 25.57823993965076,58.89934137323414 25.57823993965076,58.86118540266647 25.49711857837931,58.86118540266647</coordinates></LineString></Placemark>
-<Placemark id="gcp1974.k1.1"><name>1974.k1 #1</name><description>1444 302</description><Point><coordinates>25.557014364929465,58.89225728912328</coordinates></Point></Placemark>
-<Placemark id="gcp1974.k1.2"><name>1974.k1 #2</name><description>1449 852</description><Point><coordinates>25.567764658660952,58.88157974026437</coordinates></Point></Placemark>
-<Placemark id="gcp1974.k1.3"><name>1974.k1 #3</name><description>500 482</description><Point><coordinates>25.5251068064877,58.87950593987569</coordinates></Point></Placemark>
+<Placemark id="bbox.1974.k1"><name>1974.k1</name><LineString><coordinates>25.49716963059867,58.86121472987956 25.49716963059867,58.89935222677081 25.57822498617100,58.89935222677081 25.57822498617100,58.86121472987956 25.49716963059867,58.86121472987956</coordinates></LineString></Placemark>
+<Placemark id="gcp1974.k1.1"><name>1974.k1 #1</name><description>8214 1729</description><Point><coordinates>25.557014364929465,58.89225728912328</coordinates></Point></Placemark>
+<Placemark id="gcp1974.k1.2"><name>1974.k1 #2</name><description>8243 4877</description><Point><coordinates>25.567764658660952,58.88157974026437</coordinates></Point></Placemark>
+<Placemark id="gcp1974.k1.3"><name>1974.k1 #3</name><description>2842 2754</description><Point><coordinates>25.5251068064877,58.87950593987569</coordinates></Point></Placemark>
 
 <Placemark id="bbox.1974.k2"><name>1974.k2</name><LineString><coordinates>25.54269649801317,58.87477133575028 25.54269649801317,58.91260548044265 25.61572943302349,58.91260548044265 25.61572943302349,58.87477133575028 25.54269649801317,58.87477133575028</coordinates></LineString></Placemark>
 <Placemark id="gcp1974.k2.1"><name>1974.k2 #1</name><description>136 568</description><Point><coordinates>25.55792376110342,58.890623545078036</coordinates></Point></Placemark>
@@ -14,7 +14,7 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>25.49711857837931,58.86118540266647,25.61572943302349,58.91260548044265</value></Data>
+<Data name="bbox"><value>25.49716963059867,58.86121472987956,25.61572943302349,58.91260548044265</value></Data>
 <Data name="maps"><value>1974.k1,1974.k2</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
