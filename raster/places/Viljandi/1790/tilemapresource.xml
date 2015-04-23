@@ -3,8 +3,8 @@
 	  <Title>Viljandi 1790</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="58.35101755638414" miny="25.56900502116750" maxx="58.37217781260115" maxy="25.63113404885212"/>
-	  <Origin x="58.35101755638414" y="25.56900502116750"/>
+	  <BoundingBox minx="58.35103798223977" miny="25.56906404957528" maxx="58.37217200003081" maxy="25.63108004735510"/>
+	  <Origin x="58.35103798223977" y="25.56906404957528"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="12" units-per-pixel="38.21851413574219" order="12"/>

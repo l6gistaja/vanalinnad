@@ -2,6 +2,17 @@
   <bounds>25.53058400968398,58.31977549612473,25.65006511447886,58.39315709584433</bounds>
   <city>Viljandi</city>
   <country>Estonia</country>
+  <json>{
+&quot;urls&quot;: {
+ &quot;mellin&quot;: {&quot;h&quot;:&quot;Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel&quot;, &quot;l&quot;:&quot;Mellin 1791&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.wdl.org/en/item/2571/view/1/7/&quot;},
+ &quot;etomesto3v&quot;: {&quot;h&quot;:&quot;ЭтоМесто: трехверстовка Шуберта&quot;, &quot;l&quot;:&quot;ЭтоМесто: трехверстовка&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.etomesto.ru/shubert-map/5-5/&quot;},
+ &quot;etomesto&quot;: {&quot;h&quot;:&quot;ЭтоМесто&quot;, &quot;l&quot;:&quot;ЭтоМесто&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.etomesto.ru/map-atlas_topo-10km/?x=@X@&amp;y=@Y@&quot;, &quot;srs&quot;:&quot;EPSG:4326&quot;},
+ &quot;ra1917m&quot;: {&quot;h&quot;:&quot;Rahvusarhiiv &lt; 1917&quot;, &quot;l&quot;:&quot;Rahvusarhiiv &lt; 1917&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139239&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav&quot;},
+ &quot;ra1917_1950&quot;: {&quot;h&quot;:&quot;Rahvusarhiiv 1917-1950&quot;, &quot;l&quot;:&quot;Rahvusarhiiv 1917-1950&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139425&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav&quot;},
+ &quot;ra1950_1991&quot;: {&quot;h&quot;:&quot;Rahvusarhiiv 1950-1991&quot;, &quot;l&quot;:&quot;Rahvusarhiiv 1950-1991&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140035&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav&quot;},
+  &quot;rt_vilj&quot;: {&quot;h&quot;:&quot;Viljandi vanalinna tänavatevõrgu ajalooline kujunemine - Riigi Teataja&quot;, &quot;l&quot;:&quot;Viljandi tänavatevõrgu kujunemine&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;https://www.riigiteataja.ee/aktilisa/4081/0201/3096/Lisa2_m58.pdf&quot;}
+}
+}</json>
   <layer bounds="25.53183904900284,58.32112209656304,25.65035228469729,58.39293590781561" type="tms" year="1966" />
   <layer bounds="25.56681767042937,58.35323958141758,25.62500716225430,58.37818236331402" type="tms" year="1940" />
   <layer bounds="25.56802780968995,58.35158628791991,25.62235588670906,58.37820390757960" type="tms" year="193X" />
@@ -10,23 +21,12 @@
   <layer bounds="25.57332723431488,58.35687453046804,25.61041275093021,58.36843809924152" type="tms" year="1909" />
   <layer bounds="25.58483237255148,58.35653643791246,25.61931546149097,58.36880344137576" type="tms" year="1900" />
   <layer bounds="25.56887359117449,58.35007135301977,25.64016905211753,58.37434409608014" type="tms" year="1875" />
-  <layer bounds="25.56902594242321,58.35221638357837,25.63040767224689,58.37174321377737" type="tms" year="1832" />
-  <layer bounds="25.56900502116750,58.35101755638414,25.63113404885212,58.37217781260115" type="tms" year="1790" />
+  <layer bounds="25.56905625477550,58.35238180787370,25.63068541202298,58.37166908125943" type="tms" year="1832" />
+  <layer bounds="25.56906404957528,58.35103798223977,25.63108004735510,58.37217200003081" type="tms" year="1790" />
   <layer bounds="25.55223885242500,58.34017644051964,25.63699101769351,58.38141944369330" type="tms" year="1744" />
   <layer bounds="25.59093344103228,58.35736420898661,25.60394822495338,58.36576765752781" type="tms" year="1656" />
   <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
   <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>12</minzoom>
-  <json><![CDATA[{
-"urls": {
- "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/7/"},
- "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта", "l":"ЭтоМесто: трехверстовка", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/5-5/"},
- "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-atlas_topo-10km/?x=@X@&y=@Y@", "srs":"EPSG:4326"},
- "ra1917m": {"h":"Rahvusarhiiv < 1917", "l":"Rahvusarhiiv < 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139239&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
- "ra1917_1950": {"h":"Rahvusarhiiv 1917-1950", "l":"Rahvusarhiiv 1917-1950", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139425&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
- "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140035&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
-  "rt_vilj": {"h":"Viljandi vanalinna tänavatevõrgu ajalooline kujunemine - Riigi Teataja", "l":"Viljandi tänavatevõrgu kujunemine", "t":"_blank", "U":"https://www.riigiteataja.ee/aktilisa/4081/0201/3096/Lisa2_m58.pdf"}
-}
-}]]></json>
 </vanalinnadlayers>
