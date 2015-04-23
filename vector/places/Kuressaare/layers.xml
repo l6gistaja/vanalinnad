@@ -2,6 +2,17 @@
   <bounds>22.46191935291008,58.23536741918275,22.50721423578300,58.26707200942217</bounds>
   <city>Kuressaare</city>
   <country>Estonia</country>
+  <json>{
+&quot;urls&quot;: {
+ &quot;mellin&quot;: {&quot;h&quot;:&quot;Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel&quot;, &quot;l&quot;:&quot;Mellin 1791&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.wdl.org/en/item/2571/view/1/9/&quot;},
+ &quot;etomesto3v&quot;: {&quot;h&quot;:&quot;ЭтоМесто: трехверстовка Шуберта&quot;, &quot;l&quot;:&quot;ЭтоМесто: трехверстовка&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.etomesto.ru/shubert-map/5-2/&quot;},
+ &quot;etomesto&quot;: {&quot;h&quot;:&quot;ЭтоМесто&quot;, &quot;l&quot;:&quot;ЭтоМесто&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.etomesto.ru/map-genshtab_o-34/?x=@X@&amp;y=@Y@&quot;, &quot;srs&quot;:&quot;EPSG:4326&quot;},
+ &quot;ra1917m&quot;: {&quot;h&quot;:&quot;Rahvusarhiiv &lt; 1917&quot;, &quot;l&quot;:&quot;Rahvusarhiiv &lt; 1917&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139257&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav&quot;},
+ &quot;ra1950_1991&quot;: {&quot;h&quot;:&quot;Rahvusarhiiv 1950-1991&quot;, &quot;l&quot;:&quot;Rahvusarhiiv 1950-1991&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10928035&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav&quot;},
+ &quot;kuressaare&quot;: {&quot;h&quot;:&quot;Kuressaare kaardirakendused&quot;, &quot;l&quot;:&quot;Kuressaare kaardirakendused&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.kuressaare.ee/uus/kaardid/&quot;},
+  &quot;saaremaa_geneal&quot;: {&quot;h&quot;:&quot;Saaremaa genealoogiaselts&quot;, &quot;l&quot;:&quot;Saaremaa genealoogiaselts&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.genealoogia.ee/saaremaa/tulemused.html&quot;}
+}
+}</json>
   <layer bounds="22.46373966000846,58.24135206934148,22.49984734358742,58.26298646161354" type="tms" year="1970" />
   <layer bounds="22.46127661595613,58.23592523455979,22.50843595880820,58.26619977356382" type="tms" year="1931" />
   <layer bounds="22.45945055781233,58.24007424245781,22.50393211453530,58.26737100676026" type="tms" year="1918" />
@@ -10,7 +21,7 @@
   <layer bounds="22.45774220989000,58.23930448349336,22.50024014560303,58.26607519720036" type="tms" year="1878" />
   <layer bounds="22.45860388032468,58.23976502027836,22.50058252585167,58.26630372488221" type="tms" year="1862" />
   <layer bounds="22.46276814029346,58.24103341556972,22.49900256488004,58.26468266343221" type="tms" year="1828" />
-  <layer bounds="22.45786634641190,58.24397927290653,22.49669157206562,58.26667368063151" type="tms" year="1800" />
+  <layer bounds="22.45783808527334,58.24396734421932,22.49650640486640,58.26668864858654" type="tms" year="1800" />
   <layer bounds="22.45941762880593,58.23773903149378,22.50529864296241,58.26658400597925" type="tms" year="1787" />
   <layer bounds="22.45603961581853,58.24295241590323,22.49838038811252,58.26675516245272" type="tms" year="1765" />
   <layer bounds="22.45073549876113,58.23824506640074,22.50970172610362,58.26847698275478" type="tms" year="1681" />
@@ -19,15 +30,4 @@
   <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>13</minzoom>
-    <json><![CDATA[{
-"urls": {
- "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/9/"},
- "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта", "l":"ЭтоМесто: трехверстовка", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/5-2/"},
- "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-genshtab_o-34/?x=@X@&y=@Y@", "srs":"EPSG:4326"},
- "ra1917m": {"h":"Rahvusarhiiv < 1917", "l":"Rahvusarhiiv < 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139257&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
- "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10928035&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
- "kuressaare": {"h":"Kuressaare kaardirakendused", "l":"Kuressaare kaardirakendused", "t":"_blank", "U":"http://www.kuressaare.ee/uus/kaardid/"},
-  "saaremaa_geneal": {"h":"Saaremaa genealoogiaselts", "l":"Saaremaa genealoogiaselts", "t":"_blank", "U":"http://www.genealoogia.ee/saaremaa/tulemused.html"}
-}
-}]]></json>
 </vanalinnadlayers>
