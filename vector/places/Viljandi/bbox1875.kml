@@ -8,14 +8,14 @@
 <Placemark id="gcp1875.3"><name>1875 #3</name><description>235 645</description><Point><coordinates>25.599551361092633,58.36146077740624</coordinates></Point></Placemark>
 <Placemark id="gcp1875.4"><name>1875 #4</name><description>98 480</description><Point><coordinates>25.5968476944059,58.363171618820985</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1879"><name>1879</name><LineString><coordinates>25.56887359117449,58.35007135301977 25.56887359117449,58.37434409608014 25.64016905211753,58.37434409608014 25.64016905211753,58.35007135301977 25.56887359117449,58.35007135301977</coordinates></LineString></Placemark>
-<Placemark id="gcp1879.1"><name>1879 #1</name><description>758 173</description><Point><coordinates>25.59744785446173,58.367094600567725</coordinates></Point></Placemark>
-<Placemark id="gcp1879.2"><name>1879 #2</name><description>755 465</description><Point><coordinates>25.599572164001305,58.36144463436913</coordinates></Point></Placemark>
-<Placemark id="gcp1879.3"><name>1879 #3</name><description>997 270</description><Point><coordinates>25.606781941833493,58.36612674226529</coordinates></Point></Placemark>
+<Placemark id="bbox.1879"><name>1879</name><LineString><coordinates>25.56891063273372,58.35000483051621 25.56891063273372,58.37451693252563 25.63996075152075,58.37451693252563 25.63996075152075,58.35000483051621 25.56891063273372,58.35000483051621</coordinates></LineString></Placemark>
+<Placemark id="gcp1879.1"><name>1879 #1</name><description>2734 646</description><Point><coordinates>25.59744785446173,58.367094600567725</coordinates></Point></Placemark>
+<Placemark id="gcp1879.2"><name>1879 #2</name><description>2723 1699</description><Point><coordinates>25.599572164001305,58.36144463436913</coordinates></Point></Placemark>
+<Placemark id="gcp1879.3"><name>1879 #3</name><description>3598 999</description><Point><coordinates>25.606781941833493,58.36612674226529</coordinates></Point></Placemark>
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>25.56887359117449,58.35007135301977,25.64016905211753,58.37434409608014</value></Data>
+<Data name="bbox"><value>25.56891063273372,58.35000483051621,25.63996075152075,58.37451693252563</value></Data>
 <Data name="maps"><value>1879,1875</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
