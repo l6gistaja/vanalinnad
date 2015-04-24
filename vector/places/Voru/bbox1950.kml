@@ -2,21 +2,21 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1950.k1"><name>1950.k1</name><LineString><coordinates>26.96198078897124,57.83258888778191 26.96198078897124,57.86566400931762 27.03638554538777,57.86566400931762 27.03638554538777,57.83258888778191 26.96198078897124,57.83258888778191</coordinates></LineString></Placemark>
-<Placemark id="gcp1950.k1.1"><name>1950.k1 #1</name><description>831 670</description><Point><coordinates>26.996161329601723,57.851085580393345</coordinates></Point></Placemark>
-<Placemark id="gcp1950.k1.2"><name>1950.k1 #2</name><description>979 1156</description><Point><coordinates>27.00214802012235,57.84054514050081</coordinates></Point></Placemark>
-<Placemark id="gcp1950.k1.3"><name>1950.k1 #3</name><description>643 807</description><Point><coordinates>26.98850094065418,57.84815101154865</coordinates></Point></Placemark>
-<Placemark id="gcp1950.k1.4"><name>1950.k1 #4</name><description>1404 992</description><Point><coordinates>27.019636022898847,57.84409703091823</coordinates></Point></Placemark>
+<Placemark id="bbox.1950.k1"><name>1950.k1</name><LineString><coordinates>26.96200272761713,57.83256217981660 26.96200272761713,57.86561735631969 27.03645050379480,57.86561735631969 27.03645050379480,57.83256217981660 26.96200272761713,57.83256217981660</coordinates></LineString></Placemark>
+<Placemark id="gcp1950.k1.1"><name>1950.k1 #1</name><description>4730 3821</description><Point><coordinates>26.996161329601723,57.851085580393345</coordinates></Point></Placemark>
+<Placemark id="gcp1950.k1.2"><name>1950.k1 #2</name><description>5572 6603</description><Point><coordinates>27.00214802012235,57.84054514050081</coordinates></Point></Placemark>
+<Placemark id="gcp1950.k1.3"><name>1950.k1 #3</name><description>3654 4608</description><Point><coordinates>26.98850094065418,57.84815101154865</coordinates></Point></Placemark>
+<Placemark id="gcp1950.k1.4"><name>1950.k1 #4</name><description>7988 5666</description><Point><coordinates>27.019636022898847,57.84409703091823</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1950.k2"><name>1950.k2</name><LineString><coordinates>26.96634494725442,57.80866081939967 26.96634494725442,57.84379754686009 27.03648577006103,57.84379754686009 27.03648577006103,57.80866081939967 26.96634494725442,57.80866081939967</coordinates></LineString></Placemark>
-<Placemark id="gcp1950.k2.1"><name>1950.k2 #1</name><description>790 34</description><Point><coordinates>26.998821240691246,57.842991316666314</coordinates></Point></Placemark>
-<Placemark id="gcp1950.k2.2"><name>1950.k2 #2</name><description>1478 137</description><Point><coordinates>27.027123910216474,57.840787062421896</coordinates></Point></Placemark>
-<Placemark id="gcp1950.k2.3"><name>1950.k2 #3</name><description>892 928</description><Point><coordinates>27.003159640421842,57.82344106473911</coordinates></Point></Placemark>
-<Placemark id="gcp1950.k2.4"><name>1950.k2 #4</name><description>703 1355</description><Point><coordinates>26.995602589874604,57.81409689360157</coordinates></Point></Placemark>
+<Placemark id="bbox.1950.k2"><name>1950.k2</name><LineString><coordinates>26.96708991468482,57.80868488582344 26.96708991468482,57.84378925561791 27.03651852550041,57.84378925561791 27.03651852550041,57.80868488582344 26.96708991468482,57.80868488582344</coordinates></LineString></Placemark>
+<Placemark id="gcp1950.k2.1"><name>1950.k2 #1</name><description>4408 201</description><Point><coordinates>26.998821240691246,57.842991316666314</coordinates></Point></Placemark>
+<Placemark id="gcp1950.k2.2"><name>1950.k2 #2</name><description>8337 783</description><Point><coordinates>27.027123910216474,57.840787062421896</coordinates></Point></Placemark>
+<Placemark id="gcp1950.k2.3"><name>1950.k2 #3</name><description>4987 5308</description><Point><coordinates>27.003159640421842,57.82344106473911</coordinates></Point></Placemark>
+<Placemark id="gcp1950.k2.4"><name>1950.k2 #4</name><description>3909 7751</description><Point><coordinates>26.995602589874604,57.81409689360157</coordinates></Point></Placemark>
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.96198078897124,57.80866081939967,27.03648577006103,57.86566400931762</value></Data>
+<Data name="bbox"><value>26.96200272761713,57.80868488582344,27.03651852550041,57.86561735631969</value></Data>
 <Data name="maps"><value>1950.k2,1950.k1</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
