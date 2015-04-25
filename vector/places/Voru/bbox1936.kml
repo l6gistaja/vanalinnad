@@ -2,20 +2,20 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1936.k1"><name>1936.k1</name><LineString><coordinates>26.96522111144820,57.83089969648057 26.96522111144820,57.85498338609634 27.03859179865578,57.85498338609634 27.03859179865578,57.83089969648057 26.96522111144820,57.83089969648057</coordinates></LineString></Placemark>
-<Placemark id="gcp1936.k1.1"><name>1936.k1 #1</name><description>834 193</description><Point><coordinates>26.996152629322975,57.85110474343387</coordinates></Point></Placemark>
-<Placemark id="gcp1936.k1.2"><name>1936.k1 #2</name><description>625 346</description><Point><coordinates>26.98847078270362,57.84813591908862</coordinates></Point></Placemark>
-<Placemark id="gcp1936.k1.3"><name>1936.k1 #3</name><description>945 728</description><Point><coordinates>26.999980795238237,57.84063651184716</coordinates></Point></Placemark>
-<Placemark id="gcp1936.k1.4"><name>1936.k1 #4</name><description>1480 547</description><Point><coordinates>27.01963602289974,57.844097030919194</coordinates></Point></Placemark>
+<Placemark id="bbox.1936.k1"><name>1936.k1</name><LineString><coordinates>26.96517431778690,57.83105579980125 26.96517431778690,57.85495312278623 27.03859870025912,57.85495312278623 27.03859870025912,57.83105579980125 26.96517431778690,57.83105579980125</coordinates></LineString></Placemark>
+<Placemark id="gcp1936.k1.1"><name>1936.k1 #1</name><description>4251 984</description><Point><coordinates>26.996152629322975,57.85110474343387</coordinates></Point></Placemark>
+<Placemark id="gcp1936.k1.2"><name>1936.k1 #2</name><description>3189 1769</description><Point><coordinates>26.98847078270362,57.84813591908862</coordinates></Point></Placemark>
+<Placemark id="gcp1936.k1.3"><name>1936.k1 #3</name><description>4820 3731</description><Point><coordinates>26.999980795238237,57.84063651184716</coordinates></Point></Placemark>
+<Placemark id="gcp1936.k1.4"><name>1936.k1 #4</name><description>7547 2802</description><Point><coordinates>27.01963602289974,57.844097030919194</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1936.k2"><name>1936.k2</name><LineString><coordinates>26.96543935279276,57.81900729726915 26.96543935279276,57.84467460941473 27.04193066786461,57.84467460941473 27.04193066786461,57.81900729726915 26.96543935279276,57.81900729726915</coordinates></LineString></Placemark>
-<Placemark id="gcp1936.k2.1"><name>1936.k2 #1</name><description>827 10</description><Point><coordinates>26.99585645217942,57.84444011953511</coordinates></Point></Placemark>
-<Placemark id="gcp1936.k2.2"><name>1936.k2 #2</name><description>1475 26</description><Point><coordinates>27.019610095215562,57.844097511975775</coordinates></Point></Placemark>
-<Placemark id="gcp1936.k2.3"><name>1936.k2 #3</name><description>1563 958</description><Point><coordinates>27.02276437301675,57.82595749961869</coordinates></Point></Placemark>
+<Placemark id="bbox.1936.k2"><name>1936.k2</name><LineString><coordinates>26.98313530502084,57.81900835862290 26.98313530502084,57.84464426568706 27.04184790653991,57.84464426568706 27.04184790653991,57.81900835862290 26.98313530502084,57.81900835862290</coordinates></LineString></Placemark>
+<Placemark id="gcp1936.k2.1"><name>1936.k2 #1</name><description>1768 51</description><Point><coordinates>26.99585645217942,57.84444011953511</coordinates></Point></Placemark>
+<Placemark id="gcp1936.k2.2"><name>1936.k2 #2</name><description>5092 136</description><Point><coordinates>27.019610095215562,57.844097511975775</coordinates></Point></Placemark>
+<Placemark id="gcp1936.k2.3"><name>1936.k2 #3</name><description>5542 4927</description><Point><coordinates>27.02276437301675,57.82595749961869</coordinates></Point></Placemark>
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.96522111144820,57.81900729726915,27.04193066786461,57.85498338609634</value></Data>
+<Data name="bbox"><value>26.96517431778690,57.81900835862290,27.04184790653991,57.85495312278623</value></Data>
 <Data name="maps"><value>1936.k2,1936.k1</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
