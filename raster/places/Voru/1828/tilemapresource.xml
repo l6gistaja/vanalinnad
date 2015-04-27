@@ -3,8 +3,8 @@
 	  <Title>Voru 1828</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="57.83193049743836" miny="26.96872728005204" maxx="57.85882152733155" maxy="27.04467031496802"/>
-	  <Origin x="57.83193049743836" y="26.96872728005204"/>
+	  <BoundingBox minx="57.83208073607722" miny="26.96885979399488" maxx="57.85882144834331" maxy="27.04480900891609"/>
+	  <Origin x="57.83208073607722" y="26.96885979399488"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="12" units-per-pixel="38.21851413574219" order="12"/>
