@@ -2,9 +2,10 @@
 <!-- saved from url=(0014)about:internet -->
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
+<title>Vanalinnad: readme</title>
+<meta name="description" content="Historical maps of Estonian cities under the grid of today's street network"/>
 <meta http-equiv=Content-Type content="text/html; charset=UTF-8"/>
 <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE9,chrome=1"/>
-<title>Vanalinnad: readme</title>
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="map.css"/>
 <script>

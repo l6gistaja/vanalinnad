@@ -1,6 +1,6 @@
 # vanalinnad
 
-Historical maps of Estonian cities under grid of today's street network.
+Historical maps of Estonian cities under the grid of today's street network.
 
 **Shortcut keys:** F11 enables/disables fullscreen. By OpenLayers defaults arrow keys pan, +/- keys zoom & Page Up/Page Down/Home/End scroll by three quarters of a page. Additionally, spacebar displays next and numbers (0-9) will display previous historical map.
 
