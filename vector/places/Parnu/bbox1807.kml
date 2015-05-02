@@ -1,36 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
+<kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1807E"><name>1807E</name><LineString><coordinates>24.50543391048281,58.34285095910579 24.50543391048281,58.38776624929452 24.59934218811060,58.38776624929452 24.59934218811060,58.34285095910579 24.50543391048281,58.34285095910579</coordinates></LineString></Placemark>
-<Placemark id="gcp1807E.1"><name>1807E #1</name><description>515 766</description><Point><coordinates>24.53280772232003,58.36913375521713</coordinates></Point></Placemark>
-<Placemark id="gcp1807E.2"><name>1807E #2</name><description>481 228</description><Point><coordinates>24.544370955047796,58.37865259279977</coordinates></Point></Placemark>
-<Placemark id="gcp1807E.3"><name>1807E #3</name><description>1 618</description><Point><coordinates>24.520831888733426,58.37724627397846</coordinates></Point></Placemark>
+<Placemark id="bbox.1807E"><name>1807E</name><LineString><coordinates>24.50714553338261,58.33617565996988 24.50714553338261,58.38875595111177 24.60884418051066,58.38875595111177 24.60884418051066,58.33617565996988 24.50714553338261,58.33617565996988</coordinates></LineString></Placemark>
+<Placemark id="gcp1807E.1"><name>1807E #1</name><description>2432 1402</description><Point><coordinates>24.544711724853112,58.37722425363646</coordinates></Point></Placemark>
+<Placemark id="gcp1807E.2"><name>1807E #2</name><description>27 4000</description><Point><coordinates>24.517559634704465,58.37408723057455</coordinates></Point></Placemark>
+<Placemark id="gcp1807E.3"><name>1807E #3</name><description>2618 3894</description><Point><coordinates>24.535712825317184,58.36763937031133</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1807W"><name>1807W</name><LineString><coordinates>24.46088884371735,58.35712639661193 24.46088884371735,58.40163707299487 24.55065708694699,58.40163707299487 24.55065708694699,58.35712639661193 24.46088884371735,58.35712639661193</coordinates></LineString></Placemark>
+<Placemark id="gcp1807W.1"><name>1807W #1</name><description>5286 3931</description><Point><coordinates>24.503387780609753,58.379005657659796</coordinates></Point></Placemark>
+<Placemark id="gcp1807W.2"><name>1807W #2</name><description>6069 1598</description><Point><coordinates>24.51877293151849,58.38473155170806</coordinates></Point></Placemark>
+<Placemark id="gcp1807W.3"><name>1807W #3</name><description>5230 1411</description><Point><coordinates>24.51436086792057,58.387248111696564</coordinates></Point></Placemark>
+<Placemark id="gcp1807W.4"><name>1807W #4</name><description>6988 1263</description><Point><coordinates>24.52599092620914,58.38361495459306</coordinates></Point></Placemark>
+<Placemark id="gcp1807W.5"><name>1807W #5</name><description>6580 3731</description><Point><coordinates>24.512499466732397,58.37642604556465</coordinates></Point></Placemark>
+<Placemark id="gcp1807W.6"><name>1807W #6</name><description>3140 4130</description><Point><coordinates>24.48973287661334,58.38351348649027</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1807W"><name>1807W</name><LineString><coordinates>24.46062599871250,58.35787197408730 24.46062599871250,58.40319393713793 24.54989743945414,58.40319393713793 24.54989743945414,58.35787197408730 24.46062599871250,58.35787197408730</coordinates></LineString></Placemark>
-<Placemark id="gcp1807W.1"><name>1807W #1</name><description>305 807</description><Point><coordinates>24.479956002655367,58.387903454388706</coordinates></Point></Placemark>
-<Placemark id="gcp1807W.2"><name>1807W #2</name><description>1044 781</description><Point><coordinates>24.503387780609753,58.379005657659796</coordinates></Point></Placemark>
-<Placemark id="gcp1807W.3"><name>1807W #3</name><description>1199 319</description><Point><coordinates>24.51877293151849,58.38473155170806</coordinates></Point></Placemark>
-<Placemark id="gcp1807W.4"><name>1807W #4</name><description>1033 281</description><Point><coordinates>24.51436086792057,58.387248111696564</coordinates></Point></Placemark>
-<Placemark id="gcp1807W.5"><name>1807W #5</name><description>1382 252</description><Point><coordinates>24.52599092620914,58.38361495459306</coordinates></Point></Placemark>
-<Placemark id="gcp1807W.6"><name>1807W #6</name><description>1303 740</description><Point><coordinates>24.512499466732397,58.37642604556465</coordinates></Point></Placemark>
-<Placemark id="gcp1807W.7"><name>1807W #7</name><description>623 818</description><Point><coordinates>24.48973287661334,58.38351348649027</coordinates></Point></Placemark>
-
-
-<Placemark id="bbox.1807N"><name>1807N</name><LineString><coordinates>24.46246377302450,58.38627616244293 24.46246377302450,58.42137414452707 24.51599354868200,58.42137414452707 24.51599354868200,58.38627616244293 24.46246377302450,58.38627616244293</coordinates></LineString></Placemark>
-<Placemark id="gcp1807N.1"><name>1807N #1</name><description>685 1309</description><Point><coordinates>24.49761588607888,58.391304468710985</coordinates></Point></Placemark>
-<Placemark id="gcp1807N.2"><name>1807N #2</name><description>360 1356</description><Point><coordinates>24.484290671693365,58.38994364120281</coordinates></Point></Placemark>
-<Placemark id="gcp1807N.3"><name>1807N #3</name><description>532 1230</description><Point><coordinates>24.49083526168933,58.392957634779194</coordinates></Point></Placemark>
+<Placemark id="bbox.1807N"><name>1807N</name><LineString><coordinates>24.46272192438328,58.38857619744812 24.46272192438328,58.42140362607764 24.51698069027335,58.42140362607764 24.51698069027335,58.38857619744812 24.46272192438328,58.38857619744812</coordinates></LineString></Placemark>
+<Placemark id="gcp1807N.1"><name>1807N #1</name><description>3814 7294</description><Point><coordinates>24.49761588607888,58.391304468710985</coordinates></Point></Placemark>
+<Placemark id="gcp1807N.2"><name>1807N #2</name><description>2009 7560</description><Point><coordinates>24.484290671693365,58.38994364120281</coordinates></Point></Placemark>
+<Placemark id="gcp1807N.3"><name>1807N #3</name><description>2961 6856</description><Point><coordinates>24.49083526168933,58.392957634779194</coordinates></Point></Placemark>
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.46062599871250,58.34285095910579,24.59934218811060,58.42137414452707</value></Data>
+<Data name="bbox"><value>24.46088884371735,58.33617565996988,24.60884418051066,58.42140362607764</value></Data>
 <Data name="maps"><value>1807E,1807W,1807N</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="montage"><value>yes</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1807/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
 </ExtendedData>
 
 </Document>
