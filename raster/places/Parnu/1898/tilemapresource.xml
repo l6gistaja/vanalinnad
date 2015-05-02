@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<TileMap version="1.0.0" tilemapservice="http://tms.osgeo.org/1.0.0">
-	  <Title>1898_georef.png</Title>
+	  <Title>Parnu 1898</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="58.36293455035637" miny="24.45074562749786" maxx="58.41756326232397" maxy="24.56325667210791"/>
-	  <Origin x="58.36293455035637" y="24.45074562749786"/>
+	  <BoundingBox minx="58.36297892352474" miny="24.45070568347295" maxx="58.41760830262422" maxy="24.56323451680261"/>
+	  <Origin x="58.36297892352474" y="24.45070568347295"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="12" units-per-pixel="38.21851413574219" order="12"/>
