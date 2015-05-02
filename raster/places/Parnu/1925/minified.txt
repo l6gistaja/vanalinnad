@@ -1,0 +1,2 @@
+2015-05-03 01:27:29+03:00; 2512 files; 18M ../raster/places/Parnu/1925
+2015-05-03 01:29:05+03:00; 637 files; 11M ../raster/places/Parnu/1925
