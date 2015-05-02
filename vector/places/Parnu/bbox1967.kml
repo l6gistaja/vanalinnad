@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1967"><name>1967</name><LineString><coordinates>24.44786152513616,58.33759164829498 24.44786152513616,58.40015238646874 24.57298592498407,58.40015238646874 24.57298592498407,58.33759164829498 24.44786152513616,58.33759164829498</coordinates></LineString></Placemark>
+<Placemark id="gcp1967.1"><name>1967 #1</name><description>376 490</description><Point><coordinates>24.461571373772315,58.39072081446853</coordinates></Point></Placemark>
+<Placemark id="gcp1967.2"><name>1967 #2</name><description>2661 84</description><Point><coordinates>24.54379717333308,58.39840132196678</coordinates></Point></Placemark>
+<Placemark id="gcp1967.3"><name>1967 #3</name><description>3424 2528</description><Point><coordinates>24.57132736666389,58.35165141936646</coordinates></Point></Placemark>
+<Placemark id="gcp1967.4"><name>1967 #4</name><description>1930 1327</description><Point><coordinates>24.51715854232892,58.37483230764262</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.44786152513616,58.33759164829498,24.57298592498407,58.40015238646874</value></Data>
+<Data name="maps"><value>1967</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1967/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
