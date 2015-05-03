@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vanalinnadgdal xmlns="http://juks.alkohol.ee/vanalinnad">
+
+<composite id="1936" maps="193X" montage="yes"/>
+
+<translate map="193X" composite="1936">
+    <t file="Valga.jpg" gcps="-gcp 117 1188 26.023211786507684 57.77058553920215 -gcp 2376 2196 26.067993948220508 57.77272542985737 -gcp 2226 214 26.047759363412748 57.78869622320594"/>
+</translate>
+
+</vanalinnadgdal>
