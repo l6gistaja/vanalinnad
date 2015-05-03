@@ -1,5 +1,5 @@
 <vanalinnadlayers xmlns="http://juks.alkohol.ee/vanalinnad">
-  <bounds>26.01065519659663,57.76008670653025,26.07687142633705,57.79337415047512</bounds>
+  <bounds>26.00848496722883,57.74048287591943,26.13358888803649,57.81354983080887</bounds>
   <city>Valga</city>
   <country>Estonia</country>
   <json>{
@@ -12,8 +12,9 @@
  &quot;ra1950_1991&quot;: {&quot;h&quot;:&quot;Rahvusarhiiv 1950-1991&quot;, &quot;l&quot;:&quot;Rahvusarhiiv 1950-1991&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140033&amp;amp;unit_match=1&amp;amp;digitized=1&amp;amp;vmode=grid&amp;amp;q=1&amp;amp;sort=aeg_kuvatav&quot;}
 }
 }</json>
-  <layer bounds="26.01065519659663,57.76008670653025,26.07687142633705,57.79337415047512" type="tms" year="1936" />
+  <layer bounds="26.00848496722883,57.74048287591943,26.13358888803649,57.81354983080887" type="tms" year="1936" />
   <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
+  <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="14" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>12</minzoom>
 </vanalinnadlayers>

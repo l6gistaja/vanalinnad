@@ -1,10 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vanalinnadgdal xmlns="http://juks.alkohol.ee/vanalinnad">
 
-<composite id="1936" maps="193X" montage="yes"/>
+<composite id="1936" maps="1936.k1,1936.k2,193X" montage="yes"/>
 
 <translate map="193X" composite="1936">
     <t file="Valga.jpg" gcps="-gcp 117 1188 26.023211786507684 57.77058553920215 -gcp 2376 2196 26.067993948220508 57.77272542985737 -gcp 2226 214 26.047759363412748 57.78869622320594"/>
 </translate>
 
-</vanalinnadgdal>
+<translate map="1936.k1" composite="1936">
+    <t file="1936k1iip2s.jpg" gcps="-gcp 721 5382 26.03215471085224 57.77358767119976 -gcp 2453 2746 26.034407766424515 57.78609232610895 -gcp 4920 7416 26.067173631750663 57.77423989655459"/>
+</translate>
+
+<translate map="1936.k2" composite="1936">
+    <t file="1936k2iips.jpg" gcps="-gcp 1103 569 26.048243426654714 57.770569437686696 -gcp 3668 1308 26.068027400348022 57.772720772225455 -gcp 7875 189 26.091909789416864 57.78463089615241"/>
+</translate>
+
+</vanalinnadgdal> 

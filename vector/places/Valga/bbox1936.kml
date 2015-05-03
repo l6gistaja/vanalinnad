@@ -7,10 +7,20 @@
 <Placemark id="gcp193X.2"><name>193X #2</name><description>2376 2196</description><Point><coordinates>26.067993948220508,57.77272542985737</coordinates></Point></Placemark>
 <Placemark id="gcp193X.3"><name>193X #3</name><description>2226 214</description><Point><coordinates>26.047759363412748,57.78869622320594</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1936.k1"><name>1936.k1</name><LineString><coordinates>26.00848496722883,57.76403202416220 26.00848496722883,57.81354983080887 26.11531239734065,57.81354983080887 26.11531239734065,57.76403202416220 26.00848496722883,57.76403202416220</coordinates></LineString></Placemark>
+<Placemark id="gcp1936.k1.1"><name>1936.k1 #1</name><description>721 5382</description><Point><coordinates>26.03215471085224,57.77358767119976</coordinates></Point></Placemark>
+<Placemark id="gcp1936.k1.2"><name>1936.k1 #2</name><description>2453 2746</description><Point><coordinates>26.034407766424515,57.78609232610895</coordinates></Point></Placemark>
+<Placemark id="gcp1936.k1.3"><name>1936.k1 #3</name><description>4920 7416</description><Point><coordinates>26.067173631750663,57.77423989655459</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1936.k2"><name>1936.k2</name><LineString><coordinates>26.03881274608789,57.74048287591943 26.03881274608789,57.78859110166103 26.13358888803649,57.78859110166103 26.13358888803649,57.74048287591943 26.03881274608789,57.74048287591943</coordinates></LineString></Placemark>
+<Placemark id="gcp1936.k2.1"><name>1936.k2 #1</name><description>1103 569</description><Point><coordinates>26.048243426654714,57.770569437686696</coordinates></Point></Placemark>
+<Placemark id="gcp1936.k2.2"><name>1936.k2 #2</name><description>3668 1308</description><Point><coordinates>26.068027400348022,57.772720772225455</coordinates></Point></Placemark>
+<Placemark id="gcp1936.k2.3"><name>1936.k2 #3</name><description>7875 189</description><Point><coordinates>26.091909789416864,57.78463089615241</coordinates></Point></Placemark>
+
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.01065519659663,57.76008670653025,26.07687142633705,57.79337415047512</value></Data>
-<Data name="maps"><value>193X</value></Data>
+<Data name="bbox"><value>26.00848496722883,57.74048287591943,26.13358888803649,57.81354983080887</value></Data>
+<Data name="maps"><value>1936.k1,1936.k2,193X</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Valga/composed/1936/</value></Data>
