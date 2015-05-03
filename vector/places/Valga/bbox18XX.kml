@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.18XX"><name>18XX</name><LineString><coordinates>25.99919293345170,57.73551241326968 25.99919293345170,57.80559195733379 26.13072893361625,57.80559195733379 26.13072893361625,57.73551241326968 25.99919293345170,57.73551241326968</coordinates></LineString></Placemark>
+<Placemark id="gcp18XX.1"><name>18XX #1</name><description>5863 6151</description><Point><coordinates>26.10949344970693,57.75692959426085</coordinates></Point></Placemark>
+<Placemark id="gcp18XX.2"><name>18XX #2</name><description>1424 1908</description><Point><coordinates>26.027847007293325,57.77666043805486</coordinates></Point></Placemark>
+<Placemark id="gcp18XX.3"><name>18XX #3</name><description>5922 124</description><Point><coordinates>26.08318634368858,57.801583253916775</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>25.99919293345170,57.73551241326968,26.13072893361625,57.80559195733379</value></Data>
+<Data name="maps"><value>18XX</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Valga/composed/1870/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

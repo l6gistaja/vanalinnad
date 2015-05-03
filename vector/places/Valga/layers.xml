@@ -13,6 +13,7 @@
 }
 }</json>
   <layer bounds="26.00848496722883,57.74048287591943,26.13358888803649,57.81354983080887" type="tms" year="1936" />
+  <layer bounds="25.99919293345170,57.73551241326968,26.13072893361625,57.80559195733379" type="tms" year="18XX" />
   <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
   <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="14" type="roads" />
   <maxzoom>16</maxzoom>
