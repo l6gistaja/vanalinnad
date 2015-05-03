@@ -51,6 +51,12 @@
       </Point>
     </Placemark>
     <Placemark>
+      <name>Valga</name>
+      <Point>
+        <coordinates>26.030980566100165,57.776991272123404</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>Viljandi</name>
       <Point>
         <coordinates>25.595892132263483,58.36354098379499</coordinates>
