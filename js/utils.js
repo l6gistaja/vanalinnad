@@ -70,9 +70,12 @@ vlUtils.coordsPrompt = function(map, data) {
 
     trigger: function(e) {
         var i;
+        var showCoordsPrompt = true;
         for(i = map.popups.length - 1; i > -1; i--) {
           if(map.popups[i].id == 'coordsPromptPopup') { map.removePopup(map.popups[i]); }
+          if(map.popups[i].id == 'poiPopup') { showCoordsPrompt = false; }
         }
+        if(!showCoordsPrompt) { return; }
 
         var lonlat = map.getLonLatFromPixel(e.xy);
         if('displayProjection' in map.options && map.options.projection != map.options.displayProjection) {
