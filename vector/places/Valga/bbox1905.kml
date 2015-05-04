@@ -12,15 +12,35 @@
 <Placemark id="gcp1905.k2.2"><name>1905.k2 #2</name><description>7857 9252</description><Point><coordinates>26.060393936767987,57.771383538030484</coordinates></Point></Placemark>
 <Placemark id="gcp1905.k2.3"><name>1905.k2 #3</name><description>1816 7917</description><Point><coordinates>26.03735680419864,57.773985314161735</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1905.k3"><name>1905.k3</name><LineString><coordinates>26.05340710158861,57.76809579766911 26.05340710158861,57.78329058892499 26.07292063548809,57.78329058892499 26.07292063548809,57.76809579766911 26.05340710158861,57.76809579766911</coordinates></LineString></Placemark>
+<Placemark id="bbox.1905.k3"><name>1905.k3</name><LineString><coordinates>, , , , ,</coordinates></LineString></Placemark>
 <Placemark id="gcp1905.k3.1"><name>1905.k3 #1</name><description>154 2830</description><Point><coordinates>26.054241145476773,57.77725305656438</coordinates></Point></Placemark>
 <Placemark id="gcp1905.k3.2"><name>1905.k3 #2</name><description>618 5394</description><Point><coordinates>26.056236708983647,57.772138347418654</coordinates></Point></Placemark>
 <Placemark id="gcp1905.k3.3"><name>1905.k3 #3</name><description>2905 6561</description><Point><coordinates>26.06507726989732,57.769964090594286</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1910.k1"><name>1910.k1</name><LineString><coordinates>25.99386937898501,57.75170629039217 25.99386937898501,57.79960918053314 26.09051630734390,57.79960918053314 26.09051630734390,57.75170629039217 25.99386937898501,57.75170629039217</coordinates></LineString></Placemark>
+<Placemark id="gcp1910.k1.1"><name>1910.k1 #1</name><description>1998 7830</description><Point><coordinates>26.035332952270057,57.757006052669105</coordinates></Point></Placemark>
+<Placemark id="gcp1910.k1.2"><name>1910.k1 #2</name><description>9359 1365</description><Point><coordinates>26.061554227600237,57.79360935390718</coordinates></Point></Placemark>
+<Placemark id="gcp1910.k1.3"><name>1910.k1 #3</name><description>9093 7899</description><Point><coordinates>26.0831835610959,57.769974203114565</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1910.k2"><name>1910.k2</name><LineString><coordinates>26.03879003198127,57.76402015727541 26.03879003198127,57.80446127268007 26.11522147511797,57.80446127268007 26.11522147511797,57.76402015727541 26.03879003198127,57.76402015727541</coordinates></LineString></Placemark>
+<Placemark id="gcp1910.k2.1"><name>1910.k2 #1</name><description>5733 7227</description><Point><coordinates>26.103221053160542,57.775922747658285</coordinates></Point></Placemark>
+<Placemark id="gcp1910.k2.2"><name>1910.k2 #2</name><description>166 7373</description><Point><coordinates>26.066185111083424,57.76515430190104</coordinates></Point></Placemark>
+<Placemark id="gcp1910.k2.3"><name>1910.k2 #3</name><description>775 1060</description><Point><coordinates>26.047795886078017,57.78866679024816</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1910.k3"><name>1910.k3</name><LineString><coordinates>26.02735322217999,57.73914814758757 26.02735322217999,57.77933702056233 26.10541093052472,57.77933702056233 26.10541093052472,57.73914814758757 26.02735322217999,57.73914814758757</coordinates></LineString></Placemark>
+<Placemark id="gcp1910.k3.1"><name>1910.k3 #1</name><description>6666 6909</description><Point><coordinates>26.09688310348551,57.75234757893786</coordinates></Point></Placemark>
+<Placemark id="gcp1910.k3.2"><name>1910.k3 #2</name><description>3318 2820</description><Point><coordinates>26.05973987304661,57.76078478844876</coordinates></Point></Placemark>
+<Placemark id="gcp1910.k3.3"><name>1910.k3 #3</name><description>7735 571</description><Point><coordinates>26.081304833526822,57.77711555104823</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1910.k4"><name>1910.k4</name><LineString><coordinates>26.04277412603806,57.74082040076036 26.04277412603806,57.78649831685598 26.13371130102041,57.78649831685598 26.13371130102041,57.74082040076036 26.04277412603806,57.74082040076036</coordinates></LineString></Placemark>
+<Placemark id="gcp1910.k4.1"><name>1910.k4 #1</name><description>6352 6691</description><Point><coordinates>26.109545145721345,57.75692566145143</coordinates></Point></Placemark>
+<Placemark id="gcp1910.k4.2"><name>1910.k4 #2</name><description>2313 574</description><Point><coordinates>26.060385618896667,57.77137006382807</coordinates></Point></Placemark>
+<Placemark id="gcp1910.k4.3"><name>1910.k4 #3</name><description>7842 2662</description><Point><coordinates>26.10506049224861,57.77418501970135</coordinates></Point></Placemark>
+
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>25.99791463699247,57.76753312958072,26.07292063548809,57.78946739133026</value></Data>
-<Data name="maps"><value>1905.k1,1905.k3,1905.k2</value></Data>
+<Data name="bbox"><value>25.99386937898501,57.73914814758757,26.13371130102041,57.80446127268007</value></Data>
+<Data name="maps"><value>1910.k1,1910.k2,1910.k3,1910.k4,1905.k1,1905.k2</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Valga/composed/1905/</value></Data>
