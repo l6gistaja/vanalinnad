@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1905.k1"><name>1905.k1</name><LineString><coordinates>25.99791463699247,57.76753312958072 25.99791463699247,57.78946739133026 26.03492126112401,57.78946739133026 26.03492126112401,57.76753312958072 25.99791463699247,57.76753312958072</coordinates></LineString></Placemark>
+<Placemark id="gcp1905.k1.1"><name>1905.k1 #1</name><description>2278 4759</description><Point><coordinates>26.007226579383875,57.77985201494801</coordinates></Point></Placemark>
+<Placemark id="gcp1905.k1.2"><name>1905.k1 #2</name><description>8649 990</description><Point><coordinates>26.031128144349807,57.78748668482075</coordinates></Point></Placemark>
+<Placemark id="gcp1905.k1.3"><name>1905.k1 #3</name><description>7013 8916</description><Point><coordinates>26.025863029021803,57.77171930578519</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1905.k2"><name>1905.k2</name><LineString><coordinates>26.02911614125874,57.76912482701471 26.02911614125874,57.78938250748352 26.06145200859335,57.78938250748352 26.06145200859335,57.76912482701471 26.02911614125874,57.76912482701471</coordinates></LineString></Placemark>
+<Placemark id="gcp1905.k2.1"><name>1905.k2 #1</name><description>979 1401</description><Point><coordinates>26.03305686248802,57.78665718224994</coordinates></Point></Placemark>
+<Placemark id="gcp1905.k2.2"><name>1905.k2 #2</name><description>7857 9252</description><Point><coordinates>26.060393936767987,57.771383538030484</coordinates></Point></Placemark>
+<Placemark id="gcp1905.k2.3"><name>1905.k2 #3</name><description>1816 7917</description><Point><coordinates>26.03735680419864,57.773985314161735</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1905.k3"><name>1905.k3</name><LineString><coordinates>26.05340710158861,57.76809579766911 26.05340710158861,57.78329058892499 26.07292063548809,57.78329058892499 26.07292063548809,57.76809579766911 26.05340710158861,57.76809579766911</coordinates></LineString></Placemark>
+<Placemark id="gcp1905.k3.1"><name>1905.k3 #1</name><description>154 2830</description><Point><coordinates>26.054241145476773,57.77725305656438</coordinates></Point></Placemark>
+<Placemark id="gcp1905.k3.2"><name>1905.k3 #2</name><description>618 5394</description><Point><coordinates>26.056236708983647,57.772138347418654</coordinates></Point></Placemark>
+<Placemark id="gcp1905.k3.3"><name>1905.k3 #3</name><description>2905 6561</description><Point><coordinates>26.06507726989732,57.769964090594286</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>25.99791463699247,57.76753312958072,26.07292063548809,57.78946739133026</value></Data>
+<Data name="maps"><value>1905.k1,1905.k3,1905.k2</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Valga/composed/1905/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
