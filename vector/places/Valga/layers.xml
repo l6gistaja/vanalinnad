@@ -7,7 +7,7 @@
  "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/5/"},
  "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта", "l":"ЭтоМесто: трехверстовка", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/7-5/"},
  "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-genshtab_o35-v/?x=@X@&y=@Y@", "srs":"EPSG:4326"},
- "ra1917m": {"h":"Rahvusarhiiv &amp;lt; 1917", "l":"Rahvusarhiiv &lt; 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139261&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
+ "ra1917m": {"h":"Rahvusarhiiv &lt; 1917", "l":"Rahvusarhiiv &lt; 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139261&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "ra1917_1950": {"h":"Rahvusarhiiv 1917-1950", "l":"Rahvusarhiiv 1917-1950", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10932592&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140033&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"}
 }
@@ -18,8 +18,8 @@
   <layer bounds="25.99093122813302,57.73146806644293,26.13795942547541,57.81041698438664" type="tms" year="1800" />
   <layer bounds="26.01148044888889,57.74048536581748,26.11935912345154,57.80566512170100" type="tms" year="1683" />
   <layer name="est-lat" file="est-lat.kml" maxres="12" style="multiColor" type="custom" />
-  <layer name="&amp;#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
-  <layer name="&amp;#9316; 2" file="roads4min.kml" maxres="14" type="roads" />
+  <layer name="&#9316; 1" file="roads3min.kml" maxres="12" type="roads" />
+  <layer name="&#9316; 2" file="roads4min.kml" maxres="14" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>12</minzoom>
 </vanalinnadlayers>
