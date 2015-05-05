@@ -12,10 +12,20 @@
 <Placemark id="gcp1688.7"><name>1688 #7</name><description>2850 1266</description><Point><coordinates>24.703491173088203,59.45345651126197</coordinates></Point></Placemark>
 <Placemark id="gcp1688.8"><name>1688 #8</name><description>5232 4323</description><Point><coordinates>24.751701197921882,59.418747975146616</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1689.Viimsi"><name>1689.Viimsi</name><LineString><coordinates>24.80287398813012,59.45960396454092 24.80287398813012,59.52310605794925 24.88491552695728,59.52310605794925 24.88491552695728,59.45960396454092 24.80287398813012,59.45960396454092</coordinates></LineString></Placemark>
+<Placemark id="gcp1689.Viimsi.1"><name>1689.Viimsi #1</name><description>1003 7030</description><Point><coordinates>24.834428093766274,59.46612984178235</coordinates></Point></Placemark>
+<Placemark id="gcp1689.Viimsi.2"><name>1689.Viimsi #2</name><description>1941 2106</description><Point><coordinates>24.836359284258595,59.50487341639984</coordinates></Point></Placemark>
+<Placemark id="gcp1689.Viimsi.3"><name>1689.Viimsi #3</name><description>73 1869</description><Point><coordinates>24.80842603149509,59.50513785704198</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1688.Haabneeme"><name>1688.Haabneeme</name><LineString><coordinates>24.78512970056934,59.50243443520641 24.78512970056934,59.54849250436697 24.85778290121941,59.54849250436697 24.85778290121941,59.50243443520641 24.78512970056934,59.50243443520641</coordinates></LineString></Placemark>
+<Placemark id="gcp1688.Haabneeme.1"><name>1688.Haabneeme #1</name><description>978 4970</description><Point><coordinates>24.811887751158984,59.50651946371624</coordinates></Point></Placemark>
+<Placemark id="gcp1688.Haabneeme.2"><name>1688.Haabneeme #2</name><description>3754 3692</description><Point><coordinates>24.84909535461334,59.519474276661434</coordinates></Point></Placemark>
+<Placemark id="gcp1688.Haabneeme.3"><name>1688.Haabneeme #3</name><description>3832 5107</description><Point><coordinates>24.85379458480695,59.508566437359285</coordinates></Point></Placemark>
+
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.64635977390880,59.40933640971217,24.83981297996437,59.47151429065481</value></Data>
-<Data name="maps"><value>1688</value></Data>
+<Data name="bbox"><value>24.64635977390880,59.40933640971217,24.88491552695728,59.54849250436697</value></Data>
+<Data name="maps"><value>1688,1688.Haabneeme,1689.Viimsi</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1688/</value></Data>

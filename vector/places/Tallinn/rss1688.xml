@@ -4,6 +4,7 @@
 <title>DIGAR</title>
 <language>de</language>
 <copyright>0</copyright>
+
 <item>
 <title>Reval nebst Umgebung : nach einer Charte des schwed. Fortifications-Lieutenants Samuel Waxelberg von Jahre 1688</title>
 <author>E. Prahm</author>
@@ -13,7 +14,29 @@
 <link>http://digar.nlib.ee/digar/show.action?id=112759</link>
 <link>http://www.nlib.ee/e-naitused/index.php?id=17178</link>
 <link>http://www.tarkvarastuudio.ee/tallinn_linnaarhiiv/149-4-3.htm</link>
+<anchor>1688</anchor>
 </item>
+
+<item>
+<title>Wiems GenerL: GouverTZ: i Estland Tafelgodz</title>
+<author></author>
+<guid>ra.ee=EAA.1.2.C-II-35 leht 1</guid>
+<pubDate>Tue, 01 Jan 1689 00:00:00 +0000</pubDate>
+<legends></legends>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=29603</link>
+<anchor>1689.Viimsi</anchor>
+</item>
+
+<item>
+<title>Habbenem Hoff och Bondehemman i Jegelecht Sochn</title>
+<author>Johann Holmberg</author>
+<guid>ra.ee=EAA.1.2.C-III-5 leht 1</guid>
+<pubDate>Tue, 01 Jan 1688 00:00:00 +0000</pubDate>
+<legends></legends>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=29419</link>
+<anchor>1688.Haabneeme</anchor>
+</item>
+
 </channel>
 </rss>
 
