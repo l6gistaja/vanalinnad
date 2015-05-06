@@ -6,7 +6,7 @@ function point_it(event){
   pos_x = event.offsetX?(event.offsetX):event.pageX-document.getElementById("pointer_div").offsetLeft;
   pos_y = event.offsetY?(event.offsetY):event.pageY-document.getElementById("pointer_div").offsetTop;
   document.pointform.form_xy.value = pos_x + ' ' + pos_y;
-  if(document.pointform.popup.checked) { prompt('X Y', document.pointform.form_xy.value); }
+  if(document.pointform.popup.checked) { prompt("Clicked pixel's X Y coordinates: ", document.pointform.form_xy.value); }
 }
 
 function choose_img() {
@@ -15,26 +15,31 @@ function choose_img() {
   }
 }
 
+function load_img() {
+  if(window.location.search.match(/\?.*[A-Za-z]+/)) {
+    document.getElementById("main_content").innerHTML = '<img id="pointer_div" onclick="point_it(event)" src="' 
+    + window.location.search.substr(1)
+    + '" />';
+  } 
+}
+
 </script>
 </head>
-<body>
+<body onload="load_img()">
 <form name="pointform" method="post">
 Image: <input type="text" id="form_img" name="form_img" size="10" title="Choose image" onchange="choose_img()" />
 <a href="http://www.emanueleferonato.com/2006/09/02/click-image-and-get-coordinates-with-javascript/" title="Original idea" target="blank">X Y</a> : 
 <input type="text" name="form_xy" size="10" title="Last clicked coordinates" />
-<input type="checkbox" name="popup" title="Coordinates in popup?" checked="checked"/>
+<input type="checkbox" name="popup" title="Coordinates also in popup?" checked="checked"/>
 </form>
-<div id="img_div">
-
+<div id="main_content" style="border: 1px solid;">
+<ol>
+<li>Input image filename into Image: textfield above</li>
+<li>Click outside Image: textfield</li>
+<li>Click somewhere on loaded image</li>
+<li>Copy clicked pixel coordinates</li>
+</ol>
 </div>
-<script language="JavaScript">
-if(window.location.search.match(/\?.*[A-Za-z]+/)) {
-  document.writeln('<img id="pointer_div" onclick="point_it(event)" src="' 
-  + window.location.search.substr(1)
-  + '" />');
-} else {
-  document.writeln('<h1>Input image filename above!</h1>');
-}
-</script>
+
 </body>
 </html>
