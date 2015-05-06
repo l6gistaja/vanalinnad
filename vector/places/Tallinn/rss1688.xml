@@ -37,6 +37,39 @@
 <anchor>1688.Haabneeme</anchor>
 </item>
 
+<item>
+<title>Jerwekyla Crone By</title>
+<author>Johann Holmberg</author>
+<guid>ra.ee=EAA.1.2.C-II-1 leht 1</guid>
+<pubDate>Tue, 01 Jan 1689 00:00:00 +0000</pubDate>
+<legends></legends>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=29555</link>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=29645</link>
+<anchor>1689.Jarvekyla</anchor>
+</item>
+
+<item>
+<title>Charta öfver Hirwekylla by unde Hofvet Feth och Kastipere under Sage samt Kehre och Mehe Hemman under Godzet Nehat belagne uti Estlandt.</title>
+<author>Carl E. Enagrius</author>
+<guid>tla=149-4-392</guid>
+<pubDate>Wed, 01 Jan 1794 00:00:00 +0000</pubDate>
+<legends></legends>
+<link>http://www.biblioserver.com/linnaarhiiv/index.php?m=search&amp;ftype=data&amp;q=149-4-392</link>
+<anchor>1693.Iru</anchor>
+</item>
+
+<!--
+<item>
+<title>Cronones Höslag wijd Fiskmeisters och Dischershoff uti Harrien och Rewal Sochn.</title>
+<author>Johann Holmberg</author>
+<guid>ra.ee=EAA.1.2.C-IV-3 leht 1</guid>
+<pubDate>Tue, 01 Jan 1688 00:00:00 +0000</pubDate>
+<legends></legends>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=88</link>
+<anchor>1688.Tiskre</anchor>
+</item>
+-->
+
 </channel>
 </rss>
 

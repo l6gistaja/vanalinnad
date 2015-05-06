@@ -22,10 +22,20 @@
 <Placemark id="gcp1688.Haabneeme.2"><name>1688.Haabneeme #2</name><description>3754 3692</description><Point><coordinates>24.84909535461334,59.519474276661434</coordinates></Point></Placemark>
 <Placemark id="gcp1688.Haabneeme.3"><name>1688.Haabneeme #3</name><description>3832 5107</description><Point><coordinates>24.85379458480695,59.508566437359285</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1689.Jarvekyla"><name>1689.Jarvekyla</name><LineString><coordinates>24.72920677716520,59.36531351099162 24.72920677716520,59.41636683289425 24.83414577337263,59.41636683289425 24.83414577337263,59.36531351099162 24.72920677716520,59.36531351099162</coordinates></LineString></Placemark>
+<Placemark id="gcp1689.Jarvekyla.1"><name>1689.Jarvekyla #1</name><description>4621 344</description><Point><coordinates>24.800371658476173,59.41225036480513</coordinates></Point></Placemark>
+<Placemark id="gcp1689.Jarvekyla.2"><name>1689.Jarvekyla #2</name><description>4058 2832</description><Point><coordinates>24.798181597898314,59.392143343797244</coordinates></Point></Placemark>
+<Placemark id="gcp1689.Jarvekyla.3"><name>1689.Jarvekyla #3</name><description>2692 4093</description><Point><coordinates>24.780635261640818,59.380788869149725</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1693.Iru"><name>1693.Iru</name><LineString><coordinates>24.78013938456428,59.43760368903170 24.78013938456428,59.53492225356999 24.94028303064952,59.53492225356999 24.94028303064952,59.43760368903170 24.78013938456428,59.43760368903170</coordinates></LineString></Placemark>
+<Placemark id="gcp1693.Iru.1"><name>1693.Iru #1</name><description>5922 12166</description><Point><coordinates>24.905345310210958,59.46042778105202</coordinates></Point></Placemark>
+<Placemark id="gcp1693.Iru.2"><name>1693.Iru #2</name><description>2387 9382</description><Point><coordinates>24.852259029388883,59.46786305374487</coordinates></Point></Placemark>
+<Placemark id="gcp1693.Iru.3"><name>1693.Iru #3</name><description>5907 5322</description><Point><coordinates>24.87208591842762,59.49907987585065</coordinates></Point></Placemark>
+
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.64635977390880,59.40959530794629,24.88491552695728,59.54849250436697</value></Data>
-<Data name="maps"><value>1688,1688.Haabneeme,1689.Viimsi</value></Data>
+<Data name="bbox"><value>24.64635977390880,59.36531351099162,24.94028303064952,59.54849250436697</value></Data>
+<Data name="maps"><value>1693.Iru,1688,1689.Jarvekyla,1688.Haabneeme,1689.Viimsi</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1688/</value></Data>
