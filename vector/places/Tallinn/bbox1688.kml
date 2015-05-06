@@ -2,7 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1688"><name>1688</name><LineString><coordinates>24.64635977390880,59.40933640971217 24.64635977390880,59.47151429065481 24.83981297996437,59.47151429065481 24.83981297996437,59.40933640971217 24.64635977390880,59.40933640971217</coordinates></LineString></Placemark>
+<Placemark id="bbox.1688"><name>1688</name><LineString><coordinates>24.64635977390880,59.40959530794629 24.64635977390880,59.47151429065481 24.83982104773062,59.47151429065481 24.83982104773062,59.40959530794629 24.64635977390880,59.40959530794629</coordinates></LineString></Placemark>
 <Placemark id="gcp1688.1"><name>1688 #1</name><description>2951 3356</description><Point><coordinates>24.705309040248046,59.42927968397545</coordinates></Point></Placemark>
 <Placemark id="gcp1688.2"><name>1688 #2</name><description>7572 4927</description><Point><coordinates>24.80036116331781,59.412124923859196</coordinates></Point></Placemark>
 <Placemark id="gcp1688.3"><name>1688 #3</name><description>8821 420</description><Point><coordinates>24.835508830248962,59.466283161249564</coordinates></Point></Placemark>
@@ -24,7 +24,7 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.64635977390880,59.40933640971217,24.88491552695728,59.54849250436697</value></Data>
+<Data name="bbox"><value>24.64635977390880,59.40959530794629,24.88491552695728,59.54849250436697</value></Data>
 <Data name="maps"><value>1688,1688.Haabneeme,1689.Viimsi</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
