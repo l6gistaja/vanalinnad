@@ -334,7 +334,7 @@ Workaround for 1919.Kakumae, which is away from the composite id="1919"
     <t file="1744whited.jpg" gcps="-gcp 909 720 24.72959697246429 59.43539258811137 -gcp 1657 1810 24.740808606147485 59.42911793257117 -gcp 535 1137 24.725815057755927 59.43246819776499"/>
 </translate>
 
-<composite id="1688" maps="1693.Iru,1688,1689.Jarvekyla,1688.Haabneeme,1689.Viimsi" montage="yes"/>
+<composite id="1688" maps="1688.Tiskre,1693.Iru,1688,1689.Jarvekyla,1688.Haabneeme,1689.Viimsi" montage="yes"/>
 
 <translate map="1688" composite="1688">
     <t file="1688whited.jpg" gcps="-gcp 1713 3252 24.677816397845397 59.42848299610858 -gcp 7572 4927 24.80036116331781 59.412124923859196 -gcp 8821 420 24.835508830248962 59.466283161249564"/>

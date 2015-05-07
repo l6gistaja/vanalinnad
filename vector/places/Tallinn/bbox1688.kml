@@ -32,10 +32,15 @@
 <Placemark id="gcp1693.Iru.2"><name>1693.Iru #2</name><description>2387 9382</description><Point><coordinates>24.852259029388883,59.46786305374487</coordinates></Point></Placemark>
 <Placemark id="gcp1693.Iru.3"><name>1693.Iru #3</name><description>5907 5322</description><Point><coordinates>24.87208591842762,59.49907987585065</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1688.Tiskre"><name>1688.Tiskre</name><LineString><coordinates>24.54604100069854,59.41434513531090 24.54604100069854,59.44964398866495 24.61718518434512,59.44964398866495 24.61718518434512,59.41434513531090 24.54604100069854,59.41434513531090</coordinates></LineString></Placemark>
+<Placemark id="gcp1688.Tiskre.1"><name>1688.Tiskre #1</name><description>3200 1620</description><Point><coordinates>24.59809555109665,59.43468044898875</coordinates></Point></Placemark>
+<Placemark id="gcp1688.Tiskre.2"><name>1688.Tiskre #2</name><description>533 1508</description><Point><coordinates>24.55960048731528,59.43005358782899</coordinates></Point></Placemark>
+<Placemark id="gcp1688.Tiskre.3"><name>1688.Tiskre #3</name><description>3688 2965</description><Point><coordinates>24.610369339548733,59.42477120891367</coordinates></Point></Placemark>
+
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.64635977390880,59.36531351099162,24.94028303064952,59.54849250436697</value></Data>
-<Data name="maps"><value>1693.Iru,1688,1689.Jarvekyla,1688.Haabneeme,1689.Viimsi</value></Data>
+<Data name="bbox"><value>24.54604100069854,59.36531351099162,24.94028303064952,59.54849250436697</value></Data>
+<Data name="maps"><value>1688.Tiskre,1693.Iru,1688,1689.Jarvekyla,1688.Haabneeme,1689.Viimsi</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1688/</value></Data>
