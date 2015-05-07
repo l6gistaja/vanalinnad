@@ -178,26 +178,32 @@ for($z=$data{'zmax'}; $z>=$data{'zmin'}; $z--) {
       # montage lower zoom levels tiles from one level higher tiles,
       # if higher level tiles were composed/montaged from many overlapping maps.
       # it helps to hide ugly composition lines from higher levels.
-      if(exists $data{'montage'} && $z < $data{'zmax'} && exists $montage{$z} && exists $montage{$z}{$x}) {
-        $yl = scalar(@{$montage{$z}{$x}});
-        for($ym=0;$ym<$yl;$ym++) {
-          if($montage{$z}{$x}[$ym] == $y) {
+      if(exists $data{'montage'} && $z < $data{'zmax'}) {
+      ##if(exists $data{'montage'} && $z < $data{'zmax'} && exists $montage{$z} && exists $montage{$z}{$x}) {
+        ##$yl = scalar(@{$montage{$z}{$x}});
+        ##for($ym=0;$ym<$yl;$ym++) {
+        ##  if($montage{$z}{$x}[$ym] == $y) {
             @src = qw();
+            $emptycount = 0;
             for($yy=1;$yy>-1;$yy--) {
               for($yx=0;$yx<2;$yx++) {
                 $mtile = $destinationdir.(1+$z).'/'.($yx + ($x << 1)).'/'.($yy + ($y << 1)).$data{'tileext'};
-                push(@src, 
-                  !(-e $mtile) #|| (0 + `identify -format %k $mtile` < 2)
-                  ? $tilewhite
-                  : $mtile);
+                $emptytile = !(-e $mtile) || (0 + `identify -format %k $mtile` < 2);
+                push(@src, $emptytile ? $tilewhite : $mtile);
+                if($emptytile) { $emptycount++; }
               }
             }
-            $cmd = 'montage '.join(' ', @src).' -tile 2x2 -geometry 128x128+0+0 '.$xdir.'/'.$y.$data{'tileext'};
-            system($cmd);
-            add_to_tree([$z - 1, $x >> 1, $y >> 1], \%montage);
-            last;
-          }
-        }
+            if($emptycount < 4) {
+              $cmd = 'montage '.join(' ', @src).' -tile 2x2 -geometry 128x128+0+0 '.$xdir.'/'.$y.$data{'tileext'};
+              system($cmd);
+            } else {
+              $cmd = '#';
+              add_to_tree([$z,$x,0+$y],\%json);
+            }
+        ##    add_to_tree([$z - 1, $x >> 1, $y >> 1], \%montage);
+        ##    last;
+        ##  }
+        ##}
       }
 
       if($cmd ne ''){ next; }
@@ -213,7 +219,7 @@ for($z=$data{'zmax'}; $z>=$data{'zmin'}; $z--) {
           if(!exists $data{'montage'} || $z == $data{'zmax'}) {
             system('convert -transparent white '.$mapfile.' '.$tiletransparent);
             system('composite '.$tiletransparent.' '.$tilewritable.' -gravity center '.$tilewritable);
-            add_to_tree([$z - 1, $x >> 1, $y >> 1], \%montage);
+            ##add_to_tree([$z - 1, $x >> 1, $y >> 1], \%montage);
           }
         }
         $emptytile = 0;
