@@ -8,7 +8,7 @@
 <item>
 <title>III-29 [Tallinn : Harjumaa]</title>
 <author>Eduard-Adolf Bach, Sõjaväe Topograafia jaoskond</author>
-<description>Plaanil näidatud kõrgusarvud on süldades, meresügavused meetrites. 1 süld on 2,1336 m.</description>
+<description>Plaanil näidatud kõrgusarvud on süldades (2,1336 m), meresügavused meetrites.</description>
 <guid>isbn=9789949540228;nlib.ee=ARKT-03469</guid>
 <pubDate>Wed, 01 Oct 1924 00:00:00 +0000</pubDate>
 <link>http://digar.nlib.ee/digar/show.action?id=113829</link>
@@ -21,6 +21,16 @@
 <guid>isbn=9789949539017;nlib.ee=KTA 5.095</guid>
 <pubDate>Fri, 01 Jan 1926 00:00:00 +0000</pubDate>
 <link>http://digar.nlib.ee/digar/show.action?id=113815</link>
+<anchor>1926.Nomme</anchor>
+</item>
+
+<item>
+<title>Eesti topograafiline kaart 1:25000, III-28, Harjumaa</title>
+<author>V. Rosenberg</author>
+<description></description>
+<guid>ra.ee=ERA.T-6.3.97 leht 1</guid>
+<pubDate>Fri, 01 Jan 1926 00:00:00 +0000</pubDate>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=100457</link>
 </item>
 
 </channel>
