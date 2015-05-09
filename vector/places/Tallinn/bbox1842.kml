@@ -33,6 +33,11 @@
 <Placemark id="gcp1848.Vanalinn.2"><name>1848.Vanalinn #2</name><description>1875 7521</description><Point><coordinates>24.736949018402353,59.435147455473206</coordinates></Point></Placemark>
 <Placemark id="gcp1848.Vanalinn.3"><name>1848.Vanalinn #3</name><description>4272 4299</description><Point><coordinates>24.74945884124802,59.43663138854063</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1850"><name>1850</name><LineString><coordinates>24.66133059855640,59.38796695309030 24.66133059855640,59.46741718477904 24.84269097925164,59.46741718477904 24.84269097925164,59.38796695309030 24.66133059855640,59.38796695309030</coordinates></LineString></Placemark>
+<Placemark id="gcp1850.1"><name>1850 #1</name><description>2433 718</description><Point><coordinates>24.74128104507469,59.44814685767625</coordinates></Point></Placemark>
+<Placemark id="gcp1850.2"><name>1850 #2</name><description>1548 3027</description><Point><coordinates>24.72703315078755,59.40850826479517</coordinates></Point></Placemark>
+<Placemark id="gcp1850.3"><name>1850 #3</name><description>4710 754</description><Point><coordinates>24.81243468582222,59.454250264903514</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1839"><name>1839</name><LineString><coordinates>24.82684278202938,59.42345308897488 24.82684278202938,59.49381484893316 24.94149687900466,59.49381484893316 24.94149687900466,59.42345308897488 24.82684278202938,59.42345308897488</coordinates></LineString></Placemark>
 <Placemark id="gcp1839.1"><name>1839 #1</name><description>5985 18161</description><Point><coordinates>24.920246958923236,59.43952592157132</coordinates></Point></Placemark>
 <Placemark id="gcp1839.2"><name>1839 #2</name><description>5010 9786</description><Point><coordinates>24.88705612960768,59.461007290500774</coordinates></Point></Placemark>
@@ -40,8 +45,8 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.54468474757502,59.38908180947417,24.94149687900466,59.49381484893316</value></Data>
-<Data name="maps"><value>1849.Haabersti,1839,1848.Vanalinn,18XX.Tatari,1840,1842,1848</value></Data>
+<Data name="bbox"><value>24.54468474757502,59.38796695309030,24.94149687900466,59.49381484893316</value></Data>
+<Data name="maps"><value>1850,1849.Haabersti,1839,1848.Vanalinn,18XX.Tatari,1840,1842,1848</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1842/</value></Data>
