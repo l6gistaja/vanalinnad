@@ -5,6 +5,8 @@
 <link></link>
 <language></language>
 <copyright>0</copyright>
+
+<!--
 <item>
 <title>Erik Dahlbergi koostatud Narva uue kindluse plaan.</title>
 <author>Erik Dahlberg</author>
@@ -15,5 +17,17 @@
 <pubDate>Mon, 01 Jan 19XX 00:00:00 +0000</pubDate>
 <legends></legends>
 </item>
+-->
+
+<item>
+<title>Geometrisch Plaan Utaf Staden och Fästningen Narwa Sambt huruledes den effter Hans Kongel.</title>
+<author>Hans Kongel</author>
+<description></description>
+<guid>ra.ee=EAA.5393.1.8 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=284108</link>
+<pubDate>Fri, 01 Jan 1686 00:00:00 +0000</pubDate>
+<legends></legends>
+</item>
+
 </channel>
 </rss>
