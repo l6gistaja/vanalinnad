@@ -33,20 +33,20 @@
 <Placemark id="gcp1922.797.2k1.3"><name>1922.797.2k1 #3</name><description>209 110</description><Point><coordinates>25.602666862487553,58.36244477867198</coordinates></Point></Placemark>
 <Placemark id="gcp1922.797.2k1.4"><name>1922.797.2k1 #4</name><description>410 56</description><Point><coordinates>25.60433068727067,58.36270106453806</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1923.1826.1k1"><name>1923.1826.1k1</name><LineString><coordinates>25.55085891352281,58.34335715404895 25.55085891352281,58.39045923375799 25.60666763172983,58.39045923375799 25.60666763172983,58.34335715404895 25.55085891352281,58.34335715404895</coordinates></LineString></Placemark>
-<Placemark id="gcp1923.1826.1k1.1"><name>1923.1826.1k1 #1</name><description>1082 234</description><Point><coordinates>25.59512171157794,58.38539597410196</coordinates></Point></Placemark>
-<Placemark id="gcp1923.1826.1k1.2"><name>1923.1826.1k1 #2</name><description>564 1264</description><Point><coordinates>25.573921531524014,58.363387678936306</coordinates></Point></Placemark>
-<Placemark id="gcp1923.1826.1k1.3"><name>1923.1826.1k1 #3</name><description>807 1599</description><Point><coordinates>25.583778613037172,58.35620792430349</coordinates></Point></Placemark>
+<Placemark id="bbox.1923.k1"><name>1923.k1</name><LineString><coordinates>25.55089100877314,58.34298510588866 25.55089100877314,58.39054247093612 25.60668896182521,58.39054247093612 25.60668896182521,58.34298510588866 25.55089100877314,58.34298510588866</coordinates></LineString></Placemark>
+<Placemark id="gcp1923.k1.1"><name>1923.k1 #1</name><description>6070 1318</description><Point><coordinates>25.59512171157794,58.38539597410196</coordinates></Point></Placemark>
+<Placemark id="gcp1923.k1.2"><name>1923.k1 #2</name><description>3162 7118</description><Point><coordinates>25.573921531524014,58.363387678936306</coordinates></Point></Placemark>
+<Placemark id="gcp1923.k1.3"><name>1923.k1 #3</name><description>4528 8997</description><Point><coordinates>25.583778613037172,58.35620792430349</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1923.1826.1k2"><name>1923.1826.1k2</name><LineString><coordinates>25.58778562596709,58.34331693361299 25.58778562596709,58.39046091525336 25.63716672684784,58.39046091525336 25.63716672684784,58.34331693361299 25.58778562596709,58.34331693361299</coordinates></LineString></Placemark>
-<Placemark id="gcp1923.1826.1k2.1"><name>1923.1826.1k2 #1</name><description>214 234</description><Point><coordinates>25.59652322235121,58.38538850882179</coordinates></Point></Placemark>
-<Placemark id="gcp1923.1826.1k2.2"><name>1923.1826.1k2 #2</name><description>815 1214</description><Point><coordinates>25.621113714599904,58.364505710690906</coordinates></Point></Placemark>
-<Placemark id="gcp1923.1826.1k2.3"><name>1923.1826.1k2 #3</name><description>126 1269</description><Point><coordinates>25.593111452484617,58.3632789120856</coordinates></Point></Placemark>
+<Placemark id="bbox.1923.k2"><name>1923.k2</name><LineString><coordinates>25.58772037416140,58.34337133327878 25.58772037416140,58.39051882445076 25.63735916121436,58.39051882445076 25.63735916121436,58.34337133327878 25.58772037416140,58.34337133327878</coordinates></LineString></Placemark>
+<Placemark id="gcp1923.k2.1"><name>1923.k2 #1</name><description>1207 1319</description><Point><coordinates>25.59652322235121,58.38538850882179</coordinates></Point></Placemark>
+<Placemark id="gcp1923.k2.2"><name>1923.k2 #2</name><description>4572 6837</description><Point><coordinates>25.621113714599904,58.364505710690906</coordinates></Point></Placemark>
+<Placemark id="gcp1923.k2.3"><name>1923.k2 #3</name><description>716 7138</description><Point><coordinates>25.593111452484617,58.3632789120856</coordinates></Point></Placemark>
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>25.55083477666110,58.34331693361299,25.63764518017728,58.39046091525336</value></Data>
-<Data name="maps"><value>1923.1826.1k2,1923.1826.1k1,1922.797.2k1,1922.797.3k5,1922.797.3k3,1922.797.3k1,1922.795.3k1,1922.795.3k2</value></Data>
+<Data name="bbox"><value>25.55083477666110,58.34298510588866,25.63764518017728,58.39054247093612</value></Data>
+<Data name="maps"><value>1923.k2,1923.k1,1922.797.2k1,1922.797.3k5,1922.797.3k3,1922.797.3k1,1922.795.3k1,1922.795.3k2</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Viljandi/composed/1922/</value></Data>
