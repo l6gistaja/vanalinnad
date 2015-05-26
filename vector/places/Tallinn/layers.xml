@@ -6,13 +6,13 @@
 "urls": {
  "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/10/"},
  "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта", "l":"ЭтоМесто: трехверстовка", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/3-4/"},
- "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-atlas_topo-10km/?x=@X@&amp;y=@Y@", "srs":"EPSG:4326"},
- "ra1917m": {"h":"Rahvusarhiiv &lt; 1917", "l":"Rahvusarhiiv &lt; 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10990363&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav"},
- "ra1917_1950": {"h":"Rahvusarhiiv 1917-1950", "l":"Rahvusarhiiv 1917-1950", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10990372&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav"},
- "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10927353&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav"},
+ "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-atlas_topo-10km/?x=@X@&y=@Y@", "srs":"EPSG:4326"},
+ "ra1917m": {"h":"Rahvusarhiiv &lt; 1917", "l":"Rahvusarhiiv &lt; 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10990363&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
+ "ra1917_1950": {"h":"Rahvusarhiiv 1917-1950", "l":"Rahvusarhiiv 1917-1950", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10990372&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
+ "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10927353&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "digar": {"h":"Eesti rahvusraamatukogu digitaalarhiiv", "l":"DIGAR", "t":"_blank", "U":"http://digar.nlib.ee/digar/show.action?id=35660"},
  "digar2": {"h":"Eesti rahvusraamatukogu uus digitaalarhiiv", "l":"DIGAR 2", "t":"_blank", "U":"http://www.digar.ee/arhiiv/et/pildimaterjal?id=3801"},
- "linnaarhiiv": {"h":"Tallinna Linnaarhiivi Kaardikogu", "l":"Linnaarhiiv", "t":"_blank", "U":"http://www.biblioserver.com/linnaarhiiv/index.php?m=base&amp;id=1"}
+ "linnaarhiiv": {"h":"Tallinna Linnaarhiivi Kaardikogu", "l":"Linnaarhiiv", "t":"_blank", "U":"http://www.biblioserver.com/linnaarhiiv/index.php?m=base&id=1"}
 }
 }]]></json>
   <layer bounds="24.5940904565,59.3345396753,24.978127996,59.5426872437" type="tms" year="1968" />
@@ -35,11 +35,11 @@
   <layer bounds="24.63972159590817,59.42273539807361,24.80641085271327,59.49131205619217" type="tms" year="1827" />
   <layer bounds="24.7171184531,59.4237239971,24.7459781721,59.4407785749" type="tms" year="1744" />
   <layer bounds="24.54604100069854,59.36531351099162,24.94028303064952,59.54849250436697" type="tms" year="1688" />
-  <layer name="&amp;#9875; Balt" file="baltic_mini.kml" hide="1" maxres="10" style="multiColor" type="custom" year="Baltic_Sea" />
-  <layer name="&amp;#9316; 1" file="roads1min.kml" maxres="10" type="roads" />
-  <layer name="&amp;#9316; 2" file="roads2min.kml" maxres="12" type="roads" />
-  <layer name="&amp;#9316; 3" file="roads3min.kml" maxres="14" type="roads" />
-  <layer name="&amp;#9316; 4" file="roads4min.kml" maxres="15" type="roads" />
+  <layer name="&#9875; Balt" file="baltic_mini.kml" hide="1" maxres="10" style="multiColor" type="custom" year="Baltic_Sea" />
+  <layer name="&#9316; 1" file="roads1min.kml" maxres="10" type="roads" />
+  <layer name="&#9316; 2" file="roads2min.kml" maxres="12" type="roads" />
+  <layer name="&#9316; 3" file="roads3min.kml" maxres="14" type="roads" />
+  <layer name="&#9316; 4" file="roads4min.kml" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>10</minzoom>
 </vanalinnadlayers>

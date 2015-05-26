@@ -26,6 +26,7 @@
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1924/</value></Data>
+<Data name="montage"><value>yes</value></Data>
 
 </ExtendedData>
 
