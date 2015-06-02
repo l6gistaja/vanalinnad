@@ -34,12 +34,12 @@
   <layer bounds="24.54468474757502,59.38796695309030,24.94149687900466,59.49381484893316" type="tms" year="1842" />
   <layer bounds="24.63972159590817,59.42273539807361,24.80641085271327,59.49131205619217" type="tms" year="1827" />
   <layer bounds="24.7171184531,59.4237239971,24.7459781721,59.4407785749" type="tms" year="1744" />
-  <layer bounds="24.54604100069854,59.36531351099162,24.94028303064952,59.54849250436697" type="tms" year="1688" />
-  <layer name="&#9875; Balt" file="baltic_mini.kml" hide="1" maxres="10" style="multiColor" type="custom" year="Baltic_Sea" />
-  <layer name="&#9316; 1" file="roads1min.kml" maxres="10" type="roads" />
-  <layer name="&#9316; 2" file="roads2min.kml" maxres="12" type="roads" />
-  <layer name="&#9316; 3" file="roads3min.kml" maxres="14" type="roads" />
-  <layer name="&#9316; 4" file="roads4min.kml" maxres="15" type="roads" />
+  <layer bounds="24.47027799018731,59.35093610610189,25.01106711879276,59.63276141597635" type="tms" year="1688" />
+  <layer name="⚓ Balt" file="baltic_mini.kml" hide="1" maxres="10" style="multiColor" type="custom" year="Baltic_Sea" />
+  <layer name="⑤ 1" file="roads1min.kml" maxres="10" type="roads" />
+  <layer name="⑤ 2" file="roads2min.kml" maxres="12" type="roads" />
+  <layer name="⑤ 3" file="roads3min.kml" maxres="14" type="roads" />
+  <layer name="⑤ 4" file="roads4min.kml" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>10</minzoom>
 </vanalinnadlayers>
