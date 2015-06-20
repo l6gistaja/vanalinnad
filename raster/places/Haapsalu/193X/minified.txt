@@ -1,0 +1,2 @@
+2015-06-20 18:46:20+03:00; 214 files; 2.1M ../raster/places/Haapsalu/193X
+2015-06-20 18:46:27+03:00; 101 files; 1.6M ../raster/places/Haapsalu/193X
