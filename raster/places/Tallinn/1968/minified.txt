@@ -1,2 +1,2 @@
-2014-05-11 17:07:54+03:00; 7270 files; 76M ../raster/places/Tallinn/1968
-2014-05-11 17:11:09+03:00; 5766 files; 70M ../raster/places/Tallinn/1968
+2015-06-22 00:42:58+03:00; 7270 files; 108M ../raster/places/Tallinn/1968
+2015-06-22 00:48:49+03:00; 5711 files; 101M ../raster/places/Tallinn/1968

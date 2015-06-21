@@ -15,7 +15,7 @@
  "linnaarhiiv": {"h":"Tallinna Linnaarhiivi Kaardikogu", "l":"Linnaarhiiv", "t":"_blank", "U":"http://www.biblioserver.com/linnaarhiiv/index.php?m=base&id=1"}
 }
 }]]></json>
-  <layer bounds="24.5940904565,59.3345396753,24.978127996,59.5426872437" type="tms" year="1968" />
+  <layer bounds="24.59409045648279,59.33453967532896,24.97812799600556,59.54268724369540" type="tms" year="1968" />
   <layer bounds="24.6651536414,59.3932688183,24.8575659835,59.4740931126" type="tms" year="1957" />
   <layer bounds="24.645088278,59.39994761,24.8432692192,59.4772931356" type="tms" year="1940" />
   <layer bounds="24.61392979836162,59.35678957676252,24.85815242950569,59.46712443458402" type="tms" year="1939" />
