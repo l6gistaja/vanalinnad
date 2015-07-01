@@ -7,19 +7,19 @@
 <Placemark id="gcp1837.2"><name>1837 #2</name><description>4223 1016</description><Point><coordinates>26.7194502619937,58.391362774762506</coordinates></Point></Placemark>
 <Placemark id="gcp1837.3"><name>1837 #3</name><description>480 5924</description><Point><coordinates>26.73441698829706,58.367692676411046</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1841.Soinaste"><name>1841.Soinaste</name><LineString><coordinates>26.68157140785741,58.32998013032425 26.68157140785741,58.35331545841535 26.75790242815150,58.35331545841535 26.75790242815150,58.32998013032425 26.68157140785741,58.32998013032425</coordinates></LineString></Placemark>
-<Placemark id="gcp1841.Soinaste.1"><name>1841.Soinaste #1</name><description>991 359</description><Point><coordinates>26.714444187775197,58.34336142746163</coordinates></Point></Placemark>
-<Placemark id="gcp1841.Soinaste.2"><name>1841.Soinaste #2</name><description>2221 807</description><Point><coordinates>26.755257172798363,58.3398363774666</coordinates></Point></Placemark>
-<Placemark id="gcp1841.Soinaste.3"><name>1841.Soinaste #3</name><description>958 648</description><Point><coordinates>26.714874243165006,58.33849371873274</coordinates></Point></Placemark>
+<Placemark id="bbox.1841.Soinaste"><name>1841.Soinaste</name><LineString><coordinates>26.68047746095575,58.32990645025962 26.68047746095575,58.35359514040943 26.75789327975624,58.35359514040943 26.75789327975624,58.32990645025962 26.68047746095575,58.32990645025962</coordinates></LineString></Placemark>
+<Placemark id="gcp1841.Soinaste.1"><name>1841.Soinaste #1</name><description>465 2292</description><Point><coordinates>26.686938915710016,58.33747143693973</coordinates></Point></Placemark>
+<Placemark id="gcp1841.Soinaste.2"><name>1841.Soinaste #2</name><description>8861 3072</description><Point><coordinates>26.752384815673242,58.340782737921124</coordinates></Point></Placemark>
+<Placemark id="gcp1841.Soinaste.3"><name>1841.Soinaste #3</name><description>4227 845</description><Point><coordinates>26.71399704025276,58.346199537379974</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1841.Maarjamoisa"><name>1841.Maarjamoisa</name><LineString><coordinates>26.62967584894702,58.35430458990440 26.62967584894702,58.39127796412664 26.68805392897458,58.39127796412664 26.68805392897458,58.35430458990440 26.62967584894702,58.35430458990440</coordinates></LineString></Placemark>
-<Placemark id="gcp1841.Maarjamoisa.1"><name>1841.Maarjamoisa #1</name><description>1133 1451</description><Point><coordinates>26.67166473365061,58.36516203171658</coordinates></Point></Placemark>
-<Placemark id="gcp1841.Maarjamoisa.2"><name>1841.Maarjamoisa #2</name><description>1212 1137</description><Point><coordinates>26.67213680243688,58.37074388589841</coordinates></Point></Placemark>
-<Placemark id="gcp1841.Maarjamoisa.3"><name>1841.Maarjamoisa #3</name><description>1075 601</description><Point><coordinates>26.664927024605593,58.37942975334986</coordinates></Point></Placemark>
+<Placemark id="bbox.1841.Maarjamoisa"><name>1841.Maarjamoisa</name><LineString><coordinates>26.62974549845481,58.35426740749173 26.62974549845481,58.39120434916283 26.68808706766364,58.39120434916283 26.68808706766364,58.35426740749173 26.62974549845481,58.35426740749173</coordinates></LineString></Placemark>
+<Placemark id="gcp1841.Maarjamoisa.1"><name>1841.Maarjamoisa #1</name><description>542 296</description><Point><coordinates>26.633959923247925,58.38546618412978</coordinates></Point></Placemark>
+<Placemark id="gcp1841.Maarjamoisa.2"><name>1841.Maarjamoisa #2</name><description>2187 7505</description><Point><coordinates>26.655589256744484,58.357616015369864</coordinates></Point></Placemark>
+<Placemark id="gcp1841.Maarjamoisa.3"><name>1841.Maarjamoisa #3</name><description>6605 4939</description><Point><coordinates>26.682969246368085,58.371200641505304</coordinates></Point></Placemark>
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.62967584894702,58.32998013032425,26.76341877209056,58.39590288870762</value></Data>
+<Data name="bbox"><value>26.62974549845481,58.32990645025962,26.76341877209056,58.39590288870762</value></Data>
 <Data name="maps"><value>1837,1841.Soinaste,1841.Maarjamoisa</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
