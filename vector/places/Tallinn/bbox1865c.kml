@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
+<kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
 <Placemark id="bbox.1865.II"><name>1865.II</name><LineString><coordinates>24.74848210156550,59.40141528208262 24.74848210156550,59.46194674033583 24.88145020715426,59.46194674033583 24.88145020715426,59.40141528208262 24.74848210156550,59.40141528208262</coordinates></LineString></Placemark>
@@ -7,42 +7,45 @@
 <Placemark id="gcp1865.II.2"><name>1865.II #2</name><description>1870 3042</description><Point><coordinates>24.77776592765925,59.434178982417514</coordinates></Point></Placemark>
 <Placemark id="gcp1865.II.3"><name>1865.II #3</name><description>3481 2769</description><Point><coordinates>24.796444831238237,59.43763785387251</coordinates></Point></Placemark>
 
-
 <Placemark id="bbox.1865.IIIb"><name>1865.IIIb</name><LineString><coordinates>24.81201086229114,59.40328217339862 24.81201086229114,59.42508918592140 24.87262864114712,59.42508918592140 24.87262864114712,59.40328217339862 24.81201086229114,59.40328217339862</coordinates></LineString></Placemark>
 <Placemark id="gcp1865.IIIb.1"><name>1865.IIIb #1</name><description>2487 1172</description><Point><coordinates>24.845200498047156,59.41469437958333</coordinates></Point></Placemark>
 <Placemark id="gcp1865.IIIb.2"><name>1865.IIIb #2</name><description>65 651</description><Point><coordinates>24.81462331527783,59.41431224369463</coordinates></Point></Placemark>
 <Placemark id="gcp1865.IIIb.3"><name>1865.IIIb #3</name><description>1814 287</description><Point><coordinates>24.834621865692906,59.419246924015624</coordinates></Point></Placemark>
-
 
 <Placemark id="bbox.1865.III"><name>1865.III</name><LineString><coordinates>24.71680479917616,59.39600239473397 24.71680479917616,59.44649867693090 24.84780170166906,59.44649867693090 24.84780170166906,59.39600239473397 24.71680479917616,59.39600239473397</coordinates></LineString></Placemark>
 <Placemark id="gcp1865.III.1"><name>1865.III #1</name><description>4338 2304</description><Point><coordinates>24.775341210709733,59.42415498760007</coordinates></Point></Placemark>
 <Placemark id="gcp1865.III.2"><name>1865.III #2</name><description>3347 189</description><Point><coordinates>24.75752483062712,59.43602824975197</coordinates></Point></Placemark>
 <Placemark id="gcp1865.III.3"><name>1865.III #3</name><description>7060 2077</description><Point><coordinates>24.80739246063256,59.42964457939814</coordinates></Point></Placemark>
 
-
 <Placemark id="bbox.1865.IV"><name>1865.IV</name><LineString><coordinates>24.62492010816182,59.37488893538811 24.62492010816182,59.45202657652738 24.77410784120391,59.45202657652738 24.77410784120391,59.37488893538811 24.62492010816182,59.37488893538811</coordinates></LineString></Placemark>
 <Placemark id="gcp1865.IV.1"><name>1865.IV #1</name><description>4994 2894</description><Point><coordinates>24.693544564592507,59.4163771165732</coordinates></Point></Placemark>
 <Placemark id="gcp1865.IV.2"><name>1865.IV #2</name><description>9670 4421</description><Point><coordinates>24.746845422136353,59.43109625169254</coordinates></Point></Placemark>
 <Placemark id="gcp1865.IV.3"><name>1865.IV #3</name><description>5965 5650</description><Point><coordinates>24.72720092331031,59.40865205895708</coordinates></Point></Placemark>
-
 
 <Placemark id="bbox.1865.IVb"><name>1865.IVb</name><LineString><coordinates>24.66088820990301,59.39464138109966 24.66088820990301,59.45466468907087 24.77877597495290,59.45466468907087 24.77877597495290,59.39464138109966 24.66088820990301,59.39464138109966</coordinates></LineString></Placemark>
 <Placemark id="gcp1865.IVb.1"><name>1865.IVb #1</name><description>697 2917</description><Point><coordinates>24.693544564592507,59.4163771165732</coordinates></Point></Placemark>
 <Placemark id="gcp1865.IVb.2"><name>1865.IVb #2</name><description>5390 4391</description><Point><coordinates>24.746845422136353,59.43109625169254</coordinates></Point></Placemark>
 <Placemark id="gcp1865.IVb.3"><name>1865.IVb #3</name><description>1698 5662</description><Point><coordinates>24.72720092331031,59.40865205895708</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1865.IV.Harku"><name>1865.IV.Harku</name><LineString><coordinates>24.60744903507158,59.41367335960734 24.60744903507158,59.42730107517351 24.63997496941386,59.42730107517351 24.63997496941386,59.41367335960734 24.60744903507158,59.41367335960734</coordinates></LineString></Placemark>
+<Placemark id="gcp1865.IV.Harku.1"><name>1865.IV.Harku #1</name><description>2300 1422</description><Point><coordinates>24.636566899156886,59.417233900408284</coordinates></Point></Placemark>
+<Placemark id="gcp1865.IV.Harku.2"><name>1865.IV.Harku #2</name><description>1356 1387</description><Point><coordinates>24.624872467851954,59.417834345917946</coordinates></Point></Placemark>
+<Placemark id="gcp1865.IV.Harku.3"><name>1865.IV.Harku #3</name><description>742 599</description><Point><coordinates>24.61802747044606,59.42315055345772</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1865.IV.Rocca-al-Mare"><name>1865.IV.Rocca-al-Mare</name><LineString><coordinates>24.64200652245838,59.43082241926373 24.64200652245838,59.43608666495995 24.65321466902155,59.43608666495995 24.65321466902155,59.43082241926373 24.64200652245838,59.43082241926373</coordinates></LineString></Placemark>
+<Placemark id="gcp1865.IV.Rocca-al-Mare.1"><name>1865.IV.Rocca-al-Mare #1</name><description>595 642</description><Point><coordinates>24.649206645508297,59.43164156172094</coordinates></Point></Placemark>
+<Placemark id="gcp1865.IV.Rocca-al-Mare.2"><name>1865.IV.Rocca-al-Mare #2</name><description>558 385</description><Point><coordinates>24.6489491534429,59.43336571528954</coordinates></Point></Placemark>
+<Placemark id="gcp1865.IV.Rocca-al-Mare.3"><name>1865.IV.Rocca-al-Mare #3</name><description>40 210</description><Point><coordinates>24.642876632233204,59.434675140319285</coordinates></Point></Placemark>
 
 <Placemark id="bbox.1865.I"><name>1865.I</name><LineString><coordinates>24.67919296011873,59.43227770044299 24.67919296011873,59.46190375713449 24.77636974837111,59.46190375713449 24.77636974837111,59.43227770044299 24.67919296011873,59.43227770044299</coordinates></LineString></Placemark>
 <Placemark id="gcp1865.I.1"><name>1865.I #1</name><description>4399 1968</description><Point><coordinates>24.73597711120673,59.44831229807439</coordinates></Point></Placemark>
 <Placemark id="gcp1865.I.2"><name>1865.I #2</name><description>7128 3351</description><Point><coordinates>24.769998250351723,59.43883801054601</coordinates></Point></Placemark>
 <Placemark id="gcp1865.I.3"><name>1865.I #3</name><description>3580 3576</description><Point><coordinates>24.724915681229856,59.4381451980244</coordinates></Point></Placemark>
 
-
 <Placemark id="bbox.1865.Dom"><name>1865.Dom</name><LineString><coordinates>24.71110325591740,59.42384465554100 24.71110325591740,59.44071323796899 24.74505377953476,59.44071323796899 24.74505377953476,59.42384465554100 24.71110325591740,59.42384465554100</coordinates></LineString></Placemark>
 <Placemark id="gcp1865.Dom.1"><name>1865.Dom #1</name><description>4587 3216</description><Point><coordinates>24.740815816270295,59.4291155172301</coordinates></Point></Placemark>
 <Placemark id="gcp1865.Dom.2"><name>1865.Dom #2</name><description>4180 775</description><Point><coordinates>24.73953908477964,59.43716323471351</coordinates></Point></Placemark>
 <Placemark id="gcp1865.Dom.3"><name>1865.Dom #3</name><description>2131 2379</description><Point><coordinates>24.72579544578695,59.43244395790313</coordinates></Point></Placemark>
-
 
 <Placemark id="bbox.1865.12"><name>1865.12</name><LineString><coordinates>24.73379845269964,59.43161396279844 24.73379845269964,59.44435135234561 24.75661599337442,59.44435135234561 24.75661599337442,59.43161396279844 24.73379845269964,59.43161396279844</coordinates></LineString></Placemark>
 <Placemark id="gcp1865.12.1"><name>1865.12 #1</name><description>2658 78</description><Point><coordinates>24.749570546494006,59.44254731656561</coordinates></Point></Placemark>
@@ -51,12 +54,13 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.62492010816182,59.37488893538811,24.88145020715426,59.46194674033583</value></Data>
-<Data name="maps"><value>1865.II,1865.IIIb,1865.III,1865.IV,1865.IVb,1865.I,1865.Dom,1865.12</value></Data>
+<Data name="bbox"><value>24.60744903507158,59.37488893538811,24.88145020715426,59.46194674033583</value></Data>
+<Data name="maps"><value>1865.II,1865.IIIb,1865.III,1865.IV.Harku,1865.IV.Rocca-al-Mare,1865.IV,1865.IVb,1865.I,1865.Dom,1865.12</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="montage"><value>yes</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1865c/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
 </ExtendedData>
 
 </Document>

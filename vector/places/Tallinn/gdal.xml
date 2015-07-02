@@ -207,7 +207,7 @@ Workaround for 1919.Kakumae, which is away from the composite id="1919"
     <t file="1881.Kopli.bright.jpg" gcps="-gcp 6214 10141 24.703397674407658 59.45373778872693 -gcp 4086 11263 24.69462148651123 59.44735745973722 -gcp 2573 9303 24.680415690460144 59.450926793819974"/>
 </translate>
 
-<composite id="1865c" maps="1865.II,1865.IIIb,1865.III,1865.IV,1865.IVb,1865.I,1865.Dom,1865.12" montage="yes"/>
+<composite id="1865c" maps="1865.II,1865.IIIb,1865.III,1865.IV.Harku,1865.IV.Rocca-al-Mare,1865.IV,1865.IVb,1865.I,1865.Dom,1865.12" montage="yes"/>
 
 <translate map="1865.II" composite="1865c">
     <t file="1865.II_whited.jpg" gcps="-gcp 3 2238 24.753583131180473 59.43738145124559 -gcp 1870 3042 24.77776592765925 59.434178982417514 -gcp 3481 2769 24.796444831238237 59.43763785387251"/>
@@ -231,6 +231,14 @@ Workaround for 1919.Kakumae, which is away from the composite id="1919"
 
 <translate map="1865.IVb" composite="1865c">
     <t file="1865.IVb_whited.jpg" gcps="-gcp 697 2917 24.693544564592507 59.4163771165732 -gcp 5390 4391 24.746845422136353 59.43109625169254 -gcp 1698 5662 24.72720092331031 59.40865205895708"/>
+</translate>
+
+<translate map="1865.IV.Harku" composite="1865c">
+    <t file="1865.IV.Harku.jpg" gcps="-gcp 2300 1422 24.636566899156886 59.417233900408284 -gcp 1356 1387 24.624872467851954 59.417834345917946 -gcp 742 599 24.61802747044606 59.42315055345772"/>
+</translate>
+
+<translate map="1865.IV.Rocca-al-Mare" composite="1865c">
+    <t file="1865.IV.Rocca-al-Mare.jpg" gcps=" -gcp 595 642 24.649206645508297 59.43164156172094 -gcp 558 385 24.6489491534429 59.43336571528954 -gcp 40 210 24.642876632233204 59.434675140319285"/>
 </translate>
 
 <translate map="1865.I" composite="1865c">
