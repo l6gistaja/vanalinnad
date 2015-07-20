@@ -1,2 +1,2 @@
-2014-12-14 21:01:28+02:00; 135 files; 1.7M ../raster/places/Kuressaare/1911
-2014-12-14 21:01:34+02:00; 88 files; 1.5M ../raster/places/Kuressaare/1911
+2015-07-21 01:16:47+03:00; 150 files; 1.8M ../raster/places/Kuressaare/1911
+2015-07-21 01:16:54+03:00; 85 files; 1.6M ../raster/places/Kuressaare/1911

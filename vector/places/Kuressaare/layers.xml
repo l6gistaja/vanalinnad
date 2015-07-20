@@ -2,7 +2,7 @@
   <bounds>22.46191935291008,58.23536741918275,22.50721423578300,58.26707200942217</bounds>
   <city>Kuressaare</city>
   <country>Estonia</country>
-  <json>{
+  <json><![CDATA[{
 "urls": {
  "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/9/"},
  "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта", "l":"ЭтоМесто: трехверстовка", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/5-2/"},
@@ -12,12 +12,12 @@
  "kuressaare": {"h":"Kuressaare kaardirakendused", "l":"Kuressaare kaardirakendused", "t":"_blank", "U":"http://www.kuressaare.ee/uus/kaardid/"},
  "saaremaa_geneal": {"h":"Saaremaa genealoogiaselts", "l":"Saaremaa genealoogiaselts", "t":"_blank", "U":"http://www.genealoogia.ee/saaremaa/tulemused.html"}
 }
-}</json>
+}]]></json>
   <layer bounds="22.46373966000846,58.24135206934148,22.49984734358742,58.26298646161354" type="tms" year="1970" />
   <layer bounds="22.45982977390705,58.23495629041479,22.50391628020272,58.26899081634754" type="tms" year="1941" />
   <layer bounds="22.46127661595613,58.23592523455979,22.50843595880820,58.26619977356382" type="tms" year="1931" />
   <layer bounds="22.45945055781233,58.24007424245781,22.50393211453530,58.26737100676026" type="tms" year="1918" />
-  <layer bounds="22.45959824415303,58.24021563931544,22.50315811041349,58.26723947927039" type="tms" year="1911" />
+  <layer bounds="22.45963889820179,58.24011600394780,22.50305684675099,58.26725076247926" type="tms" year="1911" />
   <layer bounds="22.46030864323622,58.24024857805841,22.50325286912211,58.26662578873538" type="tms" year="1902" />
   <layer bounds="22.45774220989000,58.23930448349336,22.50024014560303,58.26607519720036" type="tms" year="1878" />
   <layer bounds="22.45860388032468,58.23976502027836,22.50058252585167,58.26630372488221" type="tms" year="1862" />
