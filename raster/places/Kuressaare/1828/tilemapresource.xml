@@ -3,8 +3,8 @@
 	  <Title>Kuressaare 1828</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="58.24103341556972" miny="22.46276814029346" maxx="58.26468266343221" maxy="22.49900256488004"/>
-	  <Origin x="58.24103341556972" y="22.46276814029346"/>
+	  <BoundingBox minx="58.24106086736725" miny="22.46277007251862" maxx="58.26466495453518" maxy="22.49893905976984"/>
+	  <Origin x="58.24106086736725" y="22.46277007251862"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="13" units-per-pixel="19.10925706787109" order="13"/>
