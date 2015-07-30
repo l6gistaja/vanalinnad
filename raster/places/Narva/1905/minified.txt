@@ -1,2 +1,2 @@
-2014-11-09 18:12:43+02:00; 710 files; 9.3M ../raster/places/Narva/1905
-2014-11-09 18:12:56+02:00; 471 files; 8.4M ../raster/places/Narva/1905
+2015-07-30 16:50:05+03:00; 693 files; 11M ../raster/places/Narva/1905
+2015-07-30 16:50:43+03:00; 465 files; 9.8M ../raster/places/Narva/1905
