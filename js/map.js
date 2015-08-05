@@ -17,6 +17,7 @@ function vlMap(inputParams){
   var isAtSite;
   var baseLayersCount = 0;
   var jsonConf = {};
+  var selectorLayer;
 
   var xmlHandlerConf = function(request) {
     if(request.status == 200) {
@@ -107,7 +108,7 @@ function vlMap(inputParams){
         } );
     map.addLayer(osm);
 
-    var selectorLayer = new OpenLayers.Layer.Vector('&#8984; POI', {
+    selectorLayer = new OpenLayers.Layer.Vector('&#8984; POI', {
       layername: 'POIs',
       projection: map.options.displayProjection,
       minResolution: map.getResolutionForZoom(mapMinZoom - 1),
@@ -254,6 +255,7 @@ function vlMap(inputParams){
           popupContent = '<strong>' + feature.attributes.name +'</strong><br />' 
                 + vlUtils.getURLs(urlKeys, locData, jsonConf);
           locData.site = '';
+          locData.o = 'map.sitesPopup(); return false;';
           popupContent +=  locData.delimiter + vlUtils.getURLs(['vanalinnad'], locData, jsonConf);
         }
         
@@ -305,22 +307,7 @@ function vlMap(inputParams){
         } else {
           map.zoomToExtent(selectorLayer.getDataExtent());
         }
-        
-        var cornerXYg = map.getLonLatFromPixel({x:55, y:20});
-        var cornerXY = new OpenLayers.LonLat(cornerXYg.lon, cornerXYg.lat);
-        cornerXYg.transform(map.options.projection, map.options.displayProjection);
-        sitesPopup = new OpenLayers.Popup.Anchored(
-            "sitesPopup",
-            new OpenLayers.LonLat(cornerXY.lon, cornerXY.lat),
-            null,
-            htmlSites(selectorLayer.features),
-            null,
-            true,
-            null
-        );
-        sitesPopup.setBorder('solid 2px black');
-        sitesPopup.autoSize = true;
-        map.addPopup(sitesPopup);
+        _sitesPopup();
       });
     }
 
@@ -416,10 +403,33 @@ function vlMap(inputParams){
     return y;
   }
   
+  var _sitesPopup = function() {
+    for(var i = map.popups.length - 1; i > -1; i--) { if(map.popups[i].id == 'sitesPopup') { return; } }
+    var cornerXYg = map.getLonLatFromPixel({x:55, y:20});
+    var cornerXY = new OpenLayers.LonLat(cornerXYg.lon, cornerXYg.lat);
+    cornerXYg.transform(map.options.projection, map.options.displayProjection);
+    sitesPopup = new OpenLayers.Popup.Anchored(
+        "sitesPopup",
+        new OpenLayers.LonLat(cornerXY.lon, cornerXY.lat),
+        null,
+        htmlSites(selectorLayer.features),
+        null,
+        true,
+        function() { for(var i = map.popups.length - 1; i > -1; i--) {
+          if(map.popups[i].id == 'sitesPopup') { map.removePopup(map.popups[i]); }
+        } }
+    );
+    sitesPopup.setBorder('solid 2px black');
+    sitesPopup.autoSize = true;
+    map.addPopup(sitesPopup);
+  }
+
   var _init = function() {
     reqParams = OpenLayers.Util.getParameters();
     OpenLayers.Request.GET({ url: inputParams.conf, callback: xmlHandlerConf });
   }
+
+  this.sitesPopup = function() { _sitesPopup(); }
 
   _init();
 

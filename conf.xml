@@ -23,7 +23,7 @@
  "wikipedia": {"h":"Wikipedia", "l":"Wikipedia", "t":"_blank", "U":"http://en.wikipedia.org/wiki/@T@"},
  "ajapaik": {"h":"Ajapaik.ee", "l":"Ajapaik", "t":"_blank", "U":"http://ajapaik.ee/map/?lat=@Y@&amp;lng=@X@&amp;zoom=@Z@&amp;limitToAlbum=1", "srs":"EPSG:4326", "icon":"raster/ajapaik.jpg"},
  "maaamet": {"h":"Maa-amet WMS", "l":"Maa-amet", "U":"index.html?site=@site@&amp;wms=maaamet&amp;zoom=@Z@&amp;lat=@Y@&amp;lon=@X@", "srs":"EPSG:3301", "type":"WMS", "icon":"raster/ee16.png", "zoomdiff":-7, "minzoom":8},
- "vanalinnad": {"h":"Vanalinnad", "l":"Vanalinnad", "U":"?site=@site@&amp;zoom=@Z@&amp;lat=@Y@&amp;lon=@X@", "srs":"EPSG:4326", "icon":"raster/vanalinnad.png", "maxzoom":16}
+ "vanalinnad": {"h":"Vanalinnad", "l":"Vanalinnad", "t":"_blank", "U":"?site=@site@&amp;zoom=@Z@&amp;lat=@Y@&amp;lon=@X@", "srs":"EPSG:4326", "icon":"raster/vanalinnad.png", "maxzoom":16}
 },
 "proj4":{
   "EPSG_4326":"+proj=longlat +ellps=WGS84 +datum=WGS84 +no_defs",

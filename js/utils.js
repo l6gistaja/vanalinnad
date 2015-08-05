@@ -153,6 +153,7 @@ vlUtils.decimalRound = function(x, decimalPlaces) {
   * t : HTML target
   * h : HTML title
   * l : link text (default: u)
+  * o : onclick Javascript
   *
   * @param {hash} data
   * @returns string HTML link
@@ -161,6 +162,7 @@ vlUtils.link = function(data) {
   return '<a href="' + data.u + '"'
     + ('t' in data ? ' target="' + data.t + '"' : '')
     + ('h' in data ? ' title="' + data.h + '"' : '')
+    + ('o' in data ? ' onclick="' + data.o + '"' : '')
     + '>' + ('l' in data ? data.l : data.u)  + '</a>';
 }
 
@@ -176,7 +178,8 @@ vlUtils.link = function(data) {
   * C : country
   * T : town or city
   * S : street
-  * delimiter : ...between links 
+  * delimiter : ...between links
+  * o : onclick Javascript
   *
   * @param {hash[]} data
   * @returns string of HTML links
@@ -330,11 +333,10 @@ vlUtils.getURLs = function(urlKeys, data, jsonConf) {
 vlUtils.mapDispatcher = function(initConf) {
   var reqParams = OpenLayers.Util.getParameters();
   if('wms' in reqParams && reqParams.wms.match(/^[a-z]+$/)) {
-    new vlWms(initConf);
+    return new vlWms(initConf);
   } else {
-    new vlMap(initConf);
+    return new vlMap(initConf);
   }
-  return true;
 }
 
 vlUtils.mapMapUI = function(x) {
