@@ -2,6 +2,11 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
+<Placemark id="bbox.1823"><name>1823</name><LineString><coordinates>, , , , ,</coordinates></LineString></Placemark>
+<Placemark id="gcp1823.1"><name>1823 #1</name><description>332 1709</description><Point><coordinates>24.780882654534082,59.43319963203051</coordinates></Point></Placemark>
+<Placemark id="gcp1823.2"><name>1823 #2</name><description>231 931</description><Point><coordinates>24.785270748482294,59.4386934484738</coordinates></Point></Placemark>
+<Placemark id="gcp1823.3"><name>1823 #3</name><description>936 676</description><Point><coordinates>24.796439466820054,59.43764603690237</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1827"><name>1827</name><LineString><coordinates>24.71090372693429,59.42273539807361 24.71090372693429,59.45570885833191 24.76839468817723,59.45570885833191 24.76839468817723,59.42273539807361 24.71090372693429,59.42273539807361</coordinates></LineString></Placemark>
 <Placemark id="gcp1827.1"><name>1827 #1</name><description>4812 6919</description><Point><coordinates>24.743517637254193,59.42922706695654</coordinates></Point></Placemark>
 <Placemark id="gcp1827.2"><name>1827 #2</name><description>2633 1667</description><Point><coordinates>24.740642309190225,59.44781842782439</coordinates></Point></Placemark>
