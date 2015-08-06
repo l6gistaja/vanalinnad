@@ -9,8 +9,9 @@ html, body, #map {
   filter: alpha(opacity = 85);
   -moz-border-radius: 15px 0px 0px 15px;
   border-radius: 15px 0px 0px 15px;
-  width: 108px;
+  width: 95px;
   float: right;
+  line-height: 50%;
 }
 
 .olControlBtnHiLiteItemActive {  
