@@ -67,12 +67,16 @@ body .bodyContent {
   padding: 3px;
 }
 
-#infoTable {
-  border-collapse: collapse;
-  padding: 3px;
+.Table {
+    display: table;
 }
-
-.infoTableCell {
-  padding: 3px 3px 3px 15px;
-  vertical-align: top;
+.Row {
+    display: table-row;
+}
+.Cell {
+    display: table-cell;
+    border: none;
+    border-width: thin;
+    padding-left: 5px;
+    padding-right: 5px;
 }

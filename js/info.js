@@ -327,7 +327,7 @@ function vlInitInfo(inputParams){
         }
 
         y = '<br/><strong>' + vlUtils.link({u:'index.html?site=' + reqParams['site'], l:siteName})
-          + '</strong><table id="infoTable"><tr><td class="infoTableCell"><ol>';
+          + '</strong><div class="Table"><div class="Row"><div class="Cell"><ol>';
         for(i=0; i<links.length; i++) {
           if(links[i].getAttribute('disabled') || links[i].getAttribute('year') == null){ continue; }
           y += '<li>' + vlUtils.link({
@@ -335,8 +335,8 @@ function vlInitInfo(inputParams){
             l: links[i].getAttribute(links[i].getAttribute('name') ? 'name' : 'year')
           })  + '</li>';
         }
-        y += '</ol></td><td class="infoTableCell"><ol type="A"><li>' + vlUtils.getURLs(urlKeys, locData, jsonConf)
-          + '</li></ol></td></tr></table>';
+        y += '</ol></div><div class="Cell"><ol type="A"><li>' + vlUtils.getURLs(urlKeys, locData, jsonConf)
+          + '</li></ol></div></div></div>';
         document.getElementById(inputParams.divContent).innerHTML = y;
         document.getElementById(inputParams.divHeader).innerHTML += getSiteLbl();
         document.getElementById(inputParams.divFooter).innerHTML = document.getElementById(inputParams.divHeader).innerHTML;
