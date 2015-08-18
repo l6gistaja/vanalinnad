@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<TileMap version="1.0.0" tilemapservice="http://tms.osgeo.org/1.0.0">
-	  <Title>1940georef.png</Title>
+	  <Title>Tallinn 1940</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
 	  <BoundingBox minx="59.39994760998267" miny="24.64508827798675" maxx="59.47729313556979" maxy="24.84326921920938"/>
