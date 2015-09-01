@@ -4,6 +4,7 @@
 <title>Rahvusarhiiv</title>
 <language>de</language>
 <copyright>0</copyright>
+
 <item>
 <title>Charte von der Grentze des Domischen Grundes, in welchen die Vorstädte auf und unter dem Sanct Antoni Berge, wie auch die Neue Gasse angezeiget worden, bey der Russischen Kayserlichen Stadt und Rechtung Rewal</title>
 <author>Fortifications Conducteur O. Wentzel</author>
@@ -12,5 +13,16 @@
 <legends>legend1744.jpg,explanation1744.jpg</legends>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=28834</link>
 </item>
+
+<item>
+<title>PLAN VON REVAL</title>
+<author>Joh. Georg Max v Fürsetnhoff</author>
+<description>Lk./p. 40: Raid, Tõnu; Suurmaa, Lauri; Harding, Alexander; Burghardt, Anne; Tuch, Boris. Tallinn ajaloolistel linnaplaanidel 1634-1989 = Maps of the city of Tallinn = Tallinn auf den Stadtplänen = Планы города Таллинна. Tallinn, Grenader, 2011</description>
+<guid>Saksa RR Berliin, S Kart. X 49786</guid>
+<pubDate>Tue, 01 Jan 1740 00:00:00 +0000</pubDate>
+<legends>legend1740.jpg</legends>
+<link>http://www.ester.ee/record=b2679037*est</link>
+</item>
+
 </channel>
 </rss>

@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>24.7171184531,59.4237239971 24.7171184531,59.4407785749 24.7459781721,59.4407785749 24.7459781721,59.4237239971 24.7171184531,59.4237239971</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>909 720</description><Point><coordinates>24.72959697246429,59.43539258811137</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>1657 1810</description><Point><coordinates>24.740808606147485,59.42911793257117</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>535 1137</description><Point><coordinates>24.725815057755927,59.43246819776499</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1744"><name>1744</name><LineString><coordinates>24.71711845312609,59.42372399714797 24.71711845312609,59.44077857488622 24.74597817207019,59.44077857488622 24.74597817207019,59.42372399714797 24.71711845312609,59.42372399714797</coordinates></LineString></Placemark>
+<Placemark id="gcp1744.1"><name>1744 #1</name><description>909 720</description><Point><coordinates>24.72959697246429,59.43539258811137</coordinates></Point></Placemark>
+<Placemark id="gcp1744.2"><name>1744 #2</name><description>1657 1810</description><Point><coordinates>24.740808606147485,59.42911793257117</coordinates></Point></Placemark>
+<Placemark id="gcp1744.3"><name>1744 #3</name><description>535 1137</description><Point><coordinates>24.725815057755927,59.43246819776499</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1740"><name>1740</name><LineString><coordinates>24.73229146456094,59.43035087898354 24.73229146456094,59.44840741492366 24.75821338733708,59.44840741492366 24.75821338733708,59.43035087898354 24.73229146456094,59.43035087898354</coordinates></LineString></Placemark>
+<Placemark id="gcp1740.1"><name>1740 #1</name><description>1380 955</description><Point><coordinates>24.74958445820784,59.44255253719903</coordinates></Point></Placemark>
+<Placemark id="gcp1740.2"><name>1740 #2</name><description>1537 2010</description><Point><coordinates>24.750335476731333,59.43663927532521</coordinates></Point></Placemark>
+<Placemark id="gcp1740.3"><name>1740 #3</name><description>356 2366</description><Point><coordinates>24.736924431657656,59.43514443109279</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.71711845312609,59.42372399714797,24.75821338733708,59.44840741492366</value></Data>
+<Data name="maps"><value>1740,1744</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1744/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
