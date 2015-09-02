@@ -35,6 +35,7 @@
   <layer bounds="24.63972159590817,59.42273539807361,24.80641085271327,59.49131205619217" type="tms" year="1827" />
   <layer bounds="24.71711845312609,59.42372399714797,24.75821338733708,59.44840741492366" type="tms" year="1744" />
   <layer bounds="24.47027799018731,59.35093610610189,25.01106711879276,59.63276141597635" type="tms" year="1688" />
+  <layer bounds="24.72905752609647,59.42590619700383,24.76895675979181,59.44857425462394" type="tms" year="1634" />
   <layer name="⚓ Balt" file="baltic_mini.kml" hide="1" maxres="10" style="multiColor" type="custom" year="Baltic_Sea" />
   <layer name="⑤ 1" file="roads1min.kml" maxres="10" type="roads" />
   <layer name="⑤ 2" file="roads2min.kml" maxres="12" type="roads" />
