@@ -2,19 +2,19 @@
   <bounds>26.65583991678161,58.33714636136231,26.79297546665623,58.40912076248009</bounds>
   <city>Tartu</city>
   <country>Estonia</country>
-  <json><![CDATA[{
-"urls": {
- "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/6/"},
- "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта", "l":"ЭтоМесто: трехверстовка", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/5-6/"},
- "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-atlas_topo-10km/?x=@X@&y=@Y@", "srs":"EPSG:4326"},
- "ra1917m": {"h":"Rahvusarhiiv &lt; 1917", "l":"Rahvusarhiiv &lt; 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139256&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
- "ra1917_1950": {"h":"Rahvusarhiiv 1917-1950", "l":"Rahvusarhiiv 1917-1950", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139386&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
- "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140047&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
- "digar": {"h":"Eesti rahvusraamatukogu digitaalarhiiv", "l":"DIGAR", "t":"_blank", "U":"http://digar.nlib.ee/digar/show.action?id=188954"},
- "digar2": {"h":"Eesti rahvusraamatukogu uus digitaalarhiiv", "l":"DIGAR 2", "t":"_blank", "U":"http://www.digar.ee/arhiiv/et/pildimaterjal?id=11896"},
- "tyr": {"h":"Tartu Ülikooli Raamatukogu vanad kaardid", "l":"TÜ vanad kaardid", "t":"_blank", "U":"http://dspace.utlib.ee/dspace/handle/10062/22/browse?order=ASC&rpp=20&sort_by=2&etal=-1&offset=120&type=dateissued"}
+  <json>{
+&quot;urls&quot;: {
+ &quot;mellin&quot;: {&quot;h&quot;:&quot;Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel&quot;, &quot;l&quot;:&quot;Mellin 1791&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.wdl.org/en/item/2571/view/1/6/&quot;},
+ &quot;etomesto3v&quot;: {&quot;h&quot;:&quot;ЭтоМесто: трехверстовка Шуберта&quot;, &quot;l&quot;:&quot;ЭтоМесто: трехверстовка&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.etomesto.ru/shubert-map/5-6/&quot;},
+ &quot;etomesto&quot;: {&quot;h&quot;:&quot;ЭтоМесто&quot;, &quot;l&quot;:&quot;ЭтоМесто&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.etomesto.ru/map-atlas_topo-10km/?x=@X@&amp;y=@Y@&quot;, &quot;srs&quot;:&quot;EPSG:4326&quot;},
+ &quot;ra1917m&quot;: {&quot;h&quot;:&quot;Rahvusarhiiv &amp;lt; 1917&quot;, &quot;l&quot;:&quot;Rahvusarhiiv &amp;lt; 1917&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139256&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav&quot;},
+ &quot;ra1917_1950&quot;: {&quot;h&quot;:&quot;Rahvusarhiiv 1917-1950&quot;, &quot;l&quot;:&quot;Rahvusarhiiv 1917-1950&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139386&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav&quot;},
+ &quot;ra1950_1991&quot;: {&quot;h&quot;:&quot;Rahvusarhiiv 1950-1991&quot;, &quot;l&quot;:&quot;Rahvusarhiiv 1950-1991&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140047&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav&quot;},
+ &quot;digar&quot;: {&quot;h&quot;:&quot;Eesti rahvusraamatukogu digitaalarhiiv&quot;, &quot;l&quot;:&quot;DIGAR&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://digar.nlib.ee/digar/show.action?id=188954&quot;},
+ &quot;digar2&quot;: {&quot;h&quot;:&quot;Eesti rahvusraamatukogu uus digitaalarhiiv&quot;, &quot;l&quot;:&quot;DIGAR 2&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.digar.ee/arhiiv/et/pildimaterjal?id=11896&quot;},
+ &quot;tyr&quot;: {&quot;h&quot;:&quot;Tartu Ülikooli Raamatukogu vanad kaardid&quot;, &quot;l&quot;:&quot;TÜ vanad kaardid&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://dspace.utlib.ee/dspace/handle/10062/22/browse?order=ASC&amp;rpp=20&amp;sort_by=2&amp;etal=-1&amp;offset=120&amp;type=dateissued&quot;}
 }
-}]]></json>
+}</json>
   <layer bounds="26.65583991678161,58.33714636136231,26.79297546665623,58.40912076248009" type="tms" year="1978" />
   <layer bounds="26.6836820096,58.352651254,26.7566518485,58.3999353387" type="tms" year="1941" />
   <layer bounds="26.68872455785091,58.35118779708255,26.75460633281616,58.40036565638183" type="tms" year="193X" />
@@ -31,7 +31,7 @@
   <layer bounds="26.68847856483428,58.36726786910218,26.74996480984558,58.39572010508904" type="tms" year="1767" />
   <layer bounds="26.66709853893270,58.35894942674044,26.78173829170573,58.40854092028547" type="tms" year="1732" />
   <layer bounds="26.67912035088263,58.36322973920709,26.76398073086333,58.40753326374831" type="tms" year="1704" />
-  <layer bounds="26.705465761,58.3678785545,26.7384989565,58.3880951553" type="tms" year="1696" />
+  <layer bounds="26.70546576104067,58.36787855446939,26.73849895651939,58.38809515532015" type="tms" year="1696" />
   <layer bounds="26.70755079004807,58.37458103244072,26.73249758874300,58.38682829944987" type="tms" year="1680" />
   <layer bounds="26.71150510534342,58.37722057502325,26.72935167075540,58.38574372074811" type="tms" year="1638" />
   <layer bounds="26.70926815921760,58.37574390450366,26.72925139226419,58.38608633768885" type="tms" year="1620" />
