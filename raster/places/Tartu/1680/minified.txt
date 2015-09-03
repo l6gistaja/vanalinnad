@@ -1,0 +1,2 @@
+2015-09-03 21:00:04+03:00; 55 files; 580K ../raster/places/Tartu/1680
+2015-09-03 21:00:06+03:00; 37 files; 508K ../raster/places/Tartu/1680
