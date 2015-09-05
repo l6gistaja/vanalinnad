@@ -1,2 +1,0 @@
-2015-04-18 14:52:03+03:00; 305 files; 2.5M ../raster/places/Tartu/1811
-2015-04-18 14:52:14+03:00; 121 files; 1.8M ../raster/places/Tartu/1811
