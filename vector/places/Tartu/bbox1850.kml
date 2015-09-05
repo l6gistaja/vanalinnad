@@ -22,10 +22,17 @@
 <Placemark id="gcp1850.N.2"><name>1850.N #2</name><description>33 463</description><Point><coordinates>26.71096940734908,58.378021390404456</coordinates></Point></Placemark>
 <Placemark id="gcp1850.N.3"><name>1850.N #3</name><description>519 324</description><Point><coordinates>26.718200642853084,58.381351389409055</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1844"><name>1844</name><LineString><coordinates>26.70219265573782,58.36284022788025 26.70219265573782,58.40168025798004 26.79568328643848,58.40168025798004 26.79568328643848,58.36284022788025 26.70219265573782,58.36284022788025</coordinates></LineString></Placemark>
+<Placemark id="gcp1844.1"><name>1844 #1</name><description>2314 731</description><Point><coordinates>26.72084444976815,58.39236167474918</coordinates></Point></Placemark>
+<Placemark id="gcp1844.2"><name>1844 #2</name><description>4843 4112</description><Point><coordinates>26.745177537080842,58.38090297956032</coordinates></Point></Placemark>
+<Placemark id="gcp1844.3"><name>1844 #3</name><description>2919 7079</description><Point><coordinates>26.73438432800483,58.367715974053375</coordinates></Point></Placemark>
+<Placemark id="gcp1844.4"><name>1844 #4</name><description>1122 4615</description><Point><coordinates>26.71741004501361,58.376148005216535</coordinates></Point></Placemark>
+<Placemark id="gcp1844.5"><name>1844 #5</name><description>582 1372</description><Point><coordinates>26.708590941772655,58.38838710581824</coordinates></Point></Placemark>
+
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.70628744006828,58.36512019604822,26.75372955396066,58.39475168186392</value></Data>
-<Data name="maps"><value>1846,1850.SW,1850.E,1850.N</value></Data>
+<Data name="bbox"><value>26.70219265573782,58.36284022788025,26.79568328643848,58.40168025798004</value></Data>
+<Data name="maps"><value>1844,1846,1850.SW,1850.E,1850.N</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1850/</value></Data>

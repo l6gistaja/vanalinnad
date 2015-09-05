@@ -7,11 +7,10 @@
 <Placemark id="gcp1837.2"><name>1837 #2</name><description>4223 1016</description><Point><coordinates>26.7194502619937,58.391362774762506</coordinates></Point></Placemark>
 <Placemark id="gcp1837.3"><name>1837 #3</name><description>480 5924</description><Point><coordinates>26.73441698829706,58.367692676411046</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1837B"><name>1837B</name><LineString><coordinates>26.66060527733441,58.35062557797051 26.66060527733441,58.40434077968689 26.79117749292852,58.40434077968689 26.79117749292852,58.35062557797051 26.66060527733441,58.35062557797051</coordinates></LineString></Placemark>
-<Placemark id="gcp1837B.1"><name>1837B #1</name><description>1680 4522</description><Point><coordinates>26.734307314909096,58.36821440520658</coordinates></Point></Placemark>
-<Placemark id="gcp1837B.2"><name>1837B #2</name><description>3204 3113</description><Point><coordinates>26.71450188354307,58.382436158660845</coordinates></Point></Placemark>
+<Placemark id="bbox.1837B"><name>1837B</name><LineString><coordinates>26.66011185555415,58.35093561442781 26.66011185555415,58.40425175683044 26.79145295217166,58.40425175683044 26.79145295217166,58.35093561442781 26.66011185555415,58.35093561442781</coordinates></LineString></Placemark>
+<Placemark id="gcp1837B.1"><name>1837B #1</name><description>2515 904</description><Point><coordinates>26.678927150421035,58.37909028798732</coordinates></Point></Placemark>
+<Placemark id="gcp1837B.2"><name>1837B #2</name><description>2019 4457</description><Point><coordinates>26.733518692659867,58.37129950725293</coordinates></Point></Placemark>
 <Placemark id="gcp1837B.3"><name>1837B #3</name><description>3672 4361</description><Point><coordinates>26.73510124877712,58.385315815752335</coordinates></Point></Placemark>
-<Placemark id="gcp1837B.4"><name>1837B #4</name><description>2515 904</description><Point><coordinates>26.678927150421035,58.37909028798732</coordinates></Point></Placemark>
 
 <Placemark id="bbox.1841.Soinaste"><name>1841.Soinaste</name><LineString><coordinates>26.68047746095575,58.32990645025962 26.68047746095575,58.35359514040943 26.75789327975624,58.35359514040943 26.75789327975624,58.32990645025962 26.68047746095575,58.32990645025962</coordinates></LineString></Placemark>
 <Placemark id="gcp1841.Soinaste.1"><name>1841.Soinaste #1</name><description>465 2292</description><Point><coordinates>26.686938915710016,58.33747143693973</coordinates></Point></Placemark>
@@ -25,7 +24,7 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.62974549845481,58.32990645025962,26.79117749292852,58.40434077968689</value></Data>
+<Data name="bbox"><value>26.62974549845481,58.32990645025962,26.79145295217166,58.40425175683044</value></Data>
 <Data name="maps"><value>1837B,1837,1841.Soinaste,1841.Maarjamoisa</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
