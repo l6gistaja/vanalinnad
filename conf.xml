@@ -19,7 +19,7 @@
 <json><![CDATA[{
 "mapoptions": {"projection":"EPSG:900913","displayProjection":"EPSG:4326","units":"m","numZoomLevels":17},
 "urls": {
- "googlestreetview": {"h":"Google Street View", "l":"StreetView", "t":"_blank", "U":"https://maps.google.com/maps?cbp=0,0,0,0,0&amp;layer=c&amp;cbll=@Y@,@X@&amp;z=@Z@&amp;q=@S@, @T@, @C@", "srs":"EPSG:4326", "icon":"raster/pegman.png","coords":"yes"},
+ "googlestreetview": {"h":"Google Street View", "l":"StreetView", "t":"_blank", "U":"/gsv.html?@Y@,@X@", "srs":"EPSG:4326", "icon":"raster/pegman.png","coords":"yes"},
  "wikipedia": {"h":"Wikipedia", "l":"Wikipedia", "t":"_blank", "U":"http://en.wikipedia.org/wiki/@T@"},
  "ajapaik": {"h":"Ajapaik.ee", "l":"Ajapaik", "t":"_blank", "U":"http://ajapaik.ee/map/?lat=@Y@&amp;lng=@X@&amp;zoom=@Z@&amp;limitToAlbum=1", "srs":"EPSG:4326", "icon":"raster/ajapaik.jpg"},
  "maaamet": {"h":"Maa-amet WMS", "l":"Maa-amet", "t":"_blank", "U":"index.html?site=@site@&amp;wms=maaamet&amp;zoom=@Z@&amp;lat=@Y@&amp;lon=@X@", "srs":"EPSG:3301", "type":"WMS", "icon":"raster/ee16.png", "zoomdiff":-7, "minzoom":8},
