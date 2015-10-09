@@ -379,7 +379,7 @@ function vlMap(inputParams){
         + vlUtils.link({
             u: conf.infourlprefix + siteParam,
             h: 'Info',
-            l:  '<img src="raster/information.png" border="0"/>'
+            l:  '<img src="raster/icons/information.png" border="0"/>'
           });
       for(w in jsonConf.urls) {
         if(!('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS')) { continue; }

@@ -20,7 +20,7 @@ html, body, #map {
   right:2px;
   height: 16px;
   width : 16px;
-  background: url('raster/information.png') no-repeat center;
+  background: url('raster/icons/information.png') no-repeat center;
 }
 
 #MapCenter
