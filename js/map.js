@@ -248,7 +248,7 @@ function vlMap(inputParams){
             flags: 'useIcon',
             delimiter: ' '
           };
-          var urlKeys = ['googlestreetview','ajapaik'];
+          var urlKeys = ['googlestreetview','ajapaik','geohack'];
           for(w in jsonConf.urls) {
             if('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS') { urlKeys[urlKeys.length] = w; }
           }
@@ -355,7 +355,7 @@ function vlMap(inputParams){
           site: isAtSite ? reqParams['site'] : '',
           baseUrlID: 'vanalinnad'
         },
-        links: ['googlestreetview','ajapaik'],
+        links: ['googlestreetview','ajapaik','geohack'],
         debug: 'debug' in reqParams
       };
       for(w in jsonConf.urls) {

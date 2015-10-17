@@ -103,7 +103,7 @@ function vlWms(inputParams){
           site: isAtSite ? reqParams['site'] : '',
           baseUrlID: 'maaamet'
         },
-        links: ['googlestreetview','ajapaik','vanalinnad'],
+        links: ['googlestreetview','ajapaik','geohack','vanalinnad'],
         debug: 'debug' in reqParams
       };
       vlUtils.mapAddCoordsPromptCtl(map, clickData);

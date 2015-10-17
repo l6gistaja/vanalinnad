@@ -311,7 +311,7 @@ function vlInitInfo(inputParams){
         };        
         
         var w;
-        var urlKeys = ['wikipedia','ajapaik'];
+        var urlKeys = ['wikipedia','ajapaik','geohack'];
         for(w in jsonConf.urls) {
           if('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS') { urlKeys[urlKeys.length] = w; }
         }
