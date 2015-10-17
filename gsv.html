@@ -16,7 +16,7 @@
 </head>
 <body style="margin:0px;padding:0px;overflow:hidden">
 <script>
-document.write('<iframe src="https://www.google.com/maps/embed/v1/streetview?key=AIzaSyB5HbgqNx7nxkYaYg374Ej-arGHEU0G6WM&location='+location.search.substring(1)+'" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>');
+document.write('<iframe src="https://www.google.com/maps/embed/v1/streetview?key=AIzaSyB5HbgqNx7nxkYaYg374Ej-arGHEU0G6WM&location='+location.search.substring(1).replace(/[^0-9.,-]+/g,'')+'" frameborder="0" style="overflow:hidden;height:100%;width:100%" height="100%" width="100%"></iframe>');
 </script>
 </body>
 </html>
