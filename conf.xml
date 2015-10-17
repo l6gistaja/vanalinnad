@@ -21,7 +21,7 @@
 "urls": {
  "googlestreetview": {"h":"Google Street View", "l":"StreetView", "t":"_blank", "U":"http://vanalinnad.mooo.com/gsv.html?@Y@,@X@", "srs":"EPSG:4326", "icon":"raster/icons/pegman.png","coords":"yes"},
  "wikipedia": {"h":"Wikipedia", "l":"Wikipedia", "t":"_blank", "U":"http://en.wikipedia.org/wiki/@T@"},
- "ajapaik": {"h":"Ajapaik.ee", "l":"Ajapaik", "t":"_blank", "U":"http://ajapaik.ee/map/?lat=@Y@&amp;lng=@X@&amp;zoom=@Z@&amp;limitToAlbum=1", "srs":"EPSG:4326", "icon":"raster/icons/ajapaik.jpg"},
+ "ajapaik": {"h":"Ajapaik.ee", "l":"Ajapaik", "t":"_blank", "U":"http://ajapaik.ee/map/?mapType=OSM&amp;lat=@Y@&amp;lng=@X@&amp;zoom=@Z@&amp;limitToAlbum=1", "srs":"EPSG:4326", "icon":"raster/icons/ajapaik.jpg"},
  "maaamet": {"h":"Maa-amet WMS", "l":"Maa-amet", "t":"_blank", "U":"index.html?site=@site@&amp;wms=maaamet&amp;zoom=@Z@&amp;lat=@Y@&amp;lon=@X@", "srs":"EPSG:3301", "type":"WMS", "icon":"raster/icons/ee16.png", "zoomdiff":-7, "minzoom":8},
  "vanalinnad": {"h":"Vanalinnad", "l":"Vanalinnad", "t":"_blank", "U":"?site=@site@&amp;zoom=@Z@&amp;lat=@Y@&amp;lon=@X@", "srs":"EPSG:4326", "icon":"raster/icons/vanalinnad.png", "maxzoom":16}
 },
