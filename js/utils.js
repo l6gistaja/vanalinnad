@@ -71,9 +71,10 @@ vlUtils.coordsPrompt = function(map, data) {
     trigger: function(e) {
         var i;
         var showCoordsPrompt = true;
-        for(i = map.popups.length - 1; i > -1; i--) {
-          if(map.popups[i].id == 'coordsPromptPopup') { map.removePopup(map.popups[i]); }
-          if(map.popups[i].id == 'poiPopup') { showCoordsPrompt = false; }
+        var l = map.popups.length;
+        for(i = l - 1; i > -1; i--) {
+          if(map.popups[i].id == 'coordsPromptPopup') { map.popups[i].hide(); }
+          if(map.popups[i].id == 'poiPopup' || map.popups[i].id == 'roadPopup') { showCoordsPrompt = false; }
         }
         if(!showCoordsPrompt) { return; }
 

@@ -348,22 +348,20 @@ function vlMap(inputParams){
     if(layerUrlSelect > -1) { map.setBaseLayer(tmsoverlays[layerUrlSelect]); }
 
     // coordinates popup
-    if(!isAtSite || 'debug' in reqParams) {
-      var clickData = {
+    var clickData = {
         jsonConf: jsonConf,
         locData: {
-          site: isAtSite ? reqParams['site'] : '',
-          baseUrlID: 'vanalinnad'
+            site: isAtSite ? reqParams['site'] : '',
+            baseUrlID: 'vanalinnad'
         },
         links: ['googlestreetview','ajapaik','geohack'],
         debug: 'debug' in reqParams
-      };
-      for(w in jsonConf.urls) {
+    };
+    for(w in jsonConf.urls) {
         if(!('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS')) { continue; }
         clickData.links[clickData.links.length] = w;
-      }
-      vlUtils.mapAddCoordsPromptCtl(map, clickData);
     }
+    vlUtils.mapAddCoordsPromptCtl(map, clickData);
 
     if(isAtSite) { window.document.title += ': ' + vlUtils.getXmlValue(layersXml, 'city'); }
   }
