@@ -112,17 +112,24 @@ vlUtils.coordsPrompt = function(map, data) {
         }
         y += '</table><br/>';
         
-        y += vlUtils.getURLs(data.links, vlUtils.mergeHashes({
-          X: lonlat.lon,
-          Y: lonlat.lat,
-          Z: map.getZoom(),
-          S: '',
-          T: '',
-          C: '',
-          site: '',
-          flags: 'useIcon',
-          delimiter: ' '
-        }, data.locData), data.jsonConf);
+        var locData = vlUtils.mergeHashes({
+            X: lonlat.lon,
+            Y: lonlat.lat,
+            Z: map.getZoom(),
+            S: '',
+            T: '',
+            C: '',
+            site: '',
+            flags: 'useIcon',
+            delimiter: ' '
+            }, data.locData);
+        y += vlUtils.getURLs(data.links, locData, data.jsonConf);
+        
+        if('sitesOpener' in data) {
+          locData.site = '';
+          locData.o = 'map.sitesPopup(); return false;';
+          y +=  locData.delimiter + vlUtils.getURLs(['vanalinnad'], locData,  data.jsonConf);
+        }
 
         var popup = new OpenLayers.Popup.FramedCloud (
             'coordsPromptPopup',

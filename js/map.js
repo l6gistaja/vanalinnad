@@ -355,7 +355,8 @@ function vlMap(inputParams){
             baseUrlID: 'vanalinnad'
         },
         links: ['googlestreetview','ajapaik','geohack'],
-        debug: 'debug' in reqParams
+        debug: 'debug' in reqParams,
+        sitesOpener: true
     };
     for(w in jsonConf.urls) {
         if(!('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS')) { continue; }
