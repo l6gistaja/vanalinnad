@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+        <title>Google Maps v3 API Example</title>
+        <style>
+            html, body, #map {
+                height: 100%;
+                width: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            div#footer {
+                position: fixed;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                width: 100%;
+                height: 18px;
+                margin: 0;
+                padding: 6px;
+                z-index: 2;
+                background: WHITE;
+            }
+        </style> 
+        <script type="text/javascript">
+
+        </script>
+    </head>
+    <body>
+        <div id="map" style="float: left;"></div>
+        <div id="footer">
+        &copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors 
+        <input value="<<" type="button" onclick="vlga.changeDiff(-1);"/>
+        <input value=">>" type="button" onclick="vlga.changeDiff(1);"/>
+        </div>
+        
+        <!-- bring in the google maps library -->
+        <script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?sensor=false&v=3"></script>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+        <script type="text/javascript" src="vanalinnad_google_mapi.js"></script>
+        <script type="text/javascript">
+        
+        VanalinnadGooglemApi.prototype.places = {
+            "photos": [
+                {
+                    "lat": 58.3856438798678,
+                    "lng": 24.4970869012665,
+                    "name": "Foto",
+                    "image": "http://ajapaik.ee:9009/photo-thumb/23589/800/foto/",
+                    "azimuth": -98.569058946784
+                },
+                {
+                    "lat": 58.3762761143877,
+                    "lng": 24.5044451799316,
+                    "name": "Vaade supelrannale ja pansionile",
+                    "image": "http://ajapaik.ee:9009/photo-thumb/3091/800/vaade-supelrannale-ja-pansionile/",
+                    "azimuth": 102.552880905465
+                },
+                {
+                    "lat": 58.3830463969988,
+                    "lng": 24.4996559759491,
+                    "name": "Foto",
+                    "image": "http://ajapaik.ee:9009/photo-thumb/23622/800/foto/",
+                    "azimuth": 114.662971606766
+                },
+                {
+                    "lat": 58.3832927488073,
+                    "lng": 24.4942625880258,
+                    "name": "Pärnu talvesadam",
+                    "image": "http://ajapaik.ee:9009/photo-thumb/20833/800/parnu-talvesadam/",
+                    "azimuth": -79.520186436989
+                },
+                {
+                    "lat": 58.3840160111879,
+                    "lng": 24.5021277513428,
+                    "name": "Kuninga tänav",
+                    "image": "http://ajapaik.ee:9009/photo-thumb/3053/800/kuninga-tanav/",
+                    "azimuth": -93.3826961287385
+                },
+                {
+                    "lat": 58.3724145607854,
+                    "lng": 24.5020377775409,
+                    "name": "Grupipilt",
+                    "image": "http://ajapaik.ee:9009/photo-thumb/20950/800/grupipilt/",
+                    "azimuth": 41.2576265947193
+                },
+                {
+                    "lat": 58.3740067275544,
+                    "lng": 24.498454346265,
+                    "name": "Pärnu rannakohvik",
+                    "image": "http://ajapaik.ee:9009/photo-thumb/20928/800/parnu-rannakohvik/",
+                    "azimuth": -82.688450315717
+                },
+                {
+                    "lat": 58.3763833997873,
+                    "lng": 24.4932460784912,
+                    "name": "Rannasalong",
+                    "image": "http://ajapaik.ee:9009/photo-thumb/3095/800/rannasalong/",
+                    "azimuth": 69.2052528238702
+                },
+                {
+                    "lat": 58.3760709949822,
+                    "lng": 24.4989516714122,
+                    "name": "Pargivaade",
+                    "image": "http://ajapaik.ee:9009/photo-thumb/3099/800/pargivaade/",
+                    "azimuth": null
+                },
+                {
+                    "lat": 58.3841026564518,
+                    "lng": 24.5030001520214,
+                    "name": "Pilkupüüdev hoone",
+                    "image": "http://ajapaik.ee:9009/photo-thumb/20947/800/pilkupuudev-hoone/",
+                    "azimuth": -105.343031516432
+                }
+            ]
+        };
+        VanalinnadGooglemApi.prototype.drawVectorLayer = function() {
+            var i;
+            var markers = [];
+            for(i=0; i<this.places.photos.length; i++) {
+                markers[i] = new google.maps.Marker({       
+                    position: {lat: this.places.photos[i].lat, lng: this.places.photos[i].lng}, 
+                    map: this.map,  // google.maps.Map 
+                    title: this.places.photos[i].name
+                });
+                markers[i].setMap(this.map);
+            }
+        };
+        var vlga = new VanalinnadGooglemApi({
+            site: 'Parnu',
+            vanalinnadPrefix: 'http://vanalinnad.mooo.com/'
+        });
+        </script>
+    </body>
+</html>
