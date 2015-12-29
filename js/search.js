@@ -2,6 +2,10 @@ if (!vlSearch) {
     var vlSearch = {};
 }
 
+vlSearch.searchFocus = function () {
+    document.forms[0].elements[0].focus();
+}
+
 vlSearch.searchPlace = function (place) {
     if (/\S/.test(place)) {
         OpenLayers.Request.GET({ 
@@ -35,11 +39,13 @@ vlSearch.searchLoadPlaces = function(request) {
         results = '<br/>AJAX error, request status code ' + request.status;
     }
     document.getElementById('searchresults').innerHTML = results;
+    vlSearch.searchFocus();
 }
 
 vlSearch.searchEmpty = function(b) {
     b.form.q.value='';
     document.getElementById('searchresults').innerHTML='';
+    vlSearch.searchFocus();
 }
 
 vlSearch.toggleSearch = function() {
@@ -48,7 +54,7 @@ vlSearch.toggleSearch = function() {
         e.style.display = 'block';
     else
         e.style.display = 'none';
-    document.forms[0].elements[0].focus();
+    vlSearch.searchFocus();
 }
 
 vlSearch.handleKeystrokes = function(event, b) {
