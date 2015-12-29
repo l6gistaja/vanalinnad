@@ -327,16 +327,30 @@ function vlMap(inputParams){
       ,'_blank'); 
       win.focus();
     }
-    var btnHiLite = new OpenLayers.Control.Button({
-      displayClass: 'olControlBtnHiLite',
+    function toggleSearch() {
+        var e = document.getElementById('searchDiv');
+        if ( e.style.display == 'none' )
+            e.style.display = 'block';
+        else
+            e.style.display = 'none';
+    }
+    var infoBtn = new OpenLayers.Control.Button({
+      displayClass: 'infoBtn',
       title: "Info",
-      id: 'btnHiLite',
       trigger: openInfoPage
     });
-    var panel = new OpenLayers.Control.Panel({defaultControl: btnHiLite});
-    panel.addControls([btnHiLite]);
-    map.addControl(panel);
-
+    var searchBtn = new OpenLayers.Control.Button({
+      displayClass: 'searchBtn',
+      title: "Search",
+      trigger: toggleSearch
+    });
+    var infoPanel = new OpenLayers.Control.Panel({defaultControl: infoBtn});
+    infoPanel.addControls([infoBtn]);
+    map.addControl(infoPanel);
+    var searchPanel = new OpenLayers.Control.Panel({defaultControl: searchBtn});
+    searchPanel.addControls([searchBtn]);
+    map.addControl(searchPanel);
+    
     var automaticCtls = vlUtils.mapMapUI({map: map, add: [
       'OpenLayers.Control.PanZoomBar',
       'OpenLayers.Control.KeyboardDefaults',
