@@ -5,7 +5,7 @@
   <json><![CDATA[{
 "urls": {
  "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/10/"},
- "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта", "l":"ЭтоМесто: трехверстовка", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/3-4/"},
+ "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта 1862", "l":"ЭтоМесто: 3-верстовка 1862", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/3-4/"},
  "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-atlas_topo-10km/?x=@X@&y=@Y@", "srs":"EPSG:4326"},
  "ra1917m": {"h":"Rahvusarhiiv &lt; 1917", "l":"Rahvusarhiiv &lt; 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10990363&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "ra1917_1950": {"h":"Rahvusarhiiv 1917-1950", "l":"Rahvusarhiiv 1917-1950", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10990372&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
