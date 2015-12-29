@@ -12,9 +12,9 @@
 <script src="lib/OpenLayers-2.13.1/OpenLayers.js"></script>
 <script src="lib/proj4.js"></script>
 <script src="js/utils.js"></script>
+<script src="js/search.js"></script>
 <script src="js/map.js"></script>
 <script src="js/wms.js"></script>
-<script src="js/search.js"></script>
 <script>
   var map;
 </script>
@@ -38,7 +38,7 @@
 </div>
 <div id="searchDiv" style="display:none;">
 <form id="search">
-<input type="text" name="q" onkeydown="if(event.keyCode==13){this.form.s.click();return false;}"/>
+<input type="text" name="q" onkeydown="return vlSearch.handleKeystrokes(event, this);"/>
 <input type="button" name="s" value="Search" onclick="vlSearch.searchPlace(this.form.q.value);"/>
 <input type="button" value="Empty" onclick="vlSearch.searchEmpty(this);" />
 </form>

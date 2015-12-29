@@ -319,6 +319,7 @@ function vlMap(inputParams){
       }
     }
     map.addControl(new OpenLayers.Control.Permalink({base: baseurl}));
+    
     function openInfoPage() {
       var win=window.open(
         conf.infourlprefix
@@ -327,30 +328,24 @@ function vlMap(inputParams){
       ,'_blank'); 
       win.focus();
     }
-    function toggleSearch() {
-        var e = document.getElementById('searchDiv');
-        if ( e.style.display == 'none' )
-            e.style.display = 'block';
-        else
-            e.style.display = 'none';
-    }
     var infoBtn = new OpenLayers.Control.Button({
       displayClass: 'infoBtn',
       title: "Info",
       trigger: openInfoPage
     });
-    var searchBtn = new OpenLayers.Control.Button({
-      displayClass: 'searchBtn',
-      title: "Search",
-      trigger: toggleSearch
-    });
     var infoPanel = new OpenLayers.Control.Panel({defaultControl: infoBtn});
     infoPanel.addControls([infoBtn]);
     map.addControl(infoPanel);
+
+    var searchBtn = new OpenLayers.Control.Button({
+      displayClass: 'searchBtn',
+      title: "Search",
+      trigger: vlSearch.toggleSearch
+    });
     var searchPanel = new OpenLayers.Control.Panel({defaultControl: searchBtn});
     searchPanel.addControls([searchBtn]);
     map.addControl(searchPanel);
-    
+
     var automaticCtls = vlUtils.mapMapUI({map: map, add: [
       'OpenLayers.Control.PanZoomBar',
       'OpenLayers.Control.KeyboardDefaults',
@@ -443,7 +438,13 @@ function vlMap(inputParams){
   }
 
   this.sitesPopup = function() { _sitesPopup(); }
-
+  
+  this.zoomToBBox = function(x) {
+      var bounds = new OpenLayers.Bounds(x);
+      map.zoomToExtent(bounds.transform(map.displayProjection, map.projection));
+      return false;
+  }
+  
   _init();
 
 }

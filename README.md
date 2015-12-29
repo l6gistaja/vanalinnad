@@ -2,7 +2,7 @@
 
 Historical maps of Estonian cities under the grid of today's street network.
 
-**Shortcut keys:** F11 enables/disables fullscreen. By OpenLayers defaults arrow keys pan, +/- keys zoom & Page Up/Page Down/Home/End scroll by three quarters of a page. Additionally, spacebar displays next and numbers (0-9) will display previous historical map.
+**Shortcut keys:** F11 enables/disables fullscreen. By OpenLayers defaults arrow keys pan, +/- keys zoom & Page Up/Page Down/Home/End scroll by three quarters of a page. Additionally, comma (,) displays next and period (.) will display previous historical map.
 
 Old map symbols: [< 1900](http://www.ra.ee/kaardid/index.php/et/site/page?view=symbols), [1953 - 1977](http://geoportaal.maaamet.ee/est/Teenused/Kaardirakendused/Ajalooliste-kaartide-rakendus-p157.html) (PDF)
 

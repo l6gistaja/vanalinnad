@@ -77,17 +77,24 @@ function vlWms(inputParams){
 
       if('info' in jsonConfWMS) {
         function openInfoPage() { var win=window.open(jsonConfWMS.info, '_blank'); win.focus(); }
-        var btnHiLite = new OpenLayers.Control.Button({
-          displayClass: 'olControlBtnHiLite',
-          title: "Info",
-          id: 'btnHiLite',
-          trigger: openInfoPage
+        var infoBtn = new OpenLayers.Control.Button({
+            displayClass: 'infoBtn',
+            title: "Info",
+            trigger: openInfoPage
         });
-        var panel = new OpenLayers.Control.Panel({defaultControl: btnHiLite});
-        panel.addControls([btnHiLite]);
-        map.addControl(panel);
+        var infoPanel = new OpenLayers.Control.Panel({defaultControl: infoBtn});
+        infoPanel.addControls([infoBtn]);
+        map.addControl(infoPanel);
       }
-
+      var searchBtn = new OpenLayers.Control.Button({
+        displayClass: 'searchBtn',
+        title: "Search",
+        trigger: vlSearch.toggleSearch
+      });
+      var searchPanel = new OpenLayers.Control.Panel({defaultControl: searchBtn});
+      searchPanel.addControls([searchBtn]);
+      map.addControl(searchPanel);
+      
       var automaticCtls = vlUtils.mapMapUI({map: map, add: [
         'OpenLayers.Control.LayerSwitcher',
         'OpenLayers.Control.PanZoomBar',
@@ -111,6 +118,25 @@ function vlWms(inputParams){
     } else {
       window.location.replace('?error=nonexisting_wms');
     }
+  }
+  
+  this.zoomToBBox = function(x) {
+      if(jsonConfWMS.mapoptions.projection != 'EPSG:4326') {
+        for(var i = 0; i < 4; i+=2) {
+            try {
+                var p4 = proj4(
+                    jsonConf.proj4['EPSG_4326'],
+                    jsonConf.proj4[jsonConfWMS.mapoptions.projection.replace(':','_')],
+                    [x[i], x[i+1]]);
+                x[i] = p4[0];
+                x[i+1] = p4[1];
+            } catch(err) {
+                return false;
+            }
+        }
+      }
+      map.zoomToExtent(new OpenLayers.Bounds(x));
+      return false;
   }
 
   var _init = function() {

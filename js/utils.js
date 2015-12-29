@@ -374,8 +374,8 @@ vlUtils.mapMapUI = function(x) {
     y['OpenLayers.Control_baseLayerScroller'],
     { keydown: function(evt) {
           var dir = 0;
-          if(evt.keyCode > 47 && evt.keyCode < 58) { dir = -1; }
-          if(evt.keyCode == 32) { dir = 1; }
+          if(evt.keyCode == 46 || evt.keyCode == 190) { dir = -1; }
+          if(evt.keyCode == 44 || evt.keyCode == 188) { dir = 1; }
           if(dir != 0) {
             var i;
             var bl = [];
