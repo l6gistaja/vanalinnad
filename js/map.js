@@ -336,11 +336,12 @@ function vlMap(inputParams){
     var infoPanel = new OpenLayers.Control.Panel({defaultControl: infoBtn});
     infoPanel.addControls([infoBtn]);
     map.addControl(infoPanel);
-
+    
+    function toggleSearch() { vlSearch.toggleSearch(); }
     var searchBtn = new OpenLayers.Control.Button({
       displayClass: 'searchBtn',
       title: "Search",
-      trigger: vlSearch.toggleSearch
+      trigger: toggleSearch
     });
     var searchPanel = new OpenLayers.Control.Panel({defaultControl: searchBtn});
     searchPanel.addControls([searchBtn]);
