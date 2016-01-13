@@ -97,10 +97,17 @@ body .bodyContent {
     top:0px;
     z-index: 20000;
     background: rgba(255,255,255,0.95);
-    height: 90%;
+    height: 40%;
     width: 30%;
     padding: 10px;
     border: 2px solid black;
+}
+
+#searchresults
+{
+    height: 85%;
+    overflow: auto;
+    padding: 10px;
 }
 
 #searchresults img {

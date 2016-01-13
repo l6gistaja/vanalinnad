@@ -41,6 +41,7 @@
 <input type="text" name="q" onkeydown="return vlSearch.handleKeystrokes(event, this);"/>
 <input type="button" name="s" value="Search" onclick="vlSearch.searchPlace(this.form.q.value);"/>
 <input type="button" value="Empty" onclick="vlSearch.searchEmpty(this);" />
+<img src="lib/OpenLayers-2.13.1/theme/default/img/close.gif" title="Close" align="right" onclick="vlSearch.toggleSearch();" />
 </form>
 <div id="searchresults"></div>
 </div>
