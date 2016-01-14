@@ -13,7 +13,8 @@
  "digar": {"h":"Eesti rahvusraamatukogu digitaalarhiiv", "l":"DIGAR", "t":"_blank", "U":"http://digar.nlib.ee/digar/show.action?id=35660"},
  "digar2": {"h":"Eesti rahvusraamatukogu uus digitaalarhiiv", "l":"DIGAR 2", "t":"_blank", "U":"http://www.digar.ee/arhiiv/et/pildimaterjal?id=3801"},
  "linnaarhiiv": {"h":"Tallinna Linnaarhiivi Kaardikogu", "l":"Linnaarhiiv", "t":"_blank", "U":"http://www.biblioserver.com/linnaarhiiv/index.php?m=base&id=1"},
- "transport": {"h":"Tallinna ühistransport", "l":"Tallinna ühistransport", "t":"_blank", "U":"http://soiduplaan.tallinn.ee/#map"}
+ "transport": {"h":"Tallinna ühistransport", "l":"Tallinna ühistransport", "t":"_blank", "U":"http://soiduplaan.tallinn.ee/#map"},
+"fb_vtk": {"h":"Vanad Tallinna kaardid", "l":"Vanad Tallinna kaardid", "t":"_blank", "U":"https://www.facebook.com/media/set/?set=a.929023297108511.1073741857.100000025494083&type=3"}
 }
 }]]></json>
   <layer bounds="24.59409045648279,59.33453967532896,24.97812799600556,59.54268724369540" type="tms" year="1968" />
