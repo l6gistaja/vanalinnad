@@ -6,8 +6,13 @@ vlSearch.searchFocus = function () {
     document.forms[0].elements[0].focus();
 }
 
+vlSearch.setResults = function(content) {
+    document.getElementById('searchresults').innerHTML = content;
+}
+
 vlSearch.searchPlace = function (place) {
     if (/\S/.test(place)) {
+        vlSearch.setResults('<a target="_blank" href="http://stackoverflow.com/questions/20198696/cors-request-with-ie11">Search doesnt work with IE!</a>');
         OpenLayers.Request.GET({ 
             url: 'http://nominatim.openstreetmap.org/search?format=json&countrycodes=ee&q='+place,
             callback: vlSearch.searchLoadPlaces
@@ -38,13 +43,13 @@ vlSearch.searchLoadPlaces = function(request) {
     } else {
         results = '<br/>AJAX error, request status code ' + request.status;
     }
-    document.getElementById('searchresults').innerHTML = results;
+    vlSearch.setResults(results);
     vlSearch.searchFocus();
 }
 
 vlSearch.searchEmpty = function(b) {
     b.form.q.value='';
-    document.getElementById('searchresults').innerHTML='';
+    vlSearch.setResults('');
     vlSearch.searchFocus();
 }
 
