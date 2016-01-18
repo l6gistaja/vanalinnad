@@ -10,11 +10,25 @@ vlSearch.setResults = function(content) {
     document.getElementById('searchresults').innerHTML = content;
 }
 
+vlSearch.ieVer = function(){  
+    var iev=0;
+    var ieold = (/MSIE (\d+\.\d+);/.test(navigator.userAgent));
+    var trident = !!navigator.userAgent.match(/Trident\/7.0/);
+    var rv=navigator.userAgent.indexOf("rv:11.0");
+    if (ieold) iev=new Number(RegExp.$1);
+    if (navigator.appVersion.indexOf("MSIE 10") != -1) iev=10;
+    if (trident&&rv!=-1) iev=11;
+    return iev;         
+}
+
 vlSearch.searchPlace = function (place) {
     if (/\S/.test(place)) {
-        vlSearch.setResults('<a target="_blank" href="http://stackoverflow.com/questions/20198696/cors-request-with-ie11">Search doesnt work with IE!</a>');
-        OpenLayers.Request.GET({ 
-            url: 'http://nominatim.openstreetmap.org/search?format=json&countrycodes=ee&q='+place,
+        vlSearch.setResults('Searching...');
+        OpenLayers.Request.GET({
+            url: (vlSearch.ieVer() 
+                    ? 'http://vanalinnad.mooo.com/proxy.php'
+                    : 'http://nominatim.openstreetmap.org/search')
+                + '?format=json&countrycodes=ee&q=' + encodeURIComponent(place),
             callback: vlSearch.searchLoadPlaces
         });
     }
