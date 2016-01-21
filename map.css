@@ -32,6 +32,15 @@ html, body, #map {
   background: url('raster/icons/search.png') no-repeat center;
 }
 
+.drawBtnItemActive {
+  position:fixed;
+  top:6px;
+  right:42px;
+  height: 16px;
+  width : 16px;
+  background: url('raster/icons/search.png') no-repeat center;
+}
+
 #MapCenter
 {
   position: absolute;

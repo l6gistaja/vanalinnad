@@ -114,8 +114,36 @@ function vlWms(inputParams){
         links: ['googlestreetview','ajapaik','geohack','vanalinnad'],
         debug: 'debug' in reqParams
       };
-      vlUtils.mapAddCoordsPromptCtl(map, clickData);
+      if(!('draw' in reqParams)) { vlUtils.mapAddCoordsPromptCtl(map, clickData); }
       
+      if('draw' in reqParams) {
+        var lineLayer = new OpenLayers.Layer.Vector("Line Layer",{styleMap: vlUtils.mergeCustomStyleWithDefaults(jsonConf.olLayerStyles['roads'])});
+        map.addLayer(lineLayer);
+	var drawCtl = new OpenLayers.Control.DrawFeature(lineLayer, OpenLayers.Handler.Path);
+	map.addControl(drawCtl);
+	drawCtl.activate();
+      function showPath() { 
+	var y = '';
+	for(var i = 0; i < lineLayer.features.length; i++) {
+		y += "<LineString><coordinates>";
+		for(var j = 0; j < lineLayer.features[i].geometry.components.length; j++) {
+			var x = lineLayer.features[i].geometry.components[j].x;
+			var y = lineLayer.features[i].geometry.components[j].y;
+			y += x + "," + y + " ";
+		}
+		y += "</coordinates></LineString>\n";
+	}
+      }
+      var drawBtn = new OpenLayers.Control.Button({
+        displayClass: 'drawBtn',
+        title: "Draw line",
+        trigger: showPath
+      });
+      var drawPanel = new OpenLayers.Control.Panel({defaultControl: drawBtn});
+      drawPanel.addControls([drawBtn]);
+	map.addControl(drawPanel);
+      }
+
     } else {
       window.location.replace('?error=nonexisting_wms');
     }
