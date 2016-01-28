@@ -38,7 +38,7 @@ html, body, #map {
   right:42px;
   height: 16px;
   width : 16px;
-  background: url('raster/icons/search.png') no-repeat center;
+  background: url('raster/icons/information.png') no-repeat center;
 }
 
 #MapCenter
