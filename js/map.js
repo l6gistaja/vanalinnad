@@ -236,6 +236,9 @@ function vlMap(inputParams){
         clickXYg.transform(map.options.projection, map.options.displayProjection);
         
         var popupContent = feature.attributes.name;
+        if('description' in feature.attributes) {
+            popupContent += '<hr/>' + feature.attributes.description;
+        }
         if(feature.layer.getOptions().layername.substr(0,6) == 'roads_') {
           var locData = {
             X: clickXYg.lon,
