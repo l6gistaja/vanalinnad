@@ -18,7 +18,6 @@
   <layer bounds="25.99093122813302,57.73146806644293,26.13795942547541,57.81041698438664" type="tms" year="1800" />
   <layer bounds="26.01148044888889,57.74048536581748,26.11935912345154,57.80566512170100" type="tms" year="1683" />
   <layer name="est-lat" file="est-lat.kml" maxres="12" style="multiColor" type="custom" />
-  <layer name="rdt" file="rdt_min.kml" style="multiColor" type="custom" />
   <layer name="⑤ 1" file="roads3min.kml" maxres="12" type="roads" />
   <layer name="⑤ 2" file="roads4min.kml" maxres="14" type="roads" />
   <maxzoom>16</maxzoom>

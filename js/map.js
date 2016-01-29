@@ -11,6 +11,7 @@ function vlMap(inputParams){
   var mapMinZoom;
   var mapMaxZoom;
   var conf;
+  var confXml;
   var layersXml;
   var reqParams;
   var emptyTiles;
@@ -22,7 +23,8 @@ function vlMap(inputParams){
   var xmlHandlerConf = function(request) {
     if(request.status == 200) {
       document.getElementById(inputParams.divMap).innerHTML = '';
-      conf = vlUtils.xmlDoc2Hash(request.responseXML);
+      confXml = request.responseXML;
+      conf = vlUtils.xmlDoc2Hash(confXml);
       jsonConf = JSON.parse(conf.json);
       isAtSite = 'site' in reqParams && reqParams['site'].match(/^[A-Z][A-Za-z-]*$/);
       if(isAtSite) {
@@ -143,8 +145,9 @@ function vlMap(inputParams){
       layerYear = '';
     }
 
-    if(isAtSite) {
-      var layersTags = layersXml.getElementsByTagName('layer');
+      var layersTags = isAtSite 
+        ? layersXml.getElementsByTagName('layer')
+        : confXml.getElementsByTagName('layer');
       for(i = 0; i < layersTags.length; i++) {
         if(layersTags[i].getAttribute('disabled')) { continue; }
         if(layersTags[i].getAttribute('type') == 'tms') {
@@ -176,8 +179,7 @@ function vlMap(inputParams){
                 strategies: [new OpenLayers.Strategy.Fixed()],
                 protocol: new OpenLayers.Protocol.HTTP({
                     url: conf.dirvector
-                          + conf.dirplaces
-                          + areaDir 
+                          + (isAtSite ? conf.dirplaces + areaDir : 'common/')
                           + layersTags[i].getAttribute('file'),
                     format: new OpenLayers.Format.KML({
                         extractAttributes: true,
@@ -195,7 +197,6 @@ function vlMap(inputParams){
             roadLayers[roadLayers.length-1].setVisibility(false);
           }
         }
-      }
 
       // when someone accesses page with outdated layers parameter, redirect
       var layerUrlParts;
