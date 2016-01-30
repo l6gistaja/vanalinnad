@@ -144,59 +144,72 @@ function vlMap(inputParams){
     } else {
       layerYear = '';
     }
-
-      var layersTags = isAtSite 
-        ? layersXml.getElementsByTagName('layer')
-        : confXml.getElementsByTagName('layer');
-      for(i = 0; i < layersTags.length; i++) {
-        if(layersTags[i].getAttribute('disabled')) { continue; }
-        if(layersTags[i].getAttribute('type') == 'tms') {
-          if(
-            visibleBaseLayers.length > 0
-            && OpenLayers.Util.indexOf(visibleBaseLayers, layersTags[i].getAttribute('year')) < 0
-          ) { continue; }
-          layername = conf.tmslayerprefix + layersTags[i].getAttribute('year');
-          baseLayersData[layername] = vlUtils.createBaseLayerData(layersTags[i], {no: baseLayersCount}, map);
-          baseLayersCount++;
-          tmsoverlays[tmsoverlays.length] = new OpenLayers.Layer.TMS(
-            layersTags[i].getAttribute('year'),
-            "",
-            {
-              layername: layername,
-              type: 'jpg',
-              getURL: overlay_getTileURL,
-              alpha: false,
-              isBaseLayer: true
-            }
-          );
-          if(layersTags[i].getAttribute('year') == layerYear) { layerUrlSelect = tmsoverlays.length - 1; }
-        } else {
-          layername = layersTags[i].getAttribute('type') + '_' + roadLayers.length;
-          roadLayers[roadLayers.length] = new OpenLayers.Layer.Vector(layersTags[i].getAttribute('name'), {
-                layername: layername,
-                projection: map.options.displayProjection,
-                maxResolution: map.getResolutionForZoom(parseInt(layersTags[i].getAttribute('maxres'))),
-                strategies: [new OpenLayers.Strategy.Fixed()],
-                protocol: new OpenLayers.Protocol.HTTP({
-                    url: conf.dirvector
-                          + (isAtSite ? conf.dirplaces + areaDir : 'common/')
-                          + layersTags[i].getAttribute('file'),
-                    format: new OpenLayers.Format.KML({
-                        extractAttributes: true,
-                        maxDepth: 0
-                    })
-                }),
-              styleMap: vlUtils.mergeCustomStyleWithDefaults(jsonConf.olLayerStyles[
-                layersTags[i].getAttribute('style') !=null ? layersTags[i].getAttribute('style') : 'roads'
-              ])
-          });
-          if(
-            layersTags[i].getAttribute('hide') !=null
-            && !(layersTags[i].getAttribute('year') !=null && layersTags[i].getAttribute('year') == layerYear)
-          ) {
-            roadLayers[roadLayers.length-1].setVisibility(false);
-          }
+    
+    if(!isAtSite) {
+        var bingApiKey = 'AnEDGmFjuL_87kKc8HrMK1U6Bt7Tsj2S7vF5veYm7b3MjB2hR_tjxyYfMcuupvVV';
+        tmsoverlays = [
+            new OpenLayers.Layer.Bing({key: bingApiKey, type: "Aerial", name: "B Sat"}),
+            new OpenLayers.Layer.Bing({key: bingApiKey, type: "AerialWithLabels", name: "B Hyb"}),
+            new OpenLayers.Layer.Bing({key: bingApiKey, type: "Road", name: "B Str"}),
+            new OpenLayers.Layer.Google("G Sat",{type: G_SATELLITE_MAP, sphericalMercator: true, numZoomLevels: jsonConf.mapoptions.numZoomLevels}),
+            new OpenLayers.Layer.Google("G Hyb",{type: G_HYBRID_MAP, sphericalMercator: true, numZoomLevels: jsonConf.mapoptions.numZoomLevels}),
+            new OpenLayers.Layer.Google("G Str",{sphericalMercator: true, numZoomLevels: jsonConf.mapoptions.numZoomLevels}),
+            new OpenLayers.Layer.Google("G Ter",{type: G_PHYSICAL_MAP, sphericalMercator: true, numZoomLevels: jsonConf.mapoptions.numZoomLevels})
+        ];
+    }
+    
+    var layersTags = isAtSite 
+    ? layersXml.getElementsByTagName('layer')
+    : confXml.getElementsByTagName('layer');
+    for(i = 0; i < layersTags.length; i++) {
+    if(layersTags[i].getAttribute('disabled')) { continue; }
+    if(layersTags[i].getAttribute('type') == 'tms') {
+        if(
+        visibleBaseLayers.length > 0
+        && OpenLayers.Util.indexOf(visibleBaseLayers, layersTags[i].getAttribute('year')) < 0
+        ) { continue; }
+        layername = conf.tmslayerprefix + layersTags[i].getAttribute('year');
+        baseLayersData[layername] = vlUtils.createBaseLayerData(layersTags[i], {no: baseLayersCount}, map);
+        baseLayersCount++;
+        tmsoverlays[tmsoverlays.length] = new OpenLayers.Layer.TMS(
+        layersTags[i].getAttribute('year'),
+        "",
+        {
+            layername: layername,
+            type: 'jpg',
+            getURL: overlay_getTileURL,
+            alpha: false,
+            isBaseLayer: true
         }
+        );
+        if(layersTags[i].getAttribute('year') == layerYear) { layerUrlSelect = tmsoverlays.length - 1; }
+    } else {
+        layername = layersTags[i].getAttribute('type') + '_' + roadLayers.length;
+        roadLayers[roadLayers.length] = new OpenLayers.Layer.Vector(layersTags[i].getAttribute('name'), {
+            layername: layername,
+            projection: map.options.displayProjection,
+            maxResolution: map.getResolutionForZoom(parseInt(layersTags[i].getAttribute('maxres'))),
+            strategies: [new OpenLayers.Strategy.Fixed()],
+            protocol: new OpenLayers.Protocol.HTTP({
+                url: conf.dirvector
+                        + (isAtSite ? conf.dirplaces + areaDir : 'common/')
+                        + layersTags[i].getAttribute('file'),
+                format: new OpenLayers.Format.KML({
+                    extractAttributes: true,
+                    maxDepth: 0
+                })
+            }),
+            styleMap: vlUtils.mergeCustomStyleWithDefaults(jsonConf.olLayerStyles[
+            layersTags[i].getAttribute('style') !=null ? layersTags[i].getAttribute('style') : 'roads'
+            ])
+        });
+        if(
+        layersTags[i].getAttribute('hide') !=null
+        && !(layersTags[i].getAttribute('year') !=null && layersTags[i].getAttribute('year') == layerYear)
+        ) {
+        roadLayers[roadLayers.length-1].setVisibility(false);
+        }
+    }
 
       // when someone accesses page with outdated layers parameter, redirect
       var layerUrlParts;

@@ -8,6 +8,7 @@
 "info": "vector/wms/maaamet.html"
 }]]></json>
   <layer type="wms" year="@NOW@" layername="pohi_vr2" wmsurl="http://kaart.maaamet.ee/wms/alus?"/>
+  <layer type="wms" year="Ortofoto" layername="of10000" wmsurl="http://kaart.maaamet.ee/wms/alus?"/>
   <layer type="wms" year="1978-1989" layername="lehman"/>
   <layer type="wms" year="1963-1989" layername="nltopo_c63_25T_uuem"/>
   <layer type="wms" year="1946-1989" layername="nltopo_o42_10T"/>
