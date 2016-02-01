@@ -148,7 +148,9 @@ function vlWms(inputParams){
                     }
                     path = path.trim() + "</coordinates></LineString>";
                 }
-                prompt('Lines as KML LineStrings', path);
+                if(prompt("Lines as KML LineStrings.\nCancel deletes all lines from map.", path) == null) {
+					lineLayer.removeAllFeatures();
+				}
             }
             var drawBtn = new OpenLayers.Control.Button({
                 displayClass: 'drawBtn',
