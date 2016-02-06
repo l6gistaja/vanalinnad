@@ -196,7 +196,9 @@ function vlInitInfo(inputParams){
 
       }
       
-      y += '<a name="bbox">'+vlUtils.link({u:requestConf.bbox.url, l:'BBox &amp; GCP'})+'</a><div id="infoMap" style="height:400px;width:600px;"></div>';
+      y += '<a name="bbox">↓ ' + vlUtils.link({u:requestConf.bbox.url, l:'BBox &amp; GCP'})
+        + ' ; ↑ ' + vlUtils.link({u:requestConf.year.url, l:'RSS'})
+        + '</a><div id="infoMap" style="height:400px;width:600px;"></div>';
       document.getElementById(inputParams.divHeader).innerHTML += getSiteLbl();
       document.getElementById(inputParams.divContent).innerHTML = y;
       document.getElementById(inputParams.divFooter).innerHTML = document.getElementById(inputParams.divHeader).innerHTML;
