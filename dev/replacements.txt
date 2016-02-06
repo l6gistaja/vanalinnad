@@ -1,0 +1,2 @@
+# 2016-02-06
+find vector/places/ -type f -print0 | xargs -0 sed -i 's/http:\/\/digar.nlib.ee\/digar\/show.action?id=/http:\/\/www.digar.ee\/viewer\/et\/nlib-digar:/g'

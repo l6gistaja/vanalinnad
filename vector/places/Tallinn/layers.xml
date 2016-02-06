@@ -10,8 +10,7 @@
  "ra1917m": {"h":"Rahvusarhiiv &lt; 1917", "l":"Rahvusarhiiv &lt; 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10990363&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "ra1917_1950": {"h":"Rahvusarhiiv 1917-1950", "l":"Rahvusarhiiv 1917-1950", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10990372&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10927353&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
- "digar": {"h":"Eesti rahvusraamatukogu digitaalarhiiv", "l":"DIGAR", "t":"_blank", "U":"http://digar.nlib.ee/digar/show.action?id=35660"},
- "digar2": {"h":"Eesti rahvusraamatukogu uus digitaalarhiiv", "l":"DIGAR 2", "t":"_blank", "U":"http://www.digar.ee/arhiiv/et/pildimaterjal?id=3801"},
+ "digar": {"h":"Eesti rahvusraamatukogu digitaalarhiiv", "l":"DIGAR", "t":"_blank", "U":"http://www.digar.ee/arhiiv/et/pildimaterjal?id=689"},
  "linnaarhiiv": {"h":"Tallinna Linnaarhiivi Kaardikogu", "l":"Linnaarhiiv", "t":"_blank", "U":"http://www.biblioserver.com/linnaarhiiv/index.php?m=base&id=1"},
  "transport": {"h":"Tallinna ühistransport", "l":"Tallinna ühistransport", "t":"_blank", "U":"http://soiduplaan.tallinn.ee/#map"},
 "fb_vtk": {"h":"Vanad Tallinna kaardid", "l":"Vanad Tallinna kaardid", "t":"_blank", "U":"https://www.facebook.com/media/set/?set=a.929023297108511.1073741857.100000025494083&type=3"}

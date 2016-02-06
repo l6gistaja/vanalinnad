@@ -10,6 +10,7 @@ Old map symbols: [< 1900](http://www.ra.ee/kaardid/index.php/et/site/page?view=s
 * Vector data: © [OpenStreetMap contributors](http://www.openstreetmap.org/copyright)
 * Tiles and initial JavaScript: [MapTiler](http://www.maptiler.org/)/[GDAL2Tiles](http://www.klokan.cz/projects/gdal2tiles/), © 2008 [Klokan Petr Pridal](http://www.klokan.cz/), [GDAL](http://www.gdal.org/) & [OSGeo](http://www.osgeo.org/) [GSoC](http://code.google.com/soc/)
 * WMS: [Maa-amet](vector/wms/maaamet.html)
+* Auxiliary frontpage tiles: [Bing Maps](http://www.bing.com/maps/), [Google Maps](https://maps.google.com/)
 * GitHub: [https://github.com/l6gistaja/vanalinnad](https://github.com/l6gistaja/vanalinnad)
 * Author: juks at alkohol ee
 
@@ -62,7 +63,7 @@ If not already installed, ```apt-get install wget``` .
 License
 -------
 
-Copyright 2013-2015, juks at alkohol ee. All rights reserved.
+Copyright 2013-2016, juks at alkohol ee. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
