@@ -654,7 +654,8 @@ Suurupi N
 <Placemark>
 <name>Kuivastu - Võiküla</name>
 <description><![CDATA[
-<a href="http://www.raudtee.eu/?main=16&sub=224&tlink=0" target="_blank">raudtee.eu</a>
+<a href="http://www.raudtee.eu/?main=16&sub=224&tlink=0" target="_blank">raudtee.eu</a>,<br/>
+<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134149" target="_blank">ERA.49.1.1335 leht 108</a>
 ]]></description>
 <color>#FF0000</color>
 <LineString><coordinates>23.377744963200097,58.548452266122105 23.388617075335763,58.572198401936575</coordinates></LineString>
