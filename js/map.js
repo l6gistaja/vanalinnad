@@ -430,7 +430,11 @@ function vlMap(inputParams){
   }
   
   var _sitesPopup = function() {
-    for(var i = map.popups.length - 1; i > -1; i--) { if(map.popups[i].id == 'sitesPopup') { return; } }
+    for(var i = map.popups.length - 1; i > -1; i--) {
+        if(map.popups[i].id == 'sitesPopup') {
+            map.popups[i].hide();
+        } 
+    }
     var cornerXYg = map.getLonLatFromPixel({x:55, y:20});
     var cornerXY = new OpenLayers.LonLat(cornerXYg.lon, cornerXYg.lat);
     cornerXYg.transform(map.options.projection, map.options.displayProjection);
