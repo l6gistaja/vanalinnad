@@ -12,6 +12,7 @@
   <layer type="wms" year="1978-1989" layername="lehman"/>
   <layer type="wms" year="1963-1989" layername="nltopo_c63_25T_uuem"/>
   <layer type="wms" year="1946-1989" layername="nltopo_o42_10T"/>
+  <layer type="wms" year="194X" layername="nltopo_vanem_25T"/>
   <layer type="wms" year="1930-1944" layername="kk1940"/>
   <layer type="wms" year="1935-1939" layername="ew_50T"/>
   <layer type="wms" year="1923-1935" layername="ew_25T"/>
