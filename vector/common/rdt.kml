@@ -8,7 +8,12 @@
 08.10.1900 - 03.05.1972<br/>
 750 mm<br/>
 <a href="http://www.raudtee.eu/?main=1&sub=49&tlink=0" target="_blank">raudtee.eu</a>, 
-<a href="https://et.wikipedia.org/wiki/Türi–Paide–Tamsalu_raudtee" target="_blank">Wikipedia</a>
+<a href="https://et.wikipedia.org/wiki/Türi–Paide–Tamsalu_raudtee" target="_blank">Wikipedia</a><br/>
+<ol>
+<li>1900 Türi - Paide</li>
+<li>1910 <a href="http://www.raudtee.eu/?main=17&sub=287&stat=296&tlink=281" target="_blank">Tamsalu</a></li>
+<li>1918 Paide - Tamsalu</li>
+</ol>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -44,10 +49,14 @@
 <Placemark>
 <name>Sonda - Mustvee</name>
 <description><![CDATA[
-01.08.1926 - 01.05.1972<br/>
+1916 - 01.05.1972<br/>
 750 mm<br/>
 <a href="http://www.raudtee.eu/?main=1&sub=50&tlink=0" target="_blank">raudtee.eu</a>, 
 <a href="https://et.wikipedia.org/wiki/Sonda%E2%80%93Mustvee_raudteeliin" target="_blank">Wikipedia</a>
+<ol>
+<li>1916 Sonda - Jõepere</li>
+<li>1926 Sonda - Mustvee</li>
+</ol>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -252,6 +261,10 @@
 1524 mm<br/>
 <a href="https://et.wikipedia.org/wiki/Tallinna%E2%80%93Haapsalu_raudtee" target="_blank">Wikipedia</a>, 
 <a href="https://et.wikipedia.org/wiki/Keila%E2%80%93Haapsalu_raudtee" target="_blank">Wikipedia</a>
+<ol>
+<li>1905 Keila - Haapsalu</li>
+<li>192X Haapsalu - Rohuküla</li>
+</ol>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -268,10 +281,16 @@
 <Placemark>
 <name>Riisselja - Ikla</name>
 <description><![CDATA[
-22.01.1923 - 30.09.1975<br/>
+1919 - 30.09.1975<br/>
 750 mm<br/>
 <a href="http://www.raudtee.eu/?main=1&sub=53&tlink=0" target="_blank">raudtee.eu</a>, 
 <a href="https://et.wikipedia.org/wiki/Riisselja%E2%80%93Oraj%C3%B5e_raudtee" target="_blank">Wikipedia</a>
+<ol>
+<li>1919 Riisselja</li>
+<li>1923 Riisselja - Orajõe</li>
+<li>1925 Orajõe - Ikla</li>
+<li>194X Ikla - Ainaži</li>
+</ol>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -420,7 +439,7 @@ Suurupi N
 <Placemark>
 <name>Jägala - Raasiku</name>
 <description><![CDATA[
-1920 - 1941<br/>
+1914 - 1941<br/>
 750 mm<br/>
 <a href="http://www.raudtee.eu/?main=17&sub=287&stat=292&tlink=154" target="_blank">raudtee.eu</a>
 ]]></description>
@@ -656,11 +675,16 @@ Suurupi N
 <Placemark>
 <name>Kuivastu - Võiküla</name>
 <description><![CDATA[
+191X - ?<br/>
+750 mm<br/>
 <a href="http://www.raudtee.eu/?main=16&sub=224&tlink=0" target="_blank">raudtee.eu</a>,<br/>
 <a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134149" target="_blank">ERA.49.1.1335 leht 108</a>
 ]]></description>
 <color>#FF0000</color>
-<LineString><coordinates>23.377744963200097,58.548452266122105 23.388617075335763,58.572198401936575</coordinates></LineString>
+<MultiGeometry>
+<LineString><coordinates>23.388617075335763,58.572198401936575 23.377744963200097,58.548452266122105 23.376998457842515,58.54787120017119 23.373992910465663,58.546498911027996 23.37199840586585,58.5458103336856</coordinates></LineString>
+<LineString><coordinates>23.37792638528623,58.54880137958754 23.37825357778455,58.54810356470001 23.37897022346346,58.54763391121174 23.387873718774696,58.544796812653225 23.388385555758777,58.54477868299067 23.389564457457617,58.54486657969138</coordinates></LineString>
+</MultiGeometry>
 </Placemark>
 
 <!--
@@ -694,7 +718,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 <Placemark>
 <name>Lehtma - Tahkuna</name>
 <description><![CDATA[
-1914 - ?<br/>
+1914 - 194X<br/>
 750 mm<br/>
 <a href="http://www.ester.ee/record=b1054050*est" target="_blank">EKR</a> 50-51, 
 <a href="https://register.muinas.ee/public.php?menuID=monument&action=view&id=23435" target="_blank">KmRR</a>,<br/>
