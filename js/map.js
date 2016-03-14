@@ -250,7 +250,7 @@ function vlMap(inputParams){
         
         var popupContent = feature.attributes.name;
         if('description' in feature.attributes) {
-            popupContent += '<hr/>' + feature.attributes.description;
+            popupContent += '<br/>' + feature.attributes.description;
         }
         if(feature.layer.getOptions().layername.substr(0,6) == 'roads_') {
           var locData = {
