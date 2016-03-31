@@ -128,3 +128,7 @@ body .bodyContent {
 #searchresults ol {
     padding-left: 1.1em;
 }
+
+.olFramedCloudPopupContent ol {
+    padding: 0;
+}
