@@ -31,7 +31,7 @@ Following describes data adding process with Debian Linux 6.0.8.
 
 1. Create writable directory ```{VANALINNAD_ROOT_DIR}/cache```
 1. Install [GDAL utils](http://www.gdal.org/), [markdown](http://daringfireball.net/projects/markdown/) and [ImageMagick](http://www.imagemagick.org) (```sudo apt-get install gdal-bin markdown imagemagick```)
-1. Install missing Perl modules (```sudo cpan XML::Simple JSON Storable Math::Round```)
+1. Install missing Perl modules (```sudo cpan XML::Simple JSON Storable Math::Round``` or ```apt-get install libxml-simple-perl libjson-perl libstorable-perl libmath-round-perl```)
 
 ### Creating new site
 
