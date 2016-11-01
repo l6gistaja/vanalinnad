@@ -6,7 +6,8 @@
 <dirplaces>places/</dirplaces>
 <dirlegends>legends/</dirlegends>
 <dirdev>dev/</dirdev>
-<dirsource>/home/jux/histmaps/places/</dirsource>
+<!-- <dirsource>/home/jux/histmaps/places/</dirsource> -->
+<dirsource>/media/jux/8EB9-1EDA/histmaps/places/</dirsource>
 <dircomposite>composed/</dircomposite>
 <fileareaselector>selector.kml</fileareaselector>
 <filelayers>layers.xml</filelayers>
