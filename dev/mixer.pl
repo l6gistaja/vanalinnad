@@ -54,7 +54,6 @@ if($gdaltxtformat) {
 $maplen = scalar(@maps);
 for($m=0; $m<$maplen; $m++) {
   for($z=$data{'zmin'}; $z<=$data{'zmax'}; $z++) {
-
     $command = 'ls -1 '.$data{'sourcedir'}.$maps[$m].'/'.$z;
     #print $command."\n";
     @xs = `$command`;
@@ -166,6 +165,7 @@ $tilewhite = $rootdir.$mainconf->{'dirdev'}.'whitetile'.$data{'tileext'};
 $tilewritable = $data{'sourcedir'}.'tilewritable'.$data{'tileext'};
 $tiletransparent = $data{'sourcedir'}.'tiletransparent.png';
 for($z=$data{'zmax'}; $z>=$data{'zmin'}; $z--) {
+  print 'Merging zoomlevel '.$z." ...\n";
   $zdir = $destinationdir.$z;
   system('mkdir '.$zdir);
   for($x=$tiles{'xmin'.$z}; $x<=$tiles{'xmax'.$z}; $x++) {

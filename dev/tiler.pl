@@ -6,9 +6,9 @@ use Data::Dumper;
 use lib './dev';
 use VlHelper qw(gdal_mapindex gdal_tlast);
 
-getopt('s:y:r', \%opts);
+getopt('s:y:rm', \%opts);
 if(!exists $opts{'s'} || !exists $opts{'y'}) {
-  print "\nUsage: dev/tiler.pl -s SITE -y MAPYEAR\n\n";
+  print "\nUsage: dev/tiler.pl -s SITE -y MAPYEAR (-r) (-m)\n\n";
   exit;
 }
 
@@ -51,6 +51,9 @@ if(!exists $opts{'r'}) {
     $cmd = 'mkdir '.$c{'dirtransform'};
     sheller($cmd);
     
+    $cmd = 'rm '.$c{'dirtransform'}.'*';
+    sheller($cmd);
+    
     $cmd = 'gdal_translate '.$c{'filesrcimg'}.' '.$c{'filegeoref'}.' -of GTiff '.$gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'gcps'};
     sheller($cmd);
 
@@ -65,12 +68,14 @@ if(!exists $opts{'r'}) {
 }
 
 if(exists $c{'composite'}) {
-  $cmd = $mainconf->{'dirdev'}.'mixer.pl '.$opts{'s'}.' '.$c{'composite'};
-  sheller($cmd);
+  if(!exists $opts{'m'}) {
+    $cmd = $mainconf->{'dirdev'}.'mixer.pl '.$opts{'s'}.' '.$c{'composite'};
+    sheller($cmd);
 
-  $compositebbox = $xml->XMLin($c{'dirvector'}.'bbox'.$c{'composite'}.'.kml', ForceArray => 1);
-  $c{'bbox'} = $compositebbox->{'Document'}[0]{'ExtendedData'}[0]{'Data'}{'bbox'}{'value'}[0];
-  $c{'layeryear'} = $c{'composite'};
+    $compositebbox = $xml->XMLin($c{'dirvector'}.'bbox'.$c{'composite'}.'.kml', ForceArray => 1);
+    $c{'bbox'} = $compositebbox->{'Document'}[0]{'ExtendedData'}[0]{'Data'}{'bbox'}{'value'}[0];
+    $c{'layeryear'} = $c{'composite'};
+  }
 } else {
   $tilemapres = $xml->XMLin($c{'dirraster'}.'/tilemapresource.xml', ForceArray => 1);
   # OpenLayers bounds are in order W,S,E,N
