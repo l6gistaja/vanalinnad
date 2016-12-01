@@ -96,37 +96,22 @@
     <t file="1926iip.jpg" gcps="-gcp 4838 2616 24.722280745500715 59.450589894549154 -gcp 4674 5099 24.71704113052292 59.40302905361027 -gcp 1594 3379 24.601427193145213 59.43593157328072"/>
 </translate>
 
-<!-- 
+<composite id="1919" maps="1919.Kakumae,1918.Viimsi,1920.Pirita,1919" montage="yes"/>
 
-Workaround for 1919.Kakumae, which is away from the composite id="1919"
-
-* dev/tiler.pl -s Tallinn -y 1919
-* save raster/Tallinn/1919 as histmaps/places/Tallinn/composed/1919/1919trick
-* add correct max* and min* from raster/Tallinn/layers.xml to histmaps/places/Tallinn/composed/1919/1919trick/tilemapresource.xml
-* save vector/places/Tallinn/bbox1919,kml to histmaps/places/Tallinn/composed/1919/
-* change <composite id="1919" to <ignocomposite id="1919"
-* change <trickcomposite id="1919" maps="1919.Kakumae,1919trick"/> to <composite id="1919" maps="1919.Kakumae"/>
-* dev/tiler.pl -s Tallinn -y 1919.Kakumae
-* copy <Placemark id="*1919.Kakumae*"> from vector/.../bbox1919,kml to histmaps/places/Tallinn/composed/1919/bbox1919,kml
-* change <composite id="1919" maps="1919.Kakumae"/> to <composite id="1919" maps="1919.Kakumae,1919trick"/>
-* dev/tiler.pl -s Tallinn -y 1919.Kakumae -r
-* copy histmaps/places/Tallinn/composed/1919/bbox1919,kml to vector/places/Tallinn/
-* change <composite id="1919" to <trickcomposite id="1919" and <ignocomposite id="1919" to <composite id="1919"
-
--->
-<trickcomposite id="1919" maps="1919.Kakumae,1919trick"/>
-<composite id="1919" maps="1920.Pirita,1919" montage="yes"/>
+<translate map="1918.Viimsi" composite="1919">
+    <t file="1918_Viimsi_sharp.jpg" gcps="-gcp 595 976 24.752473 59.580185 -gcp 2736 5133 24.834563 59.501504 -gcp 4485 4326 24.900126 59.516843"/>
+</translate>
 
 <translate map="1920.Pirita" composite="1919">
     <t file="1920.Pirita.jpg" gcps="-gcp 364 5318 24.785311619873895 59.43868182760882 -gcp 2406 2935 24.834385316009502 59.46613209100866 -gcp 1011 6855 24.8009113475044 59.42105698780677"/>
     <t file="1920.Pirita.jpg" gcps="-gcp 364 5318 24.785311619873895 59.43868182760882 -gcp 1011 6855 24.8009113475044 59.42105698780677 -gcp 5392 3424 24.905365941202746 59.46042852834558"/>
-    <t file="1920.Pirita.jpg" gcps="-gcp 364 5318 24.785311619873895 59.43868182760882 -gcp 2406 2935 24.834385316009502 59.46613209100866 -gcp 1011 6855 24.8009113475044 59.42105698780677 -gcp 5392 3424 24.905365941202746 59.46042852834558"/>
+    <t file="1920.Pirita_sharp.jpg" gcps="-gcp 364 5318 24.785311619873895 59.43868182760882 -gcp 2406 2935 24.834385316009502 59.46613209100866 -gcp 1011 6855 24.8009113475044 59.42105698780677 -gcp 5392 3424 24.905365941202746 59.46042852834558"/>
 </translate>
 
 <translate map="1919" composite="1919">
     <t file="1919whited.jpg" gcps="-gcp 4600 2578 24.735844648778134 59.44659959722896 -gcp 6123 7750 24.739614493548522 59.414619808616244 -gcp 9124 2676 24.78558219164575 59.44055408026294"/>
     <t file="1919whited.jpg" gcps="-gcp 2981 6615 24.707140989005218 59.42534926618113 -gcp 4978 2315 24.740663237273345 59.44782602284788 -gcp 9169 2998 24.7852844664451 59.43870618779564"/>
-    <t file="1919whited4.jpg" gcps="-gcp 5955 6240 24.74120236128534 59.423578314438636 -gcp 4978 2315 24.740663237273345 59.44782602284788 -gcp 9169 2998 24.7852844664451 59.43870618779564"/>
+    <t file="1919whited4_sharp.jpg" gcps="-gcp 5955 6240 24.74120236128534 59.423578314438636 -gcp 4978 2315 24.740663237273345 59.44782602284788 -gcp 9169 2998 24.7852844664451 59.43870618779564"/>
 </translate>
 
 <translate map="1919.Kakumae" composite="1919">
@@ -168,8 +153,6 @@ Workaround for 1919.Kakumae, which is away from the composite id="1919"
 <translate map="1905">
     <t file="1905whited2.jpg" gcps="-gcp 2358 3587 24.741199679076324 59.42358036104977 -gcp 2149 869 24.74066591948236 59.447825341132365 -gcp 4810 1732 24.785289830863128 59.438702778305924"/>
 </translate>
-
-<!-- composite id="1901" maps="1899.Haabersti" montage="yes"/ -->
 
 <composite id="1901" maps="1899.Haabersti,1899.Viimsi,1899.Pirita,1899.Nomme,1899.Kurna,1901" montage="yes"/>
 
