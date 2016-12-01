@@ -32,7 +32,7 @@ Following describes data adding process with Debian Linux 8.4.
 1. Create writable directory ```{VANALINNAD_ROOT_DIR}/cache```
 1. Download [GDAL 1.11.1](https://trac.osgeo.org/gdal/wiki/DownloadSource)
 1. Unpack and install it: ```./configure ; make ; sudo make install```
-1. Install [markdown](http://daringfireball.net/projects/markdown/) and [ImageMagick](http://www.imagemagick.org) (```sudo apt-get install markdown imagemagick python-gdal```)
+1. Install [markdown](http://daringfireball.net/projects/markdown/) and [ImageMagick](http://www.imagemagick.org) etc (```sudo apt-get install markdown imagemagick python-gdal xsltproc```)
 1. If neccessary: ```sudo ln -s /usr/lib/libproj.so.0 /usr/lib/libproj.so```
 1. Install missing Perl modules (```sudo cpan XML::Simple JSON Storable Math::Round``` or ```apt-get install libxml-simple-perl libjson-perl libstorable-perl libmath-round-perl```)
 
