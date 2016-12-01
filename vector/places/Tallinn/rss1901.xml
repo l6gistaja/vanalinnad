@@ -2,8 +2,9 @@
 <rss version="2.0">
 <channel>
 <title>DIGAR</title>
-<language>de</language>
+<language></language>
 <copyright>0</copyright>
+
 <item>
 <title>Plan der Gouvernementsstadt Reval</title>
 <author>Kluge &amp; Ströhm</author>
@@ -13,5 +14,51 @@
 <pubDate>Tue, 01 Jan 1901 00:00:00 +0000</pubDate>
 <legends>legend1901.jpg</legends>
 </item>
+
+<item>
+<title>Эстляндская губерния. 2-29 Ревельский уезд</title>
+<author></author>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=218389</link>
+<guid>ra.ee=EAA.2072.5.836 leht 8</guid>
+<pubDate>Sun, 1 Jan 1899 00:00:00 +0000</pubDate>
+<anchor>1899.Viimsi</anchor>
+</item>
+
+<item>
+<title>Эстляндская губерния. 3-28 Ревельский уезд</title>
+<author>Лазаревский</author>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=218443</link>
+<guid>ra.ee=EAA.2072.5.836 leht 23</guid>
+<pubDate>Mon, 21 Aug 1899 00:00:00 +0000</pubDate>
+<anchor>1899.Haabersti</anchor>
+</item>
+
+<item>
+<title>Эстляндская губерния. 3-29 Ревельский уезд</title>
+<author></author>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=218444</link>
+<guid>ra.ee=EAA.2072.5.836 leht 24</guid>
+<pubDate>Sun, 1 Jan 1899 00:00:00 +0000</pubDate>
+<anchor>1899.Pirita</anchor>
+</item>
+
+<item>
+<title>Эстляндская губерния. 4-28 Ревельский уезд</title>
+<author>Лазаревский</author>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=200581</link>
+<guid>ra.ee=ERA.T-6.3.600 leht 2</guid>
+<pubDate>Mon, 21 Aug 1899 00:00:00 +0000</pubDate>
+<anchor>1899.Nomme</anchor>
+</item>
+
+<item>
+<title>Эстляндская губерния. 4-29 Ревельский уезд</title>
+<author>Коневь, Павловский</author>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=102797</link>
+<guid>ra.ee=ERA.T-6.3.601 leht 1</guid>
+<pubDate>Wed, 20 Sep 1899 00:00:00 +0000</pubDate>
+<anchor>1899.Kurna</anchor>
+</item>
+
 </channel>
 </rss>

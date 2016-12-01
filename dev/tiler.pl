@@ -9,6 +9,8 @@ use VlHelper qw(gdal_mapindex gdal_tlast);
 getopt('s:y:rm', \%opts);
 if(!exists $opts{'s'} || !exists $opts{'y'}) {
   print "\nUsage: dev/tiler.pl -s SITE -y MAPYEAR (-r) (-m)\n\n";
+  print "  -r - don't re-create tiles\n";
+  print "  -m - don't merge tiles to final map";
   exit;
 }
 
@@ -54,7 +56,25 @@ if(!exists $opts{'r'}) {
     $cmd = 'rm '.$c{'dirtransform'}.'*';
     sheller($cmd);
     
-    $cmd = 'gdal_translate '.$c{'filesrcimg'}.' '.$c{'filegeoref'}.' -of GTiff '.$gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'gcps'};
+    $deltaX = exists $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaX'}
+      ? 0 + $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaX'}
+      : 0 ;
+    $deltaY = exists $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaY'}
+      ? 0 + $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaY'}
+      : 0 ;
+    $gcp = $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'gcps'};
+    if($deltaX != 0 || $deltaY != 0) {
+      $gcp =~ s/^\s+|\s+$//g;
+      @gcps = split(/\s+/, $gcp);
+      for($i = 0; $i < $#gcps; $i += 5) {
+	$gcps[$i+1] = $deltaX + $gcps[$i+1];
+	$gcps[$i+2] = $deltaY + $gcps[$i+2];
+      }
+      $gcp = join(' ', @gcps); 
+    }
+    
+    
+    $cmd = 'gdal_translate '.$c{'filesrcimg'}.' '.$c{'filegeoref'}.' -of GTiff '.$gcp;
     sheller($cmd);
 
     $cmd = 'gdalwarp -srcnodata "0 0 0" -dstnodata "255 255 255" '.$c{'filegeoref'}.' '.$c{'filewarp'};
