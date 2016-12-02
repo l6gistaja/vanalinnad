@@ -136,6 +136,8 @@ if(! -e $rss) {
   }
 }
 
+print "\a";
+
 sub sheller {
  print "\n".$_[0]."\n";
  system($_[0]);

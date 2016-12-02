@@ -118,3 +118,4 @@ if(!exists $opts{'p'} || $opts{'p'} =~ /m/) {
 }
 
 print "FINISHED! Running time ".(time() - $t0)." seconds.\n";
+print "\a";

@@ -24,3 +24,4 @@ for($i=0; $i<=$len; $i++) {
 
 print 'BBox max '.join(',', @max)."\n";
 system($mainconf->{'dirdev'}.'osm2xml/generate_roads.pl '.join(',', @max) .' | bash');
+print "\a";
