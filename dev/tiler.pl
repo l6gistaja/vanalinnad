@@ -10,7 +10,7 @@ getopt('s:y:rm', \%opts);
 if(!exists $opts{'s'} || !exists $opts{'y'}) {
   print "\nUsage: dev/tiler.pl -s SITE -y MAPYEAR (-r) (-m)\n\n";
   print "  -r - don't re-create tiles\n";
-  print "  -m - don't merge tiles to final map";
+  print "  -m - don't merge tiles to final map\n\n";
   exit;
 }
 

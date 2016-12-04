@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1872"><name>1872</name><LineString><coordinates>24.63918365801714,59.38590712224362 24.63918365801714,59.46935850298406 24.88237501019252,59.46935850298406 24.88237501019252,59.38590712224362 24.63918365801714,59.38590712224362</coordinates></LineString></Placemark>
+<Placemark id="gcp1872.1"><name>1872 #1</name><description>7952 1468</description><Point><coordinates>24.741239230194225,59.44815433546877</coordinates></Point></Placemark>
+<Placemark id="gcp1872.2"><name>1872 #2</name><description>11105 3553</description><Point><coordinates>24.78527610162392,59.43872376847939</coordinates></Point></Placemark>
+<Placemark id="gcp1872.3"><name>1872 #3</name><description>3011 5879</description><Point><coordinates>24.69047610620114,59.41413379955791</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1875.Viimsi.1"><name>1875.Viimsi.1</name><LineString><coordinates>, , , , ,</coordinates></LineString></Placemark>
+<Placemark id="gcp1875.Viimsi.1.1"><name>1875.Viimsi.1 #1</name><description>374 8511</description><Point><coordinates>24.798182803955754,59.52353375778047</coordinates></Point></Placemark>
+<Placemark id="gcp1875.Viimsi.1.2"><name>1875.Viimsi.1 #2</name><description>5805 8476</description><Point><coordinates>24.86622508224573,59.53172765860664</coordinates></Point></Placemark>
+<Placemark id="gcp1875.Viimsi.1.3"><name>1875.Viimsi.1 #3</name><description>1809 528</description><Point><coordinates>24.790434692689043,59.57471189297206</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1875.Viimsi.2"><name>1875.Viimsi.2</name><LineString><coordinates>24.78925159727435,59.47424265481293 24.78925159727435,59.54673180352794 24.88936275981892,59.54673180352794 24.88936275981892,59.47424265481293 24.78925159727435,59.47424265481293</coordinates></LineString></Placemark>
+<Placemark id="gcp1875.Viimsi.2.1"><name>1875.Viimsi.2 #1</name><description>1870 9349</description><Point><coordinates>24.839113980006456,59.48230723592752</coordinates></Point></Placemark>
+<Placemark id="gcp1875.Viimsi.2.2"><name>1875.Viimsi.2 #2</name><description>4966 5087</description><Point><coordinates>24.865936070156515,59.51366856188579</coordinates></Point></Placemark>
+<Placemark id="gcp1875.Viimsi.2.3"><name>1875.Viimsi.2 #3</name><description>1526 5004</description><Point><coordinates>24.822530031738268,59.509143156851785</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1875.Viimsi.3"><name>1875.Viimsi.3</name><LineString><coordinates>24.80405877864441,59.45918132669712 24.80405877864441,59.51538526456577 24.89268672313748,59.51538526456577 24.89268672313748,59.45918132669712 24.80405877864441,59.45918132669712</coordinates></LineString></Placemark>
+<Placemark id="gcp1875.Viimsi.3.1"><name>1875.Viimsi.3 #1</name><description>926 6768</description><Point><coordinates>24.8360161151888,59.46651903167722</coordinates></Point></Placemark>
+<Placemark id="gcp1875.Viimsi.3.2"><name>1875.Viimsi.3 #2</name><description>1535 5140</description><Point><coordinates>24.838783965606076,59.4776279348886</coordinates></Point></Placemark>
+<Placemark id="gcp1875.Viimsi.3.3"><name>1875.Viimsi.3 #3</name><description>1954 5051</description><Point><coordinates>24.843783603210518,59.47882667272963</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1872,1875.Viimsi.3,1875.Viimsi.2</value></Data>
+<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Tallinn/composed/1872/</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>24.63918365801714,59.38590712224362,24.89268672313748,59.54673180352794</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="zmax"><value>16</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
