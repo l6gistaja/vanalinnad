@@ -7,11 +7,6 @@
 <Placemark id="gcp1872.2"><name>1872 #2</name><description>11105 3553</description><Point><coordinates>24.78527610162392,59.43872376847939</coordinates></Point></Placemark>
 <Placemark id="gcp1872.3"><name>1872 #3</name><description>3011 5879</description><Point><coordinates>24.69047610620114,59.41413379955791</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1875.Viimsi.1"><name>1875.Viimsi.1</name><LineString><coordinates>, , , , ,</coordinates></LineString></Placemark>
-<Placemark id="gcp1875.Viimsi.1.1"><name>1875.Viimsi.1 #1</name><description>374 8511</description><Point><coordinates>24.798182803955754,59.52353375778047</coordinates></Point></Placemark>
-<Placemark id="gcp1875.Viimsi.1.2"><name>1875.Viimsi.1 #2</name><description>5805 8476</description><Point><coordinates>24.86622508224573,59.53172765860664</coordinates></Point></Placemark>
-<Placemark id="gcp1875.Viimsi.1.3"><name>1875.Viimsi.1 #3</name><description>1809 528</description><Point><coordinates>24.790434692689043,59.57471189297206</coordinates></Point></Placemark>
-
 <Placemark id="bbox.1875.Viimsi.2"><name>1875.Viimsi.2</name><LineString><coordinates>24.78925159727435,59.47424265481293 24.78925159727435,59.54673180352794 24.88936275981892,59.54673180352794 24.88936275981892,59.47424265481293 24.78925159727435,59.47424265481293</coordinates></LineString></Placemark>
 <Placemark id="gcp1875.Viimsi.2.1"><name>1875.Viimsi.2 #1</name><description>1870 9349</description><Point><coordinates>24.839113980006456,59.48230723592752</coordinates></Point></Placemark>
 <Placemark id="gcp1875.Viimsi.2.2"><name>1875.Viimsi.2 #2</name><description>4966 5087</description><Point><coordinates>24.865936070156515,59.51366856188579</coordinates></Point></Placemark>
