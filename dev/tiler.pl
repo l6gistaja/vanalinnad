@@ -115,10 +115,13 @@ for($i = 0; $i < $c{'ls'}; $i++) {
     break;
   }
 }
+
 if($isNewLayer) {
   push(@{$layers->{'layer'}}, {'type' => 'tms', 'bounds' => $c{'bbox'}, 'year' => $c{'layeryear'}});
 }
-$xml->XMLout($layers, RootName => 'vanalinnadlayers', OutputFile => $c{'filelayers'});
+
+$layers->{'json'}[0] = '<![CDATA['.$layers->{'json'}[0].']]>';
+$xml->XMLout($layers, RootName => 'vanalinnadlayers', OutputFile => $c{'filelayers'}, NoEscape => 1);
 
 $rss = $c{'dirvector'}.'rss'.$c{'layeryear'}.'.xml';
 if(! -e $rss) {
