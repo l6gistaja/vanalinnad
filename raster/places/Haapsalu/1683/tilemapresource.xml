@@ -3,8 +3,8 @@
 	  <Title>Haapsalu 1683</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="58.94197818023049" miny="23.52473383976939" maxx="58.95308628486492" maxy="23.54935039526956"/>
-	  <Origin x="58.94197818023049" y="23.52473383976939"/>
+	  <BoundingBox minx="58.94197762633181" miny="23.52473211314827" maxx="58.95301275294391" maxy="23.54933407964956"/>
+	  <Origin x="58.94197762633181" y="23.52473211314827"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="12" units-per-pixel="38.21851413574219" order="12"/>

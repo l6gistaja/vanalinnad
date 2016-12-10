@@ -2,21 +2,21 @@
   <bounds>24.5945390309,59.334869421,24.9777576321,59.5422156874</bounds>
   <city>Tallinn</city>
   <country>Estonia</country>
-  <json>{
-&quot;urls&quot;: {
- &quot;mellin&quot;: {&quot;h&quot;:&quot;Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel&quot;, &quot;l&quot;:&quot;Mellin 1791&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.wdl.org/en/item/2571/view/1/10/&quot;},
- &quot;etomesto3v&quot;: {&quot;h&quot;:&quot;ЭтоМесто: трехверстовка Шуберта 1862&quot;, &quot;l&quot;:&quot;ЭтоМесто: 3-верстовка 1862&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.etomesto.ru/shubert-map/3-4/&quot;},
- &quot;etomesto&quot;: {&quot;h&quot;:&quot;ЭтоМесто&quot;, &quot;l&quot;:&quot;ЭтоМесто&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.etomesto.ru/map-atlas_topo-10km/?x=@X@&amp;y=@Y@&quot;, &quot;srs&quot;:&quot;EPSG:4326&quot;},
- &quot;ra1917m&quot;: {&quot;h&quot;:&quot;Rahvusarhiiv &amp;lt; 1917&quot;, &quot;l&quot;:&quot;Rahvusarhiiv &amp;lt; 1917&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10990363&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav&quot;},
- &quot;ra1917_1950&quot;: {&quot;h&quot;:&quot;Rahvusarhiiv 1917-1950&quot;, &quot;l&quot;:&quot;Rahvusarhiiv 1917-1950&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10990372&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav&quot;},
- &quot;ra1950_1991&quot;: {&quot;h&quot;:&quot;Rahvusarhiiv 1950-1991&quot;, &quot;l&quot;:&quot;Rahvusarhiiv 1950-1991&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10927353&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav&quot;},
- &quot;digar&quot;: {&quot;h&quot;:&quot;Eesti rahvusraamatukogu digitaalarhiiv&quot;, &quot;l&quot;:&quot;DIGAR&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.digar.ee/arhiiv/et/pildimaterjal?id=689&quot;},
- &quot;linnaarhiiv&quot;: {&quot;h&quot;:&quot;Tallinna Linnaarhiivi Kaardikogu&quot;, &quot;l&quot;:&quot;Linnaarhiiv&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://www.biblioserver.com/linnaarhiiv/index.php?m=base&amp;id=1&quot;},
- &quot;transport&quot;: {&quot;h&quot;:&quot;Tallinna ühistransport&quot;, &quot;l&quot;:&quot;Tallinna ühistransport&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;http://soiduplaan.tallinn.ee/#map&quot;},
- &quot;fb_vtk&quot;: {&quot;h&quot;:&quot;Vanad Tallinna kaardid&quot;, &quot;l&quot;:&quot;Vanad Tallinna kaardid&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;https://www.facebook.com/media/set/?set=a.929023297108511.1073741857.100000025494083&amp;type=3&quot;},
- &quot;gm_psm&quot;: {&quot;h&quot;:&quot;Peeter Suure merekinduse kaart&quot;, &quot;l&quot;:&quot;Peeter Suure merekindlus&quot;, &quot;t&quot;:&quot;_blank&quot;, &quot;U&quot;:&quot;https://www.google.com/maps/d/viewer?mid=zPslYwoImf-g.kCj2L2q5JtVA&quot;}
+  <json><![CDATA[{
+"urls": {
+ "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/10/"},
+ "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта 1862", "l":"ЭтоМесто: 3-верстовка 1862", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/3-4/"},
+ "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-atlas_topo-10km/?x=@X@&y=@Y@", "srs":"EPSG:4326"},
+ "ra1917m": {"h":"Rahvusarhiiv &lt; 1917", "l":"Rahvusarhiiv &lt; 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10990363&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
+ "ra1917_1950": {"h":"Rahvusarhiiv 1917-1950", "l":"Rahvusarhiiv 1917-1950", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10990372&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
+ "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10927353&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
+ "digar": {"h":"Eesti rahvusraamatukogu digitaalarhiiv", "l":"DIGAR", "t":"_blank", "U":"http://www.digar.ee/arhiiv/et/pildimaterjal?id=689"},
+ "linnaarhiiv": {"h":"Tallinna Linnaarhiivi Kaardikogu", "l":"Linnaarhiiv", "t":"_blank", "U":"http://www.biblioserver.com/linnaarhiiv/index.php?m=base&id=1"},
+ "transport": {"h":"Tallinna ühistransport", "l":"Tallinna ühistransport", "t":"_blank", "U":"http://soiduplaan.tallinn.ee/#map"},
+ "fb_vtk": {"h":"Vanad Tallinna kaardid", "l":"Vanad Tallinna kaardid", "t":"_blank", "U":"https://www.facebook.com/media/set/?set=a.929023297108511.1073741857.100000025494083&type=3"},
+ "gm_psm": {"h":"Peeter Suure merekinduse kaart", "l":"Peeter Suure merekindlus", "t":"_blank", "U":"https://www.google.com/maps/d/viewer?mid=zPslYwoImf-g.kCj2L2q5JtVA"}
 }
-}</json>
+}]]></json>
   <layer bounds="24.59409045648279,59.33453967532896,24.97812799600556,59.54268724369540" type="tms" year="1968" />
   <layer bounds="24.6651536414,59.3932688183,24.8575659835,59.4740931126" type="tms" year="1957" />
   <layer bounds="24.64508827798675,59.39994760998267,24.84326921920938,59.47729313556979" type="tms" year="1940" />

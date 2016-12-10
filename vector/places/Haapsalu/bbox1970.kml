@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1970.1"><name>1970.1</name><LineString><coordinates>23.50498843831722,58.95295006964069 23.50498843831722,58.96443143957203 23.52882815204290,58.96443143957203 23.52882815204290,58.95295006964069 23.50498843831722,58.95295006964069</coordinates></LineString></Placemark>
+<Placemark id="gcp1970.1.1"><name>1970.1 #1</name><description>1838 988</description><Point><coordinates>23.51115381991911,58.95974324249854</coordinates></Point></Placemark>
+<Placemark id="gcp1970.1.2"><name>1970.1 #2</name><description>6330 4524</description><Point><coordinates>23.527869346499397,58.95848187344598</coordinates></Point></Placemark>
+<Placemark id="gcp1970.1.3"><name>1970.1 #3</name><description>2488 4410</description><Point><coordinates>23.51784861361959,58.95574874887282</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1970.2"><name>1970.2</name><LineString><coordinates>23.51001303370361,58.94221392492377 23.51001303370361,58.96132431711060 23.54611007257648,58.96132431711060 23.54611007257648,58.94221392492377 23.51001303370361,58.94221392492377</coordinates></LineString></Placemark>
+<Placemark id="gcp1970.2.1"><name>1970.2 #1</name><description>3673 3832</description><Point><coordinates>23.524999976262716,58.952512634949734</coordinates></Point></Placemark>
+<Placemark id="gcp1970.2.2"><name>1970.2 #2</name><description>3684 8762</description><Point><coordinates>23.53225266943854,58.94604904244173</coordinates></Point></Placemark>
+<Placemark id="gcp1970.2.3"><name>1970.2 #3</name><description>7668 8854</description><Point><coordinates>23.542552352055562,58.948948954624285</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1970.3"><name>1970.3</name><LineString><coordinates>23.51987886752411,58.93215090791043 23.51987886752411,58.95058436700788 23.55697441472737,58.95058436700788 23.55697441472737,58.93215090791043 23.51987886752411,58.93215090791043</coordinates></LineString></Placemark>
+<Placemark id="gcp1970.3.1"><name>1970.3 #1</name><description>8560 236</description><Point><coordinates>23.542126096725358,58.949380105615575</coordinates></Point></Placemark>
+<Placemark id="gcp1970.3.2"><name>1970.3 #2</name><description>3696 80</description><Point><coordinates>23.529452958427267,58.94591076546385</coordinates></Point></Placemark>
+<Placemark id="gcp1970.3.3"><name>1970.3 #3</name><description>5816 7415</description><Point><coordinates>23.545503297174026,58.9378406106761</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Haapsalu/composed/1970/</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>1970.1,1970.2,1970.3</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>23.50498843831722,58.93215090791043,23.55697441472737,58.96443143957203</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>12</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
