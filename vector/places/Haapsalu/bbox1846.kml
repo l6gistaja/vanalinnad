@@ -7,20 +7,20 @@
 <Placemark id="gcp1848.2"><name>1848 #2</name><description>4196 5240</description><Point><coordinates>23.534347827718282,58.94711539842494</coordinates></Point></Placemark>
 <Placemark id="gcp1848.3"><name>1848 #3</name><description>8000 19110</description><Point><coordinates>23.568787391468657,58.90437564594355</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1846"><name>1846</name><LineString><coordinates>23.52395470268218,58.94219428124487 23.52395470268218,58.95390251125585 23.54833013997416,58.95390251125585 23.54833013997416,58.94219428124487 23.52395470268218,58.94219428124487</coordinates></LineString></Placemark>
-<Placemark id="gcp1846.1"><name>1846 #1</name><description>380 641</description><Point><coordinates>23.530825734244264,58.94776466879056</coordinates></Point></Placemark>
-<Placemark id="gcp1846.2"><name>1846 #2</name><description>1164 536</description><Point><coordinates>23.5421553851229,58.949347396791055</coordinates></Point></Placemark>
-<Placemark id="gcp1846.3"><name>1846 #3</name><description>446 1148</description><Point><coordinates>23.532799840079317,58.943801751713835</coordinates></Point></Placemark>
-<Placemark id="gcp1846.4"><name>1846 #4</name><description>1284 1109</description><Point><coordinates>23.545065072466393,58.94507003956576</coordinates></Point></Placemark>
+<Placemark id="bbox.1846"><name>1846</name><LineString><coordinates>23.52393641922950,58.94304702620737 23.52393641922950,58.95390595563734 23.54807698632509,58.95390595563734 23.54807698632509,58.94304702620737 23.52393641922950,58.94304702620737</coordinates></LineString></Placemark>
+<Placemark id="gcp1846.1"><name>1846 #1</name><description>1854 3153</description><Point><coordinates>23.530825734244264,58.94776466879056</coordinates></Point></Placemark>
+<Placemark id="gcp1846.2"><name>1846 #2</name><description>5682 2628</description><Point><coordinates>23.5421553851229,58.949347396791055</coordinates></Point></Placemark>
+<Placemark id="gcp1846.3"><name>1846 #3</name><description>2175 5629</description><Point><coordinates>23.532799840079317,58.943801751713835</coordinates></Point></Placemark>
+<Placemark id="gcp1846.4"><name>1846 #4</name><description>6265 5422</description><Point><coordinates>23.545065072466393,58.94507003956576</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
 <Data name="bbox"><value>23.50442513717021,58.90116306865782,23.57678627420205,58.96582152448948</value></Data>
+<Data name="zmax"><value>16</value></Data>
 <Data name="maps"><value>1848,1846</value></Data>
-<Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Haapsalu/composed/1846/</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Haapsalu/composed/1846/</value></Data>
 
 </ExtendedData>
 

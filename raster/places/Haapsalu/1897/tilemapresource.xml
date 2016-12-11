@@ -3,8 +3,8 @@
 	  <Title>Haapsalu 1897</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="58.93055763033450" miny="23.50185891583800" maxx="58.96655853664967" maxy="23.55935830342718"/>
-	  <Origin x="58.93055763033450" y="23.50185891583800"/>
+	  <BoundingBox minx="58.93063848614432" miny="23.50291000108492" maxx="58.96570635749604" maxy="23.55917125600513"/>
+	  <Origin x="58.93063848614432" y="23.50291000108492"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="12" units-per-pixel="38.21851413574219" order="12"/>

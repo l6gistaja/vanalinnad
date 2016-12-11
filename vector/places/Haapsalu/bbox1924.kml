@@ -17,19 +17,19 @@
 <Placemark id="gcp1924.k2.2"><name>1924.k2 #2</name><description>4512 6799</description><Point><coordinates>23.54655420790567,58.94385734403063</coordinates></Point></Placemark>
 <Placemark id="gcp1924.k2.3"><name>1924.k2 #3</name><description>3042 11533</description><Point><coordinates>23.54443145767165,58.928101014371826</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1925"><name>1925</name><LineString><coordinates>23.50306772006613,58.92944802821333 23.50306772006613,58.96729343130139 23.56824482005443,58.96729343130139 23.56824482005443,58.92944802821333 23.50306772006613,58.92944802821333</coordinates></LineString></Placemark>
-<Placemark id="gcp1925.1"><name>1925 #1</name><description>261 902</description><Point><coordinates>23.526449372710477,58.94899720182111</coordinates></Point></Placemark>
-<Placemark id="gcp1925.2"><name>1925 #2</name><description>307 1227</description><Point><coordinates>23.533702065886303,58.9452781915252</coordinates></Point></Placemark>
-<Placemark id="gcp1925.3"><name>1925 #3</name><description>585 1550</description><Point><coordinates>23.546576669158256,58.94385025070443</coordinates></Point></Placemark>
+<Placemark id="bbox.1925"><name>1925</name><LineString><coordinates>23.50321619608901,58.92934659628480 23.50321619608901,58.96745922198368 23.56816764568957,58.96745922198368 23.56816764568957,58.92934659628480 23.50321619608901,58.92934659628480</coordinates></LineString></Placemark>
+<Placemark id="gcp1925.1"><name>1925 #1</name><description>870 3041</description><Point><coordinates>23.526449372710477,58.94899720182111</coordinates></Point></Placemark>
+<Placemark id="gcp1925.2"><name>1925 #2</name><description>1031 4138</description><Point><coordinates>23.533702065886303,58.9452781915252</coordinates></Point></Placemark>
+<Placemark id="gcp1925.3"><name>1925 #3</name><description>1958 5229</description><Point><coordinates>23.546576669158256,58.94385025070443</coordinates></Point></Placemark>
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>23.46130314113615,58.90223184874151,23.57966050927302,58.96729343130139</value></Data>
-<Data name="maps"><value>1924.k1,1924.k4,1924.k2,1925</value></Data>
-<Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Haapsalu/composed/1924/</value></Data>
+<Data name="maps"><value>1924.k1,1924.k4,1924.k2,1925</value></Data>
+<Data name="bbox"><value>23.46130314113615,58.90223184874151,23.57966050927302,58.96745922198368</value></Data>
+<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Haapsalu/composed/1924/</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
 
 </ExtendedData>
 
