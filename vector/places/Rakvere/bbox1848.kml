@@ -2,34 +2,34 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1848.k1"><name>1848.k1</name><LineString><coordinates>26.34307172506054,59.33301469747328 26.34307172506054,59.35336868756151 26.36931193710027,59.35336868756151 26.36931193710027,59.33301469747328 26.34307172506054,59.33301469747328</coordinates></LineString></Placemark>
-<Placemark id="gcp1848.k1.1"><name>1848.k1 #1</name><description>550 211</description><Point><coordinates>26.353613309478376,59.35046235104858</coordinates></Point></Placemark>
-<Placemark id="gcp1848.k1.2"><name>1848.k1 #2</name><description>921 206</description><Point><coordinates>26.36009352645889,59.351304628844424</coordinates></Point></Placemark>
-<Placemark id="gcp1848.k1.3"><name>1848.k1 #3</name><description>654 1768</description><Point><coordinates>26.36209974442431,59.3365134638054</coordinates></Point></Placemark>
+<Placemark id="bbox.1848.k1"><name>1848.k1</name><LineString><coordinates>26.34306187467458,59.33299124548584 26.34306187467458,59.35335967288125 26.36936857636928,59.35335967288125 26.36936857636928,59.33299124548584 26.34306187467458,59.33299124548584</coordinates></LineString></Placemark>
+<Placemark id="gcp1848.k1.1"><name>1848.k1 #1</name><description>3189 1216</description><Point><coordinates>26.353613309478376,59.35046235104858</coordinates></Point></Placemark>
+<Placemark id="gcp1848.k1.2"><name>1848.k1 #2</name><description>5336 1190</description><Point><coordinates>26.36009352645889,59.351304628844424</coordinates></Point></Placemark>
+<Placemark id="gcp1848.k1.3"><name>1848.k1 #3</name><description>3783 10276</description><Point><coordinates>26.36209974442431,59.3365134638054</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1848.k2"><name>1848.k2</name><LineString><coordinates>26.35508121911892,59.33401113101927 26.35508121911892,59.35686924494727 26.39039175693880,59.35686924494727 26.39039175693880,59.33401113101927 26.35508121911892,59.33401113101927</coordinates></LineString></Placemark>
-<Placemark id="gcp1848.k2.1"><name>1848.k2 #1</name><description>52 250</description><Point><coordinates>26.357078649148953,59.35133840234642</coordinates></Point></Placemark>
-<Placemark id="gcp1848.k2.2"><name>1848.k2 #2</name><description>600 297</description><Point><coordinates>26.36701355133969,59.35214784362917</coordinates></Point></Placemark>
-<Placemark id="gcp1848.k2.3"><name>1848.k2 #3</name><description>45 2037</description><Point><coordinates>26.364630267181212,59.33486355793218</coordinates></Point></Placemark>
+<Placemark id="bbox.1848.k2"><name>1848.k2</name><LineString><coordinates>26.35509630012784,59.33401852053366 26.35509630012784,59.35683636026265 26.39034514505866,59.35683636026265 26.39034514505866,59.33401852053366 26.35509630012784,59.33401852053366</coordinates></LineString></Placemark>
+<Placemark id="gcp1848.k2.1"><name>1848.k2 #1</name><description>303 1459</description><Point><coordinates>26.357078649148953,59.35133840234642</coordinates></Point></Placemark>
+<Placemark id="gcp1848.k2.2"><name>1848.k2 #2</name><description>3520 1735</description><Point><coordinates>26.36701355133969,59.35214784362917</coordinates></Point></Placemark>
+<Placemark id="gcp1848.k2.3"><name>1848.k2 #3</name><description>258 11985</description><Point><coordinates>26.364630267181212,59.33486355793218</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1848.k3"><name>1848.k3</name><LineString><coordinates>26.34772216393699,59.32347354770428 26.34772216393699,59.33803569182172 26.37349081649531,59.33803569182172 26.37349081649531,59.32347354770428 26.34772216393699,59.32347354770428</coordinates></LineString></Placemark>
-<Placemark id="gcp1848.k3.1"><name>1848.k3 #1</name><description>271 87</description><Point><coordinates>26.35275516128499,59.33538660574292</coordinates></Point></Placemark>
-<Placemark id="gcp1848.k3.2"><name>1848.k3 #2</name><description>1161 122</description><Point><coordinates>26.368290515899147,59.336907741152935</coordinates></Point></Placemark>
-<Placemark id="gcp1848.k3.3"><name>1848.k3 #3</name><description>765 307</description><Point><coordinates>26.362173087311017,59.334437507774396</coordinates></Point></Placemark>
+<Placemark id="bbox.1848.k3"><name>1848.k3</name><LineString><coordinates>26.34774635869365,59.32344568468292 26.34774635869365,59.33803638089142 26.37349469697659,59.33803638089142 26.37349469697659,59.32344568468292 26.34774635869365,59.32344568468292</coordinates></LineString></Placemark>
+<Placemark id="gcp1848.k3.1"><name>1848.k3 #1</name><description>1546 496</description><Point><coordinates>26.35275516128499,59.33538660574292</coordinates></Point></Placemark>
+<Placemark id="gcp1848.k3.2"><name>1848.k3 #2</name><description>6645 698</description><Point><coordinates>26.368290515899147,59.336907741152935</coordinates></Point></Placemark>
+<Placemark id="gcp1848.k3.3"><name>1848.k3 #3</name><description>4378 1758</description><Point><coordinates>26.362173087311017,59.334437507774396</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1848.k4"><name>1848.k4</name><LineString><coordinates>26.36359656996019,59.32548009853416 26.36359656996019,59.34051499682749 26.39659886243532,59.34051499682749 26.39659886243532,59.32548009853416 26.36359656996019,59.32548009853416</coordinates></LineString></Placemark>
-<Placemark id="gcp1848.k4.1"><name>1848.k4 #1</name><description>4 7</description><Point><coordinates>26.363693494720515,59.33694549477485</coordinates></Point></Placemark>
-<Placemark id="gcp1848.k4.2"><name>1848.k4 #2</name><description>1479 78</description><Point><coordinates>26.388562936706432,59.33951704075015</coordinates></Point></Placemark>
-<Placemark id="gcp1848.k4.3"><name>1848.k4 #3</name><description>829 313</description><Point><coordinates>26.378756780548393,59.33610286076968</coordinates></Point></Placemark>
+<Placemark id="bbox.1848.k4"><name>1848.k4</name><LineString><coordinates>26.36360542998277,59.32542008272517 26.36360542998277,59.34056266932978 26.39683336421404,59.34056266932978 26.39683336421404,59.32542008272517 26.36360542998277,59.32542008272517</coordinates></LineString></Placemark>
+<Placemark id="gcp1848.k4.1"><name>1848.k4 #1</name><description>20 35</description><Point><coordinates>26.363693494720515,59.33694549477485</coordinates></Point></Placemark>
+<Placemark id="gcp1848.k4.2"><name>1848.k4 #2</name><description>8123 435</description><Point><coordinates>26.388562936706432,59.33951704075015</coordinates></Point></Placemark>
+<Placemark id="gcp1848.k4.3"><name>1848.k4 #3</name><description>4555 1718</description><Point><coordinates>26.378756780548393,59.33610286076968</coordinates></Point></Placemark>
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.34307172506054,59.32347354770428,26.39659886243532,59.35686924494727</value></Data>
 <Data name="maps"><value>1848.k2,1848.k4,1848.k3,1848.k1</value></Data>
-<Data name="zmin"><value>12</value></Data>
+<Data name="bbox"><value>26.34306187467458,59.32344568468292,26.39683336421404,59.35683636026265</value></Data>
+<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Rakvere/composed/1848/</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Rakvere/composed/1848/</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
 
 </ExtendedData>
 

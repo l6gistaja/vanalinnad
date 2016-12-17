@@ -3,8 +3,8 @@
 	  <Title>Rakvere 1881</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="59.32271959010784" miny="26.34762265501374" maxx="59.35538113357885" maxy="26.39525395198925"/>
-	  <Origin x="59.32271959010784" y="26.34762265501374"/>
+	  <BoundingBox minx="59.32271833348048" miny="26.34762265500727" maxx="59.35538113357106" maxy="26.39524885559605"/>
+	  <Origin x="59.32271833348048" y="26.34762265500727"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="12" units-per-pixel="38.21851413574219" order="12"/>

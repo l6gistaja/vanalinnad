@@ -15,19 +15,20 @@ $t0 = time();
     zoomifyExt .jpg
 );
 
-getopt('u:wpra:b:', \%opts);
+getopt('u:wproa:b:', \%opts);
 if(!exists $opts{'u'}) {
   print <<EndUsage;
 
-Usage: deiip.pl -u ... -a # -b # [-w ...] [-p ...] [-r #]
+Usage: deiip.pl -u ... -a # -b # [-w ...] [-p ...] [-r #] [-o ...]
 
 -u : IIP service tile URL, without tile number in end.
 -a : left bottom corner's tile number from URL.
 -b : right bottom corner's tile number from URL.
--w : working directory, to which tiles will be downloaded and where result file ($self{resultFile}) will be composed.
-     Optional, default value is '$self{workPath}'.
+-w : working directory, to which tiles will be downloaded and where result file 
+     ($self{resultFile}) will be composed. Optional, default value is '$self{workPath}'.
 -p : if exists, only given parts of script will run: 'd' - download, 'm' - merging (already downloaded) tiles.
 -r : percentage of tiles resize before final merger (0 < integer < 100).
+-o : output file name. Optional, default is '$self{workPath}$self{resultFile}'.
 
 Needs ImageMagick's convert for tile merging and wget for download.
 
@@ -36,6 +37,8 @@ Example: deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laien
 EndUsage
   exit;
 }
+
+if($opts{'a'} > $opts{'b'}) { die "\nParameter b cannot be smaller then a!\n\n"; }
 
 $self{'zoomifyURL'} = $opts{'u'};
 if(exists $opts{'w'}) { $self{'workPath'} = $opts{'w'}; }
@@ -116,6 +119,8 @@ if(!exists $opts{'p'} || $opts{'p'} =~ /m/) {
     system($cmd . ' +append '.$result);
     unlink glob($self{'workPath'}.$self{'partPrefix'}.'*'.$self{'zoomifyExt'});
 }
+
+if(exists $opts{'o'}) { system('cp '.$result.' '.$opts{'o'}); }
 
 print "FINISHED! Running time ".(time() - $t0)." seconds.\n";
 print "\a";
