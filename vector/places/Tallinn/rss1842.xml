@@ -9,7 +9,7 @@
 <title>Частъ генералънаго плана Ревеля, с показанием расположения кварталов, также крепостных верок с разведенными на них садами, отданных в городское ведомство.</title>
 <guid>ra.ee=EAA.2072.2.8</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=5305</link>
-<link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/002/0000008/eaa2072_002_0000008_00000_k.tif&amp;wid=2480&amp;hei=1748&amp;qlt=100&amp;cvt=jpeg</link>
+<!-- <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/002/0000008/eaa2072_002_0000008_00000_k.tif&amp;wid=2480&amp;hei=1748&amp;qlt=100&amp;cvt=jpeg</link> -->
 <pubDate>Sat, 01 Jan 1842 00:00:00 +0000</pubDate>
 <legends></legends>
 </item>
@@ -41,27 +41,30 @@
 
 <item>
 <title>Geometrischer Plan des Stadtgutes Habers</title>
-<author>F. Adamson</author>
-<guid>tla=149-4-362</guid>
-<link>http://www.biblioserver.com/linnaarhiiv/index.php?m=search&amp;ftype=data&amp;q=149-4-362</link>
+<author>F. Adamson, Erik Renter, Schellbach</author>
+<guid>ra.ee=TLA.149.4.362 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=71631</link>
+<link>http://www.tarkvarastuudio.ee/tallinn_linnaarhiiv/149-4-362.htm</link>
 <pubDate>Mon, 01 Jan 1849 00:00:00 +0000</pubDate>
 <anchor>1849.Haabersti</anchor>
 </item>
 
 <item>
 <title>План города Ревеля. По Ревельской крепости.</title>
-<author></author>
-<guid>tla=149-4-22a</guid>
-<link>http://www.biblioserver.com/linnaarhiiv/index.php?m=search&amp;ftype=data&amp;q=149-4-22a</link>
+<author>Georg Gustav Storch</author>
+<guid>ra.ee=TLA.149.4.22a leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=70640</link>
+<link>http://www.tarkvarastuudio.ee/tallinn_linnaarhiiv/149-4-22a.htm</link>
 <pubDate>Sun, 20 Aug 1848 00:00:00 +0000</pubDate>
 <anchor>1848.Vanalinn</anchor>
 </item>
 
 <item>
 <title>Geometrischer Plan von den Hofs Ländereien der Güter Nehat und Faeht.</title>
-<author>Georg Gustav Storch</author>
-<guid>tla=149-4-329</guid>
-<link>http://www.biblioserver.com/linnaarhiiv/index.php?m=search&amp;ftype=data&amp;q=149-4-329</link>
+<author>Georg Gustav Storch, Gabler, Schellbach</author>
+<guid>ra.ee=TLA.149.4.329 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=71432</link>
+<link>http://www.tarkvarastuudio.ee/tallinn_linnaarhiiv/149-4-329.htm</link>
 <pubDate>Tue, 20 Aug 1839 00:00:00 +0000</pubDate>
 </item>
 

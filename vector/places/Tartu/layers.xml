@@ -12,7 +12,8 @@
  "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140047&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "digar": {"h":"Eesti rahvusraamatukogu digitaalarhiiv", "l":"DIGAR", "t":"_blank", "U":"http://www.digar.ee/arhiiv/et/pildimaterjal?id=693"},
  "tyr": {"h":"Tartu Ülikooli Raamatukogu vanad kaardid", "l":"TÜ vanad kaardid", "t":"_blank", "U":"http://dspace.utlib.ee/dspace/handle/10062/22/browse?order=ASC&rpp=20&sort_by=2&etal=-1&offset=120&type=dateissued"},
- "at": {"h":"Ajaloolise Tartu kaardid", "l":"Ajalooline Tartu", "t":"_blank", "U":"http://www.tartu.ee/vaateid_vanast_Tartust/rakendus/tartu_kaardid.swf"}
+ "at": {"h":"Ajaloolise Tartu kaardid", "l":"Ajalooline Tartu", "t":"_blank", "U":"http://www.tartu.ee/vaateid_vanast_Tartust/rakendus/tartu_kaardid.swf"},
+ "supilinn": {"h":"Supilinn 17.-21. sajandi linnakaartidel ja -plaanidel", "l":"Supilinna kujunemine", "t":"_blank", "U":"http://www.ttu.ee/public/t/tartu-kolledz/Acta_2_Supilinn_Mart_Hiob.pdf"}
 }
 }]]></json>
   <layer bounds="26.65583991678161,58.33714636136231,26.79297546665623,58.40912076248009" type="tms" year="1978" />

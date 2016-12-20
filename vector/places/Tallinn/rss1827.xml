@@ -11,7 +11,7 @@
 <description></description>
 <guid>ra.ee=EAA.2072.2.5</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=5306</link>
-<link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/002/0000005/eaa2072_002_0000005_00000_k.tif&amp;wid=1748&amp;hei=2480&amp;qlt=100&amp;cvt=jpeg</link>
+<!-- <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/002/0000005/eaa2072_002_0000005_00000_k.tif&amp;wid=1748&amp;hei=2480&amp;qlt=100&amp;cvt=jpeg</link> -->
 <pubDate>Mon, 01 Jan 1827 00:00:00 +0000</pubDate>
 </item>
 
@@ -29,21 +29,23 @@
 
 <item>
 <title>Geometrische Charte von Ziegelkoppel und den dazu gehörien Inseln Gross- und Klein Carls.</title>
-<author></author>
-<guid>tla=149-4-246</guid>
+<author>C. Jacoby</author>
+<guid>ra.ee=TLA.149.4.246 leht 1</guid>
 <pubDate>Sat, 01 Jan 1820 00:00:00 +0000</pubDate>
 <legends></legends>
-<link>http://www.biblioserver.com/linnaarhiiv/index.php?m=search&amp;ftype=data&amp;q=149-4-246</link>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=71060</link>
+<link>http://www.tarkvarastuudio.ee/tallinn_linnaarhiiv/149-4-246.htm</link>
 <anchor>1820.Kopli</anchor>
 </item>
 
 <item>
 <title>План Императорского Екатеринтальского дворца.</title>
-<author></author>
-<guid>tla=149-5-2020</guid>
+<author>A. Mikvic, P. Päts, E. Volmüller</author>
+<guid>ra.ee=TLA.149.5.2020 leht 1</guid>
 <pubDate>Thu, 01 Jan 1829 00:00:00 +0000</pubDate>
 <legends></legends>
-<link>http://www.biblioserver.com/linnaarhiiv/index.php?m=search&amp;ftype=data&amp;q=149-5-2020</link>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=74544</link>
+<link>http://www.tarkvarastuudio.ee/tallinn_linnaarhiiv/149-5-2020.htm</link>
 <anchor>1829.Kadriorg</anchor>
 </item>
 
