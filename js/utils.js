@@ -309,7 +309,7 @@ vlUtils.getURLs = function(urlKeys, data, jsonConf) {
     locUrl = vlUtils.mergeHashes({},jsonConf.urls[urlKeys[urlKey]]);
     if('flags' in locData) {
       if(locData.flags.indexOf('useIcon') > -1 && 'icon' in locUrl) {
-        locUrl.l = '<img src="' + locUrl.icon + '" border="0"/>';
+        locUrl.l = '<img src="' + locUrl.icon + '" class="popupicon"/>';
       }
     }
     

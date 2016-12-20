@@ -132,3 +132,8 @@ body .bodyContent {
 .olFramedCloudPopupContent ol {
     padding: 0;
 }
+
+.popupicon {
+  border-image-width: 0;
+  vertical-align: middle;
+}
