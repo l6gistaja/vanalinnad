@@ -1,2 +1,2 @@
-2016-12-10 21:32:16+02:00; 50 files; 392K ../raster/places/Haapsalu/1683
-2016-12-10 21:32:18+02:00; 36 files; 336K ../raster/places/Haapsalu/1683
+2016-12-27 22:15:25+02:00; 50 files; 392K ../raster/places/Haapsalu/1683
+2016-12-27 22:15:27+02:00; 36 files; 336K ../raster/places/Haapsalu/1683

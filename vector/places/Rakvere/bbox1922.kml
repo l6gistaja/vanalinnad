@@ -14,12 +14,12 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.32292339388788,59.32332957878050,26.39209254489585,59.38828763925906</value></Data>
-<Data name="montage"><value>yes</value></Data>
 <Data name="zmin"><value>12</value></Data>
-<Data name="maps"><value>1922.k2,1922.k1</value></Data>
 <Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Rakvere/composed/1922/</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>26.32292339388788,59.32332957878050,26.39209254489585,59.38828763925906</value></Data>
+<Data name="maps"><value>1922.k2,1922.k1</value></Data>
+<Data name="montage"><value>yes</value></Data>
 
 </ExtendedData>
 
