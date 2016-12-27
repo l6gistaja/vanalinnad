@@ -77,7 +77,7 @@ if(!exists $opts{'r'}) {
     $cmd = 'gdal_translate '.$c{'filesrcimg'}.' '.$c{'filegeoref'}.' -of GTiff '.$gcp;
     sheller($cmd);
 
-    $cmd = 'gdalwarp -srcnodata "0 0 0" -dstnodata "255 255 255" '.$c{'filegeoref'}.' '.$c{'filewarp'};
+    $cmd = 'gdalwarp -dstnodata "255 255 255" '.$c{'filegeoref'}.' '.$c{'filewarp'};
     sheller($cmd);
     $cmd = 'rm -rf '.$c{'dirraster'};
     sheller($cmd);
