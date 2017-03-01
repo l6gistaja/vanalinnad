@@ -15,19 +15,19 @@
 <Placemark id="gcp1807W.5"><name>1807W #5</name><description>6580 3731</description><Point><coordinates>24.512499466732397,58.37642604556465</coordinates></Point></Placemark>
 <Placemark id="gcp1807W.6"><name>1807W #6</name><description>3140 4130</description><Point><coordinates>24.48973287661334,58.38351348649027</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1807N"><name>1807N</name><LineString><coordinates>24.46272192438328,58.38857619744812 24.46272192438328,58.42140362607764 24.51698069027335,58.42140362607764 24.51698069027335,58.38857619744812 24.46272192438328,58.38857619744812</coordinates></LineString></Placemark>
-<Placemark id="gcp1807N.1"><name>1807N #1</name><description>3814 7294</description><Point><coordinates>24.49761588607888,58.391304468710985</coordinates></Point></Placemark>
-<Placemark id="gcp1807N.2"><name>1807N #2</name><description>2009 7560</description><Point><coordinates>24.484290671693365,58.38994364120281</coordinates></Point></Placemark>
-<Placemark id="gcp1807N.3"><name>1807N #3</name><description>2961 6856</description><Point><coordinates>24.49083526168933,58.392957634779194</coordinates></Point></Placemark>
+<Placemark id="bbox.1807N"><name>1807N</name><LineString><coordinates>24.46721424533031,58.38851300037208 24.46721424533031,58.42185840757368 24.51770579826631,58.42185840757368 24.51770579826631,58.38851300037208 24.46721424533031,58.38851300037208</coordinates></LineString></Placemark>
+<Placemark id="gcp1807N.1"><name>1807N #1</name><description>3448 7179</description><Point><coordinates>24.495227365112402,58.391629375267115</coordinates></Point></Placemark>
+<Placemark id="gcp1807N.2"><name>1807N #2</name><description>6116 3220</description><Point><coordinates>24.515197952575278,58.4084405929693</coordinates></Point></Placemark>
+<Placemark id="gcp1807N.3"><name>1807N #3</name><description>621 6866</description><Point><coordinates>24.47325854232842,58.39256124589187</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.46088884371735,58.33617565996988,24.60884418051066,58.42140362607764</value></Data>
+<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Parnu/composed/1807/</value></Data>
 <Data name="maps"><value>1807E,1807W,1807N</value></Data>
-<Data name="zmin"><value>12</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1807/</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="bbox"><value>24.46088884371735,58.33617565996988,24.60884418051066,58.42185840757368</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 
 </ExtendedData>
 
