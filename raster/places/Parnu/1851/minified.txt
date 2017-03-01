@@ -1,2 +1,0 @@
-2015-01-28 23:09:41+02:00; 505 files; 3.8M ../raster/places/Parnu/1851
-2015-01-28 23:10:00+02:00; 183 files; 2.5M ../raster/places/Parnu/1851

@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>24.46273004986841,58.35499248907629 24.46273004986841,58.39970024503695 24.57321721906158,58.39970024503695 24.57321721906158,58.35499248907629 24.46273004986841,58.35499248907629</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>874 1643</description><Point><coordinates>24.529267301893686,58.381994421467134</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>386 1530</description><Point><coordinates>24.517165174818835,58.37482791457935</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>564 748</description><Point><coordinates>24.495943537093094,58.385065335920906</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1851"><name>1851</name><LineString><coordinates>24.46285809351399,58.35497745665719 24.46285809351399,58.39947996227777 24.57338225735478,58.39947996227777 24.57338225735478,58.35497745665719 24.46285809351399,58.35497745665719</coordinates></LineString></Placemark>
+<Placemark id="gcp1851.1"><name>1851 #1</name><description>9586 796</description><Point><coordinates>24.529267301893686,58.381994421467134</coordinates></Point></Placemark>
+<Placemark id="gcp1851.2"><name>1851 #2</name><description>8922 3662</description><Point><coordinates>24.517165174818835,58.37482791457935</coordinates></Point></Placemark>
+<Placemark id="gcp1851.3"><name>1851 #3</name><description>4362 2614</description><Point><coordinates>24.495943537093094,58.385065335920906</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1851.N"><name>1851.N</name><LineString><coordinates>24.46228337915586,58.38409156434098 24.46228337915586,58.42120742558803 24.52439818406446,58.42120742558803 24.52439818406446,58.38409156434098 24.46228337915586,58.38409156434098</coordinates></LineString></Placemark>
+<Placemark id="gcp1851.N.1"><name>1851.N #1</name><description>3952 6060</description><Point><coordinates>24.495227365112402,58.391629375267115</coordinates></Point></Placemark>
+<Placemark id="gcp1851.N.2"><name>1851.N #2</name><description>4102 1276</description><Point><coordinates>24.515197952575278,58.4084405929693</coordinates></Point></Placemark>
+<Placemark id="gcp1851.N.3"><name>1851.N #3</name><description>2315 6290</description><Point><coordinates>24.48342235159394,58.39408028279786</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1851,1851.N</value></Data>
+<Data name="bbox"><value>24.46228337915586,58.35497745665719,24.57338225735478,58.42120742558803</value></Data>
+<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Parnu/composed/1851/</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>

@@ -5,14 +5,28 @@
 <link></link>
 <language></language>
 <copyright>0</copyright>
+
 <item>
 <title>Charte von der Kreisstadt Pernau</title>
-<author>C. L. Braesch</author>
+<author>C. L. Braesch, Jonas Fowelin</author>
 <description>Lk./p. 164: Raid, Tõnu; Suurmaa, Lauri; Hurt, Kerli; Kirkmann, Mari-Ly; Tuch, Boris. Eesti linnade plaanid 1584-2011 = Maps of the towns of Estonia = Pläne der estnischen Städte = Планы городов Эстонии (и Санкт-Петербурга и Риги). Tallinn, Grenader, 2013. &amp;gt;&amp;gt; Eesti Ajalooarhiiv, f 298-2-18.</description>
-<guid>isbn=9789949512096</guid>
+<guid>ra.ee=EAA.298.2.18 leht 1;isbn=9789949512096</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=26005</link>
 <link>http://www.ester.ee/record=b2923516*est</link>
 <pubDate>Wed, 01 Jan 1851 00:00:00 +0000</pubDate>
 <legends></legends>
 </item>
+
+<item>
+<title>Charte von der Neuen Eintheilung des Dorfes Bremerseite.</title>
+<author></author>
+<description></description>
+<guid>ra.ee=EAA.3724.5.1589 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=19200</link>
+<pubDate>Wed, 01 Jan 1851 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1851.N</anchor>
+</item>
+
 </channel>
 </rss>
