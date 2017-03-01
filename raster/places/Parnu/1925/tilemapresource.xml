@@ -3,8 +3,8 @@
 	  <Title>Parnu 1925</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="58.31278927473224" miny="24.42804586693599" maxx="58.42734365975134" maxy="24.67064838777566"/>
-	  <Origin x="58.31278927473224" y="24.42804586693599"/>
+	  <BoundingBox minx="58.34254670479275" miny="24.44692678637274" maxx="58.42734365974835" maxy="24.62712647410336"/>
+	  <Origin x="58.34254670479275" y="24.44692678637274"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="12" units-per-pixel="38.21851413574219" order="12"/>

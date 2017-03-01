@@ -1,2 +1,2 @@
-2015-05-03 01:27:29+03:00; 2512 files; 18M ../raster/places/Parnu/1925
-2015-05-03 01:29:05+03:00; 637 files; 11M ../raster/places/Parnu/1925
+2017-03-01 23:20:45+02:00; 1410 files; 13M ../raster/places/Parnu/1925
+2017-03-01 23:21:31+02:00; 465 files; 8.6M ../raster/places/Parnu/1925
