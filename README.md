@@ -66,7 +66,7 @@ If not already installed, ```apt-get install wget``` .
 License
 -------
 
-Copyright 2013-2016, juks at alkohol ee. All rights reserved.
+Copyright 2013-2017, juks at alkohol ee. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
