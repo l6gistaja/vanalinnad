@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.197X.W1"><name>197X.W1</name><LineString><coordinates>24.45025664073292,58.37599997385804 24.45025664073292,58.42164600339625 24.54962580143399,58.42164600339625 24.54962580143399,58.37599997385804 24.45025664073292,58.37599997385804</coordinates></LineString></Placemark>
+<Placemark id="gcp197X.W1.1"><name>197X.W1 #1</name><description>3535 1475</description><Point><coordinates>24.489090470885465,58.41301313696297</coordinates></Point></Placemark>
+<Placemark id="gcp197X.W1.2"><name>197X.W1 #2</name><description>11455 9493</description><Point><coordinates>24.529688386535486,58.37651125909804</coordinates></Point></Placemark>
+<Placemark id="gcp197X.W1.3"><name>197X.W1 #3</name><description>2065 8939</description><Point><coordinates>24.465606631610466,58.38719488230043</coordinates></Point></Placemark>
+
+<Placemark id="bbox.197X.W2"><name>197X.W2</name><LineString><coordinates>24.44558427536298,58.36603125714480 24.44558427536298,58.39256619941131 24.53524095403225,58.39256619941131 24.53524095403225,58.36603125714480 24.44558427536298,58.36603125714480</coordinates></LineString></Placemark>
+<Placemark id="gcp197X.W2.1"><name>197X.W2 #1</name><description>11044 1186</description><Point><coordinates>24.527310791855975,58.37791358016292</coordinates></Point></Placemark>
+<Placemark id="gcp197X.W2.2"><name>197X.W2 #2</name><description>2066 1121</description><Point><coordinates>24.46524682343653,58.38651672949945</coordinates></Point></Placemark>
+<Placemark id="gcp197X.W2.3"><name>197X.W2 #3</name><description>8211 2754</description><Point><coordinates>24.504964974528562,58.374783303648535</coordinates></Point></Placemark>
+
+<Placemark id="bbox.197X.E2"><name>197X.E2</name><LineString><coordinates>24.51897441042528,58.33932042008519 24.51897441042528,58.38095348144292 24.61125410816112,58.38095348144292 24.61125410816112,58.33932042008519 24.51897441042528,58.33932042008519</coordinates></LineString></Placemark>
+<Placemark id="gcp197X.E2.1"><name>197X.E2 #1</name><description>7948 7156</description><Point><coordinates>24.577121177823948,58.347488442629675</coordinates></Point></Placemark>
+<Placemark id="gcp197X.E2.2"><name>197X.E2 #2</name><description>24 2431</description><Point><coordinates>24.530794063718705,58.37203853980303</coordinates></Point></Placemark>
+<Placemark id="gcp197X.E2.3"><name>197X.E2 #3</name><description>2773 444</description><Point><coordinates>24.553667942197748,58.37678674809651</coordinates></Point></Placemark>
+
+<Placemark id="bbox.197X.E1"><name>197X.E1</name><LineString><coordinates>24.53269722498295,58.36892503180660 24.53269722498295,58.40818024857295 24.60093592506720,58.40818024857295 24.60093592506720,58.36892503180660 24.53269722498295,58.36892503180660</coordinates></LineString></Placemark>
+<Placemark id="gcp197X.E1.1"><name>197X.E1 #1</name><description>6575 2184</description><Point><coordinates>24.59038787200285,58.394106734546746</coordinates></Point></Placemark>
+<Placemark id="gcp197X.E1.2"><name>197X.E1 #2</name><description>616 1775</description><Point><coordinates>24.549629023810155,58.401218731050406</coordinates></Point></Placemark>
+<Placemark id="gcp197X.E1.3"><name>197X.E1 #3</name><description>2776 8005</description><Point><coordinates>24.553667942197748,58.37678674809651</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>24.44558427536298,58.33932042008519,24.61125410816112,58.42164600339625</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Parnu/composed/197X/</value></Data>
+<Data name="maps"><value>197X.E1,197X.E2,197X.W2,197X.W1</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmax"><value>16</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

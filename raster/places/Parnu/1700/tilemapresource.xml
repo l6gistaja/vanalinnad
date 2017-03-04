@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 	<TileMap version="1.0.0" tilemapservice="http://tms.osgeo.org/1.0.0">
-	  <Title>1700_georef.png</Title>
+	  <Title>Parnu 1700</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="58.37757217361992" miny="24.48257350740241" maxx="58.39314292502080" maxy="24.52620207029637"/>
-	  <Origin x="58.37757217361992" y="24.48257350740241"/>
+	  <BoundingBox minx="58.37757205803713" miny="24.48256236246187" maxx="58.39315983377916" maxy="24.52618063174386"/>
+	  <Origin x="58.37757205803713" y="24.48256236246187"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="12" units-per-pixel="38.21851413574219" order="12"/>

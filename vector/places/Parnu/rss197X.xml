@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title></title>
+<link></link>
+<language></language>
+<copyright>0</copyright>
+
+<item>
+<title>Pärnu linna maakasutuse plaan</title>
+<author>RPI Eesti Põllumajandusprojekt</author>
+<description>Maakasutuse alusplaan oli valmistatud 1970-1973.a., mõõdistatud topograafiliste plaanide andmetel 1974. Parandatud 1987.</description>
+<guid>ra.ee=EAA.2072.9.835 leht 1 foolio 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=229587</link>
+<pubDate>Mon, 01 Jan 197X 00:00:00 +0000</pubDate>
+<legends>legend197X.jpg</legends>
+<anchor>197X.W</anchor>
+</item>
+
+<item>
+<title>Pärnu linna maakasutuse plaan</title>
+<author>RPI Eesti Põllumajandusprojekt</author>
+<description>Maakasutuse alusplaan oli valmistatud 1970-1973.a., mõõdistatud topograafiliste plaanide andmetel 1974. Parandatud 1987.</description>
+<guid>ra.ee=EAA.2072.9.835 leht 2 foolio 2</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=276245</link>
+<pubDate>Mon, 01 Jan 197X 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>197X.E</anchor>
+</item>
+
+</channel>
+</rss>

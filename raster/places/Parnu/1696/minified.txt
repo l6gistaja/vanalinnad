@@ -1,2 +1,2 @@
-2014-10-18 16:27:02+03:00; 27 files; 284K ../raster/places/Parnu/1696
-2014-10-18 16:27:02+03:00; 23 files; 268K ../raster/places/Parnu/1696
+2017-03-04 20:34:43+02:00; 27 files; 276K ../raster/places/Parnu/1696
+2017-03-04 20:34:44+02:00; 23 files; 260K ../raster/places/Parnu/1696

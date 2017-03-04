@@ -451,3 +451,23 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000835/eaa2072_009_0000835_00002_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 2223 -b 2279 -o cache/deiip/197X_Parnu_E1.jpg
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000835/eaa2072_009_0000835_00002_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 2109 -b 2165 -o cache/deiip/197X_Parnu_E2.jpg
+
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=1644 ; Parnu 1800
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa1002/001/0001825/eaa1002_001_0001825_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 384 -b 407 -o cache/deiip/1800_Parnu.jpg
+
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=19192 ; Parnu 1767
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/005/0001585/eaa3724_005_0001585_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1221 -b 1257 -o cache/deiip/1767_Parnu.jpg
+
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=229193 : Parnu 1700
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/saaga/estica/kaardid/lva6828/004/0000545/lva6828_004_0000545_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 667 -b 695 -o cache/deiip/1700_Parnu.jpg
+
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=229192 : Parnu 1696
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/saaga/estica/kaardid/lva6828/004/0000544/lva6828_004_0000544_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 725 -b 753 -o cache/deiip/1696_Parnu.jpg
+
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=229196 : Parnu 1640
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/saaga/estica/kaardid/lva6828/004/0000549/lva6828_004_0000549_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 1015 -b 1048 -o cache/deiip/1640_Parnu.jpg
