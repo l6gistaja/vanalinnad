@@ -471,3 +471,17 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/s
 # http://www.ra.ee/kaardid/index.php/et/map/view?id=229196 : Parnu 1640
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/saaga/estica/kaardid/lva6828/004/0000549/lva6828_004_0000549_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 1015 -b 1048 -o cache/deiip/1640_Parnu.jpg
+
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=225123 ; Viljandi 1925
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/era0031/003/0007422/era0031_003_0007422_00002_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1056 -b 1088 -o cache/deiip/1925_Viljandi.jpg
+
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=26034 ; Viljandi 1900_Viljandi
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0298/002/0000004/eaa0298_002_0000004_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 374 -b 395 -o cache/deiip/1900_Viljandi.jpg
+
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=17232 ; Viljandi 1875
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0308/006/0000366/eaa0308_006_0000366_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 704 -b 735 -o cache/deiip/1875_Viljandi.jpg
+
+# dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg

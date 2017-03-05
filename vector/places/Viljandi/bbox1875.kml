@@ -2,11 +2,11 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1875"><name>1875</name><LineString><coordinates>25.59431960527285,58.35690257205871 25.59431960527285,58.36924654891270 25.62928836644491,58.36924654891270 25.62928836644491,58.35690257205871 25.59431960527285,58.35690257205871</coordinates></LineString></Placemark>
-<Placemark id="gcp1875.1"><name>1875 #1</name><description>154 119</description><Point><coordinates>25.597448509224876,58.36709948701214</coordinates></Point></Placemark>
-<Placemark id="gcp1875.2"><name>1875 #2</name><description>591 302</description><Point><coordinates>25.606396358498532,58.365366326851</coordinates></Point></Placemark>
-<Placemark id="gcp1875.3"><name>1875 #3</name><description>235 645</description><Point><coordinates>25.599551361092633,58.36146077740624</coordinates></Point></Placemark>
-<Placemark id="gcp1875.4"><name>1875 #4</name><description>98 480</description><Point><coordinates>25.5968476944059,58.363171618820985</coordinates></Point></Placemark>
+<Placemark id="bbox.1875"><name>1875</name><LineString><coordinates>25.59433603907578,58.35688799716749 25.59433603907578,58.36927160463507 25.62916892476693,58.36927160463507 25.62916892476693,58.35688799716749 25.59433603907578,58.35688799716749</coordinates></LineString></Placemark>
+<Placemark id="gcp1875.1"><name>1875 #1</name><description>518 397</description><Point><coordinates>25.597448509224876,58.36709948701214</coordinates></Point></Placemark>
+<Placemark id="gcp1875.2"><name>1875 #2</name><description>1988 1016</description><Point><coordinates>25.606396358498532,58.365366326851</coordinates></Point></Placemark>
+<Placemark id="gcp1875.3"><name>1875 #3</name><description>796 2168</description><Point><coordinates>25.599551361092633,58.36146077740624</coordinates></Point></Placemark>
+<Placemark id="gcp1875.4"><name>1875 #4</name><description>329 1611</description><Point><coordinates>25.5968476944059,58.363171618820985</coordinates></Point></Placemark>
 
 <Placemark id="bbox.1879"><name>1879</name><LineString><coordinates>25.56891063273372,58.35000483051621 25.56891063273372,58.37451693252563 25.63996075152075,58.37451693252563 25.63996075152075,58.35000483051621 25.56891063273372,58.35000483051621</coordinates></LineString></Placemark>
 <Placemark id="gcp1879.1"><name>1879 #1</name><description>2734 646</description><Point><coordinates>25.59744785446173,58.367094600567725</coordinates></Point></Placemark>
@@ -15,12 +15,12 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>25.56891063273372,58.35000483051621,25.63996075152075,58.37451693252563</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 <Data name="maps"><value>1879,1875</value></Data>
 <Data name="zmin"><value>12</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Viljandi/composed/1875/</value></Data>
+<Data name="bbox"><value>25.56891063273372,58.35000483051621,25.63996075152075,58.37451693252563</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Viljandi/composed/1875/</value></Data>
 
 </ExtendedData>
 

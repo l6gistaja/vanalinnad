@@ -11,18 +11,18 @@
 <Placemark id="gcp1926.6"><name>1926 #6</name><description>3912 2086</description><Point><coordinates>25.610945384988522,58.3698678650012</coordinates></Point></Placemark>
 <Placemark id="gcp1926.7"><name>1926 #7</name><description>4764 2913</description><Point><coordinates>25.621138963012207,58.36450501937931</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1925"><name>1925</name><LineString><coordinates>25.57761895788962,58.33834849926578 25.57761895788962,58.36443175570737 25.63415803173989,58.36443175570737 25.63415803173989,58.33834849926578 25.57761895788962,58.33834849926578</coordinates></LineString></Placemark>
-<Placemark id="gcp1925.1"><name>1925 #1</name><description>731 1031</description><Point><coordinates>25.603422214202805,58.345755835634606</coordinates></Point></Placemark>
-<Placemark id="gcp1925.2"><name>1925 #2</name><description>233 455</description><Point><coordinates>25.586190107833136,58.3562003795606</coordinates></Point></Placemark>
-<Placemark id="gcp1925.3"><name>1925 #3</name><description>1578 129</description><Point><coordinates>25.633496153289386,58.36191808153516</coordinates></Point></Placemark>
+<Placemark id="bbox.1925"><name>1925</name><LineString><coordinates>25.57839260653184,58.33840764572473 25.57839260653184,58.36431331133413 25.63409855388887,58.36431331133413 25.63409855388887,58.33840764572473 25.57839260653184,58.33840764572473</coordinates></LineString></Placemark>
+<Placemark id="gcp1925.1"><name>1925 #1</name><description>3424 4974</description><Point><coordinates>25.603422214202805,58.345755835634606</coordinates></Point></Placemark>
+<Placemark id="gcp1925.2"><name>1925 #2</name><description>1023 2176</description><Point><coordinates>25.586190107833136,58.3562003795606</coordinates></Point></Placemark>
+<Placemark id="gcp1925.3"><name>1925 #3</name><description>7517 620</description><Point><coordinates>25.633496153289386,58.36191808153516</coordinates></Point></Placemark>
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>25.56521714915300,58.33834849926578,25.63415803173989,58.38430757356591</value></Data>
+<Data name="bbox"><value>25.56521714915300,58.33840764572473,25.63409855388887,58.38430757356591</value></Data>
 <Data name="maps"><value>1925,1926</value></Data>
+<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Viljandi/composed/1926/</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Viljandi/composed/1926/</value></Data>
 <Data name="montage"><value>yes</value></Data>
 
 </ExtendedData>

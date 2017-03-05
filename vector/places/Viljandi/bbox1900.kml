@@ -2,9 +2,9 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 <Placemark id="bbox"><name></name><LineString><coordinates>25.58483237255148,58.35653643791246 25.58483237255148,58.36880344137576 25.61931546149097,58.36880344137576 25.61931546149097,58.35653643791246 25.58483237255148,58.35653643791246</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>894 744</description><Point><coordinates>25.5995684788515,58.361452079807215</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>669 104</description><Point><coordinates>25.597465626983738,58.36710204481417</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>1262 223</description><Point><coordinates>25.606392018585584,58.365368884778626</coordinates></Point></Placemark>
+<Placemark id="gcp.1"><name>#1</name><description>2325 1930</description><Point><coordinates>25.5995684788515,58.361452079807215</coordinates></Point></Placemark>
+<Placemark id="gcp.2"><name>#2</name><description>1736 271</description><Point><coordinates>25.597465626983738,58.36710204481417</coordinates></Point></Placemark>
+<Placemark id="gcp.3"><name>#3</name><description>3282 577</description><Point><coordinates>25.606392018585584,58.365368884778626</coordinates></Point></Placemark>
 
 </Document>
 </kml>

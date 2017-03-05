@@ -3,8 +3,8 @@
 	  <Title>Viljandi 1900</Title>
 	  <Abstract></Abstract>
 	  <SRS>EPSG:900913</SRS>
-	  <BoundingBox minx="58.35653643791246" miny="25.58483237255148" maxx="58.36880344137576" maxy="25.61931546149097"/>
-	  <Origin x="58.35653643791246" y="25.58483237255148"/>
+	  <BoundingBox minx="58.35654523281420" miny="25.58484985594370" maxx="58.36881332673985" maxy="25.61875989428741"/>
+	  <Origin x="58.35654523281420" y="25.58484985594370"/>
 	  <TileFormat width="256" height="256" mime-type="image/jpeg" extension="jpg"/>
 	  <TileSets profile="mercator">
 	    <TileSet href="12" units-per-pixel="38.21851413574219" order="12"/>
