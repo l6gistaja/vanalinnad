@@ -484,4 +484,18 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0308/006/0000366/eaa0308_006_0000366_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 704 -b 735 -o cache/deiip/1875_Viljandi.jpg
 
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=229183 ; Voru 1912
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/saaga/estica/kaardid/lva6828/004/0000534/lva6828_004_0000534_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 744 -b 774 -o cache/deiip/1912_Voru.jpg
+
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=229182 ; Voru 1902
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/saaga/estica/kaardid/lva6828/004/0000533/lva6828_004_0000533_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 810 -b 839 -o cache/deiip/1902_Voru.jpg
+
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=211025 ; Voru 1785
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0291/001/0000131/eaa0291_001_0000131_00001_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 117 -b 129 -o cache/deiip/1785_Voru.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
+
+
