@@ -496,6 +496,10 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/s
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0291/001/0000131/eaa0291_001_0000131_00001_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 117 -b 129 -o cache/deiip/1785_Voru.jpg
 
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=29949 ; Narva 1927
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2110/001/0004813/eaa2110_001_0004813_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1462 -b 1495 -o cache/deiip/1927_Narva.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 
