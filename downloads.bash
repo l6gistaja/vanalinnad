@@ -500,6 +500,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2110/001/0004813/eaa2110_001_0004813_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1462 -b 1495 -o cache/deiip/1927_Narva.jpg
 
-# dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
+# Kuresaare 1935-1939
 
+dev/dezoomify.pl -u http://www.kuressaare.ee/uus/public/zoomify/vanadlinnakaardid_1_2000/ ; mv cache/dezoomify/result.jpg cache/deiip/1939_Kuresaare.jpg
+
+# dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 

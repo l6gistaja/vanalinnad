@@ -1,2 +1,0 @@
-2015-07-20 20:04:29+03:00; 159 files; 1.4M ../raster/places/Kuressaare/1941
-2015-07-20 20:04:37+03:00; 95 files; 1.2M ../raster/places/Kuressaare/1941
