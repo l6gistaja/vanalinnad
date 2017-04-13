@@ -4,6 +4,7 @@
 <title>DIGAR</title>
 <language>et</language>
 <copyright>0</copyright>
+
 <item>
 <title>Tallinna linna ja ümbruse plaan</title>
 <author>Jüri Kodres</author>
@@ -14,5 +15,15 @@
 <guid>isbn=9789949539284;nlib.ee=KTC 12.431</guid>
 <legends>legend1930b.jpg</legends>
 </item>
+
+<item>
+<title>Tondi - Mustamäe ümbruskonna plaan</title>
+<author>Frits Oja, S. Topograafia jaoskond</author>
+<link>http://www.digar.ee/viewer/et/nlib-digar:291049</link>
+<pubDate>Tue, 01 Jan 1929 00:00:00 +0000</pubDate>
+<guid>isbn=978-9949-598-13-7;ESTER=b1609039</guid>
+<legends></legends>
+</item>
+
 </channel>
 </rss>
