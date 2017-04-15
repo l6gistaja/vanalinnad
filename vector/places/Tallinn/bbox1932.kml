@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
+<kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
 <Placemark id="bbox.1932"><name>1932</name><LineString><coordinates>24.64521716876205,59.37023356142100 24.64521716876205,59.48979843148451 24.87538559228982,59.48979843148451 24.87538559228982,59.37023356142100 24.64521716876205,59.37023356142100</coordinates></LineString></Placemark>
@@ -7,20 +7,25 @@
 <Placemark id="gcp1932.2"><name>1932 #2</name><description>2882 8281</description><Point><coordinates>24.70852201972863,59.39211506103336</coordinates></Point></Placemark>
 <Placemark id="gcp1932.3"><name>1932 #3</name><description>8277 2129</description><Point><coordinates>24.82664650474401,59.46467469139371</coordinates></Point></Placemark>
 
-
 <Placemark id="bbox.1930.Nomme"><name>1930.Nomme</name><LineString><coordinates>24.61567772186019,59.35686913029861 24.61567772186019,59.39614424103214 24.72960298380337,59.39614424103214 24.72960298380337,59.35686913029861 24.61567772186019,59.35686913029861</coordinates></LineString></Placemark>
 <Placemark id="gcp1930.Nomme.1"><name>1930.Nomme #1</name><description>676 4696</description><Point><coordinates>24.625276980742605,59.36690629079265</coordinates></Point></Placemark>
 <Placemark id="gcp1930.Nomme.2"><name>1930.Nomme #2</name><description>4010 579</description><Point><coordinates>24.659040627821295,59.39148684554842</coordinates></Point></Placemark>
 <Placemark id="gcp1930.Nomme.3"><name>1930.Nomme #3</name><description>9226 1262</description><Point><coordinates>24.71540993247816,59.38859690435489</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1936.Valdeku"><name>1936.Valdeku</name><LineString><coordinates>24.66604254067994,59.33435788615269 24.66604254067994,59.37391533796539 24.77846110148817,59.37391533796539 24.77846110148817,59.33435788615269 24.66604254067994,59.33435788615269</coordinates></LineString></Placemark>
+<Placemark id="gcp1936.Valdeku.1"><name>1936.Valdeku #1</name><description>4690 1369</description><Point><coordinates>24.736869,59.363886</coordinates></Point></Placemark>
+<Placemark id="gcp1936.Valdeku.2"><name>1936.Valdeku #2</name><description>1270 4399</description><Point><coordinates>24.68521990821899,59.341706544457736</coordinates></Point></Placemark>
+<Placemark id="gcp1936.Valdeku.3"><name>1936.Valdeku #3</name><description>6800 2701</description><Point><coordinates>24.768675,59.354131</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.61567772186019,59.35686913029861,24.87538559228982,59.48979843148451</value></Data>
-<Data name="maps"><value>1932,1930.Nomme</value></Data>
-<Data name="zmin"><value>10</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
 <Data name="montage"><value>yes</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1932/</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="bbox"><value>24.61567772186019,59.33435788615269,24.87538559228982,59.48979843148451</value></Data>
+<Data name="maps"><value>1932,1930.Nomme,1936.Valdeku</value></Data>
+<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Tallinn/composed/1932/</value></Data>
+
 </ExtendedData>
 
 </Document>

@@ -1,2 +1,2 @@
-2015-09-02 14:56:07+03:00; 127 files; 880K ../raster/places/Tallinn/1634
-2015-09-02 14:56:13+03:00; 55 files; 592K ../raster/places/Tallinn/1634
+2017-04-16 00:49:13+03:00; 127 files; 868K ../raster/places/Tallinn/1634
+2017-04-16 00:49:17+03:00; 55 files; 580K ../raster/places/Tallinn/1634
