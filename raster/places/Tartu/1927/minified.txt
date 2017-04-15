@@ -1,2 +1,0 @@
-2015-04-04 23:23:21+03:00; 560 files; 6.8M ../raster/places/Tartu/1927
-2015-04-04 23:23:47+03:00; 370 files; 6.0M ../raster/places/Tartu/1927
