@@ -2,7 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1924.Nomme"><name>1924.Nomme</name><LineString><coordinates>24.62634111354242,59.33437930948312 24.62634111354242,59.39987589147979 24.77651545943955,59.39987589147979 24.77651545943955,59.33437930948312 24.62634111354242,59.33437930948312</coordinates></LineString></Placemark>
+<Placemark id="bbox.1924.Nomme"><name>1924.Nomme</name><LineString><coordinates>24.62634111354242,59.29993023723241 24.62634111354242,59.39987589147979 24.77651545943955,59.39987589147979 24.77651545943955,59.29993023723241 24.62634111354242,59.29993023723241</coordinates></LineString></Placemark>
 <Placemark id="gcp1924.Nomme.1"><name>1924.Nomme #1</name><description>139 164</description><Point><coordinates>24.630723259278057,59.39723120618077</coordinates></Point></Placemark>
 <Placemark id="gcp1924.Nomme.2"><name>1924.Nomme #2</name><description>3202 457</description><Point><coordinates>24.72701456291147,59.39249543562278</coordinates></Point></Placemark>
 <Placemark id="gcp1924.Nomme.3"><name>1924.Nomme #3</name><description>1447 3959</description><Point><coordinates>24.672145036457266,59.336039876131096</coordinates></Point></Placemark>
@@ -29,14 +29,19 @@
 <Placemark id="gcp1926.2"><name>1926 #2</name><description>4674 5099</description><Point><coordinates>24.71704113052292,59.40302905361027</coordinates></Point></Placemark>
 <Placemark id="gcp1926.3"><name>1926 #3</name><description>1594 3379</description><Point><coordinates>24.601427193145213,59.43593157328072</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1924.Aegna"><name>1924.Aegna</name><LineString><coordinates>24.72458745545477,59.49866842624986 24.72458745545477,59.60260778561127 24.92721151553036,59.60260778561127 24.92721151553036,59.49866842624986 24.72458745545477,59.49866842624986</coordinates></LineString></Placemark>
+<Placemark id="gcp1924.Aegna.1"><name>1924.Aegna #1</name><description>771 1110</description><Point><coordinates>24.752473,59.580185</coordinates></Point></Placemark>
+<Placemark id="gcp1924.Aegna.2"><name>1924.Aegna #2</name><description>3032 5236</description><Point><coordinates>24.834563,59.501504</coordinates></Point></Placemark>
+<Placemark id="gcp1924.Aegna.3"><name>1924.Aegna #3</name><description>4879 4459</description><Point><coordinates>24.900126,59.516843</coordinates></Point></Placemark>
+
 <ExtendedData>
 <Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Tallinn/composed/1924/</value></Data>
-<Data name="montage"><value>yes</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="zmin"><value>10</value></Data>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.54070729522974,59.29993023723241,24.92738605638693,59.50069751088835</value></Data>
-<Data name="maps"><value>1924.Kurna,1924.Nomme,1926,1926.Nomme,1924</value></Data>
+<Data name="bbox"><value>24.54070729522974,59.29993023723241,24.92738605638693,59.60260778561127</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>1924.Aegna,1924.Kurna,1924.Nomme,1926,1926.Nomme,1924</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>10</value></Data>
 
 </ExtendedData>
 
