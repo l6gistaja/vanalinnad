@@ -17,14 +17,29 @@
 <Placemark id="gcp1977.Paljassaare.2"><name>1977.Paljassaare #2</name><description>4677 6765</description><Point><coordinates>24.666213230917315,59.45895770522303</coordinates></Point></Placemark>
 <Placemark id="gcp1977.Paljassaare.3"><name>1977.Paljassaare #3</name><description>8553 5259</description><Point><coordinates>24.72045822603461,59.47163648441102</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1977.Pirita"><name>1977.Pirita</name><LineString><coordinates>24.77237560184676,59.45816595248279 24.77237560184676,59.51585344856882 24.95209914848670,59.51585344856882 24.95209914848670,59.45816595248279 24.77237560184676,59.45816595248279</coordinates></LineString></Placemark>
+<Placemark id="gcp1977.Pirita.1"><name>1977.Pirita #1</name><description>3446 6495</description><Point><coordinates>24.82514005949594,59.463707538517696</coordinates></Point></Placemark>
+<Placemark id="gcp1977.Pirita.2"><name>1977.Pirita #2</name><description>10952 5049</description><Point><coordinates>24.930990145416853,59.47685240444095</coordinates></Point></Placemark>
+<Placemark id="gcp1977.Pirita.3"><name>1977.Pirita #3</name><description>3182 79</description><Point><coordinates>24.817651331927433,59.51269963663532</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1977.Nomme"><name>1977.Nomme</name><LineString><coordinates>24.60417126437155,59.33081793951193 24.60417126437155,59.38747779186043 24.78433499470455,59.38747779186043 24.78433499470455,59.33081793951193 24.60417126437155,59.33081793951193</coordinates></LineString></Placemark>
+<Placemark id="gcp1977.Nomme.1"><name>1977.Nomme #1</name><description>923 6339</description><Point><coordinates>24.620852521089954,59.33570859692431</coordinates></Point></Placemark>
+<Placemark id="gcp1977.Nomme.2"><name>1977.Nomme #2</name><description>9896 1358</description><Point><coordinates>24.745121812267502,59.37636476456649</coordinates></Point></Placemark>
+<Placemark id="gcp1977.Nomme.3"><name>1977.Nomme #3</name><description>11814 6354</description><Point><coordinates>24.775133183626263,59.33879454109463</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1977.Kurna"><name>1977.Kurna</name><LineString><coordinates>24.78045097126230,59.33253019252336 24.78045097126230,59.39000845672440 24.95968259327637,59.39000845672440 24.95968259327637,59.33253019252336 24.78045097126230,59.33253019252336</coordinates></LineString></Placemark>
+<Placemark id="gcp1977.Kurna.1"><name>1977.Kurna #1</name><description>10865 289</description><Point><coordinates>24.934867,59.387411</coordinates></Point></Placemark>
+<Placemark id="gcp1977.Kurna.2"><name>1977.Kurna #2</name><description>1309 1229</description><Point><coordinates>24.799634079731195,59.37778854837745</coordinates></Point></Placemark>
+<Placemark id="gcp1977.Kurna.3"><name>1977.Kurna #3</name><description>4040 6623</description><Point><coordinates>24.841029036003487,59.337173758598745</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="bbox"><value>24.59615760198596,59.38326568827013,24.95663455308963,59.51304064733023</value></Data>
-<Data name="zmin"><value>10</value></Data>
-<Data name="maps"><value>1977.Lasnamae,1977.Paljassaare,1977</value></Data>
-<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Tallinn/composed/1977/</value></Data>
+<Data name="bbox"><value>24.59615760198596,59.33081793951193,24.95968259327637,59.51585344856882</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>10</value></Data>
 <Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1977.Kurna,1977.Nomme,1977.Lasnamae,1977.Paljassaare,1977.Pirita,1977</value></Data>
+<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Tallinn/composed/1977/</value></Data>
 
 </ExtendedData>
 
