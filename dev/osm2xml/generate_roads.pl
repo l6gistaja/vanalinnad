@@ -51,6 +51,15 @@ for($i=0; $i<$len-1; $i++) {
   }
   
   $osmfile = $file;
+  if(scalar(@ARGV) > 1) {
+      push(@bash, "echo '".$bboxs."Filter OSM with ".$ARGV[1]."'");
+      push(@bash, 'osmfilter '
+      .$file
+      .' --keep="'.$ARGV[1].'" > '
+      .$file.'f');
+      $osmfile = $file.'f';
+  }
+  
   $file = $filebase.'.gml';
   push(@bash, "echo '".$bboxs."Convert OSM 2 GML'");
   if(!(-e $file)) {
