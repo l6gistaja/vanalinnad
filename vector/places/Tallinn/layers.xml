@@ -46,7 +46,8 @@
   <layer name="⑤ 2" file="roads2min.kml" maxres="12" type="roads" />
   <layer name="⑤ 3" file="roads3min.kml" maxres="14" type="roads" />
   <layer name="⑤ 4" file="roads4min.kml" maxres="15" type="roads" />
+  <layer bounds="" type="tms" year="" />
   <maxzoom>16</maxzoom>
   <minzoom>10</minzoom>
-  <roadbounds w="24.541477" s="59.334099" e="24.986866"/>
+  <roadbounds e="24.986866" s="59.334099" w="24.541477" />
 </vanalinnadlayers>
