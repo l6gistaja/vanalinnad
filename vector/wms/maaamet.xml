@@ -16,7 +16,8 @@
   <layer type="wms" year="1930-1944" layername="kk1940"/>
   <layer type="wms" year="1935-1939" layername="ew_50T"/>
   <layer type="wms" year="1923-1935" layername="ew_25T"/>
-  <layer type="wms" year="1894-1915" layername="verstakaart"/>
+  <layer type="wms" year="1894-1922" layername="yheverstakaart"/>
+  <layer type="wms" year="1866-1915" layername="kolmeverstakaart"/>
   <layer type="wms" year="põhimnt" layername="HYB_pohimnt" format="image/png" transparent="true"/>
   <!-- layer type="wms" year="tugimnt" layername="HYB_tugimnt" format="image/png" transparent="true"/ -->
   <layer type="wms" year="kõrvalmnt" layername="HYB_korvalmnt" format="image/png" transparent="true"/>
