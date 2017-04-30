@@ -9,6 +9,17 @@
 }]]></json>
   <layer type="wms" year="@NOW@" layername="pohi_vr2" wmsurl="http://kaart.maaamet.ee/wms/alus?"/>
   <layer type="wms" year="Ortofoto" layername="of10000" wmsurl="http://kaart.maaamet.ee/wms/alus?"/>
+  <layer type="wms" year="2016" layername="pk_vr2016"/>
+  <layer type="wms" year="2015" layername="pk_vr2015"/>
+  <layer type="wms" year="2014" layername="pk_vr2014"/>
+  <layer type="wms" year="2013" layername="pk_vr2013"/>
+  <layer type="wms" year="2012" layername="pk_vr2012"/>
+  <layer type="wms" year="2011" layername="pk_vr2011"/>
+  <layer type="wms" year="2010" layername="pk_vr2010"/>
+  <layer type="wms" year="2009" layername="pk_vr2009"/>
+  <!-- layer type="wms" year="1997-2003" layername="ekj_50T"/ -->
+  <layer type="wms" year="1996-2007" layername="pohi_vr"/>
+  <!-- layer type="wms" year="1994-1998" layername="vanaBaaskaart"/ -->
   <layer type="wms" year="1978-1989" layername="lehman"/>
   <layer type="wms" year="1963-1989" layername="nltopo_c63_25T_uuem"/>
   <layer type="wms" year="1946-1989" layername="nltopo_o42_10T"/>
@@ -28,3 +39,18 @@
   <!-- layer type="wms" year="yhesuunal" layername="HYB_tanavad_suunad" format="image/png" transparent="true"/ -->
   <minzoom>5</minzoom>
 </vanalinnadlayers>
+
+<!--
+	<Name>nltopo_c63_25T_uuem</Name>
+        <Title>NL c63 topo 1:25 000</Title>
+        <Name>nltopo_uuem_25T</Name>
+        <Title>NL o42 topo 1:25 000</Title>
+        <Name>nltopo_c63_25T_vanem</Name>
+        <Title>NL c63 topo 1:25 000</Title>
+	<Name>nltopo_keskmine_25T</Name>
+        <Title>NL o42 topo 1:25 000</Title>
+        <Name>nltopo_o42_10T</Name>
+        <Title>NL o42 topo 1:10 000</Title>
+        <Name>nltopo_c63_10T</Name>
+        <Title>NL c63 topo 1:10 000</Title>
+-->
