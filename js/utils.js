@@ -101,7 +101,7 @@ vlUtils.coordsPrompt = function(map, data) {
 	  var debugContent = {
 	    GCP: ' -gcp  ' + coords['EPSG:4326'].x + ' ' + coords['EPSG:4326'].y,
 	    GPX: '<wpt lon="' + coords['EPSG:4326'].x + '" lat="' + coords['EPSG:4326'].y + '"><name></name><desc></desc></wpt>',
-	    KML:'<Placemark id="gcp1"><Point><coordinates>' + coords['EPSG:4326'].x + ',' + coords['EPSG:4326'].y + '</coordinates></Point><name></name><description></description></Placemark>'
+	    KML:'<Placemark><Point><coordinates>' + coords['EPSG:4326'].x + ',' + coords['EPSG:4326'].y + '</coordinates></Point><name></name><description></description></Placemark>'
 	  };
 	  y = '<table class="coordsTable">';
 	  for(i in debugContent) {

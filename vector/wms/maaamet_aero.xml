@@ -1,0 +1,34 @@
+<vanalinnadlayers xmlns="http://juks.alkohol.ee/vanalinnad">
+  <bounds>300000,6300000,800000,6700000</bounds>
+  <defaultwmsurl>http://kaart.maaamet.ee/wms/ajalooline?</defaultwmsurl>
+  <defaultformat>image/jpeg</defaultformat>
+  <json><![CDATA[{
+"mapoptions": {"maxResolution":"auto","projection":"EPSG:3301","units":"m","numZoomLevels":11},
+"defaults": {"xy":[542291,6589062],"z":8},
+"info": "vector/wms/maaamet.html"
+}]]></json>
+  <layer type="wms" year="@NOW@m" layername="pohi_vr2" wmsurl="http://kaart.maaamet.ee/wms/alus?"/>
+  <layer type="wms" year="@NOW@" layername="of10000" wmsurl="http://kaart.maaamet.ee/wms/alus?"/>
+  <layer type="wms" year="2015" layername="of2015aero"/>
+  <layer type="wms" year="2014" layername="of2014aero"/>
+  <layer type="wms" year="2013" layername="of2013aero"/>
+  <layer type="wms" year="2012" layername="of2012aero"/>
+  <layer type="wms" year="2011" layername="of2011aero"/>
+  <layer type="wms" year="2010" layername="of2010aero"/>
+  <layer type="wms" year="2009" layername="of2009aero"/>
+  <layer type="wms" year="2008" layername="of2008aero"/>
+  <layer type="wms" year="2007" layername="of2007aero"/>
+  <layer type="wms" year="2005" layername="of2005"/>
+  <layer type="wms" year="2002" layername="of2002"/>
+  <layer type="wms" year="1994-2000" layername="of1994-2000_2k"/>
+  <layer type="wms" year="1993-2000" layername="of1993-2000_10k"/>
+  <layer type="wms" year="põhimnt" layername="HYB_pohimnt" format="image/png" transparent="true"/>
+  <!-- layer type="wms" year="tugimnt" layername="HYB_tugimnt" format="image/png" transparent="true"/ -->
+  <layer type="wms" year="kõrvalmnt" layername="HYB_korvalmnt" format="image/png" transparent="true"/>
+  <!-- layer type="wms" year="mnt_muu" layername="HYB_mnt_muu" format="image/png" transparent="true"/ -->
+  <layer type="wms" year="muu" layername="HYB_tee_muu" format="image/png" transparent="true"/>
+  <layer type="wms" year="peatän" layername="HYB_tanavad_pohi_1" format="image/png" transparent="true"/>
+  <layer type="wms" year="tänavad" layername="HYB_tanavad_10T" format="image/png" transparent="true"/>
+  <!-- layer type="wms" year="yhesuunal" layername="HYB_tanavad_suunad" format="image/png" transparent="true"/ -->
+  <minzoom>5</minzoom>
+</vanalinnadlayers>
