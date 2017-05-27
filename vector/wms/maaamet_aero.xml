@@ -7,7 +7,7 @@
 "defaults": {"xy":[542291,6589062],"z":8},
 "info": "vector/wms/maaamet.html"
 }]]></json>
-  <layer type="wms" year="@NOW@m" layername="pohi_vr2" wmsurl="http://kaart.maaamet.ee/wms/alus?"/>
+  <layer type="wms" year="map" layername="pohi_vr2" wmsurl="http://kaart.maaamet.ee/wms/alus?"/>
   <layer type="wms" year="@NOW@" layername="of10000" wmsurl="http://kaart.maaamet.ee/wms/alus?"/>
   <layer type="wms" year="2015" layername="of2015aero"/>
   <layer type="wms" year="2014" layername="of2014aero"/>

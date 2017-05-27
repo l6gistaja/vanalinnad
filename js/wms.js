@@ -14,7 +14,7 @@ function vlWms(inputParams){
   var xmlHandlerConf = function(request) {
     if(request.status == 200) {
       document.getElementById(inputParams.divMap).innerHTML
-        = '<center><a href="?"><h1>Error occured.<br/>Click here.</h1><img src="apple-touch-icon.png" border="0"/></a></center>';
+        = '<center><h1>Please wait...<br/><a href="?">Or click here.<br/><img src="apple-touch-icon.png" border="0"/></a></h1></center>';
       conf = vlUtils.xmlDoc2Hash(request.responseXML);
       jsonConf = JSON.parse(conf.json);
       isAtSite = 'site' in reqParams && reqParams['site'].match(/^[A-Z][A-Za-z-]*$/);
@@ -114,9 +114,9 @@ function vlWms(inputParams){
         links: ['googlestreetview','ajapaik','geohack','vanalinnad'],
         debug: 'debug' in reqParams
       };
-      if(!('draw' in reqParams)) { vlUtils.mapAddCoordsPromptCtl(map, clickData); }
       
-        if('draw' in reqParams) {
+      if(!('draw' in reqParams)) { vlUtils.mapAddCoordsPromptCtl(map, clickData); }
+      else {
 
             var lineLayer = new OpenLayers.Layer.Vector("DRAW",
                 {styleMap: vlUtils.mergeCustomStyleWithDefaults(jsonConf.olLayerStyles['roads'])});

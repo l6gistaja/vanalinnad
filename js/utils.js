@@ -101,7 +101,7 @@ vlUtils.coordsPrompt = function(map, data) {
 	  var debugContent = {
 	    GCP: ' -gcp  ' + coords['EPSG:4326'].x + ' ' + coords['EPSG:4326'].y,
 	    GPX: '<wpt lon="' + coords['EPSG:4326'].x + '" lat="' + coords['EPSG:4326'].y + '"><name></name><desc></desc></wpt>',
-	    KML:'<Placemark><Point><coordinates>' + coords['EPSG:4326'].x + ',' + coords['EPSG:4326'].y + '</coordinates></Point><name></name><description></description></Placemark>'
+	    KML: '<Placemark><Point><coordinates>' + coords['EPSG:4326'].x + ',' + coords['EPSG:4326'].y + '</coordinates></Point><name></name><description></description></Placemark>'
 	  };
 	  y = '<table class="coordsTable">';
 	  for(i in debugContent) {
@@ -353,7 +353,7 @@ vlUtils.getURLs = function(urlKeys, data, jsonConf) {
 
 vlUtils.mapDispatcher = function(initConf) {
   var reqParams = OpenLayers.Util.getParameters();
-  if('wms' in reqParams && reqParams.wms.match(/^[a-z]+$/)) {
+  if('wms' in reqParams && reqParams.wms.match(/^[a-z_]+$/)) {
     return new vlWms(initConf);
   } else {
     return new vlMap(initConf);
