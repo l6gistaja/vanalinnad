@@ -29,13 +29,13 @@
   <layer type="wms" year="1923-1935" layername="ew_25T"/>
   <layer type="wms" year="1894-1922" layername="yheverstakaart"/>
   <layer type="wms" year="1866-1915" layername="kolmeverstakaart"/>
-  <layer type="wms" year="põhimnt" layername="HYB_pohimnt" format="image/png" transparent="true"/>
+  <layer type="wms" year="⑤ 1" layername="HYB_pohimnt" format="image/png" transparent="true"/>
   <!-- layer type="wms" year="tugimnt" layername="HYB_tugimnt" format="image/png" transparent="true"/ -->
-  <layer type="wms" year="kõrvalmnt" layername="HYB_korvalmnt" format="image/png" transparent="true"/>
+  <layer type="wms" year="⑤ 2" layername="HYB_korvalmnt" format="image/png" transparent="true"/>
   <!-- layer type="wms" year="mnt_muu" layername="HYB_mnt_muu" format="image/png" transparent="true"/ -->
-  <layer type="wms" year="muu" layername="HYB_tee_muu" format="image/png" transparent="true"/>
-  <layer type="wms" year="peatän" layername="HYB_tanavad_pohi_1" format="image/png" transparent="true"/>
-  <layer type="wms" year="tänavad" layername="HYB_tanavad_10T" format="image/png" transparent="true"/>
+  <layer type="wms" year="⑤ 3" layername="HYB_tee_muu" format="image/png" transparent="true"/>
+  <layer type="wms" year="⑤ 4" layername="HYB_tanavad_pohi_1" format="image/png" transparent="true"/>
+  <layer type="wms" year="⑤ 5" layername="HYB_tanavad_10T" format="image/png" transparent="true"/>
   <!-- layer type="wms" year="yhesuunal" layername="HYB_tanavad_suunad" format="image/png" transparent="true"/ -->
   <minzoom>5</minzoom>
 </vanalinnadlayers>

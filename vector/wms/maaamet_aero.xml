@@ -21,14 +21,14 @@
   <layer type="wms" year="2002" layername="of2002"/>
   <layer type="wms" year="1994-2000" layername="of1994-2000_2k"/>
   <layer type="wms" year="1993-2000" layername="of1993-2000_10k"/>
-  <layer type="wms" year="map" layername="pohi_vr2" wmsurl="http://kaart.maaamet.ee/wms/alus?"/>
-  <layer type="wms" year="põhimnt" layername="HYB_pohimnt" format="image/png" transparent="true"/>
+  <layer type="wms" year="☸ @NOW@" layername="pohi_vr2" wmsurl="http://kaart.maaamet.ee/wms/alus?"/>
+  <layer type="wms" year="⑤ 1" layername="HYB_pohimnt" format="image/png" transparent="true"/>
   <!-- layer type="wms" year="tugimnt" layername="HYB_tugimnt" format="image/png" transparent="true"/ -->
-  <layer type="wms" year="kõrvalmnt" layername="HYB_korvalmnt" format="image/png" transparent="true"/>
+  <layer type="wms" year="⑤ 2" layername="HYB_korvalmnt" format="image/png" transparent="true"/>
   <!-- layer type="wms" year="mnt_muu" layername="HYB_mnt_muu" format="image/png" transparent="true"/ -->
-  <layer type="wms" year="muu" layername="HYB_tee_muu" format="image/png" transparent="true"/>
-  <layer type="wms" year="peatän" layername="HYB_tanavad_pohi_1" format="image/png" transparent="true"/>
-  <layer type="wms" year="tänavad" layername="HYB_tanavad_10T" format="image/png" transparent="true"/>
+  <layer type="wms" year="⑤ 3" layername="HYB_tee_muu" format="image/png" transparent="true"/>
+  <layer type="wms" year="⑤ 4" layername="HYB_tanavad_pohi_1" format="image/png" transparent="true"/>
+  <layer type="wms" year="⑤ 5" layername="HYB_tanavad_10T" format="image/png" transparent="true"/>
   <!-- layer type="wms" year="yhesuunal" layername="HYB_tanavad_suunad" format="image/png" transparent="true"/ -->
   <minzoom>5</minzoom>
 </vanalinnadlayers>

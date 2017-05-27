@@ -35,9 +35,7 @@ function vlWms(inputParams){
       var layersTags = layersXml.getElementsByTagName('layer');
       for(i = 0; i < layersTags.length; i++) {
         layers[layers.length] = new OpenLayers.Layer.WMS(
-          layersTags[i].getAttribute('year') == '@NOW@'
-            ? currentTime.getFullYear()
-            : layersTags[i].getAttribute('year'),
+          layersTags[i].getAttribute('year').replace('@NOW@',currentTime.getFullYear()),
           layersTags[i].getAttribute('wmsurl') == null
             ? vlUtils.getXmlValue(layersXml, 'defaultwmsurl')
             : layersTags[i].getAttribute('wmsurl'),
