@@ -83,9 +83,6 @@ vlUtils.coordsPrompt = function(map, data) {
           lonlat = lonlat.transform(map.projection, map.displayProjection);
         }
 
-        var y =  'debug' in data && data.debug
-          ? '<strong>GDAL GCP</strong> : <input type="text" value=" -gcp  ' + lonlat.lon + ' ' + lonlat.lat + '"/>'
-          : '';
         var coords = {};
         var p4;
         coords[data.jsonConf.urls[data.locData.baseUrlID].srs] = {x:lonlat.lon, y:lonlat.lat};
@@ -98,7 +95,23 @@ vlUtils.coordsPrompt = function(map, data) {
             coords['EPSG:4326'] = {x:p4[0], y:p4[1]};
           } catch(err) { }
         }
-        y += '<table id="coordsTable"><tr><th class="ctC">'
+        
+        var y = '';
+	if('debug' in data && data.debug) {
+	  var debugContent = {
+	    GCP: ' -gcp  ' + coords['EPSG:4326'].x + ' ' + coords['EPSG:4326'].y,
+	    GPX: '<wpt lon="' + coords['EPSG:4326'].x + '" lat="' + coords['EPSG:4326'].y + '"><name></name><desc></desc></wpt>',
+	    KML:'<Placemark id="gcp1"><Point><coordinates>' + coords['EPSG:4326'].x + ',' + coords['EPSG:4326'].y + '</coordinates></Point><name></name><description></description></Placemark>'
+	  };
+	  y = '<table class="coordsTable">';
+	  for(i in debugContent) {
+	      y += '<tr><th class="ctC">' + i + '</th><td class="ctC"><input type=\'text\' value=\''
+		+ debugContent[i]+ '\'/></td></tr>';
+	  }
+	  y += '</table>';
+	}
+        
+        y += '<table class="coordsTable"><tr><th class="ctC">'
           + vlUtils.link({u:'http://en.wikipedia.org/wiki/Spatial_reference_system',l:'SRS',t:'_blank',h:'Spatial reference system'}) + '</th><th class="ctC">'
           + vlUtils.link({u:'http://en.wikipedia.org/wiki/Longitude',l:'X',t:'_blank',h:'Longitude'}) + '</th><th class="ctC">'
           + vlUtils.link({u:'http://en.wikipedia.org/wiki/Latitude',l:'Y',t:'_blank',h:'Latitude'}) +  '</th></tr>';

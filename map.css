@@ -75,7 +75,7 @@ body .bodyContent {
   line-height: 130%;
 }
 
-#coordsTable {
+.coordsTable {
   border-collapse: collapse;
   border: 1px solid black;
   padding: 3px;
