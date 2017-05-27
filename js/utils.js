@@ -108,7 +108,7 @@ vlUtils.coordsPrompt = function(map, data) {
 	      y += '<tr><th class="ctC">' + i + '</th><td class="ctC"><input type=\'text\' value=\''
 		+ debugContent[i]+ '\'/></td></tr>';
 	  }
-	  y += '</table>';
+	  y += '</table><br/>';
 	}
         
         y += '<table class="coordsTable"><tr><th class="ctC">'
