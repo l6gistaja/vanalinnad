@@ -127,7 +127,9 @@ function vlWms(inputParams){
                 var path = '';
                 var coords;
                 for(var i = 0; i < lineLayer.features.length; i++) {
-                    path += "<LineString><coordinates>";
+                    path += reqParams.draw == 'KML' 
+		      ? '<LineString><coordinates>'
+		      : '<trkseg>';
                     for(var j = 0; j < lineLayer.features[i].geometry.components.length; j++) {
                         coords = [lineLayer.features[i].geometry.components[j].x,
                             lineLayer.features[i].geometry.components[j].y];
@@ -142,9 +144,13 @@ function vlWms(inputParams){
                                 return;
                             }
                         }
-                        path += coords[0] + "," + coords[1] + " ";
+                        path += reqParams.draw == 'KML'
+			  ? coords[0] + "," + coords[1] + " "
+			  : '<trkpt lat="' + coords[1] + '" lon="' + coords[0] + '"/>';
                     }
-                    path = path.trim() + "</coordinates></LineString>";
+                    path = path.trim() + (reqParams.draw == 'KML' 
+		      ? '</coordinates></LineString>"'
+		      : '</trkseg>');
                 }
                 if(prompt("Lines as KML LineStrings.\nCancel deletes all lines from map.", path) == null) {
 					lineLayer.removeAllFeatures();

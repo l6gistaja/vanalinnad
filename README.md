@@ -21,7 +21,10 @@ Old map symbols: [< 1900](http://www.ra.ee/kaardid/index.php/et/site/page?view=s
 1. [index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081](index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081) : Tallinn in year 1968, Kadriorg area.
 1. [index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081&years=1968.1911.1885.1856](index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081&years=1968.1911.1885.1856) : Tallinn in year 1968, Kadriorg area. Selectable are maps only from years 1968, 1911, 1885 and 1856.
 
-Hint: for debug mode, append ```&debug=1``` to URLs.
+Hints:
+
+1. for debug mode, append ```&debug=1``` to URLs.
+1. if you add ```&draw=KML``` or ```&draw=GPX``` to WMS urls, you can draw and export KML or GPX tracks.
 
 ## Adding new data to application
 
