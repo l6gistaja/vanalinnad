@@ -7,11 +7,14 @@
 <description><![CDATA[
 08.10.1900 - 03.05.1972<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=1&sub=49&tlink=0" target="_blank">raudtee.eu</a>, 
-<a href="https://et.wikipedia.org/wiki/Türi–Paide–Tamsalu_raudtee" target="_blank">Wikipedia</a><br/>
+➔ 
+<a href="http://raudtee.eu/?main=1&sub=49&tlink=0" target="_blank" title="raudtee.eu">1</a>, 
+<a href="https://et.wikipedia.org/wiki/Türi–Paide–Tamsalu_raudtee" target="_blank" title="Wikipedia">2</a>, 
+<a href="http://est-train.ertas.eu/kits/tyri-tamsalu.php?lng=est" target="_blank" title="Eestimaa rongid">3</a>
+<br/>
 <ol>
 <li>1900 Türi - Paide</li>
-<li>1910 <a href="http://www.raudtee.eu/?main=17&sub=287&stat=296&tlink=281" target="_blank">Tamsalu</a></li>
+<li>1910 <a href="http://raudtee.eu/?main=17&sub=287&stat=296&tlink=281" target="_blank">Tamsalu</a></li>
 <li>1918 Paide - Tamsalu</li>
 </ol>
 ]]></description>
@@ -34,7 +37,8 @@
 <description><![CDATA[
 1919 - 1950<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=307&stat=310&tlink=158" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=307&stat=310&tlink=158" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -51,8 +55,9 @@
 <description><![CDATA[
 1916 - 01.05.1972<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=1&sub=50&tlink=0" target="_blank">raudtee.eu</a>, 
-<a href="https://et.wikipedia.org/wiki/Sonda%E2%80%93Mustvee_raudteeliin" target="_blank">Wikipedia</a>
+➔ 
+<a href="http://raudtee.eu/?main=1&sub=50&tlink=0" target="_blank" title="raudtee.eu">1</a>, 
+<a href="https://et.wikipedia.org/wiki/Sonda%E2%80%93Mustvee_raudteeliin" target="_blank" title="Wikipedia">2</a>
 <ol>
 <li>1916 Sonda - Jõepere</li>
 <li>1926 Sonda - Mustvee</li>
@@ -142,8 +147,11 @@
 <description><![CDATA[
 01.12.1931 - 26.05.1968<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=1&sub=27&tlink=0" target="_blank">raudtee.eu</a>, 
-<a href="https://et.wikipedia.org/wiki/Rapla%E2%80%93Virtsu_raudtee" target="_blank">Wikipedia</a>
+➔ 
+<a href="http://raudtee.eu/?main=1&sub=27&tlink=0" target="_blank" title="raudtee.eu">1</a>, 
+<a href="https://et.wikipedia.org/wiki/Rapla%E2%80%93Virtsu_raudtee" target="_blank" title="Wikipedia">2</a>, 
+<a href="http://www.virtsu.ee/ajalugu/rt_00_raudtee.html" target="_blank" title="virtsu.ee">3</a>, 
+<a href="http://est-train.ertas.eu/kits/virtsu.php?lng=est" target="_blank" title="Eestimaa rongid">4</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -159,8 +167,9 @@
 <description><![CDATA[
 16.02.1928 - 1968<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=1&sub=51&tlink=0" target="_blank">raudtee.eu</a>, 
-<a href="https://et.wikipedia.org/wiki/Lelle%E2%80%93Papiniidu_raudtee" target="_blank">Wikipedia</a>
+➔ 
+<a href="http://raudtee.eu/?main=1&sub=51&tlink=0" target="_blank" title="raudtee.eu">1</a>, 
+<a href="https://et.wikipedia.org/wiki/Lelle%E2%80%93Papiniidu_raudtee" target="_blank" title="Wikipedia">2</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -183,8 +192,9 @@
 <description><![CDATA[
 16.02.1928 - 08.09.1969<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=1&sub=149&tlink=0" target="_blank">raudtee.eu</a>, 
-<a href="https://et.wikipedia.org/wiki/Viluvere-V%C3%A4ndra_raudtee" target="_blank">Wikipedia</a>
+➔ 
+<a href="http://raudtee.eu/?main=1&sub=149&tlink=0" target="_blank" title="raudtee.eu">1</a>, 
+<a href="https://et.wikipedia.org/wiki/Viluvere-V%C3%A4ndra_raudtee" target="_blank" title="Wikipedia">2</a>
 ]]></description>
 <color>#FF0000</color>
 <LineString><coordinates>24.868793440368364,58.64568997470011 24.87015491849585,58.6464830509294 24.871191055913748,58.646887463641235 24.87250291083192,58.64726942773507 24.874202179539775,58.64736075049284 24.92133659637545,58.649356462367805 24.922678780924542,58.64936741713257 24.934232857172105,58.64899605403458 24.970191155969932,58.64770139142007 24.993056112557873,58.64680695359227 25.020782509133614,58.64619911738496 25.022675777992553,58.64616351171042 25.029440841476124,58.64672672106489 25.038053261031575,58.64702782357319</coordinates></LineString>
@@ -195,7 +205,8 @@
 <description><![CDATA[
 1915 - 1985<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=287&stat=290&tlink=220" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=287&stat=290&tlink=220" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -214,8 +225,10 @@
 <description><![CDATA[
 05.10.1896 - 15.05.1975<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=1&sub=177&tlink=0" target="_blank">raudtee.eu</a>, 
-<a href="https://et.wikipedia.org/wiki/Valga%E2%80%93Ruhja%E2%80%93P%C3%A4rnu_raudtee" target="_blank">Wikipedia</a>
+➔ 
+<a href="http://raudtee.eu/?main=1&sub=177&tlink=0" target="_blank" title="raudtee.eu">1</a>, 
+<a href="https://et.wikipedia.org/wiki/Valga%E2%80%93Ruhja%E2%80%93P%C3%A4rnu_raudtee" target="_blank" title="Wikipedia">2</a>, 
+<a href="http://est-train.ertas.eu/louna/parnu-moisakyla.php?lng=est" target="_blank" title="Eestimaa rongid">3</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -250,9 +263,10 @@
 <description><![CDATA[
 01.08.1897 - 02.03.1971<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=1&sub=22&tlink=0" target="_blank">raudtee.eu</a>, 
-<a href="https://et.wikipedia.org/wiki/P%C3%A4rnu%E2%80%93M%C3%B5isak%C3%BCla%E2%80%93Viljandi_raudtee" target="_blank">Wikipedia</a>,<br/>
-<a href="http://www.mulgirailway.com/start.html" target="_blank">Mulgi raudtee</a>
+➔ 
+<a href="http://raudtee.eu/?main=1&sub=22&tlink=0" target="_blank" title="raudtee.eu">1</a>, 
+<a href="https://et.wikipedia.org/wiki/P%C3%A4rnu%E2%80%93M%C3%B5isak%C3%BCla%E2%80%93Viljandi_raudtee" target="_blank" title="Wikipedia">2</a>, 
+<a href="http://www.mulgirailway.com/start.html" target="_blank" title="Mulgi raudtee">3</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -271,8 +285,10 @@
 <description><![CDATA[
 1905 - 2004<br/>
 1524 mm<br/>
-<a href="https://et.wikipedia.org/wiki/Tallinna%E2%80%93Haapsalu_raudtee" target="_blank">Wikipedia</a>, 
-<a href="https://et.wikipedia.org/wiki/Keila%E2%80%93Haapsalu_raudtee" target="_blank">Wikipedia</a>
+➔ 
+<a href="https://et.wikipedia.org/wiki/Tallinna%E2%80%93Haapsalu_raudtee" target="_blank" title="Wikipedia">1</a>, 
+<a href="https://et.wikipedia.org/wiki/Keila%E2%80%93Haapsalu_raudtee" target="_blank" title="Wikipedia">2</a>, 
+<a href="http://est-train.ertas.eu/laane/kei-haaps.php?lng=est" target="_blank" title="Eestimaa rongid">3</a>
 <ol>
 <li>1905 Keila - Haapsalu</li>
 <li>192X Haapsalu - Rohuküla</li>
@@ -295,8 +311,9 @@
 <description><![CDATA[
 1919 - 30.09.1975<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=1&sub=53&tlink=0" target="_blank">raudtee.eu</a>, 
-<a href="https://et.wikipedia.org/wiki/Riisselja%E2%80%93Oraj%C3%B5e_raudtee" target="_blank">Wikipedia</a>
+➔ 
+<a href="http://raudtee.eu/?main=1&sub=53&tlink=0" target="_blank" title="raudtee.eu">1</a>, 
+<a href="https://et.wikipedia.org/wiki/Riisselja%E2%80%93Oraj%C3%B5e_raudtee" target="_blank" title="Wikipedia">2</a>
 <ol>
 <li>1919 Riisselja</li>
 <li>1923 Riisselja - Orajõe</li>
@@ -327,7 +344,8 @@
 <description><![CDATA[
 190X - 1997<br/>
 1524 mm<br/>
-<a href="https://et.wikipedia.org/wiki/Sonda%E2%80%93Aseri_raudtee" target="_blank">Wikipedia</a>
+➔ 
+<a href="https://et.wikipedia.org/wiki/Sonda%E2%80%93Aseri_raudtee" target="_blank" title="Wikipedia">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -346,8 +364,9 @@
 <description><![CDATA[
 1913 - 03.03.1971<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=1&sub=52&tlink=0" target="_blank">raudtee.eu</a>, 
-<a href="https://et.wikipedia.org/wiki/Liiva%E2%80%93V%C3%A4%C3%A4na_raudtee" target="_blank">Wikipedia</a>
+➔ 
+<a href="http://raudtee.eu/?main=1&sub=52&tlink=0" target="_blank" title="raudtee.eu">1</a>, 
+<a href="https://et.wikipedia.org/wiki/Liiva%E2%80%93V%C3%A4%C3%A4na_raudtee" target="_blank" title="Wikipedia">2</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -365,8 +384,9 @@
 <description><![CDATA[
 1913 - 1925<br/>
 750 mm<br/>
-<a href="http://www.ester.ee/record=b1054050*est" target="_blank">EKR</a> 54-57; 105, <br/>
-<a href="http://www.ester.ee/record=b1050767*est" target="_blank">ME</a> 35-36
+➔ 
+<a href="http://www.ester.ee/record=b1054050*est" target="_blank" title="Eesti kitsarööpmelised raudteed 1896-1996: 54-57; 105">1</a>, 
+<a href="http://www.ester.ee/record=b1050767*est" target="_blank" title="Merekindlused Eestis 1913-1940: 35-36">2</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -397,7 +417,8 @@ Suurupi N
 <description><![CDATA[
 1916 - 193X<br/>
 750 mm<br/>
-<a href="http://www.ester.ee/record=b1054050*est" target="_blank">EKR</a> 64-65, 105
+➔ 
+<a href="http://www.ester.ee/record=b1054050*est" target="_blank" title="Eesti kitsarööpmelised raudteed 1896-1996: 64-65; 105">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -411,7 +432,8 @@ Suurupi N
 <description><![CDATA[
 191X - 193X<br/>
 750 mm<br/>
-<a href="http://www.ester.ee/record=b1054050*est" target="_blank">EKR</a> 105
+➔ 
+<a href="http://www.ester.ee/record=b1054050*est" target="_blank" title="Eesti kitsarööpmelised raudteed 1896-1996: 105">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -425,7 +447,8 @@ Suurupi N
 <description><![CDATA[
 1916 - 193X<br/>
 750 mm<br/>
-<a href="http://www.ester.ee/record=b1054050*est" target="_blank">EKR</a> 62-63
+➔ 
+<a href="http://www.ester.ee/record=b1054050*est" target="_blank" title="Eesti kitsarööpmelised raudteed 1896-1996: 62-63">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -439,7 +462,8 @@ Suurupi N
 <description><![CDATA[
 1916 - 193X<br/>
 750 mm<br/>
-<a href="http://www.ester.ee/record=b1054050*est" target="_blank">EKR</a> 65-67
+➔ 
+<a href="http://www.ester.ee/record=b1054050*est" target="_blank" title="Eesti kitsarööpmelised raudteed 1896-1996: 65-67">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -453,7 +477,8 @@ Suurupi N
 <description><![CDATA[
 1914 - 1941<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=287&stat=292&tlink=154" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=287&stat=292&tlink=154" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -472,7 +497,8 @@ Suurupi N
 <description><![CDATA[
 1906 - 1970<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=287&stat=314&tlink=0" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=287&stat=314&tlink=0" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -492,7 +518,8 @@ Suurupi N
 <description><![CDATA[
 1908 - 1999<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=287&stat=294&tlink=285" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=287&stat=294&tlink=285" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -523,7 +550,8 @@ Suurupi N
 <description><![CDATA[
 1927 - 1974<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=287&stat=293&tlink=176" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=287&stat=293&tlink=176" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -549,8 +577,9 @@ Suurupi N
 <description><![CDATA[
 1903 - 2.6.1970<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=1&sub=54&tlink=0" target="_blank">raudtee.eu</a>, 
-<a href="https://et.wikipedia.org/wiki/Valga%E2%80%93M%C3%B5niste%E2%80%93Ape%E2%80%93Al%C5%ABksne%E2%80%93Gulbene_raudtee" target="_blank">Wikipedia</a>
+➔ 
+<a href="http://raudtee.eu/?main=1&sub=54&tlink=0" target="_blank" title="raudtee.eu">1</a>, 
+<a href="https://et.wikipedia.org/wiki/Valga%E2%80%93M%C3%B5niste%E2%80%93Ape%E2%80%93Al%C5%ABksne%E2%80%93Gulbene_raudtee" target="_blank" title="Wikipedia">2</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -565,7 +594,8 @@ Suurupi N
 <description><![CDATA[
 1900 - 1982<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=287&stat=297&tlink=276" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=287&stat=297&tlink=276" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -584,7 +614,8 @@ Suurupi N
 <description><![CDATA[
 1903 - 1944<br/>
 762 mm, 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=287&stat=288&tlink=156" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=287&stat=288&tlink=156" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <LineString><coordinates>26.54294880537478,59.52230027434102 26.542665282875593,59.521215042945066 26.542668915012865,59.52072107323466 26.538854057255843,59.52007426044265 26.54038775532278,59.5172871354143 26.53958448001799,59.51520352532143 26.5389739526048,59.51461848053603 26.537528070190465,59.51423471595233 26.536179916830896,59.51407542787451 26.534936265660733,59.51368774789607 26.53465509192048,59.513446200890094 26.534503215514075,59.513037536304864 26.53616306957606,59.509496889128215 26.536062661659088,59.508963760979775 26.535346307698898,59.508586527635394 26.534876785072395,59.5085338140678 26.532533011569164,59.50832159571342 26.531937629632427,59.50820955085902 26.53157566503422,59.50796954883164 26.531632860257453,59.507649474418564 26.53677970352239,59.50119160618969 26.537070946653955,59.500753838967896 26.53706668406417,59.50042465276274 26.532961156743156,59.497468138263855 26.530973042304602,59.49413131961815 26.527168996456293,59.49358691186216</coordinates></LineString>
@@ -595,7 +626,8 @@ Suurupi N
 <description><![CDATA[
 1901 - 1971<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=287&stat=311&tlink=0" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=287&stat=311&tlink=0" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <LineString><coordinates>24.667142528217322,59.30053688525546 24.667695736746847,59.30143048322292 24.66801528860084,59.30151710395052 24.67478817669256,59.30094365522364 24.67654360057247,59.30153841412065</coordinates></LineString>
@@ -606,7 +638,8 @@ Suurupi N
 <description><![CDATA[
 1939 - 1971<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=287&stat=291&tlink=210" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=287&stat=291&tlink=210" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -624,7 +657,8 @@ Suurupi N
 <description><![CDATA[
 1913 - ?<br/>
 762 mm, 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=287&stat=295&tlink=241" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=287&stat=295&tlink=241" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <LineString><coordinates>26.243948299397854,58.98674767860896 26.24371105690942,58.98753254563907 26.244091577172238,58.988957383089804 26.243443045684895,58.99006537797359 26.24275813836919,58.99228008444157 26.24308007620365,58.994468112427015 26.250965446220533,59.00271572785357 26.25294009715808,59.0048193339909 26.256606803079002,59.00689354859818 26.25806674675218,59.01545666466299 26.25904891581567,59.01780050045387 26.273807095885296,59.02404970214673 26.274938178576743,59.0242529990036 26.281987802602252,59.02453846554054</coordinates></LineString>
@@ -635,7 +669,8 @@ Suurupi N
 <description><![CDATA[
 1910 - ?<br/>
 762 mm, 600 mm<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=287&stat=296&tlink=281" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=287&stat=296&tlink=281" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <LineString><coordinates>26.138784414390724,59.15734912412815 26.12123521532681,59.15741237318544 26.120123108435585,59.156984330940865 26.11961236330003,59.156918272809506 26.11900915030586,59.15711394187111</coordinates></LineString>
@@ -646,7 +681,8 @@ Suurupi N
 <description><![CDATA[
 1524 mm<br/>
 1952 - 1956<br/>
-<a href="http://www.photoblog.com/saaremaa/2005/05/03/" target="_blank">Photoblog</a>
+➔ 
+<a href="http://www.photoblog.com/saaremaa/2005/05/03/" target="_blank" title="Photoblog">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -678,7 +714,8 @@ Suurupi N
 <description><![CDATA[
 1928 - ?<br/>
 600 mm<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=298&stat=300&tlink=157" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=298&stat=300&tlink=157" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <LineString><coordinates>21.9713950050262,58.39602006180642 21.972707517997094,58.399052420980276 21.971579402538076,58.401423279346574 21.97071694947242,58.402562139163464 21.968374823068732,58.407246684557734</coordinates></LineString>
@@ -689,8 +726,9 @@ Suurupi N
 <description><![CDATA[
 191X - ?<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=16&sub=224&tlink=0" target="_blank">raudtee.eu</a>,<br/>
-<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134149" target="_blank">ERA.49.1.1335:108</a>
+➔ 
+<a href="http://raudtee.eu/?main=16&sub=224&tlink=0" target="_blank" title="raudtee.eu">1</a>, 
+<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134149" target="_blank" title="ERA.49.1.1335:108">2</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -715,10 +753,11 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 <description><![CDATA[
 1919 - 1924<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=307&stat=309&tlink=162" target="_blank">raudtee.eu</a>, 
-<a href="http://www2.archimedes.ee/noorteadlased/06_Vanamolder.htm" target="_blank">Archimedes</a>,<br/>
-<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=200787" target="_blank">ERA.T-3.24.1824:35</a>,<br/>
-<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=100723" target="_blank">ERA.T-6.3.1217:1</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=307&stat=309&tlink=162" target="_blank" title="raudtee.eu">1</a>, 
+<a href="http://www2.archimedes.ee/noorteadlased/06_Vanamolder.htm" target="_blank" title="Archimedes">2</a>, 
+<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=200787" target="_blank" title="ERA.T-3.24.1824:35">3</a>, 
+<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=100723" target="_blank" title="ERA.T-6.3.1217:1">4</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -732,9 +771,11 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 <description><![CDATA[
 1914 - 194X<br/>
 750 mm<br/>
-<a href="http://www.ester.ee/record=b1054050*est" target="_blank">EKR</a> 50-51, 
-<a href="https://register.muinas.ee/public.php?menuID=monument&action=view&id=23435" target="_blank">KmRR</a>,<br/>
-<a href="http://www.mil.hiiumaa.ee/artiklid8_selirand2.html" target="_blank">mil.hiiumaa.ee</a>
+➔ 
+<a href="http://www.ester.ee/record=b1054050*est" target="_blank" title="Eesti kitsarööpmelised raudteed 1896-1996: 50-51">1</a>, 
+<a href="https://register.muinas.ee/public.php?menuID=monument&action=view&id=23435" target="_blank" title="register.muinas.ee">2</a>, 
+<a href="http://www.mil.hiiumaa.ee/artiklid8_selirand2.html" target="_blank" title="mil.hiiumaa.ee">3</a>, 
+<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=209804" target="_blank" title="ERA.2553.1.92:103">4</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -751,7 +792,8 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 <description><![CDATA[
 1914 - 1944<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=16&sub=212&tlink=0" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=16&sub=212&tlink=0" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -772,13 +814,14 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 <description><![CDATA[
 1918 - 1922<br/>
 600 mm<br/>
-<a href="http://www.saaremaa.ee/index.php?option=com_content&view=article&id=411&Itemid=250&lang=et" target="_blank">saaremaa.ee</a>, <br/>
-<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134107" target="_blank">ERA.49.1.1335:111</a>,<br/>
-<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134147" target="_blank">109</a>, 
-<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134145" target="_blank">110</a>, 
-<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134153" target="_blank">107</a>, 
-<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134155" target="_blank">106</a>, 
-<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134157" target="_blank">105</a>
+➔ 
+<a href="http://www.saaremaa.ee/index.php?option=com_content&view=article&id=411&Itemid=250&lang=et" target="_blank" title="saaremaa.ee">1</a>, 
+<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134107" target="_blank" title="ERA.49.1.1335:111">2</a>, 
+<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134147" target="_blank" title="ERA.49.1.1335:109">3</a>, 
+<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134145" target="_blank" title="ERA.49.1.1335:110">4</a>, 
+<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134153" target="_blank" title="ERA.49.1.1335:107">5</a>, 
+<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134155" target="_blank" title="ERA.49.1.1335:106">6</a>, 
+<a href="http://www.ra.ee/kaardid/index.php/et/map/view?id=134157" target="_blank" title="ERA.49.1.1335:105">7</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -791,7 +834,8 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 <description><![CDATA[
 1943 - ?<br/>
 600 mm<br/>
-<a href="http://www.militaar.net/phpBB2/viewtopic.php?t=329" target="_blank">militaar.net</a>
+➔ 
+<a href="http://www.militaar.net/phpBB2/viewtopic.php?t=329" target="_blank" title="militaar.net">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -840,7 +884,8 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 <description><![CDATA[
 191X - 197X<br/>
 750 mm<br/>
-<a href="http://www.ester.ee/record=b1054050*est" target="_blank">EKR</a> 62-65
+➔ 
+<a href="http://www.ester.ee/record=b1054050*est" target="_blank" title="Eesti kitsarööpmelised raudteed 1896-1996: 62-65">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -861,8 +906,9 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 <description><![CDATA[
 191X - 192X<br/>
 750 mm<br/>
-<a href="http://muuseum.vaivaravald.ee/index.php?id=55" target="_blank">Meriküla patarei</a>, <br/>
-<a href="http://www.ester.ee/record=b1050767*est" target="_blank">ME</a> 16-17
+➔ 
+<a href="http://muuseum.vaivaravald.ee/index.php?id=55" target="_blank" title="Meriküla patarei">1</a>, 
+<a href="http://www.ester.ee/record=b1050767*est" target="_blank" title="Merekindlused Eestis 1913-1940: 16-17">2</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -877,7 +923,8 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 <name>Lehtse</name>
 <description><![CDATA[
 192X - ?<br/>
-<a href="http://www.raudtee.eu/?main=17&sub=301&stat=303&tlink=159" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=301&stat=303&tlink=159" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -900,7 +947,8 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 <description><![CDATA[
 1922 - ?<br/>
 750 mm<br/>
-<a href="http://raudtee.eu/?main=17&sub=301&stat=304&tlink=166" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=301&stat=304&tlink=166" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -928,7 +976,8 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 <description><![CDATA[
 1924 - ?<br/>
 750 mm<br/>
-<a href="http://raudtee.eu/?main=17&sub=298&stat=299&tlink=164" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=298&stat=299&tlink=164" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -947,7 +996,8 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 <description><![CDATA[
 1921 - ?<br/>
 750 mm<br/>
-<a href="http://raudtee.eu/?main=17&sub=301&stat=305&tlink=168" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=17&sub=301&stat=305&tlink=168" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -967,7 +1017,8 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 <name>Aruküla</name>
 <description><![CDATA[
 193X - ?<br/>
-<a href="https://et.wikipedia.org/wiki/Eesti_Turbatööstused" target="_blank">Wikipedia</a>
+➔ 
+<a href="https://et.wikipedia.org/wiki/Eesti_Turbatööstused" target="_blank" title="Wikipedia">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
@@ -1012,7 +1063,8 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 <description><![CDATA[
 1914<br/>
 750 mm<br/>
-<a href="http://www.raudtee.eu/?main=16&sub=211&tlink=0" target="_blank">raudtee.eu</a>
+➔ 
+<a href="http://raudtee.eu/?main=16&sub=211&tlink=0" target="_blank" title="raudtee.eu">1</a>
 ]]></description>
 <color>#FF0000</color>
 <MultiGeometry>
