@@ -504,5 +504,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/dezoomify.pl -u http://www.kuressaare.ee/uus/public/zoomify/vanadlinnakaardid_1_2000/ ; mv cache/dezoomify/result.jpg cache/deiip/1939_Kuresaare.jpg
 
+# Politseiaed 1744
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/tla0149/005/0002171/tla0149_005_0002171_00001_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 208 -b 220 -o cache/deiip/1744_Politseiaed.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
