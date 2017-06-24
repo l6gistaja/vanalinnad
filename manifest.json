@@ -1,0 +1,43 @@
+{
+  "short_name": "Vanalinnad",
+  "name": "Vanalinnad",
+  "description": "Historical maps of Estonian cities",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "16x16"
+    },
+    {
+      "src": "raster/icons/vanalinnad.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "raster/icons/vanalinnad48x48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "apple-touch-icon.png",
+      "type": "image/png",
+      "sizes": "57x57"
+    },
+    {
+      "src": "raster/icons/vanalinnad96x96.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "raster/icons/vanalinnad144x144.png",
+      "type": "image/png",
+      "sizes": "144x144"
+    },
+    {
+      "src": "raster/icons/vanalinnad192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "start_url": "/",
+  "background_color": "#070BF0"
+}
