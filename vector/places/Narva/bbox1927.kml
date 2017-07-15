@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>28.13981473779094,59.33742356655560 28.13981473779094,59.40974467607911 28.23050975143038,59.40974467607911 28.23050975143038,59.33742356655560 28.13981473779094,59.33742356655560</coordinates></LineString></Placemark>
+<Placemark id="bbox"><name></name><LineString><coordinates>28.14008823884907,59.33742623092387 28.14008823884907,59.40974644645169 28.23041607404630,59.40974644645169 28.23041607404630,59.33742623092387 28.14008823884907,59.33742623092387</coordinates></LineString></Placemark>
 <Placemark id="gcp.1"><name>#1</name><description>3876 3033</description><Point><coordinates>28.198104502868645,59.38651465976457</coordinates></Point></Placemark>
 <Placemark id="gcp.2"><name>#2</name><description>3966 7270</description><Point><coordinates>28.199317588380953,59.3542614920027</coordinates></Point></Placemark>
 <Placemark id="gcp.3"><name>#3</name><description>1699 5155</description><Point><coordinates>28.165564670137723,59.3704452575629</coordinates></Point></Placemark>

@@ -2,21 +2,11 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1823"><name>1823</name><LineString><coordinates>, , , , ,</coordinates></LineString></Placemark>
-<Placemark id="gcp1823.1"><name>1823 #1</name><description>332 1709</description><Point><coordinates>24.780882654534082,59.43319963203051</coordinates></Point></Placemark>
-<Placemark id="gcp1823.2"><name>1823 #2</name><description>231 931</description><Point><coordinates>24.785270748482294,59.4386934484738</coordinates></Point></Placemark>
-<Placemark id="gcp1823.3"><name>1823 #3</name><description>936 676</description><Point><coordinates>24.796439466820054,59.43764603690237</coordinates></Point></Placemark>
-
 <Placemark id="bbox.1827"><name>1827</name><LineString><coordinates>24.71090372694042,59.42273571494828 24.71090372694042,59.45570885834025 24.76839055013621,59.45570885834025 24.76839055013621,59.42273571494828 24.71090372694042,59.42273571494828</coordinates></LineString></Placemark>
 <Placemark id="gcp1827.1"><name>1827 #1</name><description>4812 6919</description><Point><coordinates>24.743517637254193,59.42922706695654</coordinates></Point></Placemark>
 <Placemark id="gcp1827.2"><name>1827 #2</name><description>2633 1667</description><Point><coordinates>24.740642309190225,59.44781842782439</coordinates></Point></Placemark>
 <Placemark id="gcp1827.3"><name>1827 #3</name><description>1907 6844</description><Point><coordinates>24.725793600083215,59.432451829197795</coordinates></Point></Placemark>
 <Placemark id="gcp1827.4"><name>1827 #4</name><description>5589 1844</description><Point><coordinates>24.758452177047577,59.44431969012505</coordinates></Point></Placemark>
-
-<Placemark id="bbox.1822"><name>1822</name><LineString><coordinates>, , , , ,</coordinates></LineString></Placemark>
-<Placemark id="gcp1822.1"><name>1822 #1</name><description>495 445</description><Point><coordinates>24.74973466191236,59.444657932570756</coordinates></Point></Placemark>
-<Placemark id="gcp1822.2"><name>1822 #2</name><description>712 1423</description><Point><coordinates>24.760248921251154,59.42872785326979</coordinates></Point></Placemark>
-<Placemark id="gcp1822.3"><name>1822 #3</name><description>1505 989</description><Point><coordinates>24.791362545824,59.43894142448953</coordinates></Point></Placemark>
 
 <Placemark id="bbox.1820.Kopli"><name>1820.Kopli</name><LineString><coordinates>24.63972159590817,59.43806679860901 24.63972159590817,59.49131205619217 24.74103677836219,59.49131205619217 24.74103677836219,59.43806679860901 24.63972159590817,59.43806679860901</coordinates></LineString></Placemark>
 <Placemark id="gcp1820.Kopli.1"><name>1820.Kopli #1</name><description>3673 5791</description><Point><coordinates>24.677331843718648,59.46189848481222</coordinates></Point></Placemark>
