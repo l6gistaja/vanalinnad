@@ -53,11 +53,14 @@ for($i=0; $i<$len-1; $i++) {
   $osmfile = $file;
   if(scalar(@ARGV) > 1) {
       push(@bash, "echo '".$bboxs."Filter OSM with ".$ARGV[1]."'");
-      push(@bash, 'osmfilter '
-      .$file
-      .' --keep="'.$ARGV[1].'" > '
-      .$file.'f');
-      $osmfile = $file.'f';
+      $filterfile = $filebase.'_filtered.osm';
+      if(!(-e $filterfile)) {
+	  push(@bash, 'osmfilter '
+	  .$file
+	  .' --keep="'.$ARGV[1].'" > '
+	  .$filterfile);
+      }
+      $osmfile = $filterfile;
   }
   
   $file = $filebase.'.gml';
