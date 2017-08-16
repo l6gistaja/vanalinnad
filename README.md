@@ -59,12 +59,9 @@ In following, {SOURCE_FILE_DIR} is /dirsource from conf.xml.
 ### Adding road layers from OpenStreetMap
 
 1. Bounds of road layers can be determined by adding tag ```<roadbounds w="..." s="..." e="..." n="..."/>``` to ```{VANALINNAD_ROOT_DIR}/vector/places/{SITE}/layers.xml```. If this tag or some of its coordinates are missing, other boundaries are calculated from maximum values of tile layers in ```{VANALINNAD_ROOT_DIR}/vector/places/{SITE}/layers.xml```.
-1. Run ```./dev/osm2xml/osmroads.pl {SITE}```
- 1. If original OSM data is too big, process might stall. In case you need only roaddata from that site, add highway as 3rd parameter: ```./dev/osm2xml/osmroads.pl {SITE} highway```
-1. Original KML files roads0.kml ... roads4.kml were generated into ```{VANALINNAD_ROOT_DIR}/cache/```. You can merge those files into fewer files.
-1. For every {SOURCE_KML} created in previous step: ```./dev/kml_minify.pl .00001 cache/{SOURCE_KML} vector/places/{SITE}/{FINAL_KML}```
-1. For every {FINAL_KML} created in previous step, add tag ```<layer type="roads" name="{LAYER_NAME}" file="{FINAL_KML}" maxres="{MIN_ZOOM_LEVEL}"/>``` to ```{VANALINNAD_ROOT_DIR}/vector/places/{SITE}/layers.xml```
-
+1. For every road layer which will be created, add tag ```<layer type="roads" name="{LAYER_NAME}" file="{KML_FILENAME}" maxres="{MIN_ZOOM_LEVEL}" levels="{LEVEL_LIST}"/>``` to ```{VANALINNAD_ROOT_DIR}/vector/places/{SITE}/layers.xml```. {LEVEL_LIST} is comma separated list of numbers from 0 to 5.
+1. Run ```./dev/osm2xml/osmroads.pl {SITE} .00001```
+ 1. If original OSM data is too big, process might stall. In case you need only roaddata from that site, add highway as 3rd parameter: ```./dev/osm2xml/osmroads.pl {SITE} .00001 highway```
 
 License
 -------

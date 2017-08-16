@@ -98,13 +98,11 @@
 
 <ol>
 <li>Bounds of road layers can be determined by adding tag <code>&lt;roadbounds w="..." s="..." e="..." n="..."/&gt;</code> to <code>{VANALINNAD_ROOT_DIR}/vector/places/{SITE}/layers.xml</code>. If this tag or some of its coordinates are missing, other boundaries are calculated from maximum values of tile layers in <code>{VANALINNAD_ROOT_DIR}/vector/places/{SITE}/layers.xml</code>.</li>
-<li>Run <code>./dev/osm2xml/osmroads.pl {SITE}</code>
+<li>For every road layer which will be created, add tag <code>&lt;layer type="roads" name="{LAYER_NAME}" file="{KML_FILENAME}" maxres="{MIN_ZOOM_LEVEL}" levels="{LEVEL_LIST}"/&gt;</code> to <code>{VANALINNAD_ROOT_DIR}/vector/places/{SITE}/layers.xml</code>. {LEVEL_LIST} is comma separated list of numbers from 0 to 5.</li>
+<li>Run <code>./dev/osm2xml/osmroads.pl {SITE} .00001</code>
 <ol>
-<li>If original OSM data is too big, process might stall. In case you need only roaddata from that site, add highway as 3rd parameter: <code>./dev/osm2xml/osmroads.pl {SITE} highway</code></li>
+<li>If original OSM data is too big, process might stall. In case you need only roaddata from that site, add highway as 3rd parameter: <code>./dev/osm2xml/osmroads.pl {SITE} .00001 highway</code></li>
 </ol></li>
-<li>Original KML files roads0.kml ... roads4.kml were generated into <code>{VANALINNAD_ROOT_DIR}/cache/</code>. You can merge those files into fewer files.</li>
-<li>For every {SOURCE_KML} created in previous step: <code>./dev/kml_minify.pl .00001 cache/{SOURCE_KML} vector/places/{SITE}/{FINAL_KML}</code></li>
-<li>For every {FINAL_KML} created in previous step, add tag <code>&lt;layer type="roads" name="{LAYER_NAME}" file="{FINAL_KML}" maxres="{MIN_ZOOM_LEVEL}"/&gt;</code> to <code>{VANALINNAD_ROOT_DIR}/vector/places/{SITE}/layers.xml</code></li>
 </ol>
 
 <h2>License</h2>

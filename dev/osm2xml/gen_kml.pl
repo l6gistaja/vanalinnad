@@ -22,7 +22,6 @@ $len = scalar(@{$data->{'w'}});
 %max = qw();
 
 @levels = qw(trunk primary secondary tertiary);
-# pedestrian unclassified service # residential? footway?
 $levelLen = scalar(@levels);
 
 for($i=0; $i<=$len; $i++) {
@@ -56,20 +55,20 @@ for($level = 0; $level <= $levelLen; $level++) {
     .$mainconf->{'dircache'}
     .$mainconf->{'fileprefixroads'}
     .$level
-    .'.kml';
+    .'.txt';
   print $file."\n";
   open (DATA, '>'.$file);
   binmode DATA, ":utf8";
 
-  print DATA $filebase.$conf->{'Document'}{'ExtendedData'}{'v:kmlheader'};
-  print DATA <<EndHeader;
-  <LatLonBox>
-    <north>$coords[3]</north>
-    <south>$coords[1]</south>
-    <east>$coords[2]</east>
-    <west>$coords[0]</west>
-  </LatLonBox>
-EndHeader
+#  print DATA $filebase.$conf->{'Document'}{'ExtendedData'}{'v:kmlheader'};
+#  print DATA <<EndHeader;
+#  <LatLonBox>
+#    <north>$coords[3]</north>
+#    <south>$coords[1]</south>
+#    <east>$coords[2]</east>
+#    <west>$coords[0]</west>
+#  </LatLonBox>
+#EndHeader
 
   while ( ($k, $v) = each %index ) {
 
@@ -105,7 +104,7 @@ EndHeader
     print DATA "</Placemark>\n";
   }
 
-  print DATA $filebase.$conf->{'Document'}{'ExtendedData'}{'v:kmlfooter'};
+#  print DATA $filebase.$conf->{'Document'}{'ExtendedData'}{'v:kmlfooter'};
   close(DATA);
 
 }

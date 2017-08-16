@@ -23,8 +23,8 @@
   <layer bounds="26.34020350112555,59.32210200670529,26.39578600616634,59.36645825047795" type="tms" year="1790" />
   <layer bounds="26.33533105909977,59.33593768191997,26.37410227245288,59.35896696592589" type="tms" year="1703" />
   <layer bounds="26.33618550557420,59.34080441351126,26.36724904427113,59.35878703757992" type="tms" year="1683" />
-  <layer name="⑤ 1" file="roads3min.kml" maxres="12" type="roads" />
-  <layer name="⑤ 2" file="roads4min.kml" maxres="15" type="roads" />
+  <layer name="⑤ 1" file="roads3min.kml" maxres="12" type="roads" levels="0,1,2,3"/>
+  <layer name="⑤ 2" file="roads4min.kml" maxres="15" type="roads" levels="4"/>
   <maxzoom>16</maxzoom>
   <minzoom>12</minzoom>
 </vanalinnadlayers>

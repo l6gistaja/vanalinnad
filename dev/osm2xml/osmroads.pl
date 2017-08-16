@@ -1,9 +1,10 @@
 #!/usr/bin/perl
 
-if(scalar(@ARGV) < 1) {
-  print "\nUsage: osmroads.pl SITE [OSMFILTER_KEEP]\n";
+if(scalar(@ARGV) < 2) {
+  print "\nUsage: ./dev/osm2xml/osmroads.pl SITE PRECISION [OSMFILTER_KEEP]\n";
+  print "\nPRECISION examples: .00001 = 1.1 m of latitude, .000001 = 0.11 m of latitude\n";
   print "\nUse OSMFILTER_KEEP parameter (osmfilter's --keep) if you need only certain objects for some big site.";
-  print "\nExample: for Tallinn, load only roads: osmroads.pl Tallinn highway\n\n";
+  print "\nExample: for Tallinn, load only roads: ./dev/osm2xml/osmroads.pl Tallinn .00001 highway\n\n";
   exit;
 }
 
@@ -11,6 +12,7 @@ use XML::Simple;
 
 $xml = new XML::Simple;
 $mainconf = $xml->XMLin('conf.xml');
+$conf = $xml->XMLin($mainconf->{'dirdev'}.'osm2xml/roads.kml');
 $layers = $xml->XMLin($mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[0].'/'.$mainconf->{'filelayers'});
 $len = scalar(@{$layers->{'layer'}});
 @max = qw(181 91 -181 -91);
@@ -32,5 +34,21 @@ if(exists $layers->{'roadbounds'}) {
 }
 
 print 'BBox max '.join(',', @max)."\n";
-system($mainconf->{'dirdev'}.'osm2xml/generate_roads.pl '.join(',', @max) .(scalar(@ARGV) > 1 ? ' '.$ARGV[1] : '').' | bash');
+system($mainconf->{'dirdev'}.'osm2xml/generate_roads.pl '.join(',', @max) .(scalar(@ARGV) > 2 ? ' '.$ARGV[2] : '').' | bash');
 print "\a";
+
+for($i=0; $i<=$len; $i++) {
+  if($layers->{'layer'}[$i]{'type'} eq 'roads') {
+    @l = split(/,/, $layers->{'layer'}[$i]{'levels'});
+    $source = $mainconf->{'dircache'}.$mainconf->{'fileprefixroads'}.$ARGV[0].join('',@l).'.kml';
+    $destination = $mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[0].'/'.$layers->{'layer'}[$i]{'file'};
+    print "Generating $destination\n";
+    system("echo '".$conf->{'Document'}{'ExtendedData'}{'v:kmlheader'}."' > ".$source);
+    foreach $level (@l) {
+	system("cat ".$mainconf->{'dircache'}.$mainconf->{'fileprefixroads'}.$level.".txt >> ".$source);
+    }
+    system("echo '".$conf->{'Document'}{'ExtendedData'}{'v:kmlfooter'}."' >> ".$source);
+    system($mainconf->{'dirdev'}.'kml_minify.pl '.$ARGV[1].' '.$source.' '.$destination);
+  }
+}
+
