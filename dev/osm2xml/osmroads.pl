@@ -40,7 +40,7 @@ print "\a";
 for($i=0; $i<=$len; $i++) {
   if($layers->{'layer'}[$i]{'type'} eq 'roads') {
     @l = split(/,/, $layers->{'layer'}[$i]{'levels'});
-    $source = $mainconf->{'dircache'}.$mainconf->{'fileprefixroads'}.$ARGV[0].join('',@l).'.kml';
+    $source = $mainconf->{'dircache'}.$mainconf->{'fileprefixroads'}.join('',@l).'.kml';
     $destination = $mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[0].'/'.$layers->{'layer'}[$i]{'file'};
     print "Generating $destination\n";
     system("echo '".$conf->{'Document'}{'ExtendedData'}{'v:kmlheader'}."' > ".$source);
