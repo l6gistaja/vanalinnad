@@ -101,7 +101,7 @@
 <li>For every road layer which will be created, add tag <code>&lt;layer type="roads" name="{LAYER_NAME}" file="{KML_FILENAME}" maxres="{MIN_ZOOM_LEVEL}" levels="{LEVEL_LIST}"/&gt;</code> to <code>{VANALINNAD_ROOT_DIR}/vector/places/{SITE}/layers.xml</code>. {LEVEL_LIST} is comma separated list of numbers from 0 to 5.</li>
 <li>Run <code>./dev/osm2xml/osmroads.pl {SITE} .00001</code>
 <ol>
-<li>If original OSM data is too big, process might stall. In case you need only roaddata from that site, add highway as 3rd parameter: <code>./dev/osm2xml/osmroads.pl {SITE} .00001 highway</code></li>
+<li>If original OSM data is too big, process might stall. In case you need only highways from OpenStreetMap, add highway as 3rd parameter: <code>./dev/osm2xml/osmroads.pl {SITE} .00001 highway</code></li>
 </ol></li>
 </ol>
 
