@@ -3,22 +3,25 @@
 
 <composite id="1970" maps="1970.1,1970.2,1970.3" montage="yes"/>
 
-<!-- contrast 89 sharp 45 -->
-
 <translate map="1970.1" composite="1970">
+    <!-- contrast 89 sharp 45 -->
     <t file="1970_Haapsalu_1_sharp.jpg" gcps="-gcp 1838 988 23.51115381991911 58.95974324249854 -gcp 6330 4524 23.527869346499397 58.95848187344598 -gcp 2488 4410 23.51784861361959 58.95574874887282"/>
+    <!-- Edge-Detect > Difference of Gaussians 80 ; sharp 94 -->
+    <t file="1970_Haapsalu_1_edgy.jpg" gcps="-gcp 1838 988 23.51115381991911 58.95974324249854 -gcp 6330 4524 23.527869346499397 58.95848187344598 -gcp 2488 4410 23.51784861361959 58.95574874887282"/>
 </translate>
-
-<!-- contrast 70 sharp 45 -->
 
 <translate map="1970.2" composite="1970">
+    <!-- contrast 70 sharp 45 -->
     <t file="1970_Haapsalu_2_sharp.jpg" gcps="-gcp 3673 3832 23.524999976262716 58.952512634949734 -gcp 3684 8762 23.53225266943854 58.94604904244173 -gcp 7668 8854 23.542552352055562 58.948948954624285"/>
+    <!-- Edge-Detect > Difference of Gaussians 80 ; sharp 95 -->
+    <t file="1970_Haapsalu_2_edgy.jpg" gcps="-gcp 3673 3832 23.524999976262716 58.952512634949734 -gcp 3684 8762 23.53225266943854 58.94604904244173 -gcp 7668 8854 23.542552352055562 58.948948954624285"/>
 </translate>
 
-<!-- contrast 89 sharp 53 -->
-
 <translate map="1970.3" composite="1970">
+    <!-- contrast 89 sharp 53 -->
     <t file="1970_Haapsalu_3_sharp.jpg" gcps="-gcp 8560 236 23.542126096725358 58.949380105615575 -gcp 3696 80 23.529452958427267 58.94591076546385 -gcp 5816 7415 23.545503297174026 58.9378406106761"/>
+    <!-- Edge-Detect > Difference of Gaussians 80 ; sharp 95 -->
+    <t file="1970_Haapsalu_3_edgy.jpg" gcps="-gcp 8560 236 23.542126096725358 58.949380105615575 -gcp 3696 80 23.529452958427267 58.94591076546385 -gcp 5816 7415 23.545503297174026 58.9378406106761"/>
 </translate>
 
 <composite id="1966" maps="1966S,1966NW,1966NE" montage="yes"/>
