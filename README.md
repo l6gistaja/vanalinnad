@@ -24,7 +24,7 @@ Old map symbols: [< 1900](http://www.ra.ee/kaardid/index.php/et/site/page?view=s
 Hints:
 
 1. for debug mode, append ```&debug=1``` to URLs.
-1. if you add ```&draw=KML``` or ```&draw=GPX``` to WMS urls, you can draw and export KML or GPX tracks.
+1. if you add ```&draw=KML``` or ```&draw=GPX``` to urls, you can draw and export KML or GPX tracks.
 
 ## Adding new data to application
 

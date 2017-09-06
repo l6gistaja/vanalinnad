@@ -389,7 +389,8 @@ function vlMap(inputParams){
         if(!('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS')) { continue; }
         clickData.links[clickData.links.length] = w;
     }
-    vlUtils.mapAddCoordsPromptCtl(map, clickData);
+    
+    vlUtils.mapAddCoordPopups(map, clickData, reqParams, jsonConf, jsonConf.mapoptions.projection);
 
     if(isAtSite) { window.document.title += ': ' + vlUtils.getXmlValue(layersXml, 'city'); }
   }
@@ -465,6 +466,11 @@ function vlMap(inputParams){
       var bounds = new OpenLayers.Bounds(x);
       map.zoomToExtent(bounds.transform(map.displayProjection, map.projection));
       return false;
+  }
+  
+  this.emptyDrawLayer = function() {
+      vlUtils.emptyDrawLayer(map);
+      return true;
   }
   
   _init();

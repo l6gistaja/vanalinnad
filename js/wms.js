@@ -113,59 +113,7 @@ function vlWms(inputParams){
         debug: 'debug' in reqParams
       };
       
-      if(!('draw' in reqParams)) { vlUtils.mapAddCoordsPromptCtl(map, clickData); }
-      else {
-
-            var lineLayer = new OpenLayers.Layer.Vector("DRAW",
-                {styleMap: vlUtils.mergeCustomStyleWithDefaults(jsonConf.olLayerStyles['roads'])});
-            map.addLayer(lineLayer);
-            var drawCtl = new OpenLayers.Control.DrawFeature(lineLayer, OpenLayers.Handler.Path);
-            map.addControl(drawCtl);
-            drawCtl.activate();
-
-            function showPath() { 
-                var path = '';
-                var coords;
-                for(var i = 0; i < lineLayer.features.length; i++) {
-                    path += reqParams.draw == 'KML' 
-		      ? '<LineString><coordinates>'
-		      : '<trkseg>';
-                    for(var j = 0; j < lineLayer.features[i].geometry.components.length; j++) {
-                        coords = [lineLayer.features[i].geometry.components[j].x,
-                            lineLayer.features[i].geometry.components[j].y];
-                        if(jsonConfWMS.mapoptions.projection != 'EPSG:4326') {
-                            try {
-                                var coords = proj4(
-                                    jsonConf.proj4[jsonConfWMS.mapoptions.projection.replace(':','_')],
-                                    jsonConf.proj4['EPSG_4326'],
-                                    coords);
-                            } catch(err) {
-                                alert('PROJ4 failure.');
-                                return;
-                            }
-                        }
-                        path += reqParams.draw == 'KML'
-			  ? coords[0] + "," + coords[1] + " "
-			  : '<trkpt lat="' + coords[1] + '" lon="' + coords[0] + '"/>';
-                    }
-                    path = path.trim() + (reqParams.draw == 'KML' 
-		      ? '</coordinates></LineString>"'
-		      : '</trkseg>');
-                }
-                if(prompt("Lines as KML LineStrings.\nCancel deletes all lines from map.", path) == null) {
-					lineLayer.removeAllFeatures();
-				}
-            }
-            var drawBtn = new OpenLayers.Control.Button({
-                displayClass: 'drawBtn',
-                title: "Draw line",
-                trigger: showPath
-            });
-            var drawPanel = new OpenLayers.Control.Panel({defaultControl: drawBtn});
-            drawPanel.addControls([drawBtn]);
-            map.addControl(drawPanel);
-
-        }
+      vlUtils.mapAddCoordPopups(map, clickData, reqParams, jsonConf, jsonConfWMS.mapoptions.projection);
 
     } else {
       window.location.replace('?error=nonexisting_wms');
@@ -189,6 +137,11 @@ function vlWms(inputParams){
       }
       map.zoomToExtent(new OpenLayers.Bounds(x));
       return false;
+  }
+  
+  this.emptyDrawLayer = function() {
+      vlUtils.emptyDrawLayer(map);
+      return true;
   }
 
   var _init = function() {
