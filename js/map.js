@@ -150,11 +150,11 @@ function vlMap(inputParams){
         tmsoverlays = [
             new OpenLayers.Layer.Bing({key: bingApiKey, type: "Aerial", name: "B Sat"}),
             new OpenLayers.Layer.Bing({key: bingApiKey, type: "AerialWithLabels", name: "B Hyb"}),
-            new OpenLayers.Layer.Bing({key: bingApiKey, type: "Road", name: "B Str"}),
+            new OpenLayers.Layer.Bing({key: bingApiKey, type: "Road", name: "B Str"})/*,
             new OpenLayers.Layer.Google("G Sat",{type: G_SATELLITE_MAP, sphericalMercator: true, numZoomLevels: jsonConf.mapoptions.numZoomLevels}),
             new OpenLayers.Layer.Google("G Hyb",{type: G_HYBRID_MAP, sphericalMercator: true, numZoomLevels: jsonConf.mapoptions.numZoomLevels}),
             new OpenLayers.Layer.Google("G Str",{sphericalMercator: true, numZoomLevels: jsonConf.mapoptions.numZoomLevels}),
-            new OpenLayers.Layer.Google("G Ter",{type: G_PHYSICAL_MAP, sphericalMercator: true, numZoomLevels: jsonConf.mapoptions.numZoomLevels})
+            new OpenLayers.Layer.Google("G Ter",{type: G_PHYSICAL_MAP, sphericalMercator: true, numZoomLevels: jsonConf.mapoptions.numZoomLevels})*/
         ];
     }
     
