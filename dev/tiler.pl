@@ -87,6 +87,7 @@ if(!exists $opts{'r'}) {
     
 }
 
+$uploads = '';
 if(exists $c{'composite'}) {
   if(!exists $opts{'m'}) {
     $cmd = $mainconf->{'dirdev'}.'mixer.pl '.$opts{'s'}.' '.$c{'composite'};
@@ -95,6 +96,7 @@ if(exists $c{'composite'}) {
     $compositebbox = $xml->XMLin($c{'dirvector'}.'bbox'.$c{'composite'}.'.kml', ForceArray => 1);
     $c{'bbox'} = $compositebbox->{'Document'}[0]{'ExtendedData'}[0]{'Data'}{'bbox'}{'value'}[0];
     $c{'layeryear'} = $c{'composite'};
+    $uploads = $opts{'s'}.'/'.$c{'composite'};
   }
 } else {
   $tilemapres = $xml->XMLin($c{'dirraster'}.'/tilemapresource.xml', ForceArray => 1);
@@ -104,6 +106,15 @@ if(exists $c{'composite'}) {
 
   $cmd = $mainconf->{'dirdev'}.'postproc.bash '.$opts{'s'}.' '.$opts{'y'};
   sheller($cmd);
+  $uploads = $opts{'s'}.'/'.$opts{'y'};
+}
+
+if($uploads ne '') {
+  use DBI qw(:sql_types);
+  $dbh = DBI->connect("dbi:SQLite:dbname=loads/loads.sqlite","","");
+  $sth = $dbh->prepare("INSERT INTO updates (map) VALUES (?)");
+  $sth->bind_param(1, $uploads);
+  $sth->execute();
 }
 
 $c{'ls'} = scalar(@{$layers->{'layer'}});
