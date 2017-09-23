@@ -76,9 +76,10 @@ if(!exists $opts{'p'} || $opts{'p'} =~ /d/) {
             $totalSize += $fs[7];
     }
 
-    print "Downloaded ".($totalSize >> 20)." MB, $self{x_tiles} x $self{y_tiles} tiles.\n";
+    print "Downloaded ".($totalSize >> 20)." MB\n";
 }
 
+print "$self{x_tiles} x $self{y_tiles} tiles.\n";
 # TILE MERGING
 if(!exists $opts{'p'} || $opts{'p'} =~ /m/) {
 

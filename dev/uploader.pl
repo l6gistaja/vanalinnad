@@ -22,8 +22,8 @@ foreach my $site (@sites) {
       .$mainconf->{dircache}
       .uploaddir($site);
     push(@commands, 'ssh '
-      .$dbdata{upload_host}.' rm -rf '
-      .$cachedir);
+      .$dbdata{upload_host}.' "rm -rf '
+      .$cachedir.'"');
     push(@commands, 'scp '
       .$mainconf->{dirraster}
       .$mainconf->{dirplaces}
@@ -33,8 +33,8 @@ foreach my $site (@sites) {
 }
 
 push(@commands, 'ssh '
-      .$dbdata{upload_host}.' cd '
-      .$dbdata{upload_directory}.' ; git pull');
+      .$dbdata{upload_host}.' "cd '
+      .$dbdata{upload_directory}.' ; git pull"');
 
 foreach my $site (@sites) {
     $rasterdir = $dbdata{upload_directory}
@@ -42,17 +42,17 @@ foreach my $site (@sites) {
       .$mainconf->{dirplaces}
       .$site;
     push(@commands, 'ssh '
-      .$dbdata{upload_host}.' rm -rf '
+      .$dbdata{upload_host}.' "rm -rf '
       .$rasterdir.' ; mv '
       .$dbdata{upload_directory}
       .$mainconf->{dircache}
       .uploaddir($site).' '
-      .$rasterdir);
+      .$rasterdir.'"');
 }
 
 foreach my $command (@commands) {
     print "\n========================================================\nEXECUTE: $command\n";
-    system($command);
+    #system($command);
 }
 
 $sth = $dbh->prepare("DELETE FROM updates");
