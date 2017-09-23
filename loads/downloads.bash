@@ -508,5 +508,15 @@ dev/dezoomify.pl -u http://www.kuressaare.ee/uus/public/zoomify/vanadlinnakaardi
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/tla0149/005/0002171/tla0149_005_0002171_00001_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 208 -b 220 -o cache/deiip/1744_Politseiaed.jpg
 
+# Valga 1920
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/era1604/001/0000090/era1604_001_0000090_00025_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1692 -b 1727 -o cache/deiip/1920_Valga_1.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/era1604/001/0000090/era1604_001_0000090_00025_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 1739 -b 1775 -o cache/deiip/1920_Valga_2.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/era1604/001/0000090/era1604_001_0000090_00025_k3.tif&CNT=1&SDS=0,90&JTL=7,' -a 1457 -b 1487 -o cache/deiip/1920_Valga_3.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 

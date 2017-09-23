@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1920.1"><name>1920.1</name><LineString><coordinates>25.99769636213537,57.76728774729848 25.99769636213537,57.78905971258077 26.03245306943347,57.78905971258077 26.03245306943347,57.76728774729848 25.99769636213537,57.76728774729848</coordinates></LineString></Placemark>
+<Placemark id="gcp1920.1.1"><name>1920.1 #1</name><description>2204 4242</description><Point><coordinates>26.00718729064594,57.77986291001833</coordinates></Point></Placemark>
+<Placemark id="gcp1920.1.2"><name>1920.1 #2</name><description>3920 8852</description><Point><coordinates>26.01484767959258,57.77083509681663</coordinates></Point></Placemark>
+<Placemark id="gcp1920.1.3"><name>1920.1 #3</name><description>6454 6322</description><Point><coordinates>26.024224682307977,57.77619026971597</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1920.2"><name>1920.2</name><LineString><coordinates>26.02207724132950,57.76766580838510 26.02207724132950,57.78993058434814 26.05941548394472,57.78993058434814 26.05941548394472,57.76766580838510 26.02207724132950,57.76766580838510</coordinates></LineString></Placemark>
+<Placemark id="gcp1920.2.1"><name>1920.2 #1</name><description>1275 2217</description><Point><coordinates>26.02722512979715,57.784954192685724</coordinates></Point></Placemark>
+<Placemark id="gcp1920.2.2"><name>1920.2 #2</name><description>2414 8238</description><Point><coordinates>26.032718293861482,57.77295263268567</coordinates></Point></Placemark>
+<Placemark id="gcp1920.2.3"><name>1920.2 #3</name><description>8493 4758</description><Point><coordinates>26.05586039324139,57.78033824009456</coordinates></Point></Placemark>
+<Placemark id="gcp1920.2.4"><name>1920.2 #4</name><description>7154 9262</description><Point><coordinates>26.050938478852707,57.77122307667327</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1920.3"><name>1920.3</name><LineString><coordinates>26.04585162890051,57.76810914602662 26.04585162890051,57.78954870460350 26.07570277972415,57.78954870460350 26.07570277972415,57.76810914602662 26.04585162890051,57.76810914602662</coordinates></LineString></Placemark>
+<Placemark id="gcp1920.3.1"><name>1920.3 #1</name><description>474 423</description><Point><coordinates>26.047727062149285,57.78868038108342</coordinates></Point></Placemark>
+<Placemark id="gcp1920.3.2"><name>1920.3 #2</name><description>3540 4860</description><Point><coordinates>26.060067482606673,57.77959011239874</coordinates></Point></Placemark>
+<Placemark id="gcp1920.3.3"><name>1920.3 #3</name><description>1035 8961</description><Point><coordinates>26.050936471251894,57.771238335372345</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/media/jux/histmaps/places/Valga/composed/1920/</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>25.99769636213537,57.76728774729848,26.07570277972415,57.78993058434814</value></Data>
+<Data name="maps"><value>1920.1,1920.2,1920.3</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
