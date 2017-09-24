@@ -37,7 +37,7 @@ Following describes data adding process with Debian Linux 8.4.
 1. Unpack and install it: ```./configure ; make ; sudo make install```
 1. Install [markdown](http://daringfireball.net/projects/markdown/) and [ImageMagick](http://www.imagemagick.org) etc (```sudo apt-get install markdown imagemagick python-gdal xsltproc osmctools wget```)
 1. If neccessary: ```sudo ln -s /usr/lib/libproj.so.0 /usr/lib/libproj.so```
-1. Install missing Perl modules (```sudo cpan XML::Simple JSON Storable Math::Round``` or ```apt-get install libxml-simple-perl libjson-perl libstorable-perl libmath-round-perl```)
+1. Install missing Perl modules (```sudo cpan XML::Simple JSON Storable Math::Round DBD::SQLite``` or ```apt-get install libxml-simple-perl libjson-perl libstorable-perl libmath-round-perl```)
 
 ### Creating new site
 

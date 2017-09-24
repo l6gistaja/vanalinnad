@@ -518,5 +518,17 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/era1604/001/0000090/era1604_001_0000090_00025_k3.tif&CNT=1&SDS=0,90&JTL=7,' -a 1457 -b 1487 -o cache/deiip/1920_Valga_3.jpg
 
-# dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
+# Valga 1870
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0308/006/0000035/eaa0308_006_0000035_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 1488 -b 1535 -o cache/deiip/1870_Valga.jpg
+
+# Purakyla 1930
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001812/erat-0-6_003_0001812_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 832 -b 863 -o cache/deiip/1930_Purakyla.jpg
+
+# Rakvere 1855
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0854/004/0000093/eaa0854_004_0000093_00001_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 140 -b 149 -o  cache/deiip/1855_Rakvere.jpg
+
+# dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
 
