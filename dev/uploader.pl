@@ -27,7 +27,7 @@ foreach my $site (@sites) {
     push(@commands, 'scp '
       .$mainconf->{dirraster}
       .$mainconf->{dirplaces}
-      .$site.' '
+      .$site.'/* '
       .$dbdata{upload_host}.':'
       .$cachedir);
 }
@@ -52,7 +52,7 @@ foreach my $site (@sites) {
 
 foreach my $command (@commands) {
     print "\n========================================================\nEXECUTE: $command\n";
-    #system($command);
+    system($command);
 }
 
 $sth = $dbh->prepare("DELETE FROM updates");

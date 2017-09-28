@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vanalinnadgdal xmlns="http://juks.alkohol.ee/vanalinnad">
 
+<composite id="FOOL_AUTORENDER"/> <!-- if GDAL file has only on composite map, autorender.pl will fail -->
+
 <composite id="1970" maps="1970.k2,1970.k1" montage="yes" />
 
 <translate map="1970.k2" composite="1970">
