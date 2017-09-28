@@ -1,5 +1,7 @@
 #!/usr/bin/perl
 
+@commands = ('echo "Uploding all committed changes and tiles to website"','git push');
+
 use XML::Simple;
 use DBI qw(:sql_types);
 $xml = new XML::Simple;
@@ -16,7 +18,6 @@ $sth = $dbh->prepare("SELECT map FROM updates WHERE id > ? GROUP BY map");
 $sth->execute($dbdata{last_vanalinnad});
 while ($row = $sth->fetchrow_hashref) { push(@sites, $row->{map}); }
 
-@commands = ('git push');
 foreach my $site (@sites) {
     $cachedir = $dbdata{upload_directory}
       .$mainconf->{dircache}

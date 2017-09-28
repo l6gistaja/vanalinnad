@@ -1,9 +1,10 @@
 #!/usr/bin/perl
 
+@commands = ('echo "Rerendering ALL maps"');
+
 use XML::Simple;
 $xml = new XML::Simple;
 $mainconf = $xml->XMLin('conf.xml');
-@commands = ();
 
 @sites = ();
 $sitekml = $xml->XMLin($mainconf->{dirvector}.$mainconf->{fileareaselector});
