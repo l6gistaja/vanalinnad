@@ -530,5 +530,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0854/004/0000093/eaa0854_004_0000093_00001_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 140 -b 149 -o  cache/deiip/1855_Rakvere.jpg
 
+# Lehtma - Tahkuna raudtee
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/era2553/001/0000092/era2553_001_0000092_00103_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 816 -b 849 -o  cache/deiip/Lehtma-Tahkuna_raudtee.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
 

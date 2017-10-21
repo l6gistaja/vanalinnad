@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+<Placemark id="bbox"><name>Puurmanni</name><LineString><coordinates>26.27454545820089,58.59933183338275 26.27454545820089,58.75029386623177 26.51210922073746,58.75029386623177 26.51210922073746,58.59933183338275 26.27454545820089,58.59933183338275</coordinates></LineString></Placemark>
+<Placemark id="gcp.1"><name>#1</name><description>370 257</description><Point><coordinates>26.32527260314962,58.731947878595406</coordinates></Point></Placemark>
+<Placemark id="gcp.2"><name>#2</name><description>1549 639</description><Point><coordinates>26.48639826309183,58.70441636423195</coordinates></Point></Placemark>
+<Placemark id="gcp.3"><name>#3</name><description>344 1941</description><Point><coordinates>26.323716921920845,58.61275737050437</coordinates></Point></Placemark>
+
+</Document>
+</kml>

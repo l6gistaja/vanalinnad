@@ -26,7 +26,7 @@ function vlMap(inputParams){
       confXml = request.responseXML;
       conf = vlUtils.xmlDoc2Hash(confXml);
       jsonConf = JSON.parse(conf.json);
-      isAtSite = 'site' in reqParams && reqParams['site'].match(/^[A-Z][A-Za-z-]*$/);
+      isAtSite = 'site' in reqParams && reqParams['site'].match(/^[sA-Z][A-Za-z-]*$/);
       if(isAtSite) {
         areaDir = reqParams['site'] + '/';
         OpenLayers.Request.GET({ 
@@ -390,7 +390,7 @@ function vlMap(inputParams){
         clickData.links[clickData.links.length] = w;
     }
     
-    vlUtils.mapAddCoordPopups(map, clickData, reqParams, jsonConf, jsonConf.mapoptions.projection);
+    vlUtils.mapAddCoordPopups(map, clickData, reqParams, jsonConf, false);
 
     if(isAtSite) { window.document.title += ': ' + vlUtils.getXmlValue(layersXml, 'city'); }
   }

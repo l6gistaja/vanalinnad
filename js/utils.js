@@ -440,6 +440,7 @@ vlUtils.mapAddCoordPopups = function(map, clickData, reqParams, jsonConf, projec
 	function showPath() { 
 	    var path = '';
 	    var coords;
+	    var pathPoint;
 	    for(var i = 0; i < lineLayer.features.length; i++) {
 		path += reqParams.draw == 'KML' 
 		  ? '<LineString><coordinates>'
@@ -447,9 +448,9 @@ vlUtils.mapAddCoordPopups = function(map, clickData, reqParams, jsonConf, projec
 		for(var j = 0; j < lineLayer.features[i].geometry.components.length; j++) {
 		    coords = [lineLayer.features[i].geometry.components[j].x,
 			lineLayer.features[i].geometry.components[j].y];
-		    if(projection && projection != 'EPSG:4326') {
+		    if(projection) {
 			try {
-			    var coords = proj4(
+			    coords = proj4(
 				jsonConf.proj4[projection.replace(':','_')],
 				jsonConf.proj4['EPSG_4326'],
 				coords);
@@ -457,6 +458,10 @@ vlUtils.mapAddCoordPopups = function(map, clickData, reqParams, jsonConf, projec
 			    alert('PROJ4 failure.');
 			    return;
 			}
+		    } else {
+			pathPoint = new OpenLayers.LonLat(coords[0], coords[1]);
+			pathPoint.transform(map.options.projection, map.options.displayProjection);
+			coords = [pathPoint.lon, pathPoint.lat];
 		    }
 		    path += reqParams.draw == 'KML'
 		      ? coords[0] + "," + coords[1] + " "

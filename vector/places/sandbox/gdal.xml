@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vanalinnadgdal xmlns="http://juks.alkohol.ee/vanalinnad">
+
+<translate map="Puurmanni">
+    <t file="era0049_001_0001437_00003_t_Puurmanni.jpg" gcps="-gcp 370 257 26.32527260314962 58.731947878595406 -gcp 1549 639 26.48639826309183 58.70441636423195 -gcp 344 1941 26.323716921920845 58.61275737050437"/>
+</translate>
+
+<translate map="Tahkuna">
+    <t file="Lehtma-Tahkuna_raudtee.jpg" gcps="-gcp 6920 2976 22.674545596567594 59.06791770139211 -gcp 2174 1930 22.609135359721815 59.075584592318165 -gcp 2413 3834 22.613508408304288 59.06102714886487"/>
+    <t file="Lehtma-Tahkuna_raudtee.jpg" gcps="-gcp 6920 2976 22.674545596567594 59.06791770139211 -gcp 2378 2533 22.612541 59.071062 -gcp 2413 3834 22.613508408304288 59.06102714886487"/>
+</translate>
+
+</vanalinnadgdal>

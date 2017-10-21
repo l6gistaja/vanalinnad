@@ -1,0 +1,10 @@
+<vanalinnadlayers xmlns="http://juks.alkohol.ee/vanalinnad">
+  <bounds>26.27454545820089,58.59933183338275,26.51210922073746,58.75029386623177</bounds>
+  <city>sandbox</city>
+  <country>sandbox</country>
+  <json><![CDATA[{}]]></json>
+  <layer bounds="26.27454545820089,58.59933183338275,26.51210922073746,58.75029386623177" type="tms" year="Puurmanni" />
+  <layer bounds="22.57920975795717,59.05009854323782,22.69094835807053,59.09094568347981" type="tms" year="Tahkuna" />
+  <maxzoom>16</maxzoom>
+  <minzoom>12</minzoom>
+</vanalinnadlayers>
