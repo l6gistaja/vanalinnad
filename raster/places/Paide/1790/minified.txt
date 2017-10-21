@@ -1,2 +1,0 @@
-2015-04-22 23:23:12+03:00; 327 files; 3.4M ../raster/places/Paide/1790
-2015-04-22 23:23:25+03:00; 162 files; 2.7M ../raster/places/Paide/1790

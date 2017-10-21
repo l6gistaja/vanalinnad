@@ -1,2 +1,0 @@
-2015-02-22 00:01:21+02:00; 2624 files; 22M ../raster/places/Tallinn/1865
-2015-02-22 00:03:01+02:00; 1672 files; 18M ../raster/places/Tallinn/1865

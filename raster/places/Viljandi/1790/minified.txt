@@ -1,2 +1,0 @@
-2015-04-24 01:40:44+03:00; 145 files; 1.3M ../raster/places/Viljandi/1790
-2015-04-24 01:40:49+03:00; 75 files; 976K ../raster/places/Viljandi/1790

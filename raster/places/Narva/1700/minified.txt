@@ -1,2 +1,0 @@
-2015-01-23 21:07:09+02:00; 1199 files; 12M ../raster/places/Narva/1700
-2015-01-23 21:07:54+02:00; 522 files; 8.8M ../raster/places/Narva/1700

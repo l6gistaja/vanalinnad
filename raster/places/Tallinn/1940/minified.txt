@@ -1,2 +1,0 @@
-2015-08-18 23:19:30+03:00; 1485 files; 24M ../raster/places/Tallinn/1940
-2015-08-18 23:20:50+03:00; 1090 files; 23M ../raster/places/Tallinn/1940

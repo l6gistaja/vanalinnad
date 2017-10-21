@@ -1,2 +1,0 @@
-2015-05-03 23:49:23+03:00; 656 files; 7.4M ../raster/places/Valga/1683
-2015-05-03 23:49:56+03:00; 348 files; 6.2M ../raster/places/Valga/1683

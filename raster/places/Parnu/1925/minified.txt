@@ -1,2 +1,0 @@
-2017-04-11 20:40:24+03:00; 1410 files; 13M ../raster/places/Parnu/1925
-2017-04-11 20:41:37+03:00; 465 files; 8.6M ../raster/places/Parnu/1925

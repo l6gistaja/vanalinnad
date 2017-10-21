@@ -1,2 +1,0 @@
-2015-04-26 02:03:13+03:00; 288 files; 2.7M ../raster/places/Voru/1865
-2015-04-26 02:03:24+03:00; 163 files; 2.2M ../raster/places/Voru/1865

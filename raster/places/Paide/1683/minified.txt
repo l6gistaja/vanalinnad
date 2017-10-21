@@ -1,2 +1,0 @@
-2016-12-12 17:21:39+02:00; 47 files; 476K ../raster/places/Paide/1683
-2016-12-12 17:21:41+02:00; 44 files; 464K ../raster/places/Paide/1683

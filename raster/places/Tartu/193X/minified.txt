@@ -1,2 +1,0 @@
-2015-06-13 18:47:52+03:00; 330 files; 6.6M ../raster/places/Tartu/193X
-2015-06-13 18:48:04+03:00; 302 files; 6.5M ../raster/places/Tartu/193X

@@ -1,2 +1,0 @@
-2017-09-23 18:37:12+03:00; 50 files; 392K ../raster/places/Haapsalu/1683
-2017-09-23 18:37:14+03:00; 36 files; 336K ../raster/places/Haapsalu/1683

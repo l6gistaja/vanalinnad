@@ -1,2 +1,0 @@
-2017-03-06 21:52:24+02:00; 100 files; 816K ../raster/places/Voru/1785
-2017-03-06 21:52:27+02:00; 76 files; 720K ../raster/places/Voru/1785

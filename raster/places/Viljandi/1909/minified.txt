@@ -1,2 +1,0 @@
-2015-01-29 15:16:18+02:00; 68 files; 608K ../raster/places/Viljandi/1909
-2015-01-29 15:16:24+02:00; 51 files; 540K ../raster/places/Viljandi/1909

@@ -1,2 +1,0 @@
-2017-03-07 22:25:10+02:00; 672 files; 8.2M ../raster/places/Narva/1927
-2017-03-07 22:25:37+02:00; 378 files; 7.1M ../raster/places/Narva/1927

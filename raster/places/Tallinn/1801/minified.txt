@@ -1,2 +1,0 @@
-2015-09-06 20:59:10+03:00; 2475 files; 19M ../raster/places/Tallinn/1801
-2015-09-06 21:00:34+03:00; 670 files; 12M ../raster/places/Tallinn/1801

@@ -1,2 +1,0 @@
-2015-05-01 16:04:29+03:00; 411 files; 2.8M ../raster/places/Rakvere/1818
-2015-05-01 16:04:43+03:00; 219 files; 2.0M ../raster/places/Rakvere/1818

@@ -1,2 +1,0 @@
-2014-10-21 21:28:41+03:00; 175 files; 2.1M ../raster/places/Haapsalu/1941
-2014-10-21 21:28:48+03:00; 130 files; 1.9M ../raster/places/Haapsalu/1941

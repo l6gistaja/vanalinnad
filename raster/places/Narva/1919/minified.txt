@@ -1,2 +1,0 @@
-2014-11-10 22:37:27+02:00; 2666 files; 42M ../raster/places/Narva/1919
-2014-11-10 22:39:57+02:00; 2661 files; 42M ../raster/places/Narva/1919
