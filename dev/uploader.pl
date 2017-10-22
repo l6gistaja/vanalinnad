@@ -26,17 +26,13 @@ foreach my $site (@sites) {
       .$dbdata{upload_host}.' "rm -rf '
       .$cachedir.' ; mkdir '
       .$cachedir.'"');
-    push(@commands, 'scp -r '
+    push(@commands, 'scp -r -q '
       .$mainconf->{dirraster}
       .$mainconf->{dirplaces}
       .$site.'/* '
       .$dbdata{upload_host}.':'
       .$cachedir);
 }
-
-push(@commands, 'ssh '
-      .$dbdata{upload_host}.' "cd '
-      .$dbdata{upload_directory}.' ; git pull"');
 
 foreach my $site (@sites) {
     @pieces = split(/\//, $site);
@@ -57,6 +53,10 @@ foreach my $site (@sites) {
       .uploaddir($site).' '
       .$rasterdir.'"');
 }
+
+push(@commands, 'ssh '
+      .$dbdata{upload_host}.' "cd '
+      .$dbdata{upload_directory}.' ; git pull"');
 
 foreach my $command (@commands) {
     print "\n========================================================\nEXECUTE: $command\n";
