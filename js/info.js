@@ -27,7 +27,7 @@ function vlInitInfo(inputParams){
     return ' : ' + vlUtils.link({u:baseURL, l:siteName})
       + (level != 'year' ? ''
         : ' : ' + vlUtils.link({u:baseYear + years[0], l:'&lt;&lt;', h:years[0]})
-        + ' ' + vlUtils.link({u:'index.html' + baseYear + reqParams['year'], l:reqParams['year']})
+        + ' ' + vlUtils.link({u:'index.html' + baseYear + reqParams['year'], l:reqParams['year'], h:'See map itself'})
         + ' ' + vlUtils.link({u:baseYear + years[1], l:'&gt;&gt;', h:years[1]}));
   }
   
@@ -172,7 +172,7 @@ function vlInitInfo(inputParams){
               + reqParams['site']
               + '/'
               + legends[i]
-              + '" />';
+              + '" title="Legend"/>';
           }
         }
 

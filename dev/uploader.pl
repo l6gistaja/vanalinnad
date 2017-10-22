@@ -45,8 +45,9 @@ foreach my $site (@sites) {
       .$dbdata{upload_directory}
       .$mainconf->{dirraster}
       .$mainconf->{dirplaces}
-      .$pieces[0]
-      .' ; rm -rf '
+      .$pieces[0].'"');
+    push(@commands, 'ssh '
+      .$dbdata{upload_host}.' "rm -rf '
       .$rasterdir.' ; mv '
       .$dbdata{upload_directory}
       .$mainconf->{dircache}
