@@ -24,8 +24,9 @@ foreach my $site (@sites) {
       .uploaddir($site);
     push(@commands, 'ssh '
       .$dbdata{upload_host}.' "rm -rf '
+      .$cachedir.' ; mkdir '
       .$cachedir.'"');
-    push(@commands, 'scp '
+    push(@commands, 'scp -r '
       .$mainconf->{dirraster}
       .$mainconf->{dirplaces}
       .$site.'/* '
@@ -38,12 +39,18 @@ push(@commands, 'ssh '
       .$dbdata{upload_directory}.' ; git pull"');
 
 foreach my $site (@sites) {
+    @pieces = split(/\//, $site);
     $rasterdir = $dbdata{upload_directory}
       .$mainconf->{dirraster}
       .$mainconf->{dirplaces}
       .$site;
     push(@commands, 'ssh '
-      .$dbdata{upload_host}.' "rm -rf '
+      .$dbdata{upload_host}.' "mkdir '
+      .$dbdata{upload_directory}
+      .$mainconf->{dirraster}
+      .$mainconf->{dirplaces}
+      .$pieces[0]
+      .' ; rm -rf '
       .$rasterdir.' ; mv '
       .$dbdata{upload_directory}
       .$mainconf->{dircache}
