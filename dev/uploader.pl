@@ -1,22 +1,28 @@
 #!/usr/bin/perl
 
-@commands = ('echo "Uploding all committed changes and tiles to website"','git push');
+@commands = ('echo "Uploading all commited changes and tiles to website"','git push');
 
 use XML::Simple;
 use DBI qw(:sql_types);
+use lib './dev';
+use VlHelper qw(json_file_read json_file_write);
+
 $xml = new XML::Simple;
 $mainconf = $xml->XMLin('conf.xml');
-$dbh = DBI->connect("dbi:SQLite:dbname=loads/loads.sqlite","","");
+%localdata = json_file_read($mainconf->{'dircache'}.$mainconf->{'filelocal'});
+$dbh = DBI->connect("dbi:SQLite:dbname=".$mainconf->{'dbloads'},"","");
 
 %dbdata = qw();
 $sth = $dbh->prepare("SELECT * FROM data");
 $sth->execute();
 while ($row = $sth->fetchrow_hashref) { $dbdata{$row->{k}} = $row->{v}; }
+$sth->finish;
 
 @sites = qw();
-$sth = $dbh->prepare("SELECT map FROM updates WHERE id > ? GROUP BY map");
-$sth->execute($dbdata{last_vanalinnad});
+$sth = $dbh->prepare("SELECT map FROM updates WHERE id > ? AND host = ? AND crud <> 'D' GROUP BY map");
+$sth->execute($localdata{'upload'}, $localdata{'id'});
 while ($row = $sth->fetchrow_hashref) { push(@sites, $row->{map}); }
+$sth->finish;
 
 foreach my $site (@sites) {
     $cachedir = $dbdata{upload_directory}
@@ -64,8 +70,16 @@ foreach my $command (@commands) {
     system($command);
 }
 
-$sth = $dbh->prepare("DELETE FROM updates");
-$sth->execute();
+if(scalar @sites) {
+    $sth = $dbh->prepare("SELECT MAX(id) AS mid FROM updates WHERE host = ? AND crud <> 'D'");
+    $sth->execute($localdata{'id'});
+    $row = $sth->fetchrow_hashref;
+    $localdata{'upload'} = $row->{mid};
+    $sth->finish;
+    json_file_write($mainconf->{'dircache'}.$mainconf->{'filelocal'}, \%localdata);
+}
+
+$dbh->disconnect;
 
 sub uploaddir {
  @pieces = split(/\//, $_[0]);

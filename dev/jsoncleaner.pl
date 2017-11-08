@@ -1,13 +1,21 @@
 #!/usr/bin/perl
 
+use DBI qw(:sql_types);
 use JSON;
+use XML::Simple;
+use lib './dev';
+use VlHelper qw(json_file_read json_file_write);
 
 if(scalar(@ARGV) < 1) {
   print "\nUsage: ./dev/jsoncleaner.pl SITE_ID\nDeletes empty tile data of nonexisting year directories.\n";
   exit;
 }
 
-$dir = './raster/places/'.$ARGV[0];
+$xml = new XML::Simple;
+$mainconf= $xml->XMLin('conf.xml');
+%localdata = json_file_read($mainconf->{'dircache'}.$mainconf->{'filelocal'});
+
+$dir = './'.$mainconf->{'dirraster'}.$mainconf->{'dirplaces'}.$ARGV[0];
 opendir(DIR, $dir) or die $!;
 @y = qw();
 while ( $file = readdir(DIR)) {
@@ -18,24 +26,23 @@ while ( $file = readdir(DIR)) {
 closedir(DIR);
 print "Existing year directories: '".join("', '",@y)."'\n";
 
-$emptyjson = './vector/places/'.$ARGV[0].'/empty.json';
-open(FILE, $emptyjson) or die "Can't read file $emptyjson [$!]\n";
-$document = <FILE>;
-close (FILE);
-%doc = %{decode_json($document)};
-
+%doc = json_file_read($emptyjson);
+$dbh = DBI->connect("dbi:SQLite:dbname=".$mainconf->{'dbloads'},"","");
+$sth = $dbh->prepare("INSERT INTO updates (map,crud,host,time) VALUES (?,'D','".$localdata{'id'}."',CURRENT_TIMESTAMP)");
 @d = qw();
 foreach $year (keys %doc) {
   if ( !($year ~~ @y) ) {
     push(@d, $year);
     delete $doc{$year};
+    $sth->bind_param(1, $ARGV[0].'/'.$year);
+    $sth->execute();
   }
 }
+$sth->finish;
+$dbh->disconnect;
 
 if(scalar(@d) > 0) {
-  open(FILE, '>'.$emptyjson) or die "Can't read file $emptyjson [$!]\n";
-  print FILE encode_json(\%doc);
-  close (FILE);
+  json_file_write($emptyjson, \%doc);
   print "Deleted: '".join("', '",@d)."'\n";
 }
 

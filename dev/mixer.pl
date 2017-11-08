@@ -6,7 +6,7 @@ if(scalar(@ARGV) < 2) {
 }
 
 use lib './dev';
-use VlHelper qw(minify_empty_tiles_json add_empty_tiles_json bbox_fragment add_to_tree kml_envelope gdal_tlast bbox_box bbox_points);
+use VlHelper qw(minify_empty_tiles_json add_empty_tiles_json bbox_fragment add_to_tree kml_envelope gdal_tlast bbox_box bbox_points json_file_read);
 use Data::Dumper;
 use POSIX;
 
@@ -22,6 +22,7 @@ $xml = new XML::Simple;
 $mainconf = $xml->XMLin($rootdir.'conf.xml');
 $gdaldir = $rootdir.$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$site.'/';
 $bboxfile = $gdaldir.'bbox'.$year.'.kml';
+%localdata = json_file_read($mainconf->{'dircache'}.$mainconf->{'filelocal'});
 
 if($gdaltxtformat) {
   $bboxdata = $xml->XMLin($bboxfile);
@@ -44,7 +45,7 @@ if($gdaltxtformat) {
   $data{'zmin'} = $layers->{'minzoom'}[0];
   $data{'zmax'} = $layers->{'maxzoom'}[0];
   $data{'tileext'} = '.jpg';
-  $data{'sourcedir'} = $mainconf->{'dirsource'}.$site.'/'.$mainconf->{'dircomposite'}.$year.'/';
+  $data{'sourcedir'} = $localdata{'dirsource'}.$site.'/'.$mainconf->{'dircomposite'}.$year.'/';
 }
 
 # DISCOVER TILES 

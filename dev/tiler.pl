@@ -4,7 +4,7 @@ use XML::Simple;
 use Getopt::Std;
 use Data::Dumper;
 use lib './dev';
-use VlHelper qw(gdal_mapindex gdal_tlast);
+use VlHelper qw(gdal_mapindex gdal_tlast json_file_read);
 
 getopt('s:y:rm', \%opts);
 if(!exists $opts{'s'} || !exists $opts{'y'}) {
@@ -21,6 +21,7 @@ $c{'dirvector'} = $mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$opts{'s'}.'
 $c{'filegdal'} = $c{'dirvector'}.$mainconf->{'filegdal'};
 $gdal = $xml->XMLin($c{'filegdal'}, ForceArray => 1);
 #print Dumper($gdal);
+%localdata = json_file_read($mainconf->{'dircache'}.$mainconf->{'filelocal'});
 
 $c{'y'} = gdal_mapindex($gdal, $opts{'y'});
 
@@ -31,10 +32,10 @@ if($c{'y'} < 0) {
 
 if(exists $gdal->{'translate'}[$c{'y'}]{'composite'}) {
   $c{'composite'} = $gdal->{'translate'}[$c{'y'}]{'composite'};
-  $c{'dirsrcimg'} = $mainconf->{'dirsource'}.$opts{'s'}.'/'.$mainconf->{'dircomposite'}.$c{'composite'}.'/';
+  $c{'dirsrcimg'} = $localdata{'dirsource'}.$opts{'s'}.'/'.$mainconf->{'dircomposite'}.$c{'composite'}.'/';
   $c{'dirraster'} = $c{'dirsrcimg'}.$opts{'y'};
 } else {
-  $c{'dirsrcimg'} = $mainconf->{'dirsource'}.$opts{'s'}.'/';
+  $c{'dirsrcimg'} = $localdata{'dirsource'}.$opts{'s'}.'/';
   $c{'dirraster'} = $mainconf->{'dirraster'}.$mainconf->{'dirplaces'}.$opts{'s'}.'/'.$opts{'y'};
 }
 $c{'tlast'} = gdal_tlast($gdal, $c{'y'});
@@ -109,14 +110,6 @@ if(exists $c{'composite'}) {
   $uploads = $opts{'s'}.'/'.$opts{'y'};
 }
 
-if($uploads ne '') {
-  use DBI qw(:sql_types);
-  $dbh = DBI->connect("dbi:SQLite:dbname=loads/loads.sqlite","","");
-  $sth = $dbh->prepare("INSERT INTO updates (map) VALUES (?)");
-  $sth->bind_param(1, $uploads);
-  $sth->execute();
-}
-
 $c{'ls'} = scalar(@{$layers->{'layer'}});
 $isNewLayer = 1;
 for($i = 0; $i < $c{'ls'}; $i++) {
@@ -135,7 +128,9 @@ $layers->{'json'}[0] = '<![CDATA['.$layers->{'json'}[0].']]>';
 $xml->XMLout($layers, RootName => 'vanalinnadlayers', OutputFile => $c{'filelayers'}, NoEscape => 1);
 
 $rss = $c{'dirvector'}.'rss'.$c{'layeryear'}.'.xml';
+$crud = 'U';
 if(! -e $rss) {
+  $crud = 'C';
   if($c{'layeryear'} =~ /^\d{4}[^\d]*$/) {
     $rssdate = $c{'layeryear'};
     $rssdate =~ s/[^\d]*$//;
@@ -148,6 +143,18 @@ if(! -e $rss) {
     $cmd = 'cp '.$mainconf->{'dirvector'}.'rsstemplate.xml '.$rss;
     sheller($cmd);
   }
+}
+
+if($uploads ne '') {
+  use DBI qw(:sql_types);
+  $dbh = DBI->connect("dbi:SQLite:dbname=".$mainconf->{'dbloads'},"","");
+  $sth = $dbh->prepare("INSERT INTO updates (map,crud,host,time) VALUES (?,?,?,CURRENT_TIMESTAMP)");
+  $sth->bind_param(1, $uploads);
+  $sth->bind_param(2, $crud);
+  $sth->bind_param(3, $localdata{'id'});
+  $sth->execute();
+  $sth->finish;
+  $dbh->disconnect;
 }
 
 print "\a";

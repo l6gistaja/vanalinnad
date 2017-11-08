@@ -6,14 +6,14 @@
 <dirplaces>places/</dirplaces>
 <dirlegends>legends/</dirlegends>
 <dirdev>dev/</dirdev>
-<!-- <dirsource>/home/jux/histmaps/places/</dirsource> -->
-<dirsource>/media/jux/histmaps/places/</dirsource>
 <dircomposite>composed/</dircomposite>
 <fileareaselector>selector.kml</fileareaselector>
 <filelayers>layers.xml</filelayers>
 <filegdal>gdal.xml</filegdal>
 <fileemptytiles>empty.json</fileemptytiles>
 <fileprefixroads>roads</fileprefixroads>
+<filelocal>local_machine_data.json</filelocal>
+<dbloads>loads/loads.sqlite</dbloads>
 <regexyearmatcher>^\d+[A-Za-z]{0,2}(-\d+)?$</regexyearmatcher>
 <tmslayerprefix>tms_</tmslayerprefix>
 <infourlprefix>info.html?</infourlprefix>

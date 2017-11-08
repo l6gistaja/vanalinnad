@@ -4,7 +4,7 @@ use Exporter qw(import);
 use Storable qw(dclone);
 use JSON;
 
-our @EXPORT_OK = qw(minify_empty_tiles_json add_empty_tiles_json bbox_fragment add_to_tree kml_envelope gdal_mapindex gdal_tlast bbox_box bbox_points);
+our @EXPORT_OK = qw(minify_empty_tiles_json add_empty_tiles_json bbox_fragment add_to_tree kml_envelope gdal_mapindex gdal_tlast bbox_box bbox_points json_file_read json_file_write);
 
 sub minify_empty_tiles_json {
   %json = %{dclone($_[0])};
@@ -51,16 +51,9 @@ sub minify_empty_tiles_json {
 }
 
 sub add_empty_tiles_json {
-  open(FILE, $_[0]) or die "Can't read file 'filename' [$!]\n";
-  $document = <FILE>;
-  close (FILE);
-
-  %doc = %{decode_json($document)};
+  %doc = json_file_read($_[0]);
   $doc{$_[1]} = $_[2];
-
-  open(FILE, '>'.$_[0]) or die "Can't read file 'filename' [$!]\n";
-  print FILE encode_json(\%doc);
-  close (FILE);
+  json_file_write($_[0], \%doc);
 }
 
 sub bbox_fragment {
@@ -146,6 +139,19 @@ sub gdal_mapindex {
 
 sub gdal_tlast {
   return scalar(@{$_[0]->{'translate'}[$_[1]]{'t'}}) -1;
+}
+
+sub json_file_read {
+  open(FILE, $_[0]) or die "Can't open file [$!]\n";
+  $document = <FILE>;
+  close (FILE);
+  return %{decode_json($document)};
+}
+
+sub json_file_write {
+  open(FILE, '>'.$_[0]) or die "Can't open file [$!]\n";
+  print FILE encode_json($_[1]);
+  close (FILE);
 }
 
 1;
