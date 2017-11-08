@@ -309,7 +309,9 @@ dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/
 # Haapsalu 1924
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001479/erat-0-6_003_0001479_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 2280 -b 2319 -o cache/deiip/1924_erat-0-6_003_0001479_00001_k1.jpg
+
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001479/erat-0-6_003_0001479_00001_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 1904 -b 1937 -o cache/deiip/1924_erat-0-6_003_0001479_00001_k2.jpg
+
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001479/erat-0-6_003_0001479_00001_k4.tif&CNT=1&SDS=0,90&JTL=7,' -a 864 -b 895 -o cache/deiip/1924_erat-0-6_003_0001479_00001_k4.jpg
 
 # Tartu 1925
@@ -445,11 +447,13 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # http://www.ra.ee/kaardid/index.php/et/map/view?id=229587
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000835/eaa2072_009_0000835_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 2223 -b 2279 -o cache/deiip/197X_Parnu_W1.jpg
+
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000835/eaa2072_009_0000835_00001_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 2109 -b 2165 -o cache/deiip/197X_Parnu_W2.jpg
 
 # http://www.ra.ee/kaardid/index.php/et/map/view?id=276245
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000835/eaa2072_009_0000835_00002_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 2223 -b 2279 -o cache/deiip/197X_Parnu_E1.jpg
+
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000835/eaa2072_009_0000835_00002_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 2109 -b 2165 -o cache/deiip/197X_Parnu_E2.jpg
 
 # http://www.ra.ee/kaardid/index.php/et/map/view?id=1644 ; Parnu 1800
@@ -511,8 +515,6 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/
 # Valga 1920
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/era1604/001/0000090/era1604_001_0000090_00025_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1692 -b 1727 -o cache/deiip/1920_Valga_1.jpg
-
-dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/era1604/001/0000090/era1604_001_0000090_00025_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 1739 -b 1775 -o cache/deiip/1920_Valga_2.jpg
 

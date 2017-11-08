@@ -396,7 +396,7 @@ function vlMap(inputParams){
   }
 
   var htmlSites = function(s) {
-    y = vlUtils.link({'u':'?','h':'Main page','l':'Vanalinnad'});
+    y = s.length > 1 ? vlUtils.link({'u':'?','h':'Main page','l':'Vanalinnad'}) : '';
     var siteParam, siteName, sitePoint;
     var wmsLinks = [];
     for(f in s) {
