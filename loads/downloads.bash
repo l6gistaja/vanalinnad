@@ -536,5 +536,12 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/era2553/001/0000092/era2553_001_0000092_00103_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 816 -b 849 -o  cache/deiip/Lehtma-Tahkuna_raudtee.jpg
 
+# Voru 1785
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0909/001/0000131/eaa0909_001_0000131_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 900 -b 935 -o  cache/deiip/1785_Voru.jpg
+
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
+
+
 
