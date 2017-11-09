@@ -4,6 +4,7 @@
   <country>Estonia</country>
   <json><![CDATA[{
 "urls": {
+ "riksarkivet": {"h":"Riksarkivet, 0406 Utländska stads- och fästningsplaner 1550 – 1989, 28 Östersjöprovinserna", "l":"Riksarkivet 16XX", "t":"_blank", "U":"https://sok.riksarkivet.se/?EndastDigitaliserat=true&tab=post&ct=50&inc=1&exp=y&vol=n&postid=Arkis+0e231e71-b84b-4140-91bd-32cb43c8b616"},
  "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/12/"},
  "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта 1862", "l":"ЭтоМесто: 3-верстовка 1862", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/3-5/"},
  "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-atlas_topo-10km/?x=@X@&amp;y=@Y@", "srs":"EPSG:4326"},

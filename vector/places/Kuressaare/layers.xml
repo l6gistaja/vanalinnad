@@ -4,11 +4,12 @@
   <country>Estonia</country>
   <json><![CDATA[{
 "urls": {
+ "riksarkivet": {"h":"Riksarkivet, 0406 Utländska stads- och fästningsplaner 1550 – 1989, 28 Östersjöprovinserna", "l":"Riksarkivet 16XX", "t":"_blank", "U":"https://sok.riksarkivet.se/?EndastDigitaliserat=true&tab=post&ct=50&inc=1&exp=y&vol=n&postid=Arkis+18183bda-0434-404b-810e-b32c98fad167"},
  "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/9/"},
  "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта 1866", "l":"ЭтоМесто: 3-верстовка 1866", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/5-2/"},
- "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-genshtab_o-34/?x=@X@&amp;y=@Y@", "srs":"EPSG:4326"},
- "ra1917m": {"h":"Rahvusarhiiv &lt; 1917", "l":"Rahvusarhiiv &lt; 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139257&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav"},
- "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10928035&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav"},
+ "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-genshtab_o-34/?x=@X@&y=@Y@", "srs":"EPSG:4326"},
+ "ra1917m": {"h":"Rahvusarhiiv &lt; 1917", "l":"Rahvusarhiiv &lt; 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139257&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
+ "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10928035&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "kuressaare": {"h":"Kuressaare kaardirakendused", "l":"Kuressaare kaardirakendused", "t":"_blank", "U":"http://www.kuressaare.ee/uus/kaardid/"},
  "saaremaa_geneal": {"h":"Saaremaa genealoogiaselts", "l":"Saaremaa genealoogiaselts", "t":"_blank", "U":"http://www.genealoogia.ee/saaremaa/tulemused.html"}
 }
