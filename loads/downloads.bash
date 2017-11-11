@@ -540,6 +540,13 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0909/001/0000131/eaa0909_001_0000131_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 900 -b 935 -o  cache/deiip/1785_Voru.jpg
 
+# Voru 1820
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0298/002/0000011/eaa0298_002_0000011_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 999 -b 1035 -o  cache/deiip/1820_Voru.jpg
+
+# Paide 18XX 
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/002/0000045/eaa2072_002_0000045_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1872 -b 1919 -o  cache/deiip/18XX_Paide.jpg
 
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
 
