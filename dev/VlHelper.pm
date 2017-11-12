@@ -142,14 +142,14 @@ sub gdal_tlast {
 }
 
 sub json_file_read {
-  open(FILE, $_[0]) or die "Can't open file [$!]\n";
+  open(FILE, $_[0]) or die "Can't open file '".$_[0]."' for reading: $!\n";
   $document = <FILE>;
   close (FILE);
   return %{decode_json($document)};
 }
 
 sub json_file_write {
-  open(FILE, '>'.$_[0]) or die "Can't open file [$!]\n";
+  open(FILE, '>'.$_[0]) or die "Can't open file '".$_[0]."' for writing: $!\n";
   print FILE encode_json($_[1]);
   close (FILE);
 }

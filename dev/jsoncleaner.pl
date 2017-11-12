@@ -13,6 +13,7 @@ if(scalar(@ARGV) < 1) {
 
 $xml = new XML::Simple;
 $mainconf= $xml->XMLin('conf.xml');
+#use Data::Dumper; print Dumper($mainconf);
 %localdata = json_file_read($mainconf->{'dircache'}.$mainconf->{'filelocal'});
 
 $dir = './'.$mainconf->{'dirraster'}.$mainconf->{'dirplaces'}.$ARGV[0];
@@ -26,18 +27,23 @@ while ( $file = readdir(DIR)) {
 closedir(DIR);
 print "Existing year directories: '".join("', '",@y)."'\n";
 
+$emptyjson =  $mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[0].'/'.$mainconf->{'fileemptytiles'};
 %doc = json_file_read($emptyjson);
 $dbh = DBI->connect("dbi:SQLite:dbname=".$mainconf->{'dbloads'},"","");
 $sth = $dbh->prepare("INSERT INTO updates (map,crud,host,time) VALUES (?,'D','".$localdata{'id'}."',CURRENT_TIMESTAMP)");
+$sthD = $dbh->prepare("DELETE FROM updates WHERE map = ? AND crud <> 'D'");
 @d = qw();
 foreach $year (keys %doc) {
   if ( !($year ~~ @y) ) {
     push(@d, $year);
     delete $doc{$year};
+    $sthD->bind_param(1, $ARGV[0].'/'.$year);
+    $sthD->execute();
     $sth->bind_param(1, $ARGV[0].'/'.$year);
     $sth->execute();
   }
 }
+$sthD->finish;
 $sth->finish;
 $dbh->disconnect;
 
