@@ -31,7 +31,7 @@
   <layer bounds="24.6993635421,59.4101898224,24.8080962628,59.4567200812" type="tms" year="1905" />
   <layer bounds="24.54148246967168,59.33421740127677,24.92777731400495,59.59639136369542" type="tms" year="1901" />
   <layer bounds="24.63901301486516,59.38214604253013,24.87800283924497,59.49191883676355" type="tms" year="1885" />
-  <layer bounds="24.63918365801714,59.38590712224362,24.89268672313748,59.54673180352794" type="tms" year="1872" />
+  <layer bounds="24.63918365801714,59.38590712224362,24.89268672313748,59.58499307195751" type="tms" year="1872" />
   <layer bounds="24.60744903507158,59.37488893538811,24.88145020715426,59.46194674033583" type="tms" year="1865c" />
   <layer bounds="24.60077593484253,59.38214047921841,24.87987535111836,59.48376658687961" type="tms" year="1865" />
   <layer bounds="24.66123953948447,59.38856573073566,24.84309560224416,59.46748381521798" type="tms" year="1856" />
@@ -43,10 +43,10 @@
   <layer bounds="24.73450444156960,59.42720570235137,24.75377474919629,59.44379715358760" type="tms" year="1675" />
   <layer bounds="24.72905752609735,59.42590773723730,24.76895696043184,59.44857425462865" type="tms" year="1634" />
   <layer name="⚓ Balt" file="baltic_mini.kml" hide="1" maxres="10" style="multiColor" type="custom" year="Baltic_Sea" />
-  <layer name="⑤ 1" file="roads1min.kml" maxres="10" type="roads" levels="0,1"/>
-  <layer name="⑤ 2" file="roads2min.kml" maxres="12" type="roads" levels="2"/>
-  <layer name="⑤ 3" file="roads3min.kml" maxres="14" type="roads" levels="3"/>
-  <layer name="⑤ 4" file="roads4min.kml" maxres="15" type="roads" levels="4"/>
+  <layer name="⑤ 1" file="roads1min.kml" levels="0,1" maxres="10" type="roads" />
+  <layer name="⑤ 2" file="roads2min.kml" levels="2" maxres="12" type="roads" />
+  <layer name="⑤ 3" file="roads3min.kml" levels="3" maxres="14" type="roads" />
+  <layer name="⑤ 4" file="roads4min.kml" levels="4" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>10</minzoom>
   <roadbounds e="24.986866" s="59.334099" w="24.541477" />
