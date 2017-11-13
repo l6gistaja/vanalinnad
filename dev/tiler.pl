@@ -145,7 +145,7 @@ if(! -e $rss) {
   }
 }
 
-if($uploads ne '') {
+if(!(exists $localdata{'dontlogmaps'} && $localdata{'dontlogmaps'} == 1) && $uploads ne '') {
   use DBI qw(:sql_types);
   $dbh = DBI->connect("dbi:SQLite:dbname=".$mainconf->{'dbloads'},"","");
   $sth = $dbh->prepare("INSERT INTO updates (map,crud,host,time) VALUES (?,?,?,CURRENT_TIMESTAMP)");
