@@ -17,14 +17,19 @@
 <Placemark id="gcp1929.2"><name>1929 #2</name><description>8627 1242</description><Point><coordinates>24.724809074401914,59.40738502290753</coordinates></Point></Placemark>
 <Placemark id="gcp1929.3"><name>1929 #3</name><description>6289 5142</description><Point><coordinates>24.708519560851947,59.39213516694275</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1928"><name>1928</name><LineString><coordinates>, , , , ,</coordinates></LineString></Placemark>
+<Placemark id="gcp1928.1"><name>1928 #1</name><description>844 839</description><Point><coordinates>24.672589484100296,59.46241313943169</coordinates></Point></Placemark>
+<Placemark id="gcp1928.2"><name>1928 #2</name><description>1971 4806</description><Point><coordinates>24.708488169556716,59.39214852500087</coordinates></Point></Placemark>
+<Placemark id="gcp1928.3"><name>1928 #3</name><description>5454 782</description><Point><coordinates>24.825110617523315,59.46371053799709</coordinates></Point></Placemark>
+
 <ExtendedData>
 <Data name="maps"><value>1930.Kopli,1930,1929</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histplaces18/Tallinn/composed/1930/</value></Data>
+<Data name="zmax"><value>16</value></Data>
 <Data name="montage"><value>yes</value></Data>
 <Data name="zmin"><value>10</value></Data>
-<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Tallinn/composed/1930/</value></Data>
 <Data name="bbox"><value>24.64214121388610,59.38796589229122,24.81450788542133,59.47077026337892</value></Data>
-<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 
 </ExtendedData>
 
