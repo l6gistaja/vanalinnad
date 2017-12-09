@@ -30,6 +30,8 @@ if($c{'y'} < 0) {
   exit;
 }
 
+@flags = exists $gdal->{'translate'}[$c{'y'}]{'flags'} ? split(/,/, $gdal->{'translate'}[$c{'y'}]{'flags'}) : qw();
+
 if(exists $gdal->{'translate'}[$c{'y'}]{'composite'}) {
   $c{'composite'} = $gdal->{'translate'}[$c{'y'}]{'composite'};
   $c{'dirsrcimg'} = $localdata{'dirsource'}.$opts{'s'}.'/'.$mainconf->{'dircomposite'}.$c{'composite'}.'/';
@@ -120,7 +122,7 @@ for($i = 0; $i < $c{'ls'}; $i++) {
   }
 }
 
-if($isNewLayer) {
+if($isNewLayer && $c{'layeryear'}) {
   push(@{$layers->{'layer'}}, {'type' => 'tms', 'bounds' => $c{'bbox'}, 'year' => $c{'layeryear'}});
 }
 
@@ -138,10 +140,10 @@ if(! -e $rss) {
     $rssdate = `$rssdate`;
     $rssdate =~ s/\s+$//;
     $cmd = 'cat '.$mainconf->{'dirvector'}.'rsstemplate.xml | sed "s/<pubDate>.*<\/pubDate>/<pubDate>'.$rssdate.'<\/pubDate>/" > '.$rss;
-    sheller($cmd);
+    if($c{'layeryear'}) { sheller($cmd); }
   } else {
     $cmd = 'cp '.$mainconf->{'dirvector'}.'rsstemplate.xml '.$rss;
-    sheller($cmd);
+    if($c{'layeryear'}) { sheller($cmd); }
   }
 }
 

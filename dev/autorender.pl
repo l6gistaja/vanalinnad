@@ -17,15 +17,16 @@ foreach my $site (@sites) {
     $sitegdal = $xml->XMLin($mainconf->{dirvector}.$mainconf->{dirplaces}.$site.'/'.$mainconf->{filegdal});
     push(@commands, 'echo "#################################################### SINGLE MAPS '.$site.'"');
     foreach $map (@{$sitegdal->{translate}}) {
-	if(exists $map->{composite} || (exists $map->{flags} && $map->{flags} =~ /deleted/)) { next; }
+	@flags = exists $map->{flags} ? split(/,/, $map->{flags}) : qw();
+	if('deleted' ~~ @flags) { next; }
 	push(@commands, './dev/tiler.pl -s '.$site.' -y '.$map->{map});
     }
     push(@commands, 'echo "#################################################### COMPOSITE MAPS '.$site.'"');
     foreach $map (keys %{$sitegdal->{composite}}) {
-	if((exists $sitegdal->{composite}->{$map}->{flags}
-		&& $sitegdal->{composite}->{$map}->{flags} =~ /deleted/)
+	@flags = exists $sitegdal->{composite}->{$map}->{flags} ? split(/,/, $sitegdal->{composite}->{$map}->{flags}) : qw();
+	if('deleted' ~~ @flags
 	    || ! exists $sitegdal->{composite}->{$map}->{maps}) { next; }
-	push(@commands, 'echo "===================================== COMPOSITE '.$site.' '.$map);
+	push(@commands, 'echo "===================================== COMPOSITE '.$site.' '.$map.'"');
 	@composites = split(/,/, $sitegdal->{composite}->{$map}->{maps});
 	$l = scalar(@composites);
 	for($i = 0; $i < $l; $i++) {
@@ -36,6 +37,6 @@ foreach my $site (@sites) {
 }
 
 foreach my $command (@commands) {
-    print "$command\n";
+    #print "$command\n";
     #system($command);
 }

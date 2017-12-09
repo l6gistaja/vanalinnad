@@ -1,10 +1,11 @@
 package VlHelper;
  
 use Exporter qw(import);
-use Storable qw(dclone);
 use JSON;
+use Scalar::Util qw(reftype);
+use Storable qw(dclone);
 
-our @EXPORT_OK = qw(minify_empty_tiles_json add_empty_tiles_json bbox_fragment add_to_tree kml_envelope gdal_mapindex gdal_tlast bbox_box bbox_points json_file_read json_file_write);
+our @EXPORT_OK = qw(minify_empty_tiles_json minify_empty_tiles_json_v2 add_empty_tiles_json bbox_fragment add_to_tree kml_envelope gdal_mapindex gdal_tlast bbox_box bbox_points json_file_read json_file_write);
 
 sub minify_empty_tiles_json {
   %json = %{dclone($_[0])};
@@ -48,6 +49,60 @@ sub minify_empty_tiles_json {
     }
   }
   return %json;
+}
+
+sub minify_empty_tiles_json_v2 {
+
+    $nil = -1;
+    $bbox = 'R';
+    %v1 = %{$_[0]};
+    %v2 = qw();
+    %index = qw();
+    %ranges = qw();
+
+    foreach $year (keys %v1) {
+	$v2{$year} = {};
+	foreach $zoom (keys %{$v1{$year}}) {
+	    $v2{$year}{$zoom}{''.$bbox} = [$nil,$nil,$nil,$nil];
+	    foreach $lon (keys %{$v1{$year}{$zoom}}) {
+		$l = 0 + $lon;
+		if($v2{$year}{$zoom}{''.$bbox}[0] == $nil || $l < $v2{$year}{$zoom}{''.$bbox}[0]) { $v2{$year}{$zoom}{''.$bbox}[0] = $l; }
+		if($v2{$year}{$zoom}{''.$bbox}[1] == $nil || $l > $v2{$year}{$zoom}{''.$bbox}[1]) { $v2{$year}{$zoom}{''.$bbox}[1] = $l; }
+		$l = reftype($v1{$year}{$zoom}{$lon}[0]) eq 'ARRAY' ? $v1{$year}{$zoom}{$lon}[0][0] : $v1{$year}{$zoom}{$lon}[0];
+		if($v2{$year}{$zoom}{''.$bbox}[2] == $nil || $l < $v2{$year}{$zoom}{''.$bbox}[2]) { $v2{$year}{$zoom}{''.$bbox}[2] = $l; }
+		$l = scalar(@{$v1{$year}{$zoom}{$lon}}) - 1;
+		$l = reftype($v1{$year}{$zoom}{$lon}[$l]) eq 'ARRAY' ? $v1{$year}{$zoom}{$lon}[$l][1] : $v1{$year}{$zoom}{$lon}[$l];
+		if($v2{$year}{$zoom}{''.$bbox}[3] == $nil || $l > $v2{$year}{$zoom}{''.$bbox}[3]) { $v2{$year}{$zoom}{''.$bbox}[3] = $l; }
+		$unique_key = "$year/$zoom".encode_json($v1{$year}{$zoom}{$lon});
+		$l = $nil;
+		if(exists $ranges{$unique_key}) {
+		    $l = $ranges{$unique_key};
+		} else {
+		    $ranges{$unique_key} = $lon;
+		}
+		$index{"$year/$zoom/$lon"} = $l;
+	    }
+	    $v2{$year}{$zoom}{''.$bbox}[1] = $v2{$year}{$zoom}{''.$bbox}[1] - $v2{$year}{$zoom}{''.$bbox}[0];
+	    $v2{$year}{$zoom}{''.$bbox}[3] = $v2{$year}{$zoom}{''.$bbox}[3] - $v2{$year}{$zoom}{''.$bbox}[2];
+	}
+    }
+
+    foreach $lon (keys %index) {
+	@long = split(/\//, $lon);
+	$x = $v2{$long[0]}{$long[1]}{''.$bbox}[0];
+	$y = $v2{$long[0]}{$long[1]}{''.$bbox}[2];
+	if($index{$lon} == $nil) {
+	    @data = @{dclone($v1{$long[0]}{$long[1]}{$long[2]})};
+	    foreach($i = 0; $i < scalar(@data); $i++) {
+		$data[$i] = reftype($data[$i]) eq 'ARRAY' ? [$data[$i][0] - $y, $data[$i][1] - $y] : $data[$i] - $y;
+	    }
+	    $v2{$long[0]}{$long[1]}{''.($long[2] - $x)} = [@data];
+	} else {
+	  $v2{$long[0]}{$long[1]}{''.($long[2] - $x)} = $index{$lon} - $x;
+	}
+    }
+    
+    return %v2;
 }
 
 sub add_empty_tiles_json {

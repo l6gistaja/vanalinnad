@@ -259,6 +259,67 @@ vlUtils.existsInStruct = function(path, struct) {
       return false;
 }
 
+vlUtils.existsInStruct_v2 = function(path, struct) {
+	var pointer = struct;
+	var i;
+	for(i=0; i<2; i++) {
+		if(path[i] in pointer) {
+			pointer = pointer[path[i]];
+		} else {
+			return false;
+		}
+	}
+	if(path[2] < pointer['R'][0] || path[3] < pointer['R'][2] || path[2] > pointer['R'][0] + pointer['R'][1] || path[3] > pointer['R'][2] + pointer['R'][3]) { return false; }
+	var x = path[2] - pointer['R'][0];
+	if(!(''+x in pointer)) { return false; }
+	var y = path[3] - pointer['R'][2];
+	pointer = isNaN(pointer[''+x]) ? pointer[''+x] : pointer[''+pointer[''+x]];
+	var lastValue;
+	for(i=0; i<pointer.length; i++) {
+		if(isNaN(pointer[i])) {
+			if(y >= pointer[i][0] && y <= pointer[i][1]) { return true; }
+			lastValue = pointer[i][1];
+		} else {
+			if(pointer[i] == y) { return true; }
+			lastValue = pointer[i];
+		}
+		if(lastValue > y) { return false; }
+	}
+	return false;
+}
+
+vlUtils.existsInStruct = function(path, struct) {
+      var pointer = struct;
+      var lastIndex = 3;
+      var i;
+      for(i=0; i<lastIndex; i++) {
+        if(path[i] in pointer) {
+          pointer = pointer[path[i]];
+        } else {
+          return false;
+        }
+      }
+
+      var lastValue;
+      lastValue = isNaN(pointer[0]) ? pointer[0][0] : pointer[0];
+      if(path[lastIndex] < lastValue) { return false; }
+      lastValue = pointer.length - 1;
+      lastValue = isNaN(pointer[lastValue]) ? pointer[lastValue][1] : pointer[lastValue];
+      if(path[lastIndex] > lastValue) { return false; }
+
+      for(i=0; i<pointer.length; i++) {
+        if(isNaN(pointer[i])) {
+          if(path[lastIndex] >= pointer[i][0] && path[lastIndex] <= pointer[i][1]) { return true; }
+          lastValue = pointer[i][1];
+        } else {
+          if(pointer[i] == path[lastIndex]) { return true; }
+          lastValue = pointer[i];
+        }
+      }
+
+      return false;
+}
+
 vlUtils.createBaseLayerData = function(layerNode, obj, map) {
   obj.dir = layerNode.getAttribute('year') + '/';
   obj.year = layerNode.getAttribute('year');
