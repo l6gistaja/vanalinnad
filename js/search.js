@@ -10,7 +10,8 @@ vlSearch.setResults = function(content) {
     document.getElementById('searchresults').innerHTML = content;
 }
 
-vlSearch.ieVer = function(){  
+vlSearch.useProxy = function(){
+    /*
     var iev=0;
     var ieold = (/MSIE (\d+\.\d+);/.test(navigator.userAgent));
     var trident = !!navigator.userAgent.match(/Trident\/7.0/);
@@ -18,16 +19,18 @@ vlSearch.ieVer = function(){
     if (ieold) iev=new Number(RegExp.$1);
     if (navigator.appVersion.indexOf("MSIE 10") != -1) iev=10;
     if (trident&&rv!=-1) iev=11;
-    return iev;         
+    return iev;
+    */
+    return 0;
 }
 
 vlSearch.searchPlace = function (place) {
     if (/\S/.test(place)) {
-        vlSearch.setResults('Searching...');
+        vlSearch.setResults('Searching ...');
         OpenLayers.Request.GET({
-            url: (vlSearch.ieVer() 
-                    ? 'http://vanalinnad.mooo.com/proxy.php'
-                    : 'http://nominatim.openstreetmap.org/search')
+            url: (vlSearch.useProxy() 
+                    ? 'proxy.php'
+                    : 'https://nominatim.openstreetmap.org/search')
                 + '?format=json&countrycodes=ee&q=' + encodeURIComponent(place),
             callback: vlSearch.searchLoadPlaces
         });
