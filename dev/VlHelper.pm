@@ -4,8 +4,9 @@ use Exporter qw(import);
 use JSON;
 use Scalar::Util qw(reftype);
 use Storable qw(dclone);
+use XML::Simple;
 
-our @EXPORT_OK = qw(minify_empty_tiles_json minify_empty_tiles_json_v2 add_empty_tiles_json bbox_fragment add_to_tree kml_envelope gdal_mapindex gdal_tlast bbox_box bbox_points json_file_read json_file_write);
+our @EXPORT_OK = qw(minify_empty_tiles_json minify_empty_tiles_json_v2 add_empty_tiles_json bbox_fragment add_to_tree kml_envelope gdal_mapindex gdal_tlast bbox_box bbox_points json_file_read json_file_write get_sites);
 
 sub minify_empty_tiles_json {
   %json = %{dclone($_[0])};
@@ -207,6 +208,17 @@ sub json_file_write {
   open(FILE, '>'.$_[0]) or die "Can't open file '".$_[0]."' for writing: $!\n";
   print FILE encode_json($_[1]);
   close (FILE);
+}
+
+sub get_sites {
+    @sites = ();
+    $xml = new XML::Simple;
+    $sitekml = $xml->XMLin($_[0]->{dirvector}.$_[0]->{fileareaselector});
+    foreach $site (keys %{$sitekml->{Document}->{Placemark}}) {
+        push(@sites, exists $sitekml->{Document}->{Placemark}->{$site}->{description}
+        ? $sitekml->{Document}->{Placemark}->{$site}->{description} : $site);
+    }
+    return @sites;
 }
 
 1;

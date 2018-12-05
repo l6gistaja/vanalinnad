@@ -2,16 +2,12 @@
 
 @commands = ('echo "Rerendering ALL maps"');
 
-use XML::Simple;
+use lib './dev';
+use VlHelper qw(get_sites);
 $xml = new XML::Simple;
 $mainconf = $xml->XMLin('conf.xml');
 
-@sites = ();
-$sitekml = $xml->XMLin($mainconf->{dirvector}.$mainconf->{fileareaselector});
-foreach $site (keys %{$sitekml->{Document}->{Placemark}}) {
-    push(@sites, exists $sitekml->{Document}->{Placemark}->{$site}->{description}
-	? $sitekml->{Document}->{Placemark}->{$site}->{description} : $site);
-}
+@sites = get_sites($mainconf);
 
 foreach my $site (@sites) {
     $sitegdal = $xml->XMLin($mainconf->{dirvector}.$mainconf->{dirplaces}.$site.'/'.$mainconf->{filegdal});
@@ -37,6 +33,6 @@ foreach my $site (@sites) {
 }
 
 foreach my $command (@commands) {
-    #print "$command\n";
-    #system($command);
+    print "$command\n";
+    system($command);
 }

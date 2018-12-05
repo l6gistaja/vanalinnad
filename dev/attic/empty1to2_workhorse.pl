@@ -1,7 +1,7 @@
 #!/usr/bin/perl
 
 if(scalar(@ARGV) < 2) {
-  print "\nUsage: minify_empty.pl EMPTY_JSON_V1_FILE EMPTY_JSON_V2_FILE\n\n";
+  print "\nUsage: empty1to2_workhorse.pl EMPTY_JSON_V1_FILE EMPTY_JSON_V2_FILE\n\n";
   exit;
 }
 

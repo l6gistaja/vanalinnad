@@ -269,6 +269,7 @@ vlUtils.existsInStruct_v2 = function(path, struct) {
 			return false;
 		}
 	}
+	path[2] = parseInt(path[2]);
 	if(path[2] < pointer['R'][0] || path[3] < pointer['R'][2] || path[2] > pointer['R'][0] + pointer['R'][1] || path[3] > pointer['R'][2] + pointer['R'][3]) { return false; }
 	var x = path[2] - pointer['R'][0];
 	if(!(''+x in pointer)) { return false; }
