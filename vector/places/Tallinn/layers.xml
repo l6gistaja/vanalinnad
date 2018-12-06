@@ -50,4 +50,5 @@
   <maxzoom>16</maxzoom>
   <minzoom>10</minzoom>
   <roadbounds e="24.986866" s="59.334099" w="24.541477" />
+  <xtra osmparams="highway" />
 </vanalinnadlayers>
