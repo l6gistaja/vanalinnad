@@ -64,7 +64,7 @@
 
 <ol>
 <li>Create writable directory <code>{VANALINNAD_ROOT_DIR}/cache</code></li>
-<li>Download <a href="https://trac.osgeo.org/gdal/wiki/DownloadSource">GDAL 1.11.1</a></li>
+<li>Download <a href="https://trac.osgeo.org/gdal/wiki/DownloadSource">GDAL 1.11.3</a></li>
 <li>Unpack and install it: <code>./configure ; make ; sudo make install</code></li>
 <li>Install <a href="http://daringfireball.net/projects/markdown/">markdown</a> and <a href="http://www.imagemagick.org">ImageMagick</a> etc (<code>sudo apt-get install markdown imagemagick python-gdal xsltproc osmctools wget</code>)</li>
 <li>If neccessary: <code>sudo ln -s /usr/lib/libproj.so.0 /usr/lib/libproj.so</code></li>
@@ -105,9 +105,11 @@
 </ol></li>
 </ol>
 
+<p>You can update existing road layers by running <code>./dev/osm2xml/allosmroads.pl</code> .</p>
+
 <h2>License</h2>
 
-<p>Copyright 2013-2017, juks at alkohol ee. All rights reserved.</p>
+<p>Copyright 2013-2018, juks at alkohol ee. All rights reserved.</p>
 
 <p>Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:</p>

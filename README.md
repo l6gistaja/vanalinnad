@@ -33,7 +33,7 @@ Following describes data adding process with Debian Linux 8.4.
 ### Dependencies
 
 1. Create writable directory ```{VANALINNAD_ROOT_DIR}/cache```
-1. Download [GDAL 1.11.1](https://trac.osgeo.org/gdal/wiki/DownloadSource)
+1. Download [GDAL 1.11.3](https://trac.osgeo.org/gdal/wiki/DownloadSource)
 1. Unpack and install it: ```./configure ; make ; sudo make install```
 1. Install [markdown](http://daringfireball.net/projects/markdown/) and [ImageMagick](http://www.imagemagick.org) etc (```sudo apt-get install markdown imagemagick python-gdal xsltproc osmctools wget```)
 1. If neccessary: ```sudo ln -s /usr/lib/libproj.so.0 /usr/lib/libproj.so```
@@ -62,11 +62,13 @@ In following, {SOURCE_FILE_DIR} is /dirsource from conf.xml.
 1. For every road layer which will be created, add tag ```<layer type="roads" name="{LAYER_NAME}" file="{KML_FILENAME}" maxres="{MIN_ZOOM_LEVEL}" levels="{LEVEL_LIST}"/>``` to ```{VANALINNAD_ROOT_DIR}/vector/places/{SITE}/layers.xml```. {LEVEL_LIST} is comma separated list of numbers from 0 to 5.
 1. Run ```./dev/osm2xml/osmroads.pl {SITE} .00001```
  1. If original OSM data is too big, process might stall. In case you need only highways from OpenStreetMap, add highway as 3rd parameter: ```./dev/osm2xml/osmroads.pl {SITE} .00001 highway```
+ 
+You can update existing road layers by running ```./dev/osm2xml/allosmroads.pl``` .
 
 License
 -------
 
-Copyright 2013-2017, juks at alkohol ee. All rights reserved.
+Copyright 2013-2018, juks at alkohol ee. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:

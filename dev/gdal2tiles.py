@@ -871,7 +871,7 @@ gdal2tiles temp.vrt""" % self.input )
 		self.out_srs = osr.SpatialReference()
 
 		if self.options.profile == 'mercator':
-			self.out_srs.ImportFromEPSG(900913)
+			self.out_srs.ImportFromEPSG(3857) # GDAL 1.11.3 doesnt support EPSG 900913 anymore, use EPSG 3857 instead
 		elif self.options.profile in ('geodetic', 'gearth', 'garmin'):
 			self.out_srs.ImportFromEPSG(4326)
 		else:
