@@ -2,6 +2,11 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
+<Placemark id="bbox.1936.Kloostrimetsa"><name>1936.Kloostrimetsa</name><LineString><coordinates>24.82898039215425,59.45555915766121 24.82898039215425,59.48824172492333 24.88801642894652,59.48824172492333 24.88801642894652,59.45555915766121 24.82898039215425,59.45555915766121</coordinates></LineString></Placemark>
+<Placemark id="gcp1936.Kloostrimetsa.1"><name>1936.Kloostrimetsa #1</name><description>685 1058</description><Point><coordinates>24.856673841436102,59.464692199439185</coordinates></Point></Placemark>
+<Placemark id="gcp1936.Kloostrimetsa.2"><name>1936.Kloostrimetsa #2</name><description>686 251</description><Point><coordinates>24.866860125674158,59.47968329256842</coordinates></Point></Placemark>
+<Placemark id="gcp1936.Kloostrimetsa.3"><name>1936.Kloostrimetsa #3</name><description>304 517</description><Point><coordinates>24.850392314874203,59.47690850382757</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1932"><name>1932</name><LineString><coordinates>24.64521716876205,59.37023356142100 24.64521716876205,59.48979843148451 24.87538559228982,59.48979843148451 24.87538559228982,59.37023356142100 24.64521716876205,59.37023356142100</coordinates></LineString></Placemark>
 <Placemark id="gcp1932.1"><name>1932 #1</name><description>2420 3101</description><Point><coordinates>24.698306322097828,59.45302086961797</coordinates></Point></Placemark>
 <Placemark id="gcp1932.2"><name>1932 #2</name><description>2882 8281</description><Point><coordinates>24.70852201972863,59.39211506103336</coordinates></Point></Placemark>
@@ -18,13 +23,13 @@
 <Placemark id="gcp1936.Valdeku.3"><name>1936.Valdeku #3</name><description>6800 2701</description><Point><coordinates>24.768675,59.354131</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="montage"><value>yes</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1932/</value></Data>
 <Data name="zmax"><value>16</value></Data>
 <Data name="zmin"><value>10</value></Data>
-<Data name="bbox"><value>24.61567772186019,59.33435788615269,24.87538559228982,59.48979843148451</value></Data>
-<Data name="maps"><value>1932,1930.Nomme,1936.Valdeku</value></Data>
-<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Tallinn/composed/1932/</value></Data>
+<Data name="bbox"><value>24.61567772186019,59.33435788615269,24.88801642894652,59.48979843148451</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1932,1930.Nomme,1936.Valdeku,1936.Kloostrimetsa</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 
 </ExtendedData>
 
