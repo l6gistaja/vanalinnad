@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vanalinnadgdal xmlns="http://juks.alkohol.ee/vanalinnad">
 
-<composite id="FOOL_AUTORENDER"/> <!-- if GDAL file has only on composite map, autorender.pl will fail -->
+<composite id="FOOL_AUTORENDER"/> <!-- if GDAL file has only one composite map, autorender.pl will fail -->
 
 <composite id="1970" maps="1970.k2,1970.k1" montage="yes" />
 
@@ -66,7 +66,13 @@
     <t file="1862iips.jpg" gcps="-gcp 1120 853 22.481747481767986 58.25980294746441 -gcp 1225 2371 22.47717699760618 58.25183257953941 -gcp 1759 3169 22.479451510851174 58.24664975006883 -gcp 1837 1596 22.48608084137042 58.2545978872114"/>
 </translate>
 
-<translate map="1828">
+<composite id="1828" maps="1820,1828" montage="no" />
+
+<translate map="1820" composite="1828">
+    <t file="1820_Kuressaare-suur-w.jpg" gcps="-gcp 3354 523 22.482705213173826 58.26088822497823 -gcp 3432 1680 22.477143825378437 58.2518605060183 -gcp 4026 1032 22.489203037108755 58.2549540319754"/>
+</translate>
+
+<translate map="1828" composite="1828">
     <t file="1828sharp.jpg" gcps="-gcp 390 436 22.481712923954493 58.25981461961985 -gcp 878 1885 22.479438410710397 58.24663884177031 -gcp 1026 758 22.489223109196622 58.254926491939855"/>
     <!-- DEIIP -->
     <t file="1828iips.jpg" gcps="-gcp 2190 2420 22.481712923954493 58.25981461961985 -gcp 4919 10519 22.479438410710397 58.24663884177031 -gcp 5748 4219 22.489223109196622 58.254926491939855"/>
