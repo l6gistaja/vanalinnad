@@ -553,6 +553,11 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0308/006/0000410/eaa0308_006_0000410_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1677 -b 1719 -o  cache/deiip/1790_Kuressaare-suur.jpg
 
+# Kuressaare suur 1800
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=17131
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000254/eaa2072_009_0000254_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 910 -b 944 -o  cache/deiip/1800_Kuressaare-suur.jpg
+
 # Kuressaare suur 1820
 # http://www.ra.ee/kaardid/index.php/et/map/view?id=17277
 
@@ -564,9 +569,3 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
-
-
-# http://www.ra.ee/kaardid/index.php/et/map/view?id=17131
-
-
-

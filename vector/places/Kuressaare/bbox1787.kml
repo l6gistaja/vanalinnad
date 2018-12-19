@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>22.45940012353007,58.23780010837335 22.45940012353007,58.26656683058045 22.50530646352774,58.26656683058045 22.50530646352774,58.23780010837335 22.45940012353007,58.23780010837335</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>4920 2076</description><Point><coordinates>22.483536826085036,58.26189158757459</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>4316 9058</description><Point><coordinates>22.477185355138126,58.251832963579</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>7956 6526</description><Point><coordinates>22.48950205893474,58.254350709662425</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1790"><name>1790</name><LineString><coordinates>22.40713095593264,58.21580376354844 22.40713095593264,58.29127460872785 22.55095583156341,58.29127460872785 22.55095583156341,58.21580376354844 22.40713095593264,58.21580376354844</coordinates></LineString></Placemark>
+<Placemark id="gcp1790.1"><name>1790 #1</name><description>4449 3137</description><Point><coordinates>22.47522687262911,58.26444840950346</coordinates></Point></Placemark>
+<Placemark id="gcp1790.2"><name>1790 #2</name><description>5141 4355</description><Point><coordinates>22.48608417593921,58.254604509576154</coordinates></Point></Placemark>
+<Placemark id="gcp1790.3"><name>1790 #3</name><description>4578 4591</description><Point><coordinates>22.47769725662188,58.25254329510941</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1787"><name>1787</name><LineString><coordinates>22.45940012352343,58.23779997654539 22.45940012352343,58.26656683058460 22.50530862629257,58.26656683058460 22.50530862629257,58.23779997654539 22.45940012352343,58.23779997654539</coordinates></LineString></Placemark>
+<Placemark id="gcp1787.1"><name>1787 #1</name><description>4920 2076</description><Point><coordinates>22.483536826085036,58.26189158757459</coordinates></Point></Placemark>
+<Placemark id="gcp1787.2"><name>1787 #2</name><description>4316 9058</description><Point><coordinates>22.477185355138126,58.251832963579</coordinates></Point></Placemark>
+<Placemark id="gcp1787.3"><name>1787 #3</name><description>7956 6526</description><Point><coordinates>22.48950205893474,58.254350709662425</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmin"><value>13</value></Data>
+<Data name="maps"><value>1790,1787</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Kuressaare/composed/1787/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>22.40713095593264,58.21580376354844,22.55095583156341,58.29127460872785</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>

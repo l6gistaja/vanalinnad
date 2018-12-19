@@ -5,6 +5,7 @@
 <link></link>
 <language></language>
 <copyright>0</copyright>
+
 <item>
 <title>Geometrische Charte von der Kreiss Stadt Arensburg nebst der herum liegenden Gegend</title>
 <author>Otto Samuel Engell, Andreas Johann Rolander</author>
@@ -15,5 +16,15 @@
 <pubDate>Mon, 01 Jan 1787 00:00:00 +0000</pubDate>
 <legends>legend1787.jpg</legends>
 </item>
+
+<item>
+<title>Geometrische Charte von der Creys-Stadt Arensburg mit den umliegenden Gegenden</title>
+<author>Moritz H. von Dreyer</author>
+<description></description>
+<guid>ra.ee=EAA.308.6.410 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=17289</link>
+<pubDate>Fri, 01 Jan 1790 00:00:00 +0000</pubDate>
+</item>
+
 </channel>
 </rss>
