@@ -11,7 +11,6 @@
  "ra1917m": {"h":"Rahvusarhiiv &lt; 1917", "l":"Rahvusarhiiv &lt; 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139239&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "ra1917_1950": {"h":"Rahvusarhiiv 1917-1950", "l":"Rahvusarhiiv 1917-1950", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139425&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140035&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
- "vimu": {"h":"Viljandi Muuseumi kaardid", "l":"Viljandi Muuseum", "t":"_blank", "U":"http://www.muuseum.viljandimaa.ee/?op=body&id=6"},
  "rt_vilj": {"h":"Viljandi vanalinna tänavatevõrgu ajalooline kujunemine - Riigi Teataja", "l":"Viljandi tänavatevõrgu kujunemine", "t":"_blank", "U":"https://www.riigiteataja.ee/aktilisa/4081/0201/3096/Lisa2_m58.pdf"}
 }
 }]]></json>
