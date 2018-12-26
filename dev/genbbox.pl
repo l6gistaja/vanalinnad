@@ -5,7 +5,8 @@ if(scalar(@ARGV) < 2) {
   exit;
 }
 
-use lib './dev';
+use File::Basename;
+use lib dirname(__FILE__);
 use VlHelper qw(bbox_fragment kml_envelope gdal_mapindex gdal_tlast bbox_box bbox_points);
 use XML::Simple;
 use Data::Dumper;

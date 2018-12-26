@@ -113,7 +113,7 @@ if(!exists $opts{'p'} || $opts{'p'} =~ /m/) {
 
     $result = $self{'workPath'}.$self{'resultFile'};
     print "\nMerging columns into result image @ $result\n";
-    $cmd = 'convert';
+    $cmd = 'convert -monitor';
     for($x = 0; $x < $self{'x_tiles'}; $x++) {
         $cmd .= ' '.$self{'workPath'}.$self{'partPrefix'}.$x.$self{'zoomifyExt'};
     }

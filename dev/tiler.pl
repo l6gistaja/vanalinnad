@@ -136,7 +136,7 @@ if(! -e $rss) {
   if($c{'layeryear'} =~ /^\d{4}[^\d]*$/) {
     $rssdate = $c{'layeryear'};
     $rssdate =~ s/[^\d]*$//;
-    $rssdate = 'date -d '.$rssdate.'0101 "+%a, %d %b %Y 00:00:00 +0000"';
+    $rssdate = 'LC_ALL=en_US.utf8 date -d '.$rssdate.'0101 "+%a, %d %b %Y 00:00:00 +0000"';
     $rssdate = `$rssdate`;
     $rssdate =~ s/\s+$//;
     $cmd = 'cat '.$mainconf->{'dirvector'}.'rsstemplate.xml | sed "s/<pubDate>.*<\/pubDate>/<pubDate>'.$rssdate.'<\/pubDate>/" > '.$rss;
