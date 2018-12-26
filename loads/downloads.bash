@@ -567,5 +567,18 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/005/0002000/eaa3724_005_0002000_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1862 -b 1910 -o  cache/deiip/1899_Kuressaare-suur.jpg
 
+# Rakvere 1827
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eaa0854/004/0000469/eaa0854_004_0000469_00012_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 504 -b 539 -o  cache/deiip/1827_Rakvere.jpg
+
+# Viljandi 1866
+
+# dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0308/006/0000365/eaa0308_006_0000365_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 4232 -b 4323 -o  cache/deiip/1866_Viljandi.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0308/006/0000365/eaa0308_006_0000365_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 1058 -b 1103 -o  cache/deiip/1866_Viljandi.jpg
+
+# Viljandi 1922
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000795/eaa2072_009_0000795_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 810 -b 836 -o  cache/deiip/1922_Viljandi.jpg
+
 
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg

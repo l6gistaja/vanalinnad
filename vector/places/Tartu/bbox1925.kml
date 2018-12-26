@@ -7,18 +7,23 @@
 <Placemark id="gcp1925E.2"><name>1925E #2</name><description>105 1942</description><Point><coordinates>26.73067588407721,58.36225476123939</coordinates></Point></Placemark>
 <Placemark id="gcp1925E.3"><name>1925E #3</name><description>1783 2347</description><Point><coordinates>26.792758600616907,58.35509698070949</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1925W"><name>1925W</name><LineString><coordinates>26.63645938301281,58.33884037272885 26.63645938301281,58.40048738280179 26.72836937804112,58.40048738280179 26.72836937804112,58.33884037272885 26.63645938301281,58.33884037272885</coordinates></LineString></Placemark>
+<Placemark id="bbox.1925W"><name>1925W</name><LineString><coordinates>26.63645938301793,58.33882305985853 26.63645938301793,58.40048738280067 26.72833534588940,58.40048738280067 26.72833534588940,58.33882305985853 26.63645938301793,58.33882305985853</coordinates></LineString></Placemark>
 <Placemark id="gcp1925W.1"><name>1925W #1</name><description>2254 290</description><Point><coordinates>26.719248256073236,58.394866744038666</coordinates></Point></Placemark>
 <Placemark id="gcp1925W.2"><name>1925W #2</name><description>2284 2112</description><Point><coordinates>26.721372565612818,58.3597633046872</coordinates></Point></Placemark>
 <Placemark id="gcp1925W.3"><name>1925W #3</name><description>731 2692</description><Point><coordinates>26.664769772033942,58.34833899472703</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1926"><name>1926</name><LineString><coordinates>, , , , ,</coordinates></LineString></Placemark>
+<Placemark id="gcp1926.1"><name>1926 #1</name><description>1199 464</description><Point><coordinates>26.719212335967317,58.394884530383095</coordinates></Point></Placemark>
+<Placemark id="gcp1926.2"><name>1926 #2</name><description>324 2749</description><Point><coordinates>26.698119444273377,58.364098746923396</coordinates></Point></Placemark>
+<Placemark id="gcp1926.3"><name>1926 #3</name><description>541 1806</description><Point><coordinates>26.702947420500585,58.37663455383098</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.63645938301281,58.33884037272885,26.80826205735029,58.40071372734576</value></Data>
-<Data name="maps"><value>1925E,1925W</value></Data>
-<Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>26.63645938301793,58.33882305985853,26.80826205735029,58.40071372734576</value></Data>
+<Data name="maps"><value>1925E,1925W</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1925/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>12</value></Data>
 <Data name="montage"><value>yes</value></Data>
 
 </ExtendedData>

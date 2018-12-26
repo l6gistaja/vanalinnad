@@ -7,6 +7,18 @@
 <copyright>0</copyright>
 
 <item>
+<title>Viljandi linna ja ümbruse plaan</title>
+<author>Ludvig Jakobsenn</author>
+<description></description>
+<guid>ra.ee=EAA.2072.9.795 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=24616</link>
+<pubDate>Wed, 29 Nov 1922 00:00:00 +0000</pubDate>
+<legends>legend1922.jpg</legends>
+</item>
+
+<!--
+
+<item>
 <title>Viljandi linna plaan</title>
 <author></author>
 <description></description>
@@ -57,6 +69,8 @@
 <legends></legends>
 <anchor>1923</anchor>
 </item>
+
+-->
 
 </channel>
 </rss>
