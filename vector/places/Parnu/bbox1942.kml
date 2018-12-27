@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1942"><name>1942</name><LineString><coordinates>24.48320084011185,58.37930368598824 24.48320084011185,58.38812653538191 24.50745831030971,58.38812653538191 24.50745831030971,58.37930368598824 24.48320084011185,58.37930368598824</coordinates></LineString></Placemark>
+<Placemark id="gcp1942.1"><name>1942 #1</name><description>6575 1591</description><Point><coordinates>24.502223986951563,58.38569490047165</coordinates></Point></Placemark>
+<Placemark id="gcp1942.2"><name>1942 #2</name><description>1449 1905</description><Point><coordinates>24.487418193189082,58.38512124370479</coordinates></Point></Placemark>
+<Placemark id="gcp1942.3"><name>1942 #3</name><description>5838 4576</description><Point><coordinates>24.500142592755623,58.38118413179112</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1949"><name>1949</name><LineString><coordinates>24.49730277245923,58.33678496403403 24.49730277245923,58.43223934971570 24.64006856125636,58.43223934971570 24.64006856125636,58.33678496403403 24.49730277245923,58.33678496403403</coordinates></LineString></Placemark>
+<Placemark id="gcp1949.1"><name>1949 #1</name><description>7 1899</description><Point><coordinates>24.49832533869538,58.39952261736017</coordinates></Point></Placemark>
+<Placemark id="gcp1949.2"><name>1949 #2</name><description>783 2877</description><Point><coordinates>24.57711791071684,58.34751605415903</coordinates></Point></Placemark>
+<Placemark id="gcp1949.3"><name>1949 #3</name><description>1324 1936</description><Point><coordinates>24.631207630184253,58.397745944195336</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1942/</value></Data>
+<Data name="bbox"><value>24.48320084011185,58.33678496403403,24.64006856125636,58.43223934971570</value></Data>
+<Data name="maps"><value>1949,1942</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

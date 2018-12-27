@@ -580,5 +580,21 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000795/eaa2072_009_0000795_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 810 -b 836 -o  cache/deiip/1922_Viljandi.jpg
 
+# Parnu 1913
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/005/0000259/eaa2072_005_0000259_00001_k3.tif&CNT=1&SDS=0,90&JTL=7,' -a 480 -b 499 -o  cache/deiip/1913_Parnu.jpg
+
+# Parnu 1906
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001640/erat-0-6_003_0001640_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1961 -b 1997 -o  cache/deiip/1906.1_Parnu.jpg
+
+
+# Parnu 1940
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000809/eaa2072_009_0000809_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 936 -b 974 -o  cache/deiip/1940_Parnu.jpg
+
+# Parnu 1949
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/005/0000001/erat-0-6_005_0000001_00065_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 210 -b 223 -o  cache/deiip/1949_Parnu.jpg
 
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
