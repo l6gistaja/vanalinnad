@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1850"><name>1850</name><LineString><coordinates>28.19506824099308,59.37492876917877 28.19506824099308,59.38314310934847 28.20774080362501,59.38314310934847 28.20774080362501,59.37492876917877 28.19506824099308,59.37492876917877</coordinates></LineString></Placemark>
+<Placemark id="gcp1850.1"><name>1850 #1</name><description>1171 1490</description><Point><coordinates>28.197143708126838,59.38157507432429</coordinates></Point></Placemark>
+<Placemark id="gcp1850.2"><name>1850 #2</name><description>3510 2590</description><Point><coordinates>28.20100608910878,59.38083190896502</coordinates></Point></Placemark>
+<Placemark id="gcp1850.3"><name>1850 #3</name><description>1510 8172</description><Point><coordinates>28.19868817134526,59.376204630529315</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1857"><name>1857</name><LineString><coordinates>28.17304047241917,59.36597354718937 28.17304047241917,59.38194221038050 28.19885600024049,59.38194221038050 28.19885600024049,59.36597354718937 28.17304047241917,59.36597354718937</coordinates></LineString></Placemark>
+<Placemark id="gcp1857.1"><name>1857 #1</name><description>1356 735</description><Point><coordinates>28.182191300293578,59.37883501585231</coordinates></Point></Placemark>
+<Placemark id="gcp1857.2"><name>1857 #2</name><description>3114 1720</description><Point><coordinates>28.194078850647557,59.37624458616211</coordinates></Point></Placemark>
+<Placemark id="gcp1857.3"><name>1857 #3</name><description>1366 4546</description><Point><coordinates>28.185088086030262,59.36652597912284</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1850/</value></Data>
+<Data name="bbox"><value>28.17304047241917,59.36597354718937,28.20774080362501,59.38314310934847</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1857,1850</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

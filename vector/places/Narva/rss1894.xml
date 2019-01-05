@@ -3,8 +3,9 @@
 <channel>
 <title></title>
 <link></link>
-<language></language>
+<language>ru</language>
 <copyright>0</copyright>
+
 <item>
 <title>Peterburi ja Eestimaa kubermangud. 4-46 Jamburgi, Gdovi (Oudova) ja Viru maakonnad. Петроградская и Эстляндская губерния. 4-46 Ямбургский, Гдовский и Везенбергский уезд</title>
 <author></author>
@@ -14,5 +15,16 @@
 <pubDate>Mon, 01 Jan 1894 00:00:00 +0000</pubDate>
 <legends></legends>
 </item>
+
+<item>
+<title>План Кренгольмской Мануфактуры Эстл. губ. Везенбергскаго уезда блузь города Нарвы.</title>
+<author>Heinrich Ebrock</author>
+<description></description>
+<guid>ra.ee=EAA.3724.5.1491 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=19207</link>
+<pubDate>Sat, 01 Jan 1898 00:00:00 +0000</pubDate>
+<legends>legend1898.jpg</legends>
+</item>
+
 </channel>
 </rss>

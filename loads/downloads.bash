@@ -597,4 +597,20 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/005/0000001/erat-0-6_005_0000001_00065_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 210 -b 223 -o  cache/deiip/1949_Parnu.jpg
 
+# Narva 1905 suur
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001569/erat-0-6_003_0001569_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1326 -b 1364 -o  cache/deiip/1905_Narva_suur.jpg
+
+# Narva 1898
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/005/0001491/eaa3724_005_0001491_00001_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 525 -b 559 -o  cache/deiip/1898_Narva.jpg
+
+# Narva 1850
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa1646/001/0002707/eaa1646_001_0002707_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1428 -b 1461 -o  cache/deiip/1850_Narva.jpg
+
+# Narva 1857
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa1222/001/0000322/eaa1222_001_0000322_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 660 -b 681 -o  cache/deiip/1857_Narva.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
