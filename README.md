@@ -39,6 +39,17 @@ Following describes data adding process with Debian Linux 8.4.
 1. If neccessary: ```sudo ln -s /usr/lib/libproj.so.0 /usr/lib/libproj.so```
 1. Install missing Perl modules (```sudo cpan XML::Simple JSON Storable Math::Round DBD::SQLite``` or ```apt-get install libxml-simple-perl libjson-perl libstorable-perl libmath-round-perl```)
 
+### Main scripts
+
+* **dev/jsoncleaner.pl** : after deleting map directory from raster/places/{SITE}, remove unnecessary empty tiles descriptions. Afterwards, add flag flags="deleted" to corresponding translate tag in vector/places/{SITE}/gdal.xml.
+* **dev/kml_minify.pl** : minify KML files.
+* **dev/newsite/newsite.pl** : generate scaffolding for new site.
+* **dev/osm2xml/osmroads.pl** : downmoad and update new road networks for a certain site.
+* **dev/osm2xml/allosmroads.pl** : downmoad and update new road networks for all sites.
+* **dev/readme/md2html.bash** : generate new readme.html after changes in README.md.
+* **dev/shapeimporter.pl** : import other vector maps from data downloaded by dev/osm2xml/* and specified by vector/places/{SITE}/*.xslt.
+* **dev/tiler.pl** : generate map tiles, and if necessary, merge them with other composite map tiles.
+
 ### Creating new site
 
 Run ```dev/newsite/newsite.pl {SITE}``` . Add new ```<Placemark>``` with ```<name>{SITE}</name>``` to vector/selector.kml to make new site visible on main page. NB! Dont use symbols outside standard latin alphabet in {SITE}, it will be included in catalogue names. You can add "real name" into ```/Document/Placemark[x]/description``` @ vector/selector.kml and into ```/city``` @ vector/places/{SITE}/layers.xml .
@@ -68,7 +79,7 @@ You can update existing road layers by running ```./dev/osm2xml/allosmroads.pl``
 License
 -------
 
-Copyright 2013-2018, juks at alkohol ee. All rights reserved.
+Copyright 2013-2019, juks at alkohol ee. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:

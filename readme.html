@@ -71,6 +71,19 @@
 <li>Install missing Perl modules (<code>sudo cpan XML::Simple JSON Storable Math::Round DBD::SQLite</code> or <code>apt-get install libxml-simple-perl libjson-perl libstorable-perl libmath-round-perl</code>)</li>
 </ol>
 
+<h3>Main scripts</h3>
+
+<ul>
+<li><strong>dev/jsoncleaner.pl</strong> : after deleting map directory from raster/places/{SITE}, remove unnecessary empty tiles descriptions. Afterwards, add flag flags="deleted" to corresponding translate tag in vector/places/{SITE}/gdal.xml.</li>
+<li><strong>dev/kml_minify.pl</strong> : minify KML files.</li>
+<li><strong>dev/newsite/newsite.pl</strong> : generate scaffolding for new site.</li>
+<li><strong>dev/osm2xml/osmroads.pl</strong> : downmoad and update new road networks for a certain site.</li>
+<li><strong>dev/osm2xml/allosmroads.pl</strong> : downmoad and update new road networks for all sites.</li>
+<li><strong>dev/readme/md2html.bash</strong> : generate new readme.html after changes in README.md.</li>
+<li><strong>dev/shapeimporter.pl</strong> : import other vector maps from data downloaded by dev/osm2xml/* and specified by vector/places/{SITE}/*.xslt.</li>
+<li><strong>dev/tiler.pl</strong> : generate map tiles, and if necessary, merge them with other composite map tiles.</li>
+</ul>
+
 <h3>Creating new site</h3>
 
 <p>Run <code>dev/newsite/newsite.pl {SITE}</code> . Add new <code>&lt;Placemark&gt;</code> with <code>&lt;name&gt;{SITE}&lt;/name&gt;</code> to vector/selector.kml to make new site visible on main page. NB! Dont use symbols outside standard latin alphabet in {SITE}, it will be included in catalogue names. You can add "real name" into <code>/Document/Placemark[x]/description</code> @ vector/selector.kml and into <code>/city</code> @ vector/places/{SITE}/layers.xml .</p>
@@ -109,7 +122,7 @@
 
 <h2>License</h2>
 
-<p>Copyright 2013-2018, juks at alkohol ee. All rights reserved.</p>
+<p>Copyright 2013-2019, juks at alkohol ee. All rights reserved.</p>
 
 <p>Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:</p>
