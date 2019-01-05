@@ -49,6 +49,7 @@ Following describes data adding process with Debian Linux 8.4.
 * **dev/readme/md2html.bash** : generate new readme.html after changes in README.md.
 * **dev/shapeimporter.pl** : import other vector maps from data downloaded by dev/osm2xml/* and specified by vector/places/{SITE}/*.xslt.
 * **dev/tiler.pl** : generate map tiles, and if necessary, merge them with other composite map tiles.
+* **dev/uploader.pl** : after commiting changes, push, pull and upload changes automatically.
 
 ### Creating new site
 
