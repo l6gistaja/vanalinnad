@@ -13,6 +13,7 @@
  "ra1917_1950": {"h":"Rahvusarhiiv 1917-1950", "l":"Rahvusarhiiv 1917-1950", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10990372&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10927353&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "digar": {"h":"Eesti rahvusraamatukogu digitaalarhiiv", "l":"DIGAR", "t":"_blank", "U":"http://www.digar.ee/arhiiv/et/pildimaterjal?id=689"},
+ "tka": {"h":"Tallinna kaardiarhiiv", "l":"Tallinna kaardiarhiiv", "t":"_blank", "U":"http://gis.tallinn.ee/kaardiarhiiv/"},
  "fb_vtk": {"h":"Vanad Tallinna kaardid", "l":"Vanad Tallinna kaardid", "t":"_blank", "U":"https://www.facebook.com/media/set/?set=a.929023297108511.1073741857.100000025494083&type=3"},
  "gm_psm": {"h":"Peeter Suure merekinduse kaart", "l":"Peeter Suure merekindlus", "t":"_blank", "U":"https://www.google.com/maps/d/viewer?mid=zPslYwoImf-g.kCj2L2q5JtVA"},
  "transport": {"h":"Tallinna ühistransport", "l":"Tallinna ühistransport", "t":"_blank", "U":"http://soiduplaan.tallinn.ee/#map"}
