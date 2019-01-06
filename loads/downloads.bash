@@ -589,7 +589,7 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001640/erat-0-6_003_0001640_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1961 -b 1997 -o  cache/deiip/1906.1_Parnu.jpg
 
 
-# Parnu 1940
+# Parnu 1940kuressaare rannajoon
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000809/eaa2072_009_0000809_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 936 -b 974 -o  cache/deiip/1940_Parnu.jpg
 
@@ -612,5 +612,10 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # Narva 1857
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa1222/001/0000322/eaa1222_001_0000322_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 660 -b 681 -o  cache/deiip/1857_Narva.jpg
+
+# Kuressaare 1970
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa5238/001/0000676/eaa5238_001_0000676_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1505 -b 1547 -o  cache/deiip/1970_Kuressaare_1.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa5238/001/0000676/eaa5238_001_0000676_00001_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 1365 -b 1403 -o  cache/deiip/1970_Kuressaare_2.jpg
 
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
