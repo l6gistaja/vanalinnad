@@ -6,7 +6,7 @@ Historical maps of Estonian cities under the grid of today's street network.
 
 Old map symbols: [< 1900](http://www.ra.ee/kaardid/index.php/et/site/page?view=symbols), [1953 - 1977](http://geoportaal.maaamet.ee/est/Teenused/Kaardirakendused/Ajalooliste-kaartide-rakendus-p157.html) (PDF)
 
-* License: [BSD 2-clause License](http://openlayers.org/dev/license.txt), inherited from used [OpenLayers 2](http://openlayers.org) library
+* License: BSD 2-clause License, inherited from used [OpenLayers 2](http://openlayers.org) library
 * Vector data: © [OpenStreetMap contributors](http://www.openstreetmap.org/copyright)
 * Tiles and initial JavaScript: [MapTiler](http://www.maptiler.org/)/[GDAL2Tiles](http://www.klokan.cz/projects/gdal2tiles/), © 2008 [Klokan Petr Pridal](http://www.klokan.cz/), [GDAL](http://www.gdal.org/) & [OSGeo](http://www.osgeo.org/) [GSoC](http://code.google.com/soc/)
 * WMS: [Maa-amet](vector/wms/maaamet.html)
