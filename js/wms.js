@@ -150,5 +150,7 @@ function vlWms(inputParams){
   }
 
   _init();
+  
+  this.getCityName = function() { return ""; }
 
 }

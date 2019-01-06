@@ -40,7 +40,7 @@
 <div id="searchDiv" style="display:none;">
 <form id="search">
 <input type="text" name="q" onkeydown="return vlSearch.handleKeystrokes(event, this);"/>
-<input type="button" name="s" value="Search" onclick="vlSearch.searchPlace(this.form.q.value);"/>
+<input type="button" name="s" value="Search" onclick="vlSearch.searchPlace(this.form.q.value, map.getCityName());"/>
 <input type="button" value="Empty" onclick="vlSearch.searchEmpty(this);" />
 <img src="lib/OpenLayers-2.13.1/theme/default/img/close.gif" title="Close" align="right" onclick="vlSearch.toggleSearch();" />
 </form>

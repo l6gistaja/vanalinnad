@@ -24,14 +24,18 @@ vlSearch.useProxy = function(){
     return 0;
 }
 
-vlSearch.searchPlace = function (place) {
+vlSearch.searchPlace = function (place, site) {
     if (/\S/.test(place)) {
         vlSearch.setResults('Searching ...');
         OpenLayers.Request.GET({
             url: (vlSearch.useProxy() 
                     ? 'proxy.php'
                     : 'https://nominatim.openstreetmap.org/search')
-                + '?format=json&countrycodes=ee&q=' + encodeURIComponent(place),
+                + '?format=json&countrycodes=ee&'
+                + (site == ''
+                    ? 'q='
+                    : 'city=' + encodeURIComponent(site) + '&street=')
+                + encodeURIComponent(place),
             callback: vlSearch.searchLoadPlaces
         });
     }

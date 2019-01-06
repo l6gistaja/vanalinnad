@@ -19,7 +19,7 @@ function vlMap(inputParams){
   var baseLayersCount = 0;
   var jsonConf = {};
   var selectorLayer;
-
+  
   var xmlHandlerConf = function(request) {
     if(request.status == 200) {
       document.getElementById(inputParams.divMap).innerHTML = '';
@@ -454,7 +454,9 @@ function vlMap(inputParams){
     sitesPopup.autoSize = true;
     map.addPopup(sitesPopup);
   }
-
+  
+  var _getLayersXml = function() { return layersXml; }
+  
   var _init = function() {
     reqParams = OpenLayers.Util.getParameters();
     OpenLayers.Request.GET({ url: inputParams.conf, callback: xmlHandlerConf });
@@ -471,6 +473,12 @@ function vlMap(inputParams){
   this.emptyDrawLayer = function() {
       vlUtils.emptyDrawLayer(map);
       return true;
+  }
+  
+  this.getCityName = function() {
+      lx = _getLayersXml();
+      if (typeof lx == 'undefined') return "";
+      return vlUtils.getXmlValue(lx, 'city');
   }
   
   _init();
