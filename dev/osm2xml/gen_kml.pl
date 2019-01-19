@@ -1,5 +1,6 @@
 #!/usr/bin/perl
 
+use Getopt::Std;
 use XML::Simple;
 
 $xml = new XML::Simple;
@@ -8,13 +9,19 @@ $mainconf = $xml->XMLin($dirbase.'conf.xml');
 $dirosm = $dirbase.$mainconf->{'dirdev'}.'osm2xml/';
 $conf = $xml->XMLin($dirosm.'roads.kml');
 
-@coords = scalar(@ARGV) < 2
-    ? split(/[,\s]/, $conf->{'Document'}{'Placemark'}[$ARGV[0]]{'LineString'}{'coordinates'})
-    : split(/[,]/, $ARGV[1]);
+getopt('b:s:', \%opts);
+if(!exists $opts{'b'}) {
+  print "\nUsage: dev/osm2xml/generate_roads.pl -b W,S,E,N (-s SITE)\n\n";
+  exit;
+}
+
+#@coords = scalar(@ARGV) < 2 ? split(/[,\s]/, $conf->{'Document'}{'Placemark'}[$ARGV[0]]{'LineString'}{'coordinates'}) : split(/[,]/, $ARGV[1]);
+@coords = split(/[,]/, $opts{'b'});
 
 $data = $xml->XMLin($dirbase
     .$mainconf->{'dircache'}
     .$conf->{'Document'}{'ExtendedData'}{'v:fileprefix'}
+    .'_'.(exists $opts{'s'}  ? $opts{'s'} : 'NOSITE').'_'
     .join('_',@coords)
     .$filebase.'.xml');
 $len = scalar(@{$data->{'w'}});

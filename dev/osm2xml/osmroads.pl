@@ -27,14 +27,14 @@ for($i=0; $i<=$len; $i++) {
 }
 
 if(exists $layers->{'roadbounds'}) {
-    if(exists $layers->{'roadbounds'}{'n'} && $max[3] > $layers->{'roadbounds'}{'n'}) {$max[3] = $layers->{'roadbounds'}{'n'};}
-    if(exists $layers->{'roadbounds'}{'e'} && $max[2] > $layers->{'roadbounds'}{'e'}) {$max[2] = $layers->{'roadbounds'}{'e'};}
-    if(exists $layers->{'roadbounds'}{'s'} && $max[1] < $layers->{'roadbounds'}{'s'}) {$max[1] = $layers->{'roadbounds'}{'s'};}
-    if(exists $layers->{'roadbounds'}{'w'} && $max[0] < $layers->{'roadbounds'}{'w'}) {$max[0] = $layers->{'roadbounds'}{'w'};}
+    if(exists $layers->{'roadbounds'}{'n'}) {$max[3] = $layers->{'roadbounds'}{'n'};}
+    if(exists $layers->{'roadbounds'}{'e'}) {$max[2] = $layers->{'roadbounds'}{'e'};}
+    if(exists $layers->{'roadbounds'}{'s'}) {$max[1] = $layers->{'roadbounds'}{'s'};}
+    if(exists $layers->{'roadbounds'}{'w'}) {$max[0] = $layers->{'roadbounds'}{'w'};}
 }
 
 print 'BBox max '.join(',', @max)."\n";
-system($mainconf->{'dirdev'}.'osm2xml/generate_roads.pl '.join(',', @max) .(scalar(@ARGV) > 2 ? ' '.$ARGV[2] : '').' | bash');
+system($mainconf->{'dirdev'}.'osm2xml/generate_roads.pl -b '.join(',', @max).' -s '.$ARGV[0].(scalar(@ARGV) > 2 ? ' -f '.$ARGV[2] : '').' | bash');
 print "\a";
 
 for($i=0; $i<=$len; $i++) {

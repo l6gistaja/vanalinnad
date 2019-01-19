@@ -1,6 +1,13 @@
 #!/usr/bin/perl
 
 use XML::Simple;
+use Getopt::Std;
+
+getopt('b:f:s:h', \%opts);
+if(exists $opts{'h'}) {
+  print "\nUsage: dev/osm2xml/generate_roads.pl -b W,S,E,N (-f FILTERWORD) (-s SITE)\n\n";
+  exit;
+}
 
 $xml = new XML::Simple;
 $dirbase = '';
@@ -23,12 +30,13 @@ print DATA $filebase.$conf->{'Document'}{'ExtendedData'}{'v:kmlheader'};
 
 for($i=0; $i<$len-1; $i++) {
 
-  @coords = scalar(@ARGV) < 1 
+  @coords = !exists $opts{'b'} 
     ? split(/[,\s]/, $conf->{'Document'}{'Placemark'}[$i]{'LineString'}{'coordinates'})
-    : split(/[,]/, $ARGV[0]);
+    : split(/[,]/, $opts{'b'});
   $bboxs = 'BBox='.join(',',@coords).': ';
   $filebase = $cachedir
     .$conf->{'Document'}{'ExtendedData'}{'v:fileprefix'}
+    .'_'.(exists $opts{'s'}  ? $opts{'s'} : 'NOSITE').'_'
     .join('_',@coords);
 
   print DATA '<Placemark><name>'
@@ -51,13 +59,13 @@ for($i=0; $i<$len-1; $i++) {
   }
   
   $osmfile = $file;
-  if(scalar(@ARGV) > 1) {
-      push(@bash, "echo '".$bboxs."Filter OSM with ".$ARGV[1]."'");
+  if(exists $opts{'f'}) {
+      push(@bash, "echo '".$bboxs."Filter OSM with ".$opts{'f'}."'");
       $filterfile = $filebase.'_filtered.osm';
       if(!(-e $filterfile)) {
 	  push(@bash, 'osmfilter '
 	  .$file
-	  .' --keep="'.$ARGV[1].'" > '
+	  .' --keep="'.$opts{'f'}.'" > '
 	  .$filterfile);
       }
       $osmfile = $filterfile;
@@ -83,7 +91,7 @@ for($i=0; $i<$len-1; $i++) {
   }
   
   push(@bash, "echo '".$bboxs."Convert XML 2 KML'");
-  push(@bash, $dirosm.'gen_kml.pl '.$i.(scalar(@ARGV) < 1 ? '' : ' '.$ARGV[0]));
+  push(@bash, $dirosm.'gen_kml.pl -b '.$opts{'b'}.' -s '.$opts{'s'});
 
 
 }
