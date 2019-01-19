@@ -8,19 +8,19 @@
 <Placemark id="gcp1927.3"><name>1927 #3</name><description>1227 4090</description><Point><coordinates>26.69252159094917,58.37630235516233</coordinates></Point></Placemark>
 <Placemark id="gcp1927.4"><name>1927 #4</name><description>5240 6062</description><Point><coordinates>26.742431487120818,58.36472353395758</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1927+"><name>1927+</name><LineString><coordinates>26.63773299565077,58.33786215594336 26.63773299565077,58.40017453290780 26.80724652018950,58.40017453290780 26.80724652018950,58.33786215594336 26.63773299565077,58.33786215594336</coordinates></LineString></Placemark>
-<Placemark id="gcp1927+.1"><name>1927+ #1</name><description>774 2694</description><Point><coordinates>26.664769772033942,58.34833899472703</coordinates></Point></Placemark>
-<Placemark id="gcp1927+.2"><name>1927+ #2</name><description>4439 2338</description><Point><coordinates>26.792758600616907,58.35509698070949</coordinates></Point></Placemark>
-<Placemark id="gcp1927+.3"><name>1927+ #3</name><description>2333 273</description><Point><coordinates>26.719248256073236,58.394866744038666</coordinates></Point></Placemark>
+<Placemark id="bbox.1927+"><name>1927+</name><LineString><coordinates>26.63778386413273,58.32346457834348 26.63778386413273,58.40028532320472 26.80715134103706,58.40028532320472 26.80715134103706,58.32346457834348 26.63778386413273,58.32346457834348</coordinates></LineString></Placemark>
+<Placemark id="gcp1927+.1"><name>1927+ #1</name><description>773 2700</description><Point><coordinates>26.664769772033942,58.34833899472703</coordinates></Point></Placemark>
+<Placemark id="gcp1927+.2"><name>1927+ #2</name><description>4440 2346</description><Point><coordinates>26.792758600616907,58.35509698070949</coordinates></Point></Placemark>
+<Placemark id="gcp1927+.3"><name>1927+ #3</name><description>2334 280</description><Point><coordinates>26.719248256073236,58.394866744038666</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="bbox"><value>26.63773299565077,58.33786215594336,26.80724652018950,58.40209935850068</value></Data>
 <Data name="montage"><value>yes</value></Data>
-<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Tartu/composed/1927/</value></Data>
 <Data name="maps"><value>1927+,1927</value></Data>
+<Data name="bbox"><value>26.63778386413273,58.32346457834348,26.80715134103706,58.40209935850068</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1927/</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 
 </ExtendedData>
 

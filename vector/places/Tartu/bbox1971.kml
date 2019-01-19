@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1971W"><name>1971W</name><LineString><coordinates>26.65578217224401,58.33710931510493 26.65578217224401,58.40923102021868 26.78028929914478,58.40923102021868 26.78028929914478,58.33710931510493 26.65578217224401,58.33710931510493</coordinates></LineString></Placemark>
+<Placemark id="gcp1971W.1"><name>1971W #1</name><description>3634 314</description><Point><coordinates>26.708343227614897,58.40669605606213</coordinates></Point></Placemark>
+<Placemark id="gcp1971W.2"><name>1971W #2</name><description>8491 8777</description><Point><coordinates>26.77938958000244,58.34253374859115</coordinates></Point></Placemark>
+<Placemark id="gcp1971W.3"><name>1971W #3</name><description>1309 586</description><Point><coordinates>26.67485229553237,58.40450045535906</coordinates></Point></Placemark>
+<Placemark id="gcp1971W.4"><name>1971W #4</name><description>639 7417</description><Point><coordinates>26.665572181555184,58.35260799694022</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1971E"><name>1971E</name><LineString><coordinates>26.75371952430766,58.33723970309180 26.75371952430766,58.40920451368430 26.79313740831247,58.40920451368430 26.79313740831247,58.33723970309180 26.75371952430766,58.33723970309180</coordinates></LineString></Placemark>
+<Placemark id="gcp1971E.1"><name>1971E #1</name><description>223 3107</description><Point><coordinates>26.75729665704603,58.38548118041475</coordinates></Point></Placemark>
+<Placemark id="gcp1971E.2"><name>1971E #2</name><description>2346 8358</description><Point><coordinates>26.788474707210927,58.345629827648395</coordinates></Point></Placemark>
+<Placemark id="gcp1971E.3"><name>1971E #3</name><description>752 7491</description><Point><coordinates>26.765429167354647,58.35216146685032</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1971E,1971W</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1971/</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>26.65578217224401,58.33710931510493,26.79313740831247,58.40923102021868</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

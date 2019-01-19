@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1951"><name>1951</name><LineString><coordinates>26.67633843674414,58.34554180521565 26.67633843674414,58.40252577641662 26.77693426549295,58.40252577641662 26.77693426549295,58.34554180521565 26.67633843674414,58.34554180521565</coordinates></LineString></Placemark>
+<Placemark id="gcp1951.1"><name>1951 #1</name><description>3222 474</description><Point><coordinates>26.723129425991296,58.39843839859438</coordinates></Point></Placemark>
+<Placemark id="gcp1951.2"><name>1951 #2</name><description>4492 4933</description><Point><coordinates>26.742419873225614,58.36473522746335</coordinates></Point></Placemark>
+<Placemark id="gcp1951.3"><name>1951 #3</name><description>1303 6270</description><Point><coordinates>26.696466238097944,58.354149534401536</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1953W"><name>1953W</name><LineString><coordinates>26.65872660504220,58.32181670057240 26.65872660504220,58.36363539841845 26.74035699252091,58.36363539841845 26.74035699252091,58.32181670057240 26.65872660504220,58.32181670057240</coordinates></LineString></Placemark>
+<Placemark id="gcp1953W.1"><name>1953W #1</name><description>340 2898</description><Point><coordinates>26.67799788101298,58.35324209124147</coordinates></Point></Placemark>
+<Placemark id="gcp1953W.2"><name>1953W #2</name><description>4037 4748</description><Point><coordinates>26.69560793121177,58.34058087027321</coordinates></Point></Placemark>
+<Placemark id="gcp1953W.3"><name>1953W #3</name><description>5778 2988</description><Point><coordinates>26.712708817595633,58.34352031227628</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1953E"><name>1953E</name><LineString><coordinates>26.69777150073014,58.31518955970816 26.69777150073014,58.35690395214833 26.76877056054240,58.35690395214833 26.76877056054240,58.31518955970816 26.69777150073014,58.31518955970816</coordinates></LineString></Placemark>
+<Placemark id="gcp1953E.1"><name>1953E #1</name><description>55 6607</description><Point><coordinates>26.706548785126845,58.33447141971254</coordinates></Point></Placemark>
+<Placemark id="gcp1953E.2"><name>1953E #2</name><description>1578 9003</description><Point><coordinates>26.70828738230015,58.32372342561066</coordinates></Point></Placemark>
+<Placemark id="gcp1953E.3"><name>1953E #3</name><description>2053 1782</description><Point><coordinates>26.735624456580116,58.347310406638556</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>26.65872660504220,58.31518955970816,26.77693426549295,58.40252577641662</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>1951,1953W,1953E</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1951/</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

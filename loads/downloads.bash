@@ -316,7 +316,7 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 # Tartu 1925
 
-dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/era0031/003/0008731/era0031_003_0008731_00007_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 247 -b 265 -o cache/deiip/1925_era0031_003_0008731_00007_k.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/era0031/003/0008731/era0031_003_0008731_00007_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 247 -b 265 -o cache/deiip/1925_Tartu.jpg
 
 # Tartu 1841
 
@@ -617,5 +617,23 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa5238/001/0000676/eaa5238_001_0000676_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1505 -b 1547 -o  cache/deiip/1970_Kuressaare_1.jpg
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa5238/001/0000676/eaa5238_001_0000676_00001_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 1365 -b 1403 -o  cache/deiip/1970_Kuressaare_2.jpg
+
+# Tartu 1951
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=248504
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaat-0-949/001/0000001/eaat-0-949_001_0000001_00196_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 1054 -b 1084 -o  cache/deiip/1951_Tartu.jpg
+
+
+# L8una-Tartu 1953
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=278920
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa5238/001/0000215/eaa5238_001_0000215_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1404 -b 1439 -o  cache/deiip/1953_Tartu_SW.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa5238/001/0000215/eaa5238_001_0000215_00001_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 1044 -b 1072 -o  cache/deiip/1953_Tartu_SE.jpg
+
+# Tartu 1971
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=301628
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eaa2072/009/0000874/eaa2072_009_0000874_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1620 -b 1655 -o  cache/deiip/1971_Tartu_W.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eaa2072/009/0000874/eaa2072_009_0000874_00001_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 1050 -b 1074 -o  cache/deiip/1971_Tartu_E.jpg
 
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
