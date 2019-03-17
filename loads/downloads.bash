@@ -636,4 +636,8 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eaa2072/009/0000874/eaa2072_009_0000874_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1620 -b 1655 -o  cache/deiip/1971_Tartu_W.jpg
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eaa2072/009/0000874/eaa2072_009_0000874_00001_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 1050 -b 1074 -o  cache/deiip/1971_Tartu_E.jpg
 
+# L22ne Tallinn 1918
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000251/erat-0-6_003_0000251_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 650 -b 674 -o  cache/deiip/1918_W-Tallinn.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
