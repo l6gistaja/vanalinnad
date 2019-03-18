@@ -33,19 +33,20 @@
 <Placemark id="gcp1920.Nomme.2"><name>1920.Nomme #2</name><description>4244 646</description><Point><coordinates>24.72701456291147,59.39249543562278</coordinates></Point></Placemark>
 <Placemark id="gcp1920.Nomme.3"><name>1920.Nomme #3</name><description>6167 4027</description><Point><coordinates>24.772835391539605,59.35368853713905</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1918.Kristiine"><name>1918.Kristiine</name><LineString><coordinates>24.54211839660308,59.39884766778930 24.54211839660308,59.48987949811208 24.72705266203068,59.48987949811208 24.72705266203068,59.39884766778930 24.54211839660308,59.39884766778930</coordinates></LineString></Placemark>
+<Placemark id="bbox.1918.Kristiine"><name>1918.Kristiine</name><LineString><coordinates>24.54247903224893,59.39919179856301 24.54247903224893,59.48960454484283 24.72657737936980,59.48960454484283 24.72657737936980,59.39919179856301 24.54247903224893,59.39919179856301</coordinates></LineString></Placemark>
 <Placemark id="gcp1918.Kristiine.1"><name>1918.Kristiine #1</name><description>1575 2783</description><Point><coordinates>24.60142320098897,59.43595150528186</coordinates></Point></Placemark>
-<Placemark id="gcp1918.Kristiine.2"><name>1918.Kristiine #2</name><description>4635 4085</description><Point><coordinates>24.715212796342822,59.411212235362854</coordinates></Point></Placemark>
+<Placemark id="gcp1918.Kristiine.2"><name>1918.Kristiine #2</name><description>3219 4212</description><Point><coordinates>24.66195194702187,59.40900514200281</coordinates></Point></Placemark>
 <Placemark id="gcp1918.Kristiine.3"><name>1918.Kristiine #3</name><description>4340 1885</description><Point><coordinates>24.703519632366724,59.45352986756565</coordinates></Point></Placemark>
+<Placemark id="gcp1918.Kristiine.4"><name>1918.Kristiine #4</name><description>4635 4085</description><Point><coordinates>24.715212796342822,59.411212235362854</coordinates></Point></Placemark>
 
 <ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>24.54184711027002,59.33393083474387,24.92663987345806,59.59880437988836</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1919/</value></Data>
 <Data name="montage"><value>yes</value></Data>
 <Data name="maps"><value>1918.Kristiine,1919.Kakumae,1918.Viimsi,1920.Pirita,1919,1920.Nomme,1920.Kopli</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1919/</value></Data>
-<Data name="bbox"><value>24.54184711027002,59.33393083474387,24.92663987345806,59.59880437988836</value></Data>
-<Data name="zmin"><value>10</value></Data>
-<Data name="zmax"><value>16</value></Data>
 
 </ExtendedData>
 
