@@ -50,6 +50,18 @@ function vlWms(inputParams){
         );
       }
       
+      if('marker' in reqParams) {
+            //alert(reqParams['marker']);
+            var markers = new OpenLayers.Layer.Markers("Marker");
+            var size = new OpenLayers.Size(21,25);
+            var markerParams = reqParams['marker'].split('_');
+            markers.addMarker(new OpenLayers.Marker(
+                new OpenLayers.LonLat(markerParams[0], markerParams[1]),
+                new OpenLayers.Icon('raster/icons/ol2marker.png', size, new OpenLayers.Pixel(-(size.w/2), -size.h))
+            ));
+            layers[layers.length] = markers;
+      }
+      
       map = new OpenLayers.Map(inputParams.divMap, jsonConfWMS.mapoptions);
       map.addLayers(layers);
 
