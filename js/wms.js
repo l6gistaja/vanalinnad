@@ -13,12 +13,34 @@ function vlWms(inputParams){
 
   var xmlHandlerConf = function(request) {
     if(request.status == 200) {
-      document.getElementById(inputParams.divMap).innerHTML
-        = '<center><h1>Please wait...<br/><br/><a href="?">Or click here.<br/><br/><img src="apple-touch-icon.png" border="0"/></a></h1></center>';
       conf = vlUtils.xmlDoc2Hash(request.responseXML);
       jsonConf = JSON.parse(conf.json);
       isAtSite = 'site' in reqParams && reqParams['site'].match(/^[A-Z][A-Za-z-]*$/);
-      OpenLayers.Request.GET({url: conf.dirvector + 'wms/' + reqParams['wms'] + '.xml', callback: xmlHandlerLayers });
+      if('convert' in reqParams) {
+          var redirectURL = '';
+          var convert;
+          var k;
+          var marker = false;
+          for(k in reqParams) {
+              if(k == "convert") {
+                  convert = reqParams[k].split('~');
+              } else {
+                  if(k == "marker" && reqParams[k] == 'R') {
+                      marker = true;
+                  } else {
+                      redirectURL += '&' + k + '=' + reqParams[k];
+                  }
+              }
+          }
+          var p4 = proj4(jsonConf.proj4[convert[0]], jsonConf.proj4[convert[1]], [parseFloat(convert[2]), parseFloat(convert[3])]);
+          redirectURL = '?lon=' + p4[0] + '&lat=' + p4[1] + (marker ? '&marker=' + p4[0] + '_' + p4[1] : '') + redirectURL;
+          document.getElementById(inputParams.divMap).innerHTML = 'Redirect to <a href="' + redirectURL + '">' + redirectURL + '</a>';
+          window.location.replace(redirectURL);
+      } else {
+         document.getElementById(inputParams.divMap).innerHTML
+            = '<center><h1>Please wait...<br/><br/><a href="?">Or click here.<br/><br/><img src="apple-touch-icon.png" border="0"/></a></h1></center>';
+         OpenLayers.Request.GET({url: conf.dirvector + 'wms/' + reqParams['wms'] + '.xml', callback: xmlHandlerLayers });
+      }
     }
   }
   
@@ -54,7 +76,7 @@ function vlWms(inputParams){
             //alert(reqParams['marker']);
             var markers = new OpenLayers.Layer.Markers("Marker");
             var size = new OpenLayers.Size(21,25);
-            var markerParams = reqParams['marker'].split('_');
+            var markerParams = reqParams['marker'] == 'C' ? [reqParams['lon'], reqParams['lat']] : reqParams['marker'].split('_');
             markers.addMarker(new OpenLayers.Marker(
                 new OpenLayers.LonLat(markerParams[0], markerParams[1]),
                 new OpenLayers.Icon('raster/icons/ol2marker.png', size, new OpenLayers.Pixel(-(size.w/2), -size.h))
@@ -133,6 +155,7 @@ function vlWms(inputParams){
   }
   
   this.zoomToBBox = function(x) {
+      console.log(x);
       if(jsonConfWMS.mapoptions.projection != 'EPSG:4326') {
         for(var i = 0; i < 4; i+=2) {
             try {
