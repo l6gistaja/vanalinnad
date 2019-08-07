@@ -14,12 +14,13 @@
 <Placemark id="gcp1785.4"><name>1785 #4</name><description>5758 7936</description><Point><coordinates>24.12215060749045,59.35639107921294</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="bbox"><value>24.00720284632062,59.30233237015360,24.19098458235194,59.40927228409146</value></Data>
-<Data name="maps"><value>1785,1783</value></Data>
-<Data name="zmin"><value>12</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Paldiski/composed/1783/</value></Data>
-<Data name="zmax"><value>16</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>1785,1783</value></Data>
+<Data name="bbox"><value>24.00720284632062,59.30233237015360,24.19098458235194,59.40927228409146</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Paldiski/composed/1783/</value></Data>
+<Data name="zmin"><value>12</value></Data>
 
 </ExtendedData>
 
