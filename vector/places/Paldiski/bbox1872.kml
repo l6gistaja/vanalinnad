@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1872.N"><name>1872.N</name><LineString><coordinates>24.02738498932603,59.33941895122820 24.02738498932603,59.37662542626657 24.08220062163703,59.37662542626657 24.08220062163703,59.33941895122820 24.02738498932603,59.33941895122820</coordinates></LineString></Placemark>
+<Placemark id="gcp1872.N.1"><name>1872.N #1</name><description>1280 6192</description><Point><coordinates>24.050958981474842,59.35323442561148</coordinates></Point></Placemark>
+<Placemark id="gcp1872.N.2"><name>1872.N #2</name><description>1501 9219</description><Point><coordinates>24.0602333724183,59.344553596648</coordinates></Point></Placemark>
+<Placemark id="gcp1872.N.3"><name>1872.N #3</name><description>1964 7424</description><Point><coordinates>24.058036,59.350512</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1872.S"><name>1872.S</name><LineString><coordinates>24.04649462305179,59.32943004066608 24.04649462305179,59.35603798358827 24.08844916607609,59.35603798358827 24.08844916607609,59.32943004066608 24.04649462305179,59.32943004066608</coordinates></LineString></Placemark>
+<Placemark id="gcp1872.S.1"><name>1872.S #1</name><description>1260 2540</description><Point><coordinates>24.0602333724183,59.344553596648</coordinates></Point></Placemark>
+<Placemark id="gcp1872.S.2"><name>1872.S #2</name><description>1713 741</description><Point><coordinates>24.058036,59.350512</coordinates></Point></Placemark>
+<Placemark id="gcp1872.S.3"><name>1872.S #3</name><description>3328 3342</description><Point><coordinates>24.073923,59.344959</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1872.S,1872.N</value></Data>
+<Data name="bbox"><value>24.02738498932603,59.32943004066608,24.08844916607609,59.37662542626657</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Paldiski/composed/1872/</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

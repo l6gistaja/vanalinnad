@@ -26,6 +26,12 @@
       </Point>
     </Placemark>
     <Placemark>
+      <name>Paldiski</name>
+      <Point>
+        <coordinates>24.059577,59.352011</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>Pärnu</name>
       <description>Parnu</description>
       <Point>

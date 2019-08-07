@@ -1,0 +1,31 @@
+<vanalinnadlayers xmlns="http://juks.alkohol.ee/vanalinnad">
+  <bounds>24.03868982852955,59.34252663144520,24.07004845074087,59.36022208835968</bounds>
+  <city>Paldiski</city>
+  <country>Estonia</country>
+  <json><![CDATA[{
+"urls": {
+ "riksarkivet": {"h":"Riksarkivet, 0406 Utländska stads- och fästningsplaner 1550 – 1989, 28 Östersjöprovinserna", "l":"Riksarkivet 16XX", "t":"_blank", "U":"https://sok.riksarkivet.se/?EndastDigitaliserat=true&tab=post&ct=50&inc=1&exp=y&vol=n&postid=Arkis+a8fb0799-a0f6-4575-be95-b1df8346ed89"},
+ "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/11/"},
+ "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта 1862", "l":"ЭтоМесто: 3-верстовка 1862", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/3-4/"},
+ "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-atlas_topo-10km/?x=@X@&y=@Y@", "srs":"EPSG:4326"},
+ "gallica": {"h":"Bibliothèque nationale de France, Gallica", "l":"BnF Gallica", "t":"_blank", "U":"https://gallica.bnf.fr/services/engine/search/sru?operation=searchRetrieve&exactSearch=false&collapsing=true&version=1.2&query=(((dc.title%20all%20%22%D0%91%D0%B0%D0%BB%D1%82%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D0%9F%D0%BE%D1%80%D1%82%22%20or%20dc.title%20all%20%22Baltisch%20Port%22%20)%20or%20dc.title%20all%20%22Baltiski%22%20)%20or%20text%20all%20%22Paldiski%22%20)%20%20and%20(dc.type%20all%20%22carte%22)&suggest=10&keywords=%D0%91%D0%B0%D0%BB%D1%82%D0%B8%D0%B9%D1%81%D0%BA%D0%B8%D0%B9%20%D0%9F%D0%BE%D1%80%D1%82%20Baltisch%20Port%20Baltiski%20Paldiski"},
+ "ra1917m": {"h":"Rahvusarhiiv &lt; 1917", "l":"Rahvusarhiiv &lt; 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139254&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
+ "ra1917_1950": {"h":"Rahvusarhiiv 1917-1950", "l":"Rahvusarhiiv 1917-1950", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139517&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
+ "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140002&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"}
+}
+}]]></json>
+  <layer bounds="24.03868982852955,59.34252663144520,24.07004845074087,59.36022208835968" type="tms" year="1940" />
+  <layer bounds="24.01998264969866,59.30046132245869,24.19959298621849,59.40022804341682" type="tms" year="1936" />
+  <layer bounds="24.02490201707804,59.33033821031781,24.09052672228786,59.37511225506418" type="tms" year="1932" />
+  <layer bounds="24.01669782653403,59.29984948161355,24.12641716596378,59.39971072064160" type="tms" year="1925" />
+  <layer bounds="24.03892680509701,59.33027320020061,24.10771539550810,59.35923719310889" type="tms" year="1921" />
+  <layer bounds="24.03404201378444,59.29952369150764,24.12812317798316,59.39115606743843" type="tms" year="1899" />
+  <layer bounds="24.02349513043227,59.32885692369273,24.09673998665187,59.38447091531403" type="tms" year="18XX" />
+  <layer bounds="24.03746219522811,59.32897341142511,24.08956948792317,59.36614587754569" type="tms" year="1886" />
+  <layer bounds="24.02738498932603,59.32943004066608,24.08844916607609,59.37662542626657" type="tms" year="1872" />
+  <layer bounds="24.00720284632062,59.30233237015360,24.19098458235194,59.40927228409146" type="tms" year="1783" />
+  <layer name="⑤ 1" file="roads1min.kml" levels="0,1,2,3" maxres="12" type="roads" />
+  <layer name="⑤ 2" file="roads4min.kml" levels="4" maxres="15" type="roads" />
+  <maxzoom>16</maxzoom>
+  <minzoom>12</minzoom>
+</vanalinnadlayers>

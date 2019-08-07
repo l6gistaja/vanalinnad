@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1783"><name>1783</name><LineString><coordinates>24.03657414901310,59.33964963442266 24.03657414901310,59.36299667874260 24.07135839299949,59.36299667874260 24.07135839299949,59.33964963442266 24.03657414901310,59.33964963442266</coordinates></LineString></Placemark>
+<Placemark id="gcp1783.1"><name>1783 #1</name><description>3056 5828</description><Point><coordinates>24.05530507934611,59.34959786429562</coordinates></Point></Placemark>
+<Placemark id="gcp1783.2"><name>1783 #2</name><description>3864 5616</description><Point><coordinates>24.058073119049194,59.350505796367955</coordinates></Point></Placemark>
+<Placemark id="gcp1783.3"><name>1783 #3</name><description>4188 6896</description><Point><coordinates>24.060884074096812,59.34814293456712</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1785"><name>1785</name><LineString><coordinates>24.00720284632062,59.30233237015360 24.00720284632062,59.40927228409146 24.19098458235194,59.40927228409146 24.19098458235194,59.30233237015360 24.00720284632062,59.30233237015360</coordinates></LineString></Placemark>
+<Placemark id="gcp1785.1"><name>1785 #1</name><description>2472 339</description><Point><coordinates>24.036039,59.387294</coordinates></Point></Placemark>
+<Placemark id="gcp1785.2"><name>1785 #2</name><description>972 6468</description><Point><coordinates>24.060884074096812,59.34814293456712</coordinates></Point></Placemark>
+<Placemark id="gcp1785.3"><name>1785 #3</name><description>588 5844</description><Point><coordinates>24.052602,59.350211</coordinates></Point></Placemark>
+<Placemark id="gcp1785.4"><name>1785 #4</name><description>5758 7936</description><Point><coordinates>24.12215060749045,59.35639107921294</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>24.00720284632062,59.30233237015360,24.19098458235194,59.40927228409146</value></Data>
+<Data name="maps"><value>1785,1783</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Paldiski/composed/1783/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

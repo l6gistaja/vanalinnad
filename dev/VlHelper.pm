@@ -5,12 +5,15 @@ use JSON;
 use Scalar::Util qw(reftype);
 use Storable qw(dclone);
 use XML::Simple;
+use Data::Dumper;
 
 our @EXPORT_OK = qw(minify_empty_tiles_json minify_empty_tiles_json_v2 add_empty_tiles_json bbox_fragment add_to_tree kml_envelope gdal_mapindex gdal_tlast bbox_box bbox_points json_file_read json_file_write get_sites);
 
 sub minify_empty_tiles_json {
   %json = %{dclone($_[0])};
-
+  #json_file_write('/var/www/html/vanalinnad/cache/emptypaldiski.json', \%doc);
+  print Dumper(%doc);
+  
   foreach $z (keys %json) {
     foreach $x (keys %{$json{$z}}) {
         # numeric ascending sort

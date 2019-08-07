@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1932.1"><name>1932.1</name><LineString><coordinates>24.02490201707804,59.34490929543531 24.02490201707804,59.37511225506418 24.07477764045241,59.37511225506418 24.07477764045241,59.34490929543531 24.02490201707804,59.34490929543531</coordinates></LineString></Placemark>
+<Placemark id="gcp1932.1.1"><name>1932.1 #1</name><description>1054 8140</description><Point><coordinates>24.058053277959512,59.34723930509771</coordinates></Point></Placemark>
+<Placemark id="gcp1932.1.2"><name>1932.1 #2</name><description>1861 7294</description><Point><coordinates>24.059533812007487,59.35097575667364</coordinates></Point></Placemark>
+<Placemark id="gcp1932.1.3"><name>1932.1 #3</name><description>1071 6012</description><Point><coordinates>24.050958981474842,59.35323442561148</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1932.2"><name>1932.2</name><LineString><coordinates>24.05069045725153,59.33033821031781 24.05069045725153,59.35413063242532 24.09052672228786,59.35413063242532 24.09052672228786,59.33033821031781 24.05069045725153,59.33033821031781</coordinates></LineString></Placemark>
+<Placemark id="gcp1932.2.1"><name>1932.2 #1</name><description>654 1062</description><Point><coordinates>24.058053277959512,59.34723930509771</coordinates></Point></Placemark>
+<Placemark id="gcp1932.2.2"><name>1932.2 #2</name><description>1450 216</description><Point><coordinates>24.059533812007487,59.35097575667364</coordinates></Point></Placemark>
+<Placemark id="gcp1932.2.3"><name>1932.2 #3</name><description>800 2422</description><Point><coordinates>24.063625017075154,59.343717447469885</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1929"><name>1929</name><LineString><coordinates>24.05716616376761,59.33630170811656 24.05716616376761,59.34946956216878 24.08308616621582,59.34946956216878 24.08308616621582,59.33630170811656 24.05716616376761,59.33630170811656</coordinates></LineString></Placemark>
+<Placemark id="gcp1929.1"><name>1929 #1</name><description>791 233</description><Point><coordinates>24.06002130377933,59.3448291961068</coordinates></Point></Placemark>
+<Placemark id="gcp1929.2"><name>1929 #2</name><description>582 2233</description><Point><coordinates>24.064678020960464,59.341765683423624</coordinates></Point></Placemark>
+<Placemark id="gcp1929.3"><name>1929 #3</name><description>1984 3048</description><Point><coordinates>24.070793794935387,59.34254239367972</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1932.2,1932.1,1929</value></Data>
+<Data name="bbox"><value>24.02490201707804,59.33033821031781,24.09052672228786,59.37511225506418</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Paldiski/composed/1932/</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

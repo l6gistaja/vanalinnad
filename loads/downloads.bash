@@ -640,4 +640,59 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000251/erat-0-6_003_0000251_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 650 -b 674 -o  cache/deiip/1918_W-Tallinn.jpg
 
+# Paldiski 1940
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=100116
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-3/002/0000008/erat-0-3_002_0000008_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1702 -b 1747 -o  cache/deiip/1940_Paldiski_1.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-3/002/0000008/erat-0-3_002_0000008_00001_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 1813 -b 1861 -o  cache/deiip/1940_Paldiski_2.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-3/002/0000008/erat-0-3_002_0000008_00001_k3.tif&CNT=1&SDS=0,90&JTL=8,' -a 1813 -b 1861 -o  cache/deiip/1940_Paldiski_3.jpg
+
+# Paldiski 1932
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=107091
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001615/erat-0-6_003_0001615_00001_k1.tif&CNT=1&SDS=0,90&JTL=7,' -a 1026 -b 1052 -o  cache/deiip/1932_Paldiski_1.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001615/erat-0-6_003_0001615_00001_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 768 -b 791 -o  cache/deiip/1932_Paldiski_2.jpg
+
+# Paldiski 1929
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=107151
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001618/erat-0-6_003_0001618_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 700 -b 727 -o  cache/deiip/1929_Paldiski.jpg
+
+# Paldiski 1921
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=110184
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-7/001/0000508/erat-0-7_001_0000508_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 882 -b 902 -o  cache/deiip/1921_Paldiski.jpg
+
+# Paldiski 1913/1886
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=107093
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001617/erat-0-6_003_0001617_00001_k1.tif&CNT=1&SDS=0,90&JTL=7,' -a 1392 -b 1439 -o  cache/deiip/1886_Paldiski_S.jpg
+
+# Paldiski 1872
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=21136
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0854/004/0000088/eaa0854_004_0000088_00001_k1.tif&CNT=1&SDS=0,90&JTL=7,' -a 1376 -b 1407 -o  cache/deiip/1872_Paldiski_N.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0854/004/0000088/eaa0854_004_0000088_00001_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 960 -b 991 -o  cache/deiip/1872_Paldiski_S.jpg
+
+# Paldiski 1860
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=18248
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/002/0000031/eaa2072_002_0000031_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 682 -b 712 -o  cache/deiip/1860_Paldiski.jpg
+
+# Paldiski 1854
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=32661
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eaa0079/002/0000005/eaa0079_002_0000005_00001_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 784 -b 832 -o  cache/deiip/1854_Paldiski.jpg
+
+# Paldiski 1783
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=229175
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/saaga/estica/kaardid/lva6828/004/0000526/lva6828_004_0000526_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1440 -b 1484 -o  cache/deiip/1783_Paldiski.jpg
+
+# Paldiski 1785
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=21141
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0854/004/0000083/eaa0854_004_0000083_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 3280 -b 3361 -o  cache/deiip/1785_Paldiski.jpg
+
+# Paldiski 1899
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=294190
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0854/004/000027a/eaa0854_004_000027a_00040_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 304 -b 322 -o  cache/deiip/1899_Paldiski.jpg
+
+# Paldiski 18XX
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=18250
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/002/0000032/eaa2072_002_0000032_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 2130 -b 2159 -o  cache/deiip/18XX_Paldiski.jpg
+
+# Vaim6isa 1921
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-3/024/0001824/erat-0-3_024_0001824_00035_k1.tif&CNT=1&SDS=0,90&JTL=7,' -a 414 -b 431 -o  cache/deiip/1921_Vaim6isa.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg

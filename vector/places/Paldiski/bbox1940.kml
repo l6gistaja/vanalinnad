@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1940.1"><name>1940.1</name><LineString><coordinates>24.03868982852955,59.35195174594959 24.03868982852955,59.36022208835968 24.05503100529385,59.36022208835968 24.05503100529385,59.35195174594959 24.03868982852955,59.35195174594959</coordinates></LineString></Placemark>
+<Placemark id="gcp1940.1.1"><name>1940.1 #1</name><description>3810 8346</description><Point><coordinates>24.05079101852361,59.35360659913104</coordinates></Point></Placemark>
+<Placemark id="gcp1940.1.2"><name>1940.1 #2</name><description>2386 2998</description><Point><coordinates>24.044351028150043,59.35639908876349</coordinates></Point></Placemark>
+<Placemark id="gcp1940.1.3"><name>1940.1 #3</name><description>5348 2092</description><Point><coordinates>24.047398017591245,59.35820362856057</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1940.2"><name>1940.2</name><LineString><coordinates>24.04388148525288,59.34635688817594 24.04388148525288,59.35664790118963 24.06391061082366,59.35664790118963 24.06391061082366,59.34635688817594 24.04388148525288,59.34635688817594</coordinates></LineString></Placemark>
+<Placemark id="gcp1940.2.1"><name>1940.2 #1</name><description>4488 1804</description><Point><coordinates>24.050958981474842,59.35323442561148</coordinates></Point></Placemark>
+<Placemark id="gcp1940.2.2"><name>1940.2 #2</name><description>912 2188</description><Point><coordinates>24.04684238616886,59.35142630822795</coordinates></Point></Placemark>
+<Placemark id="gcp1940.2.3"><name>1940.2 #3</name><description>3345 7791</description><Point><coordinates>24.054545690460035,59.34895411772282</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1940.3"><name>1940.3</name><LineString><coordinates>24.05225936819354,59.34252663144520 24.05225936819354,59.35185892049338 24.07004845074087,59.35185892049338 24.07004845074087,59.34252663144520 24.05225936819354,59.34252663144520</coordinates></LineString></Placemark>
+<Placemark id="gcp1940.3.1"><name>1940.3 #1</name><description>1646 6961</description><Point><coordinates>24.060233372418576,59.344553596648</coordinates></Point></Placemark>
+<Placemark id="gcp1940.3.2"><name>1940.3 #2</name><description>732 1170</description><Point><coordinates>24.054159873046572,59.34780907263228</coordinates></Point></Placemark>
+<Placemark id="gcp1940.3.3"><name>1940.3 #3</name><description>7256 1419</description><Point><coordinates>24.06239961914037,59.35054387829512</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1940.1,1940.3,1940.2</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Paldiski/composed/1940/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="bbox"><value>24.03868982852955,59.34252663144520,24.07004845074087,59.36022208835968</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

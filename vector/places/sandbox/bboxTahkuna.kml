@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name>Tahkuna</name><LineString><coordinates>22.57832721385520,59.05014812347034 22.57832721385520,59.09077990476516 22.69144572214827,59.09077990476516 22.69144572214827,59.05014812347034 22.57832721385520,59.05014812347034</coordinates></LineString></Placemark>
+<Placemark id="bbox"><name></name><LineString><coordinates>22.57920975795717,59.05009854323782 22.57920975795717,59.09094568347981 22.69094835807053,59.09094568347981 22.69094835807053,59.05009854323782 22.57920975795717,59.05009854323782</coordinates></LineString></Placemark>
 <Placemark id="gcp.1"><name>#1</name><description>6920 2976</description><Point><coordinates>22.674545596567594,59.06791770139211</coordinates></Point></Placemark>
 <Placemark id="gcp.2"><name>#2</name><description>2378 2533</description><Point><coordinates>22.612541,59.071062</coordinates></Point></Placemark>
 <Placemark id="gcp.3"><name>#3</name><description>2413 3834</description><Point><coordinates>22.613508408304288,59.06102714886487</coordinates></Point></Placemark>
