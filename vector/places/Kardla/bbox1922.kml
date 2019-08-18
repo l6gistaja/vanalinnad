@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1922.W"><name>1922.W</name><LineString><coordinates>22.72364130787690,58.99133492779040 22.72364130787690,59.00610087673287 22.74829527718153,59.00610087673287 22.74829527718153,58.99133492779040 22.72364130787690,58.99133492779040</coordinates></LineString></Placemark>
+<Placemark id="gcp1922.W.1"><name>1922.W #1</name><description>5822 2365</description><Point><coordinates>22.743329280826238,59.002313898210836</coordinates></Point></Placemark>
+<Placemark id="gcp1922.W.2"><name>1922.W #2</name><description>1992 3078</description><Point><coordinates>22.732214206668473,58.99960635178122</coordinates></Point></Placemark>
+<Placemark id="gcp1922.W.3"><name>1922.W #3</name><description>4711 5627</description><Point><coordinates>22.742578262301848,58.9967328042936</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1922.E"><name>1922.E</name><LineString><coordinates>22.73622184577759,58.99326408317631 22.73622184577759,59.01069091906089 22.76264302697390,59.01069091906089 22.76264302697390,58.99326408317631 22.73622184577759,58.99326408317631</coordinates></LineString></Placemark>
+<Placemark id="gcp1922.E.1"><name>1922.E #1</name><description>142 7330</description><Point><coordinates>22.742578262301848,58.9967328042936</coordinates></Point></Placemark>
+<Placemark id="gcp1922.E.2"><name>1922.E #2</name><description>617 2886</description><Point><coordinates>22.74043182858363,59.003879806253856</coordinates></Point></Placemark>
+<Placemark id="gcp1922.E.3"><name>1922.E #3</name><description>4833 2704</description><Point><coordinates>22.753113312805635,59.00591299636892</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>22.72364130787690,58.99133492779040,22.76264302697390,59.01069091906089</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Kardla/composed/1922/</value></Data>
+<Data name="maps"><value>1922.E,1922.W</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

@@ -14,6 +14,13 @@
       </Point>
     </Placemark>
     <Placemark>
+      <name>Kärdla</name>
+      <description>Kardla</description>
+      <Point>
+        <coordinates>22.746975,58.99832</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>Narva</name>
       <Point>
         <coordinates>28.20004659975203,59.3758806532303</coordinates>

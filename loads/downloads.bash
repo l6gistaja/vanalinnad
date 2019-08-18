@@ -695,4 +695,38 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # Vaim6isa 1921
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-3/024/0001824/erat-0-3_024_0001824_00035_k1.tif&CNT=1&SDS=0,90&JTL=7,' -a 414 -b 431 -o  cache/deiip/1921_Vaim6isa.jpg
 
+##### K2RDLA ##### K2RDLA ##### K2RDLA ##### K2RDLA ##### K2RDLA ##### K2RDLA ##### K2RDLA
+
+# 1939
+# https://www.digar.ee/arhiiv/et/pildimaterjal/90216
+# https://www.digar.ee/viewer/et/nlib-digar:337477/295514/page/11
+
+# 1933
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=103086
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=103087
+
+# 1923
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=103083
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001532/erat-0-6_003_0001532_00001_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 1386 -b 1418 -o  cache/deiip/1923_Kardla_E.jpg
+
+# 1922
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=103080
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001533/erat-0-6_003_0001533_00001_k1.tif&CNT=1&SDS=0,90&JTL=7,' -a 1118 -b 1143 -o  cache/deiip/1922_Kardla_W.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001533/erat-0-6_003_0001533_00001_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 1118 -b 1143 -o  cache/deiip/1922_Kardla_E.jpg
+
+# 1917
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=101934
+# 1900
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=294593
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=103149
+
+# 1877
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=226484
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000130/eaa2072_009_0000130_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 2145 -b 2199 -o  cache/deiip/1877_Kardla_NW.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000130/eaa2072_009_0000130_00001_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 2184 -b 2239 -o  cache/deiip/1877_Kardla_NE.jpg
+
+# 1830
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=287291
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eaa0046/002/0000366/eaa0046_002_0000366_00009_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 624 -b 649 -o  cache/deiip/1830_Kardla.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
