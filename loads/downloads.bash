@@ -729,4 +729,61 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # http://www.ra.ee/kaardid/index.php/et/map/view?id=287291
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eaa0046/002/0000366/eaa0046_002_0000366_00009_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 624 -b 649 -o  cache/deiip/1830_Kardla.jpg
 
+
+##### RAPLA ##### RAPLA ##### RAPLA ##### RAPLA ##### RAPLA ##### RAPLA ##### RAPLA ##### RAPLA ##### RAPLA 
+
+# 1843 http://www.ra.ee/kaardid/index.php/et/map/view?id=8339
+# 1843 http://www.ra.ee/kaardid/index.php/et/map/view?id=8338
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/004/0000274/eaa3724_004_0000274_00002_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 900 -b 924 -o  cache/deiip/1843_Rapla.jpg
+
+# 18XX http://www.ra.ee/kaardid/index.php/et/map/view?id=4545
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0854/004/0000877/eaa0854_004_0000877_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 816 -b 839 -o  cache/deiip/18XX_Rapla.jpg
+
+# 18XX http://www.ra.ee/kaardid/index.php/et/map/view?id=4531
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eaa0854/004/0000893/eaa0854_004_0000893_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 92 -b 114 -o  cache/deiip/18XX_Rapla_mois.jpg
+
+# 1872 http://www.ra.ee/kaardid/index.php/et/map/view?id=4265
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/004/0000333/eaa3724_004_0000333_00001_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 1976 -b 2013 -o  cache/deiip/1872_Rapla.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/004/0000333/eaa3724_004_0000333_00001_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 1216 -b 1253 -o  cache/deiip/1872_Rapla.jpg
+
+# 1899 http://www.ra.ee/kaardid/index.php/et/map/view?id=103057
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000683/erat-0-6_003_0000683_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 323 -b 341 -o  cache/deiip/1899_Rapla_N.jpg
+
+# 1899 http://www.ra.ee/kaardid/index.php/et/map/view?id=294629
+# 1899 http://www.ra.ee/kaardid/index.php/et/map/view?id=103169
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000713/erat-0-6_003_0000713_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 342 -b 360 -o  cache/deiip/1899_Rapla_S.jpg
+
+
+# 1911 http://www.ra.ee/kaardid/index.php/et/map/view?id=10523
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/004/0000006/eaa3724_004_0000006_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 494 -b 519 -o  cache/deiip/1911_Rapla.jpg
+
+# 1913 http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?creator_lastname=neufeldt&unit_match=1&digitized=1&vmode=grid&q=1
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-3/024/0000064/erat-0-3_024_0000064_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 396 -b 417 -o  cache/deiip/1919_Rapla_sild.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-3/024/0000061/erat-0-3_024_0000061_00001_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 285 -b 303 -o  cache/deiip/1919_Rapla_Nikolai.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-3/024/0000066/erat-0-3_024_0000066_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 378 -b 398 -o  cache/deiip/1919_Rapla_Tohtri.jpg
+
+# 1926 http://www.ra.ee/kaardid/index.php/et/map/view?id=104483
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001892/erat-0-6_003_0001892_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 504 -b 531 -o  cache/deiip/1926_Rapla_rdtj.jpg
+
+# 1926 http://www.ra.ee/kaardid/index.php/et/map/view?id=104516
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001890/erat-0-6_003_0001890_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 532 -b 559 -o  cache/deiip/1926_Rapla.jpg
+
+# 1934 http://www.ra.ee/kaardid/index.php/et/map/view?id=104490
+# 1935 http://www.ra.ee/kaardid/index.php/et/map/view?id=121601
+# 1935 http://www.ra.ee/kaardid/index.php/et/map/view?id=121920
+
+# 1940 http://www.ra.ee/kaardid/index.php/et/map/view?id=104519
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001889/erat-0-6_003_0001889_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 567 -b 593 -o  cache/deiip/1940_Rapla.jpg
+
+# 1957 http://www.ra.ee/kaardid/index.php/et/map/view?id=305583
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000209/eam0003_001_0000209_00001_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 280 -b 299 -o  cache/deiip/1957_Rapla.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000209/eam0003_001_0000209_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 2262 -b 2319 -o  cache/deiip/1957_Rapla.2.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000209/eam0003_001_0000209_00001_k3.tif&CNT=1&SDS=0,90&JTL=8,' -a 2262 -b 2319 -o  cache/deiip/1957_Rapla.4.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000209/eam0003_001_0000209_00001_k4.tif&CNT=1&SDS=0,90&JTL=8,' -a 2262 -b 2319 -o  cache/deiip/1957_Rapla.5.jpg
+
+# 1969 http://www.ra.ee/kaardid/index.php/et/map/view?id=104471
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-14/4-0-6/0034066/erat-0-14_4-0-6_0034066_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1702 -b 1747 -o  cache/deiip/1969_Rapla.jpg
+
+# 1989 http://www.ra.ee/kaardid/index.php/et/map/view?id=239908
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1899.N"><name>1899.N</name><LineString><coordinates>24.74309399515228,58.99922803547252 24.74309399515228,59.01939611169904 24.84719126496331,59.01939611169904 24.84719126496331,58.99922803547252 24.74309399515228,58.99922803547252</coordinates></LineString></Placemark>
+<Placemark id="gcp1899.N.1"><name>1899.N #1</name><description>1772 2516</description><Point><coordinates>24.837376961961827,59.01888192098642</coordinates></Point></Placemark>
+<Placemark id="gcp1899.N.2"><name>1899.N #2</name><description>923 2618</description><Point><coordinates>24.784161935105253,59.01542451948398</coordinates></Point></Placemark>
+<Placemark id="gcp1899.N.3"><name>1899.N #3</name><description>1091 2889</description><Point><coordinates>24.794464857178344,59.00667213873301</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1899.S"><name>1899.S</name><LineString><coordinates>24.74352036752068,58.98464594109132 24.74352036752068,59.00028267216824 24.84659904387322,59.00028267216824 24.84659904387322,58.98464594109132 24.74352036752068,58.98464594109132</coordinates></LineString></Placemark>
+<Placemark id="gcp1899.S.1"><name>1899.S #1</name><description>742 126</description><Point><coordinates>24.772413,58.996074</coordinates></Point></Placemark>
+<Placemark id="gcp1899.S.2"><name>1899.S #2</name><description>1660 67</description><Point><coordinates>24.829516,58.997836</coordinates></Point></Placemark>
+<Placemark id="gcp1899.S.3"><name>1899.S #3</name><description>1821 343</description><Point><coordinates>24.83916129051303,58.98877223946419</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1872"><name>1872</name><LineString><coordinates>24.80706808618871,58.98322796060276 24.80706808618871,59.00814741373960 24.85471192556173,59.00814741373960 24.85471192556173,58.98322796060276 24.80706808618871,58.98322796060276</coordinates></LineString></Placemark>
+<Placemark id="gcp1872.1"><name>1872 #1</name><description>6385 2234</description><Point><coordinates>24.829566327432108,58.99783750819976</coordinates></Point></Placemark>
+<Placemark id="gcp1872.2"><name>1872 #2</name><description>5429 3340</description><Point><coordinates>24.832527486184247,58.99330580294137</coordinates></Point></Placemark>
+<Placemark id="gcp1872.3"><name>1872 #3</name><description>4700 1733</description><Point><coordinates>24.821496021117163,58.994002529433295</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="maps"><value>1899.S,1899.N,1872</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Rapla/composed/1899/</value></Data>
+<Data name="bbox"><value>24.74309399515228,58.98322796060276,24.85471192556173,59.01939611169904</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

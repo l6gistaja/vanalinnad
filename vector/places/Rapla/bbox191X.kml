@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1919"><name>1919</name><LineString><coordinates>24.78716916496499,59.00421100088506 24.78716916496499,59.00794047188113 24.79774420786359,59.00794047188113 24.79774420786359,59.00421100088506 24.78716916496499,59.00421100088506</coordinates></LineString></Placemark>
+<Placemark id="gcp1919.1"><name>1919 #1</name><description>2236 447</description><Point><coordinates>24.794469327202386,59.00669134872585</coordinates></Point></Placemark>
+<Placemark id="gcp1919.2"><name>1919 #2</name><description>2224 1804</description><Point><coordinates>24.793739766349812,59.00486815438169</coordinates></Point></Placemark>
+<Placemark id="gcp1919.3"><name>1919 #3</name><description>1096 1936</description><Point><coordinates>24.790407128837657,59.00501706989924</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1919.Nikolai"><name>1919.Nikolai</name><LineString><coordinates>24.79142978623002,59.00199540855000 24.79142978623002,59.00420120274620 24.79585999168295,59.00420120274620 24.79585999168295,59.00199540855000 24.79142978623002,59.00199540855000</coordinates></LineString></Placemark>
+<Placemark id="gcp1919.Nikolai.1"><name>1919.Nikolai #1</name><description>535 225</description><Point><coordinates>24.79334603459723,59.00379784239705</coordinates></Point></Placemark>
+<Placemark id="gcp1919.Nikolai.2"><name>1919.Nikolai #2</name><description>528 544</description><Point><coordinates>24.793217288564534,59.003422130182486</coordinates></Point></Placemark>
+<Placemark id="gcp1919.Nikolai.3"><name>1919.Nikolai #3</name><description>994 247</description><Point><coordinates>24.79459057957972,59.003654188211094</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1919.Tohtri"><name>1919.Tohtri</name><LineString><coordinates>24.79368348805585,59.00235992137564 24.79368348805585,59.00521141869297 24.79901709423407,59.00521141869297 24.79901709423407,59.00235992137564 24.79368348805585,59.00235992137564</coordinates></LineString></Placemark>
+<Placemark id="gcp1919.Tohtri.1"><name>1919.Tohtri #1</name><description>243 1100</description><Point><coordinates>24.79459057957972,59.003654188211094</coordinates></Point></Placemark>
+<Placemark id="gcp1919.Tohtri.2"><name>1919.Tohtri #2</name><description>644 1435</description><Point><coordinates>24.795492784813483,59.00312288884</coordinates></Point></Placemark>
+<Placemark id="gcp1919.Tohtri.3"><name>1919.Tohtri #3</name><description>902 303</description><Point><coordinates>24.796587126091445,59.00463677619</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1911"><name>1911</name><LineString><coordinates>24.75652576371458,58.99597290685193 24.75652576371458,59.01797515798449 24.79540078242550,59.01797515798449 24.79540078242550,58.99597290685193 24.75652576371458,58.99597290685193</coordinates></LineString></Placemark>
+<Placemark id="gcp1911.1"><name>1911 #1</name><description>1825 817</description><Point><coordinates>24.785555034904007,59.01228095807991</coordinates></Point></Placemark>
+<Placemark id="gcp1911.2"><name>1911 #2</name><description>808 1336</description><Point><coordinates>24.778495460776337,59.01294380622619</coordinates></Point></Placemark>
+<Placemark id="gcp1911.3"><name>1911 #3</name><description>2128 5080</description><Point><coordinates>24.771114021567815,59.00070115101802</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Rapla/composed/191X/</value></Data>
+<Data name="maps"><value>1911,1919,1919.Nikolai,1919.Tohtri</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>24.75652576371458,58.99597290685193,24.79901709423407,59.01797515798449</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

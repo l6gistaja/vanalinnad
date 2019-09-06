@@ -52,6 +52,12 @@
       </Point>
     </Placemark>
     <Placemark>
+      <name>Rapla</name>
+      <Point>
+        <coordinates>24.796500865018633,59.00190642288355</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>Tallinn</name>
       <Point>
         <coordinates>24.745278,59.437222</coordinates>

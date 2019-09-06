@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1926.rdtj"><name>1926.rdtj</name><LineString><coordinates>24.81086511441658,58.98685356759896 24.81086511441658,58.99911938299486 24.84595330532536,58.99911938299486 24.84595330532536,58.98685356759896 24.81086511441658,58.98685356759896</coordinates></LineString></Placemark>
+<Placemark id="gcp1926.rdtj.1"><name>1926.rdtj #1</name><description>2852 309</description><Point><coordinates>24.829566327432108,58.99783750819976</coordinates></Point></Placemark>
+<Placemark id="gcp1926.rdtj.2"><name>1926.rdtj #2</name><description>3372 1721</description><Point><coordinates>24.832527486184247,58.99330580294137</coordinates></Point></Placemark>
+<Placemark id="gcp1926.rdtj.3"><name>1926.rdtj #3</name><description>1614 1560</description><Point><coordinates>24.821496021117163,58.994002529433295</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1926"><name>1926</name><LineString><coordinates>24.77064287760591,58.99532931470578 24.77064287760591,59.01241190279140 24.81503792189309,59.01241190279140 24.81503792189309,58.99532931470578 24.77064287760591,58.99532931470578</coordinates></LineString></Placemark>
+<Placemark id="gcp1926.1"><name>1926 #1</name><description>3207 1071</description><Point><coordinates>24.79446358261808,59.006686906096434</coordinates></Point></Placemark>
+<Placemark id="gcp1926.2"><name>1926 #2</name><description>3008 3500</description><Point><coordinates>24.789678521735404,58.999332763825116</coordinates></Point></Placemark>
+<Placemark id="gcp1926.3"><name>1926 #3</name><description>4624 2229</description><Point><coordinates>24.801390669402362,59.00204179225243</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Rapla/composed/1926/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="maps"><value>1926.rdtj,1926</value></Data>
+<Data name="bbox"><value>24.77064287760591,58.98685356759896,24.84595330532536,59.01241190279140</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

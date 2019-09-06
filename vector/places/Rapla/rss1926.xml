@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title></title>
+<link></link>
+<language>et</language>
+<copyright>0</copyright>
+
+<item>
+<title>Harju maakonnas Rapla vallas oleva Rapla aleviku piirkonna plaan</title>
+<author>J. Jagor</author>
+<description></description>
+<guid>ra.ee=ERA.T-6.3.1890 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=104516</link>
+<pubDate>Fri, 01 Jan 1926 00:00:00 +0000</pubDate>
+<legends>legend1926.jpg</legends>
+</item>
+
+<item>
+<title>Harju maakonnas Rapla vallas oleva Rapla raudteejaama piirkonna plaan</title>
+<author>J. Jagor</author>
+<description></description>
+<guid>ra.ee=ERA.T-6.3.1892 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=104483</link>
+<pubDate>Fri, 01 Jan 1926 00:00:00 +0000</pubDate>
+<legends>legend1926.rdtj.jpg</legends>
+<anchor>1926.rdtj</anchor>
+</item>
+
+</channel>
+</rss>

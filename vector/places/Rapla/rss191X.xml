@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title></title>
+<link></link>
+<language></language>
+<copyright>0</copyright>
+
+<item>
+<title>Alu-Rapla rendikohad.</title>
+<author></author>
+<description></description>
+<guid>ra.ee=EAA.3724.4.6 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=10523</link>
+<pubDate>Sun, 01 Jan 1911 00:00:00 +0000</pubDate>
+<legends></legends>
+</item>
+
+<item>
+<title>Kaart kruntidest nr. 303, 305, 307, 309, 358, 360 ja 476 Rapla alevis ärapiiritud Alu-Rapla mõisa maast. Eesti maal, Harju kreisis ja Rapla kihelkondas</title>
+<author>N. Neufeldt, Werner Obst</author>
+<description></description>
+<guid>ra.ee=ERA.T-3.24.64 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=111155</link>
+<pubDate>Wed, 01 Jan 1919 00:00:00 +0000</pubDate>
+<legends></legends>
+</item>
+
+<item>
+<title>Kaart kruntidest nr. 17, 19, 21 ja 23 Rapla alevis ärapiiritud Alu-Rapla mõisa maast. Eesti maal, Harju kreisis ja Rapla kihelkondas</title>
+<author>N. Neufeldt, Werner Obst</author>
+<description></description>
+<guid>ra.ee=ERA.T-3.24.61 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=111153</link>
+<pubDate>Wed, 01 Jan 1919 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1919.Nikolai</anchor>
+</item>
+
+<item>
+<title>Kaart kruntidest nr. 480, 482, 484, 486, 553, 555, 557, 559 ja 591 Rapla alevis ärapiiritud Alu-Rapla mõisa maast. Eesti maal, Harju kreisis ja Rapla kihelkondas</title>
+<author>N. Neufeldt, Werner Obst</author>
+<description></description>
+<guid>ra.ee=ERA.T-3.24.66 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=111159</link>
+<pubDate>Wed, 01 Jan 1919 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1919.Tohtri</anchor>
+</item>
+
+</channel>
+</rss>

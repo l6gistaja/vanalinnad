@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1957.2"><name>1957.2</name><LineString><coordinates>24.77963530691697,58.99622939931233 24.77963530691697,59.01141121975645 24.81696982121612,59.01141121975645 24.81696982121612,58.99622939931233 24.77963530691697,58.99622939931233</coordinates></LineString></Placemark>
+<Placemark id="gcp1957.2.1"><name>1957.2 #1</name><description>3334 1554</description><Point><coordinates>24.78981131744437,59.00898377984674</coordinates></Point></Placemark>
+<Placemark id="gcp1957.2.2"><name>1957.2 #2</name><description>1510 9448</description><Point><coordinates>24.784121323868455,58.996962836948654</coordinates></Point></Placemark>
+<Placemark id="gcp1957.2.3"><name>1957.2 #3</name><description>7701 8250</description><Point><coordinates>24.802503587278956,58.99868943142036</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1957.4"><name>1957.4</name><LineString><coordinates>24.78188227447954,58.99368751842005 24.78188227447954,59.00263440471416 24.81664671325654,59.00263440471416 24.81664671325654,58.99368751842005 24.78188227447954,58.99368751842005</coordinates></LineString></Placemark>
+<Placemark id="gcp1957.4.1"><name>1957.4 #1</name><description>724 142</description><Point><coordinates>24.784193,59.002411</coordinates></Point></Placemark>
+<Placemark id="gcp1957.4.2"><name>1957.4 #2</name><description>10866 694</description><Point><coordinates>24.814284870453513,59.00147377963476</coordinates></Point></Placemark>
+<Placemark id="gcp1957.4.3"><name>1957.4 #3</name><description>5954 4028</description><Point><coordinates>24.79960782272373,58.99643413425148</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1957.5"><name>1957.5</name><LineString><coordinates>24.80182899524688,58.98768029786915 24.80182899524688,59.00279413213016 24.84056575556625,59.00279413213016 24.84056575556625,58.98768029786915 24.80182899524688,58.98768029786915</coordinates></LineString></Placemark>
+<Placemark id="gcp1957.5.1"><name>1957.5 #1</name><description>3890 3642</description><Point><coordinates>24.81365891408492,58.99713065974316</coordinates></Point></Placemark>
+<Placemark id="gcp1957.5.2"><name>1957.5 #2</name><description>7323 7983</description><Point><coordinates>24.82363859909999,58.99040900049068</coordinates></Point></Placemark>
+<Placemark id="gcp1957.5.3"><name>1957.5 #3</name><description>10293 6043</description><Point><coordinates>24.832543533029117,58.99330518307946</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="montage"><value>yes</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>1957.4,1957.5,1957.2</value></Data>
+<Data name="bbox"><value>24.77963530691697,58.98768029786915,24.84056575556625,59.01141121975645</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Rapla/composed/1957/</value></Data>
+<Data name="zmin"><value>12</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
