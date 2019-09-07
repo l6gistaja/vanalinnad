@@ -52,4 +52,8 @@ if(scalar(@d) > 0) {
   print "Deleted: '".join("', '",@d)."'\n";
 }
 
+# those things dont belong here, but as it is cleanup script, and whole codebase is buggy...
+system 'rm '.$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[0].'/bbox.kml';
+system 'rm '.$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[0].'/rss.xml';
+
 exit 0;
