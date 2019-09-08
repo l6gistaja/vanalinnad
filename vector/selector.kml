@@ -39,6 +39,13 @@
       </Point>
     </Placemark>
     <Placemark>
+      <name>Põlva</name>
+      <description>Polva</description>
+      <Point>
+        <coordinates>27.06275,58.059765</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>Pärnu</name>
       <description>Parnu</description>
       <Point>

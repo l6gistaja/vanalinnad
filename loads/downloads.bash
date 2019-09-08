@@ -786,4 +786,26 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 # 1989 http://www.ra.ee/kaardid/index.php/et/map/view?id=239908
 
+##### POLVA ##### POLVA ##### POLVA ##### POLVA ##### POLVA ##### POLVA ##### POLVA ##### POLVA ##### POLVA #####
+
+# 1876 http://www.ra.ee/kaardid/index.php/et/map/view?id=17535
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/005/0000581/eaa2072_005_0000581_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1638 -b 1679 -o  cache/deiip/1876_Polva.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/005/0000581/eaa2072_005_0000581_00001_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 1176 -b 1217 -o  cache/deiip/1876_Polva.S.jpg
+
+# 1927 http://www.ra.ee/kaardid/index.php/et/map/view?id=200933
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/002057c/erat-0-6_003_002057c_00002_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1628 -b 1671 -o  cache/deiip/1927_Polva.jpg
+
+# 1952 S http://www.ra.ee/kaardid/index.php/et/map/view?id=215682
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000805/eaa2072_009_0000805_00002_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 2000 -b 2039 -o  cache/deiip/1952.S_Polva.jpg
+
+# 1952 N http://www.ra.ee/kaardid/index.php/et/map/view?id=24638
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000805/eaa2072_009_0000805_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1944 -b 1997 -o  cache/deiip/1952.N1_Polva.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000805/eaa2072_009_0000805_00001_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 1080 -b 1133 -o  cache/deiip/1952.N2_Polva.jpg
+
+# 1958 http://www.ra.ee/kaardid/index.php/et/map/view?id=105733
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/002057b/erat-0-6_003_002057b_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1332 -b 1368 -o  cache/deiip/1958_Polva.jpg
+
+# 1968 http://www.ra.ee/kaardid/index.php/et/map/view?id=104643
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-14/4-0-6/0034333/erat-0-14_4-0-6_0034333_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1512 -b 1553 -o cache/deiip/1968_Polva.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
