@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1867-25"><name>1867-25</name><LineString><coordinates>27.01613957579364,58.05682595942032 27.01613957579364,58.06403162760652 27.05354146785370,58.06403162760652 27.05354146785370,58.05682595942032 27.01613957579364,58.05682595942032</coordinates></LineString></Placemark>
+<Placemark id="gcp1867-25.1"><name>1867-25 #1</name><description>2730 299</description><Point><coordinates>27.032852369892712,58.06232633337497</coordinates></Point></Placemark>
+<Placemark id="gcp1867-25.2"><name>1867-25 #2</name><description>1332 1762</description><Point><coordinates>27.025256353962423,58.0573428825809</coordinates></Point></Placemark>
+<Placemark id="gcp1867-25.3"><name>1867-25 #3</name><description>5637 1685</description><Point><coordinates>27.05128451024355,58.05858029629583</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1867-24"><name>1867-24</name><LineString><coordinates>27.05200390275275,58.04986024900469 27.05200390275275,58.06606013264561 27.09107330810219,58.06606013264561 27.09107330810219,58.04986024900469 27.05200390275275,58.04986024900469</coordinates></LineString></Placemark>
+<Placemark id="gcp1867-24.1"><name>1867-24 #1</name><description>1485 3705</description><Point><coordinates>27.062969275475695,58.05294741879893</coordinates></Point></Placemark>
+<Placemark id="gcp1867-24.2"><name>1867-24 #2</name><description>919 1849</description><Point><coordinates>27.05857045269113,58.05862397423372</coordinates></Point></Placemark>
+<Placemark id="gcp1867-24.3"><name>1867-24 #3</name><description>179 1854</description><Point><coordinates>27.054021426202038,58.058374224765025</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>27.01613957579364,58.04986024900469,27.09107330810219,58.06606013264561</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>1867-25,1867-24</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Polva/composed/1867/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
