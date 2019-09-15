@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.18XX.N"><name>18XX.N</name><LineString><coordinates>27.04952304859079,58.06411258520819 27.04952304859079,58.08674580858202 27.12433765413607,58.08674580858202 27.12433765413607,58.06411258520819 27.04952304859079,58.06411258520819</coordinates></LineString></Placemark>
+<Placemark id="gcp18XX.N.1"><name>18XX.N #1</name><description>1032 5676</description><Point><coordinates>27.058486613747604,58.06531769031778</coordinates></Point></Placemark>
+<Placemark id="gcp18XX.N.2"><name>18XX.N #2</name><description>1071 1078</description><Point><coordinates>27.05651250791255,58.08002436676672</coordinates></Point></Placemark>
+<Placemark id="gcp18XX.N.3"><name>18XX.N #3</name><description>5226 541</description><Point><coordinates>27.081360492225755,58.08299671595593</coordinates></Point></Placemark>
+
+<Placemark id="bbox.18XX.SE"><name>18XX.SE</name><LineString><coordinates>27.05222987200517,58.04750156472078 27.05222987200517,58.06775610065569 27.12696763515381,58.06775610065569 27.12696763515381,58.04750156472078 27.05222987200517,58.04750156472078</coordinates></LineString></Placemark>
+<Placemark id="gcp18XX.SE.1"><name>18XX.SE #1</name><description>703 97</description><Point><coordinates>27.056547351835867,58.06399925048666</coordinates></Point></Placemark>
+<Placemark id="gcp18XX.SE.2"><name>18XX.SE #2</name><description>1437 3654</description><Point><coordinates>27.062969275475695,58.05294741879893</coordinates></Point></Placemark>
+<Placemark id="gcp18XX.SE.3"><name>18XX.SE #3</name><description>11575 22</description><Point><coordinates>27.12244539444139,58.06760275496667</coordinates></Point></Placemark>
+
+<Placemark id="bbox.18XX.SW"><name>18XX.SW</name><LineString><coordinates>26.97468488954109,58.05074185857255 26.97468488954109,58.06425637434278 27.05389952406559,58.06425637434278 27.05389952406559,58.05074185857255 26.97468488954109,58.05074185857255</coordinates></LineString></Placemark>
+<Placemark id="gcp18XX.SW.1"><name>18XX.SW #1</name><description>9511 355</description><Point><coordinates>27.032852369892712,58.06232633337497</coordinates></Point></Placemark>
+<Placemark id="gcp18XX.SW.2"><name>18XX.SW #2</name><description>5197 766</description><Point><coordinates>27.006734027741793,58.05995446593302</coordinates></Point></Placemark>
+<Placemark id="gcp18XX.SW.3"><name>18XX.SW #3</name><description>12429 1728</description><Point><coordinates>27.05128451024355,58.05858029629583</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>26.97468488954109,58.04750156472078,27.12696763515381,58.08674580858202</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Polva/composed/18XX/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="maps"><value>18XX.SW,18XX.SE,18XX.N</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

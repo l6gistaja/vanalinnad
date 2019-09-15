@@ -802,11 +802,26 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # 1852 S http://www.ra.ee/kaardid/index.php/et/map/view?id=274529
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/004/0001868/eaa3724_004_0001868_00008_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 520 -b 559 -o  cache/deiip/1852_Polva_S.jpg
 
+
+# 1866 legend http://www.ra.ee/kaardid/index.php/et/map/view?id=20358
+
+# 1867 #15 Mammaste http://www.ra.ee/kaardid/index.php/et/map/view?id=273515
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/004/0001870/eaa3724_004_0001870_00015_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 725 -b 749 -o  cache/deiip/1867_Polva_15.jpg
+
 # 1867 http://www.ra.ee/kaardid/index.php/et/map/view?id=273525
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/004/0001870/eaa3724_004_0001870_00025_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 243 -b 269 -o  cache/deiip/1867_Polva_25.jpg
 
 # 1867 http://www.ra.ee/kaardid/index.php/et/map/view?id=273524
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/004/0001870/eaa3724_004_0001870_00024_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 783 -b 809 -o  cache/deiip/1867_Polva_24.jpg
+
+# 18XX #15,16 Mammaste http://www.ra.ee/kaardid/index.php/et/map/view?id=274533
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/004/0001871/eaa3724_004_0001871_00004_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 1300 -b 1351 -o  cache/deiip/18XX_Polva_N.jpg
+
+# 18XX SE http://www.ra.ee/kaardid/index.php/et/map/view?id=274556
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/004/0001871/eaa3724_004_0001871_00007_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 1325 -b 1377 -o  cache/deiip/18XX_Polva_SE.jpg
+
+# 18XX SW http://www.ra.ee/kaardid/index.php/et/map/view?id=274555
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/004/0001871/eaa3724_004_0001871_00006_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 832 -b 883 -o  cache/deiip/18XX_Polva_SW.jpg
 
 # 1876 http://www.ra.ee/kaardid/index.php/et/map/view?id=17535
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/005/0000581/eaa2072_005_0000581_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1638 -b 1679 -o  cache/deiip/1876_Polva.jpg
