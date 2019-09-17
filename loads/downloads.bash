@@ -199,6 +199,11 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001810/erat-0-6_003_0001810_00001_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 1950 -b 1999 -o cache/deiip/1936_erat-0-6_003_0001810_00001_k2.jpg
 
+# Valga 1954
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000469/eam0003_001_0000469_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 2166 -b 2222 -o  cache/deiip/1954_Valga_2.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000469/eam0003_001_0000469_00001_k3.tif&CNT=1&SDS=0,90&JTL=8,' -a 1512 -b 1567 -o  cache/deiip/1954_Valga_4.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000469/eam0003_001_0000469_00001_k4.tif&CNT=1&SDS=0,90&JTL=8,' -a 1710 -b 1766 -o  cache/deiip/1954_Valga_5.jpg
+
 # Valga 1953
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-14/4-0-6/0000979/erat-0-14_4-0-6_0000979_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1960 -b 1994 -o cache/deiip/1953_erat-0-14_4-0-6_0000979_00001_k.jpg
