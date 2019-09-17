@@ -7,7 +7,7 @@ use Storable qw(dclone);
 use XML::Simple;
 use Data::Dumper;
 
-our @EXPORT_OK = qw(minify_empty_tiles_json minify_empty_tiles_json_v2 add_empty_tiles_json bbox_fragment add_to_tree kml_envelope gdal_mapindex gdal_tlast bbox_box bbox_points json_file_read json_file_write get_sites);
+our @EXPORT_OK = qw(minify_empty_tiles_json minify_empty_tiles_json_v2 add_empty_tiles_json bbox_fragment add_to_tree kml_envelope gdal_mapindex gdal_tlast bbox_box bbox_points json_file_read json_file_write get_sites get_bbox_from_layers);
 
 sub minify_empty_tiles_json {
   %json = %{dclone($_[0])};
@@ -222,6 +222,29 @@ sub get_sites {
         ? $sitekml->{Document}->{Placemark}->{$site}->{description} : $site);
     }
     return @sites;
+}
+
+sub get_bbox_from_layers {
+    $layers = $_[0];
+    $len = scalar(@{$layers->{'layer'}});
+    @max = qw(181 91 -181 -91);
+    for($i=0; $i<=$len; $i++) {
+    if($layers->{'layer'}[$i]{'type'} eq 'tms') {
+        @c = split(/[,\s]/, $layers->{'layer'}[$i]{'bounds'});
+        if($c[0] < $max[0]) { $max[0] = $c[0]; }
+        if($c[1] < $max[1]) { $max[1] = $c[1]; }
+        if($c[2] > $max[2]) { $max[2] = $c[2]; }
+        if($c[3] > $max[3]) { $max[3] = $c[3]; }
+    }
+    }
+
+    if(exists $layers->{'roadbounds'}) {
+        if(exists $layers->{'roadbounds'}{'n'}) {$max[3] = $layers->{'roadbounds'}{'n'};}
+        if(exists $layers->{'roadbounds'}{'e'}) {$max[2] = $layers->{'roadbounds'}{'e'};}
+        if(exists $layers->{'roadbounds'}{'s'}) {$max[1] = $layers->{'roadbounds'}{'s'};}
+        if(exists $layers->{'roadbounds'}{'w'}) {$max[0] = $layers->{'roadbounds'}{'w'};}
+    }
+    return @max;
 }
 
 1;
