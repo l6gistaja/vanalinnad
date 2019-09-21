@@ -44,8 +44,8 @@ Following describes data adding process with Debian Linux 8.4.
 * **dev/jsoncleaner.pl** : after deleting map directory from raster/places/{SITE}, remove unnecessary empty tiles descriptions. Afterwards, add flag flags="deleted" to corresponding translate tag in vector/places/{SITE}/gdal.xml.
 * **dev/kml_minify.pl** : minify KML files.
 * **dev/newsite/newsite.pl** : generate scaffolding for new site.
-* **dev/osm2xml/osmroads.pl** : downmoad and update new road networks for a certain site.
-* **dev/osm2xml/allosmroads.pl** : downmoad and update new road networks for all sites.
+* **dev/osm2xml/osmroads.pl** : download and update new road networks for a certain site.
+* **dev/osm2xml/allosmroads.pl** : download and update new road networks for all sites.
 * **dev/readme/md2html.bash** : generate new readme.html after changes in README.md.
 * **dev/shapeimporter.pl** : import other vector maps from data downloaded by dev/osm2xml/* and specified by vector/places/{SITE}/*.xslt.
 * **dev/tiler.pl** : generate map tiles, and if necessary, merge them with other composite map tiles.

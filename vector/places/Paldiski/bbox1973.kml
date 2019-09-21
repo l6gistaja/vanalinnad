@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1973.N"><name>1973.N</name><LineString><coordinates>24.01701078209339,59.33599187886779 24.01701078209339,59.38403914529307 24.10579969428086,59.38403914529307 24.10579969428086,59.33599187886779 24.01701078209339,59.33599187886779</coordinates></LineString></Placemark>
+<Placemark id="gcp1973.N.1"><name>1973.N #1</name><description>721 9160</description><Point><coordinates>24.063638853990764,59.34372863037409</coordinates></Point></Placemark>
+<Placemark id="gcp1973.N.2"><name>1973.N #2</name><description>2564 2754</description><Point><coordinates>24.044911767567406,59.3670107965625</coordinates></Point></Placemark>
+<Placemark id="gcp1973.N.3"><name>1973.N #3</name><description>5179 8899</description><Point><coordinates>24.088797353152344,59.35528308565099</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1973.S"><name>1973.S</name><LineString><coordinates>24.05890251593442,59.32806827037676 24.05890251593442,59.35789856501152 24.11829798063572,59.35789856501152 24.11829798063572,59.32806827037676 24.05890251593442,59.32806827037676</coordinates></LineString></Placemark>
+<Placemark id="gcp1973.S.1"><name>1973.S #1</name><description>5702 334</description><Point><coordinates>24.094166100768994,59.35626470393554</coordinates></Point></Placemark>
+<Placemark id="gcp1973.S.2"><name>1973.S #2</name><description>395 258</description><Point><coordinates>24.06243020370446,59.3436411298422</coordinates></Point></Placemark>
+<Placemark id="gcp1973.S.3"><name>1973.S #3</name><description>4916 2144</description><Point><coordinates>24.09787827804552,59.34902367819767</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="montage"><value>yes</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>24.01701078209339,59.32806827037676,24.11829798063572,59.38403914529307</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Paldiski/composed/1973/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="maps"><value>1973.S,1973.N</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
