@@ -589,6 +589,6 @@ vlUtils.redirect2vanalinnadWork = function(request) {
     if(request.status == 200) {
         var urlPieces = window.location.href.split('?');
         urlPieces[0] =  urlPieces[0].split('/');
-        window.location.host(vlUtils.MAIN_SITE + urlPieces[0][urlPieces[0].length - 1] + (urlPieces.length > 1 ? '?' + urlPieces[1] : ''));
+        window.location.replace(vlUtils.MAIN_SITE + urlPieces[0][urlPieces[0].length - 1] + (urlPieces.length > 1 ? '?' + urlPieces[1] : ''));
     }
 }
