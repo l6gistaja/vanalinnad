@@ -2,6 +2,8 @@ if (!vlUtils) {
     var vlUtils = {};
 }
 
+vlUtils.MAIN_SITE = 'http://vanalinnad.mooo.com/';
+
 vlUtils.getXmlValue = function(xmlDocument, tagname) {
   index = (arguments.length > 2 ) ? arguments[2] : 0 ;
   tags = xmlDocument.getElementsByTagName(tagname);
@@ -575,4 +577,18 @@ vlUtils.fullOLPermalinkCoords = function(urlParamArray) {
 	|| isNaN(parseFloat(urlParamArray[ll[req]]))
     ) { return false; } }
     return true;
+}
+
+vlUtils.redirect2vanalinnad = function() {
+    if(window.location.host == 'juks.alkohol.ee') {
+        OpenLayers.Request.GET({url: vlUtils.MAIN_SITE + '1.php', callback: vlUtils.redirect2vanalinnadWork});
+    }
+}
+
+vlUtils.redirect2vanalinnadWork = function(request) {
+    if(request.status == 200) {
+        var urlPieces = window.location.href.split('?');
+        urlPieces[0] =  urlPieces[0].split('/');
+        window.location.host(vlUtils.MAIN_SITE + urlPieces[0][urlPieces[0].length - 1] + (urlPieces.length > 1 ? '?' + urlPieces[1] : ''));
+    }
 }

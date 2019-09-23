@@ -10,27 +10,11 @@ vlSearch.setResults = function(content) {
     document.getElementById('searchresults').innerHTML = content;
 }
 
-vlSearch.useProxy = function(){
-    /*
-    var iev=0;
-    var ieold = (/MSIE (\d+\.\d+);/.test(navigator.userAgent));
-    var trident = !!navigator.userAgent.match(/Trident\/7.0/);
-    var rv=navigator.userAgent.indexOf("rv:11.0");
-    if (ieold) iev=new Number(RegExp.$1);
-    if (navigator.appVersion.indexOf("MSIE 10") != -1) iev=10;
-    if (trident&&rv!=-1) iev=11;
-    return iev;
-    */
-    return 0;
-}
-
 vlSearch.searchPlace = function (place, site) {
     if (/\S/.test(place)) {
         vlSearch.setResults('Searching ...');
         OpenLayers.Request.GET({
-            url: (vlSearch.useProxy() 
-                    ? 'proxy.php'
-                    : 'https://nominatim.openstreetmap.org/search')
+            url: 'https://nominatim.openstreetmap.org/search'
                 + '?format=json&countrycodes=ee&'
                 + (site == ''
                     ? 'q='

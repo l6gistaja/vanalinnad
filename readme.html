@@ -9,6 +9,8 @@
 <link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
 <link rel="stylesheet" type="text/css" href="map.css"/>
 <link rel="manifest" href="manifest.json">
+<script src="lib/OpenLayers-2.13.1/OpenLayers.js"></script>
+<script src="js/utils.js"></script>
 <script>
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -18,7 +20,7 @@
   ga('send', 'pageview');
 </script>
 </head>
-<body>
+<body onload="vlUtils.redirect2vanalinnad(); return true;">
 <div class="bodyContent">
 <a href="index.html">Vanalinnad</a> | <a href="readme.html"><strong>Readme</strong></a> | <a href="info.html">Info</a>
 <br/>
