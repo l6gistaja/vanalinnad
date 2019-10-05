@@ -7,6 +7,16 @@
 <copyright>0</copyright>
 
 <item>
+<title>Tartu linna lõunaosa Tõrvandi-Ülenurme piirkond.</title>
+<author></author>
+<description>Mõõdistatud Tartu linnapiiri ja generaalplaani jaoks.</description>
+<guid>ra.ee=EAA.5238.1.215 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=278920</link>
+<pubDate>Thu, 01 Jan 1953 00:00:00 +0000</pubDate>
+<legends></legends>
+</item>
+
+<item>
 <title>Tartu linna plaan. Tartu linna ühiskondlikud taastamistööd 1951 a.</title>
 <author></author>
 <description></description>
@@ -17,13 +27,36 @@
 </item>
 
 <item>
-<title>Tartu linna lõunaosa Tõrvandi-Ülenurme piirkond.</title>
+<title>(Tartu õhuvõte Maaameti fotolaost)</title>
 <author></author>
-<description>Mõõdistatud Tartu linnapiiri ja generaalplaani jaoks.</description>
-<guid>ra.ee=EAA.5238.1.215 leht 1</guid>
-<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=278920</link>
-<pubDate>Thu, 01 Jan 1953 00:00:00 +0000</pubDate>
+<description></description>
+<guid>ID=3382-Л-9-VII-48</guid>
+<link>https://fotoladu.maaamet.ee/arhiiv=110858</link>
+<pubDate>Fri, 9 Jul 1948 00:00:00 +0000</pubDate>
 <legends></legends>
+<anchor>1948_110858</anchor>
+</item>
+
+<item>
+<title>(Tartu õhuvõte Maaameti fotolaost)</title>
+<author></author>
+<description></description>
+<guid>ID=3381-Л-9-VII-48</guid>
+<link>https://fotoladu.maaamet.ee/arhiiv=110857</link>
+<pubDate>Fri, 9 Jul 1948 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1948_110857</anchor>
+</item>
+
+<item>
+<title>(Tartu õhuvõte Maaameti fotolaost)</title>
+<author></author>
+<description></description>
+<guid>ID=3422-Л-9-VII-48</guid>
+<link>https://fotoladu.maaamet.ee/arhiiv=110892</link>
+<pubDate>Fri, 9 Jul 1948 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1948_110892</anchor>
 </item>
 
 </channel>

@@ -17,11 +17,28 @@
 <Placemark id="gcp1953E.2"><name>1953E #2</name><description>1578 9003</description><Point><coordinates>26.70828738230015,58.32372342561066</coordinates></Point></Placemark>
 <Placemark id="gcp1953E.3"><name>1953E #3</name><description>2053 1782</description><Point><coordinates>26.735624456580116,58.347310406638556</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1948_110892"><name>1948_110892</name><LineString><coordinates>26.64016920499333,58.32830183336048 26.64016920499333,58.35470860775776 26.68903417035018,58.35470860775776 26.68903417035018,58.32830183336048 26.64016920499333,58.32830183336048</coordinates></LineString></Placemark>
+<Placemark id="gcp1948_110892.1"><name>1948_110892 #1</name><description>1429 1467</description><Point><coordinates>26.654876,58.347363</coordinates></Point></Placemark>
+<Placemark id="gcp1948_110892.2"><name>1948_110892 #2</name><description>3854 4851</description><Point><coordinates>26.674212,58.330776</coordinates></Point></Placemark>
+<Placemark id="gcp1948_110892.3"><name>1948_110892 #3</name><description>4293 710</description><Point><coordinates>26.680431,58.349676</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1948_110857"><name>1948_110857</name><LineString><coordinates>26.69644989312411,58.35829222651755 26.69644989312411,58.38397058060945 26.74450687653385,58.38397058060945 26.74450687653385,58.35829222651755 26.69644989312411,58.35829222651755</coordinates></LineString></Placemark>
+<Placemark id="gcp1948_110857.1"><name>1948_110857 #1</name><description>4713 301</description><Point><coordinates>26.740265,58.381775</coordinates></Point></Placemark>
+<Placemark id="gcp1948_110857.2"><name>1948_110857 #2</name><description>1150 5125</description><Point><coordinates>26.706942,58.359866</coordinates></Point></Placemark>
+<Placemark id="gcp1948_110857.3"><name>1948_110857 #3</name><description>798 86</description><Point><coordinates>26.704918,58.383378</coordinates></Point></Placemark>
+<Placemark id="gcp1948_110857.4"><name>1948_110857 #4</name><description>4789 4297</description><Point><coordinates>26.739561,58.362966</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1948_110858"><name>1948_110858</name><LineString><coordinates>26.67956295741137,58.35809150972724 26.67956295741137,58.38435792875342 26.72901789485393,58.38435792875342 26.72901789485393,58.35809150972724 26.67956295741137,58.35809150972724</coordinates></LineString></Placemark>
+<Placemark id="gcp1948_110858.1"><name>1948_110858 #1</name><description>4520 214</description><Point><coordinates>26.723044,58.381816</coordinates></Point></Placemark>
+<Placemark id="gcp1948_110858.2"><name>1948_110858 #2</name><description>3776 4843</description><Point><coordinates>26.713259,58.36039</coordinates></Point></Placemark>
+<Placemark id="gcp1948_110858.3"><name>1948_110858 #3</name><description>1189 1845</description><Point><coordinates>26.692209,58.37529</coordinates></Point></Placemark>
+<Placemark id="gcp1948_110858.4"><name>1948_110858 #4</name><description>1197 4818</description><Point><coordinates>26.690604,58.361468</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="bbox"><value>26.65872660504220,58.31518955970816,26.77693426549295,58.40252577641662</value></Data>
+<Data name="bbox"><value>26.64016920499333,58.31518955970816,26.77693426549295,58.40252577641662</value></Data>
+<Data name="maps"><value>1951,1953W,1953E,1948_110892,1948_110858,1948_110857</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="zmin"><value>12</value></Data>
-<Data name="maps"><value>1951,1953W,1953E</value></Data>
 <Data name="montage"><value>yes</value></Data>
 <Data name="zmax"><value>16</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1951/</value></Data>
