@@ -15,6 +15,7 @@
  "digar": {"h":"Eesti rahvusraamatukogu digitaalarhiiv", "l":"DIGAR", "t":"_blank", "U":"https://www.digar.ee/arhiiv/et/search/simple?utf8=%E2%9C%93&search%5Bsource%5D=&search%5Bavailable%5D=0&search%5Bcontent%5D=0&search%5Btext%5D=K%C3%A4rdla&search%5Bscope%5D=graphics"}
 }
 }]]></json>
+  <layer bounds="22.70862582720902,58.98200646359204,22.77410231396654,59.01070316907699" type="tms" year="1970" />
   <layer bounds="22.71683850759113,58.98192950486155,22.77545966440710,59.00936495582022" type="tms" year="1954" />
   <layer bounds="22.72596335025924,58.98307799857178,22.76289846810549,59.01084477369054" type="tms" year="1939" />
   <layer bounds="22.70701024017113,58.97608692923112,22.77807270842017,59.01541506400493" type="tms" year="1923" />
