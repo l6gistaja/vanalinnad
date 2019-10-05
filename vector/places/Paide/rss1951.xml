@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title></title>
+<link></link>
+<language></language>
+<copyright>0</copyright>
+
+<item>
+<title>(Paide õhuvõte Maaameti fotolaost)</title>
+<author></author>
+<description></description>
+<guid>ID=T-1150-19/V-51</guid>
+<link>https://fotoladu.maaamet.ee/arhiiv=109546</link>
+<pubDate>Sat, 19 May 1951 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1951.E</anchor>
+</item>
+
+<!--
+<item>
+<title>(Paide õhuvõte Maaameti fotolaost)</title>
+<author></author>
+<description></description>
+<guid></guid>
+<link>https://fotoladu.maaamet.ee/arhiiv=109545</link>
+<pubDate>Sat, 19 May 1951 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1951.Myndi</anchor>
+</item>
+-->
+
+<item>
+<title>(Valgma õhuvõte Maaameti fotolaost)</title>
+<author></author>
+<description></description>
+<guid>ID=T-1147-19/V-51</guid>
+<link>https://fotoladu.maaamet.ee/arhiiv=109543</link>
+<pubDate>Sat, 19 May 1951 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1951.Valgma</anchor>
+</item>
+
+</channel>
+</rss>

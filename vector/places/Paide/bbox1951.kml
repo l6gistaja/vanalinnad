@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1951.E"><name>1951.E</name><LineString><coordinates>25.52290470323861,58.85815285577228 25.52290470323861,58.89413696092823 25.59286294596629,58.89413696092823 25.59286294596629,58.85815285577228 25.52290470323861,58.85815285577228</coordinates></LineString></Placemark>
+<Placemark id="gcp1951.E.1"><name>1951.E #1</name><description>1410 4475</description><Point><coordinates>25.54228,58.863752</coordinates></Point></Placemark>
+<Placemark id="gcp1951.E.2"><name>1951.E #2</name><description>4481 1799</description><Point><coordinates>25.581526,58.881936</coordinates></Point></Placemark>
+<Placemark id="gcp1951.E.3"><name>1951.E #3</name><description>885 1917</description><Point><coordinates>25.534796,58.880899</coordinates></Point></Placemark>
+<Placemark id="gcp1951.E.4"><name>1951.E #4</name><description>3548 522</description><Point><coordinates>25.569231374958868,58.89053885168661</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1951.Valgma"><name>1951.Valgma</name><LineString><coordinates>25.59141798560622,58.85898998278478 25.59141798560622,58.89464894762315 25.66149179253227,58.89464894762315 25.66149179253227,58.85898998278478 25.59141798560622,58.85898998278478</coordinates></LineString></Placemark>
+<Placemark id="gcp1951.Valgma.1"><name>1951.Valgma #1</name><description>77 523</description><Point><coordinates>25.592581791392316,58.89090615437365</coordinates></Point></Placemark>
+<Placemark id="gcp1951.Valgma.2"><name>1951.Valgma #2</name><description>469 5017</description><Point><coordinates>25.599115,58.860876</coordinates></Point></Placemark>
+<Placemark id="gcp1951.Valgma.3"><name>1951.Valgma #3</name><description>5041 2614</description><Point><coordinates>25.657104,58.877158</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>25.52290470323861,58.85815285577228,25.66149179253227,58.89464894762315</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Paide/composed/1951/</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1951.Valgma,1951.E</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
