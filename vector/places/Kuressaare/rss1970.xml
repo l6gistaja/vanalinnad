@@ -5,6 +5,7 @@
 <link></link>
 <language></language>
 <copyright>0</copyright>
+
 <item>
 <title>Kingissepa (Kuressaare) linna skeem</title>
 <author>H. Sirel, A. Kukkur</author>
@@ -14,5 +15,16 @@
 <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
 <legends></legends>
 </item>
+
+<item>
+<title>(Kuressaare õhuvõte Maaameti fotolaost)</title>
+<author></author>
+<description></description>
+<guid>ID=Л-60-7/VI-75-1329</guid>
+<link>https://fotoladu.maaamet.ee/arhiiv=37242</link>
+<pubDate>Sat, 7 Jun 1975 00:00:00 +0000</pubDate>
+<legends></legends>
+</item>
+
 </channel>
 </rss>

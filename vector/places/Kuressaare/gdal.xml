@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vanalinnadgdal xmlns="http://juks.alkohol.ee/vanalinnad">
 
-<composite id="FOOL_AUTORENDER"/> <!-- if GDAL file has only one composite map, autorender.pl will fail -->
-
-<composite id="1970" maps="1970.k2,1970.k1" montage="yes" />
+<composite id="1970" maps="1975,1970.k2,1970.k1" montage="yes" />
 
 <translate map="1970.k2" composite="1970">
     <t file="1970.k2sharp.jpg" gcps="-gcp 238 369 22.48329609787012 58.259435513345665 -gcp 428 1379 22.4771806613159 58.251837659192226 -gcp 1071 581 22.492177243197798 58.25422237826079 -gcp 975 1505 22.482978926609693 58.2484907463913"/>
@@ -13,6 +11,10 @@
 <translate map="1970.k1" composite="1970">
     <t file="1970.k1sharp.jpg" gcps="-gcp 887 1223 22.479438410710397 58.24663884176983 -gcp 282 137 22.481089923248014 58.25656134626895 -gcp 839 13 22.48922238098093 58.25493565897555 -gcp 228 1680 22.46719011367748 58.24648254072177"/>
     <t file="1970_Kuressaare_1c.jpg" gcps="-gcp 4662 6474 22.479438410710397 58.24663884176983 -gcp 1498 718 22.481089923248014 58.25656134626895 -gcp 4452 70 22.48922238098093 58.25493565897555 -gcp 1207 8892 22.46719011367748 58.24648254072177"/>
+</translate>
+
+<translate map="1975" composite="1970">
+    <t file="1975_Kuressaare_37242.jpeg" gcps="-gcp 45 4149 22.492549 58.250454 -gcp 637 67 22.496310370454175 58.266228918738115 -gcp 1669 1869 22.504225133065685 58.25935337235453"/>
 </translate>
 
 <translate map="1941" flags="deleted">

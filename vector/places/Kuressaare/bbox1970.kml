@@ -14,14 +14,19 @@
 <Placemark id="gcp1970.k1.3"><name>1970.k1 #3</name><description>4452 70</description><Point><coordinates>22.48922238098093,58.25493565897555</coordinates></Point></Placemark>
 <Placemark id="gcp1970.k1.4"><name>1970.k1 #4</name><description>1207 8892</description><Point><coordinates>22.46719011367748,58.24648254072177</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1975"><name>1975</name><LineString><coordinates>22.49158414563148,58.25003066512051 22.49158414563148,58.26673417688311 22.52372939213827,58.26673417688311 22.52372939213827,58.25003066512051 22.49158414563148,58.25003066512051</coordinates></LineString></Placemark>
+<Placemark id="gcp1975.1"><name>1975 #1</name><description>45 4149</description><Point><coordinates>22.492549,58.250454</coordinates></Point></Placemark>
+<Placemark id="gcp1975.2"><name>1975 #2</name><description>637 67</description><Point><coordinates>22.496310370454175,58.266228918738115</coordinates></Point></Placemark>
+<Placemark id="gcp1975.3"><name>1975 #3</name><description>1669 1869</description><Point><coordinates>22.504225133065685,58.25935337235453</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="montage"><value>yes</value></Data>
-<Data name="bbox"><value>22.46371608446986,58.24129260473124,22.49986945287649,58.26297744624015</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Kuressaare/composed/1970/</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="maps"><value>1970.k2,1970.k1</value></Data>
 <Data name="zmax"><value>16</value></Data>
 <Data name="zmin"><value>13</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>22.46371608446986,58.24129260473124,22.52372939213827,58.26673417688311</value></Data>
+<Data name="maps"><value>1975,1970.k2,1970.k1</value></Data>
 
 </ExtendedData>
 
