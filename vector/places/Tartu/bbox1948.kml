@@ -7,6 +7,11 @@
 <Placemark id="gcp1948_3378.2"><name>1948_3378 #2</name><description>4488 1474</description><Point><coordinates>26.786418703779503,58.375084207065974</coordinates></Point></Placemark>
 <Placemark id="gcp1948_3378.3"><name>1948_3378 #3</name><description>236 3926</description><Point><coordinates>26.747195,58.364888</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1948_3380"><name>1948_3380</name><LineString><coordinates>26.71234479221821,58.35691109957396 26.71234479221821,58.38350076154327 26.76120088407130,58.38350076154327 26.76120088407130,58.35691109957396 26.71234479221821,58.35691109957396</coordinates></LineString></Placemark>
+<Placemark id="gcp1948_3380.1"><name>1948_3380 #1</name><description>4696 1333</description><Point><coordinates>26.756565225372828,58.3754933065171</coordinates></Point></Placemark>
+<Placemark id="gcp1948_3380.2"><name>1948_3380 #2</name><description>3339 281</description><Point><coordinates>26.745151928556407,58.38091310903435</coordinates></Point></Placemark>
+<Placemark id="gcp1948_3380.3"><name>1948_3380 #3</name><description>3276 3760</description><Point><coordinates>26.742427994688384,58.36473246673031</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1948_3381"><name>1948_3381</name><LineString><coordinates>26.69644989312411,58.35829222651755 26.69644989312411,58.38397058060945 26.74450687653385,58.38397058060945 26.74450687653385,58.35829222651755 26.69644989312411,58.35829222651755</coordinates></LineString></Placemark>
 <Placemark id="gcp1948_3381.1"><name>1948_3381 #1</name><description>4713 301</description><Point><coordinates>26.740265,58.381775</coordinates></Point></Placemark>
 <Placemark id="gcp1948_3381.2"><name>1948_3381 #2</name><description>1150 5125</description><Point><coordinates>26.706942,58.359866</coordinates></Point></Placemark>
@@ -56,13 +61,13 @@
 <Placemark id="gcp1948_3422.3"><name>1948_3422 #3</name><description>4293 710</description><Point><coordinates>26.680431,58.349676</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1948/</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="maps"><value>1948_3417,1948_3415,1948_3420,1948_3422,1948_3419,1948_3414,1948_3384,1948_3382,1948_3381,1948_3378</value></Data>
-<Data name="zmax"><value>16</value></Data>
-<Data name="montage"><value>yes</value></Data>
-<Data name="zmin"><value>12</value></Data>
 <Data name="bbox"><value>26.64016920499333,58.32830183336048,26.80807695818671,58.38472712997515</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1948/</value></Data>
+<Data name="maps"><value>1948_3417,1948_3415,1948_3420,1948_3422,1948_3419,1948_3414,1948_3380,1948_3384,1948_3382,1948_3381,1948_3378</value></Data>
+<Data name="zmin"><value>12</value></Data>
 
 </ExtendedData>
 
