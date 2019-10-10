@@ -20,6 +20,7 @@ function vlInitInfo(inputParams){
   var mapTag = null;
   var areaDir;
   var jsonConf = {};
+  var componentsRegexp = {};
   
   function getSiteLbl() {
     baseURL = '?site=' + reqParams['site'];
@@ -101,7 +102,19 @@ function vlInitInfo(inputParams){
   
   function bBoxPopupTrunc(x) { return Math.trunc(1000000*x)/1000000; }
   
-  function createBBoxPopup(feature) {
+  function bBoxPopupAnchor(x) {
+      a = x;
+      for(anchor in componentsRegexp) {
+          cre = new RegExp(componentsRegexp[anchor]);
+          if(cre.test(x)) {
+              a = anchor;
+              break;
+          }
+      }
+      return ' <a href="#map.' + a + '">' + x + '</a>';
+  }
+  
+  function createBBoxPopup(feature) {bBoxPopupAnchor('');
     if(feature.fid.substring(0, 4) == 'bbox') {
         bounds = new OpenLayers.Bounds(feature.geometry.bounds.toArray()).transform(map.projection, map.displayProjection);
         feature.popup = new OpenLayers.Popup.Anchored(
@@ -109,7 +122,7 @@ function vlInitInfo(inputParams){
             map.getCenter(),
             null,
             '<strong>BBox' 
-                + ( feature.attributes.name == null ? '' : ' <a href="#map.' + feature.attributes.name + '">' + feature.attributes.name + '</a>' )
+                + ( feature.attributes.name == null ? '' : bBoxPopupAnchor(feature.attributes.name) )
                 + '</strong><br/>W '
                 + bBoxPopupTrunc(bounds.left) + ' <br/>S '
                 + bBoxPopupTrunc(bounds.bottom) + ' <br/>E '
@@ -128,13 +141,13 @@ function vlInitInfo(inputParams){
             "bboxPopup",
             feature.geometry.getBounds().getCenterLonLat(),
             null,
-            '<strong>GCP '
+            '<strong>GCP'
                 + (nameParts.length == 2 
-                    ? '<a href="#map.' + nameParts[0] + '">' + nameParts[0] + '</a> ' + nameParts[1]
+                    ? bBoxPopupAnchor(nameParts[0]) + ' ' + nameParts[1]
                     : feature.attributes.name)
                 +'</strong><br/>'
-                + bBoxPopupTrunc(center.lon) + '&nbsp;&nbsp;&nbsp;'
-                + bBoxPopupTrunc(center.lat)
+                + bBoxPopupTrunc(center.lon) + '&nbsp;&nbsp;'
+                + bBoxPopupTrunc(center.lat) + 
                 + ('debug' in reqParams
                     ? ' <br/><input type="text" value=" -gcp ' + feature.attributes.description + ' '
                         + bBoxPopupTrunc(center.lon) + ' '
@@ -173,6 +186,9 @@ function vlInitInfo(inputParams){
           if(mapAnchor == '') { mapAnchor = String.fromCharCode(65 + m); }
           y += '<hr/><a name="map.'+mapAnchor+'">'+ vlUtils.link({u:'#map.'+mapAnchor, l:'<strong>'+mapAnchor+'</strong>'}) + '</a><br/>';
         }
+        
+        componentRegexp = vlUtils.getXmlValue(items[m], 'componentsregexp');
+        if(componentRegexp != '') { componentsRegexp[mapAnchor] = componentRegexp; }
         
         // legends
         if(items[m].getElementsByTagName('legends').length) {
