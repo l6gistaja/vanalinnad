@@ -99,6 +99,7 @@ function vlInitInfo(inputParams){
       });
   }
   
+  function bBoxPopupTrunc(x) { return Math.trunc(1000000*x)/1000000; }
   
   function createBBoxPopup(feature) {
     if(feature.fid.substring(0, 4) == 'bbox') {
@@ -107,9 +108,13 @@ function vlInitInfo(inputParams){
             "bboxPopup",
             map.getCenter(),
             null,
-            '<strong>BBox ' + ( feature.attributes.name == null ? '' : feature.attributes.name )  + 
-              '</strong><br/>' + bounds.left + ' <br/>' + bounds.bottom + ' <br/>' + bounds.right + ' <br/>' +
-              bounds.top,
+            '<strong>BBox' 
+                + ( feature.attributes.name == null ? '' : ' <a href="#map.' + feature.attributes.name + '">' + feature.attributes.name + '</a>' )
+                + '</strong><br/>'
+                + bBoxPopupTrunc(bounds.left) + ' <br/>'
+                + bBoxPopupTrunc(bounds.bottom) + ' <br/>'
+                + bBoxPopupTrunc(bounds.right) + ' <br/>'
+                + bBoxPopupTrunc(bounds.top),
             null,
             true,
             function() { bboxLayersCtl.unselectAll(); }
@@ -117,15 +122,24 @@ function vlInitInfo(inputParams){
         feature.popup.setBorder('solid 2px black');
         feature.popup.autoSize = true;
     } else {
-        center = new OpenLayers.LonLat(feature.geometry.getBounds().getCenterLonLat().lon, feature.geometry.getBounds().getCenterLonLat().lat).transform(map.projection, map.displayProjection); 
+        center = new OpenLayers.LonLat(feature.geometry.getBounds().getCenterLonLat().lon, feature.geometry.getBounds().getCenterLonLat().lat).transform(map.projection, map.displayProjection);
+        nameParts = feature.attributes.name.split(' ');
         feature.popup = new OpenLayers.Popup.FramedCloud(
             "bboxPopup",
             feature.geometry.getBounds().getCenterLonLat(),
             null,
-            '<strong>GCP ' + feature.attributes.name + '</strong><br/>'  + center.lon + ' <br/>' + center.lat + ' <br/>' +
-              ('debug' in reqParams ?
-		'<input type="text" value=" -gcp ' + feature.attributes.description + ' '  + center.lon + ' ' + center.lat + '"/>' :
-                ''),
+            '<strong>GCP '
+                + (nameParts.length == 2 
+                    ? '<a href="#map.' + nameParts[0] + '">' + nameParts[0] + '</a> ' + nameParts[1]
+                    : feature.attributes.name)
+                +'</strong><br/>'
+                + bBoxPopupTrunc(center.lon) + ' <br/>'
+                + bBoxPopupTrunc(center.lat)
+                + ('debug' in reqParams
+                    ? ' <br/><input type="text" value=" -gcp ' + feature.attributes.description + ' '
+                        + bBoxPopupTrunc(center.lon) + ' '
+                        + bBoxPopupTrunc(center.lat) + '"/>'
+                    : ''),
             null,
             true,
             function() { bboxLayersCtl.unselectAll(); }
