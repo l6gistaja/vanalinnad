@@ -110,10 +110,10 @@ function vlInitInfo(inputParams){
             null,
             '<strong>BBox' 
                 + ( feature.attributes.name == null ? '' : ' <a href="#map.' + feature.attributes.name + '">' + feature.attributes.name + '</a>' )
-                + '</strong><br/>'
-                + bBoxPopupTrunc(bounds.left) + ' <br/>'
-                + bBoxPopupTrunc(bounds.bottom) + ' <br/>'
-                + bBoxPopupTrunc(bounds.right) + ' <br/>'
+                + '</strong><br/>W '
+                + bBoxPopupTrunc(bounds.left) + ' <br/>S '
+                + bBoxPopupTrunc(bounds.bottom) + ' <br/>E '
+                + bBoxPopupTrunc(bounds.right) + ' <br/>N '
                 + bBoxPopupTrunc(bounds.top),
             null,
             true,
@@ -133,7 +133,7 @@ function vlInitInfo(inputParams){
                     ? '<a href="#map.' + nameParts[0] + '">' + nameParts[0] + '</a> ' + nameParts[1]
                     : feature.attributes.name)
                 +'</strong><br/>'
-                + bBoxPopupTrunc(center.lon) + ' <br/>'
+                + bBoxPopupTrunc(center.lon) + '&nbsp;&nbsp;&nbsp;'
                 + bBoxPopupTrunc(center.lat)
                 + ('debug' in reqParams
                     ? ' <br/><input type="text" value=" -gcp ' + feature.attributes.description + ' '
