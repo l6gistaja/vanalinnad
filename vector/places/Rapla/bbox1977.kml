@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1977.E"><name>1977.E</name><LineString><coordinates>24.82084267427299,58.98400234337553 24.82084267427299,59.01947745642249 24.84741590529974,59.01947745642249 24.84741590529974,58.98400234337553 24.82084267427299,58.98400234337553</coordinates></LineString></Placemark>
+<Placemark id="gcp1977.E.1"><name>1977.E #1</name><description>1016 71</description><Point><coordinates>24.83736299085588,59.01887548128794</coordinates></Point></Placemark>
+<Placemark id="gcp1977.E.2"><name>1977.E #2</name><description>88 3421</description><Point><coordinates>24.82234262037253,58.990791993526706</coordinates></Point></Placemark>
+<Placemark id="gcp1977.E.3"><name>1977.E #3</name><description>1016 3263</description><Point><coordinates>24.837427537079993,58.99212662163664</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1977.W"><name>1977.W</name><LineString><coordinates>24.75733726018902,58.98403146721407 24.75733726018902,59.01975308874552 24.82571494429567,59.01975308874552 24.82571494429567,58.98403146721407 24.75733726018902,58.98403146721407</coordinates></LineString></Placemark>
+<Placemark id="gcp1977.W.1"><name>1977.W #1</name><description>4036 4265</description><Point><coordinates>24.823717511086503,58.990458415138576</coordinates></Point></Placemark>
+<Placemark id="gcp1977.W.2"><name>1977.W #2</name><description>1646 1257</description><Point><coordinates>24.78421498305084,59.015422992844655</coordinates></Point></Placemark>
+<Placemark id="gcp1977.W.3"><name>1977.W #3</name><description>555 3795</description><Point><coordinates>24.76699117370575,58.9940401186216</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>24.75733726018902,58.98400234337553,24.84741590529974,59.01975308874552</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Rapla/composed/1977/</value></Data>
+<Data name="maps"><value>1977.W,1977.E</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
