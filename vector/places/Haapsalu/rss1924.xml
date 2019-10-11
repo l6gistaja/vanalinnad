@@ -29,6 +29,7 @@
 <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001479/erat-0-6_003_0001479_00001_k4.tif&amp;wid=2480&amp;hei=1748&amp;qlt=100&amp;cvt=jpeg</link>
 <pubDate>Tue, 01 Jan 1924 00:00:00 +0000</pubDate>
 <legends>legend1924varvid.jpg,legend1924tahed.jpg</legends>
+<componentsregexp>^1924\.k\d$</componentsregexp>
 </item>
 
 </channel>

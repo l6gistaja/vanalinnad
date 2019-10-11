@@ -17,7 +17,7 @@
 <link>https://vanadasjad.files.wordpress.com/2015/08/valga.jpg</link>
 <link>https://vanadasjad.wordpress.com/asulate-plaanid/valga/</link>
 -->
-<pubDate>Mon, 01 Jan 1932-1937 00:00:00 +0000</pubDate>
+<pubDate>Mon, 01 Jan 193X 00:00:00 +0000</pubDate>
 <legends>legend193Xa.gif,legend193Xb.gif</legends>
 </item>
 
@@ -29,6 +29,7 @@
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=103238</link>
 <pubDate>Wed, 01 Jan 1936 00:00:00 +0000</pubDate>
 <legends>legend1936.jpg</legends>
+<componentsregexp>^1936\.k\d$</componentsregexp>
 </item>
 
 </channel>

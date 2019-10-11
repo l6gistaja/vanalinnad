@@ -15,6 +15,7 @@
 <pubDate>Mon, 01 Jan 197X 00:00:00 +0000</pubDate>
 <legends>legend197X.jpg</legends>
 <anchor>197X.W</anchor>
+<componentsregexp>^197X\.W\d$</componentsregexp>
 </item>
 
 <item>
@@ -26,6 +27,7 @@
 <pubDate>Mon, 01 Jan 197X 00:00:00 +0000</pubDate>
 <legends></legends>
 <anchor>197X.E</anchor>
+<componentsregexp>^197X\.E\d$</componentsregexp>
 </item>
 
 </channel>

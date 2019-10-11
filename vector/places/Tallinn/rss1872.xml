@@ -25,6 +25,7 @@
 <pubDate>Fri, 01 Jan 1875 00:00:00 +0000</pubDate>
 <legends></legends>
 <anchor>1875.Viimsi</anchor>
+<componentsregexp>^1875\.Viimsi\.\d$</componentsregexp>
 </item>
 
 </channel>

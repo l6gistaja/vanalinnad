@@ -32,6 +32,7 @@ Vorstadt-Quartal</description>
 <guid>nlib.ee=KD 3.949</guid>
 <link>http://www.digar.ee/viewer/et/nlib-digar:113202</link>
 <anchor>1865.III</anchor>
+<componentsregexp>^1865\.III</componentsregexp>
 </item>
 
 <item>
@@ -41,6 +42,7 @@ Vorstadt-Quartal</description>
 <guid>nlib.ee=KD 3.949</guid>
 <link>http://www.digar.ee/viewer/et/nlib-digar:113203</link>
 <anchor>1865.IV</anchor>
+<componentsregexp>^1865\.IV</componentsregexp>
 </item>
 
 <item>

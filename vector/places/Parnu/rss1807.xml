@@ -31,6 +31,7 @@
 <pubDate>Thu, 01 Jan 1807 00:00:00 +0000</pubDate>
 <legends></legends>
 <anchor>1807EW</anchor>
+<componentsregexp>^1807[EW]$</componentsregexp>
 </item>
 
 </channel>

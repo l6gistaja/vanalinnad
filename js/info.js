@@ -144,7 +144,7 @@ function vlInitInfo(inputParams){
             '<strong>GCP'
                 + (nameParts.length == 2 
                     ? bBoxPopupAnchor(nameParts[0]) + ' ' + nameParts[1]
-                    : feature.attributes.name)
+                    : ' ' + feature.attributes.name)
                 +'</strong><br/>'
                 + bBoxPopupTrunc(center.lon) + '&nbsp;&nbsp;'
                 + bBoxPopupTrunc(center.lat) + 
