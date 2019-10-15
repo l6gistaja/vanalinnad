@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1950"><name>1950</name><LineString><coordinates>27.06032303271637,58.04147909621193 27.06032303271637,58.08330175024852 27.12308912207107,58.08330175024852 27.12308912207107,58.04147909621193 27.06032303271637,58.04147909621193</coordinates></LineString></Placemark>
+<Placemark id="gcp1950.1"><name>1950 #1</name><description>227 76</description><Point><coordinates>27.064006880950647,58.082657575716446</coordinates></Point></Placemark>
+<Placemark id="gcp1950.2"><name>1950 #2</name><description>3404 2132</description><Point><coordinates>27.114350361525258,58.06531449876258</coordinates></Point></Placemark>
+<Placemark id="gcp1950.3"><name>1950 #3</name><description>470 4538</description><Point><coordinates>27.067783431242628,58.04520653271266</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1949_282"><name>1949_282</name><LineString><coordinates>27.03150102220818,58.05904925284879 27.03150102220818,58.07721583538640 27.06577720582122,58.07721583538640 27.06577720582122,58.05904925284879 27.03150102220818,58.05904925284879</coordinates></LineString></Placemark>
+<Placemark id="gcp1949_282.1"><name>1949_282 #1</name><description>3815 664</description><Point><coordinates>27.06201038156845,58.07426202363013</coordinates></Point></Placemark>
+<Placemark id="gcp1949_282.2"><name>1949_282 #2</name><description>1725 2055</description><Point><coordinates>27.045340517137035,58.068526618800426</coordinates></Point></Placemark>
+<Placemark id="gcp1949_282.3"><name>1949_282 #3</name><description>3196 2931</description><Point><coordinates>27.056935076643004,58.064789585717726</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1949_332"><name>1949_332</name><LineString><coordinates>27.03148042193388,58.04110992740362 27.03148042193388,58.05934376258381 27.06585054676231,58.05934376258381 27.06585054676231,58.04110992740362 27.03148042193388,58.04110992740362</coordinates></LineString></Placemark>
+<Placemark id="gcp1949_332.1"><name>1949_332 #1</name><description>2180 795</description><Point><coordinates>27.049033767089323,58.05591985225026</coordinates></Point></Placemark>
+<Placemark id="gcp1949_332.2"><name>1949_332 #2</name><description>502 3070</description><Point><coordinates>27.035552956453895,58.046393934927266</coordinates></Point></Placemark>
+<Placemark id="gcp1949_332.3"><name>1949_332 #3</name><description>4025 2423</description><Point><coordinates>27.063555767212623,58.0489983881805</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmin"><value>12</value></Data>
+<Data name="bbox"><value>27.03148042193388,58.04110992740362,27.12308912207107,58.08330175024852</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Polva/composed/1949/</value></Data>
+<Data name="maps"><value>1949_282,1949_332,1950</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

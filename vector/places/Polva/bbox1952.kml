@@ -13,12 +13,12 @@
 <Placemark id="gcp1952.N1.3"><name>1952.N1 #3</name><description>832 7096</description><Point><coordinates>27.070744939116917,58.0641507293819</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="maps"><value>1952.N1,1952.S</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="bbox"><value>27.04485703738849,58.04773255323081,27.10142551122096,58.07499027625783</value></Data>
-<Data name="montage"><value>yes</value></Data>
 <Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1952.N1,1952.S</value></Data>
 <Data name="zmin"><value>12</value></Data>
+<Data name="bbox"><value>27.04485703738849,58.04773255323081,27.10142551122096,58.07499027625783</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Polva/composed/1952/</value></Data>
 
 </ExtendedData>
