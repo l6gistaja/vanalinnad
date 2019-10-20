@@ -15,6 +15,7 @@
 }
 }]]></json>
   <layer bounds="26.32510591099459,59.32224892811266,26.42107591962034,59.38415494460271" type="tms" year="1971" />
+  <layer bounds="26.32281682365066,59.31981635986194,26.42146079027543,59.38818462887583" type="tms" year="1951" />
   <layer bounds="26.33483835194925,59.32206468096927,26.39258667859981,59.36768610472694" type="tms" year="1930" />
   <layer bounds="26.32292339388788,59.32332957878050,26.39209254489585,59.38828763925906" type="tms" year="1922" />
   <layer bounds="26.34483858798198,59.33265204183051,26.38110242459788,59.35525367895480" type="tms" year="1889" />
@@ -25,8 +26,8 @@
   <layer bounds="26.34020350112555,59.32210200670529,26.39578600616634,59.36645825047795" type="tms" year="1790" />
   <layer bounds="26.33533105909977,59.33593768191997,26.37410227245288,59.35896696592589" type="tms" year="1703" />
   <layer bounds="26.33618550557420,59.34080441351126,26.36724904427113,59.35878703757992" type="tms" year="1683" />
-  <layer name="⑤ 1" file="roads3min.kml" maxres="12" type="roads" levels="0,1,2,3"/>
-  <layer name="⑤ 2" file="roads4min.kml" maxres="15" type="roads" levels="4"/>
+  <layer name="⑤ 1" file="roads3min.kml" levels="0,1,2,3" maxres="12" type="roads" />
+  <layer name="⑤ 2" file="roads4min.kml" levels="4" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>12</minzoom>
 </vanalinnadlayers>

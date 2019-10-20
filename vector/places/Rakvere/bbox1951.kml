@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1951_4510"><name>1951_4510</name><LineString><coordinates>26.32281682365066,59.37462778932080 26.32281682365066,59.38818462887583 26.37295945541863,59.38818462887583 26.37295945541863,59.37462778932080 26.32281682365066,59.37462778932080</coordinates></LineString></Placemark>
+<Placemark id="gcp1951_4510.1"><name>1951_4510 #1</name><description>3418 461</description><Point><coordinates>26.366431602143138,59.38414306034776</coordinates></Point></Placemark>
+<Placemark id="gcp1951_4510.2"><name>1951_4510 #2</name><description>918 1168</description><Point><coordinates>26.32503610874457,59.37838808677658</coordinates></Point></Placemark>
+<Placemark id="gcp1951_4510.3"><name>1951_4510 #3</name><description>2726 1291</description><Point><coordinates>26.35500845703033,59.37723469357043</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1951_4511"><name>1951_4511</name><LineString><coordinates>26.37240406897311,59.37490076011891 26.37240406897311,59.38799359332947 26.42117754791983,59.38799359332947 26.42117754791983,59.37490076011891 26.37240406897311,59.37490076011891</coordinates></LineString></Placemark>
+<Placemark id="gcp1951_4511.1"><name>1951_4511 #1</name><description>465 2911</description><Point><coordinates>26.38035640000863,59.39223902967198</coordinates></Point></Placemark>
+<Placemark id="gcp1951_4511.2"><name>1951_4511 #2</name><description>1512 1689</description><Point><coordinates>26.397781119534475,59.40248682754926</coordinates></Point></Placemark>
+<Placemark id="gcp1951_4511.3"><name>1951_4511 #3</name><description>2240 4168</description><Point><coordinates>26.40943112156454,59.38171209059942</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1951_4611"><name>1951_4611</name><LineString><coordinates>26.37242532921485,59.33297557910485 26.37242532921485,59.37508158904095 26.42146079027543,59.37508158904095 26.42146079027543,59.33297557910485 26.37242532921485,59.33297557910485</coordinates></LineString></Placemark>
+<Placemark id="gcp1951_4611.1"><name>1951_4611 #1</name><description>116 4003</description><Point><coordinates>26.374708409183253,59.341286589804305</coordinates></Point></Placemark>
+<Placemark id="gcp1951_4611.2"><name>1951_4611 #2</name><description>175 1264</description><Point><coordinates>26.375414300290487,59.364265057736574</coordinates></Point></Placemark>
+<Placemark id="gcp1951_4611.3"><name>1951_4611 #3</name><description>2159 2576</description><Point><coordinates>26.408059320494342,59.35341300745604</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1951_4710"><name>1951_4710</name><LineString><coordinates>26.32287153966648,59.31981635986194 26.32287153966648,59.33355321048196 26.37315264441494,59.33355321048196 26.37315264441494,59.31981635986194 26.32287153966648,59.31981635986194</coordinates></LineString></Placemark>
+<Placemark id="gcp1951_4710.1"><name>1951_4710 #1</name><description>2235 1304</description><Point><coordinates>26.345575585957718,59.32253385321628</coordinates></Point></Placemark>
+<Placemark id="gcp1951_4710.2"><name>1951_4710 #2</name><description>3430 205</description><Point><coordinates>26.364999643814926,59.33179218807316</coordinates></Point></Placemark>
+<Placemark id="gcp1951_4710.3"><name>1951_4710 #3</name><description>3626 1275</description><Point><coordinates>26.368381865081837,59.32295537571033</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1951_4711"><name>1951_4711</name><LineString><coordinates>26.37273564614142,59.31994624918528 26.37273564614142,59.33338729692713 26.42086853771174,59.33338729692713 26.42086853771174,59.31994624918528 26.37273564614142,59.31994624918528</coordinates></LineString></Placemark>
+<Placemark id="gcp1951_4711.1"><name>1951_4711 #1</name><description>210 341</description><Point><coordinates>26.376345402759142,59.33053401186587</coordinates></Point></Placemark>
+<Placemark id="gcp1951_4711.2"><name>1951_4711 #2</name><description>2495 498</description><Point><coordinates>26.41363637264797,59.32908656661781</coordinates></Point></Placemark>
+<Placemark id="gcp1951_4711.3"><name>1951_4711 #3</name><description>1268 1279</description><Point><coordinates>26.393487107305873,59.32265602450459</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1955_4610"><name>1955_4610</name><LineString><coordinates>26.32292977976203,59.33254183975220 26.32292977976203,59.37539310695131 26.37337594239177,59.37539310695131 26.37337594239177,59.33254183975220 26.32292977976203,59.33254183975220</coordinates></LineString></Placemark>
+<Placemark id="gcp1955_4610.1"><name>1955_4610 #1</name><description>655 830</description><Point><coordinates>26.321105558504357,59.36841118053006</coordinates></Point></Placemark>
+<Placemark id="gcp1955_4610.2"><name>1955_4610 #2</name><description>1123 4625</description><Point><coordinates>26.327714340392504,59.33636185617277</coordinates></Point></Placemark>
+<Placemark id="gcp1955_4610.3"><name>1955_4610 #3</name><description>3343 288</description><Point><coordinates>26.365544782301825,59.372724391090394</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1951_4511,1955_4610,1951_4510,1951_4710,1951_4711,1951_4611</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>26.32281682365066,59.31981635986194,26.42146079027543,59.38818462887583</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Rakvere/composed/1951/</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
