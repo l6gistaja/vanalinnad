@@ -21,7 +21,7 @@ print 'BBox max '.join(',', @max)."\n";
 system($mainconf->{'dirdev'}.'osm2xml/generate_roads.pl -b '.join(',', @max).' -s '.$ARGV[0].(scalar(@ARGV) > 2 ? ' -f '.$ARGV[2] : '').' | bash');
 print "\a";
 
-for($i=0; $i<=$len; $i++) {
+for($i = 0; $i < scalar(@{$layers->{'layer'}}) - 1; $i++) {
   if($layers->{'layer'}[$i]{'type'} eq 'roads') {
     @l = split(/,/, $layers->{'layer'}[$i]{'levels'});
     $source = $mainconf->{'dircache'}.$mainconf->{'fileprefixroads'}.join('',@l).'.kml';
