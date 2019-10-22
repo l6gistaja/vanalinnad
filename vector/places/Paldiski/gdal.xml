@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vanalinnadgdal xmlns="http://juks.alkohol.ee/vanalinnad">
     
-<composite id="1973" maps="1973.S,1973.N" montage="yes"/>
+<composite id="1973" maps="1973.S,1973.N,1977_311,1977_310" montage="yes"/>
 <!-- contrast 60 sharp 70 -->
 
 <translate map="1973.N" composite="1973">
@@ -13,6 +13,16 @@
 
 <translate map="1973.S" composite="1973">
     <t file="1973_Paldiski_Sw.jpg" gcps="-gcp 5702 334 24.094166100768994 59.35626470393554 -gcp 395 258 24.06243020370446 59.3436411298422 -gcp 4916 2144 24.09787827804552 59.34902367819767"/>
+</translate>
+
+<translate map="1977_310" composite="1973">
+    <t file="1977_Paldiski_199479.jpg" gcps="-gcp 295 305 24.083267383574697 59.335063713219256 -gcp 3398 640 24.13465850829984 59.33207593284161 -gcp 3156 2378 24.130731 59.317525"/>
+    <t file="1977_Paldiski_199479b.jpg" gcps="-gcp 1392 751 24.101885 59.331174 -gcp 3398 640 24.13465850829984 59.33207593284161 -gcp 3156 2378 24.130731 59.317525"/>
+    <t file="1977_Paldiski_199479b.jpg" gcps="-gcp 1399 753 24.101885 59.331174 -gcp 3398 640 24.13465850829984 59.33207593284161 -gcp 3156 2378 24.130731 59.317525"/>
+</translate>
+
+<translate map="1977_311" composite="1973">
+    <t file="1977_Paldiski_199478b.jpg" gcps="-gcp 62 3234 24.136067701266565 59.31880223966363 -gcp 2439 3485 24.175040177899785 59.3164743323512 -gcp 2994 103 24.184616075147623 59.344986587966645"/>
 </translate>
 
 <composite id="1940" maps="1940.1,1940.3,1940.2" montage="yes"/>
