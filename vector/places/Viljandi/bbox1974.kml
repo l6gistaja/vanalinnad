@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1974_2634"><name>1974_2634</name><LineString><coordinates>25.57283736044227,58.35811597289159 25.57283736044227,58.39296491538628 25.63544188698980,58.39296491538628 25.63544188698980,58.35811597289159 25.57283736044227,58.35811597289159</coordinates></LineString></Placemark>
+<Placemark id="gcp1974_2634.1"><name>1974_2634 #1</name><description>1331 1167</description><Point><coordinates>25.594182,58.390132</coordinates></Point></Placemark>
+<Placemark id="gcp1974_2634.2"><name>1974_2634 #2</name><description>3536 4288</description><Point><coordinates>25.629330611114696,58.36383171387712</coordinates></Point></Placemark>
+<Placemark id="gcp1974_2634.3"><name>1974_2634 #3</name><description>119 4779</description><Point><coordinates>25.574742293243833,58.359757149761926</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1974_2734"><name>1974_2734</name><LineString><coordinates>25.57253212432816,58.32148668968958 25.57253212432816,58.35838989598775 25.63601466364705,58.35838989598775 25.63601466364705,58.32148668968958 25.57253212432816,58.32148668968958</coordinates></LineString></Placemark>
+<Placemark id="gcp1974_2734.1"><name>1974_2734 #1</name><description>525 159</description><Point><coordinates>25.581376474322457,58.35702635522921</coordinates></Point></Placemark>
+<Placemark id="gcp1974_2734.2"><name>1974_2734 #2</name><description>3840 110</description><Point><coordinates>25.634398382129085,58.35724024180415</coordinates></Point></Placemark>
+<Placemark id="gcp1974_2734.3"><name>1974_2734 #3</name><description>1916 3415</description><Point><coordinates>25.60327676092336,58.329659234013135</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1974_2733"><name>1974_2733</name><LineString><coordinates>25.53203862237852,58.32142735639029 25.53203862237852,58.35858006606568 25.57442701916258,58.35858006606568 25.57442701916258,58.32142735639029 25.53203862237852,58.32142735639029</coordinates></LineString></Placemark>
+<Placemark id="gcp1974_2733.1"><name>1974_2733 #1</name><description>3669 87</description><Point><coordinates>25.56918544105489,58.35750342395863</coordinates></Point></Placemark>
+<Placemark id="gcp1974_2733.2"><name>1974_2733 #2</name><description>3149 3949</description><Point><coordinates>25.559722245940186,58.32509448553175</coordinates></Point></Placemark>
+<Placemark id="gcp1974_2733.3"><name>1974_2733 #3</name><description>1585 1720</description><Point><coordinates>25.535367788085072,58.34408622065483</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1974_2633"><name>1974_2633</name><LineString><coordinates>25.53356552069231,58.35779136993032 25.53356552069231,58.39330511594903 25.57393951368799,58.39330511594903 25.57393951368799,58.35779136993032 25.53356552069231,58.35779136993032</coordinates></LineString></Placemark>
+<Placemark id="gcp1974_2633.1"><name>1974_2633 #1</name><description>3271 4115</description><Point><coordinates>25.561689521026246,58.36545489524299</coordinates></Point></Placemark>
+<Placemark id="gcp1974_2633.2"><name>1974_2633 #2</name><description>3348 1188</description><Point><coordinates>25.56368508453312,58.389913774811895</coordinates></Point></Placemark>
+<Placemark id="gcp1974_2633.3"><name>1974_2633 #3</name><description>2112 3036</description><Point><coordinates>25.54351487274171,58.37464865259152</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>25.53203862237852,58.32142735639029,25.63601466364705,58.39330511594903</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Viljandi/composed/1974/</value></Data>
+<Data name="maps"><value>1974_2633,1974_2733,1974_2734,1974_2634</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
