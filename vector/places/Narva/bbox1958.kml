@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1958_174"><name>1958_174</name><LineString><coordinates>28.08122501992216,59.39960552687207 28.08122501992216,59.42997455384947 28.13732790899951,59.42997455384947 28.13732790899951,59.39960552687207 28.08122501992216,59.39960552687207</coordinates></LineString></Placemark>
+<Placemark id="gcp1958_174.1"><name>1958_174 #1</name><description>759 3332</description><Point><coordinates>28.084934020926525,59.41408215291382</coordinates></Point></Placemark>
+<Placemark id="gcp1958_174.2"><name>1958_174 #2</name><description>2485 1491</description><Point><coordinates>28.113756594062604,59.42926636517805</coordinates></Point></Placemark>
+<Placemark id="gcp1958_174.3"><name>1958_174 #3</name><description>3290 4250</description><Point><coordinates>28.12621580760033,59.40613099812751</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1958_175"><name>1958_175</name><LineString><coordinates>28.13339901387322,59.39954641150020 28.13339901387322,59.42998872322006 28.20140027340502,59.42998872322006 28.20140027340502,59.39954641150020 28.13339901387322,59.39954641150020</coordinates></LineString></Placemark>
+<Placemark id="gcp1958_175.1"><name>1958_175 #1</name><description>3268 4487</description><Point><coordinates>28.18691429626425,59.40511802143725</coordinates></Point></Placemark>
+<Placemark id="gcp1958_175.2"><name>1958_175 #2</name><description>2040 4734</description><Point><coordinates>28.166805,59.403179</coordinates></Point></Placemark>
+<Placemark id="gcp1958_175.3"><name>1958_175 #3</name><description>34 1309</description><Point><coordinates>28.134342999572972,59.43208808891821</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1958_274"><name>1958_274</name><LineString><coordinates>28.08291011503590,59.35835611324142 28.08291011503590,59.39995622624822 28.13547226316746,59.39995622624822 28.13547226316746,59.35835611324142 28.08291011503590,59.35835611324142</coordinates></LineString></Placemark>
+<Placemark id="gcp1958_274.1"><name>1958_274 #1</name><description>3524 137</description><Point><coordinates>28.12965518815504,59.39880790982307</coordinates></Point></Placemark>
+<Placemark id="gcp1958_274.2"><name>1958_274 #2</name><description>47 3977</description><Point><coordinates>28.072564791427737,59.36667396466175</coordinates></Point></Placemark>
+<Placemark id="gcp1958_274.3"><name>1958_274 #3</name><description>218 227</description><Point><coordinates>28.07540481211652,59.398028647997684</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1958_275"><name>1958_275</name><LineString><coordinates>28.13509583150609,59.35820235484536 28.13509583150609,59.40021110038091 28.19935770834296,59.40021110038091 28.19935770834296,59.35820235484536 28.13509583150609,59.35820235484536</coordinates></LineString></Placemark>
+<Placemark id="gcp1958_275.1"><name>1958_275 #1</name><description>3299 509</description><Point><coordinates>28.189736546800113,59.395820502342666</coordinates></Point></Placemark>
+<Placemark id="gcp1958_275.2"><name>1958_275 #2</name><description>3814 4775</description><Point><coordinates>28.19795483522209,59.360024888265706</coordinates></Point></Placemark>
+<Placemark id="gcp1958_275.3"><name>1958_275 #3</name><description>787 1607</description><Point><coordinates>28.148276,59.386705</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1958_276"><name>1958_276</name><LineString><coordinates>28.19625746408149,59.35816956660160 28.19625746408149,59.40124986515387 28.26389157103452,59.40124986515387 28.26389157103452,59.35816956660160 28.19625746408149,59.35816956660160</coordinates></LineString></Placemark>
+<Placemark id="gcp1958_276.1"><name>1958_276 #1</name><description>3399 2777</description><Point><coordinates>28.252116191197356,59.3778013677593</coordinates></Point></Placemark>
+<Placemark id="gcp1958_276.2"><name>1958_276 #2</name><description>124 1474</description><Point><coordinates>28.198450553227218,59.388860722878874</coordinates></Point></Placemark>
+<Placemark id="gcp1958_276.3"><name>1958_276 #3</name><description>187 4989</description><Point><coordinates>28.199330317784316,59.35932463887435</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1958_274,1958_174,1958_175,1958_275,1958_276</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1958/</value></Data>
+<Data name="bbox"><value>28.08122501992216,59.35816956660160,28.26389157103452,59.42998872322006</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmax"><value>16</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
