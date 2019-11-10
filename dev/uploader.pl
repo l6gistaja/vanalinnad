@@ -21,7 +21,7 @@ $sth->finish;
 @sites = qw();
 $sth = $dbh->prepare("SELECT map FROM updates WHERE id > ? AND host = ? AND crud <> 'D' GROUP BY map");
 $sth->execute($localdata{'upload'}, $localdata{'id'});
-while ($row = $sth->fetchrow_hashref) { push(@sites, $row->{map}); }
+while ($row = $sth->fetchrow_hashref) { if ($row->{map} !~ /sandbox\//) { push(@sites, $row->{map}); } }
 $sth->finish;
 
 foreach my $site (@sites) {
