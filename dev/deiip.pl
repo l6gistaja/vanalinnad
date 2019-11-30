@@ -38,6 +38,8 @@ EndUsage
   exit;
 }
 
+if(!exists($opts{'a'}) || !exists($opts{'b'})) { die "\nParameters a or b are missing!\n\n"; }
+
 if($opts{'a'} > $opts{'b'}) { die "\nParameter b cannot be smaller then a!\n\n"; }
 
 $self{'zoomifyURL'} = $opts{'u'};
@@ -45,11 +47,11 @@ if(exists $opts{'w'}) { $self{'workPath'} = $opts{'w'}; }
 
 if (-d $self{'workPath'}) {
     if (!(-w $self{'workPath'})) {
-        die "Working directory $self{workPath} is not a writable directory!";
+        die "\nWorking directory $self{workPath} is not a writable directory!\n\n";
     }
 }
 elsif (-e $self{'workPath'}) {
-    die "Working directory $self{workPath} exists but is not a directory!";
+    die "\nWorking directory $self{workPath} exists but is not a directory!\n\n";
 }
 else {
     make_path($self{'workPath'});
@@ -60,6 +62,10 @@ else {
 
 $self{'x_tiles'} = $opts{'b'} - $opts{'a'} + 1;
 $self{'y_tiles'} = ($opts{'b'} + 1) / $self{'x_tiles'};
+
+if($self{'x_tiles'} - POSIX::floor($self{'x_tiles'}) > 0 || $self{'y_tiles'} - POSIX::floor($self{'y_tiles'}) > 0) {
+    die "\nParameters a or b are wrong, calculated tile counts ( ".$self{'x_tiles'}.' x '.$self{'y_tiles'}." ) are not integers!\n\n"
+}
 
 # DOWNLOAD
 if(!exists $opts{'p'} || $opts{'p'} =~ /d/) {
