@@ -2,6 +2,11 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
+<Placemark id="bbox.1975.Roomassaare"><name>1975.Roomassaare</name><LineString><coordinates>22.49058290002250,58.21739133895058 22.49058290002250,58.23827387326824 22.52282615361272,58.23827387326824 22.52282615361272,58.21739133895058 22.49058290002250,58.21739133895058</coordinates></LineString></Placemark>
+<Placemark id="gcp1975.Roomassaare.1"><name>1975.Roomassaare #1</name><description>2810 4824</description><Point><coordinates>22.512148331763346,58.22041392604414</coordinates></Point></Placemark>
+<Placemark id="gcp1975.Roomassaare.2"><name>1975.Roomassaare #2</name><description>863 5204</description><Point><coordinates>22.49823495618932,58.2186972644328</coordinates></Point></Placemark>
+<Placemark id="gcp1975.Roomassaare.3"><name>1975.Roomassaare #3</name><description>1890 1941</description><Point><coordinates>22.50472742867156,58.23078503031063</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1969_2883"><name>1969_2883</name><LineString><coordinates>22.39622609713432,58.23228233063050 22.39622609713432,58.27554102944251 22.44977192020369,58.27554102944251 22.44977192020369,58.23228233063050 22.39622609713432,58.23228233063050</coordinates></LineString></Placemark>
 <Placemark id="gcp1969_2883.1"><name>1969_2883 #1</name><description>3503 4299</description><Point><coordinates>22.439730923308,58.23890493548666</coordinates></Point></Placemark>
 <Placemark id="gcp1969_2883.2"><name>1969_2883 #2</name><description>3989 1845</description><Point><coordinates>22.448228161467206,58.25939918131964</coordinates></Point></Placemark>
@@ -45,13 +50,13 @@
 <Placemark id="gcp1975_1331.3"><name>1975_1331 #3</name><description>3420 2708</description><Point><coordinates>22.541871374378193,58.25607705783134</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="maps"><value>1975_1295,1975_1329,1975_1331,1969_2983,1969_2883,1969_2884,1970.k2,1970.k1</value></Data>
-<Data name="montage"><value>yes</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Kuressaare/composed/1970/</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
 <Data name="zmin"><value>13</value></Data>
 <Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
 <Data name="bbox"><value>22.39622609713432,58.21542167833171,22.54797400577909,58.27602573871626</value></Data>
+<Data name="maps"><value>1975.Roomassaare,1975_1295,1975_1329,1975_1331,1969_2983,1969_2883,1969_2884,1970.k2,1970.k1</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Kuressaare/composed/1970/</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 
 </ExtendedData>
 

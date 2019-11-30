@@ -852,4 +852,7 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # 1968 http://www.ra.ee/kaardid/index.php/et/map/view?id=104643
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-14/4-0-6/0034333/erat-0-14_4-0-6_0034333_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1512 -b 1553 -o cache/deiip/1968_Polva.jpg
 
+#http://www.ra.ee/kaardid/index.php/et/map/view?id=306581
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/sam0451/001/0000339/sam0451_001_0000339_00018_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 924 -b 956 -o  cache/deiip/1975_Roomassaare.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
