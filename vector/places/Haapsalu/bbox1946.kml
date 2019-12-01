@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1946.3"><name>1946.3</name><LineString><coordinates>23.50926953729554,58.94671791664939 23.50926953729554,58.96318449845491 23.54714609602091,58.96318449845491 23.54714609602091,58.94671791664939 23.50926953729554,58.94671791664939</coordinates></LineString></Placemark>
+<Placemark id="gcp1946.3.1"><name>1946.3 #1</name><description>1902 2056</description><Point><coordinates>23.523778222045646,58.954981250499394</coordinates></Point></Placemark>
+<Placemark id="gcp1946.3.2"><name>1946.3 #2</name><description>2632 4180</description><Point><coordinates>23.529614708862653,58.946902148884725</coordinates></Point></Placemark>
+<Placemark id="gcp1946.3.3"><name>1946.3 #3</name><description>4870 4504</description><Point><coordinates>23.546265862426587,58.94588382646442</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1946.4"><name>1946.4</name><LineString><coordinates>23.50018378018314,58.90840211521953 23.50018378018314,58.94787700673868 23.57716570501245,58.94787700673868 23.57716570501245,58.90840211521953 23.50018378018314,58.90840211521953</coordinates></LineString></Placemark>
+<Placemark id="gcp1946.4.1"><name>1946.4 #1</name><description>3994 117</description><Point><coordinates>23.52962332275401,58.94690331804009</coordinates></Point></Placemark>
+<Placemark id="gcp1946.4.2"><name>1946.4 #2</name><description>6321 517</description><Point><coordinates>23.54681091812147,58.945586134465884</coordinates></Point></Placemark>
+<Placemark id="gcp1946.4.3"><name>1946.4 #3</name><description>7808 9645</description><Point><coordinates>23.558741,58.911181</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>23.50018378018314,58.90840211521953,23.57716570501245,58.96318449845491</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Haapsalu/composed/1946/</value></Data>
+<Data name="maps"><value>1946.3,1946.4</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

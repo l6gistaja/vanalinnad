@@ -855,4 +855,10 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 #http://www.ra.ee/kaardid/index.php/et/map/view?id=306581
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/sam0451/001/0000339/sam0451_001_0000339_00018_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 924 -b 956 -o  cache/deiip/1975_Roomassaare.jpg
 
+#http://www.ra.ee/kaardid/index.php/et/map/view?id=305594
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000399/eam0003_001_0000399_00001_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 2146 -b 2203 -o  cache/deiip/1946_Haapsalu_3.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000399/eam0003_001_0000399_00001_k3.tif&CNT=1&SDS=0,90&JTL=8,' -a 2262 -b 2319 -o  cache/deiip/1946_Haapsalu_4.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000399/eam0003_001_0000399_00001_k5.tif&CNT=1&SDS=0,90&JTL=8,' -a 1624 -b 1681 -o  cache/deiip/1946_Haapsalu_6.jpg
+
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
