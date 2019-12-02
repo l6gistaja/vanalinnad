@@ -5,6 +5,7 @@
 <link></link>
 <language></language>
 <copyright>0</copyright>
+
 <item>
 <title>Dorpat</title>
 <author></author>
@@ -14,5 +15,17 @@
 <pubDate>Mon, 01 Jan 1680 00:00:00 +0000</pubDate>
 <legends></legends>
 </item>
+
+<item>
+<title>Copeÿ der geometrischen Charte von Stadt Dörpt</title>
+<author>Simon Bock, Israel Swedmann</author>
+<description>Gemessen die Westsche Seite av 1681 von Simon Bock, die Ostsche Seite av 1684 von Israel Swedmann ; copiiret im Landt Messer Contoir zu Riga av 1729 von Ludwig W. G. von Hochmüth</description>
+<guid>http://hdl.handle.net/10062/25624</guid>
+<link>https://dspace.ut.ee/handle/10062/25624</link>
+<pubDate>Wed, 01 Jan 1913 00:00:00 +0000</pubDate>
+<legends>legend1681.jpg</legends>
+<anchor>1681</anchor>
+</item>
+
 </channel>
 </rss>

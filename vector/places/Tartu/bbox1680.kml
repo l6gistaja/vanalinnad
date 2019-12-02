@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>26.70755079004807,58.37458103244072 26.70755079004807,58.38682829944987 26.73249758874300,58.38682829944987 26.73249758874300,58.37458103244072 26.70755079004807,58.37458103244072</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>1572 464</description><Point><coordinates>26.721312915344445,58.38379602049377</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>978 755</description><Point><coordinates>26.71736870102014,58.38178250409571</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>1355 1561</description><Point><coordinates>26.722540280456744,58.379041273039306</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1681"><name>1681</name><LineString><coordinates>26.70297212191623,58.36577588944667 26.70297212191623,58.39917073311857 26.76043922329707,58.39917073311857 26.76043922329707,58.36577588944667 26.70297212191623,58.36577588944667</coordinates></LineString></Placemark>
+<Placemark id="gcp1681.1"><name>1681 #1</name><description>124 665</description><Point><coordinates>26.714041380920918,58.381099346580896</coordinates></Point></Placemark>
+<Placemark id="gcp1681.2"><name>1681 #2</name><description>505 418</description><Point><coordinates>26.72719463157154,58.38787076475303</coordinates></Point></Placemark>
+<Placemark id="gcp1681.3"><name>1681 #3</name><description>765 1351</description><Point><coordinates>26.746202711639246,58.36946194585799</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1680"><name>1680</name><LineString><coordinates>26.70755079004876,58.37458111986928 26.70755079004876,58.38682829946490 26.73248977483530,58.38682829946490 26.73248977483530,58.37458111986928 26.70755079004876,58.37458111986928</coordinates></LineString></Placemark>
+<Placemark id="gcp1680.1"><name>1680 #1</name><description>1572 464</description><Point><coordinates>26.721312915344445,58.38379602049377</coordinates></Point></Placemark>
+<Placemark id="gcp1680.2"><name>1680 #2</name><description>978 755</description><Point><coordinates>26.71736870102014,58.38178250409571</coordinates></Point></Placemark>
+<Placemark id="gcp1680.3"><name>1680 #3</name><description>1355 1561</description><Point><coordinates>26.722540280456744,58.379041273039306</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1680/</value></Data>
+<Data name="maps"><value>1681,1680</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>26.70297212191623,58.36577588944667,26.76043922329707,58.39917073311857</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>12</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>

@@ -14,7 +14,6 @@
  "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140047&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "digar": {"h":"Eesti rahvusraamatukogu digitaalarhiiv", "l":"DIGAR", "t":"_blank", "U":"http://www.digar.ee/arhiiv/et/pildimaterjal?id=693"},
  "tyr": {"h":"Tartu Ülikooli Raamatukogu vanad kaardid", "l":"TÜ vanad kaardid", "t":"_blank", "U":"http://dspace.utlib.ee/dspace/handle/10062/22/browse?order=ASC&rpp=20&sort_by=2&etal=-1&offset=120&type=dateissued"},
- "at": {"h":"Ajaloolise Tartu kaardid", "l":"Ajalooline Tartu", "t":"_blank", "U":"http://www.tartu.ee/vaateid_vanast_Tartust/rakendus/tartu_kaardid.swf"},
  "supilinn": {"h":"Supilinn 17.-21. sajandi linnakaartidel ja -plaanidel", "l":"Supilinna kujunemine", "t":"_blank", "U":"http://www.ttu.ee/public/t/tartu-kolledz/Acta_2_Supilinn_Mart_Hiob.pdf"}
 }
 }]]></json>
@@ -38,7 +37,7 @@
   <layer bounds="26.66709853893270,58.35894942674044,26.78173829170573,58.40854092028547" type="tms" year="1732" />
   <layer bounds="26.67912035088263,58.36322973920709,26.76398073086333,58.40753326374831" type="tms" year="1704" />
   <layer bounds="26.70546576104067,58.36787855446939,26.73849895651939,58.38809515532015" type="tms" year="1696" />
-  <layer bounds="26.70755079004807,58.37458103244072,26.73249758874300,58.38682829944987" type="tms" year="1680" />
+  <layer bounds="26.70297212191623,58.36577588944667,26.76043922329707,58.39917073311857" type="tms" year="1680" />
   <layer bounds="26.71150510534342,58.37722057502325,26.72935167075540,58.38574372074811" type="tms" year="1638" />
   <layer bounds="26.70926815921760,58.37574390450366,26.72925139226419,58.38608633768885" type="tms" year="1620" />
   <layer bounds="26.71151227700366,58.37612797945864,26.73056055656581,58.38700905308324" type="tms" year="1600" />
