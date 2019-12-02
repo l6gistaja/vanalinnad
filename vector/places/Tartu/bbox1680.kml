@@ -13,11 +13,11 @@
 <Placemark id="gcp1680.3"><name>1680 #3</name><description>1355 1561</description><Point><coordinates>26.722540280456744,58.379041273039306</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1680/</value></Data>
-<Data name="maps"><value>1681,1680</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="montage"><value>yes</value></Data>
 <Data name="bbox"><value>26.70297212191623,58.36577588944667,26.76043922329707,58.39917073311857</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1680/</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>1681,1680</value></Data>
 <Data name="zmax"><value>16</value></Data>
 <Data name="zmin"><value>12</value></Data>
 
