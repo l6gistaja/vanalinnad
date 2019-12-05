@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1921"><name>1921</name><LineString><coordinates>26.67658485758033,58.34565535130018 26.67658485758033,58.40214553180964 26.77668766061950,58.40214553180964 26.77668766061950,58.34565535130018 26.67658485758033,58.34565535130018</coordinates></LineString></Placemark>
+<Placemark id="gcp1921.1"><name>1921 #1</name><description>1209 4097</description><Point><coordinates>26.69216633331348,58.37527700103468</coordinates></Point></Placemark>
+<Placemark id="gcp1921.2"><name>1921 #2</name><description>5457 1192</description><Point><coordinates>26.744093899841243,58.394275503169006</coordinates></Point></Placemark>
+<Placemark id="gcp1921.3"><name>1921 #3</name><description>3558 7230</description><Point><coordinates>26.721653111180192,58.35543223636619</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1920.5"><name>1920.5</name><LineString><coordinates>26.66232986387428,58.32385062530140 26.66232986387428,58.38433249317618 26.73470156370227,58.38433249317618 26.73470156370227,58.32385062530140 26.66232986387428,58.32385062530140</coordinates></LineString></Placemark>
+<Placemark id="gcp1920.5.1"><name>1920.5 #1</name><description>2184 999</description><Point><coordinates>26.67918790176384,58.37904433371481</coordinates></Point></Placemark>
+<Placemark id="gcp1920.5.2"><name>1920.5 #2</name><description>209 12035</description><Point><coordinates>26.668267842908854,58.33443569710893</coordinates></Point></Placemark>
+<Placemark id="gcp1920.5.3"><name>1920.5 #3</name><description>8625 4010</description><Point><coordinates>26.72892868198941,58.36821281459752</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>1920.5,1921</value></Data>
+<Data name="bbox"><value>26.66232986387428,58.32385062530140,26.77668766061950,58.40214553180964</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1920/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

@@ -860,5 +860,13 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000399/eam0003_001_0000399_00001_k3.tif&CNT=1&SDS=0,90&JTL=8,' -a 2262 -b 2319 -o  cache/deiip/1946_Haapsalu_4.jpg
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000399/eam0003_001_0000399_00001_k5.tif&CNT=1&SDS=0,90&JTL=8,' -a 1624 -b 1681 -o  cache/deiip/1946_Haapsalu_6.jpg
 
+#http://www.ra.ee/kaardid/index.php/et/map/view?id=4438
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2623/001/0002087/eaa2623_001_0002087_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1330 -b 1364 -o  cache/deiip/1920_Tartu.jpg
+
+#http://www.ra.ee/kaardid/index.php/et/map/view?id=226573
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000752/eaa2072_009_0000752_00001_k5.tif&CNT=1&SDS=0,90&JTL=8,' -a 2223 -b 2261 -o  cache/deiip/1920_Tartu_5.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000752/eaa2072_009_0000752_00001_k6.tif&CNT=1&SDS=0,90&JTL=8,' -a 2223 -b 2261 -o  cache/deiip/1920_Tartu_6.jpg ;
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000752/eaa2072_009_0000752_00001_k3.tif&CNT=1&SDS=0,90&JTL=8,' -a 2223 -b 2261 -o  cache/deiip/1920_Tartu_3.jpg ;
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000752/eaa2072_009_0000752_00001_k4.tif&CNT=1&SDS=0,90&JTL=8,' -a 2223 -b 2261 -o  cache/deiip/1920_Tartu_4.jpg ;
 
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
