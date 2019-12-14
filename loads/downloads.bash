@@ -869,4 +869,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000752/eaa2072_009_0000752_00001_k3.tif&CNT=1&SDS=0,90&JTL=8,' -a 2223 -b 2261 -o  cache/deiip/1920_Tartu_3.jpg ;
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000752/eaa2072_009_0000752_00001_k4.tif&CNT=1&SDS=0,90&JTL=8,' -a 2223 -b 2261 -o  cache/deiip/1920_Tartu_4.jpg ;
 
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=305587
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000221/eam0003_001_0000221_00001_k1.tif&CNT=1&SDS=0,90&JTL=7,' -a 551 -b 579 -o  cache/deiip/1957_Poltsamaa_2.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000221/eam0003_001_0000221_00001_k3.tif&CNT=1&SDS=0,90&JTL=7,' -a 551 -b 579 -o  cache/deiip/1957_Poltsamaa_4.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000221/eam0003_001_0000221_00001_k5.tif&CNT=1&SDS=0,90&JTL=7,' -a 522 -b 550 -o  cache/deiip/1957_Poltsamaa_6.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
