@@ -874,4 +874,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000221/eam0003_001_0000221_00001_k3.tif&CNT=1&SDS=0,90&JTL=7,' -a 551 -b 579 -o  cache/deiip/1957_Poltsamaa_4.jpg
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0003/001/0000221/eam0003_001_0000221_00001_k5.tif&CNT=1&SDS=0,90&JTL=7,' -a 522 -b 550 -o  cache/deiip/1957_Poltsamaa_6.jpg
 
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001633/erat-0-6_003_0001633_00001_k1.tif&CNT=1&SDS=0,90&JTL=7,' -a 459 -b 485 -o  cache/deiip/1921_Poltsamaa_1.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001633/erat-0-6_003_0001633_00001_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 864 -b 887 -o  cache/deiip/1921_Poltsamaa_2.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001633/erat-0-6_003_0001633_00001_k3.tif&CNT=1&SDS=0,90&JTL=7,' -a 448 -b 475 -o  cache/deiip/1921_Poltsamaa_3.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001633/erat-0-6_003_0001633_00001_k4.tif&CNT=1&SDS=0,90&JTL=7,' -a 805 -b 827 -o  cache/deiip/1921_Poltsamaa_4.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg

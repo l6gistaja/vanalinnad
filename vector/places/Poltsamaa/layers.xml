@@ -4,19 +4,19 @@
   <country>Estonia</country>
   <json><![CDATA[{
 "urls": {
- "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/14/"},
- "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта 1862", "l":"ЭтоМесто: 3-верстовка 1862", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/4-3/"},
+ "riksarkivet": {"h":"Riksarkivet, 0406 Utländska stads- och fästningsplaner 1550 – 1989, 28 Östersjöprovinserna", "l":"Riksarkivet 16XX", "t":"_blank", "U":"https://sok.riksarkivet.se/?EndastDigitaliserat=true&tab=post&ct=50&inc=1&exp=y&vol=n&postid=Arkis+7cf77bac-7798-458a-a3fb-dafde62cd878&s=Balder"},
+ "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"https://www.wdl.org/en/item/2571/view/1/7/"},
+ "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта 1866", "l":"ЭтоМесто: 3-верстовка 1866", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/5-5/"},
  "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-europe_estonia_topo-500/?x=@X@&y=@Y@", "srs":"EPSG:4326"},
- "gallica": {"h":"Bibliothèque nationale de France, Gallica", "l":"BnF Gallica", "t":"_blank", "U":"https://gallica.bnf.fr/services/engine/search/sru?operation=searchRetrieve&exactSearch=false&collapsing=true&version=1.2&query=((dc.title%20all%20%22K%C3%A4rdla%22%20and%20dc.title%20all%20%22Kertel%22%20)%20and%20dc.title%20all%20%22K%C3%A4rrdal%22%20)%20%20and%20(dc.type%20all%20%22carte%22)&suggest=10&keywords=K%C3%A4rdla%20Kertel%20K%C3%A4rrdal"},
- "ra1917m": {"h":"Rahvusarhiiv &lt; 1917", "l":"Rahvusarhiiv &lt; 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10925277&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
+ "ra_vanapoltsamaa": {"h":"Rahvusarhiiv: Vana-Põltsamaa mõis", "l":"Rahvusarhiiv: Vana-Põltsamaa mõis", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10996754&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
+ "ra_uuspoltsamaa": {"h":"Rahvusarhiiv: Uus-Põltsamaa mõis", "l":"Rahvusarhiiv: Uus-Põltsamaa mõis", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10996414&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "ra1917_1950": {"h":"Rahvusarhiiv 1917-1950", "l":"Rahvusarhiiv 1917-1950", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139392&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
- "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140004&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
- "ra_Kardla": {"h":"Rahvusarhiiv: Kärdla", "l":"Rahvusarhiiv: Kärdla", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?title=K%C3%A4rdla&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
- "digar": {"h":"Eesti rahvusraamatukogu digitaalarhiiv", "l":"DIGAR", "t":"_blank", "U":"https://www.digar.ee/arhiiv/et/search/simple?utf8=%E2%9C%93&search%5Bsource%5D=&search%5Bavailable%5D=0&search%5Bcontent%5D=0&search%5Btext%5D=K%C3%A4rdla&search%5Bscope%5D=graphics"}
+ "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140013&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"}
 }
 }]]></json>
   <layer bounds="25.95404254470726,58.63809396425475,25.99984357288573,58.66742867625928" type="tms" year="1957" />
   <layer bounds="25.95959078282039,58.64296582473176,25.99131239360948,58.66093222344952" type="tms" year="193X" />
+  <layer bounds="25.95419034673562,58.63825776937582,26.00071827505672,58.66348109873295" type="tms" year="1921" />
   <layer name="⑤ 1" file="roads1min.kml" levels="0,1,2,3" maxres="12" type="roads" />
   <layer name="⑤ 2" file="roads4min.kml" levels="4" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>

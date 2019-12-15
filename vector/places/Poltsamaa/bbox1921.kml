@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1921.1"><name>1921.1</name><LineString><coordinates>25.95419034673562,58.64984330446965 25.95419034673562,58.66348109873295 25.99175514964870,58.66348109873295 25.99175514964870,58.64984330446965 25.95419034673562,58.64984330446965</coordinates></LineString></Placemark>
+<Placemark id="gcp1921.1.1"><name>1921.1 #1</name><description>1136 3276</description><Point><coordinates>25.96121720509447,58.65294578109989</coordinates></Point></Placemark>
+<Placemark id="gcp1921.1.2"><name>1921.1 #2</name><description>4970 1723</description><Point><coordinates>25.98471335606521,58.65784587308185</coordinates></Point></Placemark>
+<Placemark id="gcp1921.1.3"><name>1921.1 #3</name><description>4054 4081</description><Point><coordinates>25.97913436131271,58.65030011514751</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1921.3"><name>1921.3</name><LineString><coordinates>25.95536082025595,58.63825776937582 25.95536082025595,58.65151442026806 25.99325750084081,58.65151442026806 25.99325750084081,58.63825776937582 25.95536082025595,58.63825776937582</coordinates></LineString></Placemark>
+<Placemark id="gcp1921.3.1"><name>1921.3 #1</name><description>890 448</description><Point><coordinates>25.960832018450155,58.65001673446463</coordinates></Point></Placemark>
+<Placemark id="gcp1921.3.2"><name>1921.3 #2</name><description>4997 441</description><Point><coordinates>25.986001867846014,58.65010604363971</coordinates></Point></Placemark>
+<Placemark id="gcp1921.3.3"><name>1921.3 #3</name><description>3720 2006</description><Point><coordinates>25.978234190539382,58.64515462141022</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1921.2"><name>1921.2</name><LineString><coordinates>25.98636850429868,58.64957290728859 25.98636850429868,58.66138042759766 26.00071827505672,58.66138042759766 26.00071827505672,58.64957290728859 25.98636850429868,58.64957290728859</coordinates></LineString></Placemark>
+<Placemark id="gcp1921.2.1"><name>1921.2 #1</name><description>498 229</description><Point><coordinates>25.98789366968079,58.66100287194157</coordinates></Point></Placemark>
+<Placemark id="gcp1921.2.2"><name>1921.2 #2</name><description>376 6778</description><Point><coordinates>25.987636177615386,58.65052191976053</coordinates></Point></Placemark>
+<Placemark id="gcp1921.2.3"><name>1921.2 #3</name><description>1632 4592</description><Point><coordinates>25.99143418558098,58.653993595480294</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>1921.2,1921.3,1921.1</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Poltsamaa/composed/1921/</value></Data>
+<Data name="bbox"><value>25.95419034673562,58.63825776937582,26.00071827505672,58.66348109873295</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmax"><value>16</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

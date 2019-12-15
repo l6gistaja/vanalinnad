@@ -38,6 +38,15 @@
         <coordinates>24.059577,59.352011</coordinates>
       </Point>
     </Placemark>
+    <!--
+    <Placemark>
+      <name>Põltsamaa</name>
+      <description>Poltsamaa</description>
+      <Point>
+        <coordinates>25.975323,58.653736</coordinates>
+      </Point>
+    </Placemark>
+    -->
     <Placemark>
       <name>Põlva</name>
       <description>Polva</description>
