@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1877"><name>1877</name><LineString><coordinates>25.95761699157183,58.64903641254941 25.95761699157183,58.66354684656029 25.98931396573134,58.66354684656029 25.98931396573134,58.64903641254941 25.95761699157183,58.64903641254941</coordinates></LineString></Placemark>
+<Placemark id="gcp1877.1"><name>1877 #1</name><description>1048 10066</description><Point><coordinates>25.98273973448946,58.650673102733954</coordinates></Point></Placemark>
+<Placemark id="gcp1877.2"><name>1877 #2</name><description>3296 4632</description><Point><coordinates>25.97396354659214,58.65818529690182</coordinates></Point></Placemark>
+<Placemark id="gcp1877.3"><name>1877 #3</name><description>1109 1054</description><Point><coordinates>25.961947250205462,58.658642896891216</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1873"><name>1873</name><LineString><coordinates>25.90041904360406,58.62336767216848 25.90041904360406,58.67160977299640 25.99369316502151,58.67160977299640 25.99369316502151,58.62336767216848 25.90041904360406,58.62336767216848</coordinates></LineString></Placemark>
+<Placemark id="gcp1873.1"><name>1873 #1</name><description>6909 7308</description><Point><coordinates>25.978810648388333,58.647559981423</coordinates></Point></Placemark>
+<Placemark id="gcp1873.2"><name>1873 #2</name><description>5641 5286</description><Point><coordinates>25.960833489535755,58.65014294562361</coordinates></Point></Placemark>
+<Placemark id="gcp1873.3"><name>1873 #3</name><description>6071 234</description><Point><coordinates>25.9366721507297,58.6663041258455</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>25.90041904360406,58.62336767216848,25.99369316502151,58.67160977299640</value></Data>
+<Data name="maps"><value>1873,1877</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Poltsamaa/composed/1877/</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

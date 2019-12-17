@@ -879,4 +879,21 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001633/erat-0-6_003_0001633_00001_k3.tif&CNT=1&SDS=0,90&JTL=7,' -a 448 -b 475 -o  cache/deiip/1921_Poltsamaa_3.jpg
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001633/erat-0-6_003_0001633_00001_k4.tif&CNT=1&SDS=0,90&JTL=7,' -a 805 -b 827 -o  cache/deiip/1921_Poltsamaa_4.jpg
 
+# VP 1906
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=17698
+
+# UP 1877
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=17700
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa1347/001/0000025/eaa1347_001_0000025_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 1219 -b 1241 -o  cache/deiip/1877_Poltsamaa.jpg
+
+# VP 1876
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=16680
+
+# VP 1873
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=225927
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa1348/001/0005300/eaa1348_001_0005300_00001_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 1575 -b 1619 -o  cache/deiip/1873_Poltsamaa_2.jpg
+
+# VP 185X
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=213941
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
