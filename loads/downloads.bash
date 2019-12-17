@@ -896,5 +896,6 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 # VP 185X
 # http://www.ra.ee/kaardid/index.php/et/map/view?id=213941
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/009/0000518/eaa2072_009_0000518_00001_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 1716 -b 1759 -o  cache/deiip/185X_Poltsamaa_2.jpg
 
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
