@@ -27,5 +27,16 @@
 <componentsregexp>^1920\.\d$</componentsregexp>
 </item>
 
+<item>
+<title>14-39 [Tartu - Luunja] : [Tartumaa]</title>
+<author>A. Villard; Eesti Sõjavägi, Topograafia jaoskond</author>
+<description></description>
+<guid>ESTER=b27471664</guid>
+<link>https://www.digar.ee/viewer/et/nlib-digar:132724</link>
+<pubDate>Thu, 01 Jan 1920 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1920.Luunja</anchor>
+</item>
+
 </channel>
 </rss>

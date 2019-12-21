@@ -5,6 +5,7 @@
 <link></link>
 <language>de</language>
 <copyright>0</copyright>
+
 <item>
 <title>Stadtplan von Dorpat (Tartu)</title>
 <author>Generalstab der Luftwaffe</author>
@@ -14,5 +15,16 @@
 <pubDate>Tue, 01 Jan 1941 00:00:00 +0000</pubDate>
 <legends>legend1941La.gif,legend1941Lb.gif</legends>
 </item>
+
+<item>
+<title>Dorpat</title>
+<author>Heer Generalstab Abteilung für Kriegskarten- und Vermessungswesen</author>
+<description></description>
+<guid>ESTER=b26198812;isbn=978-9949-598-08-3</guid>
+<link>https://www.digar.ee/viewer/et/nlib-digar:290998</link>
+<pubDate>Sat, 01 Jan 1944 00:00:00 +0000</pubDate>
+<legends></legends>
+</item>
+
 </channel>
 </rss>
