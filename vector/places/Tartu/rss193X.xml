@@ -5,6 +5,7 @@
 <link></link>
 <language></language>
 <copyright>0</copyright>
+
 <item>
 <title>Tartu</title>
 <author>Eesti Entsüklopeedia</author>
@@ -18,6 +19,30 @@
 -->
 <pubDate>Mon, 01 Jan 1932-1937 00:00:00 +0000</pubDate>
 <legends>legend193Xa.gif,legend193Xb.gif</legends>
+<componentsregexp>^193X$</componentsregexp>
 </item>
+
+<item>
+<title>XIV-38 [Ilmatsalu - Tartu] : [Tartumaa]</title>
+<author>Eesti Sõjavägi, Topograafia jaoskond</author>
+<description></description>
+<guid>ESTER=b27462456;isbn=9789949611225</guid>
+<link>https://www.digar.ee/arhiiv/et/pildimaterjal/122127</link>
+<pubDate>Tue, 01 Jan 1935 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1935.Ilmatsalu</anchor>
+</item>
+
+<item>
+<title>XIV-39 [Tartu-Luunja] : [Tartumaa]</title>
+<author>A. Villard; Eesti Sõjavägi, Topograafia jaoskond</author>
+<description></description>
+<guid>ESTER=b27471688</guid>
+<link>https://www.digar.ee/viewer/et/nlib-digar:185116</link>
+<pubDate>Tue, 01 Jan 1935 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1935.Luunja</anchor>
+</item>
+
 </channel>
 </rss>
