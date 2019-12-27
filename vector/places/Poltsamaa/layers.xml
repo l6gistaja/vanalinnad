@@ -8,6 +8,7 @@
  "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"https://www.wdl.org/en/item/2571/view/1/7/"},
  "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта 1866", "l":"ЭтоМесто: 3-верстовка 1866", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/5-5/"},
  "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-europe_estonia_topo-500/?x=@X@&y=@Y@", "srs":"EPSG:4326"},
+ "vlasenko": {"h":"Топографическая карта Украины, России, Беларуси", "l":"vlasenko.net", "t":"_blank", "U":"https://maps.vlasenko.net/?lon=@X@&lat=@Y@", "srs":"EPSG:4326"},
  "ra_vanapoltsamaa": {"h":"Rahvusarhiiv: Vana-Põltsamaa mõis", "l":"Rahvusarhiiv: Vana-Põltsamaa mõis", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10996754&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "ra_uuspoltsamaa": {"h":"Rahvusarhiiv: Uus-Põltsamaa mõis", "l":"Rahvusarhiiv: Uus-Põltsamaa mõis", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10996414&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
  "ra1917_1950": {"h":"Rahvusarhiiv 1917-1950", "l":"Rahvusarhiiv 1917-1950", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139392&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"},
