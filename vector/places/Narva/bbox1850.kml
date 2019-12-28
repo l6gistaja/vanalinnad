@@ -2,6 +2,11 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
+<Placemark id="bbox.1845"><name>1845</name><LineString><coordinates>28.08431604640686,59.34209356046878 28.08431604640686,59.41273905497987 28.24795230524592,59.41273905497987 28.24795230524592,59.34209356046878 28.08431604640686,59.34209356046878</coordinates></LineString></Placemark>
+<Placemark id="gcp1845.1"><name>1845 #1</name><description>2607 1830</description><Point><coordinates>28.12914302254427,59.388781450034195</coordinates></Point></Placemark>
+<Placemark id="gcp1845.2"><name>1845 #2</name><description>5318 2003</description><Point><coordinates>28.198058319334528,59.38652954895897</coordinates></Point></Placemark>
+<Placemark id="gcp1845.3"><name>1845 #3</name><description>5760 3900</description><Point><coordinates>28.209250214395272,59.36171650226428</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1850"><name>1850</name><LineString><coordinates>28.19506824099308,59.37492876917877 28.19506824099308,59.38314310934847 28.20774080362501,59.38314310934847 28.20774080362501,59.37492876917877 28.19506824099308,59.37492876917877</coordinates></LineString></Placemark>
 <Placemark id="gcp1850.1"><name>1850 #1</name><description>1171 1490</description><Point><coordinates>28.197143708126838,59.38157507432429</coordinates></Point></Placemark>
 <Placemark id="gcp1850.2"><name>1850 #2</name><description>3510 2590</description><Point><coordinates>28.20100608910878,59.38083190896502</coordinates></Point></Placemark>
@@ -14,12 +19,12 @@
 
 <ExtendedData>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1850/</value></Data>
-<Data name="bbox"><value>28.17304047241917,59.36597354718937,28.20774080362501,59.38314310934847</value></Data>
-<Data name="zmax"><value>16</value></Data>
-<Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>1845,1857,1850</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>28.08431604640686,59.34209356046878,28.24795230524592,59.41273905497987</value></Data>
 <Data name="montage"><value>yes</value></Data>
-<Data name="maps"><value>1857,1850</value></Data>
 
 </ExtendedData>
 
