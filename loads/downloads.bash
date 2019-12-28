@@ -902,10 +902,15 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10996754
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0308/002/0000213/eaa0308_002_0000213_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 760 -b 797 -o  cache/deiip/1688_Poltsamaa.jpg
 
+# Haapsalu 1900 http://www.ra.ee/kaardid/index.php/et/map/view?id=103157
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000707/erat-0-6_003_0000707_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 340 -b 359 -o  cache/deiip/1900_Haapsalu.jpg
+
 # Paldiski 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=102202 http://www.ra.ee/kaardid/index.php/et/map/view?id=200641
 # Paldiski 1915 https://www.digar.ee/viewer/et/nlib-digar:356994/311168/page/1
 # Rakvere 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=101778
 # Rakvere 1915 https://www.digar.ee/viewer/et/nlib-digar:356961/311205/page/1 http://www.ra.ee/kaardid/index.php/et/map/view?id=102760
 # Narva 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=131763
+# Narva 1845 http://www.ra.ee/kaardid/index.php/et/map/view?id=229187
+# Haapsalu 1907 https://www.digar.ee/arhiiv/nlib-digar:397431
 
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg

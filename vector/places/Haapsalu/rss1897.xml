@@ -5,6 +5,7 @@
 <link></link>
 <language></language>
 <copyright>0</copyright>
+
 <item>
 <title>Плань уьзднаго города Гапсаля Эстляндской Губернiи</title>
 <author>Ю. Игнациус, Р. В. Хорн</author>
@@ -15,5 +16,16 @@
 <pubDate>Fri, 01 Jan 1897 00:00:00 +0000</pubDate>
 <legends>legend1897.jpg</legends>
 </item>
+
+<item>
+<title>Eestimaa kubermang. 8-23 Lääne maakond. Эстляндская губерния. 8-23 Гапсальский уезд</title>
+<author>Киндауровь</author>
+<description></description>
+<guid>ra.ee=ERA.T-6.3.707 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=103157</link>
+<pubDate>Mon, 01 Jan 1900 00:00:00 +0000</pubDate>
+<legends></legends>
+</item>
+
 </channel>
 </rss>
