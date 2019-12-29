@@ -908,11 +908,15 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # Narva 1845 http://www.ra.ee/kaardid/index.php/et/map/view?id=229187
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/saaga/estica/kaardid/lva6828/004/0000538/lva6828_004_0000538_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 770 -b 804 -o  cache/deiip/1845_Narva.jpg
 
+# Paide 1938 http://www.ra.ee/kaardid/index.php/et/map/view?id=100315
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000037/erat-0-6_003_0000037_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 700 -b 727 -o  cache/deiip/1938_Paide.jpg
+
 # Paldiski 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=102202 http://www.ra.ee/kaardid/index.php/et/map/view?id=200641
 # Paldiski 1915 https://www.digar.ee/viewer/et/nlib-digar:356994/311168/page/1
 # Rakvere 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=101778
 # Rakvere 1915 https://www.digar.ee/viewer/et/nlib-digar:356961/311205/page/1 http://www.ra.ee/kaardid/index.php/et/map/view?id=102760
 # Narva 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=131763
 # Haapsalu 1907 https://www.digar.ee/arhiiv/nlib-digar:397431
+# Paide 1907 http://www.ra.ee/kaardid/index.php/et/map/view?id=101426
 
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg

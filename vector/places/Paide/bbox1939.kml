@@ -2,6 +2,11 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
+<Placemark id="bbox.1938"><name>1938</name><LineString><coordinates>25.49882002274900,58.85470149516843 25.49882002274900,58.95106622014297 25.69307185482366,58.95106622014297 25.69307185482366,58.85470149516843 25.49882002274900,58.85470149516843</coordinates></LineString></Placemark>
+<Placemark id="gcp1938.1"><name>1938 #1</name><description>3414 1621</description><Point><coordinates>25.650362,58.938216</coordinates></Point></Placemark>
+<Placemark id="gcp1938.2"><name>1938 #2</name><description>1400 2917</description><Point><coordinates>25.501822883606,58.88982425266669</coordinates></Point></Placemark>
+<Placemark id="gcp1938.3"><name>1938 #3</name><description>2919 3620</description><Point><coordinates>25.613467151643565,58.86241734782527</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1939.1.k2"><name>1939.1.k2</name><LineString><coordinates>25.53685615002006,58.87990386148726 25.53685615002006,58.88757155207843 25.54647724299307,58.88757155207843 25.54647724299307,58.87990386148726 25.53685615002006,58.87990386148726</coordinates></LineString></Placemark>
 <Placemark id="gcp1939.1.k2.1"><name>1939.1.k2 #1</name><description>551 1281</description><Point><coordinates>25.54171476715103,58.88193216719831</coordinates></Point></Placemark>
 <Placemark id="gcp1939.1.k2.2"><name>1939.1.k2 #2</name><description>986 1030</description><Point><coordinates>25.545512775115732,58.88304108904247</coordinates></Point></Placemark>
@@ -43,13 +48,13 @@
 <Placemark id="gcp1939.3.k5.3"><name>1939.3.k5 #3</name><description>764 986</description><Point><coordinates>25.567746124420577,58.8815591052365</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="montage"><value>yes</value></Data>
-<Data name="maps"><value>1939.2.k1,1939.2.k3,1939.2.k2,1939.1.k2,1939.3.k3,1939.3.k5,1939.3.k4</value></Data>
-<Data name="zmin"><value>12</value></Data>
 <Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="bbox"><value>25.53685615002006,58.87401410512904,25.57766993998303,58.89695008225551</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Paide/composed/1939/</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>1938,1939.2.k1,1939.2.k3,1939.2.k2,1939.1.k2,1939.3.k3,1939.3.k5,1939.3.k4</value></Data>
+<Data name="bbox"><value>25.49882002274900,58.85470149516843,25.69307185482366,58.95106622014297</value></Data>
 
 </ExtendedData>
 
