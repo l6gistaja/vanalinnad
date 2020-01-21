@@ -918,5 +918,8 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # Narva 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=131763
 # Haapsalu 1907 https://www.digar.ee/arhiiv/nlib-digar:397431
 # Paide 1907 http://www.ra.ee/kaardid/index.php/et/map/view?id=101426
+# Kuressaare 1920 http://www.ra.ee/kaardid/index.php/et/map/view?id=206752
+# Kuressaare 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=102161
+# P2rnu 1960 http://www.ra.ee/kaardid/index.php/et/map/view?id=29951
 
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
