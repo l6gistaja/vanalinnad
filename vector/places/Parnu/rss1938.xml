@@ -5,6 +5,7 @@
 <link></link>
 <language>et</language>
 <copyright>0</copyright>
+
 <item>
 <title>Pärnu linna plaan</title>
 <author></author>
@@ -15,6 +16,18 @@
 <link>http://www.ester.ee/record=b1419592~S1*est</link>
 <pubDate>Fri, 01 Jan 1938 00:00:00 +0000</pubDate>
 <legends>legend1938.gif</legends>
+<componentsregexp>^1938</componentsregexp>
 </item>
+
+<item>
+<title>Pärnu : Pärnumaa 1936 a.</title>
+<author>Ernst Zobel, Härm Sigur, Eesti Kaitsevägi, Topo-hüdrograafia osakond</author>
+<description></description>
+<guid>isbn=978-9949-609-50-5;ESTER=b16088864</guid>
+<link>https://www.digar.ee/viewer/et/nlib-digar:301264</link>
+<pubDate>Wed, 01 Jan 1936 00:00:00 +0000</pubDate>
+<legends></legends>
+</item>
+
 </channel>
 </rss>
