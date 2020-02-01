@@ -911,6 +911,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/s
 # Paide 1938 http://www.ra.ee/kaardid/index.php/et/map/view?id=100315
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000037/erat-0-6_003_0000037_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 700 -b 727 -o  cache/deiip/1938_Paide.jpg
 
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=103063
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000537/erat-0-6_003_0000537_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 460 -b 479 -o  cache/deiip/1912_Polva.jpg
+
 # Paldiski 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=102202 http://www.ra.ee/kaardid/index.php/et/map/view?id=200641
 # Paldiski 1915 https://www.digar.ee/viewer/et/nlib-digar:356994/311168/page/1
 # Rakvere 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=101778
