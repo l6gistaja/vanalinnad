@@ -20,7 +20,7 @@ Old map symbols: [< 1900](http://www.ra.ee/kaardid/index.php/et/site/page?view=s
 1. [index.html?site=Tallinn&year=1968](index.html?site=Tallinn&year=1968) : Tallinn in year 1968.
 1. [index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081](index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081) : Tallinn in year 1968, Kadriorg area.
 1. [index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081&years=1968.1911.1885.1856](index.html?site=Tallinn&year=1968&zoom=15&lat=59.43736&lon=24.78081&years=1968.1911.1885.1856) : Tallinn in year 1968, Kadriorg area. Selectable are maps only from years 1968, 1911, 1885 and 1856.
-1. [index.html?wms=maaamet&zoom=8&convert=EPSG_4326~EPSG_3301~24.78081~59.43736&marker=R](index.html?wms=maaamet&zoom=8&convert=EPSG_4326~EPSG_3301~24.78081~59.43736&marker=R) : Fresh Maa-amet map, ```&marker=R``` adds marker to the center of map.
+1. [index.html?wms=maaamet&zoom=8&convert=EPSG\_4326~EPSG\_3301~24.78081~59.43736&marker=R](index.html?wms=maaamet&zoom=8&convert=EPSG_4326~EPSG_3301~24.78081~59.43736&marker=R) : Fresh Maa-amet map, ```&marker=R``` adds marker to the center of map.
 
 Hints:
 
