@@ -914,6 +914,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # http://www.ra.ee/kaardid/index.php/et/map/view?id=103063
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000537/erat-0-6_003_0000537_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 460 -b 479 -o  cache/deiip/1912_Polva.jpg
 
+# Voru 1934 http://www.ra.ee/kaardid/index.php/et/map/view?id=100661
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000165/erat-0-6_003_0000165_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 672 -b 699 -o  cache/deiip/1934_Voru.jpg
+
 # Paldiski 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=102202 http://www.ra.ee/kaardid/index.php/et/map/view?id=200641
 # Paldiski 1915 https://www.digar.ee/viewer/et/nlib-digar:356994/311168/page/1
 # Rakvere 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=101778
@@ -928,5 +931,6 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # Valga 1908 http://www.ra.ee/kaardid/index.php/et/map/view?id=102646
 # Parnu 1911 http://www.ra.ee/kaardid/index.php/et/map/view?id=101352 https://www.digar.ee/arhiiv/nlib-digar:357521
 # Valga 1915 http://www.ra.ee/kaardid/index.php/et/map/view?id=101322
+
 
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
