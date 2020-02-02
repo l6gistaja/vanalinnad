@@ -81,7 +81,7 @@ You can update existing road layers by running ```./dev/osm2xml/allosmroads.pl``
 License
 -------
 
-Copyright 2013-2019, juks at alkohol ee. All rights reserved.
+Copyright 2013-2020, juks at alkohol ee. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
