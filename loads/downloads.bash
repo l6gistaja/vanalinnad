@@ -925,4 +925,8 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # Kuressaare 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=102161
 # P2rnu 1960 http://www.ra.ee/kaardid/index.php/et/map/view?id=29951
 
+# Valga 1908 http://www.ra.ee/kaardid/index.php/et/map/view?id=102646
+# Parnu 1911 http://www.ra.ee/kaardid/index.php/et/map/view?id=101352 https://www.digar.ee/arhiiv/nlib-digar:357521
+# Valga 1915 http://www.ra.ee/kaardid/index.php/et/map/view?id=101322
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
