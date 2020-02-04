@@ -920,6 +920,8 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # http://www.ra.ee/kaardid/index.php/et/map/view?id=26111
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eaa0298/002/0000023/eaa0298_002_0000023_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 1440 -b 1471 -o  cache/deiip/1866_Bremerseite.jpg
 
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erar-0-1/016/0000096/erar-0-1_016_0000096_00076_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 130 -b 142 -o  cache/deiip/1952_N6mme.jpg
+
 
 # Paldiski 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=102202 http://www.ra.ee/kaardid/index.php/et/map/view?id=200641
 # Paldiski 1915 https://www.digar.ee/viewer/et/nlib-digar:356994/311168/page/1
