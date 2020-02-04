@@ -917,6 +917,10 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # Voru 1934 http://www.ra.ee/kaardid/index.php/et/map/view?id=100661
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000165/erat-0-6_003_0000165_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 672 -b 699 -o  cache/deiip/1934_Voru.jpg
 
+# http://www.ra.ee/kaardid/index.php/et/map/view?id=26111
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eaa0298/002/0000023/eaa0298_002_0000023_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 1440 -b 1471 -o  cache/deiip/1866_Bremerseite.jpg
+
+
 # Paldiski 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=102202 http://www.ra.ee/kaardid/index.php/et/map/view?id=200641
 # Paldiski 1915 https://www.digar.ee/viewer/et/nlib-digar:356994/311168/page/1
 # Rakvere 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=101778
