@@ -928,6 +928,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # Viljandi 1683 http://www.ra.ee/kaardid/index.php/et/map/view?id=229363
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0308/002/0000200/eaa0308_002_0000200_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 2184 -b 2239 -o  cache/deiip/1683_Viljandi.jpg
 
+# Viljandi 1745 http://www.ra.ee/kaardid/index.php/et/map/view?id=1662
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa1002/001/0001815/eaa1002_001_0001815_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 1092 -b 1133 -o  cache/deiip/1745_Viljandi.jpg
+
 
 # Paldiski 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=102202 http://www.ra.ee/kaardid/index.php/et/map/view?id=200641
 # Paldiski 1915 https://www.digar.ee/viewer/et/nlib-digar:356994/311168/page/1
@@ -945,7 +948,7 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # Valga 1915 http://www.ra.ee/kaardid/index.php/et/map/view?id=101322
 
 
-# Viljandi 1745 http://www.ra.ee/kaardid/index.php/et/map/view?id=1662
+
 # Viljandi 1785 http://www.ra.ee/kaardid/index.php/et/map/view?id=15668
 # Viljandi 1800 http://www.ra.ee/kaardid/index.php/et/map/view?id=15670
 # Viljandi 19XX http://www.ra.ee/kaardid/index.php/et/map/view?id=13200
