@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>25.56906404957528,58.35103798223977 25.56906404957528,58.37217200003081 25.63108004735510,58.37217200003081 25.63108004735510,58.35103798223977 25.56906404957528,58.35103798223977</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>6200 1303</description><Point><coordinates>25.606807706146462,58.36612195329011</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>5083 1139</description><Point><coordinates>25.600091454773267,58.36603191859845</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>4522 2330</description><Point><coordinates>25.59822463729909,58.36191258582577</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1790"><name>1790</name><LineString><coordinates>25.56906404961186,58.35730207006953 25.56906404961186,58.37053578645533 25.61140307244333,58.37053578645533 25.61140307244333,58.35730207006953 25.56906404961186,58.35730207006953</coordinates></LineString></Placemark>
+<Placemark id="gcp1790.1"><name>1790 #1</name><description>6200 1303</description><Point><coordinates>25.606807706146462,58.36612195329011</coordinates></Point></Placemark>
+<Placemark id="gcp1790.2"><name>1790 #2</name><description>5083 1139</description><Point><coordinates>25.600091454773267,58.36603191859845</coordinates></Point></Placemark>
+<Placemark id="gcp1790.3"><name>1790 #3</name><description>4522 2330</description><Point><coordinates>25.59822463729909,58.36191258582577</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1785"><name>1785</name><LineString><coordinates>25.56278745503381,58.34314264609174 25.56278745503381,58.38365442778132 25.63938331028833,58.38365442778132 25.63938331028833,58.34314264609174 25.56278745503381,58.34314264609174</coordinates></LineString></Placemark>
+<Placemark id="gcp1785.1"><name>1785 #1</name><description>965 997</description><Point><coordinates>25.583329360970435,58.36259759574674</coordinates></Point></Placemark>
+<Placemark id="gcp1785.2"><name>1785 #2</name><description>2051 1127</description><Point><coordinates>25.597427051552156,58.36711074102111</coordinates></Point></Placemark>
+<Placemark id="gcp1785.3"><name>1785 #3</name><description>3413 2253</description><Point><coordinates>25.623863367767214,58.36656305193169</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>1785,1790</value></Data>
+<Data name="bbox"><value>25.56278745503381,58.34314264609174,25.63938331028833,58.38365442778132</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Viljandi/composed/1790/</value></Data>
+<Data name="zmin"><value>12</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>

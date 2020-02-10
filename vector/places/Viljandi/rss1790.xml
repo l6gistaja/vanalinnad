@@ -5,6 +5,7 @@
 <link></link>
 <language></language>
 <copyright>0</copyright>
+
 <item>
 <title>Charte von der Kreis-Stadt Fellin nebst denen dazu gehörigen Ländereyen.</title>
 <author>Lorenz Johann Bohm</author>
@@ -15,5 +16,17 @@
 <pubDate>Fri, 01 Jan 1790 00:00:00 +0000</pubDate>
 <legends>legend1790.gif</legends>
 </item>
+
+<item>
+<title>Geometrische Charte von der Kreis-Stadt Fellin.</title>
+<author></author>
+<description></description>
+<guid>ra.ee=EAA.308.6.40 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=15668</link>
+<pubDate>Sat, 01 Jan 1785 00:00:00 +0000</pubDate>
+<legends></legends>
+</item>
+
+
 </channel>
 </rss>
