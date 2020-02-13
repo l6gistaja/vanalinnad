@@ -2,6 +2,11 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
+<Placemark id="bbox.1918"><name>1918</name><LineString><coordinates>26.32612793373059,59.32014298950542 26.32612793373059,59.38783197383838 26.41875369308473,59.38783197383838 26.41875369308473,59.32014298950542 26.32612793373059,59.32014298950542</coordinates></LineString></Placemark>
+<Placemark id="gcp1918.1"><name>1918 #1</name><description>2032 1865</description><Point><coordinates>26.401664658281057,59.36464334605495</coordinates></Point></Placemark>
+<Placemark id="gcp1918.2"><name>1918 #2</name><description>2473 3791</description><Point><coordinates>26.417526217041015,59.32782604261773</coordinates></Point></Placemark>
+<Placemark id="gcp1918.3"><name>1918 #3</name><description>639 4081</description><Point><coordinates>26.34974617100611,59.322324898616465</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1922.k1"><name>1922.k1</name><LineString><coordinates>26.32292339388788,59.33968826646742 26.32292339388788,59.38828763925906 26.38875094000709,59.38828763925906 26.38875094000709,59.33968826646742 26.32292339388788,59.33968826646742</coordinates></LineString></Placemark>
 <Placemark id="gcp1922.k1.1"><name>1922.k1 #1</name><description>6532 7996</description><Point><coordinates>26.371956884783412,59.35778265869189</coordinates></Point></Placemark>
 <Placemark id="gcp1922.k1.2"><name>1922.k1 #2</name><description>4096 10060</description><Point><coordinates>26.35416847459608,59.349819989425775</coordinates></Point></Placemark>
@@ -13,13 +18,13 @@
 <Placemark id="gcp1922.k2.3"><name>1922.k2 #3</name><description>8108 3875</description><Point><coordinates>26.387508872834236,59.327911749143276</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
-<Data name="zmin"><value>12</value></Data>
-<Data name="sourcedir"><value>/media/jux/8EB9-1EDA/histmaps/places/Rakvere/composed/1922/</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="bbox"><value>26.32292339388788,59.32332957878050,26.39209254489585,59.38828763925906</value></Data>
-<Data name="maps"><value>1922.k2,1922.k1</value></Data>
+<Data name="zmax"><value>16</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="bbox"><value>26.32292339388788,59.32014298950542,26.41875369308473,59.38828763925906</value></Data>
+<Data name="maps"><value>1918,1922.k2,1922.k1</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Rakvere/composed/1922/</value></Data>
 
 </ExtendedData>
 
