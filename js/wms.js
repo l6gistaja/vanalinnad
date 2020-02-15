@@ -143,7 +143,7 @@ function vlWms(inputParams){
           site: isAtSite ? reqParams['site'] : '',
           baseUrlID: 'maaamet'
         },
-        links: ['googlestreetview','ajapaik','geohack','vanalinnad'],
+        links: ['googlestreetview','ajapaik','geohack','maaametaero','vanalinnad'],
         debug: 'debug' in reqParams
       };
       

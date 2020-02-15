@@ -944,21 +944,24 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000279/erat-0-6_003_0000279_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 650 -b 675 -o  cache/deiip/1918_Rakvere.jpg
 
-
-# Paldiski 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=102202 http://www.ra.ee/kaardid/index.php/et/map/view?id=200641 -
-# Paldiski 1915 https://www.digar.ee/viewer/et/nlib-digar:356994/311168/page/1 -
-# Rakvere 1915 https://www.digar.ee/viewer/et/nlib-digar:356961/311205/page/1 http://www.ra.ee/kaardid/index.php/et/map/view?id=102760 -
-# Narva 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=131763
-# Haapsalu 1907 https://www.digar.ee/arhiiv/nlib-digar:397431
-# Paide 1907 http://www.ra.ee/kaardid/index.php/et/map/view?id=101426
-# Kuressaare 1920 http://www.ra.ee/kaardid/index.php/et/map/view?id=206752
-# Kuressaare 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=102161
-# P2rnu 1960 http://www.ra.ee/kaardid/index.php/et/map/view?id=29951
-
 # Valga 1908 http://www.ra.ee/kaardid/index.php/et/map/view?id=102646
-# Parnu 1911 http://www.ra.ee/kaardid/index.php/et/map/view?id=101352 https://www.digar.ee/arhiiv/nlib-digar:357521
-# Valga 1915 http://www.ra.ee/kaardid/index.php/et/map/view?id=101322
-
-# Viljandi 1800 http://www.ra.ee/kaardid/index.php/et/map/view?id=15670 -
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000523/erat-0-6_003_0000523_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 506 -b 527 -o  cache/deiip/1908_Valga.jpg
 
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
+
+
+# Haapsalu 1907 https://www.digar.ee/arhiiv/nlib-digar:397431
+# Kuressaare 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=102161
+# Kuressaare 1920 http://www.ra.ee/kaardid/index.php/et/map/view?id=206752
+# Narva 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=131763
+# Paide 1907 http://www.ra.ee/kaardid/index.php/et/map/view?id=101426
+# Paldiski 1918 http://www.ra.ee/kaardid/index.php/et/map/view?id=102202 http://www.ra.ee/kaardid/index.php/et/map/view?id=200641 -
+# Paldiski 1915 https://www.digar.ee/viewer/et/nlib-digar:356994/311168/page/1 -
+# Parnu 1911 http://www.ra.ee/kaardid/index.php/et/map/view?id=101352 https://www.digar.ee/arhiiv/nlib-digar:357521
+# Parnu 1960 http://www.ra.ee/kaardid/index.php/et/map/view?id=29951
+# Rakvere 1915 https://www.digar.ee/viewer/et/nlib-digar:356961/311205/page/1 http://www.ra.ee/kaardid/index.php/et/map/view?id=102760 -
+# Valga 1915 http://www.ra.ee/kaardid/index.php/et/map/view?id=101322
+# Viljandi 1800 http://www.ra.ee/kaardid/index.php/et/map/view?id=15670 -
+
+#ftp://anonymous@jccalvin.ddns.net/Russian Section/Топографическая Карта Западной России 1-84000%20 1880-1935/0-20_(VALK)_XI.1935.jpg
+#ftp://anonymous@jccalvin.ddns.net/Russian Section/Топографическая Карта Западной России 1-84000%20 1880-1935/0-22_(VERRO)_IV.1937.jpg
