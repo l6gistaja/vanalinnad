@@ -220,7 +220,7 @@ function vlInitInfo(inputParams){
         links = items[m].getElementsByTagName('link');
         for(i=0; i<links.length; i++) {
           if(links[i].childNodes.length < 1) { continue; }
-          y += '<li>' + vlUtils.link({u: links[i].childNodes[0].nodeValue}) + '</li>';
+          y += '<li>' + vlUtils.link({u: links[i].childNodes[0].nodeValue, l: decodeURIComponent(links[i].childNodes[0].nodeValue)}) + '</li>';
         }
         y += '</ol>';
 
