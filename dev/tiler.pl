@@ -3,6 +3,7 @@
 use XML::Simple;
 use Getopt::Std;
 use Data::Dumper;
+use POSIX ();
 use lib './dev';
 use VlHelper qw(gdal_mapindex gdal_tlast json_file_read);
 
@@ -65,13 +66,16 @@ if(!exists $opts{'r'}) {
     $deltaY = exists $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaY'}
       ? 0 + $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaY'}
       : 0 ;
+    $zoom = exists $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'zoom'}
+      ? 0 + $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'zoom'}
+      : 1 ;
     $gcp = $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'gcps'};
-    if($deltaX != 0 || $deltaY != 0) {
+    if($deltaX != 0 || $deltaY != 0 || $zoom != 1) {
       $gcp =~ s/^\s+|\s+$//g;
       @gcps = split(/\s+/, $gcp);
       for($i = 0; $i < $#gcps; $i += 5) {
-	$gcps[$i+1] = $deltaX + $gcps[$i+1];
-	$gcps[$i+2] = $deltaY + $gcps[$i+2];
+        $gcps[$i+1] = POSIX::floor(($deltaX + $gcps[$i+1]) * $zoom);
+        $gcps[$i+2] = POSIX::floor(($deltaY + $gcps[$i+2]) * $zoom);
       }
       $gcp = join(' ', @gcps); 
     }
