@@ -7,11 +7,12 @@ use POSIX ();
 use lib './dev';
 use VlHelper qw(gdal_mapindex gdal_tlast json_file_read);
 
-getopt('s:y:rm', \%opts);
+getopt('s:y:rmd', \%opts);
 if(!exists $opts{'s'} || !exists $opts{'y'}) {
-  print "\nUsage: dev/tiler.pl -s SITE -y MAPYEAR (-r) (-m)\n\n";
+  print "\nUsage: dev/tiler.pl -s SITE -y MAPYEAR (-r) (-m) (-d)\n\n";
   print "  -r - don't re-create tiles\n";
-  print "  -m - don't merge tiles to final map\n\n";
+  print "  -m - don't merge tiles to final map\n";
+  print "  -d - only show source image statistics\n\n";
   exit;
 }
 
@@ -49,6 +50,20 @@ $c{'filegeoref'} = $c{'dirtransform'}.'georef.tif';
 $c{'filelayers'} = $c{'dirvector'}.$mainconf->{'filelayers'};
 #print Dumper(\%c); exit;
 
+if(exists $opts{'d'}) {
+  sheller('identify '.$c{'filesrcimg'});
+  print "\n";
+  exit;
+}
+
+if(exists $gdal->{'translate'}[$c{'y'}]{'zoom'}) {
+  $c{'filezoomedimg'} = $c{'dirtransform'}.'zoomed.jpg';
+  sheller('rm '.$c{'filezoomedimg'});
+  sheller('convert '.$c{'filesrcimg'}.' -resize '.POSIX::floor(100*$gdal->{'translate'}[$c{'y'}]{'zoom'}).'% '.$c{'filezoomedimg'});
+  $c{'filesrcimg'} = $c{'filezoomedimg'};
+  sheller('identify '.$c{'filesrcimg'});
+}
+
 $layers = $xml->XMLin($c{'filelayers'}, ForceArray => 1);
 #print Dumper($layers); exit;
 
@@ -57,7 +72,7 @@ if(!exists $opts{'r'}) {
     $cmd = 'mkdir '.$c{'dirtransform'};
     sheller($cmd);
     
-    $cmd = 'rm '.$c{'dirtransform'}.'*';
+    $cmd = 'rm '.$c{'dirtransform'}.'*.tif';
     sheller($cmd);
     
     $deltaX = exists $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaX'}
@@ -66,8 +81,8 @@ if(!exists $opts{'r'}) {
     $deltaY = exists $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaY'}
       ? 0 + $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaY'}
       : 0 ;
-    $zoom = exists $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'zoom'}
-      ? 0 + $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'zoom'}
+    $zoom = exists $gdal->{'translate'}[$c{'y'}]{'zoom'}
+      ? 0 + $gdal->{'translate'}[$c{'y'}]{'zoom'}
       : 1 ;
     $gcp = $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'gcps'};
     if($deltaX != 0 || $deltaY != 0 || $zoom != 1) {
