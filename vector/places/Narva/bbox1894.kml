@@ -2,7 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1894"><name>1894</name><LineString><coordinates>28.12598179538058,59.29969804112481 28.12598179538058,59.39993114127596 28.32646031214482,59.39993114127596 28.32646031214482,59.29969804112481 28.12598179538058,59.29969804112481</coordinates></LineString></Placemark>
+<Placemark id="bbox.1894"><name>1894</name><LineString><coordinates>28.12598179538059,59.29969315322636 28.12598179538059,59.39993114127596 28.32647007412753,59.39993114127596 28.32647007412753,59.29969315322636 28.12598179538059,59.29969315322636</coordinates></LineString></Placemark>
 <Placemark id="gcp1894.1"><name>1894 #1</name><description>1124 413</description><Point><coordinates>28.198090941772655,59.38649874420678</coordinates></Point></Placemark>
 <Placemark id="gcp1894.2"><name>1894 #2</name><description>340 1550</description><Point><coordinates>28.147837073670008,59.35010258981526</coordinates></Point></Placemark>
 <Placemark id="gcp1894.3"><name>1894 #3</name><description>2574 2754</description><Point><coordinates>28.290122897492356,59.3111267290329</coordinates></Point></Placemark>
@@ -14,13 +14,13 @@
 <Placemark id="gcp1898.3"><name>1898 #3</name><description>638 5443</description><Point><coordinates>28.184348141453402,59.35481317010619</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="bbox"><value>28.12598179538058,59.29969804112481,28.32646031214482,59.39993114127596</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1894/</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
 <Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1894/</value></Data>
+<Data name="maps"><value>1894,1898</value></Data>
+<Data name="bbox"><value>28.12598179538059,59.29969315322636,28.32647007412753,59.39993114127596</value></Data>
 <Data name="zmax"><value>16</value></Data>
 <Data name="montage"><value>yes</value></Data>
-<Data name="maps"><value>1894,1898</value></Data>
 
 </ExtendedData>
 
