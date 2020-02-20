@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1944_67"><name>1944_67</name><LineString><coordinates>24.47031409902264,58.37284699683549 24.47031409902264,58.40950946053022 24.54009400910324,58.40950946053022 24.54009400910324,58.37284699683549 24.47031409902264,58.37284699683549</coordinates></LineString></Placemark>
+<Placemark id="gcp1944_67.1"><name>1944_67 #1</name><description>3249 665</description><Point><coordinates>24.49527140457185,58.4011460603177</coordinates></Point></Placemark>
+<Placemark id="gcp1944_67.2"><name>1944_67 #2</name><description>5380 4183</description><Point><coordinates>24.520434330901544,58.39172362798421</coordinates></Point></Placemark>
+<Placemark id="gcp1944_67.3"><name>1944_67 #3</name><description>3455 2870</description><Point><coordinates>24.50302515445221,58.39345191912368</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1944_70"><name>1944_70</name><LineString><coordinates>24.48376364472957,58.35677306033664 24.48376364472957,58.39072961966776 24.54852862507114,58.39072961966776 24.54852862507114,58.35677306033664 24.48376364472957,58.35677306033664</coordinates></LineString></Placemark>
+<Placemark id="gcp1944_70.1"><name>1944_70 #1</name><description>1283 596</description><Point><coordinates>24.494876762639418,58.38438865154335</coordinates></Point></Placemark>
+<Placemark id="gcp1944_70.2"><name>1944_70 #2</name><description>4632 1216</description><Point><coordinates>24.522742489471124,58.38400700790042</coordinates></Point></Placemark>
+<Placemark id="gcp1944_70.3"><name>1944_70 #3</name><description>3640 3220</description><Point><coordinates>24.51715999999998,58.37483818035997</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1944_71"><name>1944_71</name><LineString><coordinates>24.43085939973658,58.38752446159055 24.43085939973658,58.42451986589244 24.50247107618881,58.42451986589244 24.50247107618881,58.38752446159055 24.43085939973658,58.38752446159055</coordinates></LineString></Placemark>
+<Placemark id="gcp1944_71.1"><name>1944_71 #1</name><description>6747 5659</description><Point><coordinates>24.468235888976402,58.391770478532294</coordinates></Point></Placemark>
+<Placemark id="gcp1944_71.2"><name>1944_71 #2</name><description>3955 6715</description><Point><coordinates>24.449081,58.397529</coordinates></Point></Placemark>
+<Placemark id="gcp1944_71.3"><name>1944_71 #3</name><description>5858 674</description><Point><coordinates>24.49320793121337,58.406741690224635</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1944_72"><name>1944_72</name><LineString><coordinates>24.44354836891877,58.36312648745194 24.44354836891877,58.39636301743830 24.50547644814938,58.39636301743830 24.50547644814938,58.36312648745194 24.44354836891877,58.36312648745194</coordinates></LineString></Placemark>
+<Placemark id="gcp1944_72.1"><name>1944_72 #1</name><description>6732 237</description><Point><coordinates>24.48431452032743,58.39484124373523</coordinates></Point></Placemark>
+<Placemark id="gcp1944_72.2"><name>1944_72 #2</name><description>4009 219</description><Point><coordinates>24.46813543554977,58.38816098397261</coordinates></Point></Placemark>
+<Placemark id="gcp1944_72.3"><name>1944_72 #3</name><description>5952 5482</description><Point><coordinates>24.500599851942173,58.37658873759262</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1949"><name>1949</name><LineString><coordinates>24.49730277245923,58.33671993431851 24.49730277245923,58.43223934971570 24.64003520031603,58.43223934971570 24.64003520031603,58.33671993431851 24.49730277245923,58.33671993431851</coordinates></LineString></Placemark>
+<Placemark id="gcp1949.1"><name>1949 #1</name><description>7 1899</description><Point><coordinates>24.49832533869538,58.39952261736017</coordinates></Point></Placemark>
+<Placemark id="gcp1949.2"><name>1949 #2</name><description>783 2877</description><Point><coordinates>24.57711791071684,58.34751605415903</coordinates></Point></Placemark>
+<Placemark id="gcp1949.3"><name>1949 #3</name><description>1324 1936</description><Point><coordinates>24.631207630184253,58.397745944195336</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1949,1944_67,1944_70,1944_71,1944_72</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1944/</value></Data>
+<Data name="bbox"><value>24.43085939973658,58.33671993431851,24.64003520031603,58.43223934971570</value></Data>
+<Data name="zmax"><value>16</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
