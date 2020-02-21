@@ -129,6 +129,8 @@ if(!$gdaltxtformat) {
   $ts = scalar(@{$gdal->{'translate'}});
   for($i = 0; $i < $ts; $i++) {
     if($gdal->{'translate'}[$i]{'composite'} eq $year) {
+      @flags = exists $gdal->{'translate'}[$i]{'flags'} ? split(/,/, $gdal->{'translate'}[$i]{'flags'}) : qw();
+      if('deleted' ~~ @flags) { next; }
       $tlast = gdal_tlast($gdal, $i);
       $kmldata .= "\n".bbox_box($gdal->{'translate'}[$i]{'map'}, $compositebboxes{$gdal->{'translate'}[$i]{'map'}})
         .bbox_points($gdal->{'translate'}[$i]{'t'}[$tlast]{'gcps'}, $gdal->{'translate'}[$i]{'map'});
