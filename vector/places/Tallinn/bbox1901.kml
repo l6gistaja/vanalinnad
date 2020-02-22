@@ -12,7 +12,7 @@
 <Placemark id="gcp1901.2"><name>1901 #2</name><description>2385 3312</description><Point><coordinates>24.739614493548522,59.414619808616244</coordinates></Point></Placemark>
 <Placemark id="gcp1901.3"><name>1901 #3</name><description>3985 1437</description><Point><coordinates>24.785284996033095,59.43868768035537</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1899.Haabersti"><name>1899.Haabersti</name><LineString><coordinates>24.54148246967168,59.39891882025863 24.54148246967168,59.49045559793144 24.72717666920517,59.49045559793144 24.72717666920517,59.39891882025863 24.54148246967168,59.39891882025863</coordinates></LineString></Placemark>
+<Placemark id="bbox.1899.Haabersti"><name>1899.Haabersti</name><LineString><coordinates>24.54148246967167,59.39892784369732 24.54148246967167,59.49045559793144 24.72720533982474,59.49045559793144 24.72720533982474,59.39892784369732 24.54148246967167,59.39892784369732</coordinates></LineString></Placemark>
 <Placemark id="gcp1899.Haabersti.1"><name>1899.Haabersti #1</name><description>2633 2291</description><Point><coordinates>24.69245730563943,59.41633009257201</coordinates></Point></Placemark>
 <Placemark id="gcp1899.Haabersti.2"><name>1899.Haabersti #2</name><description>1756 2280</description><Point><coordinates>24.636493409047084,59.417259052074556</coordinates></Point></Placemark>
 <Placemark id="gcp1899.Haabersti.3"><name>1899.Haabersti #3</name><description>1178 1690</description><Point><coordinates>24.601410199979085,59.43593957681839</coordinates></Point></Placemark>
@@ -23,25 +23,25 @@
 <Placemark id="gcp1899.Pirita.2"><name>1899.Pirita #2</name><description>2834 1236</description><Point><coordinates>24.905345600584187,59.46043885218654</coordinates></Point></Placemark>
 <Placemark id="gcp1899.Pirita.3"><name>1899.Pirita #3</name><description>1563 139</description><Point><coordinates>24.82624058144986,59.495754796394145</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1899.Kurna"><name>1899.Kurna</name><LineString><coordinates>24.72630814698401,59.33421740127677 24.72630814698401,59.39992385116864 24.92693732018134,59.39992385116864 24.92693732018134,59.33421740127677 24.72630814698401,59.33421740127677</coordinates></LineString></Placemark>
+<Placemark id="bbox.1899.Kurna"><name>1899.Kurna</name><LineString><coordinates>24.72630814698401,59.33423168198055 24.72630814698401,59.39992385116864 24.92696504789876,59.39992385116864 24.92696504789876,59.33423168198055 24.72630814698401,59.33423168198055</coordinates></LineString></Placemark>
 <Placemark id="gcp1899.Kurna.1"><name>1899.Kurna #1</name><description>11 235</description><Point><coordinates>24.727022053756908,59.39249387802332</coordinates></Point></Placemark>
 <Placemark id="gcp1899.Kurna.2"><name>1899.Kurna #2</name><description>771 1886</description><Point><coordinates>24.774786831894588,59.34021993313355</coordinates></Point></Placemark>
 <Placemark id="gcp1899.Kurna.3"><name>1899.Kurna #3</name><description>2159 812</description><Point><coordinates>24.86158311561446,59.3740196878773</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1899.Nomme"><name>1899.Nomme</name><LineString><coordinates>24.54216317340738,59.33450317363543 24.54216317340738,59.39998933759453 24.72718440112247,59.39998933759453 24.72718440112247,59.33450317363543 24.54216317340738,59.33450317363543</coordinates></LineString></Placemark>
+<Placemark id="bbox.1899.Nomme"><name>1899.Nomme</name><LineString><coordinates>24.54216317340738,59.33447327100082 24.54216317340738,59.39998933759453 24.72716951646051,59.39998933759453 24.72716951646051,59.33447327100082 24.54216317340738,59.33447327100082</coordinates></LineString></Placemark>
 <Placemark id="gcp1899.Nomme.1"><name>1899.Nomme #1</name><description>3151 190</description><Point><coordinates>24.724818684672247,59.3939674999016</coordinates></Point></Placemark>
 <Placemark id="gcp1899.Nomme.2"><name>1899.Nomme #2</name><description>1606 1512</description><Point><coordinates>24.627086740722575,59.35204702904022</coordinates></Point></Placemark>
 <Placemark id="gcp1899.Nomme.3"><name>1899.Nomme #3</name><description>2199 2016</description><Point><coordinates>24.665148529212587,59.33597437837892</coordinates></Point></Placemark>
 <Placemark id="gcp1899.Nomme.4"><name>1899.Nomme #4</name><description>490 330</description><Point><coordinates>24.557069647980395,59.38933234943879</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="montage"><value>yes</value></Data>
-<Data name="bbox"><value>24.54148246967168,59.33421740127677,24.92777016374767,59.59639136369542</value></Data>
-<Data name="maps"><value>1899.Haabersti,1899.Viimsi,1899.Pirita,1899.Nomme,1899.Kurna,1901</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1901/</value></Data>
 <Data name="zmin"><value>10</value></Data>
+<Data name="montage"><value>yes</value></Data>
 <Data name="zmax"><value>16</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>1899.Haabersti,1899.Viimsi,1899.Pirita,1899.Nomme,1899.Kurna,1901</value></Data>
+<Data name="bbox"><value>24.54148246967167,59.33423168198055,24.92777016374767,59.59639136369542</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1901/</value></Data>
 
 </ExtendedData>
 
