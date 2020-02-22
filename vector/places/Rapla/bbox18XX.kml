@@ -2,23 +2,23 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.18XX"><name>18XX</name><LineString><coordinates>24.72457559862068,58.95772100258574 24.72457559862068,59.04134391578180 24.88430786512587,59.04134391578180 24.88430786512587,58.95772100258574 24.72457559862068,58.95772100258574</coordinates></LineString></Placemark>
+<Placemark id="bbox.18XX"><name>18XX</name><LineString><coordinates>24.72457559862068,58.95771281921724 24.72457559862068,59.04134391578180 24.88432368928104,59.04134391578180 24.88432368928104,58.95771281921724 24.72457559862068,58.95771281921724</coordinates></LineString></Placemark>
 <Placemark id="gcp18XX.1"><name>18XX #1</name><description>2852 3757</description><Point><coordinates>24.79442588537233,59.006679548091064</coordinates></Point></Placemark>
 <Placemark id="gcp18XX.2"><name>18XX #2</name><description>4370 3957</description><Point><coordinates>24.835530757150217,59.019029429555204</coordinates></Point></Placemark>
 <Placemark id="gcp18XX.3"><name>18XX #3</name><description>3333 5409</description><Point><coordinates>24.83842841979533,58.990060032086994</coordinates></Point></Placemark>
 
-<Placemark id="bbox.18XX.mois"><name>18XX.mois</name><LineString><coordinates>24.77486922315950,58.99846883267371 24.77486922315950,59.02019881827928 24.81581476207728,59.02019881827928 24.81581476207728,58.99846883267371 24.77486922315950,58.99846883267371</coordinates></LineString></Placemark>
+<Placemark id="bbox.18XX.mois"><name>18XX.mois</name><LineString><coordinates>24.77486922315950,58.99846869486564 24.77486922315950,59.02019881827928 24.81580549938661,59.02019881827928 24.81580549938661,58.99846869486564 24.77486922315950,58.99846869486564</coordinates></LineString></Placemark>
 <Placemark id="gcp18XX.mois.1"><name>18XX.mois #1</name><description>347 11</description><Point><coordinates>24.784204481325744,59.01542301572966</coordinates></Point></Placemark>
 <Placemark id="gcp18XX.mois.2"><name>18XX.mois #2</name><description>355 640</description><Point><coordinates>24.794485772399785,59.00666794030753</coordinates></Point></Placemark>
 <Placemark id="gcp18XX.mois.3"><name>18XX.mois #3</name><description>796 457</description><Point><coordinates>24.80319629348576,59.01272949032654</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Rapla/composed/18XX/</value></Data>
-<Data name="maps"><value>18XX,18XX.mois</value></Data>
-<Data name="bbox"><value>24.72457559862068,58.95772100258574,24.88430786512587,59.04134391578180</value></Data>
-<Data name="zmin"><value>12</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
 <Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="bbox"><value>24.72457559862068,58.95771281921724,24.88432368928104,59.04134391578180</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Rapla/composed/18XX/</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>18XX,18XX.mois</value></Data>
 
 </ExtendedData>
 

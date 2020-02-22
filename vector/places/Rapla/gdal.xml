@@ -60,7 +60,7 @@
     <t file="1957_Rapla_197390.jpg" gcps="-gcp 2197 288 24.845351 58.997586 -gcp 65 360 24.810713285880837 58.99688600407304 -gcp 843 1140 24.823626422248566 58.99041967406531"/>
 </translate>
 
-<translate map="1940">
+<translate map="1940" zoom="2">
     <t file="1940_Rapla_w.jpg" gcps="-gcp 4596 3322 24.829509871377052 58.99227902549207 -gcp 853 2064 24.773827212228223 59.00170994319327 -gcp 4131 168 24.82266487397115 59.016691796212186"/>
     <t file="1940_Rapla_w2.jpg" gcps="-gcp 4402 3236 24.82622664200144 58.993099813841184 -gcp 1952 2230 24.78989880310328 59.00062658338856 -gcp 4131 168 24.82266487397115 59.016691796212186"/>
 </translate>
@@ -106,7 +106,7 @@
 
 <composite id="1899" maps="1899.S,1899.N,1872" montage="yes"/>
 
-<translate map="1899.N" composite="1899">
+<translate map="1899.N" composite="1899" zoom="5">
     <!-- 
     contrast 70 sharp 60
     original 3221 x 3114
@@ -116,7 +116,7 @@
     <t file="1899_Rapla_N_crop.jpg" gcps="-gcp 1772 2516 24.837376961961827 59.01888192098642 -gcp 923 2618 24.784161935105253 59.01542451948398 -gcp 1091 2889 24.794464857178344 59.00667213873301" deltaX="-273" deltaY="-2501"/>
 </translate>
 
-<translate map="1899.S" composite="1899">
+<translate map="1899.S" composite="1899" zoom="5">
     <!-- 
     contrast 70 sharp 60
     original 3259 x 3187
@@ -135,7 +135,7 @@
 
 <composite id="18XX" maps="18XX,18XX.mois"/>
 
-<translate map="18XX" composite="18XX" montage="yes">
+<translate map="18XX" composite="18XX" montage="yes" zoom="3">
     <!--
     original 5916 x 8960
     SE crop 4569 x 6209
@@ -147,7 +147,7 @@
     <t file="18XX_Rapla_crop_w.jpg"  deltaX="-1096" deltaY="-2382" gcps="-gcp 2852 3757 24.79442588537233 59.006679548091064 -gcp 4370 3957 24.835530757150217 59.019029429555204 -gcp 3333 5409 24.83842841979533 58.990060032086994"/>
 </translate>
 
-<translate map="18XX.mois" composite="18XX">
+<translate map="18XX.mois" composite="18XX" zoom="4">
     <t file="18XX_Rapla_mois_w.jpg" gcps="-gcp 347 11 24.784204481325744 59.01542301572966 -gcp 144 376 24.7842688543421 59.00847402362627  -gcp 796 457 24.80319629348576 59.01272949032654"/>
     <!-- contrast 30 sharpness 70 -->
     <t file="18XX_Rapla_mois_w2.jpg" gcps="-gcp 347 11 24.784204481325744 59.01542301572966 -gcp 355 640 24.794485772399785 59.00666794030753 -gcp 796 457 24.80319629348576 59.01272949032654"/>
