@@ -336,7 +336,7 @@
 
 <composite id="1680" maps="1681,1680" montage="yes"/>
 
-<translate map="1681" composite="1680">
+<translate map="1681" composite="1680" zoom="4">
     <t file="1681_Tartu_w.jpg" gcps="-gcp 124 665 26.714041380920918 58.381099346580896 -gcp 505 418 26.72719463157154 58.38787076475303 -gcp 765 1351 26.746202711639246 58.36946194585799"/>
 </translate>
 
