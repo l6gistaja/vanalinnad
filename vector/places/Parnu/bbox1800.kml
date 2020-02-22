@@ -2,7 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1804"><name>1804</name><LineString><coordinates>24.47050841116041,58.36883617188645 24.47050841116041,58.39713711908631 24.54208571411440,58.39713711908631 24.54208571411440,58.36883617188645 24.47050841116041,58.36883617188645</coordinates></LineString></Placemark>
+<Placemark id="bbox.1804"><name>1804</name><LineString><coordinates>24.47050841114086,58.36883335779899 24.47050841114086,58.39713711908173 24.54207776731505,58.39713711908173 24.54207776731505,58.36883335779899 24.47050841114086,58.36883335779899</coordinates></LineString></Placemark>
 <Placemark id="gcp1804.1"><name>1804 #1</name><description>3049 1101</description><Point><coordinates>24.51496823013385,58.38728589837699</coordinates></Point></Placemark>
 <Placemark id="gcp1804.2"><name>1804 #2</name><description>1580 1206</description><Point><coordinates>24.49477782917534,58.38497887360132</coordinates></Point></Placemark>
 <Placemark id="gcp1804.3"><name>1804 #3</name><description>2316 2211</description><Point><coordinates>24.506941127014198,58.37834000727554</coordinates></Point></Placemark>
@@ -13,13 +13,13 @@
 <Placemark id="gcp1800.3"><name>1800 #3</name><description>1248 150</description><Point><coordinates>24.494737174682868,58.394623586428374</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.46893237179354,58.36883617188645,24.54208571411440,58.40147196047731</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1800/</value></Data>
 <Data name="maps"><value>1804,1800</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1800/</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.46893237179354,58.36883335779899,24.54207776731505,58.40147196047731</value></Data>
 
 </ExtendedData>
 

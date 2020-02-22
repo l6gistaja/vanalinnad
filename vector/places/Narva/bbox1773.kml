@@ -2,7 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1773"><name>1773</name><LineString><coordinates>28.16987299901070,59.36130599502151 28.16987299901070,59.39575955423391 28.24024395229706,59.39575955423391 28.24024395229706,59.36130599502151 28.16987299901070,59.36130599502151</coordinates></LineString></Placemark>
+<Placemark id="bbox.1773"><name>1773</name><LineString><coordinates>28.16987299901805,59.36131362308430 28.16987299901805,59.39575955423427 28.24024425007814,59.39575955423427 28.24024425007814,59.36131362308430 28.16987299901805,59.36131362308430</coordinates></LineString></Placemark>
 <Placemark id="gcp1773.1"><name>1773 #1</name><description>1918 741</description><Point><coordinates>28.217971937257246,59.371587123747204</coordinates></Point></Placemark>
 <Placemark id="gcp1773.2"><name>1773 #2</name><description>471 362</description><Point><coordinates>28.196428434449746,59.38815599006993</coordinates></Point></Placemark>
 <Placemark id="gcp1773.3"><name>1773 #3</name><description>991 1003</description><Point><coordinates>28.194677555544015,59.37702222382034</coordinates></Point></Placemark>
@@ -15,13 +15,13 @@
 <Placemark id="gcp1766.3"><name>1766 #3</name><description>382 1313</description><Point><coordinates>28.190481611857635,59.39669327622812</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>28.16987299901070,59.36130599502151,28.24024395229706,59.40039995317661</value></Data>
 <Data name="maps"><value>1773,1766</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>28.16987299901805,59.36131362308430,28.24024425007814,59.40039995317661</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1773/</value></Data>
-<Data name="montage"><value>yes</value></Data>
 
 </ExtendedData>
 

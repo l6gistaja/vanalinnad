@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
+<kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1860c"><name>1860c</name><LineString><coordinates>24.66123953948447,59.38856573073566 24.66123953948447,59.46748381521798 24.84309560224416,59.46748381521798 24.84309560224416,59.38856573073566 24.66123953948447,59.38856573073566</coordinates></LineString></Placemark>
+<Placemark id="bbox.1860c"><name>1860c</name><LineString><coordinates>24.66123953948714,59.38857142706381 24.66123953948714,59.46748381521557 24.84311029420412,59.46748381521557 24.84311029420412,59.38857142706381 24.66123953948714,59.38857142706381</coordinates></LineString></Placemark>
 <Placemark id="gcp1860c.1"><name>1860c #1</name><description>5424 2057</description><Point><coordinates>24.791609644890013,59.43901089852807</coordinates></Point></Placemark>
 <Placemark id="gcp1860c.2"><name>1860c #2</name><description>2172 3999</description><Point><coordinates>24.727204442023854,59.40865038073758</coordinates></Point></Placemark>
 <Placemark id="gcp1860c.3"><name>1860c #3</name><description>3252 858</description><Point><coordinates>24.737777709960817,59.44904549093595</coordinates></Point></Placemark>
-
 
 <Placemark id="bbox.1856"><name>1856</name><LineString><coordinates>24.70238420700246,59.41391104595616 24.70238420700246,59.45457165972253 24.80840774693289,59.45457165972253 24.80840774693289,59.41391104595616 24.70238420700246,59.41391104595616</coordinates></LineString></Placemark>
 <Placemark id="gcp1856.1"><name>1856 #1</name><description>2090 585</description><Point><coordinates>24.740663237273743,59.44782602285452</coordinates></Point></Placemark>
@@ -18,13 +17,14 @@
 <Placemark id="gcp1856.7"><name>1856 #7</name><description>2877 1672</description><Point><coordinates>24.747095174490642,59.43970174388228</coordinates></Point></Placemark>
 
 <ExtendedData>
+<Data name="bbox"><value>24.66123953948714,59.38857142706381,24.84311029420412,59.46748381521557</value></Data>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.66123953948447,59.38856573073566,24.84309560224416,59.46748381521798</value></Data>
 <Data name="maps"><value>1860c,1856</value></Data>
-<Data name="zmin"><value>10</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
 <Data name="montage"><value>yes</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1856/</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
 </ExtendedData>
 
 </Document>

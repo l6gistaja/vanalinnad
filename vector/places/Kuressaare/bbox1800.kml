@@ -7,19 +7,19 @@
 <Placemark id="gcp1800S.2"><name>1800S #2</name><description>5811 1565</description><Point><coordinates>22.489168664492844,58.25494320349733</coordinates></Point></Placemark>
 <Placemark id="gcp1800S.3"><name>1800S #3</name><description>5084 1818</description><Point><coordinates>22.477731725253324,58.252538404848686</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1800"><name>1800</name><LineString><coordinates>22.45783808528350,58.24397611711791 22.45783808528350,58.26668864858769 22.49650675487501,58.26668864858769 22.49650675487501,58.24397611711791 22.45783808528350,58.24397611711791</coordinates></LineString></Placemark>
+<Placemark id="bbox.1800"><name>1800</name><LineString><coordinates>22.45783808528350,58.24396935710348 22.45783808528350,58.26668864858769 22.49650517390293,58.26668864858769 22.49650517390293,58.24396935710348 22.45783808528350,58.24396935710348</coordinates></LineString></Placemark>
 <Placemark id="gcp1800.1"><name>1800 #1</name><description>1677 898</description><Point><coordinates>22.481712923954493,58.25980330822791</coordinates></Point></Placemark>
 <Placemark id="gcp1800.2"><name>1800 #2</name><description>1370 2719</description><Point><coordinates>22.479420158691045,58.246646875481275</coordinates></Point></Placemark>
 <Placemark id="gcp1800.3"><name>1800 #3</name><description>2173 1616</description><Point><coordinates>22.4892477725218,58.254934523773144</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Kuressaare/composed/1800/</value></Data>
+<Data name="zmin"><value>13</value></Data>
 <Data name="maps"><value>1800S,1800</value></Data>
 <Data name="bbox"><value>22.39569303476482,58.21437820826974,22.52728679292618,58.26902162366633</value></Data>
+<Data name="zmax"><value>16</value></Data>
 <Data name="montage"><value>yes</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="zmin"><value>13</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Kuressaare/composed/1800/</value></Data>
 
 </ExtendedData>
 

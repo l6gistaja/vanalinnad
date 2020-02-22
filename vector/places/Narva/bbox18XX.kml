@@ -2,7 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.18XX.W"><name>18XX.W</name><LineString><coordinates>28.11820340526638,59.37369286138450 28.11820340526638,59.41245181642782 28.18495118181627,59.41245181642782 28.18495118181627,59.37369286138450 28.11820340526638,59.37369286138450</coordinates></LineString></Placemark>
+<Placemark id="bbox.18XX.W"><name>18XX.W</name><LineString><coordinates>28.11820340526118,59.37369400222613 28.11820340526118,59.41245181643934 28.18495555686549,59.41245181643934 28.18495555686549,59.37369400222613 28.11820340526118,59.37369400222613</coordinates></LineString></Placemark>
 <Placemark id="gcp18XX.W.1"><name>18XX.W #1</name><description>6400 4522</description><Point><coordinates>28.16239386230494,59.39671751750341</coordinates></Point></Placemark>
 <Placemark id="gcp18XX.W.2"><name>18XX.W #2</name><description>4834 7747</description><Point><coordinates>28.15554886489814,59.385649798058054</coordinates></Point></Placemark>
 <Placemark id="gcp18XX.W.3"><name>18XX.W #3</name><description>8765 10362</description><Point><coordinates>28.182542616424534,59.37896152725038</coordinates></Point></Placemark>
@@ -14,13 +14,13 @@
 <Placemark id="gcp18XX.4"><name>18XX #4</name><description>11295 8394</description><Point><coordinates>28.217118727970746,59.3692639643447</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>28.11820340526638,59.36249698298700,28.23124557511018,59.41245181642782</value></Data>
-<Data name="maps"><value>18XX.W,18XX</value></Data>
-<Data name="zmin"><value>10</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/18XX/</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="maps"><value>18XX.W,18XX</value></Data>
+<Data name="bbox"><value>28.11820340526118,59.36249698298700,28.23124557511018,59.41245181643934</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/18XX/</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 
 </ExtendedData>
 

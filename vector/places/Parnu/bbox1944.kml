@@ -22,19 +22,19 @@
 <Placemark id="gcp1944_72.2"><name>1944_72 #2</name><description>4009 219</description><Point><coordinates>24.46813543554977,58.38816098397261</coordinates></Point></Placemark>
 <Placemark id="gcp1944_72.3"><name>1944_72 #3</name><description>5952 5482</description><Point><coordinates>24.500599851942173,58.37658873759262</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1949"><name>1949</name><LineString><coordinates>24.49730277245923,58.33671993431851 24.49730277245923,58.43223934971570 24.64003520031603,58.43223934971570 24.64003520031603,58.33671993431851 24.49730277245923,58.33671993431851</coordinates></LineString></Placemark>
+<Placemark id="bbox.1949"><name>1949</name><LineString><coordinates>24.49730277245923,58.33673607714790 24.49730277245923,58.43223934971570 24.64007784088264,58.43223934971570 24.64007784088264,58.33673607714790 24.49730277245923,58.33673607714790</coordinates></LineString></Placemark>
 <Placemark id="gcp1949.1"><name>1949 #1</name><description>7 1899</description><Point><coordinates>24.49832533869538,58.39952261736017</coordinates></Point></Placemark>
 <Placemark id="gcp1949.2"><name>1949 #2</name><description>783 2877</description><Point><coordinates>24.57711791071684,58.34751605415903</coordinates></Point></Placemark>
 <Placemark id="gcp1949.3"><name>1949 #3</name><description>1324 1936</description><Point><coordinates>24.631207630184253,58.397745944195336</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="montage"><value>yes</value></Data>
 <Data name="maps"><value>1949,1944_67,1944_70,1944_71,1944_72</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1944/</value></Data>
-<Data name="bbox"><value>24.43085939973658,58.33671993431851,24.64003520031603,58.43223934971570</value></Data>
+<Data name="bbox"><value>24.43085939973658,58.33673607714790,24.64007784088264,58.43223934971570</value></Data>
+<Data name="montage"><value>yes</value></Data>
 <Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 
 </ExtendedData>
 

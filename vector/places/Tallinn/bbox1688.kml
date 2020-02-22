@@ -37,20 +37,20 @@
 <Placemark id="gcp1688.Tiskre.2"><name>1688.Tiskre #2</name><description>533 1508</description><Point><coordinates>24.55960048731528,59.43005358782899</coordinates></Point></Placemark>
 <Placemark id="gcp1688.Tiskre.3"><name>1688.Tiskre #3</name><description>3688 2965</description><Point><coordinates>24.610369339548733,59.42477120891367</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1689"><name>1689</name><LineString><coordinates>24.47027799018731,59.35093610610189 24.47027799018731,59.63276141597635 25.01106711879276,59.63276141597635 25.01106711879276,59.35093610610189 24.47027799018731,59.35093610610189</coordinates></LineString></Placemark>
+<Placemark id="bbox.1689"><name>1689</name><LineString><coordinates>24.47027799017171,59.35092264677628 24.47027799017171,59.63276141596600 25.01106097194938,59.63276141596600 25.01106097194938,59.35092264677628 24.47027799017171,59.35092264677628</coordinates></LineString></Placemark>
 <Placemark id="gcp1689.1"><name>1689 #1</name><description>1290 5735</description><Point><coordinates>24.598068243408846,59.43468182333103</coordinates></Point></Placemark>
 <Placemark id="gcp1689.2"><name>1689 #2</name><description>5560 3648</description><Point><coordinates>24.842471128845258,59.514482739595095</coordinates></Point></Placemark>
 <Placemark id="gcp1689.3"><name>1689 #3</name><description>4455 6890</description><Point><coordinates>24.800370012664658,59.412218335849616</coordinates></Point></Placemark>
 <Placemark id="gcp1689.4"><name>1689 #4</name><description>6142 5759</description><Point><coordinates>24.898772227477757,59.45218472143054</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.47027799018731,59.35093610610189,25.01106711879276,59.63276141597635</value></Data>
 <Data name="maps"><value>1689,1688.Tiskre,1693.Iru,1688,1689.Jarvekyla,1688.Haabneeme,1689.Viimsi</value></Data>
-<Data name="zmin"><value>10</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1688/</value></Data>
+<Data name="zmax"><value>16</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>24.47027799017171,59.35092264677628,25.01106097194938,59.63276141596600</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmin"><value>10</value></Data>
 
 </ExtendedData>
 
