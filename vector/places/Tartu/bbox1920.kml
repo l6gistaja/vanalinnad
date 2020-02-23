@@ -12,19 +12,19 @@
 <Placemark id="gcp1920.5.2"><name>1920.5 #2</name><description>209 12035</description><Point><coordinates>26.668267842908854,58.33443569710893</coordinates></Point></Placemark>
 <Placemark id="gcp1920.5.3"><name>1920.5 #3</name><description>8625 4010</description><Point><coordinates>26.72892868198941,58.36821281459752</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1920.Luunja"><name>1920.Luunja</name><LineString><coordinates>26.72461179826119,58.32359177597088 26.72461179826119,58.40146209757918 26.80756838487462,58.40146209757918 26.80756838487462,58.32359177597088 26.72461179826119,58.32359177597088</coordinates></LineString></Placemark>
+<Placemark id="bbox.1920.Luunja"><name>1920.Luunja</name><LineString><coordinates>26.72461179826119,58.32359831869999 26.72461179826119,58.40146209757918 26.80756823558456,58.40146209757918 26.80756823558456,58.32359831869999 26.72461179826119,58.32359831869999</coordinates></LineString></Placemark>
 <Placemark id="gcp1920.Luunja.1"><name>1920.Luunja #1</name><description>2133 5763</description><Point><coordinates>26.77885575998238,58.32757006214203</coordinates></Point></Placemark>
 <Placemark id="gcp1920.Luunja.2"><name>1920.Luunja #2</name><description>439 268</description><Point><coordinates>26.735425431612022,58.396763733690385</coordinates></Point></Placemark>
 <Placemark id="gcp1920.Luunja.3"><name>1920.Luunja #3</name><description>99 2382</description><Point><coordinates>26.72793670404082,58.36969896340972</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="maps"><value>1920.Luunja,1920.5,1921</value></Data>
-<Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.66232986387428,58.32359177597088,26.80756838487462,58.40214553180964</value></Data>
-<Data name="montage"><value>yes</value></Data>
 <Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1920/</value></Data>
+<Data name="maps"><value>1920.Luunja,1920.5,1921</value></Data>
+<Data name="bbox"><value>26.66232986387428,58.32359831869999,26.80756823558456,58.40214553180964</value></Data>
 
 </ExtendedData>
 

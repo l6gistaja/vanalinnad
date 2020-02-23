@@ -2,29 +2,29 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.193X"><name>193X</name><LineString><coordinates>26.68872455785781,58.35118316531104 26.68872455785781,58.40036565637980 26.75460166193351,58.40036565637980 26.75460166193351,58.35118316531104 26.68872455785781,58.35118316531104</coordinates></LineString></Placemark>
+<Placemark id="bbox.193X"><name>193X</name><LineString><coordinates>26.68872455785781,58.35118316531104 26.68872455785781,58.40036565637980 26.75460895002998,58.40036565637980 26.75460895002998,58.35118316531104 26.68872455785781,58.35118316531104</coordinates></LineString></Placemark>
 <Placemark id="gcp193X.1"><name>193X #1</name><description>950 135</description><Point><coordinates>26.709365863563953,58.39831384082408</coordinates></Point></Placemark>
 <Placemark id="gcp193X.2"><name>193X #2</name><description>743 3868</description><Point><coordinates>26.70653345084362,58.355841969327166</coordinates></Point></Placemark>
 <Placemark id="gcp193X.3"><name>193X #3</name><description>2570 1704</description><Point><coordinates>26.745157260658587,58.38090374508574</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1935.Luunja"><name>1935.Luunja</name><LineString><coordinates>26.72644891046335,58.32355918657665 26.72644891046335,58.40046025762187 26.80603011816419,58.40046025762187 26.80603011816419,58.32355918657665 26.72644891046335,58.32355918657665</coordinates></LineString></Placemark>
+<Placemark id="bbox.1935.Luunja"><name>1935.Luunja</name><LineString><coordinates>26.72644891046335,58.32356286642469 26.72644891046335,58.40046025762187 26.80601051068934,58.40046025762187 26.80601051068934,58.32356286642469 26.72644891046335,58.32356286642469</coordinates></LineString></Placemark>
 <Placemark id="gcp1935.Luunja.1"><name>1935.Luunja #1</name><description>3187 1104</description><Point><coordinates>26.79711884938654,58.38771632264023</coordinates></Point></Placemark>
 <Placemark id="gcp1935.Luunja.2"><name>1935.Luunja #2</name><description>3179 3498</description><Point><coordinates>26.796646780600266,58.36022250265781</coordinates></Point></Placemark>
 <Placemark id="gcp1935.Luunja.3"><name>1935.Luunja #3</name><description>77 2718</description><Point><coordinates>26.72862595998121,58.36866927246472</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1935.Ilmatsalu"><name>1935.Ilmatsalu</name><LineString><coordinates>26.63283537605353,58.32357463780899 26.63283537605353,58.40009786419404 26.72797254306314,58.40009786419404 26.72797254306314,58.32357463780899 26.63283537605353,58.32357463780899</coordinates></LineString></Placemark>
+<Placemark id="bbox.1935.Ilmatsalu"><name>1935.Ilmatsalu</name><LineString><coordinates>26.63283537605353,58.32359025926427 26.63283537605353,58.40009786419404 26.72798896954519,58.40009786419404 26.72798896954519,58.32359025926427 26.63283537605353,58.32359025926427</coordinates></LineString></Placemark>
 <Placemark id="gcp1935.Ilmatsalu.1"><name>1935.Ilmatsalu #1</name><description>5720 1756</description><Point><coordinates>26.650838137077976,58.380125294469536</coordinates></Point></Placemark>
 <Placemark id="gcp1935.Ilmatsalu.2"><name>1935.Ilmatsalu #2</name><description>6359 4547</description><Point><coordinates>26.664699793267012,58.34840895056792</coordinates></Point></Placemark>
 <Placemark id="gcp1935.Ilmatsalu.3"><name>1935.Ilmatsalu #3</name><description>9115 2918</description><Point><coordinates>26.725639582085684,58.36677994425442</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="zmin"><value>12</value></Data>
-<Data name="bbox"><value>26.63283537605353,58.32355918657665,26.80603011816419,58.40046025762187</value></Data>
-<Data name="zmax"><value>16</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/193X/</value></Data>
-<Data name="maps"><value>1935.Ilmatsalu,1935.Luunja,193X</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>26.63283537605353,58.32356286642469,26.80601051068934,58.40046025762187</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/193X/</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="maps"><value>1935.Ilmatsalu,1935.Luunja,193X</value></Data>
 
 </ExtendedData>
 

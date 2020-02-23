@@ -2,7 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1936.Kloostrimetsa"><name>1936.Kloostrimetsa</name><LineString><coordinates>24.82898039215425,59.45555915766121 24.82898039215425,59.48824172492333 24.88801642894652,59.48824172492333 24.88801642894652,59.45555915766121 24.82898039215425,59.45555915766121</coordinates></LineString></Placemark>
+<Placemark id="bbox.1936.Kloostrimetsa"><name>1936.Kloostrimetsa</name><LineString><coordinates>24.82898039215425,59.45556499868977 24.82898039215425,59.48824172492333 24.88801460567514,59.48824172492333 24.88801460567514,59.45556499868977 24.82898039215425,59.45556499868977</coordinates></LineString></Placemark>
 <Placemark id="gcp1936.Kloostrimetsa.1"><name>1936.Kloostrimetsa #1</name><description>685 1058</description><Point><coordinates>24.856673841436102,59.464692199439185</coordinates></Point></Placemark>
 <Placemark id="gcp1936.Kloostrimetsa.2"><name>1936.Kloostrimetsa #2</name><description>686 251</description><Point><coordinates>24.866860125674158,59.47968329256842</coordinates></Point></Placemark>
 <Placemark id="gcp1936.Kloostrimetsa.3"><name>1936.Kloostrimetsa #3</name><description>304 517</description><Point><coordinates>24.850392314874203,59.47690850382757</coordinates></Point></Placemark>
@@ -17,19 +17,19 @@
 <Placemark id="gcp1930.Nomme.2"><name>1930.Nomme #2</name><description>4010 579</description><Point><coordinates>24.659040627821295,59.39148684554842</coordinates></Point></Placemark>
 <Placemark id="gcp1930.Nomme.3"><name>1930.Nomme #3</name><description>9226 1262</description><Point><coordinates>24.71540993247816,59.38859690435489</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1936.Valdeku"><name>1936.Valdeku</name><LineString><coordinates>24.66604254067994,59.33435788615269 24.66604254067994,59.37391533796539 24.77846110148817,59.37391533796539 24.77846110148817,59.33435788615269 24.66604254067994,59.33435788615269</coordinates></LineString></Placemark>
+<Placemark id="bbox.1936.Valdeku"><name>1936.Valdeku</name><LineString><coordinates>24.66604254067994,59.33435788615271 24.66604254067994,59.37391533796539 24.77846110148816,59.37391533796539 24.77846110148816,59.33435788615271 24.66604254067994,59.33435788615271</coordinates></LineString></Placemark>
 <Placemark id="gcp1936.Valdeku.1"><name>1936.Valdeku #1</name><description>4690 1369</description><Point><coordinates>24.736869,59.363886</coordinates></Point></Placemark>
 <Placemark id="gcp1936.Valdeku.2"><name>1936.Valdeku #2</name><description>1270 4399</description><Point><coordinates>24.68521990821899,59.341706544457736</coordinates></Point></Placemark>
 <Placemark id="gcp1936.Valdeku.3"><name>1936.Valdeku #3</name><description>6800 2701</description><Point><coordinates>24.768675,59.354131</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1932/</value></Data>
+<Data name="maps"><value>1932,1930.Nomme,1936.Valdeku,1936.Kloostrimetsa</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 <Data name="zmax"><value>16</value></Data>
 <Data name="zmin"><value>10</value></Data>
-<Data name="bbox"><value>24.61567772186019,59.33435788615269,24.88801642894652,59.48979843148451</value></Data>
-<Data name="montage"><value>yes</value></Data>
-<Data name="maps"><value>1932,1930.Nomme,1936.Valdeku,1936.Kloostrimetsa</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>24.61567772186019,59.33435788615271,24.88801460567514,59.48979843148451</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1932/</value></Data>
 
 </ExtendedData>
 

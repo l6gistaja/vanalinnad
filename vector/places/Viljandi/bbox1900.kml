@@ -2,7 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1900"><name>1900</name><LineString><coordinates>25.58484985594371,58.35654523281420 25.58484985594371,58.36881332673985 25.61875989428742,58.36881332673985 25.61875989428742,58.35654523281420 25.58484985594371,58.35654523281420</coordinates></LineString></Placemark>
+<Placemark id="bbox.1900"><name>1900</name><LineString><coordinates>25.58484985594371,58.35654160915550 25.58484985594371,58.36881332673985 25.61875842094711,58.36881332673985 25.61875842094711,58.35654160915550 25.58484985594371,58.35654160915550</coordinates></LineString></Placemark>
 <Placemark id="gcp1900.1"><name>1900 #1</name><description>2325 1930</description><Point><coordinates>25.5995684788515,58.361452079807215</coordinates></Point></Placemark>
 <Placemark id="gcp1900.2"><name>1900 #2</name><description>1736 271</description><Point><coordinates>25.597465626983738,58.36710204481417</coordinates></Point></Placemark>
 <Placemark id="gcp1900.3"><name>1900 #3</name><description>3282 577</description><Point><coordinates>25.606392018585584,58.365368884778626</coordinates></Point></Placemark>
@@ -19,13 +19,13 @@
 <Placemark id="gcp190X.2.3"><name>190X.2 #3</name><description>6566 1440</description><Point><coordinates>25.595675815281332,58.361059742013815</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="montage"><value>yes</value></Data>
-<Data name="zmax"><value>16</value></Data>
-<Data name="zmin"><value>12</value></Data>
-<Data name="bbox"><value>25.53290459544650,58.32402491257022,25.64315321918275,58.39618036832082</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="maps"><value>190X.2,190X.1,1900</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Viljandi/composed/1900/</value></Data>
+<Data name="bbox"><value>25.53290459544650,58.32402491257022,25.64315321918275,58.39618036832082</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>190X.2,190X.1,1900</value></Data>
 
 </ExtendedData>
 

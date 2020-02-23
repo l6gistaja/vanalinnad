@@ -7,19 +7,19 @@
 <Placemark id="gcp1790.2"><name>1790 #2</name><description>5083 1139</description><Point><coordinates>25.600091454773267,58.36603191859845</coordinates></Point></Placemark>
 <Placemark id="gcp1790.3"><name>1790 #3</name><description>4522 2330</description><Point><coordinates>25.59822463729909,58.36191258582577</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1785"><name>1785</name><LineString><coordinates>25.56278745503381,58.34314264609174 25.56278745503381,58.38365442778132 25.63938331028833,58.38365442778132 25.63938331028833,58.34314264609174 25.56278745503381,58.34314264609174</coordinates></LineString></Placemark>
+<Placemark id="bbox.1785"><name>1785</name><LineString><coordinates>25.56278745503381,58.34314331584610 25.56278745503381,58.38365442778132 25.63936952311238,58.38365442778132 25.63936952311238,58.34314331584610 25.56278745503381,58.34314331584610</coordinates></LineString></Placemark>
 <Placemark id="gcp1785.1"><name>1785 #1</name><description>965 997</description><Point><coordinates>25.583329360970435,58.36259759574674</coordinates></Point></Placemark>
 <Placemark id="gcp1785.2"><name>1785 #2</name><description>2051 1127</description><Point><coordinates>25.597427051552156,58.36711074102111</coordinates></Point></Placemark>
 <Placemark id="gcp1785.3"><name>1785 #3</name><description>3413 2253</description><Point><coordinates>25.623863367767214,58.36656305193169</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="tileext"><value>.jpg</value></Data>
 <Data name="maps"><value>1785,1790</value></Data>
-<Data name="bbox"><value>25.56278745503381,58.34314264609174,25.63938331028833,58.38365442778132</value></Data>
-<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="bbox"><value>25.56278745503381,58.34314331584610,25.63936952311238,58.38365442778132</value></Data>
 <Data name="zmax"><value>16</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Viljandi/composed/1790/</value></Data>
-<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
 
 </ExtendedData>
 

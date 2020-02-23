@@ -2,7 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1944"><name>1944</name><LineString><coordinates>26.63365546597243,58.33329265478392 26.63365546597243,58.40999474590502 26.75011208824415,58.40999474590502 26.75011208824415,58.33329265478392 26.63365546597243,58.33329265478392</coordinates></LineString></Placemark>
+<Placemark id="bbox.1944"><name>1944</name><LineString><coordinates>26.63365546597243,58.33328474382207 26.63365546597243,58.40999474590502 26.75012891875925,58.40999474590502 26.75012891875925,58.33328474382207 26.63365546597243,58.33328474382207</coordinates></LineString></Placemark>
 <Placemark id="gcp1944.1"><name>1944 #1</name><description>2108 4418</description><Point><coordinates>26.654526329115427,58.339916075190025</coordinates></Point></Placemark>
 <Placemark id="gcp1944.2"><name>1944 #2</name><description>2063 3311</description><Point><coordinates>26.650879243423937,58.380123750615496</coordinates></Point></Placemark>
 <Placemark id="gcp1944.3"><name>1944 #3</name><description>3340 3286</description><Point><coordinates>26.745164169312183,58.380934985805</coordinates></Point></Placemark>
@@ -13,13 +13,13 @@
 <Placemark id="gcp1941.3"><name>1941 #3</name><description>3226 871</description><Point><coordinates>26.71923543362328,58.39486060416505</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1941/</value></Data>
-<Data name="zmin"><value>12</value></Data>
-<Data name="montage"><value>yes</value></Data>
-<Data name="bbox"><value>26.63365546597243,58.33329265478392,26.75660381432278,58.40999474590502</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="maps"><value>1944,1941</value></Data>
 <Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>26.63365546597243,58.33328474382207,26.75660381432278,58.40999474590502</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1941/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>1944,1941</value></Data>
 
 </ExtendedData>
 

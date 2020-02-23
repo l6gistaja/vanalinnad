@@ -2,7 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1927"><name>1927</name><LineString><coordinates>26.67648141521080,58.34558933613840 26.67648141521080,58.40209935850068 26.77806293371133,58.40209935850068 26.77806293371133,58.34558933613840 26.67648141521080,58.34558933613840</coordinates></LineString></Placemark>
+<Placemark id="bbox.1927"><name>1927</name><LineString><coordinates>26.67648141521082,58.34558933613840 26.67648141521082,58.40209935850068 26.77806293371134,58.40209935850068 26.77806293371134,58.34558933613840 26.67648141521082,58.34558933613840</coordinates></LineString></Placemark>
 <Placemark id="gcp1927.1"><name>1927 #1</name><description>3449 1096</description><Point><coordinates>26.719236392737443,58.394861746735785</coordinates></Point></Placemark>
 <Placemark id="gcp1927.2"><name>1927 #2</name><description>2310 7460</description><Point><coordinates>26.706511993170903,58.35584196932765</coordinates></Point></Placemark>
 <Placemark id="gcp1927.3"><name>1927 #3</name><description>1227 4090</description><Point><coordinates>26.69252159094917,58.37630235516233</coordinates></Point></Placemark>
@@ -14,13 +14,13 @@
 <Placemark id="gcp1927+.3"><name>1927+ #3</name><description>2334 280</description><Point><coordinates>26.719248256073236,58.394866744038666</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="montage"><value>yes</value></Data>
-<Data name="maps"><value>1927+,1927</value></Data>
-<Data name="bbox"><value>26.63778386413273,58.32346457834348,26.80715134103706,58.40209935850068</value></Data>
-<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 <Data name="zmax"><value>16</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1927/</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>1927+,1927</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>26.63778386413273,58.32346457834348,26.80715134103706,58.40209935850068</value></Data>
 
 </ExtendedData>
 

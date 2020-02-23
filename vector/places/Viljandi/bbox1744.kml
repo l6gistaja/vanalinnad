@@ -2,24 +2,24 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1745"><name>1745</name><LineString><coordinates>25.58934677008983,58.34250938291523 25.58934677008983,58.39260806477015 25.63709083352311,58.39260806477015 25.63709083352311,58.34250938291523 25.58934677008983,58.34250938291523</coordinates></LineString></Placemark>
+<Placemark id="bbox.1745"><name>1745</name><LineString><coordinates>25.58934677008983,58.34250327364359 25.58934677008983,58.39260806477015 25.63709231102724,58.39260806477015 25.63709231102724,58.34250327364359 25.58934677008983,58.34250327364359</coordinates></LineString></Placemark>
 <Placemark id="gcp1745.1"><name>1745 #1</name><description>394 3529</description><Point><coordinates>25.603586540017382,58.36335209688176</coordinates></Point></Placemark>
 <Placemark id="gcp1745.2"><name>1745 #2</name><description>1413 3373</description><Point><coordinates>25.619121894632435,58.36586191843919</coordinates></Point></Placemark>
 <Placemark id="gcp1745.3"><name>1745 #3</name><description>372 2219</description><Point><coordinates>25.599841537141536,58.37481848204988</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1744"><name>1744</name><LineString><coordinates>25.55290017455361,58.34036851420242 25.55290017455361,58.38106500189733 25.63648395803354,58.38106500189733 25.63648395803354,58.34036851420242 25.55290017455361,58.34036851420242</coordinates></LineString></Placemark>
+<Placemark id="bbox.1744"><name>1744</name><LineString><coordinates>25.55290017455361,58.34035809284487 25.55290017455361,58.38106500189733 25.63647947636342,58.38106500189733 25.63647947636342,58.34035809284487 25.55290017455361,58.34035809284487</coordinates></LineString></Placemark>
 <Placemark id="gcp1744.1"><name>1744 #1</name><description>2566 1951</description><Point><coordinates>25.596912067422252,58.36346425444238</coordinates></Point></Placemark>
 <Placemark id="gcp1744.2"><name>1744 #2</name><description>2312 2510</description><Point><coordinates>25.594530265817273,58.358950642901554</coordinates></Point></Placemark>
 <Placemark id="gcp1744.3"><name>1744 #3</name><description>3286 2208</description><Point><coordinates>25.60849889343257,58.36260497825412</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="montage"><value>yes</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Viljandi/composed/1744/</value></Data>
-<Data name="zmax"><value>16</value></Data>
 <Data name="zmin"><value>12</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Viljandi/composed/1744/</value></Data>
 <Data name="maps"><value>1745,1744</value></Data>
-<Data name="bbox"><value>25.55290017455361,58.34036851420242,25.63709083352311,58.39260806477015</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>25.55290017455361,58.34035809284487,25.63709231102724,58.39260806477015</value></Data>
 
 </ExtendedData>
 
