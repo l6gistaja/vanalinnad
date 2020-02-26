@@ -15,6 +15,7 @@
  "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140013&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"}
 }
 }]]></json>
+  <layer bounds="25.88456724714173,58.62370806466497,26.00000136448515,58.67429312432744" type="tms" year="1977" />
   <layer bounds="25.95404254470726,58.63809396425475,25.99984357288573,58.66742867625928" type="tms" year="1957" />
   <layer bounds="25.95959078282039,58.64296582473176,25.99131239360948,58.66093222344952" type="tms" year="193X" />
   <layer bounds="25.95419034673562,58.63825776937582,26.00071827505672,58.66348109873295" type="tms" year="1921" />
@@ -26,5 +27,5 @@
   <layer name="⑤ 2" file="roads4min.kml" levels="4" maxres="14" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>12</minzoom>
-  <roadbounds s="58.62355"/>
+  <roadbounds s="58.62355" />
 </vanalinnadlayers>

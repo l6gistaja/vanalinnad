@@ -1,6 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vanalinnadgdal xmlns="http://juks.alkohol.ee/vanalinnad">
 
+<composite id="1977" maps="1974_1939,1974_2039,1977_2040,1977_1940" montage="yes"/>
+
+<translate map="1974_1939" composite="1977">
+    <!-- 
+    y 3707 -> 3097
+    x 4412 -> 4156
+    -->
+    <t file="dsc06722crop.jpg" gcps="-gcp 4086 786 25.947184 58.671753 -gcp 822 1037 25.894662 58.670299 -gcp 3855 3353 25.942603 58.650144" deltaY="-610" deltaX="-256"/>
+</translate>
+
+<translate map="1974_2039" composite="1977">
+    <t file="dsc13307crop.jpg" gcps="-gcp 3225 145 25.937523909608018 58.64885590931228 -gcp 140 1219 25.88748461822624 58.64040371362732 -gcp 1769 3004 25.913083621063834 58.62506283353746"/>
+</translate>
+
+<translate map="1977_1940" composite="1977">
+    <!--  5419 -> 3030 -->
+    <t file="dsc04321crop.jpg" gcps="-gcp 750 4384 25.95681084655768 58.65744829529461 -gcp 3031 5361 25.993181600799478 58.64887537608476 -gcp 1322 3114 25.966531172027555 58.66799411497613" deltaY="-2389"/>
+</translate>
+
+<translate map="1977_2040" composite="1977">
+    <t file="dsc04381crop.jpg" gcps="-gcp 416 776 25.951184404754688 58.64489745469733 -gcp 3961 223 26.008326185607764 58.649067444611966 -gcp 2504 3265 25.984143389129887 58.62378866213829"/>
+</translate>
+
 <composite id="1957" maps="1957.6,1957.4,1957.2" montage="yes"/>
 
 <translate map="1957.2" composite="1957">
