@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1974_1939"><name>1974_1939</name><LineString><coordinates>25.88466423943973,58.64704104761247 25.88466423943973,58.67401635307584 25.95248134581756,58.67401635307584 25.95248134581756,58.64704104761247 25.88466423943973,58.64704104761247</coordinates></LineString></Placemark>
+<Placemark id="gcp1974_1939.1"><name>1974_1939 #1</name><description>4086 786</description><Point><coordinates>25.947184,58.671753</coordinates></Point></Placemark>
+<Placemark id="gcp1974_1939.2"><name>1974_1939 #2</name><description>822 1037</description><Point><coordinates>25.894662,58.670299</coordinates></Point></Placemark>
+<Placemark id="gcp1974_1939.3"><name>1974_1939 #3</name><description>3855 3353</description><Point><coordinates>25.942603,58.650144</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1974_2039"><name>1974_2039</name><LineString><coordinates>25.88456724714173,58.62370806466497 25.88456724714173,58.65069406122335 25.94988094046889,58.65069406122335 25.94988094046889,58.62370806466497 25.88456724714173,58.62370806466497</coordinates></LineString></Placemark>
+<Placemark id="gcp1974_2039.1"><name>1974_2039 #1</name><description>3225 145</description><Point><coordinates>25.937523909608018,58.64885590931228</coordinates></Point></Placemark>
+<Placemark id="gcp1974_2039.2"><name>1974_2039 #2</name><description>140 1219</description><Point><coordinates>25.88748461822624,58.64040371362732</coordinates></Point></Placemark>
+<Placemark id="gcp1974_2039.3"><name>1974_2039 #3</name><description>1769 3004</description><Point><coordinates>25.913083621063834,58.62506283353746</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1977_1940"><name>1977_1940</name><LineString><coordinates>25.94431514160123,58.64832304099012 25.94431514160123,58.67429312432744 26.00000136448515,58.67429312432744 26.00000136448515,58.64832304099012 25.94431514160123,58.64832304099012</coordinates></LineString></Placemark>
+<Placemark id="gcp1977_1940.1"><name>1977_1940 #1</name><description>750 4384</description><Point><coordinates>25.95681084655768,58.65744829529461</coordinates></Point></Placemark>
+<Placemark id="gcp1977_1940.2"><name>1977_1940 #2</name><description>3031 5361</description><Point><coordinates>25.993181600799478,58.64887537608476</coordinates></Point></Placemark>
+<Placemark id="gcp1977_1940.3"><name>1977_1940 #3</name><description>1322 3114</description><Point><coordinates>25.966531172027555,58.66799411497613</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1977_2040"><name>1977_2040</name><LineString><coordinates>25.94388122611831,58.62376723874391 25.94388122611831,58.65144810663737 25.99914157411298,58.65144810663737 25.99914157411298,58.62376723874391 25.94388122611831,58.62376723874391</coordinates></LineString></Placemark>
+<Placemark id="gcp1977_2040.1"><name>1977_2040 #1</name><description>416 776</description><Point><coordinates>25.951184404754688,58.64489745469733</coordinates></Point></Placemark>
+<Placemark id="gcp1977_2040.2"><name>1977_2040 #2</name><description>3961 223</description><Point><coordinates>26.008326185607764,58.649067444611966</coordinates></Point></Placemark>
+<Placemark id="gcp1977_2040.3"><name>1977_2040 #3</name><description>2504 3265</description><Point><coordinates>25.984143389129887,58.62378866213829</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>25.88456724714173,58.62370806466497,26.00000136448515,58.67429312432744</value></Data>
+<Data name="maps"><value>1974_1939,1974_2039,1977_2040,1977_1940</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Poltsamaa/composed/1977/</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
