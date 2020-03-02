@@ -5,6 +5,7 @@
 <link></link>
 <language></language>
 <copyright>0</copyright>
+
 <item>
 <title>Eesti NSV Võru linna plaan</title>
 <author>Harri Kull</author>
@@ -15,6 +16,41 @@
 <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001830/erat-0-6_003_0001830_00001_k2.tif&amp;wid=2480&amp;hei=1748&amp;qlt=100&amp;cvt=jpeg</link>
 <pubDate>Sun, 01 Jan 1950 00:00:00 +0000</pubDate>
 <legends>legend1950.gif</legends>
+<componentsregexp>^1950\.k\d$</componentsregexp>
 </item>
+
+<item>
+<title>(Võru õhuvõte Maaameti fotolaost)</title>
+<author>ГПИ "Эстсельхозпроект"</author>
+<description></description>
+<guid>ID=8221</guid>
+<link>https://fotoladu.maaamet.ee/arhiiv=196931</link>
+<pubDate>Sun, 01 Jan 1950 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1950_8221</anchor>
+</item>
+
+<item>
+<title>(Võru õhuvõte Maaameti fotolaost)</title>
+<author>Министерства Сельского Хозяйства СССР Сельхозаэросьемка</author>
+<description></description>
+<guid>ID=930</guid>
+<link>https://fotoladu.maaamet.ee/arhiiv=189911</link>
+<pubDate>Thu, 01 Jan 1948 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1948_930</anchor>
+</item>
+
+<item>
+<title>(Võru õhuvõte Maaameti fotolaost)</title>
+<author>"Сельхозаэросьемка" Министерства Сельского Хозяйства Союза С. С. Р.</author>
+<description></description>
+<guid>ID=980</guid>
+<link>https://fotoladu.maaamet.ee/arhiiv=189879</link>
+<pubDate>Thu, 01 Jan 1948 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1948_980</anchor>
+</item>
+
 </channel>
 </rss>
