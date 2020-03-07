@@ -950,6 +950,8 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # Kardla 1917 http://www.ra.ee/kaardid/index.php/et/map/view?id=101934
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000339/erat-0-6_003_0000339_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 702 -b 727 -o  cache/deiip/1917_Kardla.jpg
 
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0002/001/0000145/eam0002_001_0000145_00001_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 176 -b 191 -o  cache/deiip/1941_Valga.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
 
 
