@@ -2,9 +2,9 @@
 
 if(scalar(@ARGV) < 2) {
   print "\nUsage: ./dev/osm2xml/osmroads.pl SITE PRECISION [OSMFILTER_KEEP]\n";
-  print "\nPRECISION examples: .00001 = 1.1 m of latitude, .000001 = 0.11 m of latitude\n";
+  print "\nPRECISION examples: 5 = 1.1 m of latitude, 6 = 0.11 m of latitude\n";
   print "\nUse OSMFILTER_KEEP parameter (osmfilter's --keep) if you need only certain objects for some big site.";
-  print "\nExample: for Tallinn, load only roads: ./dev/osm2xml/osmroads.pl Tallinn .00001 highway\n\n";
+  print "\nExample: for Tallinn, load only roads: ./dev/osm2xml/osmroads.pl Tallinn 5 highway\n\n";
   exit;
 }
 
@@ -32,7 +32,7 @@ for($i = 0; $i < scalar(@{$layers->{'layer'}}) - 1; $i++) {
 	system("cat ".$mainconf->{'dircache'}.$mainconf->{'fileprefixroads'}.$level.".txt >> ".$source);
     }
     system("echo '".$conf->{'Document'}{'ExtendedData'}{'v:kmlfooter'}."' >> ".$source);
-    system($mainconf->{'dirdev'}.'kml_minify.pl '.$ARGV[1].' '.$source.' '.$destination);
+    system($mainconf->{'dirdev'}.'kml2vlgjson.pl '.$ARGV[1].' '.$source.' '.$destination);
   }
 }
 

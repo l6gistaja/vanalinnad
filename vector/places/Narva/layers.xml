@@ -34,9 +34,9 @@
   <layer bounds="28.18991282980479,59.37003683667395,28.21250344564680,59.38621499101968" type="tms" year="1686" />
   <layer bounds="28.19444843527576,59.37342079251989,28.20562701481225,59.38168100646357" type="tms" year="1649" />
   <layer bounds="28.18977329797377,59.36716841349724,28.22294623738940,59.38493631164209" type="tms" year="1600" />
-  <layer name="⚓ vh." file="Narva_veehoidla.kml" maxres="10" style="multiColor" type="custom" />
-  <layer name="⑤ 1" file="roads3min.kml" levels="0,1,2,3" maxres="10" type="roads" />
-  <layer name="⑤ 2" file="roads4min.kml" levels="4" maxres="15" type="roads" />
+  <layer name="⚓ vh." file="Narva_veehoidla.json" maxres="10" style="multiColor" type="custom" format="VLGJ"/>
+  <layer name="⑤ 1" file="roads3min.json" levels="0,1,2,3" maxres="10" type="roads" format="VLGJ"/>
+  <layer name="⑤ 2" file="roads4min.json" levels="4" maxres="15" type="roads" format="VLGJ"/>
   <maxzoom>16</maxzoom>
   <minzoom>10</minzoom>
 </vanalinnadlayers>
