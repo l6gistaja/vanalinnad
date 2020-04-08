@@ -40,15 +40,15 @@
   <layer bounds="24.54468474757502,59.38796695309030,24.94149687900466,59.49381484893316" type="tms" year="1842" />
   <layer bounds="24.63972159590817,59.42273571494828,24.80739220673519,59.49131205619217" type="tms" year="1827" />
   <layer bounds="24.62695182691116,59.41512667176661,24.86052402035276,59.52920988719414" type="tms" year="1801" />
-  <layer bounds="24.71711845313123,59.42371919610299,24.77374640825893,59.44840741492366" type="tms" year="1744" />
+  <layer bounds="24.71711845313123,59.42372417745723,24.77374640825893,59.44840741492366" type="tms" year="1744" />
   <layer bounds="24.47027799018731,59.35093610610189,25.01106711879276,59.63276141597635" type="tms" year="1688" />
   <layer bounds="24.73450444156960,59.42720570235137,24.75377474919629,59.44379715358760" type="tms" year="1675" />
   <layer bounds="24.72905752609735,59.42590773723730,24.76895696043184,59.44857425462865" type="tms" year="1634" />
-  <layer name="⚓ Balt" file="baltic_mini.json" hide="1" maxres="10" style="multiColor" type="custom" year="Baltic_Sea" format="VLGJ"/>
-  <layer name="⑤ 1" file="roads1min.json" levels="0,1" maxres="10" type="roads" format="VLGJ"/>
-  <layer name="⑤ 2" file="roads2min.json" levels="2" maxres="12" type="roads" format="VLGJ"/>
-  <layer name="⑤ 3" file="roads3min.json" levels="3" maxres="14" type="roads" format="VLGJ"/>
-  <layer name="⑤ 4" file="roads4min.json" levels="4" maxres="15" type="roads" format="VLGJ"/>
+  <layer name="⚓ Balt" file="baltic_mini.json" format="VLGJ" hide="1" maxres="10" style="multiColor" type="custom" year="Baltic_Sea" />
+  <layer name="⑤ 1" file="roads1min.json" format="VLGJ" levels="0,1" maxres="10" type="roads" />
+  <layer name="⑤ 2" file="roads2min.json" format="VLGJ" levels="2" maxres="12" type="roads" />
+  <layer name="⑤ 3" file="roads3min.json" format="VLGJ" levels="3" maxres="14" type="roads" />
+  <layer name="⑤ 4" file="roads4min.json" format="VLGJ" levels="4" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>10</minzoom>
   <roadbounds e="24.986866" s="59.334099" w="24.541477" />

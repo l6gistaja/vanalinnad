@@ -2,7 +2,7 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1744"><name>1744</name><LineString><coordinates>24.71711845313123,59.42371919610299 24.71711845313123,59.44077857487896 24.74597250977771,59.44077857487896 24.74597250977771,59.42371919610299 24.71711845313123,59.42371919610299</coordinates></LineString></Placemark>
+<Placemark id="bbox.1744"><name>1744</name><LineString><coordinates>24.71711845313123,59.42372417745723 24.71711845313123,59.44077857487896 24.74597177148558,59.44077857487896 24.74597177148558,59.42372417745723 24.71711845313123,59.42372417745723</coordinates></LineString></Placemark>
 <Placemark id="gcp1744.1"><name>1744 #1</name><description>909 720</description><Point><coordinates>24.72959697246429,59.43539258811137</coordinates></Point></Placemark>
 <Placemark id="gcp1744.2"><name>1744 #2</name><description>1657 1810</description><Point><coordinates>24.740808606147485,59.42911793257117</coordinates></Point></Placemark>
 <Placemark id="gcp1744.3"><name>1744 #3</name><description>535 1137</description><Point><coordinates>24.725815057755927,59.43246819776499</coordinates></Point></Placemark>
@@ -18,13 +18,13 @@
 <Placemark id="gcp1744.Polizeigarten.3"><name>1744.Polizeigarten #3</name><description>1036 1170</description><Point><coordinates>24.766068777771096,59.43296926469831</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="maps"><value>1740,1744,1744.Polizeigarten</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1744/</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1744/</value></Data>
+<Data name="maps"><value>1740,1744,1744.Polizeigarten</value></Data>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.71711845313123,59.42371919610299,24.77374640825893,59.44840741492366</value></Data>
 <Data name="zmin"><value>10</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>24.71711845313123,59.42372417745723,24.77374640825893,59.44840741492366</value></Data>
 
 </ExtendedData>
 
