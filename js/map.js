@@ -210,6 +210,21 @@ function vlMap(inputParams){
         roadLayers[roadLayers.length-1].setVisibility(false);
         }
     }
+    
+ //TODO: migrate roads and misc vector maps from KML to VLGJson
+ /*   
+    roadLayers[roadLayers.length] = new OpenLayers.Layer.Vector('VlGJ', {
+            layername: layername,
+            projection: map.options.displayProjection,
+            //maxResolution: map.getResolutionForZoom(parseInt(layersTags[i].getAttribute('maxres'))),
+            strategies: [new OpenLayers.Strategy.Fixed()],
+            protocol: new OpenLayers.Protocol.HTTP({
+                url: 'cache/test.json', //'vector/common/test_vlgjson.json',
+                format: new vlUtils.VLGJSON()
+            }),
+            styleMap:vlUtils.mergeCustomStyleWithDefaults(jsonConf.olLayerStyles['roads'])
+        });
+    */
 
       // when someone accesses page with outdated layers parameter, redirect
       var layerUrlParts;
@@ -396,13 +411,13 @@ function vlMap(inputParams){
   }
 
   var htmlSites = function(s) {
-    y = s.length > 1 ? vlUtils.link({'u':'?','h':'Main page','l':'Vanalinnad'}) : '';
+    y = s.length > 1 ? vlUtils.link({'u':'?','h':'Main page','l':'Vanalinnad'})+'<br/>' : '';
     var siteParam, siteName, sitePoint;
     var wmsLinks = [];
     for(f in s) {
       siteName = 'description' in s[f].attributes ? s[f].attributes.description : s[f].attributes.name;
       siteParam = 'site=' + siteName + ('debug' in reqParams ? '&debug=' + reqParams['debug'] : '');
-      y += (i > 0 ? '<br/>' : '') +  '&nbsp;&nbsp;'
+      y += '&nbsp;&nbsp;'
         + vlUtils.link({
             u: conf.infourlprefix + siteParam,
             h: 'Info',
@@ -425,7 +440,8 @@ function vlMap(inputParams){
         + vlUtils.link({
             u: '?' + siteParam,
             l:  s[f].attributes.name
-          });
+          }) + ' <br/>';
+    
     }
     return y;
   }

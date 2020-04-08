@@ -4,6 +4,52 @@ if (!vlUtils) {
 
 vlUtils.MAIN_SITE = 'http://vanalinnad.mooo.com/';
 
+vlUtils.VLGJSON = OpenLayers.Class(OpenLayers.Format.JSON, {
+    read: function(data) {
+        var d = JSON.parse(data);
+        var x = 'x' in d ? d.x : 0;
+        var y = 'y' in d ? d.y : 0;
+        var p = 'precision' in d ? Math.pow(10,d.precision) : 1;
+        var features = [];
+        for(i in d.f) {
+            var attr = {};
+            var ls;
+            var geometry = 0;
+            for(j in d.f[i]) {
+                switch(j) {
+                    case "n": attr.name = d.f[i][j]; break;
+                    case "d": attr.description = d.f[i][j]; break;
+                    case "c": attr.color = d.f[i][j]; break;
+                    case "g":
+                        ls = d.f[i][j].split(';');
+                        if(ls.length > 1) {
+                            geometry = [];
+                            for(h in ls) { geometry.push(this.base36linestring(x,y,p,ls[h])); }
+                            geometry = new OpenLayers.Geometry.MultiLineString(geometry);
+                        } else {
+                            geometry = this.base36linestring(x,y,p,ls[0]);  
+                        }
+                }
+            }
+            features.push(new OpenLayers.Feature.Vector(geometry, attr));
+        }
+        return features;
+    },
+    
+    base36linestring: function(x,y,p,ls) {
+        var coords = ls.split(',');
+        var i;
+        var points = [];
+        for(i = 0; i < coords.length; i +=2) {
+            points.push(new OpenLayers.Geometry.Point(
+                x + (parseInt(coords[i],36)/p),
+                y + (parseInt(coords[i+1],36)/p)
+            ));
+        }
+        return new OpenLayers.Geometry.LineString(points);
+    }
+});
+
 vlUtils.getXmlValue = function(xmlDocument, tagname) {
   index = (arguments.length > 2 ) ? arguments[2] : 0 ;
   tags = xmlDocument.getElementsByTagName(tagname);

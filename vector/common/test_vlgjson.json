@@ -1,0 +1,19 @@
+{
+    "comment":"Comment",
+    "x":25.1,
+    "y":58.1,
+    "precision":5,
+    "f":[
+        {
+            "n":"test line name",
+            "d":"test line description",
+            "g":"n5c,1i0g,0,0",
+            "c":"#00ffff"
+        },
+        {
+            "n":"test multiline name",
+            "d":"test multiline description",
+            "g":"uv4,1pq8,0,0;12kw,1xg0,0,0"
+        }
+    ]
+}
