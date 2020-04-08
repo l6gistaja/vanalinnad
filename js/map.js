@@ -194,10 +194,12 @@ function vlMap(inputParams){
                 url: conf.dirvector
                         + (isAtSite ? conf.dirplaces + areaDir : 'common/')
                         + layersTags[i].getAttribute('file'),
-                format: new OpenLayers.Format.KML({
-                    extractAttributes: true,
-                    maxDepth: 0
-                })
+                format: (layersTags[i].getAttribute('format') === 'VLGJ') 
+                    ? new vlUtils.VLGJSON()
+                    : new OpenLayers.Format.KML({
+                        extractAttributes: true,
+                        maxDepth: 0
+                    })
             }),
             styleMap: vlUtils.mergeCustomStyleWithDefaults(jsonConf.olLayerStyles[
             layersTags[i].getAttribute('style') !=null ? layersTags[i].getAttribute('style') : 'roads'
@@ -212,7 +214,7 @@ function vlMap(inputParams){
     }
     
  //TODO: migrate roads and misc vector maps from KML to VLGJson
- /*   
+ /*
     roadLayers[roadLayers.length] = new OpenLayers.Layer.Vector('VlGJ', {
             layername: layername,
             projection: map.options.displayProjection,

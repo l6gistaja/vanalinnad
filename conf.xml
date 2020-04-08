@@ -46,5 +46,5 @@
   "BBox":{"default":{"strokeWidth":2,"strokeColor":"red","cursor":"pointer"}}
 }
 }]]></json>
-<layer name="rdt" file="rdt_min.kml" style="multiColor" type="custom" />
+<layer name="rdt" file="rdt.json" style="multiColor" type="custom" format="VLGJ"/>
 </vanalinnadconf>

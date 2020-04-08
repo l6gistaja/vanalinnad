@@ -11,17 +11,17 @@ vlUtils.VLGJSON = OpenLayers.Class(OpenLayers.Format.JSON, {
         var y = 'y' in d ? d.y : 0;
         var p = 'precision' in d ? Math.pow(10,d.precision) : 1;
         var features = [];
-        for(i in d.f) {
+        for(i in d.features) {
             var attr = {};
             var ls;
             var geometry = 0;
-            for(j in d.f[i]) {
+            for(j in d.features[i]) {
                 switch(j) {
-                    case "n": attr.name = d.f[i][j]; break;
-                    case "d": attr.description = d.f[i][j]; break;
-                    case "c": attr.color = d.f[i][j]; break;
+                    case "n": attr.name = d.features[i][j]; break;
+                    case "d": attr.description = d.features[i][j]; break;
+                    case "c": attr.color = d.features[i][j]; break;
                     case "g":
-                        ls = d.f[i][j].split(';');
+                        ls = d.features[i][j].split(';');
                         if(ls.length > 1) {
                             geometry = [];
                             for(h in ls) { geometry.push(this.base36linestring(x,y,p,ls[h])); }

@@ -21,24 +21,24 @@ $kml = $xml->XMLin($ARGV[1], ForceArray => 1);
 $json{x} = 180;
 $json{y} = 90;
 $json{precision} = int($precision);
-@{$json{f}} = ();
+@{$json{features}} = ();
 $c = 0;
 
 foreach $placemark (@{$kml->{'Document'}[0]->{'Placemark'}}) {
-  push @{$json{f}}, {};
+  push @{$json{features}}, {};
   foreach $k (keys %{$placemark}) {
     if($k eq 'MultiGeometry') {
-      @{$json{f}[$c]{g}} = ();
+      @{$json{features}[$c]{g}} = ();
       foreach $linestr (@{$placemark->{'MultiGeometry'}[0]->{'LineString'}}) {
         @mla = analyze_linestr($linestr->{'coordinates'}[0]);
-        push @{$json{f}[$c]{g}}, dclone(\@mla);
+        push @{$json{features}[$c]{g}}, dclone(\@mla);
       }
     } elsif($k eq 'LineString') {
-      @{$json{f}[$c]{g}} = ();
+      @{$json{features}[$c]{g}} = ();
       @mla = analyze_linestr($placemark->{'LineString'}[0]->{'coordinates'}[0]);
-      push @{$json{f}[$c]{g}},  dclone(\@mla);
+      push @{$json{features}[$c]{g}},  dclone(\@mla);
     } else {
-      $json{f}[$c]{substr($k, 0, 1)} = $placemark->{$k}[0];
+      $json{features}[$c]{substr($k, 0, 1)} = $placemark->{$k}[0];
     }
   }
   $c++;
@@ -52,7 +52,7 @@ $json{x} = round($json{x}, $json{precision});
 $json{y} = round($json{y}, $json{precision});
 
 $i = 0;
-foreach $feature (@{$json{f}}) {
+foreach $feature (@{$json{features}}) {
     $geometry = '';
     foreach $linestring (@{$feature->{g}}) {
         $ls = '';
@@ -65,7 +65,7 @@ foreach $feature (@{$json{f}}) {
         }
         $geometry .= $ls;
     }
-    $json{f}[$i]{g} = $geometry;
+    $json{features}[$i]{g} = $geometry;
     $i++;
 }
 
