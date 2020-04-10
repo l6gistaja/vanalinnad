@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>26.33410071327218,59.33662090389305 26.33410071327218,59.37673593580739 26.41181899669478,59.37673593580739 26.41181899669478,59.33662090389305 26.33410071327218,59.33662090389305</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>1244 74</description><Point><coordinates>26.342559873979322,59.36279118309969</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>942 6717</description><Point><coordinates>26.37112003556995,59.3399351504784</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>3579 4031</description><Point><coordinates>26.376026250744708,59.35517057709924</coordinates></Point></Placemark>
-<Placemark id="gcp.4"><name>#4</name><description>3423 2543</description><Point><coordinates>26.367957134857416,59.35979537267559</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1944"><name>1944</name><LineString><coordinates>26.33410071327218,59.33662090389305 26.33410071327218,59.37673593580739 26.41181899669478,59.37673593580739 26.41181899669478,59.33662090389305 26.33410071327218,59.33662090389305</coordinates></LineString></Placemark>
+<Placemark id="gcp1944.1"><name>1944 #1</name><description>1244 74</description><Point><coordinates>26.342559873979322,59.36279118309969</coordinates></Point></Placemark>
+<Placemark id="gcp1944.2"><name>1944 #2</name><description>942 6717</description><Point><coordinates>26.37112003556995,59.3399351504784</coordinates></Point></Placemark>
+<Placemark id="gcp1944.3"><name>1944 #3</name><description>3579 4031</description><Point><coordinates>26.376026250744708,59.35517057709924</coordinates></Point></Placemark>
+<Placemark id="gcp1944.4"><name>1944 #4</name><description>3423 2543</description><Point><coordinates>26.367957134857416,59.35979537267559</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1944W"><name>1944W</name><LineString><coordinates>26.32371200191494,59.33302792585732 26.32371200191494,59.38635795108742 26.42091410764612,59.38635795108742 26.42091410764612,59.33302792585732 26.32371200191494,59.33302792585732</coordinates></LineString></Placemark>
+<Placemark id="gcp1944W.1"><name>1944W #1</name><description>1827 238</description><Point><coordinates>26.40940793634205,59.381722378592784</coordinates></Point></Placemark>
+<Placemark id="gcp1944W.2"><name>1944W #2</name><description>651 619</description><Point><coordinates>26.319610821105016,59.36825840638322</coordinates></Point></Placemark>
+<Placemark id="gcp1944W.3"><name>1944W #3</name><description>1181 1488</description><Point><coordinates>26.36029456744231,59.336384466992094</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>26.32371200191494,59.33302792585732,26.42091410764612,59.38635795108742</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>1944W,1944</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Rakvere/composed/1944/</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>

@@ -5,6 +5,7 @@
 <link></link>
 <language></language>
 <copyright>0</copyright>
+
 <item>
 <title>Wesenberg</title>
 <author>Stabsbildabteilung Lfl. Kdo. 1 b. F.A.G.1</author>
@@ -15,5 +16,17 @@
 <pubDate>Sat, 01 Jan 1944 00:00:00 +0000</pubDate>
 <legends></legends>
 </item>
+
+<item>
+<title>Wesenberg</title>
+<author>Heer. Generalstab. Abteilung für Kriegskarten- und Vermessungswesen</author>
+<description></description>
+<guid>ISBN=9789949090518</guid>
+<link>https://www.digar.ee/viewer/et/nlib-digar:408669</link>
+<pubDate>Sat, 01 Jan 1944 00:00:00 +0000</pubDate>
+<legends></legends>
+<anchor>1944W</anchor>
+</item>
+
 </channel>
 </rss>
