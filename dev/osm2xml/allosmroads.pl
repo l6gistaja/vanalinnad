@@ -13,7 +13,7 @@ foreach my $site (@sites) {
     $layers = $xml->XMLin($mainconf->{dirvector}.$mainconf->{dirplaces}.$site.'/'.$mainconf->{filelayers});
     push(@commands, 'echo');
     push(@commands, 'echo "#################################################### ROADS '.$site.'"');
-	push(@commands, './dev/osm2xml/osmroads.pl '.$site.' .00001 '.(exists($layers->{xtra}->{osmparams}) ? $layers->{xtra}->{osmparams} : ''));
+	push(@commands, './dev/osm2xml/osmroads.pl '.$site.' 5 '.(exists($layers->{xtra}->{osmparams}) ? $layers->{xtra}->{osmparams} : ''));
 }
 
 foreach my $command (@commands) {

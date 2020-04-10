@@ -45,10 +45,10 @@
   <layer bounds="24.73450444156960,59.42720570235137,24.75377474919629,59.44379715358760" type="tms" year="1675" />
   <layer bounds="24.72905752609735,59.42590773723730,24.76895696043184,59.44857425462865" type="tms" year="1634" />
   <layer name="⚓ Balt" file="baltic_mini.json" format="VLGJ" hide="1" maxres="10" style="multiColor" type="custom" year="Baltic_Sea" />
-  <layer name="⑤ 1" file="roads1min.json" format="VLGJ" levels="0,1" maxres="10" type="roads" />
-  <layer name="⑤ 2" file="roads2min.json" format="VLGJ" levels="2" maxres="12" type="roads" />
-  <layer name="⑤ 3" file="roads3min.json" format="VLGJ" levels="3" maxres="14" type="roads" />
-  <layer name="⑤ 4" file="roads4min.json" format="VLGJ" levels="4" maxres="15" type="roads" />
+  <layer name="⛜ 1" file="roads1min.json" format="VLGJ" levels="0,1" maxres="10" type="roads" />
+  <layer name="⛜ 2" file="roads2min.json" format="VLGJ" levels="2" maxres="12" type="roads" />
+  <layer name="⛜ 3" file="roads3min.json" format="VLGJ" levels="3" maxres="14" type="roads" />
+  <layer name="⛜ 4" file="roads4min.json" format="VLGJ" levels="4" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>10</minzoom>
   <roadbounds e="24.986866" s="59.334099" w="24.541477" />

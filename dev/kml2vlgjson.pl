@@ -12,7 +12,6 @@ use Storable qw(dclone);
 use JSON;
 use Math::Base36 'encode_base36';
 
-$precision = int($ARGV[0]);
 $xml = new XML::Simple;
 $kml = $xml->XMLin($ARGV[1], ForceArray => 1);
 #use Data::Dumper; print Dumper($kml);
@@ -20,7 +19,7 @@ $kml = $xml->XMLin($ARGV[1], ForceArray => 1);
 %json = {};
 $json{x} = 180;
 $json{y} = 90;
-$json{precision} = int($precision);
+$json{precision} = 0+int($ARGV[0]);
 @{$json{features}} = ();
 $c = 0;
 
@@ -33,9 +32,9 @@ foreach $placemark (@{$kml->{'Document'}[0]->{'Placemark'}}) {
         @mla = analyze_linestr($linestr->{'coordinates'}[0]);
         push @{$json{features}[$c]{g}}, dclone(\@mla);
       }
-    } elsif($k eq 'LineString') {
+    } elsif($k eq 'LineString' || $k eq 'Point') {
       @{$json{features}[$c]{g}} = ();
-      @mla = analyze_linestr($placemark->{'LineString'}[0]->{'coordinates'}[0]);
+      @mla = analyze_linestr($placemark->{$k}[0]->{'coordinates'}[0]);
       push @{$json{features}[$c]{g}},  dclone(\@mla);
     } else {
       $json{features}[$c]{substr($k, 0, 1)} = $placemark->{$k}[0];
@@ -44,7 +43,6 @@ foreach $placemark (@{$kml->{'Document'}[0]->{'Placemark'}}) {
   $c++;
 }
 
-foreach $key (keys %json) { if($key =~ /^HASH\(0x/) { delete $json{$key}; } } #TODO: smth leaks
 $prec_m = 10**$json{precision};
 $prec_x = round($json{x} * $prec_m, 0);
 $prec_y = round($json{y} * $prec_m, 0);
@@ -69,6 +67,10 @@ foreach $feature (@{$json{features}}) {
     $i++;
 }
 
+#TODO: smth leaks
+foreach $key (keys %json) { if($key =~ /^HASH\(0x/) { delete $json{$key}; } }
+$json{precision} = 0+int($json{precision});
+
 open(FILE, '>'.$ARGV[2]) or die "Can't open file '".$ARGV[2]."' for writing: $!\n";
 print FILE JSON->new->ascii(1)->encode(\%json);
 close (FILE);
@@ -80,7 +82,7 @@ sub analyze_linestr {
     $l = scalar @coords;
     for($i = 0; $i < $l; $i++) {
         $coords[$i] = 0 + $coords[$i];
-        if($i%2 == 0) {
+        if($i%2 == 0) { 
             if($json{x} > $coords[$i]) { $json{x} = $coords[$i]; }
         } else {
             if($json{y} > $coords[$i]) { $json{y} = $coords[$i]; }
