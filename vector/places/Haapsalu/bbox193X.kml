@@ -1,12 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>23.50172315313437,58.93222318215992 23.50172315313437,58.96642066693986 23.55757765469886,58.96642066693986 23.55757765469886,58.93222318215992 23.50172315313437,58.93222318215992</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>1094 2231</description><Point><coordinates>23.54657049224984,58.94385813025098</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>408 2455</description><Point><coordinates>23.536657047730017,58.937680776686676</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>951 1323</description><Point><coordinates>23.534275246125038,58.951484197099546</coordinates></Point></Placemark>
-<Placemark id="gcp.4"><name>#4</name><description>545 1338</description><Point><coordinates>23.526464653473873,58.949005080192684</coordinates></Point></Placemark>
-<Placemark id="gcp.5"><name>#5</name><description>614 800</description><Point><coordinates>23.521937084655708,58.95462710703159</coordinates></Point></Placemark>
+
+<Placemark id="bbox.193X"><name>193X</name><LineString><coordinates>23.50172315313306,58.93222284227709 23.50172315313306,58.96642066694518 23.55757021481390,58.96642066694518 23.55757021481390,58.93222284227709 23.50172315313306,58.93222284227709</coordinates></LineString></Placemark>
+<Placemark id="gcp193X.1"><name>193X #1</name><description>1094 2231</description><Point><coordinates>23.54657049224984,58.94385813025098</coordinates></Point></Placemark>
+<Placemark id="gcp193X.2"><name>193X #2</name><description>408 2455</description><Point><coordinates>23.536657047730017,58.937680776686676</coordinates></Point></Placemark>
+<Placemark id="gcp193X.3"><name>193X #3</name><description>951 1323</description><Point><coordinates>23.534275246125038,58.951484197099546</coordinates></Point></Placemark>
+<Placemark id="gcp193X.4"><name>193X #4</name><description>545 1338</description><Point><coordinates>23.526464653473873,58.949005080192684</coordinates></Point></Placemark>
+<Placemark id="gcp193X.5"><name>193X #5</name><description>614 800</description><Point><coordinates>23.521937084655708,58.95462710703159</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1936"><name>1936</name><LineString><coordinates>23.46527478694677,58.90029093705538 23.46527478694677,58.95307943472369 23.58725227895772,58.95307943472369 23.58725227895772,58.90029093705538 23.46527478694677,58.90029093705538</coordinates></LineString></Placemark>
+<Placemark id="gcp1936.1"><name>1936 #1</name><description>3097 736</description><Point><coordinates>23.589319828034167,58.93627622915068</coordinates></Point></Placemark>
+<Placemark id="gcp1936.2"><name>1936 #2</name><description>420 1252</description><Point><coordinates>23.470508491991474,58.92429996774109</coordinates></Point></Placemark>
+<Placemark id="gcp1936.3"><name>1936 #3</name><description>2478 1936</description><Point><coordinates>23.561617767809544,58.908829135422295</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1936,193X</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Haapsalu/composed/193X/</value></Data>
+<Data name="bbox"><value>23.46527478694677,58.90029093705538,23.58725227895772,58.96642066694518</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>

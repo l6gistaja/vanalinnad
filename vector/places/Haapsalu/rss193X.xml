@@ -5,6 +5,7 @@
 <link></link>
 <language></language>
 <copyright>0</copyright>
+
 <item>
 <title>Haapsalu</title>
 <author>Eesti Entsüklopeedia</author>
@@ -19,5 +20,16 @@
 <pubDate>Mon, 01 Jan 1932-1937 00:00:00 +0000</pubDate>
 <legends>legend193X.gif</legends>
 </item>
+
+<item>
+<title>Haapsalu : Läänemaa 1936 a.</title>
+<author>A. Tibar, Eesti Kaitsevägi, Topo-hüdrograafia osakond</author>
+<description></description>
+<guid>ISBN=978-9949-609-35-2</guid>
+<link>http://www.digar.ee/viewer/et/nlib-digar:301245</link>
+<pubDate>Wed, 01 Jan 1936 00:00:00 +0000</pubDate>
+<legends></legends>
+</item>
+
 </channel>
 </rss>
