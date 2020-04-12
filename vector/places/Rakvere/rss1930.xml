@@ -5,6 +5,7 @@
 <link></link>
 <language></language>
 <copyright>0</copyright>
+
 <item>
 <title>Wiru maakonnalinna Rakvere plaan</title>
 <author></author>
@@ -13,7 +14,18 @@
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=106606</link>
 <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001646/erat-0-6_003_0001646_00001_k.tif&amp;wid=1748&amp;hei=2480&amp;qlt=100&amp;cvt=jpeg</link>
 <pubDate>Wed, 01 Jan 1930 00:00:00 +0000</pubDate>
-<legends>legend1930.jpg</legends>
+<legends>legend1930.gif</legends>
 </item>
+
+<item>
+<title>Rakvere : Virumaa 1935 a.</title>
+<author>Maks Tenner, Eesti Kaitsevägi, Topo-hüdrograafia osakond</author>
+<description></description>
+<guid>isbn=978-9949-609-24-6</guid>
+<link>http://www.digar.ee/viewer/et/nlib-digar:301200</link>
+<pubDate>Tue, 01 Jan 1935 00:00:00 +0000</pubDate>
+<legends></legends>
+</item>
+
 </channel>
 </rss>
