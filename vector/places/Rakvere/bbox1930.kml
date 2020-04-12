@@ -13,13 +13,13 @@
 <Placemark id="gcp1930.3"><name>1930 #3</name><description>2766 1412</description><Point><coordinates>26.376165419575713,59.35694463407683</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Rakvere/composed/1930/</value></Data>
-<Data name="montage"><value>yes</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Rakvere/composed/1930/</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="montage"><value>yes</value></Data>
 <Data name="maps"><value>1935,1930</value></Data>
 <Data name="bbox"><value>26.32361690870248,59.32039744505447,26.42119361239931,59.38605906579317</value></Data>
-<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
 
 </ExtendedData>
 
