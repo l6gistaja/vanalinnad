@@ -76,10 +76,10 @@ if(!exists $opts{'r'}) {
     sheller($cmd);
     
     $deltaX = exists $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaX'}
-      ? 0 + $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaX'}
+      ? 0 + eval($gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaX'})
       : 0 ;
     $deltaY = exists $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaY'}
-      ? 0 + $gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaY'}
+      ? 0 + eval($gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'deltaY'})
       : 0 ;
     $zoom = exists $gdal->{'translate'}[$c{'y'}]{'zoom'}
       ? 0 + $gdal->{'translate'}[$c{'y'}]{'zoom'}
