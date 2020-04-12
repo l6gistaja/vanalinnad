@@ -20,7 +20,7 @@
   <layer bounds="25.53183904900284,58.32112209656304,25.65035228469729,58.39293590781561" type="tms" year="1966" />
   <layer bounds="25.56025024904092,58.33309107551738,25.62327429313877,58.37500466467885" type="tms" year="1950" />
   <layer bounds="25.56681767042937,58.35323958141758,25.62500716225430,58.37818236331402" type="tms" year="1940" />
-  <layer bounds="25.56802780968995,58.35158628791991,25.62235588670906,58.37820390757960" type="tms" year="193X" />
+  <layer bounds="25.53318783158082,58.32145774099550,25.64991529249596,58.39574116453769" type="tms" year="193X" />
   <layer bounds="25.56521714915300,58.33840764572473,25.63409855388887,58.38430757356591" type="tms" year="1926" />
   <layer bounds="25.55043224341209,58.34314043279650,25.63774583343526,58.39053060546895" type="tms" year="1922" />
   <layer bounds="25.57332723430596,58.35687305901235,25.61040853601926,58.36843809924131" type="tms" year="1909" />
@@ -32,8 +32,8 @@
   <layer bounds="25.55290017455361,58.34035809284487,25.63709231102724,58.39260806477015" type="tms" year="1744" />
   <layer bounds="25.53498787385458,58.32415213926531,25.64894407661444,58.39216437566780" type="tms" year="1683" />
   <layer bounds="25.59093344103228,58.35736420898661,25.60394822495338,58.36576765752781" type="tms" year="1656" />
-  <layer name="⛜ 1" file="roads3min.json" levels="0,1,2,3" maxres="12" type="roads" format="VLGJ"/>
-  <layer name="⛜ 2" file="roads4min.json" levels="4" maxres="15" type="roads" format="VLGJ"/>
+  <layer name="⛜ 1" file="roads3min.json" format="VLGJ" levels="0,1,2,3" maxres="12" type="roads" />
+  <layer name="⛜ 2" file="roads4min.json" format="VLGJ" levels="4" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>12</minzoom>
 </vanalinnadlayers>
