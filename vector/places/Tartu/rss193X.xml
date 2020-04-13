@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 
 <item>
 <title>Tartu</title>
 <author>Eesti Entsüklopeedia</author>
-<description></description>
-<guid></guid>
 <link>http://cl.ly/1Y1A2B0i2u3I3L052x0S/o</link>
 <!--
 <link>https://vanadasjad.wordpress.com/2012/02/14/asulate-plaanid-1930-aastatest-2/</link>
@@ -25,22 +19,18 @@
 <item>
 <title>XIV-38 [Ilmatsalu - Tartu] : [Tartumaa]</title>
 <author>Eesti Sõjavägi, Topograafia jaoskond</author>
-<description></description>
 <guid>ESTER=b27462456;isbn=9789949611225</guid>
 <link>https://www.digar.ee/arhiiv/et/pildimaterjal/122127</link>
 <pubDate>Tue, 01 Jan 1935 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1935.Ilmatsalu</anchor>
 </item>
 
 <item>
 <title>XIV-39 [Tartu-Luunja] : [Tartumaa]</title>
 <author>A. Villard; Eesti Sõjavägi, Topograafia jaoskond</author>
-<description></description>
 <guid>ESTER=b27471688</guid>
 <link>https://www.digar.ee/viewer/et/nlib-digar:185116</link>
 <pubDate>Tue, 01 Jan 1935 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1935.Luunja</anchor>
 </item>
 

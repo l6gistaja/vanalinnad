@@ -3,7 +3,6 @@
 <channel>
 <title>DIGAR</title>
 <language>de</language>
-<copyright>0</copyright>
 
 <item>
 <title>Reval nebst Umgebung : nach einer Charte des schwed. Fortifications-Lieutenants Samuel Waxelberg von Jahre 1688</title>
@@ -21,7 +20,6 @@
 
 <item>
 <title>Wiems GenerL: GouverTZ: i Estland Tafelgodz</title>
-<author></author>
 <guid>ra.ee=EAA.1.2.C-II-35 leht 1</guid>
 <pubDate>Tue, 01 Jan 1689 00:00:00 +0000</pubDate>
 <legends>legend1689.Viimsi_a.jpg,legend1689.Viimsi_b.jpg</legends>
@@ -55,7 +53,6 @@
 <author>Carl E. Enagrius, Erik Renter, Schellbach</author>
 <guid>ra.ee=TLA.149.4.392 leht 1</guid>
 <pubDate>Wed, 01 Jan 1794 00:00:00 +0000</pubDate>
-<legends></legends>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=71665</link>
 <link>http://www.tarkvarastuudio.ee/tallinn_linnaarhiiv/149-4-392.htm</link>
 <anchor>1693.Iru</anchor>
@@ -66,17 +63,14 @@
 <author>Johann Holmberg</author>
 <guid>ra.ee=EAA.1.2.C-IV-3 leht 1</guid>
 <pubDate>Tue, 01 Jan 1688 00:00:00 +0000</pubDate>
-<legends></legends>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=88</link>
 <anchor>1688.Tiskre</anchor>
 </item>
 
 <item>
 <title>Karta över Tallinn, Naissaare ön och Viimsi halvön</title>
-<author></author>
 <guid>ra.ee=EAA.1.2.C-III-2 leht 1</guid>
 <pubDate>Tue, 01 Jan 1689 00:00:00 +0000</pubDate>
-<legends></legends>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=29415</link>
 <anchor>1689</anchor>
 </item>

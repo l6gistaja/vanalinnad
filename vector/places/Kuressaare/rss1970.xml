@@ -1,96 +1,73 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 
 <item>
 <title>Kingissepa (Kuressaare) linna skeem</title>
 <author>H. Sirel, A. Kukkur</author>
-<description></description>
 <guid>ra.ee=EAA.5238.1.676 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=66944</link>
 <pubDate>Thu, 01 Jan 1970 00:00:00 +0000</pubDate>
-<legends></legends>
 <componentsregexp>^1970\.k\d$</componentsregexp>
 </item>
 
 <item>
 <title>(Kuressaare õhuvõte Maaameti fotolaost)</title>
-<author></author>
-<description></description>
 <guid>ID=Л-60-7/VI-75-1295</guid>
 <link>https://fotoladu.maaamet.ee/arhiiv=37239</link>
 <pubDate>Sat, 7 Jun 1975 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1975_1295</anchor>
 </item>
 
 <item>
 <title>(Kuressaare õhuvõte Maaameti fotolaost)</title>
-<author></author>
-<description></description>
 <guid>ID=Л-60-7/VI-75-1329</guid>
 <link>https://fotoladu.maaamet.ee/arhiiv=37242</link>
 <pubDate>Sat, 7 Jun 1975 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1975_1329</anchor>
 </item>
 
 <item>
 <title>(Kuressaare õhuvõte Maaameti fotolaost)</title>
-<author></author>
-<description></description>
 <guid>ID=Л-60-7/VI-75-1331</guid>
 <link>https://fotoladu.maaamet.ee/arhiiv=37244</link>
 <pubDate>Sat, 7 Jun 1975 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1975_1331</anchor>
 </item>
 
 <item>
 <title>(Kuressaare õhuvõte Maaameti fotolaost)</title>
 <author>Всесоюзный Институт Селскохозяинственных Аерофотогеодезических Изысканий МСХ СССР</author>
-<description></description>
 <guid>ID=С-55-18-Б-б-4 (2883)</guid>
 <link>https://fotoladu.maaamet.ee/arhiiv=198872</link>
 <pubDate>Wed, 1 Jan 1969 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1969_2883</anchor>
 </item>
 
 <item>
 <title>(Kuressaare õhuvõte Maaameti fotolaost)</title>
 <author>Всесоюзный Институт Селскохозяинственных Аерофотогеодезических Изысканий МСХ СССР</author>
-<description></description>
 <guid>ID=С-55-19-А-а-3 (2884)</guid>
 <link>https://fotoladu.maaamet.ee/arhiiv=198870</link>
 <pubDate>Wed, 1 Jan 1969 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1969_2884</anchor>
 </item>
 
 <item>
 <title>(Kuressaare õhuvõte Maaameti fotolaost)</title>
 <author>Всесоюзный Институт Селскохозяинственных Аерофотогеодезических Изысканий МСХ СССР</author>
-<description></description>
 <guid>ID=С-55-18-Б-г-2 (2983)</guid>
 <link>https://fotoladu.maaamet.ee/arhiiv=198880</link>
 <pubDate>Wed, 1 Jan 1969 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1969_2983</anchor>
 </item>
 
 <item>
 <title>Kingissepa linn</title>
 <author>A. Rahu</author>
-<description></description>
 <guid>ra.ee=SAMA.451.1.339 leht 18</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=306581</link>
 <pubDate>Wed, 1 Jan 1975 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1975.Roomassaare</anchor>
 </item>
 

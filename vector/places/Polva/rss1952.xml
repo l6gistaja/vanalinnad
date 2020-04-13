@@ -1,30 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
 <language>et</language>
-<copyright>0</copyright>
 
 <item>
 <title>Põlva rajoon, rajooni keskus.</title>
 <author>E. Alamaa</author>
-<description></description>
 <guid>ra.ee=EAA.2072.9.805 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=24638</link>
 <pubDate>Tue, 01 Jan 1952 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1952.N</anchor>
 </item>
 
 <item>
 <title>Põlva rajoon, rajooni keskus.</title>
 <author>E. Alamaa</author>
-<description></description>
 <guid>ra.ee=EAA.2072.9.805 leht 2</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=215682</link>
 <pubDate>Tue, 01 Jan 1952 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1952.S</anchor>
 </item>
 

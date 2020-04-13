@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 
 <item>
 <title>Charte von der Kreisstadt Pernau</title>
@@ -14,17 +10,13 @@
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=26005</link>
 <link>http://www.ester.ee/record=b2923516*est</link>
 <pubDate>Wed, 01 Jan 1851 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 <item>
 <title>Charte von der Neuen Eintheilung des Dorfes Bremerseite.</title>
-<author></author>
-<description></description>
 <guid>ra.ee=EAA.3724.5.1589 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=19200</link>
 <pubDate>Wed, 01 Jan 1851 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1851.N</anchor>
 </item>
 

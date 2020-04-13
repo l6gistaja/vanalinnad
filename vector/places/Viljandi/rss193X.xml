@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 
 <item>
 <title>Viljandi</title>
 <author>Eesti Entsüklopeedia</author>
-<description></description>
-<guid></guid>
 <link>http://cl.ly/1l3W1n0q0d1P0y2T1O1i/o</link>
 <!--
 <link>https://vanadasjad.wordpress.com/2012/02/14/asulate-plaanid-1930-aastatest-2/</link>
@@ -25,11 +19,9 @@
 <item>
 <title>Viljandi : Viljandi- ja Pärnumaa 1935 a.</title>
 <author>Juhan Kuutma, Karl Kriisk, Eesti Kaitsevägi, Topo-hüdrograafia osakond</author>
-<description></description>
 <guid>isbn=978-9949-609-52-9</guid>
 <link>http://www.digar.ee/viewer/et/nlib-digar:301266</link>
 <pubDate>Tue, 01 Jan 1935 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 </channel>

@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 <item>
 <title>Grvndtriss der Festvng Arensborch</title>
 <author>Georg v. Schwengeln</author>
@@ -14,7 +10,6 @@
 <link>http://www.genealoogia.ee/saaremaa/Kuressaare%20piiskopilinnus%201641.pdf</link>
 <link>http://www.genealoogia.ee/saaremaa/kuressaare%20piiskopilinnus%201641.jpg</link>
 <pubDate>Tue, 01 Jan 1641 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 </channel>
 </rss>

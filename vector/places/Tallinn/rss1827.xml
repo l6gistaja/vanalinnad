@@ -3,12 +3,10 @@
 <channel>
 <title>Rahvusarhiiv</title>
 <language>ru,de</language>
-<copyright>0</copyright>
 
 <item>
 <title>План гласиса Ревельской крепости и части Ревельских фортштатов, с названием экспланадных линий, по новому высочайше утвержденному проэкту и всех между оными линиями и гласисом крепости лежащих строений, садов, огородов, сенокосов и пустопорожних мест.</title>
 <author>Zeidisch</author>
-<description></description>
 <guid>ra.ee=EAA.2072.2.5</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=5306</link>
 <!-- <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/002/0000005/eaa2072_002_0000005_00000_k.tif&amp;wid=1748&amp;hei=2480&amp;qlt=100&amp;cvt=jpeg</link> -->
@@ -19,7 +17,6 @@
 <item>
 <title>Charte von dem unweit Reval belegenen Kaiserlichen Lust-Schlosse Catharinenthal mit den zunächst gelegenen Plätzen.</title>
 <author>Carl Faehlmann</author>
-<description></description>
 <guid>ra.ee=EAA.2072.2.3</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=5308</link>
 <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/002/0000003/eaa2072_002_0000003_00000_k.tif&amp;wid=2480&amp;hei=1748&amp;qlt=100&amp;cvt=jpeg</link>
@@ -32,7 +29,6 @@
 <author>C. Jacoby</author>
 <guid>ra.ee=TLA.149.4.246 leht 1</guid>
 <pubDate>Sat, 01 Jan 1820 00:00:00 +0000</pubDate>
-<legends></legends>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=71060</link>
 <link>http://www.tarkvarastuudio.ee/tallinn_linnaarhiiv/149-4-246.htm</link>
 <anchor>1820.Kopli</anchor>
@@ -40,10 +36,8 @@
 
 <item>
 <title>План Императорского Екатеринтальского дворца.</title>
-<author></author>
 <guid>ra.ee=TLA.149.5.2020 leht 1</guid>
 <pubDate>Thu, 01 Jan 1829 00:00:00 +0000</pubDate>
-<legends></legends>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=74544</link>
 <link>http://www.tarkvarastuudio.ee/tallinn_linnaarhiiv/149-5-2020.htm</link>
 <anchor>1829.Kadriorg</anchor>
@@ -52,9 +46,7 @@
 <item>
 <title>Ревель</title>
 <author>Атлас крепостей Российской империи</author>
-<guid></guid>
 <pubDate>Fri, 01 Jan 1830 00:00:00 +0000</pubDate>
-<legends></legends>
 <link>http://istmat.info/node/45273</link>
 <link>http://istmat.info/files/uploads/45273/atlas_krepostey_rossiyskoy_imperii_ok_1830_chast_ii.pdf</link>
 </item>

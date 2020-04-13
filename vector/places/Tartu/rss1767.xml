@@ -1,18 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 <item>
 <title>Plan von der Stadt Dorpat 1767</title>
-<author></author>
-<description></description>
 <guid>ra.ee=EAA.2623.1.2049 leht 49</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=19163</link>
 <pubDate>Sun, 06 Jul 1845 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1767</anchor>
 <componentsregexp>^1767\.k\d$</componentsregexp>
 </item>
@@ -20,11 +13,9 @@
 <item>
 <title>Plan von der Stadt Dorpat nebst Umgebung</title>
 <author>Johann Gottschalck Remmers</author>
-<description></description>
 <guid>ra.ee=EAA.2623.1.2049 leht 39</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=16417</link>
 <pubDate>Mon, 01 Jan 1759 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 </channel>

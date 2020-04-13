@@ -3,7 +3,6 @@
 <channel>
 <title>Rahvusarhiiv</title>
 <language>ru</language>
-<copyright>0</copyright>
 
 <item>
 <title>Частъ генералънаго плана Ревеля, с показанием расположения кварталов, также крепостных верок с разведенными на них садами, отданных в городское ведомство.</title>
@@ -11,7 +10,6 @@
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=5305</link>
 <!-- <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/002/0000008/eaa2072_002_0000008_00000_k.tif&amp;wid=2480&amp;hei=1748&amp;qlt=100&amp;cvt=jpeg</link> -->
 <pubDate>Sat, 01 Jan 1842 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 <item>
@@ -70,7 +68,6 @@
 
 <item>
 <title>Karte von Reval</title>
-<author></author>
 <guid>ra.ee=ERA.T-6.3.1743 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=108340</link>
 <pubDate>Tue, 01 Jan 1850 00:00:00 +0000</pubDate>

@@ -3,7 +3,6 @@
 <channel>
 <title>DIGAR</title>
 <language>et</language>
-<copyright>0</copyright>
 <item>
 <title>Stadtplan von Narwa</title>
 <author>Generalstab der Luftwaffe</author>
@@ -11,7 +10,6 @@
 <!-- <link>http://www.digar.ee/arhiiv/et/pildimaterjal/82159</link> -->
 <guid>isbn=9789949539680;nlib.ee=ARKT-02747:3</guid>
 <pubDate>Mon, 01 Jan 1940 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 </channel>
 </rss>

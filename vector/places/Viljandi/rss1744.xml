@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 
 <item>
 <title>Geometrische Charte von der Stadt Fellin nebst denen dazu gehörigen Bürger Landereyen im Pernauschen Craysse belegem.</title>
 <author>C. G. Leutner, Jonas Böök</author>
-<description></description>
 <guid>ra.ee=EAA.1002.1.1812</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=1660</link>
 <!-- <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa1002/001/0001812/eaa1002_001_0001812_00000_k.tif&amp;wid=2480&amp;hei=1748&amp;qlt=100&amp;cvt=jpeg</link> -->
@@ -20,11 +15,9 @@
 <item>
 <title>Geometrisch Charte von dem Schloss Fellin nebst denen dazu gehörigen Äckern und Ländereyen im Pernauschen Crayse belegen.</title>
 <author>Arfried Grotte, C. G. Leutner</author>
-<description></description>
 <guid>ra.ee=EAA.1002.1.1815 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=1662</link>
 <pubDate>Tue, 01 Jan 1745 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 </channel>

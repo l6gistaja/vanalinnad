@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 <item>
 <title>Plan der Stadt Pernau</title>
 <author>H. von Wollfeldt, R. Jacoby Verlag</author>
@@ -12,7 +8,6 @@
 <guid>isbn=9789949512096</guid>
 <link>http://www.ester.ee/record=b2923516*est</link>
 <pubDate>Tue, 01 Jan 1889 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 </channel>
 </rss>

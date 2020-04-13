@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 
 <item>
 <title>4-37 Gruppe Reval. [Karte der 8. Armee 1 : 25 000]</title>
 <author>Kartogr. Abteilung der Königl. Preuß. Landesaufnahme</author>
-<description></description>
 <guid>ra.ee=ERA.T-6.3.279 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=101778</link>
 <pubDate>Tue, 01 Jan 1918 00:00:00 +0000</pubDate>
@@ -23,7 +18,6 @@
 <guid>ra.ee=ERA.T-6.3.1658 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=104840</link>
 <pubDate>Sun, 01 Jan 1922 00:00:00 +0000</pubDate>
-<legends></legends>
 <componentsregexp>^1922\.k\d$</componentsregexp>
 </item>
 

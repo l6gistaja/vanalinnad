@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
 <language>de</language>
-<copyright>0</copyright>
 <item>
 <title>Pharus-plan Pernau</title>
 <author>Bruno Ilves</author>
-<description></description>
 <guid>isbn=9789949539581;nlib.ee= ARKT-01282</guid>
 <link>http://www.digar.ee/viewer/et/nlib-digar:46368</link>
 <!-- <link>http://www.digar.ee/arhiiv/et/pildimaterjal/40214</link> -->
 <link>http://www.ester.ee/record=b1731994~S1*est</link>
 <pubDate>Mon, 01 Jan 1912 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 </channel>
 </rss>

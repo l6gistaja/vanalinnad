@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
 <language>et</language>
-<copyright>0</copyright>
 
 <item>
 <title>Pärnu linna plaan</title>
-<author></author>
-<description></description>
 <guid>isbn=9789949539604;nlib.ee=ARKT-01733</guid>
 <link>http://www.digar.ee/viewer/et/nlib-digar:43992</link>
 <!-- <link>http://www.digar.ee/arhiiv/et/pildimaterjal/38053</link> -->
@@ -22,11 +17,9 @@
 <item>
 <title>Pärnu : Pärnumaa 1936 a.</title>
 <author>Ernst Zobel, Härm Sigur, Eesti Kaitsevägi, Topo-hüdrograafia osakond</author>
-<description></description>
 <guid>isbn=978-9949-609-50-5;ESTER=b16088864</guid>
 <link>https://www.digar.ee/viewer/et/nlib-digar:301264</link>
 <pubDate>Wed, 01 Jan 1936 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 </channel>

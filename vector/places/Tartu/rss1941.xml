@@ -1,25 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
 <language>de</language>
-<copyright>0</copyright>
 
 <item>
 <title>Tartu : Tartumaa 1937.a.</title>
 <author>Priidik Vellema, Eesti Kaitsevägi, Topo-hüdrograafia osakond</author>
-<description></description>
 <guid>isbn=978-9949-609-55-0</guid>
 <link>http://www.digar.ee/viewer/et/nlib-digar:301403</link>
 <pubDate>Fri, 01 Jan 1937 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 <item>
 <title>Stadtplan von Dorpat (Tartu)</title>
 <author>Generalstab der Luftwaffe</author>
-<description></description>
 <guid>isbn=9789949539628;nlib.ee=ARKT-02747:2</guid>
 <link>http://www.digar.ee/viewer/et/nlib-digar:112756</link>
 <pubDate>Tue, 01 Jan 1941 00:00:00 +0000</pubDate>
@@ -29,11 +23,9 @@
 <item>
 <title>Dorpat</title>
 <author>Heer Generalstab Abteilung für Kriegskarten- und Vermessungswesen</author>
-<description></description>
 <guid>ESTER=b26198812;isbn=978-9949-598-08-3</guid>
 <link>http://www.digar.ee/viewer/et/nlib-digar:290998</link>
 <pubDate>Sat, 01 Jan 1944 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 </channel>

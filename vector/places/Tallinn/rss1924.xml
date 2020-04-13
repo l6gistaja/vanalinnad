@@ -3,7 +3,6 @@
 <channel>
 <title>DIGAR</title>
 <language>et</language>
-<copyright>0</copyright>
 
 <item>
 <title>II-29 Viimsi</title>
@@ -28,7 +27,6 @@
 <item>
 <title>Plaan nr. 1. Lisa sõjaministri ettepaneku 09.08.1924 nr. 10251/4791 juurde Vabariigi Valitsusele</title>
 <author>Sõjaväe Topograafia Osakond</author>
-<description></description>
 <guid>ra.ee=ERA.T-6.3.1109 leht 1</guid>
 <pubDate>Wed, 01 Oct 1924 00:00:00 +0000</pubDate>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=100866</link>
@@ -48,7 +46,6 @@
 <item>
 <title>Nõmme</title>
 <author>Karl Puhvel</author>
-<description></description>
 <guid>isbn=9789949539017;nlib.ee=KTA 5.095</guid>
 <pubDate>Fri, 01 Jan 1926 00:00:00 +0000</pubDate>
 <link>http://www.digar.ee/viewer/et/nlib-digar:113815</link>

@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 
 <item>
 <title>Transport Karte von Reval.</title>
 <author>Schmidt</author>
-<description></description>
 <guid>ra.ee=EAA.854.4.67 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=21121</link>
 <pubDate>Mon, 01 Jan 1872 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 <item>
 <title>General Karte von dem privaten Gute Wiems im Harrienschen Kreise und Jegelechtschen Kirchspiele</title>
 <author>J. Kuzmanov</author>
-<description></description>
 <guid>ra.ee=EAA.3724.4.350 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=9855</link>
 <pubDate>Fri, 01 Jan 1875 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1875.Viimsi</anchor>
 <componentsregexp>^1875\.Viimsi\.\d$</componentsregexp>
 </item>

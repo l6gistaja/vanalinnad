@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 <item>
 <title>Charte von der Stadt Fellin</title>
 <author>Lorenz Johann Bohm, Albert Stein</author>
-<description></description>
 <guid>ra.ee=EAA.1002.1.1826</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=1645</link>
 <!-- <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa1002/001/0001826/eaa1002_001_0001826_00000_k.tif&amp;wid=2480&amp;hei=1748&amp;qlt=100&amp;cvt=jpeg</link> -->
 <pubDate>Sun, 01 Jan 1832 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 </channel>
 </rss>

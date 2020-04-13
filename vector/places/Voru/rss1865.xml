@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 <item>
 <title>Plan von der Stadt Werro</title>
 <author>C. Anders, David Ellram</author>
-<description></description>
 <guid>ra.ee=EAA.308.6.433</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=17287</link>
 <!-- <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0308/006/0000433/eaa0308_006_0000433_00000_k.tif&amp;wid=1748&amp;hei=2480&amp;qlt=100&amp;cvt=jpeg</link> -->
 <pubDate>Sun, 01 Jan 1865 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 </channel>
 </rss>

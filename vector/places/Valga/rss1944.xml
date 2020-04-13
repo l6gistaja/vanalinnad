@@ -1,30 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 
 <item>
 <title>Walk</title>
 <author>Stabsbildabteilung Lfl. Kdo. 1</author>
-<description></description>
 <guid>ID=16598</guid>
 <link>ftp://anonymous:x@jccalvin.ddns.net/Target%20Dossiers/Target%20Russia/Target%20Dossiers%20By%20City/City%20Names%20V/Valka%20Latvia%20%20007.tif</link>
 <link>https://fotoladu.maaamet.ee/?basemap=digiaero&amp;minimap=19440921%20Valga&amp;zlevel=10,26.08087,57.78318&amp;fotoarhiiv&amp;overlay=tyhi</link>
 <pubDate>Thu, 21 Sep 1944 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 <item>
 <title>Valga linna plaan</title>
 <author>Johan Saar</author>
-<description></description>
 <guid>ra.ee=EAM.2.1.145 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=305577</link>
 <pubDate>Wed, 01 Jan 1941 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 </channel>

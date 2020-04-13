@@ -3,7 +3,6 @@
 <channel>
 <title>DIGAR</title>
 <language>et</language>
-<copyright>0</copyright>
 
 <item>
 <title>Tallinna plaan</title>
@@ -21,7 +20,6 @@
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=102002</link>
 <guid>ra.ee=ERA.T-6.3.237 leht 1</guid>
 <pubDate>Tue, 18 Jun 1918 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1918.Viimsi</anchor>
 </item>
 
@@ -31,7 +29,6 @@
 <link>http://www.digar.ee/viewer/et/nlib-digar:46335</link>
 <guid>isbn=9789949540396;nlib.ee=ARKtC 10.277</guid>
 <pubDate>Thu, 01 Jan 1920 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1920.Pirita</anchor>
 </item>
 
@@ -41,7 +38,6 @@
 <link>http://www.digar.ee/viewer/et/nlib-digar:44962</link>
 <guid>isbn=9789949540389;nlib.ee=ARKtC 10.275</guid>
 <pubDate>Wed, 01 Jan 1919 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1919.Kakumae</anchor>
 </item>
 
@@ -51,7 +47,6 @@
 <link>http://www.digar.ee/viewer/et/nlib-digar:44968</link>
 <guid>ESTER=b1608827x;isbn=9789949540402;nlib.ee=ARKT-01100</guid>
 <pubDate>Thu, 01 Jan 1920 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1920.Nomme</anchor>
 </item>
 

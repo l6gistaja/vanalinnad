@@ -1,39 +1,29 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 
 <item>
 <title>SU9132098</title>
 <author>Witte</author>
-<description></description>
 <guid>ID=11972</guid>
 <link>ftp://anonymous:x@jccalvin.ddns.net/Aerial%20Photographs/Aerial%20Miscellaneous/New/Tallin%2018-41.jpg</link>
 <pubDate>Fri, 01 Aug 1941 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 <item>
 <title>Reval</title>
 <author>Stabsbildabteilung LN. Kdo. 1</author>
-<description></description>
 <guid>ID=11974</guid>
 <link>ftp://anonymous:x@jccalvin.ddns.net/Aerial%20Photographs/Aerial%20Miscellaneous/New/Tallin%2023-9-44.jpg</link>
 <pubDate>Sat, 23 Sep 1944 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 <item>
 <title>Nömme</title>
 <author>Heer. Generalstab. Abteilung für Kriegskarten- und Vermessungswesen</author>
-<description></description>
 <guid>isbn=978-9949-090-86-0</guid>
 <link>http://www.digar.ee/viewer/et/nlib-digar:412482</link>
 <pubDate>Sat, 1 Jan 1944 00:00:00 +0000</pubDate>
-<legends></legends>
 <anchor>1944W</anchor>
 </item>
 

@@ -1,29 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 
 <item>
 <title>Plan der Kaiserl. Kreisstadt Dorpat</title>
 <author>Carl Ignatius, Otto Gustav Dreyer</author>
-<description></description>
 <guid>ra.ee=EAA.2623.1.2049 leht 83</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=16394</link>
 <pubDate>Tue, 01 Jan 1811 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 <item>
 <title>Geometrischen Charte von dem Rigischen Gouvernement und Dörptschen Kreise belegenen Dörptschen Stadts Guthe Jama.</title>
 <author>Conrad Martin Sengbusch</author>
-<description></description>
 <guid>ra.ee=EAA.2623.1.2049 leht 23</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=16390</link>
 <pubDate>Mon, 01 Jan 1810 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 </channel>

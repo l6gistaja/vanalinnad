@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 
 <item>
 <title>Paide linna katastri üldplaan. Plaan 4 lehel.</title>
 <author>Arnold Lilienthal, Jaan Kääparin</author>
-<description></description>
 <guid>ra.ee=ERA.T-3.2.6</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=100114</link>
 <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-3/002/0000006/erat-0-3_002_0000006_00001_k2.tif&amp;wid=2480&amp;hei=1748&amp;qlt=100&amp;cvt=jpeg</link>
@@ -22,17 +17,13 @@
 <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-3/002/0000006/erat-0-3_002_0000006_00003_k4.tif&amp;wid=2480&amp;hei=1748&amp;qlt=100&amp;cvt=jpeg</link>
 <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-3/002/0000006/erat-0-3_002_0000006_00003_k5.tif&amp;wid=2480&amp;hei=1748&amp;qlt=100&amp;cvt=jpeg</link>
 <pubDate>Sun, 01 Jan 1939 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 <item>
 <title>Eesti kaart 1:50000, 510 Paide, Järva- ja Viljandimaa</title>
-<author></author>
-<description></description>
 <guid>ra.ee=ERA.T-6.3.37 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=100315</link>
 <pubDate>Sat, 01 Jan 1938 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 </channel>

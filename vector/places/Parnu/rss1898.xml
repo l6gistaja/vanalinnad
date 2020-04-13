@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
 <language>de</language>
-<copyright>0</copyright>
 <item>
 <title>Plan der Stadt Pernau</title>
 <author>E. von Wolffeldt</author>
@@ -13,7 +10,6 @@
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=30527</link>
 <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2110/001/0004818/eaa2110_001_0004818_00001_k.tif&amp;wid=2480&amp;hei=1748&amp;qlt=100&amp;cvt=jpeg</link>
 <pubDate>Sat, 01 Jan 1898 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 </channel>
 </rss>

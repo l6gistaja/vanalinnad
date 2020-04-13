@@ -1,15 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 
 <item>
 <title>Tartu linna plaan = Plan de la ville de Tartu</title>
 <author>Tartu Linnavalitsus, H. Rumma</author>
-<description></description>
 <guid>ESTER=b16089960</guid>
 <link>http://www.digar.ee/viewer/et/nlib-digar:213272</link>
 <link>https://lh5.googleusercontent.com/-hAwMmHuBEyc/VB5_FzEzdHI/AAAAAAAATDY/jGInbiVGO_U/s1600/Tartu%25201927.jpg</link>
@@ -21,7 +16,6 @@
 <item>
 <title>14-38/14-39 [Ilmatsalu - Tartu - Luunja]</title>
 <author>A. Villard, K[aitsevägede Staabi] Topograafia jaoskond</author>
-<description></description>
 <guid>ESTER=b19093469;isbn=9789949540495</guid>
 <link>http://www.digar.ee/viewer/et/nlib-digar:46508</link>
 <pubDate>Sat, 01 Jan 1927 00:00:00 +0000</pubDate>

@@ -1,16 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 
 <item>
 <title>Valga</title>
 <author>Eesti Entsüklopeedia</author>
-<description></description>
-<guid></guid>
 <link>http://cl.ly/1r2I082J0r05311H2f1s/o</link>
 <!--
 <link>https://vanadasjad.wordpress.com/2012/02/14/asulate-plaanid-1930-aastatest-2/</link>
@@ -24,7 +18,6 @@
 <item>
 <title>Valga linna administratiivpiirkonna plaan</title>
 <author>J. Paas</author>
-<description></description>
 <guid>ra.ee=ERA.T-6.3.1810 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=103238</link>
 <pubDate>Wed, 01 Jan 1936 00:00:00 +0000</pubDate>

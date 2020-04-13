@@ -1,15 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 
 <item>
 <title>Die Kreis Stadt Hapsal</title>
-<author></author>
-<description></description>
 <guid>ra.ee=EAA.2072.2.33 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=18249</link>
 <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/002/0000033/eaa2072_002_0000033_00001_k.tif&amp;wid=2480&amp;hei=1748&amp;qlt=100&amp;cvt=jpeg</link>
@@ -20,12 +14,10 @@
 <item>
 <title>Stadtgrund von Hapsal</title>
 <author>Carl Friedrich Guthardt</author>
-<description></description>
 <guid>ra.ee=EAA.854.4.107</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=16140</link>
 <!-- <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa0854/004/0000107/eaa0854_004_0000107_00000_k.tif&amp;wid=1748&amp;hei=2480&amp;qlt=100&amp;cvt=jpeg</link> -->
 <pubDate>Mon, 01 Jan 1798 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 
 </channel>

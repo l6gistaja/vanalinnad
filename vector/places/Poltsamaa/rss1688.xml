@@ -1,10 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<title></title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 <item>
 <title>Öfwerpahlens Stätt och Gebiet</title>
 <author>Israel Swedman, Jonas Böök</author>
@@ -12,7 +8,6 @@
 <guid>ra.ee=EAA.308.2.213 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=1670</link>
 <pubDate>Thu, 01 Jan 1688 00:00:00 +0000</pubDate>
-<legends></legends>
 </item>
 </channel>
 </rss>
