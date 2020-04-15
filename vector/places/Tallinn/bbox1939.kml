@@ -1,25 +1,36 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<kml xmlns="http://www.opengis.net/kml/2.2">
+<kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1939.Nomme"><name>1939.Nomme</name><LineString><coordinates>24.61392979836162,59.35678957676252 24.61392979836162,59.39626042112515 24.73157086295780,59.39626042112515 24.73157086295780,59.35678957676252 24.61392979836162,59.35678957676252</coordinates></LineString></Placemark>
+<Placemark id="bbox.1939.Nomme"><name>1939.Nomme</name><LineString><coordinates>24.61449827535546,59.35679941541124 24.61449827535546,59.39630403680219 24.73045432732654,59.39630403680219 24.73045432732654,59.35679941541124 24.61449827535546,59.35679941541124</coordinates></LineString></Placemark>
 <Placemark id="gcp1939.Nomme.1"><name>1939.Nomme #1</name><description>3113 1039</description><Point><coordinates>24.660627409585796,59.386673070160946</coordinates></Point></Placemark>
 <Placemark id="gcp1939.Nomme.2"><name>1939.Nomme #2</name><description>653 3837</description><Point><coordinates>24.6276684252115,59.364341573156246</coordinates></Point></Placemark>
 <Placemark id="gcp1939.Nomme.3"><name>1939.Nomme #3</name><description>6686 1129</description><Point><coordinates>24.712508540038765,59.387292714920754</coordinates></Point></Placemark>
 
-
-<Placemark id="bbox.1939"><name>1939</name><LineString><coordinates>24.66696215573167,59.39465374103588 24.66696215573167,59.46712443458402 24.85815242950569,59.46712443458402 24.85815242950569,59.39465374103588 24.66696215573167,59.39465374103588</coordinates></LineString></Placemark>
+<Placemark id="bbox.1939"><name>1939</name><LineString><coordinates>24.66696215573232,59.39465175178556 24.66696215573232,59.46712443457103 24.85814164290591,59.46712443457103 24.85814164290591,59.39465175178556 24.66696215573232,59.39465175178556</coordinates></LineString></Placemark>
 <Placemark id="gcp1939.1"><name>1939 #1</name><description>2799 4671</description><Point><coordinates>24.7359720537063,59.414292263112806</coordinates></Point></Placemark>
 <Placemark id="gcp1939.2"><name>1939 #2</name><description>3225 1470</description><Point><coordinates>24.74066591948236,59.447825341132365</coordinates></Point></Placemark>
 <Placemark id="gcp1939.3"><name>1939 #3</name><description>5168 2503</description><Point><coordinates>24.785289830863128,59.438702778305924</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1935"><name>1935</name><LineString><coordinates>24.59945480940488,59.33434412177151 24.59945480940488,59.40109210211310 24.98661540136921,59.40109210211310 24.98661540136921,59.33434412177151 24.59945480940488,59.33434412177151</coordinates></LineString></Placemark>
+<Placemark id="gcp1935.1"><name>1935 #1</name><description>843 873</description><Point><coordinates>24.63751775276087,59.38106006517167</coordinates></Point></Placemark>
+<Placemark id="gcp1935.2"><name>1935 #2</name><description>7706 214</description><Point><coordinates>24.946270605926646,59.39533366475162</coordinates></Point></Placemark>
+<Placemark id="gcp1935.3"><name>1935 #3</name><description>2247 2703</description><Point><coordinates>24.700965251311683,59.339109567184536</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1936"><name>1936</name><LineString><coordinates>24.59965094899447,59.39972089528432 24.59965094899447,59.60211632986350 24.98676266899830,59.60211632986350 24.98676266899830,59.39972089528432 24.59965094899447,59.39972089528432</coordinates></LineString></Placemark>
+<Placemark id="gcp1936.1"><name>1936 #1</name><description>3486 935</description><Point><coordinates>24.756114872389766,59.580682298263724</coordinates></Point></Placemark>
+<Placemark id="gcp1936.2"><name>1936 #2</name><description>38 7287</description><Point><coordinates>24.601444780426526,59.435946390952225</coordinates></Point></Placemark>
+<Placemark id="gcp1936.3"><name>1936 #3</name><description>6713 8386</description><Point><coordinates>24.900086,59.411107</coordinates></Point></Placemark>
+
 <ExtendedData>
+<Data name="maps"><value>1935,1936,1939.Nomme,1939</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1939/</value></Data>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.61392979836162,59.35678957676252,24.85815242950569,59.46712443458402</value></Data>
-<Data name="maps"><value>1939.Nomme,1939</value></Data>
+<Data name="bbox"><value>24.59945480940488,59.33434412177151,24.98676266899830,59.60211632986350</value></Data>
 <Data name="zmin"><value>10</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1939/</value></Data>
+
 </ExtendedData>
 
 </Document>
