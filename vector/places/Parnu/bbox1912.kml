@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>24.4495875202,58.3597204517 24.4495875202,58.4177515794 24.5733349467,58.4177515794 24.5733349467,58.3597204517 24.4495875202,58.3597204517</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>1590 4647</description><Point><coordinates>24.47299479888965,58.388223456476624</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>1716 2854</description><Point><coordinates>24.48704957412684,58.39715266133601</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>6382 3999</description><Point><coordinates>24.52462195800748,58.375635510863184</coordinates></Point></Placemark>
-<Placemark id="gcp.4"><name>#4</name><description>452 704</description><Point><coordinates>24.489139846496705,58.412976708929776</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1912"><name>1912</name><LineString><coordinates>24.44993014735024,58.35951401484158 24.44993014735024,58.41817265972055 24.57251202485084,58.41817265972055 24.57251202485084,58.35951401484158 24.44993014735024,58.35951401484158</coordinates></LineString></Placemark>
+<Placemark id="gcp1912.1"><name>1912 #1</name><description>1590 4647</description><Point><coordinates>24.47299479888965,58.388223456476624</coordinates></Point></Placemark>
+<Placemark id="gcp1912.2"><name>1912 #2</name><description>1716 2854</description><Point><coordinates>24.48704957412684,58.39715266133601</coordinates></Point></Placemark>
+<Placemark id="gcp1912.3"><name>1912 #3</name><description>6382 3999</description><Point><coordinates>24.52462195800748,58.375635510863184</coordinates></Point></Placemark>
+<Placemark id="gcp1912.4"><name>1912 #4</name><description>452 704</description><Point><coordinates>24.489139846496705,58.412976708929776</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1917"><name>1917</name><LineString><coordinates>24.47419725822330,58.33701152063571 24.47419725822330,58.43263234928674 24.64038035511975,58.43263234928674 24.64038035511975,58.33701152063571 24.47419725822330,58.33701152063571</coordinates></LineString></Placemark>
+<Placemark id="gcp1917.1"><name>1917 #1</name><description>183 206</description><Point><coordinates>24.499771661376837,58.43818778029656</coordinates></Point></Placemark>
+<Placemark id="gcp1917.2"><name>1917 #2</name><description>1484 696</description><Point><coordinates>24.65980298004198,58.40731615965011</coordinates></Point></Placemark>
+<Placemark id="gcp1917.3"><name>1917 #3</name><description>940 1761</description><Point><coordinates>24.590537614441335,58.339308919903026</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="maps"><value>1917,1912</value></Data>
+<Data name="bbox"><value>24.44993014735024,58.33701152063571,24.64038035511975,58.43263234928674</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1912/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
