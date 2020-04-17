@@ -17,19 +17,24 @@
 <Placemark id="gcp1919.Tohtri.2"><name>1919.Tohtri #2</name><description>644 1435</description><Point><coordinates>24.795492784813483,59.00312288884</coordinates></Point></Placemark>
 <Placemark id="gcp1919.Tohtri.3"><name>1919.Tohtri #3</name><description>902 303</description><Point><coordinates>24.796587126091445,59.00463677619</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1915"><name>1915</name><LineString><coordinates>24.74477071362391,58.99993591040987 24.74477071362391,59.01926227076594 24.84751027440742,59.01926227076594 24.84751027440742,58.99993591040987 24.74477071362391,58.99993591040987</coordinates></LineString></Placemark>
+<Placemark id="gcp1915.1"><name>1915 #1</name><description>1866 537</description><Point><coordinates>24.836437867736105,59.01911292193771</coordinates></Point></Placemark>
+<Placemark id="gcp1915.2"><name>1915 #2</name><description>1534 739</description><Point><coordinates>24.794465111084463,59.00666114746041</coordinates></Point></Placemark>
+<Placemark id="gcp1915.3"><name>1915 #3</name><description>1387 445</description><Point><coordinates>24.776196378327146,59.025520612323355</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1911"><name>1911</name><LineString><coordinates>24.75652576371458,58.99597290685193 24.75652576371458,59.01797515798449 24.79540078242550,59.01797515798449 24.79540078242550,58.99597290685193 24.75652576371458,58.99597290685193</coordinates></LineString></Placemark>
 <Placemark id="gcp1911.1"><name>1911 #1</name><description>1825 817</description><Point><coordinates>24.785555034904007,59.01228095807991</coordinates></Point></Placemark>
 <Placemark id="gcp1911.2"><name>1911 #2</name><description>808 1336</description><Point><coordinates>24.778495460776337,59.01294380622619</coordinates></Point></Placemark>
 <Placemark id="gcp1911.3"><name>1911 #3</name><description>2128 5080</description><Point><coordinates>24.771114021567815,59.00070115101802</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Rapla/composed/191X/</value></Data>
-<Data name="maps"><value>1911,1919,1919.Nikolai,1919.Tohtri</value></Data>
-<Data name="zmin"><value>12</value></Data>
 <Data name="montage"><value>yes</value></Data>
-<Data name="bbox"><value>24.75652576371458,58.99597290685193,24.79901709423407,59.01797515798449</value></Data>
+<Data name="bbox"><value>24.74477071362391,58.99597290685193,24.84751027440742,59.01926227076594</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Rapla/composed/191X/</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>1915,1911,1919,1919.Nikolai,1919.Tohtri</value></Data>
 
 </ExtendedData>
 
