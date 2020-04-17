@@ -21,13 +21,13 @@ vlUtils.VLGJSON = OpenLayers.Class(OpenLayers.Format.JSON, {
                     case "d": attr.description = d.features[i][j]; break;
                     case "c": attr.color = d.features[i][j]; break;
                     case "g":
-                        ls = d.features[i][j].split(';');
+                        ls = d.features[i][j].split('/');
                         if(ls.length > 1) {
                             geometry = [];
-                            for(h in ls) { geometry.push(this.base36linestring(x,y,p,ls[h])); }
+                            for(h in ls) { geometry.push(this.decodegeometry(x,y,p,ls[h])); }
                             geometry = new OpenLayers.Geometry.MultiLineString(geometry);
                         } else {
-                            geometry = this.base36linestring(x,y,p,ls[0]);  
+                            geometry = this.decodegeometry(x,y,p,ls[0]);  
                         }
                 }
             }
@@ -36,17 +36,30 @@ vlUtils.VLGJSON = OpenLayers.Class(OpenLayers.Format.JSON, {
         return features;
     },
     
-    base36linestring: function(x,y,p,ls) {
+    decodegeometry: function(x,y,p,ls) {
         var coords = ls.split(',');
         var i;
         var points = [];
         for(i = 0; i < coords.length; i +=2) {
             points.push(new OpenLayers.Geometry.Point(
-                x + (parseInt(coords[i],36)/p),
-                y + (parseInt(coords[i+1],36)/p)
+                //x + (parseInt(coords[i],36)/p),
+                //y + (parseInt(coords[i+1],36)/p)
+                x + (this.decode_vli64(coords[i])/p),
+                y + (this.decode_vli64(coords[i+1])/p)
             ));
         }
         return new OpenLayers.Geometry.LineString(points);
+    },
+    
+    decode_vli64: function(str) {
+        var y = 0;
+        var i = 0;
+        var c;
+        for(; i < str.length; i++) {
+            c = str.charCodeAt(i);
+            y += (c == 112 ? 44 : c - 48) << (6*i);
+        }
+        return y;
     }
 });
 

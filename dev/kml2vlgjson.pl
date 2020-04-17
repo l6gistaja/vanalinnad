@@ -54,11 +54,17 @@ foreach $feature (@{$json{features}}) {
     $geometry = '';
     foreach $linestring (@{$feature->{g}}) {
         $ls = '';
-        $geometry .= $geometry eq '' ? '' : ';';
+        $geometry .= $geometry eq '' ? '' : '/';
         $j = 0;
         foreach $cell (@{$linestring}) {
-            $ls .= ($ls eq '' ? '' : ',')
-                .lc(encode_base36(int(round($cell * $prec_m, 0) - ($j%2 ? $prec_y : $prec_x))));
+            $int = int(round($cell * $prec_m, 0) - ($j%2 ? $prec_y : $prec_x));
+            $vli64 = '';
+            do {
+                $m = $int % 64;
+                $vli64 .= ($m == 44 ? 'p' : chr(48 + $m));
+                $int >>= 6;
+            } while ($int);
+            $ls .= ($ls eq '' ? '' : ',').$vli64; #.lc(encode_base36($int));
             $j++;
         }
         $geometry .= $ls;
