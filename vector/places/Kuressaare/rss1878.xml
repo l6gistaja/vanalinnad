@@ -3,11 +3,14 @@
 <channel>
 <item>
 <title>Plan von der Kreisstadt Arensburg</title>
+<author>E. von Plates</author>
 <description>Lk./p. 66: Raid, Tõnu; Suurmaa, Lauri; Hurt, Kerli; Kirkmann, Mari-Ly; Tuch, Boris. Eesti linnade plaanid 1584-2011 = Maps of the towns of Estonia = Pläne der estnischen Städte = Планы городов Эстонии (и Санкт-Петербурга и Риги). Tallinn, Grenader, 2013.</description>
-<guid>isbn=9789949512096</guid>
+<guid>ra.ee=EAA.298.2.37 leht 1;isbn=9789949512096</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=26060</link>
 <link>http://www.ester.ee/record=b2923516*est</link>
 <pubDate>Tue, 01 Jan 1878 00:00:00 +0000</pubDate>
-<legends>legend1878.jpg</legends>
+<legends>legend1878.gif</legends>
+<componentsregexp>^1878</componentsregexp>
 </item>
 </channel>
 </rss>

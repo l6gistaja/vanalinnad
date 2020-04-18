@@ -179,14 +179,12 @@ function vlInitInfo(inputParams){
 
         dateParts = vlUtils.getXmlValue(items[m], 'pubDate').split(/\s+/);
         pubYear = (dateParts.length > 3) ? dateParts[3] : '';
-        mapAnchor = '';
-        if(items.length > 1) {
-          mapAnchor =  (vlUtils.getXmlValue(items[m], 'anchor') != '') ? vlUtils.getXmlValue(items[m], 'anchor')
-            : pubYear;
-          if(mapAnchor == '') { mapAnchor = String.fromCharCode(65 + m); }
-          y += '<hr/><a name="map.'+mapAnchor+'">'+ vlUtils.link({u:'#map.'+mapAnchor, l:'<strong>'+mapAnchor+'</strong>'}) + '</a><br/>';
-        }
-        
+        mapAnchor =  (vlUtils.getXmlValue(items[m], 'anchor') != '') ? vlUtils.getXmlValue(items[m], 'anchor') : pubYear;
+        if(mapAnchor == '') { mapAnchor = String.fromCharCode(65 + m); }
+        y += items.length > 1
+            ? '<hr/><a name="map.'+mapAnchor+'">'+ vlUtils.link({u:'#map.'+mapAnchor, l:'<strong>'+mapAnchor+'</strong>'}) + '</a><br/>'
+            : '<a name="map.'+mapAnchor+'"> </a>';
+
         componentRegexp = vlUtils.getXmlValue(items[m], 'componentsregexp');
         if(componentRegexp != '') { componentsRegexp[mapAnchor] = componentRegexp; }
         
