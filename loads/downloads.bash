@@ -952,6 +952,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eam0002/001/0000145/eam0002_001_0000145_00001_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 176 -b 191 -o  cache/deiip/1941_Valga.jpg
 
+# Paide 1901 http://www.ra.ee/kaardid/index.php/et/map/view?id=103944
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000744/erat-0-6_003_0000744_00001_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 224 -b 239 -o  cache/deiip/1901_Paide.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
 
 
