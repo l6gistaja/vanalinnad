@@ -2,6 +2,7 @@
 <rss version="2.0">
 <channel>
 <language>ru</language>
+
 <item>
 <title>План уездного города и лечебного курорта Гапсаля</title>
 <guid>isbn=9789949539802;nlib.ee=ARKtB 5.934</guid>
@@ -10,5 +11,15 @@
 <pubDate>Mon, 01 Jan 1911 00:00:00 +0000</pubDate>
 <legends>legend1911b.gif</legends>
 </item>
+
+<item>
+<title>VIc-14 [Haapsalu] : Гапсальск. уезд. Эстляндск. губ</title>
+<author>Корпус Военных Топографов</author>
+<guid>isbn=978-9949-654-95-6</guid>
+<link>http://www.digar.ee/viewer/et/nlib-digar:357345</link>
+<pubDate>Fri, 01 Jan 1915 00:00:00 +0000</pubDate>
+</item>
+
+
 </channel>
 </rss>

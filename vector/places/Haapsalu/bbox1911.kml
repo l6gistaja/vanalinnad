@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>23.5032156512,58.9305579989 23.5032156512,58.9657206251 23.5590175057,58.9657206251 23.5590175057,58.9305579989 23.5032156512,58.9305579989</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>3015 4154</description><Point><coordinates>23.53425752380358,58.951491224229834</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>3452 6676</description><Point><coordinates>23.545072190551412,58.94506064778432</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>1193 7843</description><Point><coordinates>23.536014359741596,58.937570113709185</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1915"><name>1915</name><LineString><coordinates>23.46472964269815,58.90039759174916 23.46472964269815,58.96715889674584 23.57583724397422,58.96715889674584 23.57583724397422,58.90039759174916 23.46472964269815,58.90039759174916</coordinates></LineString></Placemark>
+<Placemark id="gcp1915.1"><name>1915 #1</name><description>849 956</description><Point><coordinates>23.568794984130946,58.9043996552229</coordinates></Point></Placemark>
+<Placemark id="gcp1915.2"><name>1915 #2</name><description>832 512</description><Point><coordinates>23.5667336984253,58.93318319069455</coordinates></Point></Placemark>
+<Placemark id="gcp1915.3"><name>1915 #3</name><description>220 762</description><Point><coordinates>23.491708,58.917576</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1911"><name>1911</name><LineString><coordinates>23.50333096855816,58.93062358157620 23.50333096855816,58.96568549212662 23.55900038612506,58.96568549212662 23.55900038612506,58.93062358157620 23.50333096855816,58.93062358157620</coordinates></LineString></Placemark>
+<Placemark id="gcp1911.1"><name>1911 #1</name><description>3015 4154</description><Point><coordinates>23.53425752380358,58.951491224229834</coordinates></Point></Placemark>
+<Placemark id="gcp1911.2"><name>1911 #2</name><description>3452 6676</description><Point><coordinates>23.545072190551412,58.94506064778432</coordinates></Point></Placemark>
+<Placemark id="gcp1911.3"><name>1911 #3</name><description>1193 7843</description><Point><coordinates>23.536014359741596,58.937570113709185</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmin"><value>12</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Haapsalu/composed/1911/</value></Data>
+<Data name="maps"><value>1915,1911</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>23.46472964269815,58.90039759174916,23.57583724397422,58.96715889674584</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
