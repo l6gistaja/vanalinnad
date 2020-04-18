@@ -13,13 +13,13 @@
 <Placemark id="gcp1878.S.3"><name>1878.S #3</name><description>706 1190</description><Point><coordinates>22.467161,58.246474</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="zmax"><value>16</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Kuressaare/composed/1878/</value></Data>
-<Data name="montage"><value>yes</value></Data>
 <Data name="bbox"><value>22.45787486070476,58.23989738896188,22.50009790862685,58.26594392993422</value></Data>
-<Data name="maps"><value>1878.S,1878.N</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Kuressaare/composed/1878/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
 <Data name="zmin"><value>13</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>1878.S,1878.N</value></Data>
 
 </ExtendedData>
 
