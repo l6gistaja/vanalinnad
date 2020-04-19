@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
+    
+<item>
+<title>Планъ берега Балтийскаго порта.</title>
+<guid>ra.ee=EAA.79.2.5 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=32661</link>
+<pubDate>Sun, 01 Jan 1854 00:00:00 +0000</pubDate>
+<componentsregexp>^1854</componentsregexp>
+</item>
+
 <item>
 <title>Plan von der Kreis Stadt Baltisport</title>
 <author>Friedrich August Hauff, Johann Heinrich Schmidt</author>
@@ -8,5 +17,6 @@
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=18248</link>
 <pubDate>Sun, 01 Jan 1860 00:00:00 +0000</pubDate>
 </item>
+
 </channel>
 </rss>

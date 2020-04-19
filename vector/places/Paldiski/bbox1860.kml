@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1860"><name>1860</name><LineString><coordinates>24.04297117027539,59.34405297309757 24.04297117027539,59.35731905205472 24.06436126442248,59.35731905205472 24.06436126442248,59.34405297309757 24.04297117027539,59.34405297309757</coordinates></LineString></Placemark>
+<Placemark id="gcp1860.1"><name>1860 #1</name><description>2046 3057</description><Point><coordinates>24.05530507934611,59.34959786429562</coordinates></Point></Placemark>
+<Placemark id="gcp1860.2"><name>1860 #2</name><description>2787 2874</description><Point><coordinates>24.058073119049194,59.350505796367955</coordinates></Point></Placemark>
+<Placemark id="gcp1860.3"><name>1860 #3</name><description>3093 4065</description><Point><coordinates>24.060884074096812,59.34814293456712</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1854.N"><name>1854.N</name><LineString><coordinates>24.03598220280566,59.35224731019614 24.03598220280566,59.36098453608399 24.05346948026062,59.36098453608399 24.05346948026062,59.35224731019614 24.03598220280566,59.35224731019614</coordinates></LineString></Placemark>
+<Placemark id="gcp1854.N.1"><name>1854.N #1</name><description>1508 891</description><Point><coordinates>24.0473155426236,59.357726538153685</coordinates></Point></Placemark>
+<Placemark id="gcp1854.N.2"><name>1854.N #2</name><description>1023 993</description><Point><coordinates>24.0446547912805,59.35682973594351</coordinates></Point></Placemark>
+<Placemark id="gcp1854.N.3"><name>1854.N #3</name><description>1004 1665</description><Point><coordinates>24.046242659017455,59.35481731303883</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1854.S"><name>1854.S</name><LineString><coordinates>24.04636168837360,59.33430131395055 24.04636168837360,59.35469036775120 24.07632299057599,59.35469036775120 24.07632299057599,59.33430131395055 24.04636168837360,59.33430131395055</coordinates></LineString></Placemark>
+<Placemark id="gcp1854.S.1"><name>1854.S #1</name><description>1576 3544</description><Point><coordinates>24.05806465347238,59.350511575650536</coordinates></Point></Placemark>
+<Placemark id="gcp1854.S.2"><name>1854.S #2</name><description>1164 3548</description><Point><coordinates>24.055270738067925,59.34961199354084</coordinates></Point></Placemark>
+<Placemark id="gcp1854.S.3"><name>1854.S #3</name><description>1570 4190</description><Point><coordinates>24.060884074096812,59.34814293456712</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Paldiski/composed/1860/</value></Data>
+<Data name="maps"><value>1854.N,1854.S,1860</value></Data>
+<Data name="bbox"><value>24.03598220280566,59.33430131395055,24.07632299057599,59.36098453608399</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
