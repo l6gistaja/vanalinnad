@@ -2,6 +2,14 @@
 <rss version="2.0">
 <channel>
 <language>ru</language>
+
+<item>
+<title>Liivimaa kubermang- 15-17 Saare maakond. Лифляндская губерния. 15-17 (ос. Эзель) Эзельский уезд</title>
+<guid>ra.ee=ERA.T-6.3.882 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=104659</link>
+<pubDate>Sun, 01 Jan 1905 00:00:00 +0000</pubDate>
+</item>
+
 <item>
 <title>Плань уъзднаго города Аренсбург Лифляндской Губернии</title>
 <author>Woldemar Gustav Lichinger</author>
@@ -11,5 +19,6 @@
 <pubDate>Sun, 01 Jan 1911 00:00:00 +0000</pubDate>
 <legends>legend1911.jpg</legends>
 </item>
+
 </channel>
 </rss>

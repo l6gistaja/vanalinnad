@@ -958,6 +958,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # Kuresaare 1878 http://www.ra.ee/kaardid/index.php/et/map/view?id=26060
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eaa0298/002/0000037/eaa0298_002_0000037_00001_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 374 -b 390 -o  cache/deiip/1878_Kuressaare.jpg
 
+# Kuressaare 1905 http://www.ra.ee/kaardid/index.php/et/map/view?id=104659
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000882/erat-0-6_003_0000882_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 266 -b 284 -o cache/deiip/1905_Kuressaare.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
 
 

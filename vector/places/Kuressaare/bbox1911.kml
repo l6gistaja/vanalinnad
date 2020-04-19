@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>22.45963889820179,58.24011600394780 22.45963889820179,58.26725076247926 22.50305684675099,58.26725076247926 22.50305684675099,58.24011600394780 22.45963889820179,58.24011600394780</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>2411 1815</description><Point><coordinates>22.483308362273153,58.259447117008705</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>2946 5814</description><Point><coordinates>22.47929577758669,58.246621268732454</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>4437 2305</description><Point><coordinates>22.494208859710053,58.25608303886381</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1905"><name>1905</name><LineString><coordinates>22.39681070792043,58.21372517739787 22.39681070792043,58.29104103843701 22.52865491370082,58.29104103843701 22.52865491370082,58.21372517739787 22.39681070792043,58.21372517739787</coordinates></LineString></Placemark>
+<Placemark id="gcp1905.1"><name>1905 #1</name><description>967 630</description><Point><coordinates>22.432387,58.279876</coordinates></Point></Placemark>
+<Placemark id="gcp1905.2"><name>1905 #2</name><description>1089 1905</description><Point><coordinates>22.439704,58.238925</coordinates></Point></Placemark>
+<Placemark id="gcp1905.3"><name>1905 #3</name><description>2273 1047</description><Point><coordinates>22.514783,58.266525</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1911"><name>1911</name><LineString><coordinates>22.45969054178503,58.24020672875641 22.45969054178503,58.26725076247110 22.50305295307579,58.26725076247110 22.50305295307579,58.24020672875641 22.45969054178503,58.24020672875641</coordinates></LineString></Placemark>
+<Placemark id="gcp1911.1"><name>1911 #1</name><description>2411 1815</description><Point><coordinates>22.483308362273153,58.259447117008705</coordinates></Point></Placemark>
+<Placemark id="gcp1911.2"><name>1911 #2</name><description>2946 5814</description><Point><coordinates>22.47929577758669,58.246621268732454</coordinates></Point></Placemark>
+<Placemark id="gcp1911.3"><name>1911 #3</name><description>4437 2305</description><Point><coordinates>22.494208859710053,58.25608303886381</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1905,1911</value></Data>
+<Data name="bbox"><value>22.39681070792043,58.21372517739787,22.52865491370082,58.29104103843701</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Kuressaare/composed/1911/</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>13</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
