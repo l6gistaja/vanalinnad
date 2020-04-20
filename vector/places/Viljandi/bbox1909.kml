@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>25.57332723430596,58.35687305901235 25.57332723430596,58.36843809924131 25.61040853601926,58.36843809924131 25.61040853601926,58.35687305901235 25.57332723430596,58.35687305901235</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>1709 67</description><Point><coordinates>25.597468682555565,58.36709670855257</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>1714 893</description><Point><coordinates>25.599571534423326,58.3614467426914</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>638 482</description><Point><coordinates>25.583499738006545,58.36260607237806</coordinates></Point></Placemark>
-<Placemark id="gcp.4"><name>#4</name><description>2396 559</description><Point><coordinates>25.608392005310677,58.364413459795365</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1909"><name>1909</name><LineString><coordinates>25.57332723430596,58.35687305901235 25.57332723430596,58.36843809924131 25.61040853601926,58.36843809924131 25.61040853601926,58.35687305901235 25.57332723430596,58.35687305901235</coordinates></LineString></Placemark>
+<Placemark id="gcp1909.1"><name>1909 #1</name><description>1709 67</description><Point><coordinates>25.597468682555565,58.36709670855257</coordinates></Point></Placemark>
+<Placemark id="gcp1909.2"><name>1909 #2</name><description>1714 893</description><Point><coordinates>25.599571534423326,58.3614467426914</coordinates></Point></Placemark>
+<Placemark id="gcp1909.3"><name>1909 #3</name><description>638 482</description><Point><coordinates>25.583499738006545,58.36260607237806</coordinates></Point></Placemark>
+<Placemark id="gcp1909.4"><name>1909 #4</name><description>2396 559</description><Point><coordinates>25.608392005310677,58.364413459795365</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1915"><name>1915</name><LineString><coordinates>25.53272086901664,58.32166392616444 25.53272086901664,58.39597572146570 25.64978913975702,58.39597572146570 25.64978913975702,58.32166392616444 25.53272086901664,58.32166392616444</coordinates></LineString></Placemark>
+<Placemark id="gcp1915.1"><name>1915 #1</name><description>694 588</description><Point><coordinates>25.547966345231725,58.36899592883306</coordinates></Point></Placemark>
+<Placemark id="gcp1915.2"><name>1915 #2</name><description>1189 160</description><Point><coordinates>25.607599794006223,58.39588807144315</coordinates></Point></Placemark>
+<Placemark id="gcp1915.3"><name>1915 #3</name><description>796 1274</description><Point><coordinates>25.5597237936404,58.32511872721703</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmin"><value>12</value></Data>
+<Data name="bbox"><value>25.53272086901664,58.32166392616444,25.64978913975702,58.39597572146570</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Viljandi/composed/1909/</value></Data>
+<Data name="maps"><value>1915,1909</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
