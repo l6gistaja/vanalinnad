@@ -161,6 +161,7 @@ function vlMap(inputParams){
     var layersTags = isAtSite 
     ? layersXml.getElementsByTagName('layer')
     : confXml.getElementsByTagName('layer');
+    var roadlayersBBoxes = {};
     for(i = 0; i < layersTags.length; i++) {
     if(layersTags[i].getAttribute('disabled')) { continue; }
     if(layersTags[i].getAttribute('type') == 'tms') {
@@ -183,7 +184,9 @@ function vlMap(inputParams){
         }
         );
         if(layersTags[i].getAttribute('year') == layerYear) { layerUrlSelect = tmsoverlays.length - 1; }
+        
     } else {
+        
         layername = layersTags[i].getAttribute('type') + '_' + roadLayers.length;
         roadLayers[roadLayers.length] = new OpenLayers.Layer.Vector(layersTags[i].getAttribute('name'), {
             layername: layername,
@@ -205,28 +208,36 @@ function vlMap(inputParams){
             layersTags[i].getAttribute('style') !=null ? layersTags[i].getAttribute('style') : 'roads'
             ])
         });
+        
         if(
-        layersTags[i].getAttribute('hide') !=null
-        && !(layersTags[i].getAttribute('year') !=null && layersTags[i].getAttribute('year') == layerYear)
-        ) {
-        roadLayers[roadLayers.length-1].setVisibility(false);
+            layersTags[i].getAttribute('hide') !=null
+            && !(layersTags[i].getAttribute('year') !=null && layersTags[i].getAttribute('year') == layerYear)
+        ) { roadLayers[roadLayers.length-1].setVisibility(false); }
+        
+        if('debug' in reqParams && layersTags[i].getAttribute('type') == 'roads') {
+            roadlayersBBoxes[roadLayers[roadLayers.length-1].id] = {};
+            roadLayers[roadLayers.length-1].events.register('loadend', roadLayers[roadLayers.length-1], function(){
+                roadlayersBBoxes[this.id].extent = this.getDataExtent();
+                var rlID;
+                for(rlID in roadlayersBBoxes) { if(!('extent' in roadlayersBBoxes[rlID])) { return; } }
+                var bounds = {};
+                for(rlID in roadlayersBBoxes) {
+                    if(!('w' in bounds) || roadlayersBBoxes[rlID].extent.left < bounds.w) { bounds.w = roadlayersBBoxes[rlID].extent.left; }
+                    if(!('e' in bounds) || roadlayersBBoxes[rlID].extent.right > bounds.e) { bounds.e = roadlayersBBoxes[rlID].extent.right; }
+                    if(!('s' in bounds) || roadlayersBBoxes[rlID].extent.bottom < bounds.s) { bounds.s = roadlayersBBoxes[rlID].extent.bottom; }
+                    if(!('n' in bounds) || roadlayersBBoxes[rlID].extent.top > bounds.n) { bounds.n = roadlayersBBoxes[rlID].extent.top; }
+                }
+                roadLayers[0].addFeatures([new OpenLayers.Feature.Vector(new OpenLayers.Geometry.LineString([
+                    new OpenLayers.Geometry.Point(bounds.w,bounds.s),
+                    new OpenLayers.Geometry.Point(bounds.w,bounds.n),
+                    new OpenLayers.Geometry.Point(bounds.e,bounds.n),
+                    new OpenLayers.Geometry.Point(bounds.e,bounds.s),
+                    new OpenLayers.Geometry.Point(bounds.w,bounds.s)
+                ]), {'name':'BoundingBox'}, {strokeColor:"#ff00ff", strokeWidth:2})]);
+            });
         }
+        
     }
-    
- //TODO: migrate roads and misc vector maps from KML to VLGJson
- /*
-    roadLayers[roadLayers.length] = new OpenLayers.Layer.Vector('VlGJ', {
-            layername: layername,
-            projection: map.options.displayProjection,
-            //maxResolution: map.getResolutionForZoom(parseInt(layersTags[i].getAttribute('maxres'))),
-            strategies: [new OpenLayers.Strategy.Fixed()],
-            protocol: new OpenLayers.Protocol.HTTP({
-                url: 'cache/test.json', //'vector/common/test_vlgjson.json',
-                format: new vlUtils.VLGJSON()
-            }),
-            styleMap:vlUtils.mergeCustomStyleWithDefaults(jsonConf.olLayerStyles['roads'])
-        });
-    */
 
       // when someone accesses page with outdated layers parameter, redirect
       var layerUrlParts;
