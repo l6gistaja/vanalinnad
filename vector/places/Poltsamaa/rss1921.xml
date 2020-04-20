@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
+
+<item>
+<title>Vc-20 [Põltsamaa] : Феллин. и Юрьев. уезд. Лифлянд[ской] губ[ернии]</title>
+<author>Корпус Военных Топографов</author>
+<guid>isbn=978-9949-659-00-5</guid>
+<link>http://www.digar.ee/viewer/et/nlib-digar:357378</link>
+<pubDate>Fri, 01 Jan 1915 00:00:00 +0000</pubDate>
+</item>
+
 <item>
 <title>Põltsamaa alevi ja ümbruse plaan</title>
 <author>E. Jakobsenn</author>
@@ -8,6 +17,8 @@
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=107518</link>
 <pubDate>Sat, 01 Jan 1921 00:00:00 +0000</pubDate>
 <legends>legend1921.jpg</legends>
+<componentsregexp>^1921</componentsregexp>
 </item>
+
 </channel>
 </rss>

@@ -2,6 +2,11 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
+<Placemark id="bbox.1915"><name>1915</name><LineString><coordinates>25.88408367746673,58.62400732740084 25.88408367746673,58.67427777474455 25.99966762385801,58.67427777474455 25.99966762385801,58.62400732740084 25.88408367746673,58.62400732740084</coordinates></LineString></Placemark>
+<Placemark id="gcp1915.1"><name>1915 #1</name><description>1240 182</description><Point><coordinates>25.993570062387807,58.67049965720995</coordinates></Point></Placemark>
+<Placemark id="gcp1915.2"><name>1915 #2</name><description>420 634</description><Point><coordinates>25.893964064437863,58.6409342732816</coordinates></Point></Placemark>
+<Placemark id="gcp1915.3"><name>1915 #3</name><description>567 886</description><Point><coordinates>25.913104307967668,58.62506297734586</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1921.1"><name>1921.1</name><LineString><coordinates>25.95419034673562,58.64984330446965 25.95419034673562,58.66348109873295 25.99175514964870,58.66348109873295 25.99175514964870,58.64984330446965 25.95419034673562,58.64984330446965</coordinates></LineString></Placemark>
 <Placemark id="gcp1921.1.1"><name>1921.1 #1</name><description>1136 3276</description><Point><coordinates>25.96121720509447,58.65294578109989</coordinates></Point></Placemark>
 <Placemark id="gcp1921.1.2"><name>1921.1 #2</name><description>4970 1723</description><Point><coordinates>25.98471335606521,58.65784587308185</coordinates></Point></Placemark>
@@ -18,12 +23,12 @@
 <Placemark id="gcp1921.2.3"><name>1921.2 #3</name><description>1632 4592</description><Point><coordinates>25.99143418558098,58.653993595480294</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="maps"><value>1921.2,1921.3,1921.1</value></Data>
-<Data name="zmax"><value>16</value></Data>
-<Data name="montage"><value>yes</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Poltsamaa/composed/1921/</value></Data>
-<Data name="bbox"><value>25.95419034673562,58.63825776937582,26.00071827505672,58.66348109873295</value></Data>
 <Data name="zmin"><value>12</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Poltsamaa/composed/1921/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>25.88408367746673,58.62400732740084,26.00071827505672,58.67427777474455</value></Data>
+<Data name="maps"><value>1915,1921.2,1921.3,1921.1</value></Data>
+<Data name="zmax"><value>16</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 
 </ExtendedData>
