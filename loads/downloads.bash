@@ -961,6 +961,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/
 # Kuressaare 1905 http://www.ra.ee/kaardid/index.php/et/map/view?id=104659
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0000882/erat-0-6_003_0000882_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 266 -b 284 -o cache/deiip/1905_Kuressaare.jpg
 
+# Poltsamaa 1816 http://www.ra.ee/kaardid/index.php/et/map/view?id=25674
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa3724/004/0001445/eaa3724_004_0001445_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 2223 -b 2279 -o  cache/deiip/1816_Poltsamaa.1.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
 
 
