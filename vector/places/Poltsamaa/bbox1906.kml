@@ -12,14 +12,19 @@
 <Placemark id="gcp1906.4.2"><name>1906.4 #2</name><description>77 713</description><Point><coordinates>25.947764408114924,58.66074345236549</coordinates></Point></Placemark>
 <Placemark id="gcp1906.4.3"><name>1906.4 #3</name><description>515 1926</description><Point><coordinates>25.96121876153889,58.65294657026403</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1901"><name>1901</name><LineString><coordinates>25.92616424378071,58.62388766170096 25.92616424378071,58.67414065821630 26.00040093453763,58.67414065821630 26.00040093453763,58.62388766170096 25.92616424378071,58.62388766170096</coordinates></LineString></Placemark>
+<Placemark id="gcp1901.1"><name>1901 #1</name><description>1077 919</description><Point><coordinates>25.993570062387807,58.67049965720995</coordinates></Point></Placemark>
+<Placemark id="gcp1901.2"><name>1901 #2</name><description>50 1676</description><Point><coordinates>25.9295220180886,58.64619373316068</coordinates></Point></Placemark>
+<Placemark id="gcp1901.3"><name>1901 #3</name><description>799 2352</description><Point><coordinates>25.976557235373708,58.624471279023126</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="bbox"><value>25.88379305022973,58.61457783964053,25.99830889299321,58.67107810241946</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
 <Data name="zmax"><value>16</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Poltsamaa/composed/1906/</value></Data>
-<Data name="maps"><value>1906.3,1906.4</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1901,1906.3,1906.4</value></Data>
+<Data name="bbox"><value>25.88379305022973,58.61457783964053,26.00040093453763,58.67414065821630</value></Data>
 <Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 
 </ExtendedData>
 

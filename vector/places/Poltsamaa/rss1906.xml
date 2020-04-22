@@ -1,12 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
+    
+<item>
+<title>[Топографическая 1-верстная карта России. Эстл. и Лифл. губ. Феллин. уезд. Лист 11-35/ Vene topograafide aastatel 1893-1913 mõõdistatud 1-verstane kaart.]</title>
+<guid>ra.ee=EAA.854.4.27a leht 195</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=294705</link>
+<pubDate>Tue, 01 Jan 1901 00:00:00 +0000</pubDate>
+</item>
+
 <item>
 <title>Schloss-Oberpahlen</title>
 <author>Matthias Fuchs</author>
 <guid>ra.ee=EAA.1348.2.276 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=17698</link>
 <pubDate>Mon, 01 Jan 1906 00:00:00 +0000</pubDate>
+<componentsregexp>^1906</componentsregexp>
 </item>
+
 </channel>
 </rss>
