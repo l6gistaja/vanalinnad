@@ -1,12 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
+
+<item>
+<title>Eesti topograafiline kaart ENSV Ülemnõukogu Presiidiumi tehtud parandustega (1:100 000). Главное управление геодезии и картографии при Совете Министров СССР. Генеральный штаб советской армии 0-35-52 (Вильянди) Эстонская ССР Пярнуская, Тартуская и Таллинская области</title>
+<author>Šurõgina</author>
+<guid>ra.ee=ERA.T-6.5.2 leht 48</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=206166</link>
+<pubDate>Tue, 01 Jan 1950 00:00:00 +0000</pubDate>
+</item>
+
 <item>
 <title>Põltsamaa linna tugiplaan.</title>
 <author>Anton Soans, M. Redlich</author>
 <guid>ra.ee=EAM.3.1.221 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=305587</link>
 <pubDate>Tue, 01 Jan 1957 00:00:00 +0000</pubDate>
+<componentsregexp>^1957</componentsregexp>
 </item>
+
 </channel>
 </rss>
