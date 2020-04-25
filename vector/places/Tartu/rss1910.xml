@@ -2,6 +2,7 @@
 <rss version="2.0">
 <channel>
 <language>ru</language>
+
 <item>
 <title>Фарус-план Юрьева</title>
 <author>И.Г. Крюге</author>
@@ -10,5 +11,24 @@
 <link>http://tartu.ester.ee/record=b1759440~S1*est</link>
 <pubDate>Fri, 01 Jan 1910 00:00:00 +0000</pubDate>
 </item>
+
+<item>
+<title>IVc-22 [Tartu - Kavastu] : Юрьев. уезд. Лифлянд. губ.</title>
+<author>Корпус Военных Топографов</author>
+<guid>isbn=978-9949-659-07-4</guid>
+<link>http://www.digar.ee/viewer/et/nlib-digar:357507</link>
+<pubDate>Mon, 01 Jan 1915 00:00:00 +0000</pubDate>
+<anchor>1915.E</anchor>
+</item>
+
+<item>
+<title>IVc-21 [Puhja - Tartu] : Феллинск. и Юрьевск. уезд. Лифл. губ[ерний]</title>
+<author>Корпус Военных Топографов</author>
+<guid>isbn=978-9949-659-08-1</guid>
+<link>http://www.digar.ee/viewer/et/nlib-digar:357516</link>
+<pubDate>Mon, 01 Jan 1915 00:00:00 +0000</pubDate>
+<anchor>1915.W</anchor>
+</item>
+
 </channel>
 </rss>

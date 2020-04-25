@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>26.68938945,58.3558547708 26.68938945,58.3996702758 26.7710662752,58.3996702758 26.7710662752,58.3558547708 26.68938945,58.3558547708</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>6441 5262</description><Point><coordinates>26.74610590743969,58.38334001915631</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>437 6495</description><Point><coordinates>26.72144031333918,58.36533166907906</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>2847 609</description><Point><coordinates>26.706570146561248,58.386911342324915</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1910"><name>1910</name><LineString><coordinates>26.68938945001641,58.35585491690392 26.68938945001641,58.39967027576330 26.77106748740819,58.39967027576330 26.77106748740819,58.35585491690392 26.68938945001641,58.35585491690392</coordinates></LineString></Placemark>
+<Placemark id="gcp1910.1"><name>1910 #1</name><description>6441 5262</description><Point><coordinates>26.74610590743969,58.38334001915631</coordinates></Point></Placemark>
+<Placemark id="gcp1910.2"><name>1910 #2</name><description>437 6495</description><Point><coordinates>26.72144031333918,58.36533166907906</coordinates></Point></Placemark>
+<Placemark id="gcp1910.3"><name>1910 #3</name><description>2847 609</description><Point><coordinates>26.706570146561248,58.386911342324915</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1915.E"><name>1915.E</name><LineString><coordinates>26.72623011236262,58.32333290244064 26.72623011236262,58.41015362443616 26.80760937209784,58.41015362443616 26.80760937209784,58.32333290244064 26.72623011236262,58.32333290244064</coordinates></LineString></Placemark>
+<Placemark id="gcp1915.E.1"><name>1915.E #1</name><description>582 498</description><Point><coordinates>26.797119134525285,58.38772778249783</coordinates></Point></Placemark>
+<Placemark id="gcp1915.E.2"><name>1915.E #2</name><description>633 1169</description><Point><coordinates>26.803253580186407,58.344651597071056</coordinates></Point></Placemark>
+<Placemark id="gcp1915.E.3"><name>1915.E #3</name><description>37 696</description><Point><coordinates>26.73081247911276,58.375038040428265</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1915.W"><name>1915.W</name><LineString><coordinates>26.63077327691223,58.32323281242856 26.63077327691223,58.40961040522461 26.72900775669763,58.40961040522461 26.72900775669763,58.32323281242856 26.63077327691223,58.32323281242856</coordinates></LineString></Placemark>
+<Placemark id="gcp1915.W.1"><name>1915.W #1</name><description>1154 1195</description><Point><coordinates>26.664769,58.3483380</coordinates></Point></Placemark>
+<Placemark id="gcp1915.W.2"><name>1915.W #2</name><description>1608 513</description><Point><coordinates>26.720833184472276,58.39236406416906</coordinates></Point></Placemark>
+<Placemark id="gcp1915.W.3"><name>1915.W #3</name><description>959 698</description><Point><coordinates>26.640161457671738,58.38050312539977</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>26.63077327691223,58.32323281242856,26.80760937209784,58.41015362443616</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1910/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1915.W,1915.E,1910</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
