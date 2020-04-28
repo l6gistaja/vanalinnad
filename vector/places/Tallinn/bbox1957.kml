@@ -89,14 +89,19 @@
 <Placemark id="gcp1951_4587.3"><name>1951_4587 #3</name><description>3158 304</description><Point><coordinates>24.92426461001421,59.37236874189264</coordinates></Point></Placemark>
 <Placemark id="gcp1951_4587.4"><name>1951_4587 #4</name><description>1153 2477</description><Point><coordinates>24.89172459794929,59.35422045591747</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1951"><name>1951</name><LineString><coordinates>24.49484119844379,59.33224017126081 24.49484119844379,59.66730667792817 24.99986346967244,59.66730667792817 24.99986346967244,59.33224017126081 24.49484119844379,59.33224017126081</coordinates></LineString></Placemark>
+<Placemark id="gcp1951.1"><name>1951 #1</name><description>1275 805</description><Point><coordinates>24.759942398577884,59.58120906440102</coordinates></Point></Placemark>
+<Placemark id="gcp1951.2"><name>1951 #2</name><description>1897 2718</description><Point><coordinates>24.890233383685366,59.37992838902392</coordinates></Point></Placemark>
+<Placemark id="gcp1951.3"><name>1951 #3</name><description>474 2112</description><Point><coordinates>24.5945449306991,59.442475440545074</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.49484119844379,59.33224017126081,24.99986346967244,59.66730667792817</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1957/</value></Data>
-<Data name="zmin"><value>10</value></Data>
 <Data name="montage"><value>yes</value></Data>
-<Data name="bbox"><value>24.56002445109688,59.33394279282273,24.93623454566279,59.50014724982729</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="maps"><value>1957,1951_4287,1951_4286,1951_4386,1951_4387,1951_4587,1951_4487,1951_4486,1951_4586,1951_4485,1951_4585,1951_4583,1951_4383,1951_4483,1951_4582,1951_4482,1951_4382</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="maps"><value>1951,1957,1951_4287,1951_4286,1951_4386,1951_4387,1951_4587,1951_4487,1951_4486,1951_4586,1951_4485,1951_4585,1951_4583,1951_4383,1951_4483,1951_4582,1951_4482,1951_4382</value></Data>
 
 </ExtendedData>
 

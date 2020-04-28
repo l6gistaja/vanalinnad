@@ -215,19 +215,21 @@ function vlMap(inputParams){
         ) { roadLayers[roadLayers.length-1].setVisibility(false); }
         
         if('debug' in reqParams && layersTags[i].getAttribute('type') == 'roads') {
-            roadlayersBBoxes[roadLayers[roadLayers.length-1].id] = {};
+            roadlayersBBoxes[roadLayers[roadLayers.length-1].id] = {i: roadLayers.length-1};
             roadLayers[roadLayers.length-1].events.register('loadend', roadLayers[roadLayers.length-1], function(){
                 roadlayersBBoxes[this.id].extent = this.getDataExtent();
                 var rlID;
                 for(rlID in roadlayersBBoxes) { if(!('extent' in roadlayersBBoxes[rlID])) { return; } }
                 var bounds = {};
+                var road1 = -1;
                 for(rlID in roadlayersBBoxes) {
+                    if(road1 < 0) { road1 = roadlayersBBoxes[rlID].i; }
                     if(!('w' in bounds) || roadlayersBBoxes[rlID].extent.left < bounds.w) { bounds.w = roadlayersBBoxes[rlID].extent.left; }
                     if(!('e' in bounds) || roadlayersBBoxes[rlID].extent.right > bounds.e) { bounds.e = roadlayersBBoxes[rlID].extent.right; }
                     if(!('s' in bounds) || roadlayersBBoxes[rlID].extent.bottom < bounds.s) { bounds.s = roadlayersBBoxes[rlID].extent.bottom; }
                     if(!('n' in bounds) || roadlayersBBoxes[rlID].extent.top > bounds.n) { bounds.n = roadlayersBBoxes[rlID].extent.top; }
                 }
-                roadLayers[0].addFeatures([new OpenLayers.Feature.Vector(new OpenLayers.Geometry.LineString([
+                roadLayers[road1].addFeatures([new OpenLayers.Feature.Vector(new OpenLayers.Geometry.LineString([
                     new OpenLayers.Geometry.Point(bounds.w,bounds.s),
                     new OpenLayers.Geometry.Point(bounds.w,bounds.n),
                     new OpenLayers.Geometry.Point(bounds.e,bounds.n),

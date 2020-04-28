@@ -970,6 +970,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # Poltsamaa 1950 http://www.ra.ee/kaardid/index.php/et/map/view?id=206166
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/005/0000002/erat-0-6_005_0000002_00048_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 60 -b 74 -o  cache/deiip/1950_Poltsamaa.jpg
 
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/005/0000002/erat-0-6_005_0000002_00008_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 240 -b 254 -o cache/deiip/1951_Tallinn.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
 
 
