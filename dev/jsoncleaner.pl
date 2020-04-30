@@ -55,5 +55,6 @@ if(scalar(@d) > 0) {
 # those things dont belong here, but as it is cleanup script, and whole codebase is buggy...
 system 'rm '.$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[0].'/bbox.kml';
 system 'rm '.$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.$ARGV[0].'/rss.xml';
+system 'find '.$mainconf->{'dirvector'}.$mainconf->{'dirplaces'}.' -name "rss*.xml" -exec sed -f '.$mainconf->{'dirdev'}.'clean_rss.sed -i {} \;';
 
 exit 0;
