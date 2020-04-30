@@ -27,14 +27,19 @@
 <Placemark id="gcp1958_276.2"><name>1958_276 #2</name><description>124 1474</description><Point><coordinates>28.198450553227218,59.388860722878874</coordinates></Point></Placemark>
 <Placemark id="gcp1958_276.3"><name>1958_276 #3</name><description>187 4989</description><Point><coordinates>28.199330317784316,59.35932463887435</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1953"><name>1953</name><LineString><coordinates>28.08147152675310,59.33233627280434 28.08147152675310,59.42932251390808 28.42309049897568,59.42932251390808 28.42309049897568,59.33233627280434 28.08147152675310,59.33233627280434</coordinates></LineString></Placemark>
+<Placemark id="gcp1953.1"><name>1953 #1</name><description>335 398</description><Point><coordinates>28.064854164340673,59.40163169315338</coordinates></Point></Placemark>
+<Placemark id="gcp1953.2"><name>1953 #2</name><description>1949 586</description><Point><coordinates>28.38878842259636,59.38329571349245</coordinates></Point></Placemark>
+<Placemark id="gcp1953.3"><name>1953 #3</name><description>1084 756</description><Point><coordinates>28.215617826233483,59.36559976893505</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="maps"><value>1958_274,1958_174,1958_175,1958_275,1958_276</value></Data>
-<Data name="zmin"><value>10</value></Data>
 <Data name="montage"><value>yes</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1958/</value></Data>
-<Data name="bbox"><value>28.08122501992216,59.35816956660160,28.26389157103452,59.42998872322006</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
 <Data name="zmax"><value>16</value></Data>
+<Data name="maps"><value>1953,1958_274,1958_174,1958_175,1958_275,1958_276</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>28.08122501992216,59.33233627280434,28.42309049897568,59.42998872322006</value></Data>
 
 </ExtendedData>
 
