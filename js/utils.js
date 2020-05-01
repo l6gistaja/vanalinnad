@@ -158,19 +158,21 @@ vlUtils.coordsPrompt = function(map, data) {
         }
         
         var y = '';
-	if('debug' in data && data.debug) {
-	  var debugContent = {
-	    GCP: ' -gcp  ' + coords['EPSG:4326'].x + ' ' + coords['EPSG:4326'].y,
-	    GPX: '<wpt lon="' + coords['EPSG:4326'].x + '" lat="' + coords['EPSG:4326'].y + '"><name></name><desc></desc></wpt>',
-	    KML: '<Placemark><Point><coordinates>' + coords['EPSG:4326'].x + ',' + coords['EPSG:4326'].y + '</coordinates></Point><name></name><description></description></Placemark>'
-	  };
-	  y = '<table class="coordsTable">';
-	  for(i in debugContent) {
-	      y += '<tr><th class="ctC">' + i + '</th><td class="ctC"><input type=\'text\' value=\''
-		+ debugContent[i]+ '\'/></td></tr>';
-	  }
-	  y += '</table><br/>';
-	}
+        var gflags = 'useIcon';
+        if('debug' in data && data.debug) {
+            gflags += ',debug';
+            var debugContent = {
+            GCP: ' -gcp  ' + coords['EPSG:4326'].x + ' ' + coords['EPSG:4326'].y,
+            GPX: '<wpt lon="' + coords['EPSG:4326'].x + '" lat="' + coords['EPSG:4326'].y + '"><name></name><desc></desc></wpt>',
+            KML: '<Placemark><Point><coordinates>' + coords['EPSG:4326'].x + ',' + coords['EPSG:4326'].y + '</coordinates></Point><name></name><description></description></Placemark>'
+            };
+            y = '<table class="coordsTable">';
+            for(i in debugContent) {
+                y += '<tr><th class="ctC">' + i + '</th><td class="ctC"><input type=\'text\' value=\''
+            + debugContent[i]+ '\'/></td></tr>';
+            }
+            y += '</table><br/>';
+        }
         
         y += '<table class="coordsTable"><tr><th class="ctC">'
           + vlUtils.link({u:'http://en.wikipedia.org/wiki/Spatial_reference_system',l:'SRS',t:'_blank',h:'Spatial reference system'}) + '</th><th class="ctC">'
@@ -194,7 +196,7 @@ vlUtils.coordsPrompt = function(map, data) {
             T: '',
             C: '',
             site: '',
-            flags: 'useIcon',
+            flags: gflags,
             delimiter: ' '
             }, data.locData);
         y += vlUtils.getURLs(data.links, locData, data.jsonConf);
@@ -267,16 +269,28 @@ vlUtils.link = function(data) {
   * @returns string of HTML links
   */
 vlUtils.links = function(data) {
+  var flags;
+  var dbg;
   var y = '';
   var l = data.length;
   for(var i = 0; i < l; i++) {
     data[i].u = data[i].U;
+    dbg = false;
+    flags = 'flags' in data[i] ? data[i].flags.split(',') : [];
+    for(var k in flags) {
+        if(flags[k] == 'debug') {
+            dbg = true;
+            break;
+        }
+    }
+    data[i].u = data[i].u.replace('@DEBUG@', dbg ? '&debug=1' : '');
     for(var k in data[i]) {
-      if(k.charCodeAt(0) < 67) { continue; } 
-      data[i].u = data[i].u.replace('@' + k + '@', data[i][k]); 
+      if(k.charCodeAt(0) < 67) { continue; }
+      data[i].u = data[i].u.replace('@' + k + '@', data[i][k]);
     }
     y += ((y == '') ? '' : 'delimiter' in data[i] ? data[i].delimiter : ' | ') + vlUtils.link(data[i]);
   }
+  
   return y;
 }
 
@@ -438,7 +452,6 @@ vlUtils.getURLs = function(urlKeys, data, jsonConf) {
   var urlData = [];
   var urlKey, locData, locUrl, p4, zooms;
   var baseUrl = jsonConf.urls[data.baseUrlID];
-
   for(urlKey in urlKeys) {
     if(!(urlKeys[urlKey]) in jsonConf.urls) { continue; }
     locData = vlUtils.mergeHashes({},data);

@@ -4,7 +4,32 @@ Historical maps of Estonian cities under the grid of today's street network.
 
 **Shortcut keys:** F11 enables/disables fullscreen. By OpenLayers defaults arrow keys pan, +/- keys zoom & Page Up/Page Down/Home/End scroll by three quarters of a page. Additionally, comma (,) displays next and period (.) will display previous historical map.
 
-Old map symbols: [< 1900](http://www.ra.ee/kaardid/index.php/et/site/page?view=symbols), [1953 - 1977](http://geoportaal.maaamet.ee/est/Teenused/Kaardirakendused/Ajalooliste-kaartide-rakendus-p157.html) (PDF)
+<table id="readme_legends">
+    <tr>
+        <th>Era</th>
+        <th>Legend explanations</th>
+    </tr>
+    <tr>
+        <td>< 1900</td>
+        <td style="text-align:center"><a target="_blank" href="http://www.ra.ee/kaardid/index.php/et/site/page?view=symbols">et/sv/ru</a></td>
+    </tr>
+    <tr>
+        <td style="text-align:center"><a target="_blank" href="http://geoportaal.maaamet.ee/est/Teenused/Kaardirakendused/Ajalooliste-kaartide-rakendus-p157.html">~ 1900</a></td>
+        <td style="text-align:center"><a target="_blank" href="https://geoportaal.maaamet.ee/docs/WMS/Riigikaitseopetuse_kasiraamat_kesk-ja_kutsekoolidele_1933.jpg?t=20170418094625">et</a></td>
+    </tr>
+    <tr>
+        <td style="text-align:center">~ 1918</td>
+        <td style="text-align:center"><a target="_blank" href="info.html?site=Rakvere&year=1922#map.1918">de</a></td>
+    </tr>
+    <tr>
+        <td>~ 1925</td>
+        <td style="text-align:center"><a target="_blank" href="https://www.digar.ee/viewer/et/nlib-digar:46362">et</a></td>
+    </tr>
+    <tr>
+        <td><a target="_blank" href="http://geoportaal.maaamet.ee/est/Teenused/Kaardirakendused/Ajalooliste-kaartide-rakendus-p157.html">> 1940</a></td>
+        <td style="text-align:center">ru: <a target="_blank" href="https://geoportaal.maaamet.ee/docs/WMS/NL_topo_10T_leppemargid__1977.pdf?t=20141126102828">1:10k</a>, <a target="_blank" href="https://geoportaal.maaamet.ee/docs/WMS/NL_topo_10T_25T_leppemargid_1966.pdf?t=20111212103321">1:10...25k</a>, <a target="_blank" href="https://geoportaal.maaamet.ee/docs/WMS/NL_topo_25T_50T_100T_leppemargid_1953.pdf?t=20111212103315">1:25...100k</a></td>
+    </tr>
+</table>
 
 * License: BSD 2-clause License, inherited from used [OpenLayers 2](http://openlayers.org) library
 * Vector data: © [OpenStreetMap contributors](http://www.openstreetmap.org/copyright)

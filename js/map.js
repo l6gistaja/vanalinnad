@@ -19,6 +19,7 @@ function vlMap(inputParams){
   var baseLayersCount = 0;
   var jsonConf = {};
   var selectorLayer;
+  var baseURLprefix;
   
   var xmlHandlerConf = function(request) {
     if(request.status == 200) {
@@ -292,7 +293,7 @@ function vlMap(inputParams){
             C: vlUtils.getXmlValue(layersXml, 'country'),
             site: reqParams['site'],
             baseUrlID: 'vanalinnad',
-            flags: 'useIcon',
+            flags: 'useIcon' + ('debug' in reqParams ? ',debug' : ''),
             delimiter: ' '
           };
           var urlKeys = ['googlestreetview','ajapaik','geohack','maaametaero'];
@@ -358,20 +359,21 @@ function vlMap(inputParams){
       });
     }
 
-    baseurl = '';
+    baseURLprefix = '';
     for(reqKey in reqParams) {
       if(reqKey == 'year') { continue; }
       if(!(reqKey in permalinkReqKeys)) {
-        baseurl += (baseurl == '' ? '?' : '&') + reqKey + '=' + reqParams[reqKey];
+        baseURLprefix += (baseURLprefix == '' ? '?' : '&') + reqKey + '=' + reqParams[reqKey];
       }
     }
-    map.addControl(new OpenLayers.Control.Permalink({base: baseurl}));
+    map.addControl(new OpenLayers.Control.Permalink({base: baseURLprefix}));
     
     function openInfoPage() {
       var win=window.open(
         conf.infourlprefix
         + (isAtSite ? 'site=' + reqParams['site'] : '')
         + yearURL()
+        + ('debug' in reqParams ? '&debug=' + reqParams['debug'] : '')
       ,'_blank'); 
       win.focus();
     }
@@ -445,9 +447,10 @@ function vlMap(inputParams){
         y += '&nbsp;'
           + vlUtils.getURLs([w], {
             site: siteName,
-            flags: 'useIcon',
+            flags: 'useIcon' + ('debug' in reqParams ? ',debug' : ''),
             X: sitePoint.lon,
             Y: sitePoint.lat,
+            Z: map.getZoom(),
             baseUrlID: 'vanalinnad'
           }, jsonConf);
       }
