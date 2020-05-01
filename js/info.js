@@ -23,17 +23,41 @@ function vlInitInfo(inputParams){
   var componentsRegexp = {};
   
   function getSiteLbl() {
-    baseURL = '?site=' + reqParams['site'];
+    baseURL = '?site=' + reqParams['site'] + ('debug' in reqParams ? '&debug=' + reqParams['debug'] : '');
     baseYear = baseURL + '&year=';
+    debugLinks = '';
+    if('debug' in reqParams) {
+        debugLinks = '<div style="background-color:#ccffcc;padding:1em">Manually refresh: <ol>';
+        debugURLs = [
+            'conf.xml',
+            'js/',
+            conf.dirlegends + conf.dirplaces + reqParams['site'],
+            conf.dirvector + conf.dirplaces + reqParams['site'],
+            conf.dirvector + conf.dirplaces + reqParams['site'] + '/' + conf.fileemptytiles,
+            conf.dirvector + conf.dirplaces + reqParams['site'] + '/' + conf.filelayers
+        ];
+        //debugLinks
+        for(i in debugURLs) {
+            debugLinks += '<li>'+vlUtils.link({t:'_blank',u:debugURLs[i]})+'</li>'
+        }
+        debugLinks += '</ol></div>';
+    }
     return ' : ' + vlUtils.link({u:baseURL, l:siteName})
       + (level != 'year' ? ''
         : ' : ' + vlUtils.link({u:baseYear + years[0], l:'&lt;&lt;', h:years[0]})
         + ' ' + vlUtils.link({u:'index.html' + baseYear + reqParams['year'], l:reqParams['year'], h:'See map itself'})
-        + ' ' + vlUtils.link({u:baseYear + years[1], l:'&gt;&gt;', h:years[1]}));
+        + ' ' + vlUtils.link({u:baseYear + years[1], l:'&gt;&gt;', h:years[1]}))
+      + debugLinks;
   }
   
   function xmlHandlerConf(request) {
     if(request.status == 200) {
+        
+      if('debug' in reqParams) {
+        items = document.getElementsByTagName('a');
+        for(m=0;m<items.length;m++) { items[m].setAttribute("href", items[m].getAttribute("href") + '?debug=' + reqParams['debug']); }
+      }
+      
       if(!('year' in reqParams)) { reqParams['year'] = ''; }
       conf = vlUtils.xmlDoc2Hash(request.responseXML);
       jsonConf = JSON.parse(conf.json);
@@ -114,7 +138,7 @@ function vlInitInfo(inputParams){
       return ' <a href="#map.' + a + '">' + x + '</a>';
   }
   
-  function createBBoxPopup(feature) {bBoxPopupAnchor('');
+  function createBBoxPopup(feature) {
     if(feature.fid.substring(0, 4) == 'bbox') {
         bounds = new OpenLayers.Bounds(feature.geometry.bounds.toArray()).transform(map.projection, map.displayProjection);
         feature.popup = new OpenLayers.Popup.Anchored(
@@ -147,11 +171,13 @@ function vlInitInfo(inputParams){
                     : ' ' + feature.attributes.name)
                 +'</strong><br/>'
                 + bBoxPopupTrunc(center.lon) + '&nbsp;&nbsp;'
-                + bBoxPopupTrunc(center.lat) + 
+                + bBoxPopupTrunc(center.lat)
                 + ('debug' in reqParams
-                    ? ' <br/><input type="text" value=" -gcp ' + feature.attributes.description + ' '
+                    ? ' <br/><input type="text" value=" -gcp ' 
+                        + feature.attributes.description + ' '
                         + bBoxPopupTrunc(center.lon) + ' '
-                        + bBoxPopupTrunc(center.lat) + '"/>'
+                        + bBoxPopupTrunc(center.lat) 
+                        + '"/>'
                     : ''),
             null,
             true,
@@ -356,12 +382,12 @@ function vlInitInfo(inputParams){
           }
         }
 
-        y = '<br/><strong>' + vlUtils.link({u:'index.html?site=' + reqParams['site'], l:siteName})
+        y = '<br/><strong>' + vlUtils.link({u:'index.html?site=' + reqParams['site'] + ('debug' in reqParams ? '&debug=' + reqParams['debug'] : ''), l:siteName})
           + '</strong><div class="Table"><div class="Row"><div class="Cell"><ol>';
         for(i=0; i<links.length; i++) {
           if(links[i].getAttribute('disabled') || links[i].getAttribute('year') == null){ continue; }
           y += '<li>' + vlUtils.link({
-            u: '?site=' + reqParams['site'] + '&year='+ links[i].getAttribute('year'),
+            u: '?site=' + reqParams['site'] + '&year='+ links[i].getAttribute('year') + ('debug' in reqParams ? '&debug=' + reqParams['debug'] : ''),
             l: links[i].getAttribute(links[i].getAttribute('name') ? 'name' : 'year')
           })  + '</li>';
         }
@@ -384,7 +410,7 @@ function vlInitInfo(inputParams){
       for(i=0; i<placemarks.length; i++) {
         name = vlUtils.getXmlValue(placemarks[i], 'name');
         descr = vlUtils.getXmlValue(placemarks[i], 'description');
-        y +=  '<li>' + vlUtils.link({u:'?site=' + (descr != '' ? descr : name), l:name}) + '</li>';
+        y +=  '<li>' + vlUtils.link({u:'?site=' + (descr != '' ? descr : name) + ('debug' in reqParams ? '&debug=' + reqParams['debug'] : ''), l:name}) + '</li>';
       }
       y += '</ol>';
       document.getElementById(inputParams.divContent).innerHTML = y;
