@@ -3,6 +3,14 @@
 <channel>
 
 <item>
+<title>Eesti topograafiline kaart 1:25000, XIX-39, Võru-Vagula, Võrumaa</title>
+<author>A. Lossmann</author>
+<guid>ra.ee=ERA.T-6.3.165 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=100661</link>
+<pubDate>Mon, 01 Jan 1934 00:00:00 +0000</pubDate>
+</item>
+    
+<item>
 <title>Võru linna administratiivpiirkonna laiendamise plaan</title>
 <author>Oskar Kähr, P. Vald</author>
 <guid>ra.ee=ERA.T-6.3.1831 leht 1</guid>
@@ -15,11 +23,11 @@
 </item>
 
 <item>
-<title>Eesti topograafiline kaart 1:25000, XIX-39, Võru-Vagula, Võrumaa</title>
-<author>A. Lossmann</author>
-<guid>ra.ee=ERA.T-6.3.165 leht 1</guid>
-<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=100661</link>
-<pubDate>Mon, 01 Jan 1934 00:00:00 +0000</pubDate>
+<title>Võru II : Võru- ja Petserimaa 1937.a.</title>
+<author>Juhan Kuutma, Naum Subbotin, Eesti Kaitsevägi, Topo-hüdrograafia osakond</author>
+<guid>isbn=978-9949-609-67-3</guid>
+<link>http://www.digar.ee/viewer/et/nlib-digar:301451</link>
+<pubDate>Fri, 01 Jan 1937 00:00:00 +0000</pubDate>
 </item>
 
 </channel>
