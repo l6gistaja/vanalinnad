@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
+    
 <item>
 <title>Karte von der Kreisstadt Werro</title>
 <author>A. Jacoby</author>
@@ -10,5 +11,14 @@
 <pubDate>Mon, 01 Jan 1912 00:00:00 +0000</pubDate>
 <legends>legend1912.gif</legends>
 </item>
+
+<item>
+<title>0-22 [Võru] : Верроск. уезд. Лифляндск[ой] губ[ернии]</title>
+<author>Корпус Военных Топографов</author>
+<guid>isbn=978-9949-659-30-2</guid>
+<link>http://www.digar.ee/viewer/et/nlib-digar:357336</link>
+<pubDate>Mon, 01 Jan 1917 00:00:00 +0000</pubDate>
+</item>
+
 </channel>
 </rss>
