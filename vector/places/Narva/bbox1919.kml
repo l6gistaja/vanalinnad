@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>28.126093786,59.2995988539 28.126093786,59.4000977434 28.4254007148,59.4000977434 28.4254007148,59.2995988539 28.126093786,59.2995988539</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>2034 693</description><Point><coordinates>28.198085772799132,59.386511458089096</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>1109 1533</description><Point><coordinates>28.165555941866575,59.37044468080931</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>5728 996</description><Point><coordinates>28.329127776431005,59.38089441636226</coordinates></Point></Placemark>
-<Placemark id="gcp.4"><name>#4</name><description>2353 1990</description><Point><coordinates>28.209379320000224,59.36162780834741</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1919"><name>1919</name><LineString><coordinates>28.12609378594963,59.29957183088715 28.12609378594963,59.40009774339796 28.42537680507030,59.40009774339796 28.42537680507030,59.29957183088715 28.12609378594963,59.29957183088715</coordinates></LineString></Placemark>
+<Placemark id="gcp1919.1"><name>1919 #1</name><description>2034 693</description><Point><coordinates>28.198085772799132,59.386511458089096</coordinates></Point></Placemark>
+<Placemark id="gcp1919.2"><name>1919 #2</name><description>1109 1533</description><Point><coordinates>28.165555941866575,59.37044468080931</coordinates></Point></Placemark>
+<Placemark id="gcp1919.3"><name>1919 #3</name><description>5728 996</description><Point><coordinates>28.329127776431005,59.38089441636226</coordinates></Point></Placemark>
+<Placemark id="gcp1919.4"><name>1919 #4</name><description>2353 1990</description><Point><coordinates>28.209379320000224,59.36162780834741</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1919_Narva-Joesuu"><name>1919_Narva-Joesuu</name><LineString><coordinates>28.08168110706384,59.39928097733852 28.08168110706384,59.43018871205825 28.32593590196866,59.43018871205825 28.32593590196866,59.39928097733852 28.08168110706384,59.39928097733852</coordinates></LineString></Placemark>
+<Placemark id="gcp1919_Narva-Joesuu.1"><name>1919_Narva-Joesuu #1</name><description>3201 641</description><Point><coordinates>28.127811434344636,59.429665086771045</coordinates></Point></Placemark>
+<Placemark id="gcp1919_Narva-Joesuu.2"><name>1919_Narva-Joesuu #2</name><description>4197 1631</description><Point><coordinates>28.163431170062033,59.41055053875019</coordinates></Point></Placemark>
+<Placemark id="gcp1919_Narva-Joesuu.3"><name>1919_Narva-Joesuu #3</name><description>8124 495</description><Point><coordinates>28.304819560851744,59.43278753680842</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1919_Narva-Joesuu,1919</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1919/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>28.08168110706384,59.29957183088715,28.42537680507030,59.43018871205825</value></Data>
+<Data name="zmin"><value>10</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
