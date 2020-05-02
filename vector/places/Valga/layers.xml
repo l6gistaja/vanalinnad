@@ -23,7 +23,7 @@
   <layer bounds="25.99919293345170,57.73551241326968,26.13072893361625,57.80559195733379" type="tms" year="18XX" />
   <layer bounds="25.99093122813302,57.73146806644293,26.13795942547541,57.81041698438664" type="tms" year="1800" />
   <layer bounds="26.01148044888889,57.74048536581748,26.11935912345154,57.80566512170100" type="tms" year="1683" />
-  <layer name="est-lat" file="est-lat.json" maxres="12" style="multiColor" type="custom" format="VLGJ"/>
+  <layer name="EE-LV" file="est-lat.json" maxres="12" style="multiColor" type="custom" format="VLGJ"/>
   <layer name="⛜ 1" file="roads3min.json" levels="0,1,2,3" maxres="12" type="roads" format="VLGJ"/>
   <layer name="⛜ 2" file="roads4min.json" levels="4" maxres="14" type="roads" format="VLGJ"/>
   <maxzoom>16</maxzoom>
