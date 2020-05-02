@@ -8,7 +8,7 @@
 <Placemark id="gcp1950.k1.3"><name>1950.k1 #3</name><description>3654 4608</description><Point><coordinates>26.98850094065418,57.84815101154865</coordinates></Point></Placemark>
 <Placemark id="gcp1950.k1.4"><name>1950.k1 #4</name><description>7988 5666</description><Point><coordinates>27.019636022898847,57.84409703091823</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1950.k2"><name>1950.k2</name><LineString><coordinates>26.96708991468482,57.80868488582344 26.96708991468482,57.84378925561791 27.03651852550041,57.84378925561791 27.03651852550041,57.80868488582344 26.96708991468482,57.80868488582344</coordinates></LineString></Placemark>
+<Placemark id="bbox.1950.k2"><name>1950.k2</name><LineString><coordinates>26.98939444183668,57.80869908511412 26.98939444183668,57.83290464426379 27.03652595109384,57.83290464426379 27.03652595109384,57.80869908511412 26.98939444183668,57.80869908511412</coordinates></LineString></Placemark>
 <Placemark id="gcp1950.k2.1"><name>1950.k2 #1</name><description>4408 201</description><Point><coordinates>26.998821240691246,57.842991316666314</coordinates></Point></Placemark>
 <Placemark id="gcp1950.k2.2"><name>1950.k2 #2</name><description>8337 783</description><Point><coordinates>27.027123910216474,57.840787062421896</coordinates></Point></Placemark>
 <Placemark id="gcp1950.k2.3"><name>1950.k2 #3</name><description>4987 5308</description><Point><coordinates>27.003159640421842,57.82344106473911</coordinates></Point></Placemark>
@@ -24,6 +24,11 @@
 <Placemark id="gcp1948_980.2"><name>1948_980 #2</name><description>1486 3744</description><Point><coordinates>26.975905935721293,57.810066387316574</coordinates></Point></Placemark>
 <Placemark id="gcp1948_980.3"><name>1948_980 #3</name><description>108 120</description><Point><coordinates>26.96516895860818,57.82533590527263</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1948_981"><name>1948_981</name><LineString><coordinates>26.99795056339044,57.80775734276958 26.99795056339044,57.82575544341446 27.03161579087095,57.82575544341446 27.03161579087095,57.80775734276958 26.99795056339044,57.80775734276958</coordinates></LineString></Placemark>
+<Placemark id="gcp1948_981.1"><name>1948_981 #1</name><description>4167 3232</description><Point><coordinates>27.0306515425103,57.81215290254384</coordinates></Point></Placemark>
+<Placemark id="gcp1948_981.2"><name>1948_981 #2</name><description>3486 330</description><Point><coordinates>27.025240981596916,57.82423109416531</coordinates></Point></Placemark>
+<Placemark id="gcp1948_981.3"><name>1948_981 #3</name><description>1011 76</description><Point><coordinates>27.005864703672632,57.82539516669979</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1950_8221"><name>1950_8221</name><LineString><coordinates>26.99769135536663,57.83320128681375 26.99769135536663,57.86781079155880 27.04383214701477,57.86781079155880 27.04383214701477,57.83320128681375 26.99769135536663,57.83320128681375</coordinates></LineString></Placemark>
 <Placemark id="gcp1950_8221.1"><name>1950_8221 #1</name><description>522 729</description><Point><coordinates>27.006056597429918,57.86880996452989</coordinates></Point></Placemark>
 <Placemark id="gcp1950_8221.2"><name>1950_8221 #2</name><description>475 4840</description><Point><coordinates>27.005229816500126,57.83427384253627</coordinates></Point></Placemark>
@@ -31,12 +36,12 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="maps"><value>1950_8221,1950.k2,1950.k1,1948_980,1948_930</value></Data>
-<Data name="zmin"><value>12</value></Data>
 <Data name="montage"><value>yes</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Voru/composed/1950/</value></Data>
 <Data name="bbox"><value>26.96200272762847,57.80768459953359,27.04383214701477,57.86781079155880</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>1948_981,1950_8221,1950.k2,1950.k1,1948_980,1948_930</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Voru/composed/1950/</value></Data>
 
 </ExtendedData>
 
