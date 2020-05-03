@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
+    
+<item>
+<title>Eesti topograafiline kaart ENSV Ülemnõukogu Presiidiumi tehtud parandustega (1:100 000). Главное управление геодезии и картографии при Совете Министров СССР. Генеральный штаб советской армии 0-35-77 (Валга) Латвийская ССР Рижская обл., Эстонская ССР Тартуская и Пярнуская области</title>
+<author>V. Malõsova</author>
+<guid>ra.ee=ERA.T-6.5.2 leht 71</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=206189</link>
+<pubDate>Mon, 01 Jan 1951 00:00:00 +0000</pubDate>
+</item>
+
 <item>
 <title>Valga linna generaalplaan (tugiplaan).</title>
 <author>V.P.T. "Estonprojekt"</author>
@@ -9,5 +18,6 @@
 <pubDate>Fri, 01 Jan 1954 00:00:00 +0000</pubDate>
 <legends>legend1954a.gif,legend1954b.jpg</legends>
 </item>
+
 </channel>
 </rss>

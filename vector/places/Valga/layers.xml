@@ -14,7 +14,7 @@
  "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140033&unit_match=1&digitized=1&vmode=grid&q=1&sort=aeg_kuvatav"}
 }
 }]]></json>
-  <layer bounds="26.02037068185053,57.75581831238797,26.12340971354862,57.80446296735975" type="tms" year="1954" />
+  <layer bounds="25.99787920214596,57.74498459084056,26.12365782708240,57.81014865177757" type="tms" year="1954" />
   <layer bounds="26.01950970112874,57.75548612244737,26.12480847766196,57.80427607609961" type="tms" year="1944" />
   <layer bounds="26.00815071088852,57.74069991412150,26.13227267716068,57.81414775387759" type="tms" year="1936" />
   <layer bounds="25.99769636213537,57.76728774729848,26.07570277972415,57.78993058434814" type="tms" year="1920" />
@@ -23,9 +23,9 @@
   <layer bounds="25.99919293345170,57.73551241326968,26.13072893361625,57.80559195733379" type="tms" year="18XX" />
   <layer bounds="25.99093122813302,57.73146806644293,26.13795942547541,57.81041698438664" type="tms" year="1800" />
   <layer bounds="26.01148044888889,57.74048536581748,26.11935912345154,57.80566512170100" type="tms" year="1683" />
-  <layer name="EE-LV" file="est-lat.json" maxres="12" style="multiColor" type="custom" format="VLGJ"/>
-  <layer name="⛜ 1" file="roads3min.json" levels="0,1,2,3" maxres="12" type="roads" format="VLGJ"/>
-  <layer name="⛜ 2" file="roads4min.json" levels="4" maxres="14" type="roads" format="VLGJ"/>
+  <layer name="EE-LV" file="est-lat.json" format="VLGJ" maxres="12" style="multiColor" type="custom" />
+  <layer name="⛜ 1" file="roads3min.json" format="VLGJ" levels="0,1,2,3" maxres="12" type="roads" />
+  <layer name="⛜ 2" file="roads4min.json" format="VLGJ" levels="4" maxres="14" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>12</minzoom>
   <roadbounds e="26.124983" n="57.81024" s="57.74463" w="25.9946" />

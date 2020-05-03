@@ -2,12 +2,17 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
+<Placemark id="bbox.1951"><name>1951</name><LineString><coordinates>25.99787920214596,57.74498459084056 25.99787920214596,57.81014865177757 26.12365782708240,57.81014865177757 26.12365782708240,57.74498459084056 25.99787920214596,57.74498459084056</coordinates></LineString></Placemark>
+<Placemark id="gcp1951.1"><name>1951 #1</name><description>302 808</description><Point><coordinates>26.05715743667638,57.742499127070516</coordinates></Point></Placemark>
+<Placemark id="gcp1951.2"><name>1951 #2</name><description>61 200</description><Point><coordinates>26.010486999816663,57.80615328657909</coordinates></Point></Placemark>
+<Placemark id="gcp1951.3"><name>1951 #3</name><description>551 251</description><Point><coordinates>26.10665565739314,57.80064022512274</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1954.2"><name>1954.2</name><LineString><coordinates>26.02444193341293,57.77258497088168 26.02444193341293,57.80446296735975 26.09723442262506,57.80446296735975 26.09723442262506,57.77258497088168 26.02444193341293,57.77258497088168</coordinates></LineString></Placemark>
 <Placemark id="gcp1954.2.1"><name>1954.2 #1</name><description>886 4412</description><Point><coordinates>26.03114854232849,57.78750311475089</coordinates></Point></Placemark>
 <Placemark id="gcp1954.2.2"><name>1954.2 #2</name><description>1125 8011</description><Point><coordinates>26.032508542327975,57.77368736107373</coordinates></Point></Placemark>
 <Placemark id="gcp1954.2.3"><name>1954.2 #3</name><description>8238 4745</description><Point><coordinates>26.083707931212867,57.78593835742034</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1954.4"><name>1954.4</name><LineString><coordinates>26.02037068185053,57.75944111504842 26.02037068185053,57.78710114961292 26.10171094134985,57.78710114961292 26.10171094134985,57.75944111504842 26.02037068185053,57.75944111504842</coordinates></LineString></Placemark>
+<Placemark id="bbox.1954.4"><name>1954.4</name><LineString><coordinates>26.02037068185053,57.75944402880243 26.02037068185053,57.77861429579152 26.10149581444083,57.77861429579152 26.10149581444083,57.75944402880243 26.02037068185053,57.75944402880243</coordinates></LineString></Placemark>
 <Placemark id="gcp1954.4.1"><name>1954.4 #1</name><description>617 3645</description><Point><coordinates>26.025125486754707,57.77304146555856</coordinates></Point></Placemark>
 <Placemark id="gcp1954.4.2"><name>1954.4 #2</name><description>10562 2067</description><Point><coordinates>26.09651516189582,57.778625133216366</coordinates></Point></Placemark>
 <Placemark id="gcp1954.4.3"><name>1954.4 #3</name><description>4360 48</description><Point><coordinates>26.052290899658338,57.786701616413865</coordinates></Point></Placemark>
@@ -18,13 +23,13 @@
 <Placemark id="gcp1954.5.3"><name>1954.5 #3</name><description>19 1832</description><Point><coordinates>26.038593206093207,57.77235098691103</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="maps"><value>1954.5,1954.4,1954.2</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Valga/composed/1954/</value></Data>
-<Data name="montage"><value>yes</value></Data>
-<Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.02037068185053,57.75581831238797,26.12340971354862,57.80446296735975</value></Data>
+<Data name="maps"><value>1951,1954.5,1954.4,1954.2</value></Data>
+<Data name="bbox"><value>25.99787920214596,57.74498459084056,26.12365782708240,57.81014865177757</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Valga/composed/1954/</value></Data>
+<Data name="zmax"><value>16</value></Data>
 <Data name="zmin"><value>12</value></Data>
+<Data name="montage"><value>yes</value></Data>
 
 </ExtendedData>
 

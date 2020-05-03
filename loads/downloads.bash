@@ -975,7 +975,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/005/0000002/erat-0-6_005_0000002_00015_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 240 -b 254 -o  cache/deiip/1953_Narva.jpg
 
-# dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o  cache/deiip/.jpg
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/005/0000002/erat-0-6_005_0000002_00071_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 224 -b 237 -o cache/deiip/1951_Valga.jpg
+
+# dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 
 # Haapsalu 1907 https://www.digar.ee/arhiiv/nlib-digar:397431
