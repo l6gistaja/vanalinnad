@@ -990,4 +990,4 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 # Parnu 1911 http://www.ra.ee/kaardid/index.php/et/map/view?id=101352 https://www.digar.ee/arhiiv/nlib-digar:357521
 # Parnu 1960 http://www.ra.ee/kaardid/index.php/et/map/view?id=29951
 # Rakvere 1915 https://www.digar.ee/viewer/et/nlib-digar:356961/311205/page/1 http://www.ra.ee/kaardid/index.php/et/map/view?id=102760 -
-# Viljandi 1800 http://www.ra.ee/kaardid/index.php/et/map/view?id=15670 -
+# Viljandi ~1800 http://www.ra.ee/kaardid/index.php/et/map/view?id=15670 -

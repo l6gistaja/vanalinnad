@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>24.44786152513601,58.33758394675777 24.44786152513601,58.40015238646910 24.57299954184786,58.40015238646910 24.57299954184786,58.33758394675777 24.44786152513601,58.33758394675777</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>376 490</description><Point><coordinates>24.461571373772315,58.39072081446853</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>2661 84</description><Point><coordinates>24.54379717333308,58.39840132196678</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>3424 2528</description><Point><coordinates>24.57132736666389,58.35165141936646</coordinates></Point></Placemark>
-<Placemark id="gcp.4"><name>#4</name><description>1930 1327</description><Point><coordinates>24.51715854232892,58.37483230764262</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1964"><name>1964</name><LineString><coordinates>24.46948288777076,58.38617554366552 24.46948288777076,58.41840041436822 24.53869936327922,58.41840041436822 24.53869936327922,58.38617554366552 24.46948288777076,58.38617554366552</coordinates></LineString></Placemark>
+<Placemark id="gcp1964.1"><name>1964 #1</name><description>48 107</description><Point><coordinates>24.489297358498217,58.415884915896996</coordinates></Point></Placemark>
+<Placemark id="gcp1964.2"><name>1964 #2</name><description>1387 120</description><Point><coordinates>24.539360751811124,58.397908604591976</coordinates></Point></Placemark>
+<Placemark id="gcp1964.3"><name>1964 #3</name><description>483 534</description><Point><coordinates>24.49543689698357,58.40261960322902</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1967"><name>1967</name><LineString><coordinates>24.44786152513601,58.33758799311755 24.44786152513601,58.40015238646910 24.57299145622308,58.40015238646910 24.57299145622308,58.33758799311755 24.44786152513601,58.33758799311755</coordinates></LineString></Placemark>
+<Placemark id="gcp1967.1"><name>1967 #1</name><description>376 490</description><Point><coordinates>24.461571373772315,58.39072081446853</coordinates></Point></Placemark>
+<Placemark id="gcp1967.2"><name>1967 #2</name><description>2661 84</description><Point><coordinates>24.54379717333308,58.39840132196678</coordinates></Point></Placemark>
+<Placemark id="gcp1967.3"><name>1967 #3</name><description>3424 2528</description><Point><coordinates>24.57132736666389,58.35165141936646</coordinates></Point></Placemark>
+<Placemark id="gcp1967.4"><name>1967 #4</name><description>1930 1327</description><Point><coordinates>24.51715854232892,58.37483230764262</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.44786152513601,58.33758799311755,24.57299145622308,58.41840041436822</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>1964,1967</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1967/</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
