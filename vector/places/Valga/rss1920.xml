@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
+
+<item>
+<title>0-20 [Valga] : Феллинск., Валк., Верроск., и Юрьевск. уезд. Лифлянд[ской] губ[ернии]</title>
+<guid>isbn=978-9949-659-28-9</guid>
+<link>https://www.digar.ee/viewer/et/nlib-digar:357577</link>
+<pubDate>Fri, 01 Jan 1915 00:00:00 +0000</pubDate>
+</item>
+
 <item>
 <title>Karte der Stadt Walk und Vorstädte</title>
 <guid>ra.ee=ERA.1604.1.90 leht 25</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=246945</link>
 <pubDate>Thu, 01 Jan 1920 00:00:00 +0000</pubDate>
 </item>
+
 </channel>
 </rss>
