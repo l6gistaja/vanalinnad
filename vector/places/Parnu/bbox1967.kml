@@ -2,6 +2,11 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
+<Placemark id="bbox.1960"><name>1960</name><LineString><coordinates>24.43135438249658,58.33773250170426 24.43135438249658,58.43208432922672 24.63979389473008,58.43208432922672 24.63979389473008,58.33773250170426 24.43135438249658,58.33773250170426</coordinates></LineString></Placemark>
+<Placemark id="gcp1960.1"><name>1960 #1</name><description>73 398</description><Point><coordinates>24.440185585402585,58.42543898883957</coordinates></Point></Placemark>
+<Placemark id="gcp1960.2"><name>1960 #2</name><description>1028 1195</description><Point><coordinates>24.60460633065049,58.359938086363705</coordinates></Point></Placemark>
+<Placemark id="gcp1960.3"><name>1960 #3</name><description>1052 410</description><Point><coordinates>24.60162306574441,58.42918150206885</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1964"><name>1964</name><LineString><coordinates>24.46948288777076,58.38617554366552 24.46948288777076,58.41840041436822 24.53869936327922,58.41840041436822 24.53869936327922,58.38617554366552 24.46948288777076,58.38617554366552</coordinates></LineString></Placemark>
 <Placemark id="gcp1964.1"><name>1964 #1</name><description>48 107</description><Point><coordinates>24.489297358498217,58.415884915896996</coordinates></Point></Placemark>
 <Placemark id="gcp1964.2"><name>1964 #2</name><description>1387 120</description><Point><coordinates>24.539360751811124,58.397908604591976</coordinates></Point></Placemark>
@@ -14,12 +19,13 @@
 <Placemark id="gcp1967.4"><name>1967 #4</name><description>1930 1327</description><Point><coordinates>24.51715854232892,58.37483230764262</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.44786152513601,58.33758799311755,24.57299145622308,58.41840041436822</value></Data>
-<Data name="zmin"><value>12</value></Data>
-<Data name="maps"><value>1964,1967</value></Data>
+<Data name="maps"><value>1960,1964,1967</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1967/</value></Data>
+<Data name="bbox"><value>24.43135438249658,58.33758799311755,24.63979389473008,58.43208432922672</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 
 </ExtendedData>
 
