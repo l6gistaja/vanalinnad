@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+
+<item>
+<title>Pärnu linna planeerimise ja hoonestamise projekt (tugiplaan).</title>
+<author>Anton Soans, M. Redlich, A. Kumari</author>
+<guid>ra.ee=EAM.3.1.479 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=305605</link>
+<pubDate>Sat, 01 Jan 1949 00:00:00 +0000</pubDate>
+<componentsregexp>^1949</componentsregexp>
+<legends>legend1949a.jpg,legend1949b.gif</legends>
+</item>
+
+<item>
+<title>Eesti topograafiline kaart ENSV Ülemnõukogu Presiidiumi tehtud parandustega (1:100 000). Генеральный штаб советской армии 0-35-49 (Лавассаре) Эстонская ССР Пярнуская область</title>
+<author>T. Vlasova</author>
+<guid>ra.ee=ERA.T-6.5.2 leht 45</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=206163</link>
+<pubDate>Mon, 01 Jan 1951 00:00:00 +0000</pubDate>
+<anchor>1951.W</anchor>
+</item>
+
+<item>
+<title>Eesti topograafiline kaart ENSV Ülemnõukogu Presiidiumi tehtud parandustega (1:100 000). Генеральный штаб советской армии 0-35-50 (Пярну) Эстонская ССР Пярнуская область</title>
+<author>A. Fulerinova</author>
+<guid>ra.ee=ERA.T-6.5.2 leht 46</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=206164</link>
+<pubDate>Mon, 01 Jan 1951 00:00:00 +0000</pubDate>
+<anchor>1951.E</anchor>
+</item>
+
+</channel>
+</rss>
