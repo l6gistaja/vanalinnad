@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1960.k1"><name>1960.k1</name><LineString><coordinates>22.46104862977290,58.23573602258848 22.46104862977290,58.25005605009517 22.49685199503117,58.25005605009517 22.49685199503117,58.23573602258848 22.46104862977290,58.23573602258848</coordinates></LineString></Placemark>
+<Placemark id="gcp1960.k1.1"><name>1960.k1 #1</name><description>554 703</description><Point><coordinates>22.46682129950475,58.24642428559269</coordinates></Point></Placemark>
+<Placemark id="gcp1960.k1.2"><name>1960.k1 #2</name><description>2556 1245</description><Point><coordinates>22.486090289068148,58.24345424304538</coordinates></Point></Placemark>
+<Placemark id="gcp1960.k1.3"><name>1960.k1 #3</name><description>2445 65</description><Point><coordinates>22.485253439855587,58.24946182845047</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1960.k2"><name>1960.k2</name><LineString><coordinates>22.48657262219666,58.23565096441656 22.48657262219666,58.24984897132211 22.50752813074334,58.24984897132211 22.50752813074334,58.23565096441656 22.48657262219666,58.23565096441656</coordinates></LineString></Placemark>
+<Placemark id="gcp1960.k2.1"><name>1960.k2 #1</name><description>25 72</description><Point><coordinates>22.487497790984527,58.249536470650355</coordinates></Point></Placemark>
+<Placemark id="gcp1960.k2.2"><name>1960.k2 #2</name><description>17 3087</description><Point><coordinates>22.486746772461032,58.23656019381903</coordinates></Point></Placemark>
+<Placemark id="gcp1960.k2.3"><name>1960.k2 #3</name><description>1124 599</description><Point><coordinates>22.496402724914546,58.24715388970422</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Kuressaare/composed/1960/</value></Data>
+<Data name="bbox"><value>22.46104862977290,58.23565096441656,22.50752813074334,58.25005605009517</value></Data>
+<Data name="zmin"><value>13</value></Data>
+<Data name="maps"><value>1960.k1,1960.k2</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
