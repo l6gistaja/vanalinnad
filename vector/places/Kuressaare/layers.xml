@@ -16,6 +16,7 @@
  "saaremaa_geneal": {"h":"Saaremaa genealoogiaselts", "l":"Saaremaa genealoogiaselts", "t":"_blank", "U":"http://www.genealoogia.ee/saaremaa/tulemused.html"}
 }
 }]]></json>
+  <layer bounds="22.44551055793925,58.23552229441361,22.52508785990556,58.27346861627633" type="tms" year="1970T" />
   <layer bounds="22.39622609713432,58.21542167833171,22.54797400577909,58.27602573871626" type="tms" year="1970" />
   <layer bounds="22.46104862977290,58.23565096441656,22.50752813074334,58.25005605009517" type="tms" year="1960" />
   <layer bounds="22.46004717300762,58.23498522494723,22.50408391207002,58.26897093063631" type="tms" year="1939" />
