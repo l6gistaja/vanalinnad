@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>22.45945055781233,58.24007424245781 22.45945055781233,58.26737100676026 22.50393211453530,58.26737100676026 22.50393211453530,58.24007424245781 22.45945055781233,58.24007424245781</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>688 584</description><Point><coordinates>22.48175583929903,58.25981461961985</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>694 1417</description><Point><coordinates>22.477185355138126,58.251832963579</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>955 1887</description><Point><coordinates>22.479438410710397,58.24663884177031</coordinates></Point></Placemark>
-<Placemark id="gcp.4"><name>#4</name><description>1420 747</description><Point><coordinates>22.49420128912835,58.256100607212</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1918"><name>1918</name><LineString><coordinates>22.45945055781242,58.24007305375934 22.45945055781242,58.26737100675761 22.50393858358787,58.26737100675761 22.50393858358787,58.24007305375934 22.45945055781242,58.24007305375934</coordinates></LineString></Placemark>
+<Placemark id="gcp1918.1"><name>1918 #1</name><description>688 584</description><Point><coordinates>22.48175583929903,58.25981461961985</coordinates></Point></Placemark>
+<Placemark id="gcp1918.2"><name>1918 #2</name><description>694 1417</description><Point><coordinates>22.477185355138126,58.251832963579</coordinates></Point></Placemark>
+<Placemark id="gcp1918.3"><name>1918 #3</name><description>955 1887</description><Point><coordinates>22.479438410710397,58.24663884177031</coordinates></Point></Placemark>
+<Placemark id="gcp1918.4"><name>1918 #4</name><description>1420 747</description><Point><coordinates>22.49420128912835,58.256100607212</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1918.S"><name>1918.S</name><LineString><coordinates>22.39602809712076,58.21257333744491 22.39602809712076,58.29108711677588 22.53081221402930,58.29108711677588 22.53081221402930,58.21257333744491 22.39602809712076,58.21257333744491</coordinates></LineString></Placemark>
+<Placemark id="gcp1918.S.1"><name>1918.S #1</name><description>935 1783</description><Point><coordinates>22.43973,58.238904</coordinates></Point></Placemark>
+<Placemark id="gcp1918.S.2"><name>1918.S #2</name><description>844 601</description><Point><coordinates>22.432386,58.279875</coordinates></Point></Placemark>
+<Placemark id="gcp1918.S.3"><name>1918.S #3</name><description>1688 1641</description><Point><coordinates>22.48877437301618,58.24434844963337</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>13</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1918.S,1918</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Kuressaare/composed/1918/</value></Data>
+<Data name="bbox"><value>22.39602809712076,58.21257333744491,22.53081221402930,58.29108711677588</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
