@@ -3,6 +3,24 @@
 <Document>
 
 <Placemark>
+<name>Mõntu - Sõrve</name>
+<description><![CDATA[
+1914 - ?<br/>
+750 mm<br/>
+➔ 
+<a href="http://raudtee.eu/?main=16&sub=214&tlink=0" target="_blank" title="raudtee.eu">1</a>, 
+<a href="https://www.ester.ee/record=b2436049*est" target="_blank" title="Пушки Курляндского берега">2</a>, 
+<a href="legends/common/M6ntu.gif" target="_blank" title="Пушки Курляндского берега">3</a>
+]]></description>
+<color>#FF0000</color>
+<MultiGeometry>
+
+<LineString><coordinates>22.121020614012533,57.948795065974096 22.10874682556045,57.949387189869675 22.10436946044859,57.94783853749711 22.096902190551003,57.94314662373123 22.070294677123613,57.923370071969266 22.060939132079135,57.9174440991795 22.05621844421281,57.91721615762136 22.042056380614735,57.919677849901035 22.038022338256454,57.920042530704094</coordinates></LineString>
+
+</MultiGeometry>
+</Placemark>
+
+<Placemark>
 <name>Türi - Tamsalu</name>
 <description><![CDATA[
 08.10.1900 - 03.05.1972<br/>
