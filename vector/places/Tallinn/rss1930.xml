@@ -24,15 +24,14 @@
 <guid>isbn=978-9949-598-13-7;ESTER=b1609039</guid>
 </item>
 
-<!--
 <item>
+<deleted>1</deleted>
 <title>Tallinna linna plaan</title>
 <author>[s.n.]</author>
 <link>http://www.digar.ee/viewer/et/nlib-digar:295044/264639</link>
 <pubDate>Sun, 01 Jan 1928 00:00:00 +0000</pubDate>
 <guid>isbn=978-9949-598-64-9;ESTER=b16085383</guid>
 </item>
--->
 
 </channel>
 </rss>

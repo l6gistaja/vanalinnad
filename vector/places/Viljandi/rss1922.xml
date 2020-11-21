@@ -11,9 +11,9 @@
 <legends>legend1922.jpg</legends>
 </item>
 
-<!--
 
 <item>
+<deleted>1</deleted>
 <title>Viljandi linna plaan</title>
 <guid>ra.ee=EAA.2072.9.795 leht 3</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=24618</link>
@@ -24,6 +24,7 @@
 </item>
 
 <item>
+<deleted>1</deleted>
 <title>Viljandi linna plaan</title>
 <author>L. Jacobsenn</author>
 <guid>ra.ee=EAA.2072.9.797 leht 3</guid>
@@ -36,6 +37,7 @@
 </item>
 
 <item>
+<deleted>1</deleted>
 <title>Viljandi linna plaan.</title>
 <author>L. Jacobsenn</author>
 <guid>ra.ee=EAA.2072.9.797 leht 2</guid>
@@ -46,6 +48,7 @@
 </item>
 
 <item>
+<deleted>1</deleted>
 <title>Viljandi linna uue administratiivpiirkonna plaan</title>
 <guid>ra.ee=ERA.T-6.3.1826 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=132052</link>
@@ -54,8 +57,6 @@
 <pubDate>Mon, 01 Jan 1923 00:00:00 +0000</pubDate>
 <anchor>1923</anchor>
 </item>
-
--->
 
 </channel>
 </rss>

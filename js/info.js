@@ -203,6 +203,8 @@ function vlInitInfo(inputParams){
 
       for(m=0;m<items.length;m++) {
 
+        if(vlUtils.getXmlValue(items[m], 'deleted') == '1') { continue; }
+            
         dateParts = vlUtils.getXmlValue(items[m], 'pubDate').split(/\s+/);
         pubYear = (dateParts.length > 3) ? dateParts[3] : '';
         mapAnchor =  (vlUtils.getXmlValue(items[m], 'anchor') != '') ? vlUtils.getXmlValue(items[m], 'anchor') : pubYear;
