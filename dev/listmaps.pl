@@ -5,7 +5,8 @@ use lib './dev';
 use VlHelper qw(get_sites);
 use Data::Dumper;
 use DBI qw(:sql_types);
-our $dbh = DBI->connect("dbi:SQLite:dbname=vector/common/vanalinnad_maps/maps.sqlite3","","");
+$dir = 'vector/common/vanalinnad_maps/';
+our $dbh = DBI->connect("dbi:SQLite:dbname=".$dir."maps.sqlite3","","");
 $xml = new XML::Simple;
 $mainconf = $xml->XMLin('conf.xml');
 
@@ -14,25 +15,15 @@ $mainconf = $xml->XMLin('conf.xml');
 $sth = $dbh->prepare("DELETE FROM maps WHERE permanent_record = 'N'");
 $sth->execute();
 $sth->finish;
-$sth = $dbh->prepare("INSERT INTO maps (permanent_record, vl_site, anchor,use,vl_year,year) VALUES (?,?,?,?,?,?)");
-our $stupdl = $dbh->prepare("UPDATE maps SET url = ?, uid = ?, title = ?, author = ? WHERE permanent_record = 'N' AND vl_site = ? AND vl_year = ? AND anchor LIKE ?");
+our $sth = $dbh->prepare("INSERT INTO maps (permanent_record, vl_site, anchor, use, vl_year, year, url, uid, title, author) VALUES (?,?,?,?,?,?,?,?,?,?)");
 foreach my $site (@sites) {
-    $gdal = $xml->XMLin($mainconf->{dirvector}.$mainconf->{dirplaces}.$site.'/'.$mainconf->{filegdal});
-    #print Dumper($gdal);
     print $site."\n";
-    foreach my $map (@{$gdal->{translate}}) {
-        $vl_site = $site;
-        $vl_year = $year = $anchor = $map->{map};
-        $year = substr $year, 0, 4;
-        $use = exists($map->{flags}) && $map->{flags} =~ /deleted/ ? 'D' : 'A';
-        if(exists($map->{composite})) {
-            $vl_year = $map->{composite};
-            if(exists($gdal->{composite}->{$vl_year}->{flags}) && $gdal->{composite}->{$vl_year}->{flags} =~ /deleted/) {
-                $use = 'D';
-            }
-        }
-        $sth->execute('N',$vl_site,$anchor,$use,$vl_year,$year);
-    }
+    
+    $layers = $xml->XMLin($mainconf->{dirvector}.$mainconf->{dirplaces}.$site.'/'.$mainconf->{filelayers});
+    #print Dumper($layers);
+    our @years = qw();
+    foreach $layer (@{$layers->{layer}}) { if($layer->{type} eq 'tms') { push(@years, $layer->{year}); } }
+    #print Dumper(@years);
     
     opendir(DIR, $mainconf->{dirvector}.$mainconf->{dirplaces}.$site.'/');
     @files = grep(/^rss.+\.xml$/, readdir(DIR));
@@ -40,32 +31,117 @@ foreach my $site (@sites) {
     foreach $file (@files) {
         $rss = $xml->XMLin($mainconf->{dirvector}.$mainconf->{dirplaces}.$site.'/'.$file);
         if(exists($rss->{channel}->{vector})) { next; }
-        #print Dumper($rss->{channel}->{item});
-        print ref($rss->{channel}->{item})."\n";
+        $year = substr($file, 3, -4);
         if(ref($rss->{channel}->{item}) eq 'HASH') {
-            handle_rss_item(\%{$rss->{channel}->{item}}, $site, substr($file, 3, -4));
+            handle_rss_item(\%{$rss->{channel}->{item}}, $site, $year);
+        } else {
+            foreach $item (@{$rss->{channel}->{item}}) { handle_rss_item(\%{$item}, $site, $year); }
         }
     }
 }
 $sth->finish;
-$stupdl->finish;
+
+
+$sth = $dbh->prepare("SELECT vl_site, vl_year, year, anchor, use, url, uid, title, author FROM maps ORDER BY vl_site, year");
+$sth->execute(); 
+open(CSV, '>', $dir.'maps.csv') or die $!;
+print CSV "\xEF\xBB\xBFvl_site;vl_year;year;use;url;uid;title;author;anchor\n";
+open(HTML, '>', $dir.'index.html') or die $!;
+print HTML <<'HTML_HEADER';
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vanalinnad maps</title>
+    <meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+    <style>
+table, td, th {
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-color: black;
+  border-spacing: 5px;
+}
+
+td, th { 
+    padding: 10px;
+}
+    </style>
+  </head>
+  <body>
+    Following data is also available in <a href="maps.csv">CSV</a> and <a href="maps.sqlite3">SQLite</a> formats.<br/><br/>
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Site</th>
+            <th>Map</th>
+            <th>Year</th>
+            <th>Status</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>UID</th>
+        </tr>
+HTML_HEADER
+$i = 1;
+while(($vl_site, $vl_year, $year, $anchor, $use, $url, $uid, $title, $author) = $sth->fetchrow()){
+   print CSV get_csv_line(($vl_site, $vl_year, $year, $use, $url, $uid, $title, $author, $anchor));
+   print HTML
+    '<tr>'
+    .'<td>'.$i.'</td>'
+    .'<td>'.$vl_site.'</td>'
+    .'<td>'.($use eq 'A' ? '<a target="_blank" href="http://vanalinnad.mooo.com/info.html?site='.$vl_site.'&year='.$vl_year.'#map.'.$anchor.'">'.$vl_year.'</a>' : $vl_year).'</td>'
+    .'<td><a target="_blank" href="'.$url.'">'.$year.'</a></td>'
+    .'<td>'.($use eq 'A' ? 'Published' : ($use eq 'D' ? 'Deleted' : 'Unsuitable')).'</td>'
+    .'<td>'.$title.'</td>'
+    .'<td>'.$author.'</td>'
+    .'<td>'.$uid.'</td>'
+    ."</tr>\n";
+    $i++;
+}
+
+close(CSV);
+print HTML <<'HTML_FOOTER';
+        <tr>
+            <th>#</th>
+            <th>Site</th>
+            <th>Map</th>
+            <th>Year</th>
+            <th>Status</th>
+            <th>Title</th>
+            <th>Author</th>
+            <th>UID</th>
+        </tr>
+    </table>
+  </body>
+</html>    
+HTML_FOOTER
+close(HTML);
+$sth->finish;
 
 $dbh->disconnect;
+
+sub get_csv_line {
+    my $csv = '';
+    foreach my $v (@_) {
+        $v =~ s/"/""/g;
+        $csv .= '"'.$v.'";';
+    }
+    return $csv."\n";
+}
 
 sub handle_rss_item {
     my %item = %{shift()};
     $site = shift();
     $year = shift();
-    print Dumper(%item);
-    #print Dumper($year);
-    #$stupdl = $dbh->prepare("UPDATE maps SET url = ?, uid = ?, title = ?, author = ? WHERE permanent_record = 'N' AND vl_site = ? AND vl_year = ? AND anchor LIKE ?");
-    $stupdl->execute(
+    $anchor = (exists($item{anchor}) ? $item{anchor} : substr($item{pubDate}, 12, 4));
+    $sth->execute(
+        'N',
+        $site,
+        $anchor,
+        exists($item{deleted}) || !($year ~~ @years)  ? 'D' : 'A',
+        $year,
+        substr($anchor, 0, 4),
         ref($item{link}) eq 'ARRAY' ? $item{link}[0] : $item{link},
         exists($item{guid}) ? $item{guid} : '',
         exists($item{title}) ? $item{title} : '',
-        exists($item{author}) ? $item{author} : '',
-        $site,
-        $year,
-        (exists($item{anchor}) ? $item{anchor} : substr($item{pubDate}, 12, 4)).'%'
+        exists($item{author}) ? $item{author} : ''
     );
 };
