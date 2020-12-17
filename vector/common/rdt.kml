@@ -3,7 +3,54 @@
 <Document>
 
 <Placemark>
-<name>Mõntu - Sõrve</name>
+<name>🚂 Meleski</name>
+<description><![CDATA[
+? - 1964<br/>
+➔ 
+<a href="https://www.raudtee.eu/?main=17&sub=287&stat=313&tlink=0" target="_blank" title="raudtee.eu">1</a>, 
+<a href="https://sakala.postimees.ee/679440/maailma-hapraimast-materjalist-tee" target="_blank" title="Postimees">2</a>
+]]></description>
+<color>#FF0000</color>
+<MultiGeometry>
+
+<LineString><coordinates>26.10021451190238,58.42631438849179 26.099807520052583,58.42655254627543 26.09957400401956,58.427008803797925 26.09940126255086,58.42781127018298 26.09885338047589,58.42837790270429 26.09777946195385,58.429205679846845 26.09339817088458,58.431423865077825 26.09200902952342,58.43201475866192 26.09015326243451,58.43251857307357 26.089135513884834,58.432608856813</coordinates></LineString>
+
+</MultiGeometry>
+</Placemark>
+
+<Placemark>
+<name>🚂 Koljuotsa - Ülgase</name>
+<description><![CDATA[
+192? - 193?<br/>
+➔ 
+<a href="https://et.wikipedia.org/wiki/Ülgase_fosforiidikaevandus" target="_blank" title="Wikipedia">1</a>
+]]></description>
+<color>#FF0000</color>
+<MultiGeometry>
+
+<LineString><coordinates>25.089592980588623,59.50564449238344 25.08782795833835,59.50607965089243 25.08724624265689,59.50600032666538 25.08673853669011,59.50564700384443 25.08609789449773,59.50371754305221 25.086140762168778,59.49986874365128 25.086615364361084,59.49788803501667 25.086609821214097,59.49641599434715 25.08532669380707,59.48988628018323 25.08567867834017,59.48925248709005 25.08641407851661,59.48897304260854</coordinates></LineString>
+
+</MultiGeometry>
+</Placemark>
+
+<Placemark>
+<name>🚂 Eidapere - Eko Klaasivabrik A/S</name>
+<description><![CDATA[
+? - 1928<br/>
+750 mm?<br/>
+➔ 
+<a href="https://et.wikipedia.org/wiki/Eidapere_raudteepeatus" target="_blank" title="Wikipedia">1</a>
+]]></description>
+<color>#FF0000</color>
+<MultiGeometry>
+
+<LineString><coordinates>24.944824792727992,58.75747822399286 24.944147597249856,58.757136122347674 24.944023048160922,58.757021347754886 24.94334086196968,58.7535031845996 24.943411552045784,58.753124060579985 24.94392511536128,58.751910865299116 24.944568014546185,58.75099119350527</coordinates></LineString><LineString><coordinates>24.943507160905877,58.75740372663677 24.94404698677851,58.757157891925495 24.94404527785416,58.75709480323529</coordinates></LineString>
+
+</MultiGeometry>
+</Placemark>
+
+<Placemark>
+<name>🚂 Mõntu - Sõrve</name>
 <description><![CDATA[
 1914 - ?<br/>
 750 mm<br/>
@@ -21,7 +68,7 @@
 </Placemark>
 
 <Placemark>
-<name>Türi - Tamsalu</name>
+<name>🚂 Türi - Tamsalu</name>
 <description><![CDATA[
 08.10.1900 - 03.05.1972<br/>
 750 mm<br/>
@@ -51,7 +98,7 @@
 </Placemark>
 
 <Placemark>
-<name>Vaiste - Ännikse</name>
+<name>🚂 Vaiste - Ännikse</name>
 <description><![CDATA[
 1919 - 1950<br/>
 750 mm<br/>
@@ -76,7 +123,7 @@
 </Placemark>
 
 <Placemark>
-<name>Sonda - Mustvee</name>
+<name>🚂 Sonda - Mustvee</name>
 <description><![CDATA[
 01.08.1926 - 01.05.1972<br/>
 & Sonda - Jõepere<br/>
@@ -166,7 +213,7 @@
 </Placemark>
 
 <Placemark>
-<name>Rapla - Virtsu</name>
+<name>🚂 Rapla - Virtsu</name>
 <description><![CDATA[
 01.12.1931 - 26.05.1968<br/>
 750 mm<br/>
@@ -186,7 +233,7 @@
 </Placemark>
 
 <Placemark>
-<name>Lelle - Papiniidu</name>
+<name>🚂 Lelle - Papiniidu</name>
 <description><![CDATA[
 16.02.1928 - 1968<br/>
 750 mm<br/>
@@ -211,7 +258,7 @@
 </Placemark>
 
 <Placemark>
-<name>Viluvere - Vändra</name>
+<name>🚂 Viluvere - Vändra</name>
 <description><![CDATA[
 16.02.1928 - 08.09.1969<br/>
 750 mm<br/>
@@ -224,7 +271,7 @@
 </Placemark>
 
 <Placemark>
-<name>Sindi</name>
+<name>🚂 Sindi</name>
 <description><![CDATA[
 1915 - 1985<br/>
 750 mm<br/>
@@ -244,7 +291,7 @@
 </Placemark>
 
 <Placemark>
-<name>Valga - Pärnu</name>
+<name>🚂 Valga - Pärnu</name>
 <description><![CDATA[
 05.10.1896 - 15.05.1975<br/>
 750 mm<br/>
@@ -282,7 +329,7 @@
 </Placemark>
 
 <Placemark>
-<name>Viljandi - Mõisaküla</name>
+<name>🚂 Viljandi - Mõisaküla</name>
 <description><![CDATA[
 01.08.1897 - 02.03.1971<br/>
 750 mm<br/>
@@ -304,7 +351,7 @@
 </Placemark>
 
 <Placemark>
-<name>Riisipere - Haapsalu</name>
+<name>🚂 Riisipere - Haapsalu</name>
 <description><![CDATA[
 1905 - 2004<br/>
 1524 mm<br/>
@@ -330,7 +377,7 @@
 </Placemark>
 
 <Placemark>
-<name>Riisselja - Ikla</name>
+<name>🚂 Riisselja - Ikla</name>
 <description><![CDATA[
 1919 - 30.09.1975<br/>
 750 mm<br/>
@@ -363,7 +410,7 @@
 </Placemark>
 
 <Placemark>
-<name>Sonda - Aseri</name>
+<name>🚂 Sonda - Aseri</name>
 <description><![CDATA[
 190X - 1997<br/>
 1524 mm<br/>
@@ -383,7 +430,7 @@
 </Placemark>
 
 <Placemark>
-<name>Liiva - Vääna</name>
+<name>🚂 Liiva - Vääna</name>
 <description><![CDATA[
 1913 - 03.03.1971<br/>
 750 mm<br/>
@@ -403,7 +450,7 @@
 </Placemark>
 
 <Placemark>
-<name>Sõrve - Suurupi</name>
+<name>🚂 Sõrve - Suurupi</name>
 <description><![CDATA[
 1913 - 1925<br/>
 750 mm<br/>
@@ -436,7 +483,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Vääna - Humala</name>
+<name>🚂 Vääna - Humala</name>
 <description><![CDATA[
 1916 - 193X<br/>
 750 mm<br/>
@@ -451,7 +498,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Harku - Peetri</name>
+<name>🚂 Harku - Peetri</name>
 <description><![CDATA[
 191X - 193X<br/>
 750 mm<br/>
@@ -466,7 +513,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Tallinn-Väike - Lehmja</name>
+<name>🚂 Tallinn-Väike - Lehmja</name>
 <description><![CDATA[
 1916 - 193X<br/>
 750 mm<br/>
@@ -481,7 +528,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Liiva - Sausti</name>
+<name>🚂 Liiva - Sausti</name>
 <description><![CDATA[
 1916 - 193X<br/>
 750 mm<br/>
@@ -496,7 +543,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Jägala - Raasiku</name>
+<name>🚂 Jägala - Raasiku</name>
 <description><![CDATA[
 1914 - 1941<br/>
 750 mm<br/>
@@ -516,7 +563,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Kohila</name>
+<name>🚂 Kohila</name>
 <description><![CDATA[
 1906 - 1970<br/>
 750 mm<br/>
@@ -537,7 +584,7 @@ Suurupi N
 
 
 <Placemark>
-<name>Kreenholm</name>
+<name>🚂 Kreenholm</name>
 <description><![CDATA[
 1908 - 1999<br/>
 750 mm<br/>
@@ -569,7 +616,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Eidapere - Järvakandi</name>
+<name>🚂 Eidapere - Järvakandi</name>
 <description><![CDATA[
 1927 - 1974<br/>
 750 mm<br/>
@@ -596,7 +643,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Valga - Mõniste</name>
+<name>🚂 Valga - Mõniste</name>
 <description><![CDATA[
 1903 - 2.6.1970<br/>
 750 mm<br/>
@@ -613,7 +660,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Loksa</name>
+<name>🚂 Loksa</name>
 <description><![CDATA[
 1900 - 1982<br/>
 750 mm<br/>
@@ -633,7 +680,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Kunda</name>
+<name>🚂 Kunda</name>
 <description><![CDATA[
 1903 - 1944<br/>
 762 mm, 750 mm<br/>
@@ -645,7 +692,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Saku</name>
+<name>🚂 Saku</name>
 <description><![CDATA[
 1901 - 1971<br/>
 750 mm<br/>
@@ -657,7 +704,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Ülemiste - Maardu</name>
+<name>🚂 Ülemiste - Maardu</name>
 <description><![CDATA[
 1939 - 1971<br/>
 750 mm<br/>
@@ -676,7 +723,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Rakke</name>
+<name>🚂 Rakke</name>
 <description><![CDATA[
 1913 - ?<br/>
 762 mm, 750 mm<br/>
@@ -688,7 +735,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Tamsalu</name>
+<name>🚂 Tamsalu</name>
 <description><![CDATA[
 1910 - ?<br/>
 762 mm, 600 mm<br/>
@@ -700,7 +747,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Saaremaa</name>
+<name>🚂 Saaremaa</name>
 <description><![CDATA[
 1524 mm<br/>
 1952 - 1956<br/>
@@ -733,7 +780,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Jaagarahu</name>
+<name>🚂 Jaagarahu</name>
 <description><![CDATA[
 1928 - ?<br/>
 600 mm<br/>
@@ -746,7 +793,7 @@ Suurupi N
 </Placemark>
 
 <Placemark>
-<name>Kuivastu - Võiküla</name>
+<name>🚂 Kuivastu - Võiküla</name>
 <description><![CDATA[
 191X - ?<br/>
 750 mm<br/>
@@ -773,7 +820,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 -->
 
 <Placemark>
-<name>Riisipere - Vaimõisa</name>
+<name>🚂 Riisipere - Vaimõisa</name>
 <description><![CDATA[
 1919 - 1924<br/>
 750 mm<br/>
@@ -801,7 +848,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 </Placemark>
 
 <Placemark>
-<name>Lehtma - Tahkuna</name>
+<name>🚂 Lehtma - Tahkuna</name>
 <description><![CDATA[
 1914 - 194X<br/>
 750 mm<br/>
@@ -846,7 +893,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 </Placemark>
 
 <Placemark>
-<name>Aegna</name>
+<name>🚂 Aegna</name>
 <description><![CDATA[
 1914 - 1944<br/>
 750 mm<br/>
@@ -868,7 +915,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 </Placemark>
 
 <Placemark>
-<name>Kuressaare - Röösa</name>
+<name>🚂 Kuressaare - Röösa</name>
 <description><![CDATA[
 1918 - 1922<br/>
 600 mm<br/>
@@ -888,7 +935,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 </Placemark>
 
 <Placemark>
-<name>Jõhvi - Vasknarva</name>
+<name>🚂 Jõhvi - Vasknarva</name>
 <description><![CDATA[
 1943 - ?<br/>
 600 mm<br/>
@@ -938,7 +985,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 </Placemark>
 
 <Placemark>
-<name>Männiku</name>
+<name>🚂 Männiku</name>
 <description><![CDATA[
 191X - 197X<br/>
 750 mm<br/>
@@ -960,7 +1007,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 </Placemark>
 
 <Placemark>
-<name>Auvere - Meriküla</name>
+<name>🚂 Auvere - Meriküla</name>
 <description><![CDATA[
 191X - 192X<br/>
 750 mm<br/>
@@ -978,7 +1025,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 </Placemark>
 
 <Placemark>
-<name>Lehtse</name>
+<name>🚂 Lehtse</name>
 <description><![CDATA[
 192X - ?<br/>
 ➔ 
@@ -1002,7 +1049,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 </Placemark>
 
 <Placemark>
-<name>Turba</name>
+<name>🚂 Turba</name>
 <description><![CDATA[
 1922 - 2004<br/>
 750 mm<br/>
@@ -1032,7 +1079,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 </Placemark>
 
 <Placemark>
-<name>Küttejõu</name>
+<name>🚂 Küttejõu</name>
 <description><![CDATA[
 1924 - ?<br/>
 750 mm<br/>
@@ -1053,7 +1100,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 
 
 <Placemark>
-<name>Ulila</name>
+<name>🚂 Ulila</name>
 <description><![CDATA[
 1921 - ?<br/>
 750 mm<br/>
@@ -1076,7 +1123,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 </Placemark>
 
 <Placemark>
-<name>Aruküla</name>
+<name>🚂 Aruküla</name>
 <description><![CDATA[
 193X - ?<br/>
 ➔ 
@@ -1096,7 +1143,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 </Placemark>
 
 <Placemark>
-<name>Piusa</name>
+<name>🚂 Piusa</name>
 <description><![CDATA[
 193X - 1976<br/>
 750 mm?<br/>
@@ -1115,7 +1162,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 </Placemark>
 
 <Placemark>
-<name>Tootsi</name>
+<name>🚂 Tootsi</name>
 <description><![CDATA[
 18.07.1983 - 2008<br/>
 750 mm?<br/>
@@ -1169,7 +1216,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 
 
 <Placemark>
-<name>Paldiski</name>
+<name>🚂 Paldiski</name>
 <description><![CDATA[
 194X - ?<br/>
 1524 mm<br/>
@@ -1194,7 +1241,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 </Placemark>
 
 <Placemark>
-<name>Naissaar</name>
+<name>🚂 Naissaar</name>
 <description><![CDATA[
 1914<br/>
 750 mm<br/>
@@ -1226,7 +1273,7 @@ http://www.ra.ee/kaardid/index.php/et/map/view?id=202467
 </Placemark>
 
 <Placemark>
-<name>Jõgeva - Puurmanni</name>
+<name>🚂 Jõgeva - Puurmanni</name>
 <description><![CDATA[
 1919 - 192X<br/>
 750 mm?<br/>

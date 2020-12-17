@@ -10,7 +10,6 @@ use utf8;
 use XML::Simple;
 use Storable qw(dclone);
 use JSON;
-use Math::Base36 'encode_base36';
 
 $xml = new XML::Simple;
 $kml = $xml->XMLin($ARGV[1], ForceArray => 1);
@@ -64,7 +63,7 @@ foreach $feature (@{$json{features}}) {
                 $vli64 .= ($m == 44 ? 'p' : chr(48 + $m));
                 $int >>= 6;
             } while ($int);
-            $ls .= ($ls eq '' ? '' : ',').$vli64; #.lc(encode_base36($int));
+            $ls .= ($ls eq '' ? '' : ',').$vli64;
             $j++;
         }
         $geometry .= $ls;
