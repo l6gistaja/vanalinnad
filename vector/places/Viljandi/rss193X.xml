@@ -4,14 +4,17 @@
 
 <item>
 <title>Viljandi</title>
-<author>Eesti Entsüklopeedia</author>
-<link>http://cl.ly/1l3W1n0q0d1P0y2T1O1i/o</link>
+<author>Eesti Entsüklopeedia VIII</author>
+<description>Lk./p. 1067</description>
+<guid>isbn=9789916005675</guid>
+<link>https://www.digar.ee/viewer/et/nlib-digar:432984/368349/page/597</link>
 <!--
+<link>http://cl.ly/1l3W1n0q0d1P0y2T1O1i/o</link>
 <link>https://vanadasjad.wordpress.com/2012/02/14/asulate-plaanid-1930-aastatest-2/</link>
 <link>https://vanadasjad.files.wordpress.com/2015/08/viljandi.jpg</link>
 <link>https://vanadasjad.wordpress.com/asulate-plaanid/viljandi/</link>
 -->
-<pubDate>Mon, 01 Jan 1932-1937 00:00:00 +0000</pubDate>
+<pubDate>Mon, 01 Jan 1936 00:00:00 +0000</pubDate>
 <legends>legend193Xa.jpg,legend193Xb.jpg</legends>
 <anchor>193X</anchor>
 </item>

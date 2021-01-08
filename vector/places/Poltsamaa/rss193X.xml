@@ -3,9 +3,12 @@
 <channel>
 <item>
 <title>Põltsamaa</title>
-<author>Eesti Entsüklopeedia</author>
-<link>http://cl.ly/3x3F2T2i1g2h0F1K3D1y/o</link>
-<pubDate>Mon, 01 Jan 1932-1937 00:00:00 +0000</pubDate>
+<author>Eesti Entsüklopeedia VI</author>
+<description>Lk./p. 1197</description>
+<guid>isbn=9789916005651</guid>
+<link>https://www.digar.ee/viewer/et/nlib-digar:432983/370003/page/651</link>
+<!-- <link>http://cl.ly/3x3F2T2i1g2h0F1K3D1y/o</link> -->
+<pubDate>Mon, 01 Jan 1935 00:00:00 +0000</pubDate>
 <legends>legend193X.gif</legends>
 </item>
 </channel>

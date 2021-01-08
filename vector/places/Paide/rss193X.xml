@@ -3,14 +3,17 @@
 <channel>
 <item>
 <title>Paide</title>
-<author>Eesti Entsüklopeedia</author>
-<link>http://cl.ly/0M2a2y3k1B473U0Y1S0h/o</link>
+<author>Eesti Entsüklopeedia VI</author>
+<description>Lk./p. 491</description>
+<link>https://www.digar.ee/viewer/et/nlib-digar:432983/370003/page/268</link>
+<guid>isbn=9789916005651</guid>
 <!--
+<link>http://cl.ly/0M2a2y3k1B473U0Y1S0h/o</link>
 <link>https://vanadasjad.wordpress.com/2012/02/13/asulate-plaanid-1930-aastatest/</link>
 <link>https://vanadasjad.files.wordpress.com/2015/08/paide.jpg</link>
 <link>https://vanadasjad.wordpress.com/asulate-plaanid/a-po/</link>
 -->
-<pubDate>Mon, 01 Jan 1932-1937 00:00:00 +0000</pubDate>
+<pubDate>Mon, 01 Jan 1935 00:00:00 +0000</pubDate>
 </item>
 </channel>
 </rss>
