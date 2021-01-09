@@ -56,7 +56,7 @@ if(exists $opts{'d'}) {
   exit;
 }
 
-if(exists $gdal->{'translate'}[$c{'y'}]{'zoom'}) {
+if(exists $gdal->{'translate'}[$c{'y'}]{'zoom'} && !exists $opts{'r'}) {
   $c{'filezoomedimg'} = $c{'dirtransform'}.'zoomed.jpg';
   sheller('rm '.$c{'filezoomedimg'});
   sheller('convert '.$c{'filesrcimg'}.' -resize '.POSIX::floor(100*$gdal->{'translate'}[$c{'y'}]{'zoom'}).'% '.$c{'filezoomedimg'});
