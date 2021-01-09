@@ -13,13 +13,13 @@
 <Placemark id="gcp1968.S.3"><name>1968.S #3</name><description>426 222</description><Point><coordinates>27.997579796294474,59.432473704407066</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="maps"><value>1968.S,1968.N</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva-Joesuu/composed/1968/</value></Data>
 <Data name="montage"><value>yes</value></Data>
 <Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 <Data name="bbox"><value>27.98897815598704,59.41573974104096,28.08950077866702,59.47049515138119</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva-Joesuu/composed/1968/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="maps"><value>1968.S,1968.N</value></Data>
 
 </ExtendedData>
 
