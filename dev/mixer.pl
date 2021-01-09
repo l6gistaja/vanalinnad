@@ -165,8 +165,8 @@ system($command);
 %json = qw();
 %montage = qw();
 $tilewhite = $rootdir.$mainconf->{'dirdev'}.'whitetile'.$data{'tileext'};
-$tilewritable = $data{'sourcedir'}.'tilewritable'.$data{'tileext'};
-$tiletransparent = $data{'sourcedir'}.'tiletransparent.png';
+$tilewritable = $rootdir.$mainconf->{'dircache'}.'transform/tilewritable'.$data{'tileext'};
+$tiletransparent = $rootdir.$mainconf->{'dircache'}.'transform/tiletransparent.png';
 for($z=$data{'zmax'}; $z>=$data{'zmin'}; $z--) {
   print 'Merging zoomlevel '.$z." ...\n";
   $zdir = $destinationdir.$z;
@@ -220,7 +220,7 @@ for($z=$data{'zmax'}; $z>=$data{'zmin'}; $z--) {
           system('cp '.$mapfile.' '.$tilewritable);
         } else {
           if(!exists $data{'montage'} || $z == $data{'zmax'}) {
-            system('convert -transparent white '.$mapfile.' '.$tiletransparent);
+            system('convert '.$mapfile.' -fuzz 0.4% -transparent white '.$tiletransparent);
             system('composite '.$tiletransparent.' '.$tilewritable.' -gravity center '.$tilewritable);
             ##add_to_tree([$z - 1, $x >> 1, $y >> 1], \%montage);
           }
