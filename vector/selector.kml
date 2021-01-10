@@ -27,6 +27,13 @@
       </Point>
     </Placemark>
     <Placemark>
+      <name>Narva-Jõesuu</name>
+      <description>Narva-Joesuu</description>
+      <Point>
+        <coordinates>28.042155560607892,59.46294120352722</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>Paide</name>
       <Point>
         <coordinates>25.557408640147518,58.8858298320806</coordinates>
