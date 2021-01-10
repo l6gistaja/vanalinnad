@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.193X"><name>193X</name><LineString><coordinates>28.01490663681055,59.43132071728899 28.01490663681055,59.48820393003007 28.08351030291578,59.48820393003007 28.08351030291578,59.43132071728899 28.01490663681055,59.43132071728899</coordinates></LineString></Placemark>
+<Placemark id="gcp193X.1"><name>193X #1</name><description>798 1419</description><Point><coordinates>28.041611,59.464138</coordinates></Point></Placemark>
+<Placemark id="gcp193X.2"><name>193X #2</name><description>1365 1865</description><Point><coordinates>28.06019040652457,59.45689003977949</coordinates></Point></Placemark>
+<Placemark id="gcp193X.3"><name>193X #3</name><description>106 2479</description><Point><coordinates>28.020062,59.446242</coordinates></Point></Placemark>
+
+<Placemark id="bbox.193X.Auga"><name>193X.Auga</name><LineString><coordinates>27.98736883255011,59.42786778613445 27.98736883255011,59.44746230868488 28.01822617871704,59.44746230868488 28.01822617871704,59.42786778613445 27.98736883255011,59.42786778613445</coordinates></LineString></Placemark>
+<Placemark id="gcp193X.Auga.1"><name>193X.Auga #1</name><description>906 53</description><Point><coordinates>28.016652113800294,59.446577989570784</coordinates></Point></Placemark>
+<Placemark id="gcp193X.Auga.2"><name>193X.Auga #2</name><description>897 220</description><Point><coordinates>28.016566283111228,59.44380728839003</coordinates></Point></Placemark>
+<Placemark id="gcp193X.Auga.3"><name>193X.Auga #3</name><description>360 800</description><Point><coordinates>27.999958044890924,59.433693394054174</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>193X.Auga,193X</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>27.98736883255011,59.42786778613445,28.08351030291578,59.48820393003007</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva-Joesuu/composed/193X/</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
