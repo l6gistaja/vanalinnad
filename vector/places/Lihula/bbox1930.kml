@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1930.N"><name>1930.N</name><LineString><coordinates>23.82295828068400,58.68362930619588 23.82295828068400,58.69525425874456 23.85545719543161,58.69525425874456 23.85545719543161,58.68362930619588 23.82295828068400,58.68362930619588</coordinates></LineString></Placemark>
+<Placemark id="gcp1930.N.1"><name>1930.N #1</name><description>891 106</description><Point><coordinates>23.83144802752267,58.69440371499149</coordinates></Point></Placemark>
+<Placemark id="gcp1930.N.2"><name>1930.N #2</name><description>1525 629</description><Point><coordinates>23.8376056980933,58.691893682265004</coordinates></Point></Placemark>
+<Placemark id="gcp1930.N.3"><name>1930.N #3</name><description>589 2228</description><Point><coordinates>23.829133154066998,58.68384135219751</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1930.S"><name>1930.S</name><LineString><coordinates>23.82260115871113,58.67411792005156 23.82260115871113,58.68542003790758 23.85584924079684,58.68542003790758 23.85584924079684,58.67411792005156 23.82260115871113,58.67411792005156</coordinates></LineString></Placemark>
+<Placemark id="gcp1930.S.1"><name>1930.S #1</name><description>234 505</description><Point><coordinates>23.824903437525805,58.68260768033868</coordinates></Point></Placemark>
+<Placemark id="gcp1930.S.2"><name>1930.S #2</name><description>714 2198</description><Point><coordinates>23.829730859444876,58.67423020966318</coordinates></Point></Placemark>
+<Placemark id="gcp1930.S.3"><name>1930.S #3</name><description>2140 481</description><Point><coordinates>23.84299633331277,58.68290414207278</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1930.N,1930.S</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>23.82260115871113,58.67411792005156,23.85584924079684,58.69525425874456</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Lihula/composed/1930/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

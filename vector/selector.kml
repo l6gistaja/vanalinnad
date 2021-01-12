@@ -21,6 +21,13 @@
       </Point>
     </Placemark>
     <Placemark>
+      <name>Lihula</name>
+      <description>Kardla</description>
+      <Point>
+        <coordinates>23.83337788328197,58.68657124081714</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>Narva</name>
       <Point>
         <coordinates>28.20004659975203,59.3758806532303</coordinates>
