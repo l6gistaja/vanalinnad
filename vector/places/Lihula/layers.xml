@@ -18,6 +18,7 @@
   <layer bounds="23.78457083274995,58.67317838728653,23.86105975063682,58.71647504910241" type="tms" year="1927" />
   <layer name="⛜ 1" file="roads1min.json" format="VLGJ" levels="0,1,2,3" maxres="12" type="roads" />
   <layer name="⛜ 2" file="roads4min.json" format="VLGJ" levels="4" maxres="14" type="roads" />
+  <layer bounds="23.78996792299959,58.67376115558157,23.85707460037101,58.71398675447485" type="tms" year="1883" />
   <maxzoom>16</maxzoom>
   <minzoom>12</minzoom>
 </vanalinnadlayers>
