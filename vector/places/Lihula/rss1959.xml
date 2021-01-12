@@ -2,12 +2,24 @@
 <rss version="2.0">
 <channel>
 <title>Vanalinnad</title>
+
+<item>
+<title>(Lihula õhuvõte Maaameti fotolaost)</title>
+<author>Сельхозаэросьемка МСХ СССР</author>
+<guid>ID=6169</guid>
+<link>https://fotoladu.maaamet.ee/arhiiv=197584</link>
+<pubDate>Thu, 01 Jan 1959 00:00:00 +0000</pubDate>
+<anchor>1959_6169</anchor>
+</item>
+
 <item>
 <title>(Lihula õhuvõte Maaameti fotolaost)</title>
 <author>Сельхозаэросьемка МСХ СССР</author>
 <guid>ID=6170</guid>
 <link>https://fotoladu.maaamet.ee/arhiiv=197585</link>
 <pubDate>Thu, 01 Jan 1959 00:00:00 +0000</pubDate>
+<anchor>1959_6170</anchor>
 </item>
+
 </channel>
 </rss>

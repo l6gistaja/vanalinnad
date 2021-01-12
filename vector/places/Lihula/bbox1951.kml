@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>23.81034047104451,58.66645287328149 23.81034047104451,58.70820957186328 23.87297390121154,58.70820957186328 23.87297390121154,58.66645287328149 23.81034047104451,58.66645287328149</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>3219 336</description><Point><coordinates>23.862176448311814,58.705329211341045</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>1203 4048</description><Point><coordinates>23.829732915344504,58.67422784943673</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>385 365</description><Point><coordinates>23.8165418638165,58.70514021191528</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1951_6169"><name>1951_6169</name><LineString><coordinates>23.74746522913075,58.66630380100614 23.74746522913075,58.70844214616454 23.81089052050647,58.70844214616454 23.81089052050647,58.66630380100614 23.74746522913075,58.66630380100614</coordinates></LineString></Placemark>
+<Placemark id="gcp1951_6169.1"><name>1951_6169 #1</name><description>3209 2397</description><Point><coordinates>23.79937192538263,58.688092846116234</coordinates></Point></Placemark>
+<Placemark id="gcp1951_6169.2"><name>1951_6169 #2</name><description>904 268</description><Point><coordinates>23.762445487296734,58.70611237594096</coordinates></Point></Placemark>
+<Placemark id="gcp1951_6169.3"><name>1951_6169 #3</name><description>1176 4766</description><Point><coordinates>23.76642282806452,58.668502337233036</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1951_6170"><name>1951_6170</name><LineString><coordinates>23.81034047104451,58.66645287328149 23.81034047104451,58.70820957186328 23.87297390121154,58.70820957186328 23.87297390121154,58.66645287328149 23.81034047104451,58.66645287328149</coordinates></LineString></Placemark>
+<Placemark id="gcp1951_6170.1"><name>1951_6170 #1</name><description>3219 336</description><Point><coordinates>23.862176448311814,58.705329211341045</coordinates></Point></Placemark>
+<Placemark id="gcp1951_6170.2"><name>1951_6170 #2</name><description>1203 4048</description><Point><coordinates>23.829732915344504,58.67422784943673</coordinates></Point></Placemark>
+<Placemark id="gcp1951_6170.3"><name>1951_6170 #3</name><description>385 365</description><Point><coordinates>23.8165418638165,58.70514021191528</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>23.74746522913075,58.66630380100614,23.87297390121154,58.70844214616454</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1951_6169,1951_6170</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Lihula/composed/1951/</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmax"><value>16</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
