@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1853"><name>1853</name><LineString><coordinates>23.80560982749682,58.67307723345299 23.80560982749682,58.70002688127111 23.86197805036543,58.70002688127111 23.86197805036543,58.67307723345299 23.80560982749682,58.67307723345299</coordinates></LineString></Placemark>
+<Placemark id="gcp1853.1"><name>1853 #1</name><description>1412 3373</description><Point><coordinates>23.855420907424058,58.681592218634485</coordinates></Point></Placemark>
+<Placemark id="gcp1853.2"><name>1853 #2</name><description>1785 1512</description><Point><coordinates>23.837259,58.691499</coordinates></Point></Placemark>
+<Placemark id="gcp1853.3"><name>1853 #3</name><description>395 1569</description><Point><coordinates>23.826662,58.683039</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1857"><name>1857</name><LineString><coordinates>23.74232407485075,58.67396274251803 23.74232407485075,58.72919602028956 23.84052738662018,58.72919602028956 23.84052738662018,58.67396274251803 23.74232407485075,58.67396274251803</coordinates></LineString></Placemark>
+<Placemark id="gcp1857.1"><name>1857 #1</name><description>2276 3198</description><Point><coordinates>23.822884296263755,58.69778089661934</coordinates></Point></Placemark>
+<Placemark id="gcp1857.2"><name>1857 #2</name><description>1712 3899</description><Point><coordinates>23.819472526397163,58.685125186346305</coordinates></Point></Placemark>
+<Placemark id="gcp1857.3"><name>1857 #3</name><description>578 846</description><Point><coordinates>23.748865683729417,58.71425003431643</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1857,1853</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>23.74232407485075,58.67307723345299,23.86197805036543,58.72919602028956</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Lihula/composed/1853/</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

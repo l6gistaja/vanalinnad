@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>23.78996792299959,58.67376713387298 23.78996792299959,58.71398675447485 23.85707150604619,58.71398675447485 23.85707150604619,58.67376713387298 23.78996792299959,58.67376713387298</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>1233 2515</description><Point><coordinates>23.82666233702878,58.68303996790403</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>1856 1883</description><Point><coordinates>23.83725919257364,58.691499845785934</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>305 10</description><Point><coordinates>23.796489272756453,58.708617365857464</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1883"><name>1883</name><LineString><coordinates>23.78996792299959,58.67376115558157 23.78996792299959,58.71398675447485 23.85707460037101,58.71398675447485 23.85707460037101,58.67376115558157 23.78996792299959,58.67376115558157</coordinates></LineString></Placemark>
+<Placemark id="gcp1883.1"><name>1883 #1</name><description>1233 2515</description><Point><coordinates>23.82666233702878,58.68303996790403</coordinates></Point></Placemark>
+<Placemark id="gcp1883.2"><name>1883 #2</name><description>1856 1883</description><Point><coordinates>23.83725919257364,58.691499845785934</coordinates></Point></Placemark>
+<Placemark id="gcp1883.3"><name>1883 #3</name><description>305 10</description><Point><coordinates>23.796489272756453,58.708617365857464</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1883.Kirikukyla"><name>1883.Kirikukyla</name><LineString><coordinates>23.72409556828974,58.69385946923273 23.72409556828974,58.73507607961263 23.79958358335682,58.73507607961263 23.79958358335682,58.69385946923273 23.72409556828974,58.69385946923273</coordinates></LineString></Placemark>
+<Placemark id="gcp1883.Kirikukyla.1"><name>1883.Kirikukyla #1</name><description>590 1821</description><Point><coordinates>23.751807558636607,58.70668350508572</coordinates></Point></Placemark>
+<Placemark id="gcp1883.Kirikukyla.2"><name>1883.Kirikukyla #2</name><description>1588 2529</description><Point><coordinates>23.778028833965887,58.703640641942016</coordinates></Point></Placemark>
+<Placemark id="gcp1883.Kirikukyla.3"><name>1883.Kirikukyla #3</name><description>1872 2391</description><Point><coordinates>23.78253494511045,58.70640486567227</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Lihula/composed/1883/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="bbox"><value>23.72409556828974,58.67376115558157,23.85707460037101,58.73507607961263</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>1883.Kirikukyla,1883</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
