@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vanalinnadgdal xmlns="http://juks.alkohol.ee/vanalinnad">
 
+<translate map="1986" zoom="2" flags="deleted">
+    <t file="1986.jpg" gcps="-gcp 1313 57 22.496221515960404 58.272846836539564 -gcp 402 1451 22.46276900512711 58.246466196722054 -gcp 2912 933 22.55308434707626 58.255815113673464"/>
+    <t file="1986.jpg" gcps="-gcp 98 436 22.451951132725018 58.26581943330907 -gcp 1215 1517 22.492313013980564 58.244865891243805 -gcp 402 1451 22.46276900512711 58.246466196722054 -gcp 2912 933 22.55308434707626 58.255815113673464"/>
+</translate>
+
 <composite id="1970T" maps="1975.k2,1975.k1" montage="yes" />
 
 <translate map="1975.k1" composite="1970T" zoom="2">
