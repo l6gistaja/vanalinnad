@@ -5,16 +5,23 @@ use lib './dev';
 use VlHelper qw(get_sites);
 use Data::Dumper;
 use DBI qw(:sql_types);
+use POSIX;
 $dir = 'vector/common/vanalinnad_maps/';
 our $dbh = DBI->connect("dbi:SQLite:dbname=".$dir."maps.sqlite3","","");
 $xml = new XML::Simple;
 $mainconf = $xml->XMLin('conf.xml');
-
 @sites = get_sites($mainconf);
+
+%statuses = qw();
+$sth = $dbh->prepare("SELECT enum, name FROM enums WHERE column = 'maps.use'");
+$sth->execute();
+while(($enum, $name) = $sth->fetchrow()) { $statuses{$enum} = $name; }
+$sth->finish;
 
 $sth = $dbh->prepare("DELETE FROM maps WHERE permanent_record = 'N'");
 $sth->execute();
 $sth->finish;
+
 our $sth = $dbh->prepare("INSERT INTO maps (permanent_record, vl_site, anchor, use, vl_year, year, url, uid, title, author) VALUES (?,?,?,?,?,?,?,?,?,?)");
 foreach my $site (@sites) {
     print $site."\n";
@@ -47,7 +54,7 @@ $sth->execute();
 open(CSV, '>', $dir.'maps.csv') or die $!;
 print CSV "\xEF\xBB\xBFvl_site;vl_year;year;use;url;uid;title;author;anchor\n";
 open(HTML, '>', $dir.'index.html') or die $!;
-print HTML <<'HTML_HEADER';
+$header =<<'HTML_HEADER';
 <!DOCTYPE html>
 <html>
   <head>
@@ -67,7 +74,7 @@ td, th {
     </style>
   </head>
   <body>
-    Following data is also available in <a href="maps.csv">CSV</a> and <a href="maps.sqlite3">SQLite</a> formats.<br/><br/>
+    Following data is also available in <a href="maps.csv">CSV</a> and <a href="maps.sqlite3">SQLite</a> formats. Updated @ %s.<br/><br/>
     <table>
         <tr>
             <th>#</th>
@@ -80,6 +87,7 @@ td, th {
             <th>UID</th>
         </tr>
 HTML_HEADER
+print HTML sprintf($header, strftime "%F %T", localtime time);
 $i = 1;
 while(($vl_site, $vl_year, $year, $anchor, $use, $url, $uid, $title, $author) = $sth->fetchrow()){
    print CSV get_csv_line(($vl_site, $vl_year, $year, $use, $url, $uid, $title, $author, $anchor));
@@ -87,9 +95,9 @@ while(($vl_site, $vl_year, $year, $anchor, $use, $url, $uid, $title, $author) = 
     '<tr>'
     .'<td>'.$i.'</td>'
     .'<td>'.$vl_site.'</td>'
-    .'<td>'.($use eq 'A' ? '<a target="_blank" href="http://vanalinnad.mooo.com/info.html?site='.$vl_site.'&year='.$vl_year.'#map.'.$anchor.'">'.$vl_year.'</a>' : $vl_year).'</td>'
+    .'<td>'.($use eq 'P' ? '<a target="_blank" href="http://vanalinnad.mooo.com/info.html?site='.$vl_site.'&year='.$vl_year.'#map.'.$anchor.'">'.$vl_year.'</a>' : $vl_year).'</td>'
     .'<td><a target="_blank" href="'.$url.'">'.$year.'</a></td>'
-    .'<td>'.($use eq 'A' ? 'Published' : ($use eq 'D' ? 'Deleted' : 'Unsuitable')).'</td>'
+    .'<td>'.$statuses{$use}.'</td>'
     .'<td>'.$title.'</td>'
     .'<td>'.$author.'</td>'
     .'<td>'.$uid.'</td>'
@@ -136,7 +144,7 @@ sub handle_rss_item {
         'N',
         $site,
         $anchor,
-        exists($item{deleted}) || !($year ~~ @years)  ? 'D' : 'A',
+        exists($item{deleted}) || !($year ~~ @years)  ? 'D' : 'P',
         $year,
         substr($anchor, 0, 4),
         ref($item{link}) eq 'ARRAY' ? $item{link}[0] : $item{link},

@@ -3,7 +3,7 @@
 # Clean up certain RSS file:
 #     sed -f dev/clean_rss.sed -i RSS_FILE
 
-# first delete all empty tags, afterwards handlemore specific cases
+# first delete all empty tags, afterwards handle more specific cases
 /^<[^\/][^<>]*><\/[^<>]*>$/d
 /^<copyright>0<\/copyright>$/d
 /^<guid>isbn=;nlib\.ee=<\/guid>$/d
