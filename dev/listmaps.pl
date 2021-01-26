@@ -6,6 +6,7 @@ use VlHelper qw(get_sites);
 use Data::Dumper;
 use DBI qw(:sql_types);
 use POSIX;
+use Digest::MD5 qw(md5_hex);
 $dir = 'vector/common/vanalinnad_maps/';
 our $dbh = DBI->connect("dbi:SQLite:dbname=".$dir."maps.sqlite3","","");
 $xml = new XML::Simple;
@@ -70,11 +71,15 @@ table, td, th {
 
 td, th { 
     padding: 10px;
+    vertical-align: top;
 }
     </style>
   </head>
   <body>
-    Following data is also available in <a href="maps.csv">CSV</a> and <a href="maps.sqlite3">SQLite</a> formats. Updated @ %s.<br/><br/>
+    Following data is also available in <a href="maps.csv">CSV</a> and <a href="maps.sqlite3">SQLite</a> formats. Updated @ %s.<br/><pre>
+    Status diagram: Candidate → Published
+                        ↓           ↓
+                    Unsuitable   Deleted</pre>
     <table>
         <tr>
             <th>#</th>
@@ -90,11 +95,12 @@ HTML_HEADER
 print HTML sprintf($header, strftime "%F %T", localtime time);
 $i = 1;
 while(($vl_site, $vl_year, $year, $anchor, $use, $url, $uid, $title, $author) = $sth->fetchrow()){
+   $anchor = md5_hex(join('~', $vl_site, $vl_year, $year, $uid, $title, $author, $anchor));
    print CSV get_csv_line(($vl_site, $vl_year, $year, $use, $url, $uid, $title, $author, $anchor));
    print HTML
     '<tr>'
-    .'<td>'.$i.'</td>'
-    .'<td>'.$vl_site.'</td>'
+    .'<td><a href="#'.$anchor.'">'.$i.'</a></td>'
+    .'<td><a name="'.$anchor.'">'.$vl_site.'</a></td>'
     .'<td>'.($use eq 'P' ? '<a target="_blank" href="http://vanalinnad.mooo.com/info.html?site='.$vl_site.'&year='.$vl_year.'#map.'.$anchor.'">'.$vl_year.'</a>' : $vl_year).'</td>'
     .'<td><a target="_blank" href="'.$url.'">'.$year.'</a></td>'
     .'<td>'.$statuses{$use}.'</td>'
