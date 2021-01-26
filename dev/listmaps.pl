@@ -95,12 +95,12 @@ HTML_HEADER
 print HTML sprintf($header, strftime "%F %T", localtime time);
 $i = 1;
 while(($vl_site, $vl_year, $year, $anchor, $use, $url, $uid, $title, $author) = $sth->fetchrow()){
-   $anchor = md5_hex(join('~', $vl_site, $vl_year, $year, $uid, $anchor));
+   $a = md5_hex(join('~', $vl_site, $vl_year, $year, $uid, $anchor));
    print CSV get_csv_line(($vl_site, $vl_year, $year, $use, $url, $uid, $title, $author, $anchor));
    print HTML
     '<tr>'
-    .'<td><a href="#'.$anchor.'">'.$i.'</a></td>'
-    .'<td><a name="'.$anchor.'">'.$vl_site.'</a></td>'
+    .'<td><a href="#'.$a.'">'.$i.'</a></td>'
+    .'<td><a name="'.$a.'">'.$vl_site.'</a></td>'
     .'<td>'.($use eq 'P' ? '<a target="_blank" href="http://vanalinnad.mooo.com/info.html?site='.$vl_site.'&year='.$vl_year.'#map.'.$anchor.'">'.$vl_year.'</a>' : $vl_year).'</td>'
     .'<td><a target="_blank" href="'.$url.'">'.$year.'</a></td>'
     .'<td>'.$statuses{$use}.'</td>'
