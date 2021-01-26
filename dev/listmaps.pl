@@ -95,7 +95,7 @@ HTML_HEADER
 print HTML sprintf($header, strftime "%F %T", localtime time);
 $i = 1;
 while(($vl_site, $vl_year, $year, $anchor, $use, $url, $uid, $title, $author) = $sth->fetchrow()){
-   $anchor = md5_hex(join('~', $vl_site, $vl_year, $year, $uid, $title, $author, $anchor));
+   $anchor = md5_hex(join('~', $vl_site, $vl_year, $year, $uid, $anchor));
    print CSV get_csv_line(($vl_site, $vl_year, $year, $use, $url, $uid, $title, $author, $anchor));
    print HTML
     '<tr>'
