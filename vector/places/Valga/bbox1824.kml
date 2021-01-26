@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1824"><name>1824</name><LineString><coordinates>26.02452995824566,57.77422688592929 26.02452995824566,57.78067904877233 26.04293960540783,57.78067904877233 26.04293960540783,57.77422688592929 26.02452995824566,57.77422688592929</coordinates></LineString></Placemark>
+<Placemark id="gcp1824.1"><name>1824 #1</name><description>1347 553</description><Point><coordinates>26.036304,57.777651</coordinates></Point></Placemark>
+<Placemark id="gcp1824.2"><name>1824 #2</name><description>280 536</description><Point><coordinates>26.027856,57.776667</coordinates></Point></Placemark>
+<Placemark id="gcp1824.3"><name>1824 #3</name><description>348 785</description><Point><coordinates>26.028911706391135,57.77568706911965</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1819"><name>1819</name><LineString><coordinates>26.00416556868890,57.73229938083649 26.00416556868890,57.80616238269951 26.14170752667638,57.80616238269951 26.14170752667638,57.73229938083649 26.00416556868890,57.73229938083649</coordinates></LineString></Placemark>
+<Placemark id="gcp1819.1"><name>1819 #1</name><description>1769 2276</description><Point><coordinates>26.112807384185274,57.75615714124458</coordinates></Point></Placemark>
+<Placemark id="gcp1819.2"><name>1819 #2</name><description>565 297</description><Point><coordinates>26.028911,57.775687</coordinates></Point></Placemark>
+<Placemark id="gcp1819.3"><name>1819 #3</name><description>2241 618</description><Point><coordinates>26.089349906535126,57.79090175908473</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Valga/composed/1824/</value></Data>
+<Data name="bbox"><value>26.00416556868890,57.73229938083649,26.14170752667638,57.80616238269951</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>1819,1824</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
