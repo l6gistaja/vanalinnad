@@ -2,24 +2,29 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1925.k1"><name>1925.k1</name><LineString><coordinates>25.49176597138086,58.86283011539192 25.49176597138086,58.94279911196618 25.60052927297746,58.94279911196618 25.60052927297746,58.86283011539192 25.49176597138086,58.86283011539192</coordinates></LineString></Placemark>
+<Placemark id="bbox.1925.k1"><name>1925.k1</name><LineString><coordinates>25.49176597135950,58.86282596199676 25.49176597135950,58.94279911195458 25.60052399282959,58.94279911195458 25.60052399282959,58.86282596199676 25.49176597135950,58.86282596199676</coordinates></LineString></Placemark>
 <Placemark id="gcp1925.k1.1"><name>1925.k1 #1</name><description>4903 7628</description><Point><coordinates>25.56926163772576,58.89054315044844</coordinates></Point></Placemark>
 <Placemark id="gcp1925.k1.2"><name>1925.k1 #2</name><description>2174 8388</description><Point><coordinates>25.53774031738299,58.88229370988503</coordinates></Point></Placemark>
 <Placemark id="gcp1925.k1.3"><name>1925.k1 #3</name><description>5867 9319</description><Point><coordinates>25.58498998686091,58.8806524574613</coordinates></Point></Placemark>
 <Placemark id="gcp1925.k1.4"><name>1925.k1 #4</name><description>4676 8193</description><Point><coordinates>25.56797706619295,58.886632699455056</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1925.k2"><name>1925.k2</name><LineString><coordinates>25.55867530597123,58.87313812981222 25.55867530597123,58.92781799000275 25.62906701735885,58.92781799000275 25.62906701735885,58.87313812981222 25.55867530597123,58.87313812981222</coordinates></LineString></Placemark>
+<Placemark id="bbox.1925.k2"><name>1925.k2</name><LineString><coordinates>25.55867530597947,58.87313245701914 25.55867530597947,58.92781799000596 25.62907976190444,58.92781799000596 25.62907976190444,58.87313245701914 25.55867530597947,58.87313245701914</coordinates></LineString></Placemark>
 <Placemark id="gcp1925.k2.1"><name>1925.k2 #1</name><description>132 7240</description><Point><coordinates>25.57782156616185,58.87570159753198</coordinates></Point></Placemark>
 <Placemark id="gcp1925.k2.2"><name>1925.k2 #2</name><description>1707 5894</description><Point><coordinates>25.59376461654683,58.886380961051096</coordinates></Point></Placemark>
 <Placemark id="gcp1925.k2.3"><name>1925.k2 #3</name><description>1820 2579</description><Point><coordinates>25.587112738189084,58.90806223002409</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1927"><name>1927</name><LineString><coordinates>25.51913472775395,58.86498386482878 25.51913472775395,58.89920944672608 25.59206527953888,58.89920944672608 25.59206527953888,58.86498386482878 25.51913472775395,58.86498386482878</coordinates></LineString></Placemark>
+<Placemark id="gcp1927.1"><name>1927 #1</name><description>1030 271</description><Point><coordinates>25.569231041459318,58.89054048468086</coordinates></Point></Placemark>
+<Placemark id="gcp1927.2"><name>1927 #2</name><description>1021 625</description><Point><coordinates>25.578631946005217,58.882930272432255</coordinates></Point></Placemark>
+<Placemark id="gcp1927.3"><name>1927 #3</name><description>122 187</description><Point><coordinates>25.529344986079643,58.87941554693071</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>25.49176597138086,58.86283011539192,25.62906701735885,58.94279911196618</value></Data>
-<Data name="maps"><value>1925.k2,1925.k1</value></Data>
+<Data name="bbox"><value>25.49176597135950,58.86282596199676,25.62907976190444,58.94279911195458</value></Data>
 <Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmax"><value>16</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Paide/composed/1925/</value></Data>
+<Data name="maps"><value>1925.k2,1925.k1,1927</value></Data>
 <Data name="montage"><value>yes</value></Data>
 
 </ExtendedData>
