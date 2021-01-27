@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1766"><name>1766</name><LineString><coordinates>24.73799160516961,59.40690187905908 24.73799160516961,59.46027006879338 24.82200237284214,59.46027006879338 24.82200237284214,59.40690187905908 24.73799160516961,59.40690187905908</coordinates></LineString></Placemark>
+<Placemark id="gcp1766.1"><name>1766 #1</name><description>52 633</description><Point><coordinates>24.74917676243792,59.44254162807361</coordinates></Point></Placemark>
+<Placemark id="gcp1766.2"><name>1766 #2</name><description>1009 1334</description><Point><coordinates>24.787028096056677,59.4391923601911</coordinates></Point></Placemark>
+<Placemark id="gcp1766.3"><name>1766 #3</name><description>399 2082</description><Point><coordinates>24.781235,59.424209</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>24.73799160516961,59.40690187905908,24.82200237284214,59.46027006879338</value></Data>
+<Data name="maps"><value>1766</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1766/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

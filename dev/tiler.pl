@@ -10,9 +10,10 @@ use VlHelper qw(gdal_mapindex gdal_tlast json_file_read);
 getopt('s:y:rmd', \%opts);
 if(!exists $opts{'s'} || !exists $opts{'y'}) {
   print "\nUsage: dev/tiler.pl -s SITE -y MAPYEAR (-r) (-m) (-d)\n\n";
-  print "  -r - don't re-create tiles\n";
+  print "  -d - only show source image statistics\n";
   print "  -m - don't merge tiles to final map\n";
-  print "  -d - only show source image statistics\n\n";
+  print "  -r - don't re-create tiles\n";
+  print "  -z - don't zoom image; use last zoomed image from cache instead\n\n";
   exit;
 }
 
@@ -58,8 +59,10 @@ if(exists $opts{'d'}) {
 
 if(exists $gdal->{'translate'}[$c{'y'}]{'zoom'} && !exists $opts{'r'}) {
   $c{'filezoomedimg'} = $c{'dirtransform'}.'zoomed.jpg';
-  sheller('rm '.$c{'filezoomedimg'});
-  sheller('convert '.$c{'filesrcimg'}.' -resize '.POSIX::floor(100*$gdal->{'translate'}[$c{'y'}]{'zoom'}).'% '.$c{'filezoomedimg'});
+  if(!exists $opts{'z'}) {
+    sheller('rm '.$c{'filezoomedimg'});
+    sheller('convert '.$c{'filesrcimg'}.' -resize '.POSIX::floor(100*$gdal->{'translate'}[$c{'y'}]{'zoom'}).'% '.$c{'filezoomedimg'});
+  }
   $c{'filesrcimg'} = $c{'filezoomedimg'};
   sheller('identify '.$c{'filesrcimg'});
 }
