@@ -80,10 +80,11 @@ td, th {
     </style>
   </head>
   <body>
-    Following data is also available in <a href="maps.csv">CSV</a> and <a href="maps.sqlite3">SQLite</a> formats. Updated @ %s.<br/><pre>
-    Status diagram: Candidate → Published
-                        ↓           ↓
-                    Unsuitable   Deleted</pre>
+    Following data is also available in <a href="maps.csv">CSV</a> and <a href="maps.sqlite3">SQLite</a> formats. Updated @ %s.<br/>Status diagram:<pre>
+    Candidate → Published
+        ↓           ↓
+    Unsuitable   Deleted
+    </pre>
     <table>
         <tr>
             <th>#</th>
