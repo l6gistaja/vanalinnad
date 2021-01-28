@@ -5,13 +5,17 @@ use lib './dev';
 use VlHelper qw(get_sites);
 use Data::Dumper;
 use DBI qw(:sql_types);
-use POSIX;
+use POSIX();
 use Digest::MD5 qw(md5_hex);
+use lib './dev';
+use VlHelper qw(json_file_read);
+
 $dir = 'vector/common/vanalinnad_maps/';
 our $dbh = DBI->connect("dbi:SQLite:dbname=".$dir."maps.sqlite3","","");
 $xml = new XML::Simple;
 $mainconf = $xml->XMLin('conf.xml');
 @sites = get_sites($mainconf);
+%localdata = json_file_read($mainconf->{'dircache'}.$mainconf->{'filelocal'});
 
 %statuses = qw();
 $sth = $dbh->prepare("SELECT enum, name FROM enums WHERE column = 'maps.use'");
@@ -92,7 +96,7 @@ td, th {
             <th>UID</th>
         </tr>
 HTML_HEADER
-print HTML sprintf($header, strftime "%F %T", localtime time);
+print HTML sprintf($header, POSIX::strftime("%F %T", localtime));
 $i = 1;
 while(($vl_site, $vl_year, $year, $anchor, $use, $url, $uid, $title, $author) = $sth->fetchrow()){
    $a = md5_hex(join('~', $vl_site, $vl_year, $year, $uid, $anchor));
@@ -131,6 +135,8 @@ close(HTML);
 $sth->finish;
 
 $dbh->disconnect;
+
+print "\n\nSee @ ".$localdata{'webroot'}.$mainconf->{'dirvector'}."common/vanalinnad_maps/?random=".rand()."\n\n";
 
 sub get_csv_line {
     my $csv = '';

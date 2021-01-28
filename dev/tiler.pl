@@ -181,6 +181,8 @@ if(!(exists $localdata{'dontlogmaps'} && $localdata{'dontlogmaps'} == 1) && $upl
   $dbh->disconnect;
 }
 
+$uploads =~ s/\//&year=/;
+print "\n\nSee @ ".$localdata{'webroot'}."?site=".$uploads."&debug=1&random=".rand()."\n\n";
 print "\a";
 
 sub sheller {
