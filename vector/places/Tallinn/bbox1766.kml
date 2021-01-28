@@ -2,16 +2,22 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1766"><name>1766</name><LineString><coordinates>24.73799160516961,59.40690187905908 24.73799160516961,59.46027006879338 24.82200237284214,59.46027006879338 24.82200237284214,59.40690187905908 24.73799160516961,59.40690187905908</coordinates></LineString></Placemark>
+<Placemark id="bbox.1766"><name>1766</name><LineString><coordinates>24.73799160516961,59.40690244098035 24.73799160516961,59.46897149885529 24.85723128809500,59.46897149885529 24.85723128809500,59.40690244098035 24.73799160516961,59.40690244098035</coordinates></LineString></Placemark>
 <Placemark id="gcp1766.1"><name>1766 #1</name><description>52 633</description><Point><coordinates>24.74917676243792,59.44254162807361</coordinates></Point></Placemark>
 <Placemark id="gcp1766.2"><name>1766 #2</name><description>1009 1334</description><Point><coordinates>24.787028096056677,59.4391923601911</coordinates></Point></Placemark>
 <Placemark id="gcp1766.3"><name>1766 #3</name><description>399 2082</description><Point><coordinates>24.781235,59.424209</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1773"><name>1773</name><LineString><coordinates>24.73137959285769,59.42382210701718 24.73137959285769,59.44508067386575 24.76454776692224,59.44508067386575 24.76454776692224,59.42382210701718 24.73137959285769,59.42382210701718</coordinates></LineString></Placemark>
+<Placemark id="gcp1773.1"><name>1773 #1</name><description>223 935</description><Point><coordinates>24.736901707410315,59.4351566604677</coordinates></Point></Placemark>
+<Placemark id="gcp1773.2"><name>1773 #2</name><description>868 891</description><Point><coordinates>24.749396916809886,59.43596935184246</coordinates></Point></Placemark>
+<Placemark id="gcp1773.3"><name>1773 #3</name><description>707 106</description><Point><coordinates>24.745271,59.443534</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="bbox"><value>24.73799160516961,59.40690187905908,24.82200237284214,59.46027006879338</value></Data>
-<Data name="maps"><value>1766</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
 <Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1773,1766</value></Data>
+<Data name="bbox"><value>24.73137959285769,59.40690244098035,24.85723128809500,59.46897149885529</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1766/</value></Data>
 <Data name="zmax"><value>16</value></Data>
 
