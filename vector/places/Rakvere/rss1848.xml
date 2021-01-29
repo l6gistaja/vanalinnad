@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
+    
+<item>
+<title>Charte von der gegenwärtig in theils vermarkten theils unvermarkten Grenzen bestehenden Ländereien der Kirche zu Wesenberg</title>
+<author>Georg Gustav Storch</author>
+<guid>ra.ee=EAA.46.2.209 leht 1</guid>
+<link>https://www.ra.ee/kaardid/index.php/et/map/view?id=1731</link>
+<pubDate>Fri, 01 Jan 1841 00:00:00 +0000</pubDate>
+</item>
+
 <item>
 <title>Charte von den Ländereien der Kreisstadt Wesenberg</title>
 <author>Jacob Georg Marfeld</author>
@@ -12,5 +21,6 @@
 <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/002/0000053/eaa2072_002_0000053_00001_k4.tif&amp;wid=1748&amp;hei=2480&amp;qlt=100&amp;cvt=jpeg</link>
 <pubDate>Sat, 01 Jan 1848 00:00:00 +0000</pubDate>
 </item>
+
 </channel>
 </rss>
