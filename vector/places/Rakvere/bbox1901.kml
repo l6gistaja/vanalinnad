@@ -13,13 +13,13 @@
 <Placemark id="gcp1901.3"><name>1901 #3</name><description>416 1395</description><Point><coordinates>26.362099,59.336513</coordinates></Point></Placemark>
 
 <ExtendedData>
+<Data name="maps"><value>1897,1901</value></Data>
+<Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="zmax"><value>16</value></Data>
 <Data name="bbox"><value>26.32686395375120,59.32018899485978,26.42064984759773,59.38793627804244</value></Data>
-<Data name="zmin"><value>12</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Rakvere/composed/1901/</value></Data>
 <Data name="montage"><value>yes</value></Data>
-<Data name="maps"><value>1897,1901</value></Data>
 
 </ExtendedData>
 
