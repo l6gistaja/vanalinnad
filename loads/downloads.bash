@@ -977,6 +977,8 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/k
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/005/0000002/erat-0-6_005_0000002_00071_k.tif&CNT=1&SDS=0,90&JTL=6,' -a 224 -b 237 -o cache/deiip/1951_Valga.jpg
 
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eaa3724/004/0000056/eaa3724_004_0000056_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 2240 -b 2279 -o cache/deiip/1823_Laagri.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 

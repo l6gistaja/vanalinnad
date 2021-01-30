@@ -5,12 +5,22 @@
 <language>ru,de</language>
 
 <item>
-<title>План гласиса Ревельской крепости и части Ревельских фортштатов, с названием экспланадных линий, по новому высочайше утвержденному проэкту и всех между оными линиями и гласисом крепости лежащих строений, садов, огородов, сенокосов и пустопорожних мест.</title>
-<author>Zeidisch</author>
-<guid>ra.ee=EAA.2072.2.5</guid>
-<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=5306</link>
-<!-- <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/002/0000005/eaa2072_002_0000005_00000_k.tif&amp;wid=1748&amp;hei=2480&amp;qlt=100&amp;cvt=jpeg</link> -->
-<pubDate>Mon, 01 Jan 1827 00:00:00 +0000</pubDate>
+<title>Планъ Губернскаго города Ревеля</title>
+<author>Carl Faehlmann</author>
+<guid>ra.ee=EAA.30.1.8880 leht 155a</guid>
+<pubDate>Mon, 01 Jan 182X 00:00:00 +0000</pubDate>
+<link>https://www.ra.ee/kaardid/index.php/et/map/view?id=45502</link>
+<anchor>182X</anchor>
+</item>
+
+<item>
+<title>Geometrische Charte von Ziegelkoppel und den dazu gehörien Inseln Gross- und Klein Carls.</title>
+<author>C. Jacoby</author>
+<guid>ra.ee=TLA.149.4.246 leht 1</guid>
+<pubDate>Sat, 01 Jan 1820 00:00:00 +0000</pubDate>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=71060</link>
+<link>http://www.tarkvarastuudio.ee/tallinn_linnaarhiiv/149-4-246.htm</link>
+<anchor>1820.Kopli</anchor>
 </item>
 
 <item>
@@ -24,14 +34,24 @@
 </item>
 
 <item>
-<title>Geometrische Charte von Ziegelkoppel und den dazu gehörien Inseln Gross- und Klein Carls.</title>
-<author>C. Jacoby</author>
-<guid>ra.ee=TLA.149.4.246 leht 1</guid>
-<pubDate>Sat, 01 Jan 1820 00:00:00 +0000</pubDate>
-<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=71060</link>
-<link>http://www.tarkvarastuudio.ee/tallinn_linnaarhiiv/149-4-246.htm</link>
-<anchor>1820.Kopli</anchor>
+<title>Special Charte von dem im Ehstländischen Gouvernement Harrieschen kreise und Kegelschen Kirchspiele belegenen privaten Gute Jelgimeggi</title>
+<author>Carl Faehlmann</author>
+<guid>ra.ee=EAA.3724.4.56 leht 1</guid>
+<link>https://www.ra.ee/kaardid/index.php/et/map/view?id=10534</link>
+<link>https://drive.google.com/file/d/1ABJxtS440O-N-MdLvK58WsX5BrCcnkDj/view?usp=sharing</link>
+<pubDate>Wed, 01 Jan 1823 00:00:00 +0000</pubDate>
+<anchor>1823.Laagri</anchor>
 </item>
+
+<item>
+<title>План гласиса Ревельской крепости и части Ревельских фортштатов, с названием экспланадных линий, по новому высочайше утвержденному проэкту и всех между оными линиями и гласисом крепости лежащих строений, садов, огородов, сенокосов и пустопорожних мест.</title>
+<author>Zeidisch</author>
+<guid>ra.ee=EAA.2072.2.5</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=5306</link>
+<!-- <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/eaa2072/002/0000005/eaa2072_002_0000005_00000_k.tif&amp;wid=1748&amp;hei=2480&amp;qlt=100&amp;cvt=jpeg</link> -->
+<pubDate>Mon, 01 Jan 1827 00:00:00 +0000</pubDate>
+</item>
+
 
 <item>
 <title>План Императорского Екатеринтальского дворца.</title>
@@ -48,6 +68,7 @@
 <pubDate>Fri, 01 Jan 1830 00:00:00 +0000</pubDate>
 <link>http://istmat.info/node/45273</link>
 <link>http://istmat.info/files/uploads/45273/atlas_krepostey_rossiyskoy_imperii_ok_1830_chast_ii.pdf</link>
+<link>https://drive.google.com/file/d/1ihHvDV7jJ9agsYX-2zJ5AeZwfGKiufpm/view?usp=sharing</link>
 </item>
 
 </channel>
