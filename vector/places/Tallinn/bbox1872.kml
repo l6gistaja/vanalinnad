@@ -2,6 +2,11 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
+<Placemark id="bbox.1871"><name>1871</name><LineString><coordinates>24.61525651630190,59.34210271692208 24.61525651630190,59.36627743322064 24.71750239760198,59.36627743322064 24.71750239760198,59.34210271692208 24.61525651630190,59.34210271692208</coordinates></LineString></Placemark>
+<Placemark id="gcp1871.1"><name>1871 #1</name><description>1172 1658</description><Point><coordinates>24.654827378131387,59.348571075034016</coordinates></Point></Placemark>
+<Placemark id="gcp1871.2"><name>1871 #2</name><description>3327 893</description><Point><coordinates>24.693408272601825,59.35820733433284</coordinates></Point></Placemark>
+<Placemark id="gcp1871.3"><name>1871 #3</name><description>884 911</description><Point><coordinates>24.642060063220317,59.3540622186464</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1872"><name>1872</name><LineString><coordinates>24.63918365801714,59.38590712224362 24.63918365801714,59.46935850298406 24.88237501019252,59.46935850298406 24.88237501019252,59.38590712224362 24.63918365801714,59.38590712224362</coordinates></LineString></Placemark>
 <Placemark id="gcp1872.1"><name>1872 #1</name><description>7952 1468</description><Point><coordinates>24.741239230194225,59.44815433546877</coordinates></Point></Placemark>
 <Placemark id="gcp1872.2"><name>1872 #2</name><description>11105 3553</description><Point><coordinates>24.78527610162392,59.43872376847939</coordinates></Point></Placemark>
@@ -23,13 +28,13 @@
 <Placemark id="gcp1875.Viimsi.3.3"><name>1875.Viimsi.3 #3</name><description>1954 5051</description><Point><coordinates>24.843783603210518,59.47882667272963</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="bbox"><value>24.63918365801714,59.38590712224362,24.89268672313748,59.58499307195751</value></Data>
 <Data name="zmax"><value>16</value></Data>
-<Data name="zmin"><value>10</value></Data>
 <Data name="montage"><value>yes</value></Data>
-<Data name="sourcedir"><value>/media/jux/histmaps/places/Tallinn/composed/1872/</value></Data>
+<Data name="bbox"><value>24.61525651630190,59.34210271692208,24.89268672313748,59.58499307195751</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="maps"><value>1872,1875.Viimsi.1,1875.Viimsi.3,1875.Viimsi.2</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="maps"><value>1871,1872,1875.Viimsi.1,1875.Viimsi.3,1875.Viimsi.2</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1872/</value></Data>
 
 </ExtendedData>
 
