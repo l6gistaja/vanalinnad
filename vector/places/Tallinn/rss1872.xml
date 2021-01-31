@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
+    
+<item>
+<title>Heuschlag, Morast und Wald-Charte des Dorfes Päskülla zu Jelgimeggi</title>
+<author>J. Eichenfeldt</author>
+<guid>ra.ee=EAA.3724.4.58 leht 1,EAA.3724.4.58 leht 2,EAA.3724.4.58 leht 3 foolio I,EAA.3724.4.58 leht 4 foolio IV</guid>
+<link>https://www.ra.ee/kaardid/index.php/et/map/view?id=3092</link>
+<pubDate>Sun, 01 Jan 1871 00:00:00 +0000</pubDate>
+</item>
 
 <item>
 <title>Transport Karte von Reval.</title>
@@ -8,6 +16,13 @@
 <guid>ra.ee=EAA.854.4.67 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=21121</link>
 <pubDate>Mon, 01 Jan 1872 00:00:00 +0000</pubDate>
+</item>
+
+<item>
+<title>Karte von den Gütern Cournal und Rosenhagen</title>
+<guid>ra.ee=EAA.854.4.790 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=4628</link>
+<pubDate>Wed, 01 Jan 1873 00:00:00 +0000</pubDate>
 </item>
 
 <item>

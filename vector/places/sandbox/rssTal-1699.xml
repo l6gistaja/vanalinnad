@@ -2,18 +2,8 @@
 <rss version="2.0">
 <channel>
 <title>Vanalinnad</title>
-<link></link>
-<language></language>
-<copyright>0</copyright>
 <item>
-<title></title>
-<author></author>
-<description></description>
-<guid>isbn=;nlib.ee=</guid>
-<link></link>
 <pubDate>Mon, 01 Jan #### 00:00:00 +0000</pubDate>
-<anchor></anchor>
-<componentsregexp>^1</componentsregexp>
 </item>
 </channel>
 </rss>
