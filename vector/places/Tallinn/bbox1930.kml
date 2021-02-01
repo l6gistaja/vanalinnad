@@ -17,14 +17,24 @@
 <Placemark id="gcp1929.2"><name>1929 #2</name><description>8627 1242</description><Point><coordinates>24.724809074401914,59.40738502290753</coordinates></Point></Placemark>
 <Placemark id="gcp1929.3"><name>1929 #3</name><description>6289 5142</description><Point><coordinates>24.708519560851947,59.39213516694275</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1928"><name>1928</name><LineString><coordinates>, , , , ,</coordinates></LineString></Placemark>
+<Placemark id="gcp1928.1"><name>1928 #1</name><description>844 839</description><Point><coordinates>24.672589484100296,59.46241313943169</coordinates></Point></Placemark>
+<Placemark id="gcp1928.2"><name>1928 #2</name><description>1971 4806</description><Point><coordinates>24.708488169556716,59.39214852500087</coordinates></Point></Placemark>
+<Placemark id="gcp1928.3"><name>1928 #3</name><description>5454 782</description><Point><coordinates>24.825110617523315,59.46371053799709</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1927.Nomme"><name>1927.Nomme</name><LineString><coordinates>24.61474664744624,59.35684069054834 24.61474664744624,59.39601731376586 24.72942484714306,59.39601731376586 24.72942484714306,59.35684069054834 24.61474664744624,59.35684069054834</coordinates></LineString></Placemark>
+<Placemark id="gcp1927.Nomme.1"><name>1927.Nomme #1</name><description>1050 370</description><Point><coordinates>24.66064180160276,59.38668033341426</coordinates></Point></Placemark>
+<Placemark id="gcp1927.Nomme.2"><name>1927.Nomme #2</name><description>243 1360</description><Point><coordinates>24.62768332275359,59.36436228570151</coordinates></Point></Placemark>
+<Placemark id="gcp1927.Nomme.3"><name>1927.Nomme #3</name><description>2298 914</description><Point><coordinates>24.715380828704173,59.3757758058288</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="maps"><value>1930.Kopli,1930,1929</value></Data>
-<Data name="sourcedir"><value>/home/jux/histplaces18/Tallinn/composed/1930/</value></Data>
+<Data name="bbox"><value>24.61474664744624,59.35684069054834,24.81450788542133,59.47077026337892</value></Data>
 <Data name="zmax"><value>16</value></Data>
 <Data name="montage"><value>yes</value></Data>
-<Data name="zmin"><value>10</value></Data>
-<Data name="bbox"><value>24.64214121388610,59.38796589229122,24.81450788542133,59.47077026337892</value></Data>
+<Data name="maps"><value>1927.Nomme,1930.Kopli,1930,1929</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1930/</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmin"><value>10</value></Data>
 
 </ExtendedData>
 
