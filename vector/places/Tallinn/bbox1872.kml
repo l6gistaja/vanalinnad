@@ -2,10 +2,15 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1871"><name>1871</name><LineString><coordinates>24.63040481683620,59.34193924345717 24.63040481683620,59.36697848188440 24.70626022560447,59.36697848188440 24.70626022560447,59.34193924345717 24.63040481683620,59.34193924345717</coordinates></LineString></Placemark>
-<Placemark id="gcp1871.1"><name>1871 #1</name><description>1172 1658</description><Point><coordinates>24.654827378131387,59.348571075034016</coordinates></Point></Placemark>
-<Placemark id="gcp1871.2"><name>1871 #2</name><description>3327 893</description><Point><coordinates>24.693408272601825,59.35820733433284</coordinates></Point></Placemark>
+<Placemark id="bbox.1871"><name>1871</name><LineString><coordinates>24.63055375374213,59.34123792056451 24.63055375374213,59.36644738599318 24.70604549396342,59.36644738599318 24.70604549396342,59.34123792056451 24.63055375374213,59.34123792056451</coordinates></LineString></Placemark>
+<Placemark id="gcp1871.1"><name>1871 #1</name><description>824 1815</description><Point><coordinates>24.648541540228152,59.34601721258507</coordinates></Point></Placemark>
+<Placemark id="gcp1871.2"><name>1871 #2</name><description>2087 510</description><Point><coordinates>24.66989291534488,59.359792716925256</coordinates></Point></Placemark>
 <Placemark id="gcp1871.3"><name>1871 #3</name><description>68 1081</description><Point><coordinates>24.633455346526883,59.35235468751716</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1871.Paaskyla"><name>1871.Paaskyla</name><LineString><coordinates>24.60244346681094,59.33660486461527 24.60244346681094,59.36272715455617 24.65241686077067,59.36272715455617 24.65241686077067,59.33660486461527 24.60244346681094,59.33660486461527</coordinates></LineString></Placemark>
+<Placemark id="gcp1871.Paaskyla.1"><name>1871.Paaskyla #1</name><description>1931 1502</description><Point><coordinates>24.629303,59.351895</coordinates></Point></Placemark>
+<Placemark id="gcp1871.Paaskyla.2"><name>1871.Paaskyla #2</name><description>611 2247</description><Point><coordinates>24.622133,59.344162</coordinates></Point></Placemark>
+<Placemark id="gcp1871.Paaskyla.3"><name>1871.Paaskyla #3</name><description>1096 554</description><Point><coordinates>24.615803,59.353552</coordinates></Point></Placemark>
 
 <Placemark id="bbox.1872"><name>1872</name><LineString><coordinates>24.63918365801714,59.38590712224362 24.63918365801714,59.46935850298406 24.88237501019252,59.46935850298406 24.88237501019252,59.38590712224362 24.63918365801714,59.38590712224362</coordinates></LineString></Placemark>
 <Placemark id="gcp1872.1"><name>1872 #1</name><description>7952 1468</description><Point><coordinates>24.741239230194225,59.44815433546877</coordinates></Point></Placemark>
@@ -33,13 +38,13 @@
 <Placemark id="gcp1875.Viimsi.3.3"><name>1875.Viimsi.3 #3</name><description>1954 5051</description><Point><coordinates>24.843783603210518,59.47882667272963</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="zmin"><value>10</value></Data>
-<Data name="maps"><value>1873,1871,1872,1875.Viimsi.1,1875.Viimsi.3,1875.Viimsi.2</value></Data>
-<Data name="bbox"><value>24.63040481683620,59.31441278964856,25.00964203172412,59.58499307195751</value></Data>
-<Data name="montage"><value>yes</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1872/</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>10</value></Data>
 <Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>24.60244346681094,59.31441278964856,25.00964203172412,59.58499307195751</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1872/</value></Data>
+<Data name="maps"><value>1871.Paaskyla,1873,1871,1872,1875.Viimsi.1,1875.Viimsi.3,1875.Viimsi.2</value></Data>
 
 </ExtendedData>
 
