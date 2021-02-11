@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<language>de</language>
+
+<item>
+<title>Генеральный плань города Пернова</title>
+<author>Рижская Инженерная команда</author>
+<description>(Pärnu Muuseum)</description>
+<link>https://drive.google.com/file/d/1C4vvLwrLYRRzsxJDzszgoo0_ywE_cxfK/view?usp=sharing</link>
+<pubDate>Fri, 01 Jan 1841 00:00:00 +0000</pubDate>
+</item>
 
 <item>
 <title>Plan von der Kreisstadt Pernau</title>
