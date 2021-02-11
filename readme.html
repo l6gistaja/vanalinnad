@@ -102,16 +102,25 @@
 <h3>Main scripts</h3>
 
 <ul>
-<li><strong>dev/jsoncleaner.pl</strong> : after deleting map directory from raster/places/{SITE}, remove unnecessary empty tiles descriptions. Afterwards, add flag flags="deleted" to corresponding translate tag in vector/places/{SITE}/gdal.xml.</li>
-<li><strong>dev/kml_minify.pl</strong> : minify KML files.</li>
+<li><strong>dev/devserver.pl</strong> : start development server.</li>
+<li><strong>dev/finishmap.bash</strong> : cleanup project and upload last changes.</li>
 <li><strong>dev/newsite/newsite.pl</strong> : generate scaffolding for new site.</li>
-<li><strong>dev/osm2xml/osmroads.pl</strong> : download and update new road networks for a certain site.</li>
 <li><strong>dev/osm2xml/allosmroads.pl</strong> : download and update new road networks for all sites.</li>
+<li><strong>dev/osm2xml/osmroads.pl</strong> : download and update new road networks for a certain site.</li>
+<li><strong>dev/osm2xml/regenerate_vectors.bash</strong> : regenerate vector maps from source KMLs.</li>
 <li><strong>dev/readme/md2html.bash</strong> : generate new readme.html after changes in README.md.</li>
 <li><strong>dev/shapeimporter.pl</strong> : import other vector maps from data downloaded by dev/osm2xml/* and specified by vector/places/{SITE}/*.xslt.</li>
 <li><strong>dev/tiler.pl</strong> : generate map tiles, and if necessary, merge them with other composite map tiles.</li>
-<li><strong>dev/uploader.pl</strong> : after commiting changes, push, pull and upload changes automatically.</li>
 </ul>
+
+<h3>Deleting map</h3>
+
+<ol>
+<li>delete map directory from raster/places/{SITE}</li>
+<li>remove corresponding layer tag from vector/places/{SITE}/layers.xml</li>
+<li>add flag flags="deleted" to corresponding translate tag in vector/places/{SITE}/gdal.xml</li>
+<li>run dev/finishmap.bash</li>
+</ol>
 
 <h3>Creating new site</h3>
 
