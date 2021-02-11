@@ -9,6 +9,7 @@ if [ $# -ne 1 ]; then
   exit
 fi
 
+dev/jsoncleaner.pl .
 find vector/places/ -name "rss*.xml" -exec sed -f dev/clean_rss.sed -i {} \;
 dev/listmaps.pl
 git add *
