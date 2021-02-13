@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1784"><name>1784</name><LineString><coordinates>28.18276279882866,59.36360965669103 28.18276279882866,59.38999607710823 28.23065765508709,59.38999607710823 28.23065765508709,59.36360965669103 28.18276279882866,59.36360965669103</coordinates></LineString></Placemark>
+<Placemark id="gcp1784.1"><name>1784 #1</name><description>295 52</description><Point><coordinates>28.19806160308832,59.38653778020746</coordinates></Point></Placemark>
+<Placemark id="gcp1784.2"><name>1784 #2</name><description>517 779</description><Point><coordinates>28.217052108611927,59.369287753882396</coordinates></Point></Placemark>
+<Placemark id="gcp1784.3"><name>1784 #3</name><description>600 372</description><Point><coordinates>28.21677315887471,59.37990178604306</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1783"><name>1783</name><LineString><coordinates>28.19781167164225,59.34583442137356 28.19781167164225,59.40804319137135 28.35294633000424,59.40804319137135 28.35294633000424,59.34583442137356 28.19781167164225,59.34583442137356</coordinates></LineString></Placemark>
+<Placemark id="gcp1783.1"><name>1783 #1</name><description>2519 962</description><Point><coordinates>28.291453105542764,59.37936925641125</coordinates></Point></Placemark>
+<Placemark id="gcp1783.2"><name>1783 #2</name><description>1067 2074</description><Point><coordinates>28.217052108611927,59.369287753882396</coordinates></Point></Placemark>
+<Placemark id="gcp1783.3"><name>1783 #3</name><description>884 1538</description><Point><coordinates>28.21677315887471,59.37990178604306</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="maps"><value>1784,1783</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1784/</value></Data>
+<Data name="bbox"><value>28.18276279882866,59.34583442137356,28.35294633000424,59.40804319137135</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
