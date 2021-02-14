@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1823"><name>1823</name><LineString><coordinates>28.18113817070898,59.37219362734086 28.18113817070898,59.38486771941562 28.19608865670092,59.38486771941562 28.19608865670092,59.37219362734086 28.18113817070898,59.37219362734086</coordinates></LineString></Placemark>
+<Placemark id="gcp1823.1"><name>1823 #1</name><description>376 885</description><Point><coordinates>28.185428886032444,59.38061797818231</coordinates></Point></Placemark>
+<Placemark id="gcp1823.2"><name>1823 #2</name><description>507 2118</description><Point><coordinates>28.186050346763324,59.37493540841724</coordinates></Point></Placemark>
+<Placemark id="gcp1823.3"><name>1823 #3</name><description>1414 1737</description><Point><coordinates>28.194615664118245,59.3761167091047</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1826"><name>1826</name><LineString><coordinates>28.12035462682413,59.38219101006613 28.12035462682413,59.40517128499188 28.16523954165614,59.40517128499188 28.16523954165614,59.38219101006613 28.12035462682413,59.38219101006613</coordinates></LineString></Placemark>
+<Placemark id="gcp1826.1"><name>1826 #1</name><description>656 2062</description><Point><coordinates>28.130993112888305,59.388937534550344</coordinates></Point></Placemark>
+<Placemark id="gcp1826.2"><name>1826 #2</name><description>2422 1620</description><Point><coordinates>28.15877878924551,59.39242245629172</coordinates></Point></Placemark>
+<Placemark id="gcp1826.3"><name>1826 #3</name><description>895 2715</description><Point><coordinates>28.13485502624235,59.383800230369495</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1830"><name>1830</name><LineString><coordinates>28.18368557417174,59.37089624939925 28.18368557417174,59.38757511708764 28.21179990902233,59.38757511708764 28.21179990902233,59.37089624939925 28.18368557417174,59.37089624939925</coordinates></LineString></Placemark>
+<Placemark id="gcp1830.1"><name>1830 #1</name><description>834 879</description><Point><coordinates>28.195110706329764,59.38325724919758</coordinates></Point></Placemark>
+<Placemark id="gcp1830.2"><name>1830 #2</name><description>1204 1095</description><Point><coordinates>28.205903915405784,59.381596115965515</coordinates></Point></Placemark>
+<Placemark id="gcp1830.3"><name>1830 #3</name><description>807 1576</description><Point><coordinates>28.198007492065553,59.374305838965284</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>28.12035462682413,59.37089624939925,28.21179990902233,59.40517128499188</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>1830,1823,1826</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1826/</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
