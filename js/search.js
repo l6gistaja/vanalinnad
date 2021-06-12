@@ -15,7 +15,7 @@ vlSearch.searchPlace = function (place, site) {
         vlSearch.setResults('Searching ...');
         OpenLayers.Request.GET({
             url: 'https://nominatim.openstreetmap.org/search'
-                + '?format=json&countrycodes=ee&'
+                + '?format=json&countrycodes=ee&accept-language=et&'
                 + (site == ''
                     ? 'q='
                     : 'city=' + encodeURIComponent(site) + '&street=')
