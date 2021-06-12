@@ -86,7 +86,7 @@ for($i=0; $i<$len-1; $i++) {
   if(!(-e $file)) {
     push(@bash, 'xsltproc '.$dirosm.'xml_mini.xslt '
       .$gmlfile
-      .' > '
+      ." | sed 's/—/-/g' > "
       .$file);
   }
   
