@@ -2,6 +2,7 @@
 <rss version="2.0">
 <channel>
 <title>Vanalinnad</title>
+
 <item>
 <title>План курорта Усть-Наровы (Гунгербурга и Шмецке) : Эстляндской губернии Везенбергскаго уезда</title>
 <author>Генрих Эброк</author>
@@ -10,5 +11,16 @@
 <pubDate>Sun, 01 Jan 1905 00:00:00 +0000</pubDate>
 <legends>legend1905a.gif,legend1905b.gif</legends>
 </item>
+
+<item>
+<title>План окрестностей г. Нарвы и курорта Уст-Наровы (Гунгенбург, Шмецкие и купание Мерекюль)</title>
+<author>H. Ebrok</author>
+<guid>ra.ee=ERA.T-6.3.1569 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=131784</link>
+<pubDate>Sun, 01 Jan 1905 00:00:00 +0000</pubDate>
+<legends>legends/places/Narva/legend1905suur.jpg</legends>
+<anchor>1905.S</anchor>
+</item>
+
 </channel>
 </rss>

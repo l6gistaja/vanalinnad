@@ -104,15 +104,15 @@
 "Narva";"";"1648";"U";"https://sok.riksarkivet.se/bildvisning/K0012416_00001";"SE/KrA/0406/28/031/004";"[Narva, Ivanogrot]";"Frans Stegeling";"";
 "Narva";"1649";"1649";"P";"http://vana.narvaplan.ee/vananarva/indexe.htm";"";"Plan der Stadt Narva";"Gunnar Nilsson Welt";"1649";
 "Narva";"";"1650";"U";"https://sok.riksarkivet.se/bildvisning/K0012419_00001";"SE/KrA/0406/28/031/007";"Geometrischer Grundt Riss des Schlosses und der Stadt Narva samt Iwangorodt…";"";"";
-"Narva";"";"1659";"C";"https://sok.riksarkivet.se/bildvisning/K0012420_00001";"SE/KrA/0406/28/031/008";"[Narwen, Iwanogrod]";"";"";
-"Narva";"";"1671";"C";"https://sok.riksarkivet.se/bildvisning/K0012421_00001";"SE/KrA/0406/28/031/009";"[Narva, Ivannogrott]";"";"";
+"Narva";"";"1659";"U";"https://sok.riksarkivet.se/bildvisning/K0012420_00001";"SE/KrA/0406/28/031/008";"[Narwen, Iwanogrod]";"";"";
+"Narva";"";"1671";"U";"https://sok.riksarkivet.se/bildvisning/K0012421_00001";"SE/KrA/0406/28/031/009";"[Narva, Ivannogrott]";"";"";
 "Narva";"";"1681";"U";"https://sok.riksarkivet.se/bildvisning/K0012428_00001";"SE/KrA/0406/28/031/015";"Geometrisch Delineation opå Staden och Slåttet Narfwen sampt Ivanogorodh";"";"";
 "Narva";"";"1685";"U";"https://sok.riksarkivet.se/bildvisning/K0012434_00001";"SE/KrA/0406/28/031/021";"Geometrisch Plaan Utaf Staden och Fästningen Narwa Sambt huruledes den efter Hans Kongel";"";"";
 "Narva";"1686";"1686";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=284108";"ra.ee=EAA.5393.1.8 leht 1";"Geometrisch Plaan Utaf Staden och Fästningen Narwa Sambt huruledes den effter Hans Kongel.";"Hans Kongel";"1686";
 "Narva";"1700";"1700";"P";"https://sok.riksarkivet.se/bildvisning/K0012468_00001";"isbn=9789949512096,riksarkivet.se=SE/KrA/0406/28/031/056";"";"";"1700";
 "Narva";"1718";"1718";"P";"http://www.ester.ee/record=b2923516*est";"isbn=9789949512096";"Plan von Narva";"";"1718";
-"Narva";"";"1747";"C";"http://www.ra.ee/kaardid/index.php/et/map/view?id=287134";"ra.ee=EAA.1646.1.2921 leht 3";"Планъ имеющемуся на иванегородском варштате военно людей строения с прожектому.";"";"";
-"Narva";"";"1750";"C";"http://www.ra.ee/kaardid/index.php/et/map/view?id=19114";"ra.ee=EAA.1646.1.2655 leht 1";"План земельных участков города Нарвы";"";"";
+"Narva";"";"1747";"U";"http://www.ra.ee/kaardid/index.php/et/map/view?id=287134";"ra.ee=EAA.1646.1.2921 leht 3";"Планъ имеющемуся на иванегородском варштате военно людей строения с прожектому.";"";"";
+"Narva";"";"1750";"U";"http://www.ra.ee/kaardid/index.php/et/map/view?id=19114";"ra.ee=EAA.1646.1.2655 leht 1";"План земельных участков города Нарвы";"";"";
 "Narva";"1773";"1766";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=18420";"ra.ee=EAA.1646.1.3456 leht 1";"Plan und Charte von der Reeperbahn, samt ihrer und der anstoszenden Grenze, von Rotenhahn und Marienhoff";"";"1766";
 "Narva";"1773";"1773";"P";"http://www.ester.ee/record=b2923516*est";"isbn=9789949512096";"Плань Нарвской Ивангородской Крепости";"Яков Рогачев";"1773";
 "Narva";"1784";"1783";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=287160";"ra.ee=EAA.1646.1.2921 leht 1";"Планъ состоящей въ Санкть Петербургском Губернии въ Нарвскомъ уезде, блйзъ Города Нврвы Новой Деревни";"Johann Mandelin";"1783";
@@ -154,6 +154,7 @@
 "Narva-Joesuu";"1895";"1895";"P";"";"isbn=978-9949-654-67-3";"VIIIc-24 [Vaivara] : Ямбург. и Везенберг. уезд. С-Петербург. и Эстлянд. губ[ерний]";"Корпус Военных Топографов";"1895";
 "Narva-Joesuu";"";"1905";"C";"http://www.ra.ee/kaardid/index.php/et/map/view?id=229189";"ra.ee=LVVA.6828.4.541 leht 1";"Плань окрестностей г. Нарвы и курорта Усть-Наровы (Гунгенбург, Шмецке и Мерекюль)";"";"";
 "Narva-Joesuu";"1905";"1905";"P";"https://www.digar.ee/arhiiv/nlib-digar:289479";"isbn=978-9949-595-14-3";"План курорта Усть-Наровы (Гунгербурга и Шмецке) : Эстляндской губернии Везенбергскаго уезда";"Генрих Эброк";"1905";
+"Narva-Joesuu";"1905";"1905";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=131784";"ra.ee=ERA.T-6.3.1569 leht 1";"План окрестностей г. Нарвы и курорта Уст-Наровы (Гунгенбург, Шмецкие и купание Мерекюль)";"H. Ebrok";"1905.S";
 "Narva-Joesuu";"";"1912";"C";"https://www.digar.ee/arhiiv/et/pildimaterjal/101961";"isbn=978-9949-654-67-3";"VIIIc-24 [Vaivara] : Ямбург. и Везенберг. уезд. С-Петербург. и Эстлянд. губ[ерний]";"Корпус Военных Топографов";"";
 "Narva-Joesuu";"1919";"1919";"P";"https://www.digar.ee/arhiiv/et/pildimaterjal/70856";"isbn=978-9949-598-07-6";"III-45,46 Narva jõe suudmeala";"Eesti Sõjavägi, Topograafia jaoskond";"1919";
 "Narva-Joesuu";"1923";"1923";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=100483";"ra.ee=ERA.T-6.3.106 leht 1";"Eesti topograafiline kaart 1:25000, III-45, Virumaa";"N. Subbotin";"1923";

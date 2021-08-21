@@ -223,11 +223,9 @@ function vlInitInfo(inputParams){
             if(legends[i] == '') { continue; }
             y += ( i > -1 ? '<br/>' : '' )
               + '<img src="'
-              + conf.dirlegends
-              + conf.dirplaces
-              + reqParams['site']
-              + '/'
-              + legends[i]
+              + (legends[i].indexOf('/') == -1
+                ? conf.dirlegends + conf.dirplaces + reqParams['site'] + '/' + legends[i]
+                : legends[i] )
               + '" title="Legend"/>';
           }
         }
