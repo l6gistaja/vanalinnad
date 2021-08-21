@@ -80,6 +80,7 @@ td, th {
     </style>
   </head>
   <body>
+    <h1><a href="http://vanalinnad.mooo.com">Vanalinnad</a> maps</h1>
     Following data is also available in <a href="maps.csv">CSV</a> and <a href="maps.sqlite3">SQLite</a> formats. Updated @ %s.<br/>Status diagram:<pre>
     Candidate → Published
         ↓           ↓

@@ -31,6 +31,7 @@ Historical maps of Estonian cities under the grid of today's street network.
     </tr>
 </table>
 
+* [Used maps](vector/common/vanalinnad_maps/)
 * License: BSD 2-clause License, inherited from used [OpenLayers 2](http://openlayers.org) library
 * Vector data: © [OpenStreetMap contributors](http://www.openstreetmap.org/copyright)
 * Tiles and initial JavaScript: [MapTiler](http://www.maptiler.org/)/[GDAL2Tiles](http://www.klokan.cz/projects/gdal2tiles/), © 2008 [Klokan Petr Pridal](http://www.klokan.cz/), [GDAL](http://www.gdal.org/) & [OSGeo](http://www.osgeo.org/) [GSoC](http://code.google.com/soc/)
@@ -113,7 +114,7 @@ You can update existing road layers by running ```./dev/osm2xml/allosmroads.pl``
 License
 -------
 
-Copyright 2013-2020, juks at alkohol ee. All rights reserved.
+Copyright 2013-2021, juks at alkohol ee. All rights reserved.
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:

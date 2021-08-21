@@ -256,6 +256,13 @@ function vlInitInfo(inputParams){
       document.getElementById(inputParams.divHeader).innerHTML += getSiteLbl();
       document.getElementById(inputParams.divContent).innerHTML = y;
       document.getElementById(inputParams.divFooter).innerHTML = document.getElementById(inputParams.divHeader).innerHTML;
+      
+      // anchors wont work otherwise, as content is dynamically generated
+      if (location.hash) {
+        var requested_hash = location.hash.slice(1);
+        location.hash = '';
+        location.hash = requested_hash;
+      }
 
       map = new OpenLayers.Map('infoMap', jsonConf.mapoptions);
 
