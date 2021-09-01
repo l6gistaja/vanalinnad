@@ -79,7 +79,7 @@ function vlInitInfo(inputParams){
              + conf.filelayers,
            callback: layerHandler
         },
-	selector: {
+	    selector: {
            url: conf.dirvector
              + conf.fileareaselector,
            callback: selectorHandler
@@ -189,6 +189,7 @@ function vlInitInfo(inputParams){
   }
 
   function rssHandler(request) {
+      
     if(request.status == 200) {
       window.document.title += ' ' + reqParams['year'];
       rssXml = request.responseXML;
@@ -323,7 +324,7 @@ function vlInitInfo(inputParams){
       }
 
     } else {
-      OpenLayers.Request.GET(requestConf['site']);
+      window.location.replace('?site='+reqParams['site']);
     }
   }
 
