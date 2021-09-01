@@ -215,6 +215,7 @@ function vlInitInfo(inputParams){
 
         componentRegexp = vlUtils.getXmlValue(items[m], 'componentsregexp');
         if(componentRegexp != '') { componentsRegexp[mapAnchor] = componentRegexp; }
+        var mapTitle = siteName + ' ' + mapAnchor;
         
         // legends
         if(items[m].getElementsByTagName('legends').length) {
@@ -222,17 +223,24 @@ function vlInitInfo(inputParams){
           for(i=0; i<legends.length; i++) {
             if(legends[i] == '') { continue; }
             y += ( i > -1 ? '<br/>' : '' )
+              + '<a href="#L.'+legends[i]+'">'
               + '<img src="'
               + (legends[i].indexOf('/') == -1
                 ? conf.dirlegends + conf.dirplaces + reqParams['site'] + '/' + legends[i]
                 : legends[i] )
-              + '" title="Legend"/>';
+              + '" title="Legend '
+              + mapTitle
+              + ' #'+(i+1)
+              +'" id="L.'+legends[i]+'"/></a>';
           }
         }
 
         // texts
         for(i in itemFields) {
           tmp = vlUtils.getXmlValue(items[m], itemFields[i].tag, 0);
+          if(itemFields[i].tag == 'title') {
+            tmp = '<a href="#D.' + mapAnchor + '" id="D.' + mapAnchor + '" class="hashLnk" title="Description ' + mapTitle + '">' + tmp + '</a>';
+          }
           if(itemFields[i].tag == 'author' && pubYear != '') {
             tmp += ' ' + pubYear;
           }
@@ -250,9 +258,9 @@ function vlInitInfo(inputParams){
 
       }
       
-      y += '<a name="bbox">↓ ' + vlUtils.link({u:requestConf.bbox.url, l:'BBox &amp; GCP'})
+      y += '<a href="#infoMap" class="hashLnk">↓</a> ' + vlUtils.link({u:requestConf.bbox.url, l:'BBox &amp; GCP'})
         + ' ; ↑ ' + vlUtils.link({u:requestConf.year.url, l:'RSS'})
-        + '</a><div id="infoMap"></div>';
+        + '<div id="infoMap"></div>';
       document.getElementById(inputParams.divHeader).innerHTML += getSiteLbl();
       document.getElementById(inputParams.divContent).innerHTML = y;
       document.getElementById(inputParams.divFooter).innerHTML = document.getElementById(inputParams.divHeader).innerHTML;

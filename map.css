@@ -159,3 +159,8 @@ body .bodyContent {
     padding:10px;
     background-color: lightblue;
 }
+
+.hashLnk {
+    color: black;
+    text-decoration: none;
+}
