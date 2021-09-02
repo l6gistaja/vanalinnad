@@ -28,6 +28,7 @@
   <layer bounds="24.02738498932603,59.32943004066608,24.08844916607609,59.37662542626657" type="tms" year="1872" />
   <layer bounds="24.03598220280566,59.33430131395055,24.07632299057599,59.36098453608399" type="tms" year="1860" />
   <layer bounds="24.00720284632062,59.30233237015360,24.19098458235194,59.40927228409146" type="tms" year="1783" />
+  <layer bounds="24.04449860774447,59.34481963117947,24.06486914823065,59.35555152869268" type="tms" year="1767" />
   <layer bounds="24.03214259843702,59.34463036772009,24.06440750290098,59.36524309469505" type="tms" year="1723" />
   <layer name="⛜ 1" file="roads1min.json" format="VLGJ" levels="0,1,2,3" maxres="12" type="roads" />
   <layer name="⛜ 2" file="roads4min.json" format="VLGJ" levels="4" maxres="15" type="roads" />
