@@ -392,6 +392,7 @@ function vlInitInfo(inputParams){
           siteConf = JSON.parse(siteConf);
           if('urls' in siteConf) {
             for(w in siteConf.urls) {
+              if('status' in siteConf.urls[w]) { continue; }
               jsonConf.urls[w] = siteConf.urls[w];
               urlKeys[urlKeys.length] = w;
             }
