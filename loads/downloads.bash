@@ -981,6 +981,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/kaardid/eaa0854/004/0000790/eaa0854_004_0000790_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 1102 -b 1139 -o cache/deiip/1873_Jyri.jpg
 
+# https://www.ra.ee/kaardid/index.php/et/map/view?id=16407
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa2623/001/0002049/eaa2623_001_0002049_00051_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1870 -b 1924 -o cache/deiip/1839_Tartu.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 
