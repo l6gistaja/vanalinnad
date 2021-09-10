@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1959_1374"><name>1959_1374</name><LineString><coordinates>24.02825780589179,59.31528537963280 24.02825780589179,59.38035417402588 24.14896172517182,59.38035417402588 24.14896172517182,59.31528537963280 24.02825780589179,59.31528537963280</coordinates></LineString></Placemark>
+<Placemark id="gcp1959_1374.1"><name>1959_1374 #1</name><description>4709 1991</description><Point><coordinates>24.114535524292737,59.36014241333422</coordinates></Point></Placemark>
+<Placemark id="gcp1959_1374.2"><name>1959_1374 #2</name><description>4274 4336</description><Point><coordinates>24.104361862792967,59.34021438249875</coordinates></Point></Placemark>
+<Placemark id="gcp1959_1374.3"><name>1959_1374 #3</name><description>1149 3198</description><Point><coordinates>24.05238583068777,59.352047857757405</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1959_1395"><name>1959_1395</name><LineString><coordinates>24.03207162596551,59.35773198451745 24.03207162596551,59.39080217736201 24.11235937835868,59.39080217736201 24.11235937835868,59.35773198451745 24.03207162596551,59.35773198451745</coordinates></LineString></Placemark>
+<Placemark id="gcp1959_1395.1"><name>1959_1395 #1</name><description>182 377</description><Point><coordinates>24.037698508274328,59.38743755645202</coordinates></Point></Placemark>
+<Placemark id="gcp1959_1395.2"><name>1959_1395 #2</name><description>2859 1573</description><Point><coordinates>24.081833081381216,59.37591603589783</coordinates></Point></Placemark>
+<Placemark id="gcp1959_1395.3"><name>1959_1395 #3</name><description>821 1325</description><Point><coordinates>24.04770300157292,59.37890371499781</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>24.02825780589179,59.31528537963280,24.14896172517182,59.39080217736201</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>1959_1374,1959_1395</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Paldiski/composed/1959/</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
