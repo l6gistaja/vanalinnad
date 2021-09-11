@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
+    
 <item>
 <title>План г. Нарва</title>
 <author>ТО штаба Ленфронта</author>
@@ -9,5 +10,14 @@
 <pubDate>Fri, 01 Jan 1943 00:00:00 +0000</pubDate>
 <legends>legend1943.jpg</legends>
 </item>
+
+<item>
+<title>(Narva õhuvõte Maaameti fotolaost)</title>
+<author>Министерство сельского хозяйства и заготовок всесоюзная контора ""Сельхозаэросьемка"" сев. зап. аэрогеодезическое и фотобумажное предприятие</author>
+<link>https://fotoladu.maaamet.ee/?arhiiv=195512</link>
+<guid>ID=4739</guid>
+<pubDate>Mon, 01 Jan 1951 00:00:00 +0000</pubDate>
+</item>
+
 </channel>
 </rss>

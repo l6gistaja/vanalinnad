@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>28.15049301731871,59.34344385902688 28.15049301731871,59.39926265233306 28.23965384583556,59.39926265233306 28.23965384583556,59.34344385902688 28.15049301731871,59.34344385902688</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>815 1469</description><Point><coordinates>28.198828719482794,59.35427426159607</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>247 950</description><Point><coordinates>28.165569327697657,59.37045802106792</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>792 397</description><Point><coordinates>28.1980777009584,59.386513864840296</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1943"><name>1943</name><LineString><coordinates>28.15049301731871,59.34344385902688 28.15049301731871,59.39926265233306 28.23965384583556,59.39926265233306 28.23965384583556,59.34344385902688 28.15049301731871,59.34344385902688</coordinates></LineString></Placemark>
+<Placemark id="gcp1943.1"><name>1943 #1</name><description>815 1469</description><Point><coordinates>28.198828719482794,59.35427426159607</coordinates></Point></Placemark>
+<Placemark id="gcp1943.2"><name>1943 #2</name><description>247 950</description><Point><coordinates>28.165569327697657,59.37045802106792</coordinates></Point></Placemark>
+<Placemark id="gcp1943.3"><name>1943 #3</name><description>792 397</description><Point><coordinates>28.1980777009584,59.386513864840296</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1951"><name>1951</name><LineString><coordinates>28.12256107434085,59.29128421608588 28.12256107434085,59.33169875002596 28.18542745923233,59.33169875002596 28.18542745923233,59.29128421608588 28.12256107434085,59.29128421608588</coordinates></LineString></Placemark>
+<Placemark id="gcp1951.1"><name>1951 #1</name><description>538 427</description><Point><coordinates>28.131373263258244,59.327824460597085</coordinates></Point></Placemark>
+<Placemark id="gcp1951.2"><name>1951 #2</name><description>2452 3086</description><Point><coordinates>28.162918664092047,59.305744028795104</coordinates></Point></Placemark>
+<Placemark id="gcp1951.3"><name>1951 #3</name><description>1728 697</description><Point><coordinates>28.150749541182524,59.32567348364063</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>28.12256107434085,59.29128421608588,28.23965384583556,59.39926265233306</value></Data>
+<Data name="maps"><value>1943,1951</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1943/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
