@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1975_374"><name>1975_374</name><LineString><coordinates>28.08118404290457,59.31577711383561 28.08118404290457,59.35908101596163 28.13708706220224,59.35908101596163 28.13708706220224,59.31577711383561 28.08118404290457,59.31577711383561</coordinates></LineString></Placemark>
+<Placemark id="gcp1975_374.1"><name>1975_374 #1</name><description>3583 615</description><Point><coordinates>28.13037941733973,59.35384591911451</coordinates></Point></Placemark>
+<Placemark id="gcp1975_374.2"><name>1975_374 #2</name><description>1400 1004</description><Point><coordinates>28.094574154849237,59.35065755123855</coordinates></Point></Placemark>
+<Placemark id="gcp1975_374.3"><name>1975_374 #3</name><description>2291 3933</description><Point><coordinates>28.109006948145378,59.32612726666128</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1975_375"><name>1975_375</name><LineString><coordinates>28.13335854837058,59.31548591298569 28.13335854837058,59.35955309392935 28.20034121117368,59.35955309392935 28.20034121117368,59.31548591298569 28.13335854837058,59.31548591298569</coordinates></LineString></Placemark>
+<Placemark id="gcp1975_375.1"><name>1975_375 #1</name><description>3943 34</description><Point><coordinates>28.198526523701396,59.35873315553648</coordinates></Point></Placemark>
+<Placemark id="gcp1975_375.2"><name>1975_375 #2</name><description>444 384</description><Point><coordinates>28.141084335438382,59.35628883945436</coordinates></Point></Placemark>
+<Placemark id="gcp1975_375.3"><name>1975_375 #3</name><description>2111 1483</description><Point><coordinates>28.168335579028383,59.34689271544422</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1975_376"><name>1975_376</name><LineString><coordinates>28.19617246047249,59.31583522607306 28.19617246047249,59.35921525938303 28.26217187685353,59.35921525938303 28.26217187685353,59.31583522607306 28.19617246047249,59.31583522607306</coordinates></LineString></Placemark>
+<Placemark id="gcp1975_376.1"><name>1975_376 #1</name><description>11 125</description><Point><coordinates>28.196669566441212,59.358176344394266</coordinates></Point></Placemark>
+<Placemark id="gcp1975_376.2"><name>1975_376 #2</name><description>1158 838</description><Point><coordinates>28.215358894348338,59.35217566393926</coordinates></Point></Placemark>
+<Placemark id="gcp1975_376.3"><name>1975_376 #3</name><description>666 2032</description><Point><coordinates>28.207248198796357,59.34229308849571</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1975_376,1975_374,1975_375</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1975/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>28.08118404290457,59.31548591298569,28.26217187685353,59.35955309392935</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
