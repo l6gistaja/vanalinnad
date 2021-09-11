@@ -17,14 +17,24 @@
 <Placemark id="gcp1975_376.2"><name>1975_376 #2</name><description>1158 838</description><Point><coordinates>28.215358894348338,59.35217566393926</coordinates></Point></Placemark>
 <Placemark id="gcp1975_376.3"><name>1975_376 #3</name><description>666 2032</description><Point><coordinates>28.207248198796357,59.34229308849571</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1975_474"><name>1975_474</name><LineString><coordinates>28.08122426661480,59.27393693286437 28.08122426661480,59.31763802611189 28.13129888031936,59.31763802611189 28.13129888031936,59.27393693286437 28.08122426661480,59.27393693286437</coordinates></LineString></Placemark>
+<Placemark id="gcp1975_474.1"><name>1975_474 #1</name><description>3243 153</description><Point><coordinates>28.12471556264156,59.316182776679945</coordinates></Point></Placemark>
+<Placemark id="gcp1975_474.2"><name>1975_474 #2</name><description>740 114</description><Point><coordinates>28.083838697253412,59.316670041553806</coordinates></Point></Placemark>
+<Placemark id="gcp1975_474.3"><name>1975_474 #3</name><description>620 3966</description><Point><coordinates>28.081928964434706,59.28431473553096</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1978"><name>1978</name><LineString><coordinates>28.08148612369643,59.33314259260523 28.08148612369643,59.42992239113511 28.42372346248222,59.42992239113511 28.42372346248222,59.33314259260523 28.08148612369643,59.33314259260523</coordinates></LineString></Placemark>
+<Placemark id="gcp1978.1"><name>1978 #1</name><description>443 708</description><Point><coordinates>28.09734749056439,59.35168287400045</coordinates></Point></Placemark>
+<Placemark id="gcp1978.2"><name>1978 #2</name><description>570 31</description><Point><coordinates>28.1254999563842,59.4296769995802</coordinates></Point></Placemark>
+<Placemark id="gcp1978.3"><name>1978 #3</name><description>1729 433</description><Point><coordinates>28.38882850862953,59.383269250865155</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="maps"><value>1975_376,1975_374,1975_375</value></Data>
-<Data name="zmin"><value>10</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1975/</value></Data>
-<Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>28.08118404290457,59.31548591298569,28.26217187685353,59.35955309392935</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva/composed/1975/</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="maps"><value>1978,1975_376,1975_374,1975_474,1975_375</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>28.08118404290457,59.27393693286437,28.42372346248222,59.42992239113511</value></Data>
 
 </ExtendedData>
 
