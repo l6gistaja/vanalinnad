@@ -2,6 +2,7 @@
 
 use Getopt::Std;
 use XML::Simple;
+binmode(STDOUT, "encoding(UTF-8)");
 
 $xml = new XML::Simple;
 $dirbase = '';
@@ -35,6 +36,7 @@ for($i=0; $i<=$len; $i++) {
 
   $write = 0;
   $name = $data->{'w'}[$i]{'n'};
+  if($name eq '') { $name = $data->{'w'}[$i]{'r'}; }
   $name =~ s/^\s+//;
   $name =~ s/\s+$//;
   if($name eq '') { next; }
@@ -102,7 +104,7 @@ for($level = 0; $level <= $levelLen; $level++) {
 
     $partslen = scalar(@linestrings);
     if($partslen < 1) { next; }
-    print DATA '<Placemark><name>'.$data->{'w'}[$parts[0]]{'n'}.'</name>';
+    print DATA '<Placemark><name>'.($data->{'w'}[$parts[0]]{'n'} ne '' ? $data->{'w'}[$parts[0]]{'n'} : $data->{'w'}[$parts[0]]{'r'}).'</name>';
     if($partslen > 1) { print DATA '<MultiGeometry>'; }
     print DATA '<LineString><coordinates>'
       .join('</coordinates></LineString><LineString><coordinates>', @linestrings)
