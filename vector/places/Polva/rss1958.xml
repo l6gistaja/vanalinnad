@@ -2,11 +2,20 @@
 <rss version="2.0">
 <channel>
 <language>et</language>
+
 <item>
 <title>Põlva asula plaan</title>
 <guid>ra.ee=ERA.T-6.3.2057b leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=105733</link>
 <pubDate>Wed, 01 Jan 1958 00:00:00 +0000</pubDate>
 </item>
+
+<item>
+<title>(Põlva õhuvõte Maaameti fotolaost)</title>
+<guid>ID=1826;252</guid>
+<link>https://fotoladu.maaamet.ee/arhiiv=131018</link>
+<pubDate>Fri, 01 Jan 1960 00:00:00 +0000</pubDate>
+</item>
+
 </channel>
 </rss>

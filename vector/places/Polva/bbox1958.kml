@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>27.04561765861146,58.04798899117525 27.04561765861146,58.07449696962743 27.10049315743381,58.07449696962743 27.10049315743381,58.04798899117525 27.04561765861146,58.04798899117525</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>5587 736</description><Point><coordinates>27.086028632507112,58.071663922296345</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>648 5694</description><Point><coordinates>27.05034452377246,58.05291199737631</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>6414 1479</description><Point><coordinates>27.092014859440454,58.06884153650011</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1958"><name>1958</name><LineString><coordinates>27.04541866008534,58.04787582391335 27.04541866008534,58.07459585413076 27.10070267404694,58.07459585413076 27.10070267404694,58.04787582391335 27.04541866008534,58.04787582391335</coordinates></LineString></Placemark>
+<Placemark id="gcp1958.1"><name>1958 #1</name><description>5591 739</description><Point><coordinates>27.086028632507112,58.071663922296345</coordinates></Point></Placemark>
+<Placemark id="gcp1958.2"><name>1958 #2</name><description>650 5694</description><Point><coordinates>27.05034452377246,58.05291199737631</coordinates></Point></Placemark>
+<Placemark id="gcp1958.3"><name>1958 #3</name><description>6412 1476</description><Point><coordinates>27.092014859440454,58.06884153650011</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1960"><name>1960</name><LineString><coordinates>27.07015400469857,58.04694901769956 27.07015400469857,58.09548028400093 27.12621644094261,58.09548028400093 27.12621644094261,58.04694901769956 27.07015400469857,58.04694901769956</coordinates></LineString></Placemark>
+<Placemark id="gcp1960.1"><name>1960 #1</name><description>803 2608</description><Point><coordinates>27.08589659499241,58.089243914692496</coordinates></Point></Placemark>
+<Placemark id="gcp1960.2"><name>1960 #2</name><description>2911 4900</description><Point><coordinates>27.121977762145953,58.06758913138628</coordinates></Point></Placemark>
+<Placemark id="gcp1960.3"><name>1960 #3</name><description>2145 6330</description><Point><coordinates>27.108030275267843,58.054671224231264</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1960,1958</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="bbox"><value>27.04541866008534,58.04694901769956,27.12621644094261,58.09548028400093</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Polva/composed/1958/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
