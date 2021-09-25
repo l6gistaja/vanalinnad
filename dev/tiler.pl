@@ -5,7 +5,7 @@ use Getopt::Std;
 use Data::Dumper;
 use POSIX ();
 use lib './dev';
-use VlHelper qw(gdal_mapindex gdal_tlast json_file_read);
+use VlHelper qw(gdal_mapindex gdal_tlast json_file_read rss_date);
 
 getopt('s:y:rmd', \%opts);
 if(!exists $opts{'s'} || !exists $opts{'y'}) {
@@ -156,11 +156,7 @@ $crud = 'U';
 if(! -e $rss) {
   $crud = 'C';
   if($c{'layeryear'} =~ /^\d{4}[^\d]*$/) {
-    $rssdate = $c{'layeryear'};
-    $rssdate =~ s/[^\d]*$//;
-    $rssdate = 'LC_ALL=en_US.utf8 date -d '.$rssdate.'0101 "+%a, %d %b %Y 00:00:00 +0000"';
-    $rssdate = `$rssdate`;
-    $rssdate =~ s/\s+$//;
+    $rssdate = rss_date($c{'layeryear'});
     $cmd = 'cat '.$mainconf->{'dirvector'}.'rsstemplate.xml | sed "s/<pubDate>.*<\/pubDate>/<pubDate>'.$rssdate.'<\/pubDate>/" > '.$rss;
     if($c{'layeryear'}) { sheller($cmd); }
   } else {

@@ -7,7 +7,7 @@ use Storable qw(dclone);
 use XML::Simple;
 use Data::Dumper;
 
-our @EXPORT_OK = qw(minify_empty_tiles_json minify_empty_tiles_json_v2 add_empty_tiles_json bbox_fragment add_to_tree kml_envelope gdal_mapindex gdal_tlast bbox_box bbox_points json_file_read json_file_write get_sites get_bbox_from_layers);
+our @EXPORT_OK = qw(minify_empty_tiles_json minify_empty_tiles_json_v2 add_empty_tiles_json bbox_fragment add_to_tree kml_envelope gdal_mapindex gdal_tlast bbox_box bbox_points json_file_read json_file_write get_sites get_bbox_from_layers rss_date);
 
 sub minify_empty_tiles_json {
   %json = %{dclone($_[0])};
@@ -245,6 +245,15 @@ sub get_bbox_from_layers {
         if(exists $layers->{'roadbounds'}{'w'}) {$max[0] = $layers->{'roadbounds'}{'w'};}
     }
     return @max;
+}
+
+sub rss_date {
+    $rssdate = substr $_[0], 0, 4;
+    $rssdate =~ s/[^\d]*$//;
+    $rssdate = 'LC_ALL=en_US.utf8 date -d '.$rssdate.'0101 "+%a, %d %b %Y 00:00:00 +0000"';
+    $rssdate = `$rssdate`;
+    $rssdate =~ s/\s+$//;
+    return $rssdate;
 }
 
 1;

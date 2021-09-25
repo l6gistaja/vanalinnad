@@ -14,7 +14,7 @@
 <xsl:template match="/">
 <o:FeatureCollection>
 <xsl:for-each select="osm:FeatureCollection/gml:featureMember">
-<xsl:if test="not(osm:way/osm:building) and not(osm:way/osm:bicycle) and osm:way/osm:geometryProperty/gml:LineString and osm:way/osm:name and osm:way/osm:name != '' and substring(osm:way/osm:highway, string-length(osm:way/osm:highway) - 4) != '_link' and not(contains('steps,footway,path,track,trunk,cycleway,platform,residential,proposed', osm:way/osm:highway))">
+<xsl:if test="not(osm:way/osm:building) and not(osm:way/osm:bicycle) and osm:way/osm:geometryProperty/gml:LineString and osm:way/osm:name and osm:way/osm:name != '' and (osm:man_made == 'bridge' or (substring(osm:way/osm:highway, string-length(osm:way/osm:highway) - 4) != '_link' and not(contains('steps,footway,path,track,trunk,cycleway,platform,residential,proposed', osm:way/osm:highway)))">
 <g:featureMember>
 <o:w fid="{osm:way/@fid}">
   <o:n><xsl:value-of select="osm:way/osm:name"/></o:n>
