@@ -1,0 +1,29 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=UTF-8">
+<title>Link to Rahvusarhiiv</title>
+<script>
+function ralink(a) {
+    var aa = a.split('_');
+    for(i = 0; i < aa[0].length; i++) { if(aa[0].charCodeAt(i) < 58) { break; } }
+    aa.unshift(aa[0].substring(0, i).toUpperCase());
+    if(aa[0] == 'LVA') { aa[0] = 'LVVA'; }
+    aa[1] = aa[1].substring(i);
+    var params = ['archive','fond','inventory','item','sheet'];
+    url = 'https://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?';
+    for(i in aa) { url += '&' + params[i] + '=' + (i == 0 ? aa[i] : parseInt(aa[i], 10)); }
+    document.getElementById('link').innerHTML = '<a href="'+url+'" target="_blank">'+url+'</a>';
+    return true;
+}
+</script>
+</head>
+<body>
+<form>
+<input type="text" name="a" placeholder="ABC1234_1234_1234_1234" value=""/>
+<input type="button" value="Generate link" onclick="return ralink(this.form.a.value);"/>
+<input type="button" value="Clear" onclick="this.form.a.value=''; return true;"/>
+<br/>
+<span id="link"></span>
+</form>
+</body>
+</html>

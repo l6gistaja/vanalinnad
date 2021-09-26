@@ -7,7 +7,7 @@ use POSIX ();
 use lib './dev';
 use VlHelper qw(gdal_mapindex gdal_tlast json_file_read rss_date);
 
-getopt('s:y:rmd', \%opts);
+getopt('s:y:rmdz', \%opts);
 if(!exists $opts{'s'} || !exists $opts{'y'}) {
   print "\nUsage: dev/tiler.pl -s SITE -y MAPYEAR (-r) (-m) (-d)\n\n";
   print "  -d - only show source image statistics\n";
