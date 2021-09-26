@@ -41,6 +41,7 @@ our $dbh = DBI->connect("dbi:SQLite:dbname=vector/common/vanalinnad_maps/maps.sq
 foreach $id ( @ids ) {
 
     print "\n\n################## ID $id ##################\n\n";
+    $orig_id = $id;
 
     if($id !~ /^\d+$/) {
         @aa = split('_', $id);
@@ -49,6 +50,10 @@ foreach $id ( @ids ) {
         unshift(@aa, uc($1));
         $aa[1] = $2;
         if($aa[0] eq 'LVA') { $aa[0] = 'LVVA'; }
+        if($aa[0] eq 'ERAT') {
+            $aa[0] = 'ERA';
+            $aa[1] = 'T'.$aa[1];
+        }
         @params = qw(archive fond inventory item sheet);
         $url = 'https://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?';
         $len = scalar(@aa) > 5 ? 5 : scalar(@aa);
@@ -56,6 +61,7 @@ foreach $id ( @ids ) {
             if($i > 4) { break; }
             $val = $aa[$i];
             $val =~ s/^0+//;
+            $val =~ s/^T0-/T-/;
             if($val eq '') { next; }
             $url .= '&'.$params[$i].'='.$val;
         }
@@ -120,6 +126,20 @@ foreach $id ( @ids ) {
     $sth->finish();
     if($printouts > 0) { print "\nFOUND $printouts SIMILAR ITEMS IN DATABASE:\n$printout"; }
     
+    if( exists $a{'year'} && !($a{'year'} =~ /^\d{4}$/) ) {
+        print "Year in strange format: ".$a{'year'};
+        $status = prompt_select('0) Dont change year 1) Truncate year to 4 digits 2) Take year from filename 3) Input year manually','0,1,2,3');
+        if($status eq '1') { $a{'year'} = substr $a{'year'}, 0, 4; }
+        if($status eq '2') {
+            @pieces = split('_', $orig_id);
+            $a{'year'} = substr $pieces[0], -4;
+        }
+        if($status eq '3') {
+            print "\nInput year: ";
+            $a{'year'} = <STDIN>;
+            chomp $a{'year'};
+        }
+    }
     $update = '';
     $insert_fields = '';
     $insert_values = '';
@@ -131,10 +151,6 @@ foreach $id ( @ids ) {
     }
     $site = exists $opts{'s'} ? $opts{'s'} : '';
     
-    if(exists $aa{'year'} && length($aa{'year'}) > 4) {
-        $status = prompt_select('Truncate year to 4 digits?','1,0');
-        if($status eq '1') { $aa{'year'} = substr $a{'year'}, 0, 4; }
-    }
     if($printouts > 0) {
         $status = prompt_select('Write to DB.','0,1');
         $sql = 'UPDATE maps SET '.$update.' '.$where;
