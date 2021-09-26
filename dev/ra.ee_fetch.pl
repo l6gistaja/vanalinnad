@@ -8,7 +8,7 @@ use Data::Dumper;
 use lib './dev';
 use VlHelper qw(rss_date);
 
-getopt('s:i:o:f:w', \%opts);
+getopt('s:i:o:f:wt', \%opts);
 
 if(!(exists $opts{'i'}) && !(exists $opts{'f'})) {
     print <<EOF;
@@ -21,6 +21,7 @@ Possible flags:
 -i ID : ID is integer or in format ABC1234_1234_1234_1234, for example lva6828_004_0000524_00002
 -o # : if ID is in format ABC1234_1234_1234_1234, remove # parts from beginning
 -s SITE
+-t : test mode: dont load main page
 -w : write to database
 
 EOF
@@ -78,6 +79,7 @@ foreach $id ( @ids ) {
     }
     
     if($id eq '') { print "Empty ID!\n"; next; }
+    if(exists $opts{'t'}) { print "Test: dont load main page.\n"; next; }
     %a = qw();
     $a{'url'} = 'http://www.ra.ee/kaardid/index.php/et/map/view?id='.$id;
     $ff = File::Fetch->new(uri => $a{'url'});
