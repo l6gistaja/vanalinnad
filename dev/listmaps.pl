@@ -100,7 +100,7 @@ td, th {
 HTML_HEADER
 print HTML sprintf($header, POSIX::strftime("%F %T", localtime));
 $i = 1;
-$s = '';
+$s = "";
 while(($vl_site, $vl_year, $year, $anchor, $use, $url, $uid, $title, $author) = $sth->fetchrow()){
    $a = md5_hex(join('~', $vl_site, $vl_year, $year, $uid, $anchor));
    print CSV get_csv_line(($vl_site, $vl_year, $year, $use, $url, $uid, $title, $author, $anchor));
