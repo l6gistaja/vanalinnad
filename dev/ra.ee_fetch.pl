@@ -38,6 +38,7 @@ if(exists $opts{'i'}) { push @ids, $opts{'i'}; }
 print "\nIDs : ".join(',',@ids);
 
 our $dbh = DBI->connect("dbi:SQLite:dbname=vector/common/vanalinnad_maps/maps.sqlite3","","");
+@id_mem = [];
 
 foreach $id ( @ids ) {
 
@@ -51,9 +52,9 @@ foreach $id ( @ids ) {
         unshift(@aa, uc($1));
         $aa[1] = $2;
         if($aa[0] eq 'LVA') { $aa[0] = 'LVVA'; }
-        if($aa[0] eq 'ERAT') {
-            $aa[0] = 'ERA';
-            $aa[1] = 'T'.$aa[1];
+        if($aa[0] =~ /^(E[AR]A)([RT])/) {
+            $aa[0] = $1;
+            $aa[1] = $2.$aa[1];
         }
         @params = qw(archive fond inventory item sheet);
         $url = 'https://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?';
@@ -62,7 +63,7 @@ foreach $id ( @ids ) {
             if($i > 4) { break; }
             $val = $aa[$i];
             $val =~ s/^0+//;
-            $val =~ s/^T0-/T-/;
+            $val =~ s/^([RT])0-/$1-/;
             if($val eq '') { next; }
             $url .= '&'.$params[$i].'='.$val;
         }
@@ -79,6 +80,7 @@ foreach $id ( @ids ) {
     }
     
     if($id eq '') { print "Empty ID!\n"; next; }
+    if($id ~~ @id_mem) { print "ID $id already read!\n"; next; } else { push @id_mem, $id; }
     if(exists $opts{'t'}) { print "Test: dont load main page.\n"; next; }
     %a = qw();
     $a{'url'} = 'http://www.ra.ee/kaardid/index.php/et/map/view?id='.$id;

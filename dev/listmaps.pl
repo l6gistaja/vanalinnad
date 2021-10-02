@@ -100,14 +100,15 @@ td, th {
 HTML_HEADER
 print HTML sprintf($header, POSIX::strftime("%F %T", localtime));
 $i = 1;
+$s = '';
 while(($vl_site, $vl_year, $year, $anchor, $use, $url, $uid, $title, $author) = $sth->fetchrow()){
    $a = md5_hex(join('~', $vl_site, $vl_year, $year, $uid, $anchor));
    print CSV get_csv_line(($vl_site, $vl_year, $year, $use, $url, $uid, $title, $author, $anchor));
    $year = $url eq '' ? $year : '<a target="_blank" href="'.$url.'">'.$year.'</a>';
    print HTML
     '<tr>'
-    .'<td><a href="#'.$a.'">'.$i.'</a></td>'
-    .'<td><a name="'.$a.'">'.$vl_site.'</a></td>'
+    .'<td><a href="#'.$a.'" id="'.$a.'">'.$i.'</a></td>'
+    .'<td>'.($vl_site eq ? $vl_site : '<a name="'.$vl_site.'" id="'.$vl_site.'">'.$vl_site .'</a>').'</td>'
     .'<td>'.($use eq 'P' ? '<a target="_blank" href="http://vanalinnad.mooo.com/info.html?site='.$vl_site.'&year='.$vl_year.'#map.'.$anchor.'">'.$vl_year.'</a>' : $vl_year).'</td>'
     .'<td>'.$year.'</td>'
     .'<td>'.$statuses{$use}.'</td>'
@@ -115,6 +116,7 @@ while(($vl_site, $vl_year, $year, $anchor, $use, $url, $uid, $title, $author) = 
     .'<td>'.$author.'</td>'
     .'<td>'.$uid.'</td>'
     ."</tr>\n";
+    $s = $vl_site;
     $i++;
 }
 
