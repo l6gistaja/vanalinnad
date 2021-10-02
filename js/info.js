@@ -377,13 +377,14 @@ function vlInitInfo(inputParams){
           Z: vlUtils.getXmlValue(layerXml, 'minzoom'),
           T: vlUtils.getXmlValue(layerXml, 'city'),
           C: vlUtils.getXmlValue(layerXml, 'country'),
+          S: reqParams['site'],
           site: reqParams['site'],
           baseUrlID: 'vanalinnad',
           delimiter: '</li><li>'
         };        
         
         var w;
-        var urlKeys = ['wikipedia','ajapaik','geohack'];
+        var urlKeys = ['wikipedia','ajapaik','geohack','vldb'];
         for(w in jsonConf.urls) {
           if('type' in jsonConf.urls[w] && jsonConf.urls[w].type == 'WMS') { urlKeys[urlKeys.length] = w; }
         }

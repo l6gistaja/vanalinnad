@@ -108,7 +108,7 @@ while(($vl_site, $vl_year, $year, $anchor, $use, $url, $uid, $title, $author) = 
    print HTML
     '<tr>'
     .'<td><a href="#'.$a.'" id="'.$a.'">'.$i.'</a></td>'
-    .'<td>'.($vl_site eq $s ? $vl_site : '<a name="'.$vl_site.'" id="'.$vl_site.'">'.$vl_site .'</a>').'</td>'
+    .'<td>'.($vl_site eq $s ? $vl_site : '<a href="#'.$vl_site.'" id="'.$vl_site.'">'.$vl_site .'</a>').'</td>'
     .'<td>'.($use eq 'P' ? '<a target="_blank" href="http://vanalinnad.mooo.com/info.html?site='.$vl_site.'&year='.$vl_year.'#map.'.$anchor.'">'.$vl_year.'</a>' : $vl_year).'</td>'
     .'<td>'.$year.'</td>'
     .'<td>'.$statuses{$use}.'</td>'
