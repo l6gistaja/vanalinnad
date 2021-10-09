@@ -984,6 +984,9 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus1/
 # https://www.ra.ee/kaardid/index.php/et/map/view?id=16407
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa2623/001/0002049/eaa2623_001_0002049_00051_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1870 -b 1924 -o cache/deiip/1839_Tartu.jpg
 
+# https://www.ra.ee/kaardid/index.php/et/map/view?id=229346
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa0308/002/0000014/eaa0308_002_0000014_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1558 -b 1598 -o cache/deiip/Parnu_16YX.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 

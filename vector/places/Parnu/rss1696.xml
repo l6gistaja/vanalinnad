@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
-<language>de</language>
+
 <item>
 <title>Grund-Riss von der Stat Pernau mit deren Plätzen</title>
 <author>Essen</author>
@@ -10,5 +10,14 @@
 <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/saaga/estica/kaardid/lva6828/004/0000544/lva6828_004_0000544_00001_k.tif&amp;wid=2480&amp;hei=1748&amp;qlt=100&amp;cvt=jpeg</link>
 <pubDate>Fri, 04 Sep 1696 00:00:00 +0000</pubDate>
 </item>
+
+<item>
+<title>Geometr. Charta öfwer Förste Dehlen af Pernau-Gebiet.</title>
+<guid>ra.ee=EAA.308.2.14 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=229346</link>
+<pubDate>Fri, 01 Jan 1675 00:00:00 +0000</pubDate>
+<anchor>16YX</anchor>
+</item>
+
 </channel>
 </rss>

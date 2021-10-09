@@ -298,7 +298,7 @@
 "Parnu";"";"1696";"U";"http://www.ra.ee/kaardid/index.php/et/map/view?id=25479";"ra.ee=EAA.1000.1.8417 leht 1";"Plan über die ausgeteilte Plätze in der neuen Stadt-Pernau";"C. Essen";"";
 "Parnu";"";"1696";"U";"http://www.ra.ee/kaardid/index.php/et/map/view?id=29968";"ra.ee=EAA.1000.1.8417 leht 2";"[Plan von der Stadt Pernau]";"";"";
 "Parnu";"1696";"1696";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=229192";"ra.ee=LVVA.6828.4.544 leht 1";"Grund-Riss von der Stat Pernau mit deren Plätzen";"Essen";"1696";
-"Parnu";"";"16YX";"C";"http://www.ra.ee/kaardid/index.php/et/map/view?id=229346";"ra.ee=EAA.308.2.14 leht 1";"Geometr. Charta öfwer Förste Dehlen af Pernau-Gebiet.";"";"";
+"Parnu";"1696";"16YX";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=229346";"ra.ee=EAA.308.2.14 leht 1";"Geometr. Charta öfwer Förste Dehlen af Pernau-Gebiet.";"";"16YX";
 "Parnu";"1700";"1700";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=229193";"ra.ee=LVVA.6828.4.545 leht 1";"Plan de la Ville et Forteressa de Pernau";"";"1700";
 "Parnu";"";"1710";"C";"http://www.ra.ee/kaardid/index.php/et/map/view?id=229194";"ra.ee=LVVA.6828.4.546 leht 1";"Пернавь 1710";"";"";
 "Parnu";"1767";"1767";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=19192";"ra.ee=EAA.3724.5.1585";"Plan von diese Plätzen in der Worstadt zu Pernau";"";"1767";
@@ -647,7 +647,6 @@
 "Tallinn";"1957";"1957";"P";"http://www.digar.ee/viewer/et/nlib-digar:112753";"isbn=9789949539178;nlib.ee=KTC-20305";"Tallinn : [lisa teatmikule ""Tallinn""]";"Eesti Riiklik Kirjastus";"1957";
 "Tallinn";"1968";"1968";"P";"http://www.digar.ee/viewer/et/nlib-digar:112738";"isbn=9789949539482;nlib.ee=ARKT-03546";"Таллин (O-35-14) : Эстонская ССР";"СССР. Генеральный Штаб";"1968";
 "Tallinn";"1977";"1977";"P";"http://www.digar.ee/viewer/et/nlib-digar:289414";"ESTER=b24860840;isbn=978-9949-564-89-7";"Таллин (O-35-14, 26) : Эстонская ССР";"СССР. Главное управление геодезии и картографии";"1977";
-"Tartu";"";"";"C";"http://www.ra.ee/kaardid/index.php/et/map/view?id=20938";"ra.ee=EAA.995.1.6861 leht 2";"Charte ... Niggola.";"Fr. W. Petersen";"";
 "Tartu";"1600";"1600";"P";"http://www.ester.ee/record=b4459036*est";"isbn=9789949512515";"Derpt";"";"1600";
 "Tartu";"1620";"1620";"P";"http://www.ester.ee/record=b4459036*est";"isbn=9789949512515";"Statt Dörpat";"";"1620";
 "Tartu";"";"1636";"U";"http://www.ra.ee/kaardid/index.php/et/map/view?id=284116";"ra.ee=EAA.5393.1.16 leht 1";"Dorpat.";"";"";
@@ -696,6 +695,7 @@
 "Tartu";"1837";"1837";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=16413";"ra.ee=EAA.2623.1.2049 leht 44";"Charte der Kaiserlischen Stadt Dorpat.";"Conrad Martin Sengbusch";"1837";
 "Tartu";"1837";"1837";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=16423";"ra.ee=EAA.2623.1.2049 leht 33";"Plan von der Kreis Stadt Dorpat dessen Jurisdictions-Grenze und umher liegende Situation.";"Joh. Heinr. Galmeister, Carl Joh. Zeibel";"1837B";
 "Tartu";"1837";"1839";"P";"https://www.ra.ee/kaardid/index.php/et/map/view?id=16407";"ra.ee=EAA.2623.1.2049 leht 51";"Delineations-Charte von der Jurisdictions-Grenze der Kreis-Stadt Dorpat gegen den anschlossenden Kreis.";"Constantin Benjamin Anders";"1839";
+"Tartu";"";"183X";"C";"http://www.ra.ee/kaardid/index.php/et/map/view?id=20938";"ra.ee=EAA.995.1.6861 leht 2";"Charte ... Niggola.";"Fr. W. Petersen";"";
 "Tartu";"";"1841";"C";"http://www.ra.ee/kaardid/index.php/et/map/view?id=20937";"ra.ee=EAA.995.1.6861 leht 1";"Charte von dem Dorffe Festfer.";"Fr. W. Petersen";"";
 "Tartu";"";"1841";"C";"http://www.ra.ee/kaardid/index.php/et/map/view?id=16385";"ra.ee=EAA.2623.1.2049 leht 18";"Charte von die Gesinder Sorra-Nappi wie auch Heuschläge von andern Gesindern.";"Fr. W. Petersen";"";
 "Tartu";"";"1841";"C";"http://www.ra.ee/kaardid/index.php/et/map/view?id=16428";"ra.ee=EAA.2623.1.2049 leht 28";"Charte von die Dörfer Soo Külla, Arraka, Külliz, Ochsi und Küllitz Krug.";"Fr. W. Petersen";"";

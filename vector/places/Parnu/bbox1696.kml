@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>24.49078241706788,58.38125754144785 24.49078241706788,58.38792513321735 24.50646797653100,58.38792513321735 24.50646797653100,58.38125754144785 24.49078241706788,58.38125754144785</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>4434 3043</description><Point><coordinates>24.50135932022045,58.38395291294701</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>2031 3015</description><Point><coordinates>24.4961021905515,58.38373918821587</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>3735 1663</description><Point><coordinates>24.499428129730827,58.38558392745221</coordinates></Point></Placemark>
+
+<Placemark id="bbox.16YX"><name>16YX</name><LineString><coordinates>24.43328311900484,58.32868728642639 24.43328311900484,58.43076347163246 24.63982808001522,58.43076347163246 24.63982808001522,58.32868728642639 24.43328311900484,58.32868728642639</coordinates></LineString></Placemark>
+<Placemark id="gcp16YX.1"><name>16YX #1</name><description>1574 2004</description><Point><coordinates>24.49716500359056,58.38670054025061</coordinates></Point></Placemark>
+<Placemark id="gcp16YX.2"><name>16YX #2</name><description>3023 2375</description><Point><coordinates>24.610891343717938,58.38032841136842</coordinates></Point></Placemark>
+<Placemark id="gcp16YX.3"><name>16YX #3</name><description>939 784</description><Point><coordinates>24.440703471039654,58.42885969245993</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1696"><name>1696</name><LineString><coordinates>24.49078241706788,58.38125754144785 24.49078241706788,58.38792513321735 24.50646797653100,58.38792513321735 24.50646797653100,58.38125754144785 24.49078241706788,58.38125754144785</coordinates></LineString></Placemark>
+<Placemark id="gcp1696.1"><name>1696 #1</name><description>4434 3043</description><Point><coordinates>24.50135932022045,58.38395291294701</coordinates></Point></Placemark>
+<Placemark id="gcp1696.2"><name>1696 #2</name><description>2031 3015</description><Point><coordinates>24.4961021905515,58.38373918821587</coordinates></Point></Placemark>
+<Placemark id="gcp1696.3"><name>1696 #3</name><description>3735 1663</description><Point><coordinates>24.499428129730827,58.38558392745221</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>16YX,1696</value></Data>
+<Data name="bbox"><value>24.43328311900484,58.32868728642639,24.63982808001522,58.43076347163246</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1696/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
