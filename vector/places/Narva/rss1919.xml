@@ -5,20 +5,37 @@
 <language>et</language>
 
 <item>
-<title>III-45,46 Narva jõe suudmeala</title>
-<author>Eesti Sõjavägi, Topograafia jaoskond</author>
-<guid>isbn=978-9949-598-07-6</guid>
-<link>https://www.digar.ee/viewer/et/nlib-digar:290997</link>
-<pubDate>Wed, 01 Jan 1919 00:00:00 +0000</pubDate>
-<anchor>1919_Narva-Joesuu</anchor>
-</item>
-
-<item>
 <title>IV-46-47 Narva ümbrus : Virumaa</title>
 <author>Eesti Sõjavägi, Topograafia jaoskond</author>
 <link>http://www.digar.ee/viewer/et/nlib-digar:113828</link>
 <guid>isbn=9789949540488,nlib.ee=ARKT-03468</guid>
 <pubDate>Wed, 01 Jan 1919 00:00:00 +0000</pubDate>
+</item>
+
+<item>
+<title>III-45,46 Narva jõe suudmeala</title>
+<author>Eesti Sõjavägi, Topograafia jaoskond</author>
+<guid>isbn=978-9949-598-07-6</guid>
+<link>https://www.digar.ee/viewer/et/nlib-digar:290997</link>
+<pubDate>Wed, 01 Jan 1919 00:00:00 +0000</pubDate>
+<anchor>1919.Narva-Joesuu</anchor>
+</item>
+
+<item>
+<title>Naroova jõe topograafiline kaart ülesvõetud N. Erassi juhatusel</title>
+<author>N. Erassi, N. Subbotin</author>
+<guid>ra.ee=ERA.T-6.3.1367a leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=101093</link>
+<pubDate>Thu, 01 Jan 1920 00:00:00 +0000</pubDate>
+</item>
+
+<item>
+<title>Naroova jõe topograafiline kaart</title>
+<author>N. Erassi, N. Subbotin</author>
+<guid>ra.ee=ERA.T-6.3.1367a leht 2</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=200677</link>
+<pubDate>Thu, 01 Jan 1920 00:00:00 +0000</pubDate>
+<anchor>1920.Kreenholm</anchor>
 </item>
 
 </channel>
