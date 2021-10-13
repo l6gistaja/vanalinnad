@@ -11,6 +11,7 @@
 <link>http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/saaga_laiendus/kaardid/erat-0-6/003/0001613/erat-0-6_003_0001613_00001_k2.tif&amp;wid=1748&amp;hei=2480&amp;qlt=100&amp;cvt=jpeg</link>
 <pubDate>Thu, 01 Jan 1925 00:00:00 +0000</pubDate>
 <legends>legend1925.jpg</legends>
+<componentsregexp>^1925\.k\d$</componentsregexp>
 </item>
 
 <item>
