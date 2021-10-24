@@ -51,7 +51,6 @@
   <layer name="⛜ 2" file="roads2min.json" format="VLGJ" levels="2" maxres="12" type="roads" />
   <layer name="⛜ 3" file="roads3min.json" format="VLGJ" levels="3" maxres="14" type="roads" />
   <layer name="⛜ 4" file="roads4min.json" format="VLGJ" levels="4" maxres="15" type="roads" />
-  <layer bounds="24.64469507303131,59.39138628742915,24.89886471469551,59.48200027903081" type="tms" year="1807" />
   <maxzoom>16</maxzoom>
   <minzoom>10</minzoom>
   <roadbounds e="24.986866" s="59.334099" w="24.541477" />
