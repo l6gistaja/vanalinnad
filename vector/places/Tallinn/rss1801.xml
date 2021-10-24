@@ -1,11 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
+    
 <item>
 <title>Генеральной чертежъ Ревельской крепости с форштатомъ подлежащей поберегу бухте Финскаго залива ситуаций и острововъ Болшаго и Малаго Карлуса со означениемъ расположения поберегамъ батареямъ и штеръ-шанцамъ</title>
 <guid>ra.ee=EAA.79.2.450 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=32810</link>
 <pubDate>Thu, 01 Jan 1801 00:00:00 +0000</pubDate>
 </item>
+
+<item>
+<title>[План города Ревель]</title>
+<author>Heinrich Johann Schramm</author>
+<guid>ra.ee=EAA.854.4.50 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=21063</link>
+<pubDate>Thu, 01 Jan 1807 00:00:00 +0000</pubDate>
+</item>
+
 </channel>
 </rss>

@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>24.62695182691116,59.41512667176661 24.62695182691116,59.52920988719414 24.86052402035276,59.52920988719414 24.86052402035276,59.41512667176661 24.62695182691116,59.41512667176661</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>8232 10520</description><Point><coordinates>24.74126030176295,59.448147732812664</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>9004 13286</description><Point><coordinates>24.74083114832031,59.42912001754923</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>12385 10960</description><Point><coordinates>24.791040680742245,59.438505010140965</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1801"><name>1801</name><LineString><coordinates>24.62695182691146,59.41512663248061 24.62695182691146,59.52920988721137 24.86052091582323,59.52920988721137 24.86052091582323,59.41512663248061 24.62695182691146,59.41512663248061</coordinates></LineString></Placemark>
+<Placemark id="gcp1801.1"><name>1801 #1</name><description>8232 10520</description><Point><coordinates>24.74126030176295,59.448147732812664</coordinates></Point></Placemark>
+<Placemark id="gcp1801.2"><name>1801 #2</name><description>9004 13286</description><Point><coordinates>24.74083114832031,59.42912001754923</coordinates></Point></Placemark>
+<Placemark id="gcp1801.3"><name>1801 #3</name><description>12385 10960</description><Point><coordinates>24.791040680742245,59.438505010140965</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1807"><name>1807</name><LineString><coordinates>24.64469507303131,59.39138628742915 24.64469507303131,59.48200027903081 24.89886471469551,59.48200027903081 24.89886471469551,59.39138628742915 24.64469507303131,59.39138628742915</coordinates></LineString></Placemark>
+<Placemark id="gcp1807.1"><name>1807 #1</name><description>4433 3690</description><Point><coordinates>24.686922971161295,59.42550082492916</coordinates></Point></Placemark>
+<Placemark id="gcp1807.2"><name>1807 #2</name><description>4501 4563</description><Point><coordinates>24.690518836059738,59.41421150630446</coordinates></Point></Placemark>
+<Placemark id="gcp1807.3"><name>1807 #3</name><description>11450 2141</description><Point><coordinates>24.864003118915036,59.45305987552116</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1807,1801</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1801/</value></Data>
+<Data name="bbox"><value>24.62695182691146,59.39138628742915,24.89886471469551,59.52920988721137</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>

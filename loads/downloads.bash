@@ -989,6 +989,8 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/e
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/era/erat-0-6/003/0001658/erat-0-6_003_0001658_00002_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 644 -b 666 -o cache/deiip/1957_Rakvere.jpg
 
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa0854/004/0000050/eaa0854_004_0000050_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1650 -b 1699 -o cache/deiip/1807_Tallinn.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 
