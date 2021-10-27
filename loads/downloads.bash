@@ -991,6 +991,10 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/era/e
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa0854/004/0000050/eaa0854_004_0000050_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1650 -b 1699 -o cache/deiip/1807_Tallinn.jpg
 
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa3724/004/000192a/eaa3724_004_000192a_00005_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1677 -b 1719 -o cache/deiip/18YX_Nehatu.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa3724/004/000192a/eaa3724_004_000192a_00005_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 722 -b 759 -o cache/deiip/18YX_Nehatu.S.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 

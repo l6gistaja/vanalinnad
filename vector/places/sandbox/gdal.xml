@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <vanalinnadgdal xmlns="http://juks.alkohol.ee/vanalinnad">
+    
+<translate map="Tln.18YX.N">
+    <t file="18YX_Nehatu_N2.jpg" gcps="-gcp 3265 979 24.835393689013333 59.466620406591154 -gcp 10612 9296 24.905281327105662 59.46035154263225 -gcp 4106 6064 24.85991980824568 59.455520998774716"/>
+</translate>
 
 <translate map="M6ntu">
     <t file="M6ntu.jpg" gcps="-gcp 2458 872 22.1230598472082 57.94874360632 -gcp 1534 2128 22.055347481562027 57.909842061137226 -gcp 784 1016 22.001575177702588 57.94479318344142"/>

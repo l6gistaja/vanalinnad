@@ -2,6 +2,16 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
+<Placemark id="bbox.18YX.N"><name>18YX.N</name><LineString><coordinates>24.81520022461186,59.43753115417960 24.81520022461186,59.48390568447571 24.90849523235449,59.48390568447571 24.90849523235449,59.43753115417960 24.81520022461186,59.43753115417960</coordinates></LineString></Placemark>
+<Placemark id="gcp18YX.N.1"><name>18YX.N #1</name><description>3265 979</description><Point><coordinates>24.835393689013333,59.466620406591154</coordinates></Point></Placemark>
+<Placemark id="gcp18YX.N.2"><name>18YX.N #2</name><description>10612 9296</description><Point><coordinates>24.905281327105662,59.46035154263225</coordinates></Point></Placemark>
+<Placemark id="gcp18YX.N.3"><name>18YX.N #3</name><description>4106 6064</description><Point><coordinates>24.85991980824568,59.455520998774716</coordinates></Point></Placemark>
+
+<Placemark id="bbox.18YX.S"><name>18YX.S</name><LineString><coordinates>24.84873839419874,59.43521059158547 24.84873839419874,59.46682537501970 24.91610125799007,59.46682537501970 24.91610125799007,59.43521059158547 24.84873839419874,59.43521059158547</coordinates></LineString></Placemark>
+<Placemark id="gcp18YX.S.1"><name>18YX.S #1</name><description>2381 2693</description><Point><coordinates>24.871326029205086,59.44588951284273</coordinates></Point></Placemark>
+<Placemark id="gcp18YX.S.2"><name>18YX.S #2</name><description>9230 3158</description><Point><coordinates>24.907203256987888,59.45843144157953</coordinates></Point></Placemark>
+<Placemark id="gcp18YX.S.3"><name>18YX.S #3</name><description>5907 297</description><Point><coordinates>24.879265367888948,59.458922118131504</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1885"><name>1885</name><LineString><coordinates>24.70935466534207,59.41233989961346 24.70935466534207,59.45483431822678 24.80937756078657,59.45483431822678 24.80937756078657,59.41233989961346 24.70935466534207,59.41233989961346</coordinates></LineString></Placemark>
 <Placemark id="gcp1885.1"><name>1885 #1</name><description>4702 9362</description><Point><coordinates>24.74120236128534,59.423582407654706</coordinates></Point></Placemark>
 <Placemark id="gcp1885.2"><name>1885 #2</name><description>3172 2336</description><Point><coordinates>24.738836652934204,59.445866720223584</coordinates></Point></Placemark>
@@ -48,13 +58,13 @@
 <Placemark id="gcp1881.Kopli.3"><name>1881.Kopli #3</name><description>2573 9303</description><Point><coordinates>24.680415690460144,59.450926793819974</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>24.63901301486516,59.38214604253013,24.87800283924497,59.49191883676355</value></Data>
-<Data name="maps"><value>1881.Kristiine,1881.Pelgulinna,1881.Kopli,1881.J2rvevana,1881.Nomme,1881.Maarjamae,1881.Lasnamae,1881.Nehatu,1885</value></Data>
-<Data name="zmin"><value>10</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>18YX.S,18YX.N,1881.Kristiine,1881.Pelgulinna,1881.Kopli,1881.J2rvevana,1881.Nomme,1881.Maarjamae,1881.Lasnamae,1881.Nehatu,1885</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1885/</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="bbox"><value>24.63901301486516,59.38214604253013,24.91610125799007,59.49191883676355</value></Data>
 
 </ExtendedData>
 
