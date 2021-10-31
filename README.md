@@ -57,14 +57,16 @@ Hints:
 
 Following describes data adding process with Debian Linux 8.4.
 
-### Dependencies
+### Setup
 
 1. Create writable directory ```{VANALINNAD_ROOT_DIR}/cache```
+1. Copy ```{VANALINNAD_ROOT_DIR}/loads/local_machine_data.json.example``` to ```{VANALINNAD_ROOT_DIR}/cache/local_machine_data.json``` . Open SQLite database {VANALINNAD_ROOT_DIR}/loads/loads.sqlite. In ```local_machine_data.json```, "upload" should be result of ```SELECT MAX(id) FROM updates;```
 1. Download [GDAL 1.11.3](https://trac.osgeo.org/gdal/wiki/DownloadSource)
 1. Unpack and install it: ```./configure ; make ; sudo make install```
 1. Install [markdown](http://daringfireball.net/projects/markdown/) and [ImageMagick](http://www.imagemagick.org) etc (```sudo apt-get install markdown imagemagick python-gdal xsltproc osmctools wget```)
 1. If neccessary: ```sudo ln -s /usr/lib/libproj.so.0 /usr/lib/libproj.so```
 1. Install missing Perl modules (```sudo cpan XML::Simple JSON Storable Math::Round DBD::SQLite``` or ```apt-get install libxml-simple-perl libjson-perl libstorable-perl libmath-round-perl libdbi-perl libdbd-sqlite3-perl```)
+1. You can obtain existing tiles by running ```wget -r --no-parent -A jpg --reject-regex "(.*)\?(.*)" http://vanalinnad.mooo.com/raster/places/``` . Copy directory vanalinnad.mooo.com/raster/places to ```{VANALINNAD_ROOT_DIR}/raster``` .
 
 ### Main scripts
 

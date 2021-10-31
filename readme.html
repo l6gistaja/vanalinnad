@@ -89,15 +89,17 @@
 
 <p>Following describes data adding process with Debian Linux 8.4.</p>
 
-<h3>Dependencies</h3>
+<h3>Setup</h3>
 
 <ol>
 <li>Create writable directory <code>{VANALINNAD_ROOT_DIR}/cache</code></li>
+<li>Copy <code>{VANALINNAD_ROOT_DIR}/loads/local_machine_data.json.example</code> to <code>{VANALINNAD_ROOT_DIR}/cache/local_machine_data.json</code> . Open SQLite database {VANALINNAD<em>ROOT</em>DIR}/loads/loads.sqlite. In <code>local_machine_data.json</code>, "upload" should be result of <code>SELECT MAX(id) FROM updates;</code></li>
 <li>Download <a href="https://trac.osgeo.org/gdal/wiki/DownloadSource">GDAL 1.11.3</a></li>
 <li>Unpack and install it: <code>./configure ; make ; sudo make install</code></li>
 <li>Install <a href="http://daringfireball.net/projects/markdown/">markdown</a> and <a href="http://www.imagemagick.org">ImageMagick</a> etc (<code>sudo apt-get install markdown imagemagick python-gdal xsltproc osmctools wget</code>)</li>
 <li>If neccessary: <code>sudo ln -s /usr/lib/libproj.so.0 /usr/lib/libproj.so</code></li>
 <li>Install missing Perl modules (<code>sudo cpan XML::Simple JSON Storable Math::Round DBD::SQLite</code> or <code>apt-get install libxml-simple-perl libjson-perl libstorable-perl libmath-round-perl libdbi-perl libdbd-sqlite3-perl</code>)</li>
+<li>You can obtain existing tiles by running <code>wget -r --no-parent -A jpg --reject-regex "(.*)\?(.*)" http://vanalinnad.mooo.com/raster/places/</code> . Copy directory vanalinnad.mooo.com/raster/places to <code>{VANALINNAD_ROOT_DIR}/raster</code> .</li>
 </ol>
 
 <h3>Main scripts</h3>
