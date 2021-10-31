@@ -2,6 +2,17 @@
 <rss version="2.0">
 <channel>
 <language>de</language>
+
+<item>
+<title>General-Karte von dem Rittergute Hark</title>
+<author>F. Drewing, Alexander Ysenflamm, A. Müller, Louis Heinrich Osvald Buschmann</author>
+<guid>ra.ee=EAA.3724.4.24 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=10524</link>
+<pubDate>Fri, 01 Jan 1909 00:00:00 +0000</pubDate>
+<legends>legend1909.jpg</legends>
+<componentsregexp>^1909\.[NS]$</componentsregexp>
+</item>
+
 <item>
 <title>Pharus-Plan Reval</title>
 <author>Kluge &amp; Ströhm</author>
@@ -31,5 +42,24 @@ At the same time there appeared in Tallinn other big changes. Just before the Fi
 <guid>nlib.ee=ARKTC 7.920</guid>
 <pubDate>Sun, 01 Jan 1911 00:00:00 +0000</pubDate>
 </item>
+
+<item>
+<title>[Kubermangulinna Reveli (Tallinn) plaan]. План существующего расположения губернского города Ревеля</title>
+<guid>ra.ee=ERA.T-6.3.1721 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=103596</link>
+<pubDate>Thu, 01 Jan 1914 00:00:00 +0000</pubDate>
+<componentsregexp>^1914\.[NS][WE]$</componentsregexp>
+</item>
+
+<item>
+<title>Планъ земель, отчуждаемыхъ для нуждъ морской крепости Императора Петра Великаго Эстляндской губернии, Ревельскаго уезда Неггатской волости. [Дер. Ирро, Саха, земли имения Марта и Неггат]</title>
+<author>K. Jodko</author>
+<guid>ra.ee=EAA.3724.5.3278 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=223986</link>
+<pubDate>Thu, 01 Jan 1914 00:00:00 +0000</pubDate>
+<legends>legend1914.Iru.jpg</legends>
+<anchor>1914.Iru</anchor>
+</item>
+
 </channel>
 </rss>

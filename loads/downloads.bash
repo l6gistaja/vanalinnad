@@ -995,6 +995,22 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/e
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa3724/004/000192a/eaa3724_004_000192a_00005_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 722 -b 759 -o cache/deiip/18YX_Nehatu.S.jpg
 
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/era/erat-0-6/003/0001721/erat-0-6_003_0001721_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 2166 -b 2222 -o cache/deiip/1914_Tallinn.NW.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/era/erat-0-6/003/0001721/erat-0-6_003_0001721_00001_k1.tif&CNT=1&SDS=0,90&JTL=7,' -a 551 -b 579 -o cache/deiip/1914_Tallinn.NW.z7.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/era/erat-0-6/003/0001721/erat-0-6_003_0001721_00001_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 1178 -b 1208 -o cache/deiip/1914_Tallinn.NE.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/era/erat-0-6/003/0001721/erat-0-6_003_0001721_00001_k3.tif&CNT=1&SDS=0,90&JTL=8,' -a 1824 -b 1880 -o cache/deiip/1914_Tallinn.SW.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/era/erat-0-6/003/0001721/erat-0-6_003_0001721_00001_k4.tif&CNT=1&SDS=0,90&JTL=7,' -a 585 -b 623 -o cache/deiip/1914_Tallinn.SE.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa3724/005/0003278/eaa3724_005_0003278_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1536 -b 1583 -o cache/deiip/1914_Iru.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa3724/004/0000024/eaa3724_004_0000024_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1911 -b 1959 -o cache/deiip/1909_Harku.N.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa3724/004/0000024/eaa3724_004_0000024_00001_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 1323 -b 1371 -o cache/deiip/1909_Harku.S.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 

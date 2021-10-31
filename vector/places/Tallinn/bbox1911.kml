@@ -1,10 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>24.6831881541,59.4103391024 24.6831881541,59.4572969402 24.8080209432,59.4572969402 24.8080209432,59.4103391024 24.6831881541,59.4103391024</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>6498 1217</description><Point><coordinates>24.79397535324135,59.44336245097505</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>2484 924</description><Point><coordinates>24.728357791898194,59.44790023341649</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>3444 3609</description><Point><coordinates>24.741178750992848,59.42361710373226</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1909.N"><name>1909.N</name><LineString><coordinates>24.51422879326651,59.36168428467276 24.51422879326651,59.43087680473074 24.66067488462905,59.43087680473074 24.66067488462905,59.36168428467276 24.51422879326651,59.36168428467276</coordinates></LineString></Placemark>
+<Placemark id="gcp1909.N.1"><name>1909.N #1</name><description>3792 6097</description><Point><coordinates>24.569980828095016,59.3869182744953</coordinates></Point></Placemark>
+<Placemark id="gcp1909.N.2"><name>1909.N #2</name><description>7117 2047</description><Point><coordinates>24.623976640389763,59.40774073230497</coordinates></Point></Placemark>
+<Placemark id="gcp1909.N.3"><name>1909.N #3</name><description>5977 8625</description><Point><coordinates>24.58980125080612,59.36781337511467</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1909.S"><name>1909.S</name><LineString><coordinates>24.49305353866315,59.32852695033676 24.49305353866315,59.38470896435376 24.63953353172833,59.38470896435376 24.63953353172833,59.32852695033676 24.49305353866315,59.32852695033676</coordinates></LineString></Placemark>
+<Placemark id="gcp1909.S.1"><name>1909.S #1</name><description>3191 1300</description><Point><coordinates>24.553142584686757,59.37194819328713</coordinates></Point></Placemark>
+<Placemark id="gcp1909.S.2"><name>1909.S #2</name><description>9084 1446</description><Point><coordinates>24.626785519104818,59.36258679006117</coordinates></Point></Placemark>
+<Placemark id="gcp1909.S.3"><name>1909.S #3</name><description>6574 5446</description><Point><coordinates>24.58048531168212,59.34098321872048</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1914.Iru"><name>1914.Iru</name><LineString><coordinates>24.89372776499982,59.45007057127761 24.89372776499982,59.47117566177094 24.93799116797428,59.47117566177094 24.93799116797428,59.45007057127761 24.89372776499982,59.45007057127761</coordinates></LineString></Placemark>
+<Placemark id="gcp1914.Iru.1"><name>1914.Iru #1</name><description>1062 3903</description><Point><coordinates>24.90146404641267,59.45835422080049</coordinates></Point></Placemark>
+<Placemark id="gcp1914.Iru.2"><name>1914.Iru #2</name><description>4218 3105</description><Point><coordinates>24.921248020106873,59.461243664575775</coordinates></Point></Placemark>
+<Placemark id="gcp1914.Iru.3"><name>1914.Iru #3</name><description>2336 6220</description><Point><coordinates>24.91013294594911,59.451364016643296</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1911"><name>1911</name><LineString><coordinates>24.68378570347593,59.41516027636134 24.68378570347593,59.45729694022714 24.80803415786212,59.45729694022714 24.80803415786212,59.41516027636134 24.68378570347593,59.41516027636134</coordinates></LineString></Placemark>
+<Placemark id="gcp1911.1"><name>1911 #1</name><description>6498 1217</description><Point><coordinates>24.79397535324135,59.44336245097505</coordinates></Point></Placemark>
+<Placemark id="gcp1911.2"><name>1911 #2</name><description>2484 924</description><Point><coordinates>24.728357791898194,59.44790023341649</coordinates></Point></Placemark>
+<Placemark id="gcp1911.3"><name>1911 #3</name><description>3444 3609</description><Point><coordinates>24.741178750992848,59.42361710373226</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1914.NW"><name>1914.NW</name><LineString><coordinates>24.64475727501714,59.42596807825213 24.64475727501714,59.48710500121634 24.74123327793691,59.48710500121634 24.74123327793691,59.42596807825213 24.64475727501714,59.42596807825213</coordinates></LineString></Placemark>
+<Placemark id="gcp1914.NW.1"><name>1914.NW #1</name><description>827 2011</description><Point><coordinates>24.666131192639593,59.46123562273829</coordinates></Point></Placemark>
+<Placemark id="gcp1914.NW.2"><name>1914.NW #2</name><description>3248 3062</description><Point><coordinates>24.7283798994571,59.44791486458859</coordinates></Point></Placemark>
+<Placemark id="gcp1914.NW.3"><name>1914.NW #3</name><description>3181 4412</description><Point><coordinates>24.726749116375615,59.430644051133314</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1914.NE"><name>1914.NE</name><LineString><coordinates>24.79282049905357,59.42620407925352 24.79282049905357,59.47046473057539 24.87579296517481,59.47046473057539 24.87579296517481,59.42620407925352 24.79282049905357,59.42620407925352</coordinates></LineString></Placemark>
+<Placemark id="gcp1914.NE.1"><name>1914.NE #1</name><description>101 4951</description><Point><coordinates>24.795876382036234,59.43723052948109</coordinates></Point></Placemark>
+<Placemark id="gcp1914.NE.2"><name>1914.NE #2</name><description>3251 548</description><Point><coordinates>24.835379956407394,59.466382637643285</coordinates></Point></Placemark>
+<Placemark id="gcp1914.NE.3"><name>1914.NE #3</name><description>6025 6432</description><Point><coordinates>24.87359810264194,59.42867015470119</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1914.SW"><name>1914.SW</name><LineString><coordinates>24.66385968522074,59.38710009970095 24.66385968522074,59.42707562198004 24.78442503188097,59.42707562198004 24.78442503188097,59.38710009970095 24.66385968522074,59.38710009970095</coordinates></LineString></Placemark>
+<Placemark id="gcp1914.SW.1"><name>1914.SW #1</name><description>5646 3770</description><Point><coordinates>24.73588159122613,59.41424237693183</coordinates></Point></Placemark>
+<Placemark id="gcp1914.SW.2"><name>1914.SW #2</name><description>2569 2743</description><Point><coordinates>24.696630475534963,59.420637093144805</coordinates></Point></Placemark>
+<Placemark id="gcp1914.SW.3"><name>1914.SW #3</name><description>3483 7092</description><Point><coordinates>24.70850160160163,59.392125697638946</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1914.SE"><name>1914.SE</name><LineString><coordinates>24.76647918459701,59.40955278047949 24.76647918459701,59.43618535802008 24.87462239036718,59.43618535802008 24.87462239036718,59.40955278047949 24.76647918459701,59.40955278047949</coordinates></LineString></Placemark>
+<Placemark id="gcp1914.SE.1"><name>1914.SE #1</name><description>2675 2119</description><Point><coordinates>24.801832915498313,59.42183927739698</coordinates></Point></Placemark>
+<Placemark id="gcp1914.SE.2"><name>1914.SE #2</name><description>7994 3843</description><Point><coordinates>24.871485758271184,59.41107811766857</coordinates></Point></Placemark>
+<Placemark id="gcp1914.SE.3"><name>1914.SE #3</name><description>8210 1153</description><Point><coordinates>24.873599295157277,59.42865703989517</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1914.Iru,1914.SW,1914.NW,1914.NE,1914.SE,1911,1909.S,1909.N</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1911/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>24.49305353866315,59.32852695033676,24.93799116797428,59.48710500121634</value></Data>
+<Data name="zmin"><value>10</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
