@@ -37,14 +37,16 @@ if($c{'y'} < 0) {
 
 if(exists $gdal->{'translate'}[$c{'y'}]{'composite'}) {
   $c{'composite'} = $gdal->{'translate'}[$c{'y'}]{'composite'};
-  $c{'dirsrcimg'} = $localdata{'dirsource'}.$opts{'s'}.'/'.$mainconf->{'dircomposite'}.$c{'composite'}.'/';
+  $c{'dirsrcimg'} = $opts{'s'}.'/'.$mainconf->{'dircomposite'}.$c{'composite'}.'/';
   $c{'dirraster'} = $c{'dirsrcimg'}.$opts{'y'};
 } else {
-  $c{'dirsrcimg'} = $localdata{'dirsource'}.$opts{'s'}.'/';
+  $c{'dirsrcimg'} = $opts{'s'}.'/';
   $c{'dirraster'} = $mainconf->{'dirraster'}.$mainconf->{'dirplaces'}.$opts{'s'}.'/'.$opts{'y'};
 }
+$c{'diroriginals'} = $localdata{'diroriginals'}.$c{'dirsrcimg'};
+$c{'dirsrcimg'} = $localdata{'dirsource'}.$c{'dirsrcimg'};
 $c{'tlast'} = gdal_tlast($gdal, $c{'y'});
-$c{'filesrcimg'} = $c{'dirsrcimg'}.$gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'file'};
+$c{'filesrcimg'} = $c{'diroriginals'}.$gdal->{'translate'}[$c{'y'}]{'t'}[$c{'tlast'}]{'file'};
 $c{'dirtransform'} = $mainconf->{'dircache'}.'transform/';
 $c{'filewarp'} = $c{'dirtransform'}.'warp.tif';
 $c{'filegeoref'} = $c{'dirtransform'}.'georef.tif';
