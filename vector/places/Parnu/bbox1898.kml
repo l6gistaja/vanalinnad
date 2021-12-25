@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>24.45070568347295,58.36297892352474 24.45070568347295,58.41760830262422 24.56323451680261,58.41760830262422 24.56323451680261,58.36297892352474 24.45070568347295,58.36297892352474</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>6413 4028</description><Point><coordinates>24.52463212188797,58.37563005558893</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>499 577</description><Point><coordinates>24.489119674530553,58.412998287546394</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>805 5063</description><Point><coordinates>24.46274819549585,58.38910652673737</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1898"><name>1898</name><LineString><coordinates>24.45070568346798,58.36297512370723 24.45070568346798,58.41760830262035 24.56323328438907,58.41760830262035 24.56323328438907,58.36297512370723 24.45070568346798,58.36297512370723</coordinates></LineString></Placemark>
+<Placemark id="gcp1898.1"><name>1898 #1</name><description>6413 4028</description><Point><coordinates>24.52463212188797,58.37563005558893</coordinates></Point></Placemark>
+<Placemark id="gcp1898.2"><name>1898 #2</name><description>499 577</description><Point><coordinates>24.489119674530553,58.412998287546394</coordinates></Point></Placemark>
+<Placemark id="gcp1898.3"><name>1898 #3</name><description>805 5063</description><Point><coordinates>24.46274819549585,58.38910652673737</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1900.N"><name>1900.N</name><LineString><coordinates>, , , , ,</coordinates></LineString></Placemark>
+<Placemark id="gcp1900.N.1"><name>1900.N #1</name><description>852 2123</description><Point><coordinates>24.540614806976347,58.37655428937368</coordinates></Point></Placemark>
+<Placemark id="gcp1900.N.2"><name>1900.N #2</name><description>764 3108</description><Point><coordinates>24.53799958146044,58.3752419759188</coordinates></Point></Placemark>
+<Placemark id="gcp1900.N.3"><name>1900.N #3</name><description>1124 1014</description><Point><coordinates>24.542073928680598,58.37828690013318</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Parnu/composed/1898/</value></Data>
+<Data name="bbox"><value>24.45070568346798,58.36297512370723,24.56323328438907,58.41760830262035</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="maps"><value>1898</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
