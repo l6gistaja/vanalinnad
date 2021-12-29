@@ -37,14 +37,19 @@
 <Placemark id="gcp1875.Viimsi.3.2"><name>1875.Viimsi.3 #2</name><description>1535 5140</description><Point><coordinates>24.838783965606076,59.4776279348886</coordinates></Point></Placemark>
 <Placemark id="gcp1875.Viimsi.3.3"><name>1875.Viimsi.3 #3</name><description>1954 5051</description><Point><coordinates>24.843783603210518,59.47882667272963</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1876.Kassisaba"><name>1876.Kassisaba</name><LineString><coordinates>24.70833653302633,59.42276331326917 24.70833653302633,59.43977313177762 24.74943550762113,59.43977313177762 24.74943550762113,59.42276331326917 24.70833653302633,59.42276331326917</coordinates></LineString></Placemark>
+<Placemark id="gcp1876.Kassisaba.1"><name>1876.Kassisaba #1</name><description>10650 856</description><Point><coordinates>24.74159010848991,59.43815837927574</coordinates></Point></Placemark>
+<Placemark id="gcp1876.Kassisaba.2"><name>1876.Kassisaba #2</name><description>4890 2937</description><Point><coordinates>24.725734961090577,59.43244302604824</coordinates></Point></Placemark>
+<Placemark id="gcp1876.Kassisaba.3"><name>1876.Kassisaba #3</name><description>8937 6192</description><Point><coordinates>24.740824172125084,59.42913337195302</coordinates></Point></Placemark>
+
 <ExtendedData>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1872/</value></Data>
+<Data name="maps"><value>1871.Paaskyla,1873,1871,1872,1875.Viimsi.1,1875.Viimsi.3,1875.Viimsi.2,1876.Kassisaba</value></Data>
+<Data name="zmax"><value>16</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="montage"><value>yes</value></Data>
 <Data name="zmin"><value>10</value></Data>
-<Data name="zmax"><value>16</value></Data>
 <Data name="bbox"><value>24.60244346681094,59.31441278964856,25.00964203172412,59.58499307195751</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1872/</value></Data>
-<Data name="maps"><value>1871.Paaskyla,1873,1871,1872,1875.Viimsi.1,1875.Viimsi.3,1875.Viimsi.2</value></Data>
 
 </ExtendedData>
 
