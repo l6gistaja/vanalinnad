@@ -1013,6 +1013,8 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/e
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa0854/004/0000069/eaa0854_004_0000069_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 1457 -b 1503 -o cache/deiip/1876_Kassisaba.jpg
 
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa0854/004/000128b/eaa0854_004_000128b_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1887 -b 1923 -o cache/deiip/1882_Vaskjala.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 

@@ -17,6 +17,11 @@
 <Placemark id="gcp1885.2"><name>1885 #2</name><description>3172 2336</description><Point><coordinates>24.738836652934204,59.445866720223584</coordinates></Point></Placemark>
 <Placemark id="gcp1885.3"><name>1885 #3</name><description>9472 4370</description><Point><coordinates>24.776687986552368,59.43598803412626</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1882.Vaskjala"><name>1882.Vaskjala</name><LineString><coordinates>24.89293270076904,59.33775253735816 24.89293270076904,59.38391154651455 24.96960138329667,59.38391154651455 24.96960138329667,59.33775253735816 24.89293270076904,59.33775253735816</coordinates></LineString></Placemark>
+<Placemark id="gcp1882.Vaskjala.1"><name>1882.Vaskjala #1</name><description>5428 6160</description><Point><coordinates>24.937504984130477,59.36176014751978</coordinates></Point></Placemark>
+<Placemark id="gcp1882.Vaskjala.2"><name>1882.Vaskjala #2</name><description>3188 3288</description><Point><coordinates>24.91852812164269,59.36885384935796</coordinates></Point></Placemark>
+<Placemark id="gcp1882.Vaskjala.3"><name>1882.Vaskjala #3</name><description>244 11569</description><Point><coordinates>24.91489022596449,59.34045448032125</coordinates></Point></Placemark>
+
 <Placemark id="bbox.1881.Lasnamae"><name>1881.Lasnamae</name><LineString><coordinates>24.77763875367776,59.41009420100237 24.77763875367776,59.44113693190525 24.85314569274468,59.44113693190525 24.85314569274468,59.41009420100237 24.77763875367776,59.41009420100237</coordinates></LineString></Placemark>
 <Placemark id="gcp1881.Lasnamae.1"><name>1881.Lasnamae #1</name><description>426 4544</description><Point><coordinates>24.780495674895576,59.42641865555049</coordinates></Point></Placemark>
 <Placemark id="gcp1881.Lasnamae.2"><name>1881.Lasnamae #2</name><description>3359 1223</description><Point><coordinates>24.799356968689054,59.4371348274249</coordinates></Point></Placemark>
@@ -58,13 +63,13 @@
 <Placemark id="gcp1881.Kopli.3"><name>1881.Kopli #3</name><description>2573 9303</description><Point><coordinates>24.680415690460144,59.450926793819974</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="maps"><value>18YX.S,18YX.N,1881.Kristiine,1881.Pelgulinna,1881.Kopli,1881.J2rvevana,1881.Nomme,1881.Maarjamae,1881.Lasnamae,1881.Nehatu,1885</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1885/</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>24.63901301486516,59.33775253735816,24.96960138329667,59.49191883676355</value></Data>
 <Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
 <Data name="zmin"><value>10</value></Data>
-<Data name="bbox"><value>24.63901301486516,59.38214604253013,24.91610125799007,59.49191883676355</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="maps"><value>18YX.S,18YX.N,1881.Kristiine,1881.Pelgulinna,1881.Kopli,1881.J2rvevana,1881.Nomme,1881.Maarjamae,1881.Lasnamae,1881.Nehatu,1885,1882.Vaskjala</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tallinn/composed/1885/</value></Data>
 
 </ExtendedData>
 
