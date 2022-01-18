@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>26.69614653758943,58.36355014890164 26.69614653758943,58.39871874510381 26.77063474593919,58.39871874510381 26.77063474593919,58.36355014890164 26.69614653758943,58.36355014890164</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>3946 1233</description><Point><coordinates>26.720837161406564,58.39236397258964</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>5395 9064</description><Point><coordinates>26.734398410185662,58.36771547801356</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>7558 5170</description><Point><coordinates>26.745148703917145,58.38091373331319</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1873"><name>1873</name><LineString><coordinates>26.73241137634181,58.36473669541954 26.73241137634181,58.38281966590775 26.77130752197365,58.38281966590775 26.77130752197365,58.36473669541954 26.73241137634181,58.36473669541954</coordinates></LineString></Placemark>
+<Placemark id="gcp1873.1"><name>1873 #1</name><description>1897 1908</description><Point><coordinates>26.75306766407067,58.36778744851644</coordinates></Point></Placemark>
+<Placemark id="gcp1873.2"><name>1873 #2</name><description>552 853</description><Point><coordinates>26.743933133643203,58.37682212877775</coordinates></Point></Placemark>
+<Placemark id="gcp1873.3"><name>1873 #3</name><description>1628 301</description><Point><coordinates>26.757809184713032,58.37720432099249</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1875"><name>1875</name><LineString><coordinates>26.69614653758481,58.36354948345873 26.69614653758481,58.39871874510697 26.77063414508953,58.39871874510697 26.77063414508953,58.36354948345873 26.69614653758481,58.36354948345873</coordinates></LineString></Placemark>
+<Placemark id="gcp1875.1"><name>1875 #1</name><description>3946 1233</description><Point><coordinates>26.720837161406564,58.39236397258964</coordinates></Point></Placemark>
+<Placemark id="gcp1875.2"><name>1875 #2</name><description>5395 9064</description><Point><coordinates>26.734398410185662,58.36771547801356</coordinates></Point></Placemark>
+<Placemark id="gcp1875.3"><name>1875 #3</name><description>7558 5170</description><Point><coordinates>26.745148703917145,58.38091373331319</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Tartu/composed/1875/</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>1875,1873</value></Data>
+<Data name="bbox"><value>26.69614653758481,58.36354948345873,26.77130752197365,58.39871874510697</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
