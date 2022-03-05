@@ -1,10 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>28.01326633815875,59.41590382326142 28.01326633815875,59.49989549841740 28.12710711366038,59.49989549841740 28.12710711366038,59.41590382326142 28.01326633815875,59.41590382326142</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>2790 3094</description><Point><coordinates>28.113571979370263,59.439882144499656</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>796 1885</description><Point><coordinates>28.042117433776994,59.46299038541782</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>173 2744</description><Point><coordinates>28.020080404510516,59.44624540125298</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1911.N"><name>1911.N</name><LineString><coordinates>28.03966345367741,59.45714763682263 28.03966345367741,59.46672905376087 28.06222749007011,59.46672905376087 28.06222749007011,59.45714763682263 28.03966345367741,59.45714763682263</coordinates></LineString></Placemark>
+<Placemark id="gcp1911.N.1"><name>1911.N #1</name><description>256 502</description><Point><coordinates>28.043728542328136,59.46516180367054</coordinates></Point></Placemark>
+<Placemark id="gcp1911.N.2"><name>1911.N #2</name><description>442 1312</description><Point><coordinates>28.042140656234107,59.462991523434916</coordinates></Point></Placemark>
+<Placemark id="gcp1911.N.3"><name>1911.N #3</name><description>3614 1300</description><Point><coordinates>28.05683224411125,59.45801060182877</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1911.S"><name>1911.S</name><LineString><coordinates>28.05562998710903,59.45507604556850 28.05562998710903,59.46134160270488 28.06838171188810,59.46134160270488 28.06838171188810,59.45507604556850 28.05562998710903,59.45507604556850</coordinates></LineString></Placemark>
+<Placemark id="gcp1911.S.1"><name>1911.S #1</name><description>313 2764</description><Point><coordinates>28.056645105896234,59.45790188137858</coordinates></Point></Placemark>
+<Placemark id="gcp1911.S.2"><name>1911.S #2</name><description>211 853</description><Point><coordinates>28.059262941894804,59.46019168022511</coordinates></Point></Placemark>
+<Placemark id="gcp1911.S.3"><name>1911.S #3</name><description>2686 2656</description><Point><coordinates>28.062196056026192,59.45619348778643</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1919"><name>1919</name><LineString><coordinates>28.01326633815875,59.41590382326142 28.01326633815875,59.49989549841740 28.12710711366038,59.49989549841740 28.12710711366038,59.41590382326142 28.01326633815875,59.41590382326142</coordinates></LineString></Placemark>
+<Placemark id="gcp1919.1"><name>1919 #1</name><description>2790 3094</description><Point><coordinates>28.113571979370263,59.439882144499656</coordinates></Point></Placemark>
+<Placemark id="gcp1919.2"><name>1919 #2</name><description>796 1885</description><Point><coordinates>28.042117433776994,59.46299038541782</coordinates></Point></Placemark>
+<Placemark id="gcp1919.3"><name>1919 #3</name><description>173 2744</description><Point><coordinates>28.020080404510516,59.44624540125298</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>28.01326633815875,59.41590382326142,28.12710711366038,59.49989549841740</value></Data>
+<Data name="maps"><value>1919,1911.S,1911.N</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Narva-Joesuu/composed/1919/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmin"><value>12</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
