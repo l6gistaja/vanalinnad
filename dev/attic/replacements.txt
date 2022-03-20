@@ -7,3 +7,6 @@ find vector/places/ -type f -print0 | xargs -0 sed -i 's/http:\/\/www.nlib.ee\/e
 
 # 2020-01-08
 find vector/places/ -type f -print0 | xargs -0 sed -i 's/<title>DIGAR<\/title>/<title>Vanalinnad<\/title>/g'
+
+# 2022-03-20
+find vector/places/ -type f -print0 | xargs -0 sed -i 's/https:\/\/fotoladu.maaamet.ee\/arhiiv=/https:\/\/fotoladu.maaamet.ee\/?arhiiv=/g'
