@@ -12,14 +12,29 @@
 <Placemark id="gcp1883.Kirikukyla.2"><name>1883.Kirikukyla #2</name><description>1588 2529</description><Point><coordinates>23.778028833965887,58.703640641942016</coordinates></Point></Placemark>
 <Placemark id="gcp1883.Kirikukyla.3"><name>1883.Kirikukyla #3</name><description>1872 2391</description><Point><coordinates>23.78253494511045,58.70640486567227</coordinates></Point></Placemark>
 
+<Placemark id="bbox.18YX.1"><name>18YX.1</name><LineString><coordinates>23.77646281230796,58.66234342030879 23.77646281230796,58.70373097612625 23.84511553110008,58.70373097612625 23.84511553110008,58.66234342030879 23.77646281230796,58.66234342030879</coordinates></LineString></Placemark>
+<Placemark id="gcp18YX.1.1"><name>18YX.1 #1</name><description>2719 3844</description><Point><coordinates>23.797519275380427,58.688053232601675</coordinates></Point></Placemark>
+<Placemark id="gcp18YX.1.2"><name>18YX.1 #2</name><description>7498 922</description><Point><coordinates>23.82333285493979,58.699949845222754</coordinates></Point></Placemark>
+<Placemark id="gcp18YX.1.3"><name>18YX.1 #3</name><description>5173 10051</description><Point><coordinates>23.819690441833448,58.66994606535526</coordinates></Point></Placemark>
+
+<Placemark id="bbox.18YX.2"><name>18YX.2</name><LineString><coordinates>23.74283516778728,58.67121612669484 23.74283516778728,58.70112418230291 23.79108847271197,58.70112418230291 23.79108847271197,58.67121612669484 23.74283516778728,58.67121612669484</coordinates></LineString></Placemark>
+<Placemark id="gcp18YX.2.1"><name>18YX.2 #1</name><description>6190 10452</description><Point><coordinates>23.791325785674506,58.66794654963619</coordinates></Point></Placemark>
+<Placemark id="gcp18YX.2.2"><name>18YX.2 #2</name><description>6274 582</description><Point><coordinates>23.782249190368148,58.69917475370571</coordinates></Point></Placemark>
+<Placemark id="gcp18YX.2.3"><name>18YX.2 #3</name><description>5180 1811</description><Point><coordinates>23.77667019561655,58.69470414501308</coordinates></Point></Placemark>
+
+<Placemark id="bbox.18YX.3"><name>18YX.3</name><LineString><coordinates>23.76951736871773,58.69373788254818 23.76951736871773,58.72017810590169 23.83416515130000,58.72017810590169 23.83416515130000,58.69373788254818 23.76951736871773,58.69373788254818</coordinates></LineString></Placemark>
+<Placemark id="gcp18YX.3.1"><name>18YX.3 #1</name><description>348 6538</description><Point><coordinates>23.778927068481707,58.69439395716356</coordinates></Point></Placemark>
+<Placemark id="gcp18YX.3.2"><name>18YX.3 #2</name><description>8800 6608</description><Point><coordinates>23.830666925965406,58.6989156983622</coordinates></Point></Placemark>
+<Placemark id="gcp18YX.3.3"><name>18YX.3 #3</name><description>3647 1308</description><Point><coordinates>23.793266203462004,58.712825646663596</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="zmax"><value>16</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Lihula/composed/1883/</value></Data>
 <Data name="montage"><value>yes</value></Data>
-<Data name="zmin"><value>12</value></Data>
-<Data name="bbox"><value>23.72409556828974,58.67376115558157,23.85707460037101,58.73507607961263</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Lihula/composed/1883/</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="maps"><value>1883.Kirikukyla,1883</value></Data>
+<Data name="maps"><value>18YX.2,18YX.1,18YX.3,1883.Kirikukyla,1883</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="bbox"><value>23.72409556828974,58.66234342030879,23.85707460037101,58.73507607961263</value></Data>
 
 </ExtendedData>
 

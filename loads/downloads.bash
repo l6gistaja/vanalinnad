@@ -1015,6 +1015,12 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/e
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa0854/004/000128b/eaa0854_004_000128b_00001_k.tif&CNT=1&SDS=0,90&JTL=8,' -a 1887 -b 1923 -o cache/deiip/1882_Vaskjala.jpg
 
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa3724/004/0000643/eaa3724_004_0000643_00002_k4.tif&CNT=1&SDS=0,90&JTL=8,' -a 2240 -b 2279 -o cache/deiip/Lihula_18YX_1.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa3724/004/0000643/eaa3724_004_0000643_00002_k3.tif&CNT=1&SDS=0,90&JTL=8,' -a 1640 -b 1679 -o cache/deiip/Lihula_18YX_2.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa3724/004/0000643/eaa3724_004_0000643_00002_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 2128 -b 2165 -o cache/deiip/Lihula_18YX_3.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 
