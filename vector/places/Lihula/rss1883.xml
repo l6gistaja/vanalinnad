@@ -15,10 +15,18 @@
 
 <item>
 <title>Conceptplan von dem Gut Schloss-Leal</title>
+<guid>ra.ee=EAA.3724.4.643 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=20507</link>
+<pubDate>Mon, 01 Jan 18YX 00:00:00 +0000</pubDate>
+<anchor>18YX.Halvati</anchor>
+</item>
+
+<item>
+<title>Conceptplan von dem Gut Schloss-Leal</title>
 <guid>ra.ee=EAA.3724.4.643 leht 2</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=242882</link>
 <pubDate>Mon, 01 Jan 18YX 00:00:00 +0000</pubDate>
-<componentsregexp>^18YX</componentsregexp>
+<componentsregexp>^18YX\.\d</componentsregexp>
 </item>
 
 </channel>

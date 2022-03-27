@@ -2,10 +2,10 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1883"><name>1883</name><LineString><coordinates>23.78996792299959,58.67376115558157 23.78996792299959,58.71398675447485 23.85707460037101,58.71398675447485 23.85707460037101,58.67376115558157 23.78996792299959,58.67376115558157</coordinates></LineString></Placemark>
-<Placemark id="gcp1883.1"><name>1883 #1</name><description>1233 2515</description><Point><coordinates>23.82666233702878,58.68303996790403</coordinates></Point></Placemark>
-<Placemark id="gcp1883.2"><name>1883 #2</name><description>1856 1883</description><Point><coordinates>23.83725919257364,58.691499845785934</coordinates></Point></Placemark>
-<Placemark id="gcp1883.3"><name>1883 #3</name><description>305 10</description><Point><coordinates>23.796489272756453,58.708617365857464</coordinates></Point></Placemark>
+<Placemark id="bbox.1883"><name>1883</name><LineString><coordinates>23.78997210601302,58.67376592434447 23.78997210601302,58.71397039783608 23.85707556132975,58.71397039783608 23.85707556132975,58.67376592434447 23.78997210601302,58.67376592434447</coordinates></LineString></Placemark>
+<Placemark id="gcp1883.1"><name>1883 #1</name><description>2157 4401</description><Point><coordinates>23.82666233702878,58.68303996790403</coordinates></Point></Placemark>
+<Placemark id="gcp1883.2"><name>1883 #2</name><description>3246 3294</description><Point><coordinates>23.83725919257364,58.691499845785934</coordinates></Point></Placemark>
+<Placemark id="gcp1883.3"><name>1883 #3</name><description>533 17</description><Point><coordinates>23.796489272756453,58.708617365857464</coordinates></Point></Placemark>
 
 <Placemark id="bbox.1883.Kirikukyla"><name>1883.Kirikukyla</name><LineString><coordinates>23.72409556828974,58.69385946923273 23.72409556828974,58.73507607961263 23.79958358335682,58.73507607961263 23.79958358335682,58.69385946923273 23.72409556828974,58.69385946923273</coordinates></LineString></Placemark>
 <Placemark id="gcp1883.Kirikukyla.1"><name>1883.Kirikukyla #1</name><description>590 1821</description><Point><coordinates>23.751807558636607,58.70668350508572</coordinates></Point></Placemark>
@@ -27,14 +27,19 @@
 <Placemark id="gcp18YX.3.2"><name>18YX.3 #2</name><description>8800 6608</description><Point><coordinates>23.830666925965406,58.6989156983622</coordinates></Point></Placemark>
 <Placemark id="gcp18YX.3.3"><name>18YX.3 #3</name><description>3647 1308</description><Point><coordinates>23.793266203462004,58.712825646663596</coordinates></Point></Placemark>
 
+<Placemark id="bbox.18YX.Halvati"><name>18YX.Halvati</name><LineString><coordinates>23.83688393189789,58.67297452021744 23.83688393189789,58.71738871748692 23.88227288580791,58.71738871748692 23.88227288580791,58.67297452021744 23.83688393189789,58.67297452021744</coordinates></LineString></Placemark>
+<Placemark id="gcp18YX.Halvati.1"><name>18YX.Halvati #1</name><description>1749 11556</description><Point><coordinates>23.85540739685022,58.68158118613349</coordinates></Point></Placemark>
+<Placemark id="gcp18YX.Halvati.2"><name>18YX.Halvati #2</name><description>597 6816</description><Point><coordinates>23.844937291470146,58.69601014611777</coordinates></Point></Placemark>
+<Placemark id="gcp18YX.Halvati.3"><name>18YX.Halvati #3</name><description>5151 2844</description><Point><coordinates>23.869699578938693,58.71053801973173</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="montage"><value>yes</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Lihula/composed/1883/</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="maps"><value>18YX.2,18YX.1,18YX.3,1883.Kirikukyla,1883</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Lihula/composed/1883/</value></Data>
 <Data name="zmin"><value>12</value></Data>
+<Data name="bbox"><value>23.72409556828974,58.66234342030879,23.88227288580791,58.73507607961263</value></Data>
+<Data name="maps"><value>18YX.2,18YX.1,18YX.3,18YX.Halvati,1883.Kirikukyla,1883</value></Data>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>23.72409556828974,58.66234342030879,23.85707460037101,58.73507607961263</value></Data>
+<Data name="montage"><value>yes</value></Data>
 
 </ExtendedData>
 
