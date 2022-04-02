@@ -2,6 +2,11 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
+<Placemark id="bbox.1930"><name>1930</name><LineString><coordinates>26.02436078795368,57.77896958311410 26.02436078795368,57.78805545518372 26.03683063879709,57.78805545518372 26.03683063879709,57.77896958311410 26.02436078795368,57.77896958311410</coordinates></LineString></Placemark>
+<Placemark id="gcp1930.1"><name>1930 #1</name><description>619 1842</description><Point><coordinates>26.02885505482315,57.780936829210965</coordinates></Point></Placemark>
+<Placemark id="gcp1930.2"><name>1930 #2</name><description>1438 1354</description><Point><coordinates>26.03477737232832,57.78271003604397</coordinates></Point></Placemark>
+<Placemark id="gcp1930.3"><name>1930 #3</name><description>370 800</description><Point><coordinates>26.027245729414382,57.78495216000476</coordinates></Point></Placemark>
+
 <Placemark id="bbox.193X"><name>193X</name><LineString><coordinates>26.01065127048756,57.76020274707678 26.01065127048756,57.79334480643585 26.07682823895216,57.79334480643585 26.07682823895216,57.76020274707678 26.01065127048756,57.76020274707678</coordinates></LineString></Placemark>
 <Placemark id="gcp193X.1"><name>193X #1</name><description>117 1188</description><Point><coordinates>26.023211786507684,57.77058553920215</coordinates></Point></Placemark>
 <Placemark id="gcp193X.2"><name>193X #2</name><description>2376 2196</description><Point><coordinates>26.067993948220508,57.77272542985737</coordinates></Point></Placemark>
@@ -20,12 +25,12 @@
 
 <ExtendedData>
 <Data name="zmax"><value>16</value></Data>
-<Data name="bbox"><value>26.00815071088852,57.74069991412150,26.13227267716068,57.81414775387759</value></Data>
-<Data name="maps"><value>1936.k1,1936.k2,193X</value></Data>
-<Data name="zmin"><value>12</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Valga/composed/1936/</value></Data>
+<Data name="maps"><value>1936.k1,1936.k2,193X,1930</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>26.00815071088852,57.74069991412150,26.13227267716068,57.81414775387759</value></Data>
+<Data name="zmin"><value>12</value></Data>
 
 </ExtendedData>
 

@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0">
 <channel>
+    
+<item>
+<title>Valga linna Puraküla osa, mis koosneb Paju mõisa ja Pura mõisa järel oleva Putra nr 3 talu maadest, planeerimise kava</title>
+<author>O. Luik</author>
+<guid>ra.ee=ERA.T-6.3.1812 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=132063</link>
+<pubDate>Wed, 01 Jan 1930 00:00:00 +0000</pubDate>
+</item>
 
 <item>
 <title>Valga</title>
@@ -16,6 +24,7 @@
 -->
 <pubDate>Mon, 01 Jan 1936 00:00:00 +0000</pubDate>
 <legends>legend193Xa.gif,legend193Xb.gif</legends>
+<anchor>193X</anchor>
 </item>
 
 <item>
