@@ -1,0 +1,22 @@
+<vanalinnadlayers xmlns="http://juks.alkohol.ee/vanalinnad">
+  <bounds>26.35136314506442,58.73823104752676,26.41833392251403,58.76282221719145</bounds>
+  <city>Jõgeva</city>
+  <country>Estonia</country>
+  <json><![CDATA[{
+"urls": {
+ "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/13/"},
+ "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта 1862", "l":"ЭтоМесто: 3-верстовка 1862", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/5-5/"},
+ "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-atlas_topo-10km/?x=@X@&amp;y=@Y@", "srs":"EPSG:4326"},
+ "vlasenko": {"h":"Топографическая карта Украины, России, Беларуси", "l":"vlasenko.net", "t":"_blank", "U":"https://maps.vlasenko.net/?lon=@X@&lat=@Y@", "srs":"EPSG:4326"},
+ "ra1917m": {"h":"Rahvusarhiiv &lt; 1917", "l":"Rahvusarhiiv &lt; 1917", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=10991401&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav"},
+ "ra1917_1950": {"h":"Rahvusarhiiv 1917-1950", "l":"Rahvusarhiiv 1917-1950", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11139389&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav"},
+ "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140011&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav"}
+}
+}]]></json>
+  <layer bounds="26.35303337754490,58.73566328721280,26.41806439562928,58.75709318039886" type="tms" year="1958" />
+  <layer bounds="26.35006139011427,58.73820986388148,26.41828431819091,58.77257547906765" type="tms" year="1921" />
+  <layer name="⛜ 1" file="roads1min.json" format="VLGJ" levels="0,1,2,3" maxres="12" type="roads" />
+  <layer name="⛜ 2" file="roads4min.json" format="VLGJ" levels="4" maxres="15" type="roads" />
+  <maxzoom>16</maxzoom>
+  <minzoom>12</minzoom>
+</vanalinnadlayers>

@@ -1027,6 +1027,18 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/e
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa3724/004/0000646/eaa3724_004_0000646_00001_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 500 -b 519 -o cache/deiip/Lihula_1883z7.jpg
 
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/era/erat-0-6/003/0001488/erat-0-6_003_0001488_00001_k2.tif&CNT=1&SDS=0,90&JTL=8,' -a 1575 -b 1619 -o cache/deiip/Jogeva_1921.S.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/era/erat-0-6/003/0001488/erat-0-6_003_0001488_00001_k1.tif&CNT=1&SDS=0,90&JTL=8,' -a 1665 -b 1709 -o cache/deiip/Jogeva_1921.N.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eam/eam0003/001/0000210/eam0003_001_0000210_00001_k4.tif&CNT=1&SDS=0,90&JTL=7,' -a 551 -b 579 -o cache/deiip/Jogeva_1958_1.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eam/eam0003/001/0000210/eam0003_001_0000210_00001_k1.tif&CNT=1&SDS=0,90&JTL=7,' -a 551 -b 579 -o cache/deiip/Jogeva_1958_2.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eam/eam0003/001/0000210/eam0003_001_0000210_00001_k3.tif&CNT=1&SDS=0,90&JTL=7,' -a 551 -b 579 -o cache/deiip/Jogeva_1958_3.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eam/eam0003/001/0000210/eam0003_001_0000210_00001_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 551 -b 579 -o cache/deiip/Jogeva_1958_5.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 

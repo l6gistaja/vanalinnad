@@ -8,6 +8,13 @@
       </Point>
     </Placemark>
     <Placemark>
+      <name>Jõgeva</name>
+      <description>Jogeva</description>
+      <Point>
+        <coordinates>26.397759873047466,58.74603383226467</coordinates>
+      </Point>
+    </Placemark>
+    <Placemark>
       <name>Kuressaare</name>
       <Point>
         <coordinates>22.48527391540559,58.25304863575001</coordinates>

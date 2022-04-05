@@ -8,7 +8,7 @@ use Data::Dumper;
 use lib './dev';
 use VlHelper qw(rss_date);
 
-getopt('s:i:o:f:wt', \%opts);
+getopt('s:i:o:f:wtd', \%opts);
 
 if(!(exists $opts{'i'}) && !(exists $opts{'f'})) {
     print <<EOF;
@@ -23,6 +23,7 @@ Possible flags:
 -s SITE
 -t : test mode: dont load main page
 -w : write to database
+-d : delete from database (mark nonpermanent)
 
 EOF
   exit;
@@ -156,13 +157,19 @@ foreach $id ( @ids ) {
     $site = exists $opts{'s'} ? $opts{'s'} : '';
     
     if($printouts > 0) {
-        $status = prompt_select('Write to DB.','0,1');
-        $sql = 'UPDATE maps SET '.$update.' '.$where;
+        if(exists $opts{'w'}) {
+            $status = prompt_select('Write to DB?','0,1');
+            $sql = 'UPDATE maps SET '.$update.' '.$where;
+        }
+        if(exists $opts{'d'}) {
+            $status = prompt_select('Delete from DB?','0,1');
+            $sql = "UPDATE maps SET permanent_record='N' ".$where;
+        }
     } else {
         $status = prompt_select('Insert item status. If 0, nothing will be written to DB.','U,D,C,P,0');
         $sql = "INSERT INTO maps (permanent_record, vl_site, vl_year, use$insert_fields) VALUES ('Y','$site',NULL,'$status'$insert_values);";
     }
-    if(exists $opts{'w'} && $status ne '0') {
+    if((exists $opts{'w'} || exists $opts{'d'}) && $status ne '0') {
         $sth = $dbh->prepare($sql);
         $sth->execute;
         $sth->finish();

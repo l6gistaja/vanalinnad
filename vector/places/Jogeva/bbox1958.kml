@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1958.1"><name>1958.1</name><LineString><coordinates>26.37861695757294,58.73580257453545 26.37861695757294,58.74878594785757 26.41806439562928,58.74878594785757 26.41806439562928,58.73580257453545 26.37861695757294,58.73580257453545</coordinates></LineString></Placemark>
+<Placemark id="gcp1958.1.1"><name>1958.1 #1</name><description>5124 192</description><Point><coordinates>26.40884861907995,58.74816922711127</coordinates></Point></Placemark>
+<Placemark id="gcp1958.1.2"><name>1958.1 #2</name><description>464 2342</description><Point><coordinates>26.381468629455455,58.74148923395961</coordinates></Point></Placemark>
+<Placemark id="gcp1958.1.3"><name>1958.1 #3</name><description>3846 2068</description><Point><coordinates>26.401402806854176,58.74239110795731</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1958.2"><name>1958.2</name><LineString><coordinates>26.35303337754490,58.74471647735633 26.35303337754490,58.75499797933288 26.39253360272428,58.75499797933288 26.39253360272428,58.74471647735633 26.35303337754490,58.74471647735633</coordinates></LineString></Placemark>
+<Placemark id="gcp1958.2.1"><name>1958.2 #1</name><description>4567 1101</description><Point><coordinates>26.380153412780665,58.7515110441371</coordinates></Point></Placemark>
+<Placemark id="gcp1958.2.2"><name>1958.2 #2</name><description>4401 2055</description><Point><coordinates>26.379252190551753,58.74855002345621</coordinates></Point></Placemark>
+<Placemark id="gcp1958.2.3"><name>1958.2 #3</name><description>122 2079</description><Point><coordinates>26.353932137450478,58.74831624792535</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1958.3"><name>1958.3</name><LineString><coordinates>26.35362290606668,58.73566328721280 26.35362290606668,58.74865089409683 26.39271328580956,58.74865089409683 26.39271328580956,58.73566328721280 26.35362290606668,58.73566328721280</coordinates></LineString></Placemark>
+<Placemark id="gcp1958.3.1"><name>1958.3 #1</name><description>2912 2823</description><Point><coordinates>26.37088999710031,58.739863574845266</coordinates></Point></Placemark>
+<Placemark id="gcp1958.3.2"><name>1958.3 #2</name><description>4464 3476</description><Point><coordinates>26.380073301391025,58.73791216256843</coordinates></Point></Placemark>
+<Placemark id="gcp1958.3.3"><name>1958.3 #3</name><description>4262 299</description><Point><coordinates>26.378807298736724,58.74765439234287</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1958.5"><name>1958.5</name><LineString><coordinates>26.37844671734893,58.74491818090620 26.37844671734893,58.75709318039886 26.41580059381218,58.75709318039886 26.41580059381218,58.74491818090620 26.37844671734893,58.74491818090620</coordinates></LineString></Placemark>
+<Placemark id="gcp1958.5.1"><name>1958.5 #1</name><description>4433 1595</description><Point><coordinates>26.404707288360783,58.752198869039596</coordinates></Point></Placemark>
+<Placemark id="gcp1958.5.2"><name>1958.5 #2</name><description>5416 3460</description><Point><coordinates>26.410586690521423,58.746499349119595</coordinates></Point></Placemark>
+<Placemark id="gcp1958.5.3"><name>1958.5 #3</name><description>2228 3536</description><Point><coordinates>26.39174685440066,58.7462432940697</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1958.2,1958.3,1958.5,1958.1</value></Data>
+<Data name="bbox"><value>26.35303337754490,58.73566328721280,26.41806439562928,58.75709318039886</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Jogeva/composed/1958/</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1921.N"><name>1921.N</name><LineString><coordinates>26.37106009968565,58.75987925644300 26.37106009968565,58.77257547906765 26.40909904103365,58.77257547906765 26.40909904103365,58.75987925644300 26.37106009968565,58.75987925644300</coordinates></LineString></Placemark>
+<Placemark id="gcp1921.N.1"><name>1921.N #1</name><description>225 3897</description><Point><coordinates>26.3727663887029,58.760043261118504</coordinates></Point></Placemark>
+<Placemark id="gcp1921.N.2"><name>1921.N #2</name><description>5190 3705</description><Point><coordinates>26.40327919845587,58.760788859320606</coordinates></Point></Placemark>
+<Placemark id="gcp1921.N.3"><name>1921.N #3</name><description>4803 2292</description><Point><coordinates>26.400782571410073,58.765263527526855</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1921.S"><name>1921.S</name><LineString><coordinates>26.35006139011427,58.73820986388148 26.35006139011427,58.76265643155443 26.41828431819091,58.76265643155443 26.41828431819091,58.73820986388148 26.35006139011427,58.73820986388148</coordinates></LineString></Placemark>
+<Placemark id="gcp1921.S.1"><name>1921.S #1</name><description>9523 4534</description><Point><coordinates>26.40885065612754,58.7481685911787</coordinates></Point></Placemark>
+<Placemark id="gcp1921.S.2"><name>1921.S #2</name><description>3339 7131</description><Point><coordinates>26.370892034147893,58.739862938760815</coordinates></Point></Placemark>
+<Placemark id="gcp1921.S.3"><name>1921.S #3</name><description>7068 255</description><Point><coordinates>26.393572793577885,58.761836310542634</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1921.E"><name>1921.E</name><LineString><coordinates>26.39041324401395,58.74120352486445 26.39041324401395,58.75402763305674 26.41423612316288,58.75402763305674 26.41423612316288,58.74120352486445 26.39041324401395,58.74120352486445</coordinates></LineString></Placemark>
+<Placemark id="gcp1921.E.1"><name>1921.E #1</name><description>389 2006</description><Point><coordinates>26.394797501395427,58.744339590686145</coordinates></Point></Placemark>
+<Placemark id="gcp1921.E.2"><name>1921.E #2</name><description>382 1358</description><Point><coordinates>26.394475636313672,58.74746795748509</coordinates></Point></Placemark>
+<Placemark id="gcp1921.E.3"><name>1921.E #3</name><description>1948 1210</description><Point><coordinates>26.40886,58.748167</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1921.W"><name>1921.W</name><LineString><coordinates>26.36870252774648,58.73882153109320 26.36870252774648,58.74752969683774 26.39527724263319,58.74752969683774 26.39527724263319,58.73882153109320 26.36870252774648,58.73882153109320</coordinates></LineString></Placemark>
+<Placemark id="gcp1921.W.1"><name>1921.W #1</name><description>1870 442</description><Point><coordinates>26.3862973791438,58.74537301356724</coordinates></Point></Placemark>
+<Placemark id="gcp1921.W.2"><name>1921.W #2</name><description>172 1572</description><Point><coordinates>26.370912,58.739865</coordinates></Point></Placemark>
+<Placemark id="gcp1921.W.3"><name>1921.W #3</name><description>2770 340</description><Point><coordinates>26.394644,58.745877</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>26.35006139011427,58.73820986388148,26.41828431819091,58.77257547906765</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="maps"><value>1921.N,1921.S,1921.E,1921.W</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Jogeva/composed/1921/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

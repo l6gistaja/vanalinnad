@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title>Vanalinnad</title>
+
+<item>
+<title>Tartu maakonnas oleva Jõgeva alevi ja ümbruse plaan</title>
+<author>L. Jakobsenn</author>
+<guid>ra.ee=ERA.T-6.3.1488 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=103934</link>
+<pubDate>Sat, 01 Jan 1921 00:00:00 +0000</pubDate>
+<componentsregexp>^1921\.[NS]$</componentsregexp>
+</item>
+
+<item>
+<title>Tartu Maakonnas oleva Jõgeva alevi plaan</title>
+<author>L. Jakobsenn</author>
+<guid>ra.ee=ERA.T-6.3.1490 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=102704</link>
+<pubDate>Sat, 01 Jan 1921 00:00:00 +0000</pubDate>
+<componentsregexp>^1921\.[WE]$</componentsregexp>
+<anchor>1921.alev</anchor>
+</item>
+
+</channel>
+</rss>
