@@ -14,7 +14,8 @@
 }
 }]]></json>
   <layer bounds="26.35303337754490,58.73566328721280,26.41806439562928,58.75709318039886" type="tms" year="1958" />
-  <layer bounds="26.35006139011427,58.73820986388148,26.41828431819091,58.77257547906765" type="tms" year="1921" />
+  <layer bounds="26.35006139011427,58.73820986388148,26.42147464986022,58.77347044451945" type="tms" year="1921" />
+  <layer bounds="26.36670080100351,58.75241335196950,26.43169242498935,58.77485339109234" type="tms" year="1688" />
   <layer name="⛜ 1" file="roads1min.json" format="VLGJ" levels="0,1,2,3" maxres="12" type="roads" />
   <layer name="⛜ 2" file="roads4min.json" format="VLGJ" levels="4" maxres="15" type="roads" />
   <maxzoom>16</maxzoom>

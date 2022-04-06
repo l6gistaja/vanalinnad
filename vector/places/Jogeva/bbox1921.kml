@@ -22,14 +22,19 @@
 <Placemark id="gcp1921.W.2"><name>1921.W #2</name><description>172 1572</description><Point><coordinates>26.370912,58.739865</coordinates></Point></Placemark>
 <Placemark id="gcp1921.W.3"><name>1921.W #3</name><description>2770 340</description><Point><coordinates>26.394644,58.745877</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1920"><name>1920</name><LineString><coordinates>26.37655739670571,58.75218017289112 26.37655739670571,58.77347044451945 26.42147464986022,58.77347044451945 26.42147464986022,58.75218017289112 26.37655739670571,58.75218017289112</coordinates></LineString></Placemark>
+<Placemark id="gcp1920.1"><name>1920 #1</name><description>1506 596</description><Point><coordinates>26.403136948824745,58.76711871715504</coordinates></Point></Placemark>
+<Placemark id="gcp1920.2"><name>1920 #2</name><description>1736 1195</description><Point><coordinates>26.408458451510047,58.76197803939704</coordinates></Point></Placemark>
+<Placemark id="gcp1920.3"><name>1920 #3</name><description>61 1514</description><Point><coordinates>26.381335953951847,58.757237259965535</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="bbox"><value>26.35006139011427,58.73820986388148,26.41828431819091,58.77257547906765</value></Data>
-<Data name="tileext"><value>.jpg</value></Data>
-<Data name="zmin"><value>12</value></Data>
 <Data name="zmax"><value>16</value></Data>
-<Data name="maps"><value>1921.N,1921.S,1921.E,1921.W</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Jogeva/composed/1921/</value></Data>
 <Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1920,1921.N,1921.S,1921.E,1921.W</value></Data>
+<Data name="bbox"><value>26.35006139011427,58.73820986388148,26.42147464986022,58.77347044451945</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Jogeva/composed/1921/</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
 
 </ExtendedData>
 
