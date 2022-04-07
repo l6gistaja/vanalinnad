@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>26.35524611282077,58.74922423777267 26.35524611282077,58.80536596188449 26.43364778684814,58.80536596188449 26.43364778684814,58.74922423777267 26.35524611282077,58.74922423777267</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>1574 3021</description><Point><coordinates>26.40008303710969,58.76320599491571</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>872 3439</description><Point><coordinates>26.3813290316771,58.757230046930076</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>1498 2572</description><Point><coordinates>26.397704640197794,58.76940376520328</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1690"><name>1690</name><LineString><coordinates>26.35254758497465,58.72512759597644 26.35254758497465,58.75836873146134 26.42345782953821,58.75836873146134 26.42345782953821,58.72512759597644 26.35254758497465,58.72512759597644</coordinates></LineString></Placemark>
+<Placemark id="gcp1690.1"><name>1690 #1</name><description>2866 2978</description><Point><coordinates>26.42536245561438,58.7269768427265</coordinates></Point></Placemark>
+<Placemark id="gcp1690.2"><name>1690 #2</name><description>2850 1450</description><Point><coordinates>26.417508947618682,58.74301335950966</coordinates></Point></Placemark>
+<Placemark id="gcp1690.3"><name>1690 #3</name><description>1847 944</description><Point><coordinates>26.394668285428846,58.74588263409783</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1688"><name>1688</name><LineString><coordinates>26.36670080100351,58.75241335196950 26.36670080100351,58.77485339109234 26.43169242498935,58.77485339109234 26.43169242498935,58.75241335196950 26.36670080100351,58.75241335196950</coordinates></LineString></Placemark>
+<Placemark id="gcp1688.1"><name>1688 #1</name><description>1574 3021</description><Point><coordinates>26.40008303710969,58.76320599491571</coordinates></Point></Placemark>
+<Placemark id="gcp1688.2"><name>1688 #2</name><description>872 3439</description><Point><coordinates>26.3813290316771,58.757230046930076</coordinates></Point></Placemark>
+<Placemark id="gcp1688.3"><name>1688 #3</name><description>1498 2572</description><Point><coordinates>26.397704640197794,58.76940376520328</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="bbox"><value>26.35254758497465,58.72512759597644,26.43169242498935,58.77485339109234</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="maps"><value>1688,1690</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Jogeva/composed/1688/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
