@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1938"><name>1938</name><LineString><coordinates>26.35136153433563,58.73217375399911 26.35136153433563,58.77467952503163 26.43171505688630,58.77467952503163 26.43171505688630,58.73217375399911 26.35136153433563,58.73217375399911</coordinates></LineString></Placemark>
+<Placemark id="gcp1938.1"><name>1938 #1</name><description>2242 909</description><Point><coordinates>26.393603,58.761825</coordinates></Point></Placemark>
+<Placemark id="gcp1938.2"><name>1938 #2</name><description>2591 1530</description><Point><coordinates>26.409547830810585,58.74760378246098</coordinates></Point></Placemark>
+<Placemark id="gcp1938.3"><name>1938 #3</name><description>1716 1871</description><Point><coordinates>26.370924020996515,58.73986588022722</coordinates></Point></Placemark>
+<Placemark id="gcp1938.4"><name>1938 #4</name><description>3055 879</description><Point><coordinates>26.428962161906608,58.76283419018805</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1933.E"><name>1933.E</name><LineString><coordinates>26.38552065407821,58.74340047404024 26.38552065407821,58.75586096926953 26.41370525191624,58.75586096926953 26.41370525191624,58.74340047404024 26.38552065407821,58.74340047404024</coordinates></LineString></Placemark>
+<Placemark id="gcp1933.E.1"><name>1933.E #1</name><description>732 2097</description><Point><coordinates>26.394644,58.745877</coordinates></Point></Placemark>
+<Placemark id="gcp1933.E.2"><name>1933.E #2</name><description>2916 2094</description><Point><coordinates>26.408862095360607,58.748171030994</coordinates></Point></Placemark>
+<Placemark id="gcp1933.E.3"><name>1933.E #3</name><description>1602 832</description><Point><coordinates>26.397682648186485,58.751065296061775</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1933.W"><name>1933.W</name><LineString><coordinates>26.36790963682326,58.73840941590939 26.36790963682326,58.74704150817912 26.39473691148843,58.74704150817912 26.39473691148843,58.73840941590939 26.36790963682326,58.73840941590939</coordinates></LineString></Placemark>
+<Placemark id="gcp1933.W.1"><name>1933.W #1</name><description>2721 220</description><Point><coordinates>26.3862973791438,58.74537301356724</coordinates></Point></Placemark>
+<Placemark id="gcp1933.W.2"><name>1933.W #2</name><description>101 1021</description><Point><coordinates>26.370912,58.739865</coordinates></Point></Placemark>
+<Placemark id="gcp1933.W.3"><name>1933.W #3</name><description>2916 1395</description><Point><coordinates>26.390270287418982,58.74150135460385</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmin"><value>12</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Jogeva/composed/1933/</value></Data>
+<Data name="bbox"><value>26.35136153433563,58.73217375399911,26.43171505688630,58.77467952503163</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="maps"><value>1938,1933.W,1933.E</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>

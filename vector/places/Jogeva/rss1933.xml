@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title>Vanalinnad</title>
+
+<item>
+<title>Jõgeva alevi administratiiv-piirkonna plaan</title>
+<author>A. Toom</author>
+<guid>ra.ee=ERA.T-6.3.1483 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=103695</link>
+<pubDate>Sun, 01 Jan 1933 00:00:00 +0000</pubDate>
+<componentsregexp>^1933</componentsregexp>
+</item>
+
+<item>
+<title>Jõgeva : Tartu- ja Viljandimaa 1938.a.</title>
+<author>Ants Koik, Eesti Kaitsevägi, Topo-hüdrograafia osakond</author>
+<guid>isbn=978-9949-609-41-3</guid>
+<link>https://www.digar.ee/viewer/et/nlib-digar:301252</link>
+<pubDate>Sat, 01 Jan 1938 00:00:00 +0000</pubDate>
+</item>
+
+</channel>
+</rss>

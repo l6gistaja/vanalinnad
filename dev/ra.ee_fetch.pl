@@ -8,9 +8,9 @@ use Data::Dumper;
 use lib './dev';
 use VlHelper qw(rss_date);
 
-getopt('s:i:o:f:wtd', \%opts);
+getopt('s:i:o:f:u:wtd', \%opts);
 
-if(!(exists $opts{'i'}) && !(exists $opts{'f'})) {
+if(!(exists $opts{'i'}) && !(exists $opts{'f'}) && !(exists $opts{'u'})) {
     print <<EOF;
 
 Usage: dev/ra.ee_fetch.pl -s SITE [ -i ID | -f FILENAME ]  ...
@@ -19,6 +19,7 @@ Possible flags:
 
 -f FILENAME : file containing IDs, separated by newline
 -i ID : ID is integer or in format ABC1234_1234_1234_1234, for example lva6828_004_0000524_00002
+-u UID
 -o # : if ID is in format ABC1234_1234_1234_1234, remove # parts from beginning
 -s SITE
 -t : test mode: dont load main page
@@ -36,6 +37,7 @@ if(exists $opts{'f'}) {
     close $handle;
 }
 if(exists $opts{'i'}) { push @ids, $opts{'i'}; }
+if(exists $opts{'u'}) { push @ids, $opts{'u'}; }
 print "\nIDs : ".join(',',@ids);
 
 our $dbh = DBI->connect("dbi:SQLite:dbname=vector/common/vanalinnad_maps/maps.sqlite3","","");
@@ -46,86 +48,98 @@ foreach $id ( @ids ) {
     print "\n\n################## ID $id ##################\n\n";
     $orig_id = $id;
 
-    if($id !~ /^\d+$/) {
-        @aa = split('_', $id);
-        if(exists $opts{'o'}) { for($i = 0; $i < 0 + $opts{'o'}; $i++) { shift @aa; } }
-        $aa[0] =~ /^([a-z]+)([-\d]+)$/i;
-        unshift(@aa, uc($1));
-        $aa[1] = $2;
-        if($aa[0] eq 'LVA') { $aa[0] = 'LVVA'; }
-        if($aa[0] =~ /^(E[AR]A)([RT])/) {
-            $aa[0] = $1;
-            $aa[1] = $2.$aa[1];
-        }
-        @params = qw(archive fond inventory item sheet);
-        $url = 'https://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?';
-        $len = scalar(@aa) > 5 ? 5 : scalar(@aa);
-        for($i = 0; $i < $len; $i++) {
-            if($i > 4) { break; }
-            $val = $aa[$i];
-            $val =~ s/^0+//;
-            $val =~ s/^([RT])0-/$1-/;
-            if($val eq '') { next; }
-            $url .= '&'.$params[$i].'='.$val;
-        }
-        print "\n\nSearch: ".$url."\n\n";
-        $ff = File::Fetch->new(uri => $url);
-        $where = $ff->fetch('to' => \$data) or print $ff->error;
-        $id = '';
-        foreach ( split "\n", $data ) {
-            if ($_ =~ /href="\/kaardid\/index\.php\/et\/map\/view\?id=(\d+)\&/) {
-                $id = $1;
-                break;
-            }
-        }
-    }
+    if(exists $opts{'u'}) {
     
-    if($id eq '') { print "Empty ID!\n"; next; }
-    if($id ~~ @id_mem) { print "ID $id already read!\n"; next; } else { push @id_mem, $id; }
-    if(exists $opts{'t'}) { print "Test: dont load main page.\n"; next; }
-    %a = qw();
-    $a{'url'} = 'http://www.ra.ee/kaardid/index.php/et/map/view?id='.$id;
-    $ff = File::Fetch->new(uri => $a{'url'});
-    $where = $ff->fetch('to' => \$data) or print $ff->error;
-    $authortable = 0;
-    foreach ( split "\n", $data ) {
-        $a{'title'} = $1 if $_ =~ /<th>Pealkiri<\/th><td>([^<]+)<\/td>/;
-        $a{'uid'} = 'ra.ee='.$1 if $_ =~ /<th>Leidandmed<\/th><td><span[^>]+>([^<]+)<\/span>/;
-        $a{'year'} = $1 if $_ =~ /<th>Koostamisaeg<\/th><td>([^<]+)<\/td>/;
-        if($authortable) {
-            if($_ =~ /<tr>/) {
-                $authorrow++;
-                $authorcell = 0;
-                next;
+        %a = qw();
+        $a{'url'} = '';
+        $a{'uid'} = $opts{'u'};
+        
+    } else {
+    
+        if($id !~ /^\d+$/) {
+            @aa = split('_', $id);
+            if(exists $opts{'o'}) { for($i = 0; $i < 0 + $opts{'o'}; $i++) { shift @aa; } }
+            $aa[0] =~ /^([a-z]+)([-\d]+)$/i;
+            unshift(@aa, uc($1));
+            $aa[1] = $2;
+            if($aa[0] eq 'LVA') { $aa[0] = 'LVVA'; }
+            if($aa[0] =~ /^(E[AR]A)([RT])/) {
+                $aa[0] = $1;
+                $aa[1] = $2.$aa[1];
             }
-            if($authorrow < 1) { next; }
-            if($_ =~ /<td>([^<]+)<\/td>/ && $authorcell < 2) {
-                if($authorcell eq 0) {
-                    if($authorrow == 1) { $a{'author'} = $1; } else { $a{'author'} .= ', '.$1; }
-                } else {
-                    $a{'author'} .= " ".$1;
+            @params = qw(archive fond inventory item sheet);
+            $url = 'https://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?';
+            $len = scalar(@aa) > 5 ? 5 : scalar(@aa);
+            for($i = 0; $i < $len; $i++) {
+                if($i > 4) { break; }
+                $val = $aa[$i];
+                $val =~ s/^0+//;
+                $val =~ s/^([RT])0-/$1-/;
+                if($val eq '') { next; }
+                $url .= '&'.$params[$i].'='.$val;
+            }
+            print "\n\nSearch: ".$url."\n\n";
+            $ff = File::Fetch->new(uri => $url);
+            $where = $ff->fetch('to' => \$data) or print $ff->error;
+            $id = '';
+            foreach ( split "\n", $data ) {
+                if ($_ =~ /href="\/kaardid\/index\.php\/et\/map\/view\?id=(\d+)\&/) {
+                    $id = $1;
+                    break;
                 }
-                $authorcell++;
-            }
-            if($_ =~ /<\/table>/) { $authortable = 0; }
-        } else {
-            if($_ =~ /<th>Eesnimi<\/th>/) {
-                $authortable = 1;
-                $authorrow = 0;
             }
         }
+        
+        if($id eq '') { print "Empty ID!\n"; next; }
+        if($id ~~ @id_mem) { print "ID $id already read!\n"; next; } else { push @id_mem, $id; }
+        if(exists $opts{'t'}) { print "Test: dont load main page.\n"; next; }
+        %a = qw();
+        $a{'url'} = 'http://www.ra.ee/kaardid/index.php/et/map/view?id='.$id;
+        $ff = File::Fetch->new(uri => $a{'url'});
+        $where = $ff->fetch('to' => \$data) or print $ff->error;
+        $authortable = 0;
+        foreach ( split "\n", $data ) {
+            $a{'title'} = $1 if $_ =~ /<th>Pealkiri<\/th><td>([^<]+)<\/td>/;
+            $a{'uid'} = 'ra.ee='.$1 if $_ =~ /<th>Leidandmed<\/th><td><span[^>]+>([^<]+)<\/span>/;
+            $a{'year'} = $1 if $_ =~ /<th>Koostamisaeg<\/th><td>([^<]+)<\/td>/;
+            if($authortable) {
+                if($_ =~ /<tr>/) {
+                    $authorrow++;
+                    $authorcell = 0;
+                    next;
+                }
+                if($authorrow < 1) { next; }
+                if($_ =~ /<td>([^<]+)<\/td>/ && $authorcell < 2) {
+                    if($authorcell eq 0) {
+                        if($authorrow == 1) { $a{'author'} = $1; } else { $a{'author'} .= ', '.$1; }
+                    } else {
+                        $a{'author'} .= " ".$1;
+                    }
+                    $authorcell++;
+                }
+                if($_ =~ /<\/table>/) { $authortable = 0; }
+            } else {
+                if($_ =~ /<th>Eesnimi<\/th>/) {
+                    $authortable = 1;
+                    $authorrow = 0;
+                }
+            }
+        }
+        
+        print "FETCHED ITEM:\n\n".rss_item(\%aa);
+        
     }
-    
-     print "FETCHED ITEM:\n\n".rss_item(\%aa);
 
     $where = "WHERE url = '".$a{'url'}."' OR uid = '".$a{'uid'}."';";
     $select = 'SELECT * FROM maps '.$where;
+    #print $select;
     $sth = $dbh->prepare($select);
     $sth->execute;
     $printout = '';
     $printouts = 0;
     while($res = $sth->fetchrow_hashref)  {
         $printouts++;
+        #print Dumper($res);
         $printout .= "\n".rss_item($res);
     }
     $sth->finish();
@@ -192,14 +206,14 @@ sub prompt_select {
 }
 
 sub rss_item {
-    %aa = %{dclone($_[0])};
-    $rssdate = rss_date(substr $a{'year'}, 0, 4);
+    %xa = %{dclone($_[0])};
+    $rssdate = rss_date(substr $xa{'year'}, 0, 4);
     return <<EOF;
 <item>
-<title>$a{title}</title>
-<author>$a{author}</author>
-<guid>$a{uid}</guid>
-<link>$a{url}</link>
+<title>$xa{title}</title>
+<author>$xa{author}</author>
+<guid>$xa{uid}</guid>
+<link>$xa{url}</link>
 <pubDate>$rssdate</pubDate>
 </item>
 EOF
