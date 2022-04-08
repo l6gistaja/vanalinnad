@@ -13,6 +13,7 @@
  "ra1950_1991": {"h":"Rahvusarhiiv 1950-1991", "l":"Rahvusarhiiv 1950-1991", "t":"_blank", "U":"http://www.ra.ee/kaardid/index.php/et/map/searchAdvanced?unit_id=11140011&amp;unit_match=1&amp;digitized=1&amp;vmode=grid&amp;q=1&amp;sort=aeg_kuvatav"}
 }
 }]]></json>
+  <layer bounds="26.35140456446059,58.73200768494304,26.43167935741307,58.77466886447038" type="tms" year="1977" />
   <layer bounds="26.35303337754490,58.73566328721280,26.41806439562928,58.75709318039886" type="tms" year="1958" />
   <layer bounds="26.35136153433563,58.73217375399911,26.43171505688630,58.77467952503163" type="tms" year="1933" />
   <layer bounds="26.35006139011427,58.73820986388148,26.42147464986022,58.77347044451945" type="tms" year="1921" />
