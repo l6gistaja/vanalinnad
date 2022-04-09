@@ -4,7 +4,7 @@
   <country>Estonia</country>
   <json><![CDATA[{
 "urls": {
- "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/5/"},
+ "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"https://www.loc.gov/resource/g7022lm.ghl00003/?st=image&sp=4"},
  "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта 1866-1912", "l":"ЭтоМесто: 3-верстовка 1866-1912", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/7-5/"},
  "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-genshtab_o35-v/?x=@X@&y=@Y@", "srs":"EPSG:4326"},
  "vlasenko": {"h":"Топографическая карта Украины, России, Беларуси", "l":"vlasenko.net", "t":"_blank", "U":"https://maps.vlasenko.net/?lon=@X@&lat=@Y@", "srs":"EPSG:4326"},

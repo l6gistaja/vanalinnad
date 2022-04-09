@@ -5,7 +5,7 @@
   <json><![CDATA[{
 "urls": {
  "riksarkivet": {"h":"Riksarkivet, 0406 Utländska stads- och fästningsplaner 1550 – 1989, 28 Östersjöprovinserna", "l":"Riksarkivet 16XX", "t":"_blank", "U":"https://sok.riksarkivet.se/?EndastDigitaliserat=true&tab=post&ct=50&inc=1&exp=y&vol=n&postid=Arkis+18183bda-0434-404b-810e-b32c98fad167"},
- "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"http://www.wdl.org/en/item/2571/view/1/9/"},
+ "mellin": {"h":"Atlas von Liefland, oder von den beyden Gouvernementern u. Herzogthümern Lief- und Ehstland, und der Provinz Oesel", "l":"Mellin 1791", "t":"_blank", "U":"https://www.loc.gov/resource/g7022lm.ghl00003/?st=image&sp=6"},
  "etomesto3v": {"h":"ЭтоМесто: трехверстовка Шуберта 1866", "l":"ЭтоМесто: 3-верстовка 1866", "t":"_blank", "U":"http://www.etomesto.ru/shubert-map/5-2/"},
  "etomesto": {"h":"ЭтоМесто", "l":"ЭтоМесто", "t":"_blank", "U":"http://www.etomesto.ru/map-genshtab_o-34/?x=@X@&y=@Y@", "srs":"EPSG:4326"},
  "vlasenko": {"h":"Топографическая карта Украины, России, Беларуси", "l":"vlasenko.net", "t":"_blank", "U":"https://maps.vlasenko.net/?lon=@X@&lat=@Y@", "srs":"EPSG:4326"},
