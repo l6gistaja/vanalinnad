@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1950_346"><name>1950_346</name><LineString><coordinates>26.37256604711350,58.73213568722996 26.37256604711350,58.75021400092439 26.43163657185246,58.75021400092439 26.43163657185246,58.73213568722996 26.37256604711350,58.73213568722996</coordinates></LineString></Placemark>
+<Placemark id="gcp1950_346.1"><name>1950_346 #1</name><description>2922 3377</description><Point><coordinates>26.419470564055974,58.72162533727177</coordinates></Point></Placemark>
+<Placemark id="gcp1950_346.2"><name>1950_346 #2</name><description>2235 214</description><Point><coordinates>26.408850632633897,58.74816981919208</coordinates></Point></Placemark>
+<Placemark id="gcp1950_346.3"><name>1950_346 #3</name><description>543 1036</description><Point><coordinates>26.38146902673359,58.741483626816944</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1950_345"><name>1950_345</name><LineString><coordinates>26.35140267609411,58.73215553567391 26.35140267609411,58.74986659806040 26.37300261889937,58.74986659806040 26.37300261889937,58.73215553567391 26.35140267609411,58.73215553567391</coordinates></LineString></Placemark>
+<Placemark id="gcp1950_345.1"><name>1950_345 #1</name><description>4464 1191</description><Point><coordinates>26.370870015079333,58.73986682996075</coordinates></Point></Placemark>
+<Placemark id="gcp1950_345.2"><name>1950_345 #2</name><description>2970 1226</description><Point><coordinates>26.346858879977788,58.73973321077635</coordinates></Point></Placemark>
+<Placemark id="gcp1950_345.3"><name>1950_345 #3</name><description>3494 177</description><Point><coordinates>26.355249302039308,58.74837427111201</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1950_296"><name>1950_296</name><LineString><coordinates>26.37296345188688,58.74992372430951 26.37296345188688,58.77466567138330 26.43173202323481,58.77466567138330 26.43173202323481,58.74992372430951 26.37296345188688,58.74992372430951</coordinates></LineString></Placemark>
+<Placemark id="gcp1950_296.1"><name>1950_296 #1</name><description>516 4086</description><Point><coordinates>26.381342300839485,58.757238122162896</coordinates></Point></Placemark>
+<Placemark id="gcp1950_296.2"><name>1950_296 #2</name><description>3078 2431</description><Point><coordinates>26.422583195468306,58.77110452787549</coordinates></Point></Placemark>
+<Placemark id="gcp1950_296.3"><name>1950_296 #3</name><description>3145 4359</description><Point><coordinates>26.423721203274617,58.754923140492416</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1950_295"><name>1950_295</name><LineString><coordinates>26.35139422515493,58.74970416621144 26.35139422515493,58.77466656439712 26.37322998325087,58.77466656439712 26.37322998325087,58.74970416621144 26.35139422515493,58.74970416621144</coordinates></LineString></Placemark>
+<Placemark id="gcp1950_295.1"><name>1950_295 #1</name><description>4277 3218</description><Point><coordinates>26.36800301009249,58.7695234674507</coordinates></Point></Placemark>
+<Placemark id="gcp1950_295.2"><name>1950_295 #2</name><description>2937 3255</description><Point><coordinates>26.346222017595284,58.769274458125</coordinates></Point></Placemark>
+<Placemark id="gcp1950_295.3"><name>1950_295 #3</name><description>4116 5420</description><Point><coordinates>26.365128658215152,58.75104117517233</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Jogeva/composed/1950/</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="bbox"><value>26.35139422515493,58.73213568722996,26.43173202323481,58.77466656439712</value></Data>
+<Data name="maps"><value>1950_296,1950_346,1950_345,1950_295</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
