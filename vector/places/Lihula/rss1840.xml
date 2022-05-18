@@ -2,6 +2,7 @@
 <rss version="2.0">
 <channel>
 <title>Vanalinnad</title>
+
 <item>
 <title>Schloss Leal</title>
 <author>Friedrich Johann Leufner</author>
@@ -9,5 +10,13 @@
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=28972</link>
 <pubDate>Wed, 01 Jan 1840 00:00:00 +0000</pubDate>
 </item>
+
+<item>
+<title>Karte von dem Gut Schloss Leal</title>
+<guid>ra.ee=EAA.854.4.637 leht 1</guid>
+<link>http://www.ra.ee/kaardid/index.php/et/map/view?id=15438</link>
+<pubDate>Fri, 01 Jan 1847 00:00:00 +0000</pubDate>
+</item>
+
 </channel>
 </rss>

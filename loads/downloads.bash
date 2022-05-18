@@ -1039,6 +1039,8 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eam/e
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eam/eam0003/001/0000210/eam0003_001_0000210_00001_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 551 -b 579 -o cache/deiip/Jogeva_1958_5.jpg
 
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa0854/004/0000637/eaa0854_004_0000637_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 675 -b 699 -o cache/deiip/Lihula_1847.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 

@@ -1,10 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
-<Placemark id="bbox"><name></name><LineString><coordinates>23.82902712467757,58.68844136296529 23.82902712467757,58.69929327996096 23.85089999818420,58.69929327996096 23.85089999818420,58.68844136296529 23.82902712467757,58.68844136296529</coordinates></LineString></Placemark>
-<Placemark id="gcp.1"><name>#1</name><description>1290 615</description><Point><coordinates>23.84854854229685,58.6947371496684</coordinates></Point></Placemark>
-<Placemark id="gcp.2"><name>#2</name><description>957 1128</description><Point><coordinates>23.845366938853235,58.690515174383265</coordinates></Point></Placemark>
-<Placemark id="gcp.3"><name>#3</name><description>288 342</description><Point><coordinates>23.833951457285533,58.695287349669904</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1840"><name>1840</name><LineString><coordinates>23.82902712467757,58.68844136296529 23.82902712467757,58.69929327996096 23.85089999818420,58.69929327996096 23.85089999818420,58.68844136296529 23.82902712467757,58.68844136296529</coordinates></LineString></Placemark>
+<Placemark id="gcp1840.1"><name>1840 #1</name><description>1290 615</description><Point><coordinates>23.84854854229685,58.6947371496684</coordinates></Point></Placemark>
+<Placemark id="gcp1840.2"><name>1840 #2</name><description>957 1128</description><Point><coordinates>23.845366938853235,58.690515174383265</coordinates></Point></Placemark>
+<Placemark id="gcp1840.3"><name>1840 #3</name><description>288 342</description><Point><coordinates>23.833951457285533,58.695287349669904</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1847"><name>1847</name><LineString><coordinates>23.69298905898069,58.63999930696412 23.69298905898069,58.74803945353445 23.90471003691196,58.74803945353445 23.90471003691196,58.63999930696412 23.69298905898069,58.63999930696412</coordinates></LineString></Placemark>
+<Placemark id="gcp1847.1"><name>1847 #1</name><description>1276 2254</description><Point><coordinates>23.783965721959532,58.67605377740276</coordinates></Point></Placemark>
+<Placemark id="gcp1847.2"><name>1847 #2</name><description>3371 2191</description><Point><coordinates>23.8568077125246,58.700416842542374</coordinates></Point></Placemark>
+<Placemark id="gcp1847.3"><name>1847 #3</name><description>2632 1486</description><Point><coordinates>23.816326448286734,58.70528848735579</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="zmax"><value>16</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Lihula/composed/1840/</value></Data>
+<Data name="maps"><value>1847,1840</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>23.69298905898069,58.63999930696412,23.90471003691196,58.74803945353445</value></Data>
+
+</ExtendedData>
 
 </Document>
 </kml>
