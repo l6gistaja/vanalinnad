@@ -62,6 +62,7 @@
 "Kuressaare";"";"1695";"U";"https://sok.riksarkivet.se/bildvisning/K0012292_00001";"SE/KrA/0406/28/002/019 a";"Arensbourg";"Paul von Essen";"";
 "Kuressaare";"";"1711";"U";"http://www.ra.ee/kaardid/index.php/et/map/view?id=285202";"ra.ee=EAA.3742.1.189 leht 2";"Designation des Arensbourgeschen Schlossrad Stadt.";"";"";
 "Kuressaare";"";"1740";"U";"";"Tõnu Raid: 8. Arensburg, ca 1740a, Berliin.tif";"Plan von Arensburg auf der Insel Oesel";"";"";
+"Kuressaare";"1747";"1747";"P";"https://drive.google.com/file/d/1FAAUqctxFybVnvBWbNzUb5I7rqEDFuXf/view?usp=sharing";"Российский государственный военно-исторический архив=346.3.1512;349.3.1512";"(Kuressaare)";"";"1747";
 "Kuressaare";"1765";"1765";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=229166";"ra.ee=LVVA.6828.4.518 leht 1";"Grund Riss der Creiss Stadt Arensburg gemessen von dem Revisoren Inspectore B.I.Rolander in denen Jahren 1765 und 1766 und mundirt im Jahr 1784 durch O.S.Engell Kreis Landmesser";"Otto Samuel Engell";"1765";
 "Kuressaare";"1782";"1782";"P";"https://drive.google.com/file/d/1KTPTJQMvBw1Hie89E63IgRj4iIZ9yXZp/view?usp=sharing";"";"Charte der Kreis Stadt Arensburg in der Provinz Oesel";"August v. Dreyer";"1782";
 "Kuressaare";"1787";"1787";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=17290";"ra.ee=EAA.308.6.409 leht 2";"Geometrische Charte von der Kreiss Stadt Arensburg nebst der herum liegenden Gegend";"Otto Samuel Engell, Andreas Johann Rolander";"1787";
@@ -123,6 +124,10 @@
 "Lihula";"";"1953";"U";"http://www.ra.ee/kaardid/index.php/et/map/view?id=104681";"ra.ee=ERA.T-14.4-6.8403 leht 1";"Lihula rajoonikeskuse planeerimise ja hoonestamise plaani tööeskiis";"";"";
 "Lihula";"1959";"1959";"P";"https://fotoladu.maaamet.ee/?arhiiv=197584";"ID=6169";"(Lihula õhuvõte Maaameti fotolaost)";"Сельхозаэросьемка МСХ СССР";"1959_6169";
 "Lihula";"1959";"1959";"P";"https://fotoladu.maaamet.ee/?arhiiv=197585";"ID=6170";"(Lihula õhuvõte Maaameti fotolaost)";"Сельхозаэросьемка МСХ СССР";"1959_6170";
+"Lihula";"1976";"1976";"P";"https://fotoladu.maaamet.ee/arhiiv=201023";"ID=С-57-21-Г-в-2(1805)";"(Lihula õhuvõte Maaameti fotolaost)";"Всесоюзный Институт Сельскохозяинственных Аерофотогеодезических Изысканий МСХ СССР";"1976_1805";
+"Lihula";"1976";"1976";"P";"https://fotoladu.maaamet.ee/arhiiv=201032";"ID=С-57-21-Г-г-1(1806)";"(Lihula õhuvõte Maaameti fotolaost)";"Всесоюзный Институт Сельскохозяинственных Аерофотогеодезических Изысканий МСХ СССР";"1976_1806";
+"Lihula";"1976";"1976";"P";"https://fotoladu.maaamet.ee/arhiiv=201024";"ID=С-57-21-Г-в-4(1905)";"(Lihula õhuvõte Maaameti fotolaost)";"Всесоюзный Институт Сельскохозяинственных Аерофотогеодезических Изысканий МСХ СССР";"1976_1905";
+"Lihula";"1976";"1976";"P";"https://fotoladu.maaamet.ee/arhiiv=201031";"ID=С-57-21-Г-г-3(1906)";"(Lihula õhuvõte Maaameti fotolaost)";"Всесоюзный Институт Сельскохозяинственных Аерофотогеодезических Изысканий МСХ СССР";"1976_1906";
 "Narva";"1600";"1600";"P";"https://sok.riksarkivet.se/bildvisning/K0012462_00001";"isbn=9789949512096;riksarkivet.se=SE/KrA/0406/28/031/049";"Narva Iwanogrot";"";"1600";
 "Narva";"";"1648";"U";"https://sok.riksarkivet.se/bildvisning/K0012416_00001";"SE/KrA/0406/28/031/004";"[Narva, Ivanogrot]";"Frans Stegeling";"";
 "Narva";"";"1648";"U";"http://www.ra.ee/kaardid/index.php/et/map/view?id=19132";"ra.ee=EAA.1646.1.2637 leht 8";"Efter Frans Stegelings Karta daterad Narva den 23. Maj 1648 i Kongl. Krigsarkivet.";"Frans Stegelings";"";
@@ -829,14 +834,14 @@
 "Valga";"1683";"1683";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=1717";"ra.ee=EAA.308.2.123 leht 1";" Walck Stads Agor";"Johann Holmberg";"1683";
 "Valga";"1800";"1800";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=17301";"ra.ee=EAA.308.6.37 leht 1";"План города Валка в Венденском уезде в своей меже с около лежащими местами.";"";"1800";
 "Valga";"1824";"1819";"P";"https://www.ra.ee/kaardid/index.php/et/map/view?id=15665";"ra.ee=EAA.308.6.34 leht 1";"Charte von der Stadt Walk und ihren Sämtlichen Stadt Ländern";"Alexander von Bahrstz";"1819";
-"Valga";"1824";"1824";"P";"https://drive.google.com/file/d/1KTqyQikHfbnUAQbwdZokRRfq8Ib08PET/view?usp=sharing";"muis.ee=VaM Fp 119 Ar 40";"";"";"1824";
+"Valga";"1824";"1824";"P";"https://drive.google.com/file/d/1KTqyQikHfbnUAQbwdZokRRfq8Ib08PET/view?usp=sharing";"muis.ee=VaM Fp 119 Ar 40";"(Valga linna plaan)";"";"1824";
 "Valga";"1870";"1870";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=17295";"ra.ee=EAA.308.6.35 leht 1";"Projections Plan über die zu erweiternde Weichbild Grenze der Kreisstadt Walk.";"Otto Nettenberg";"1870";
 "Valga";"18XX";"18XX";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=17284";"ra.ee=EAA.308.6.36 leht 1";"План земель города Валк";"";"18XX";
 "Valga";"1905";"1905";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=132057";"ra.ee=ERA.T-6.3.1820 leht 1";"Situations Karte der Stadt Walk";"";"1905";
 "Valga";"";"1908";"U";"http://www.ra.ee/kaardid/index.php/et/map/view?id=102646";"ra.ee=ERA.T-6.3.523 leht 1";"Liivimaa kubermang. Valga ja Võru maakonnad, Л.15 0-20-Ж и З 1-20-А и Б Валкский и Верроский уезд";"";"";
 "Valga";"";"1910";"U";"http://www.ra.ee/kaardid/index.php/et/map/view?id=132228";"ra.ee=ERA.T-6.3.1819 leht 1";"[Valka linnaomavalitsuse osalise valduse plaan]. План части владения Валкского городского самоуправления";"";"";
 "Valga";"1905";"1910";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=246948";"ra.ee=ERA.1604.1.111 leht 32";"Ситуацйонный Плань гор. Валка патримониальнаго округа и пригорода";"";"1910";
-"Valga";"1912";"1912";"P";"https://drive.google.com/file/d/1Q4tk6QPb_gwahd2XNms3E2j4rlycnw4S/view?usp=sharing";"muis.ee=VaM Fp 3241 Ar 2016:1";"Situations-Karte der Stadt Walk und Vorstädte";"R. Laur";"1912";
+"Valga";"1912";"1912";"P";"https://drive.google.com/file/d/1Q4tk6QPb_gwahd2XNms3E2j4rlycnw4S/view?usp=sharing";"muis.ee=VaM Fp 3241 Ar 2016:1;ra.ee=LVVA 6828-2-463";"Situations-Karte der Stadt Walk und Vorstädte";"R. Laur";"1912";
 "Valga";"1920";"1915";"P";"https://www.digar.ee/viewer/et/nlib-digar:357577";"isbn=978-9949-659-28-9";"0-20 [Valga] : Феллинск., Валк., Верроск., и Юрьевск. уезд. Лифлянд[ской] губ[ернии]";"";"1915";
 "Valga";"1920";"1920";"P";"http://www.ra.ee/kaardid/index.php/et/map/view?id=246945";"ra.ee=ERA.1604.1.90 leht 25";"Karte der Stadt Walk und Vorstädte";"";"1920";
 "Valga";"";"1922";"U";"http://www.digar.ee/arhiiv/nlib-digar:319141";"ESTER=Ar 922/Esimene";"Walga linna plaan = Plan der Stadt Walk";"Villard, Johannes Adolf";"";

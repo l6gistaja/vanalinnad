@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1976_1805"><name>1976_1805</name><LineString><coordinates>23.75698250912351,58.68981678407953 23.75698250912351,58.71500540058191 23.82545856421761,58.71500540058191 23.82545856421761,58.68981678407953 23.75698250912351,58.68981678407953</coordinates></LineString></Placemark>
+<Placemark id="gcp1976_1805.1"><name>1976_1805 #1</name><description>3569 2955</description><Point><coordinates>23.81543554819541,58.71312930680225</coordinates></Point></Placemark>
+<Placemark id="gcp1976_1805.2"><name>1976_1805 #2</name><description>987 5677</description><Point><coordinates>23.772877390042808,58.690765417051516</coordinates></Point></Placemark>
+<Placemark id="gcp1976_1805.3"><name>1976_1805 #3</name><description>3820 5404</description><Point><coordinates>23.818565777922174,58.6924802619687</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1976_1806"><name>1976_1806</name><LineString><coordinates>23.82122850517586,58.69057107443349 23.82122850517586,58.71497083437798 23.87361104731500,58.71497083437798 23.87361104731500,58.69057107443349 23.82122850517586,58.69057107443349</coordinates></LineString></Placemark>
+<Placemark id="gcp1976_1806.1"><name>1976_1806 #1</name><description>1024 5470</description><Point><coordinates>23.83787867062028,58.69201139476223</coordinates></Point></Placemark>
+<Placemark id="gcp1976_1806.2"><name>1976_1806 #2</name><description>3004 3274</description><Point><coordinates>23.86965634658775,58.71054307585994</coordinates></Point></Placemark>
+<Placemark id="gcp1976_1806.3"><name>1976_1806 #3</name><description>359 4782</description><Point><coordinates>23.82706047450758,58.697837846046866</coordinates></Point></Placemark>
+<Placemark id="gcp1976_1806.4"><name>1976_1806 #4</name><description>1624 2828</description><Point><coordinates>23.847439886626347,58.71418737020346</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1976_1905"><name>1976_1905</name><LineString><coordinates>23.75745468134307,58.66623616660699 23.75745468134307,58.69332320641291 23.82671414940317,58.69332320641291 23.82671414940317,58.66623616660699 23.75745468134307,58.66623616660699</coordinates></LineString></Placemark>
+<Placemark id="gcp1976_1905.1"><name>1976_1905 #1</name><description>883 282</description><Point><coordinates>23.772877,58.690765</coordinates></Point></Placemark>
+<Placemark id="gcp1976_1905.2"><name>1976_1905 #2</name><description>554 2945</description><Point><coordinates>23.76645419919531,58.668489192001886</coordinates></Point></Placemark>
+<Placemark id="gcp1976_1905.3"><name>1976_1905 #3</name><description>3091 912</description><Point><coordinates>23.808189371466934,58.68499875708772</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1976_1906"><name>1976_1906</name><LineString><coordinates>23.82095090674629,58.66634317878422 23.82095090674629,58.69243908604130 23.87355338119971,58.69243908604130 23.87355338119971,58.66634317878422 23.82095090674629,58.66634317878422</coordinates></LineString></Placemark>
+<Placemark id="gcp1976_1906.1"><name>1976_1906 #1</name><description>1040 47</description><Point><coordinates>23.83787867062028,58.69201139476223</coordinates></Point></Placemark>
+<Placemark id="gcp1976_1906.2"><name>1976_1906 #2</name><description>703 2554</description><Point><coordinates>23.832364048885932,58.67091993569019</coordinates></Point></Placemark>
+<Placemark id="gcp1976_1906.3"><name>1976_1906 #3</name><description>198 1582</description><Point><coordinates>23.824126867675407,58.67917078429564</coordinates></Point></Placemark>
+<Placemark id="gcp1976_1906.4"><name>1976_1906 #4</name><description>2166 1019</description><Point><coordinates>23.855918822550272,58.68388807986425</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="maps"><value>1976_1805,1976_1905,1976_1806,1976_1906</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Lihula/composed/1976/</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>23.75698250912351,58.66623616660699,23.87361104731500,58.71500540058191</value></Data>
+<Data name="zmax"><value>16</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="zmin"><value>12</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
