@@ -2,12 +2,24 @@
 <rss version="2.0">
 <channel>
 <title>Vanalinnad</title>
+
 <item>
 <title>Läänemaal Lihula vallas Lihula mõisa, Lihula kirikumõisa ja Penijõe mõisa maadel asuva Lihula aleviku ja ümbruskonna reljef. plan</title>
 <author>A. Berg, P. Spuhl</author>
 <guid>ra.ee=ERA.T-3.15.3027 leht 1</guid>
 <link>http://www.ra.ee/kaardid/index.php/et/map/view?id=136367</link>
 <pubDate>Wed, 01 Jan 1930 00:00:00 +0000</pubDate>
+<componentsregexp>^1930\.[NS]$</componentsregexp>
 </item>
+
+<item>
+<title>Koopia Läänemaal, Lihula vallas oleva Keblaste mõisa Helvati küla renditalude plaanist</title>
+<author>R. Bendt</author>
+<guid>ra.ee=ERA.T-3.24.174 leht 1</guid>
+<link>https://www.ra.ee/kaardid/index.php/et/map/view?id=108889</link>
+<pubDate>Wed, 01 Jan 1930 00:00:00 +0000</pubDate>
+<anchor>1930.Halvati</anchor>
+</item>
+
 </channel>
 </rss>

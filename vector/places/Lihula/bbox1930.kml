@@ -12,14 +12,19 @@
 <Placemark id="gcp1930.S.2"><name>1930.S #2</name><description>714 2198</description><Point><coordinates>23.829730859444876,58.67423020966318</coordinates></Point></Placemark>
 <Placemark id="gcp1930.S.3"><name>1930.S #3</name><description>2140 481</description><Point><coordinates>23.84299633331277,58.68290414207278</coordinates></Point></Placemark>
 
+<Placemark id="bbox.1930.Halvati"><name>1930.Halvati</name><LineString><coordinates>23.85761257836685,58.69790146195481 23.85761257836685,58.71187017688362 23.87900297777222,58.71187017688362 23.87900297777222,58.69790146195481 23.85761257836685,58.69790146195481</coordinates></LineString></Placemark>
+<Placemark id="gcp1930.Halvati.1"><name>1930.Halvati #1</name><description>195 1187</description><Point><coordinates>23.864063528989053,58.70749932582704</coordinates></Point></Placemark>
+<Placemark id="gcp1930.Halvati.2"><name>1930.Halvati #2</name><description>11 1266</description><Point><coordinates>23.8609521665315,58.70715382071575</coordinates></Point></Placemark>
+<Placemark id="gcp1930.Halvati.3"><name>1930.Halvati #3</name><description>601 1338</description><Point><coordinates>23.869771269772457,58.70553770290991</coordinates></Point></Placemark>
+
 <ExtendedData>
-<Data name="maps"><value>1930.N,1930.S</value></Data>
-<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>1930.Halvati,1930.N,1930.S</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
-<Data name="montage"><value>yes</value></Data>
-<Data name="bbox"><value>23.82260115871113,58.67411792005156,23.85584924079684,58.69525425874456</value></Data>
-<Data name="sourcedir"><value>/home/jux/histmaps/places/Lihula/composed/1930/</value></Data>
 <Data name="zmax"><value>16</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Lihula/composed/1930/</value></Data>
+<Data name="montage"><value>yes</value></Data>
+<Data name="bbox"><value>23.82260115871113,58.67411792005156,23.87900297777222,58.71187017688362</value></Data>
 
 </ExtendedData>
 
