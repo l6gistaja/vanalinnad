@@ -15,6 +15,7 @@
  "kroonika": {"h":"Valga linna kroonika", "l":"Valga kroonika", "t":"_blank", "U":"https://valgalinn.ee/kaart/"}
 }
 }]]></json>
+  <layer bounds="25.95066579598450,57.75464216828939,26.12734188912507,57.80601353823754" type="tms" year="1970" />
   <layer bounds="25.99644448055779,57.74508932023183,26.12431472210764,57.81006056652051" type="tms" year="1954" />
   <layer bounds="26.01950970112874,57.75006440701168,26.12480847766196,57.80470064956181" type="tms" year="1944" />
   <layer bounds="26.00815071088852,57.74069991412150,26.13227267716068,57.81414775387759" type="tms" year="1936" />
@@ -31,5 +32,5 @@
   <layer name="⛜ 2" file="roads4min.json" format="VLGJ" levels="4" maxres="14" type="roads" />
   <maxzoom>16</maxzoom>
   <minzoom>12</minzoom>
-  <roadbounds e="26.124983" n="57.81024" s="57.74463" w="25.9946" />
+  <roadbounds e="26.1269381" n="57.81024" s="57.74463" w="25.95096381" />
 </vanalinnadlayers>

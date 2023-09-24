@@ -1041,6 +1041,16 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eam/e
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/eaa/eaa0854/004/0000637/eaa0854_004_0000637_00001_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 675 -b 699 -o cache/deiip/Lihula_1847.jpg
 
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/vam/vam0379/01s/0000163/vam0379_01s_0000163_00026_k3.tif&CNT=1&SDS=0,90&JTL=8,' -a 2223 -b 2279 -o cache/deiip/Valga_1970.1.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/vam/vam0379/01s/0000163/vam0379_01s_0000163_00026_k3.tif&CNT=1&SDS=0,90&JTL=7,' -a 551 -b 579 -o cache/deiip/Valga_1970.1L7.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/vam/vam0379/01s/0000163/vam0379_01s_0000163_00026_k1.tif&CNT=1&SDS=0,90&JTL=7,' -a 532 -b 559 -o cache/deiip/Valga_1970.2.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/vam/vam0379/01s/0000163/vam0379_01s_0000163_00026_k2.tif&CNT=1&SDS=0,90&JTL=7,' -a 551 -b 579 -o cache/deiip/Valga_1970.3.jpg
+
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/vam/vam0379/01s/0000163/vam0379_01s_0000163_00026_k4.tif&CNT=1&SDS=0,90&JTL=7,' -a 551 -b 579 -o cache/deiip/Valga_1970.4.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 
