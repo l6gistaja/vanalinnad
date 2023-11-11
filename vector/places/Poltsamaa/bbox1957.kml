@@ -2,34 +2,29 @@
 <kml xmlns="http://earth.google.com/kml/2.2">
 <Document>
 
-<Placemark id="bbox.1957.2"><name>1957.2</name><LineString><coordinates>25.95404254470726,58.65304567313429 25.95404254470726,58.66742867625928 25.99181006367953,58.66742867625928 25.99181006367953,58.65304567313429 25.95404254470726,58.65304567313429</coordinates></LineString></Placemark>
-<Placemark id="gcp1957.2.1"><name>1957.2 #1</name><description>3730 1178</description><Point><coordinates>25.97609665069494,58.66362946892759</coordinates></Point></Placemark>
-<Placemark id="gcp1957.2.2"><name>1957.2 #2</name><description>1798 4105</description><Point><coordinates>25.965110322569878,58.65451112361146</coordinates></Point></Placemark>
-<Placemark id="gcp1957.2.3"><name>1957.2 #3</name><description>5110 3654</description><Point><coordinates>25.98450805816508,58.65612960852008</coordinates></Point></Placemark>
+<Placemark id="bbox.1957.2"><name>1957.2</name><LineString><coordinates>25.95403876414848,58.65306290056028 25.95403876414848,58.66741880507097 25.99178770533114,58.66741880507097 25.99178770533114,58.65306290056028 25.95403876414848,58.65306290056028</coordinates></LineString></Placemark>
+<Placemark id="gcp1957.2.1"><name>1957.2 #1</name><description>3733 1177</description><Point><coordinates>25.97609665069494,58.66362946892759</coordinates></Point></Placemark>
+<Placemark id="gcp1957.2.2"><name>1957.2 #2</name><description>1800 4107</description><Point><coordinates>25.965110322569878,58.65451112361146</coordinates></Point></Placemark>
+<Placemark id="gcp1957.2.3"><name>1957.2 #3</name><description>5114 3654</description><Point><coordinates>25.98450805816508,58.65612960852008</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1957.4"><name>1957.4</name><LineString><coordinates>25.96266524735512,58.64254039839010 25.96266524735512,58.65824969919176 25.99984357288573,58.65824969919176 25.99984357288573,58.64254039839010 25.96266524735512,58.64254039839010</coordinates></LineString></Placemark>
-<Placemark id="gcp1957.4.1"><name>1957.4 #1</name><description>402 1117</description><Point><coordinates>25.965110322569878,58.65451112361146</coordinates></Point></Placemark>
-<Placemark id="gcp1957.4.2"><name>1957.4 #2</name><description>3719 647</description><Point><coordinates>25.98450805816508,58.65612960852008</coordinates></Point></Placemark>
-<Placemark id="gcp1957.4.3"><name>1957.4 #3</name><description>2597 4208</description><Point><coordinates>25.978219579314622,58.645157155047286</coordinates></Point></Placemark>
+<Placemark id="bbox.1957.4"><name>1957.4</name><LineString><coordinates>25.96263402430714,58.64253790855638 25.96263402430714,58.65824708126623 25.99962325208843,58.65824708126623 25.99962325208843,58.64253790855638 25.96263402430714,58.64253790855638</coordinates></LineString></Placemark>
+<Placemark id="gcp1957.4.1"><name>1957.4 #1</name><description>407 1120</description><Point><coordinates>25.965110322569878,58.65451112361146</coordinates></Point></Placemark>
+<Placemark id="gcp1957.4.2"><name>1957.4 #2</name><description>3720 648</description><Point><coordinates>25.98450805816508,58.65612960852008</coordinates></Point></Placemark>
+<Placemark id="gcp1957.4.3"><name>1957.4 #3</name><description>2600 4206</description><Point><coordinates>25.978219579314622,58.645157155047286</coordinates></Point></Placemark>
 
-<Placemark id="bbox.1957.6"><name>1957.6</name><LineString><coordinates>25.95625014705051,58.63809396425475 25.95625014705051,58.65023939230233 25.99166501588692,58.65023939230233 25.99166501588692,58.63809396425475 25.95625014705051,58.63809396425475</coordinates></LineString></Placemark>
-<Placemark id="gcp1957.6.1"><name>1957.6 #1</name><description>1604 136</description><Point><coordinates>25.965611589811672,58.64963641177069</coordinates></Point></Placemark>
-<Placemark id="gcp1957.6.2"><name>1957.6 #2</name><description>5826 81</description><Point><coordinates>25.990223539733083,58.64998248732351</coordinates></Point></Placemark>
-<Placemark id="gcp1957.6.3"><name>1957.6 #3</name><description>2304 2217</description><Point><coordinates>25.969838751219903,58.643283641314625</coordinates></Point></Placemark>
-
-<Placemark id="bbox.1950"><name>1950</name><LineString><coordinates>25.88460242910584,58.62385854373758 25.88460242910584,58.66649618426068 25.99832661529206,58.66649618426068 25.99832661529206,58.62385854373758 25.88460242910584,58.62385854373758</coordinates></LineString></Placemark>
-<Placemark id="gcp1950.1"><name>1950 #1</name><description>513 156</description><Point><coordinates>25.974617625898393,58.650327547600796</coordinates></Point></Placemark>
-<Placemark id="gcp1950.2"><name>1950 #2</name><description>108 245</description><Point><coordinates>25.893975950611534,58.64092450204181</coordinates></Point></Placemark>
-<Placemark id="gcp1950.3"><name>1950 #3</name><description>204 399</description><Point><coordinates>25.913101372832966,58.625076273764094</coordinates></Point></Placemark>
+<Placemark id="bbox.1957.6"><name>1957.6</name><LineString><coordinates>25.95580246300219,58.63810916936880 25.95580246300219,58.65023950318830 25.99169628271002,58.65023950318830 25.99169628271002,58.63810916936880 25.95580246300219,58.63810916936880</coordinates></LineString></Placemark>
+<Placemark id="gcp1957.6.1"><name>1957.6 #1</name><description>1679 133</description><Point><coordinates>25.965611589811672,58.64963641177069</coordinates></Point></Placemark>
+<Placemark id="gcp1957.6.2"><name>1957.6 #2</name><description>5897 81</description><Point><coordinates>25.990223539733083,58.64998248732351</coordinates></Point></Placemark>
+<Placemark id="gcp1957.6.3"><name>1957.6 #3</name><description>2375 2217</description><Point><coordinates>25.969838751219903,58.643283641314625</coordinates></Point></Placemark>
 
 <ExtendedData>
-<Data name="montage"><value>yes</value></Data>
-<Data name="bbox"><value>25.88460242910584,58.62385854373758,25.99984357288573,58.66742867625928</value></Data>
-<Data name="zmax"><value>16</value></Data>
+<Data name="maps"><value>1957.6,1957.4,1957.2</value></Data>
 <Data name="sourcedir"><value>/home/jux/histmaps/places/Poltsamaa/composed/1957/</value></Data>
 <Data name="tileext"><value>.jpg</value></Data>
+<Data name="bbox"><value>25.95403876414848,58.63810916936880,25.99962325208843,58.66741880507097</value></Data>
+<Data name="montage"><value>yes</value></Data>
 <Data name="zmin"><value>12</value></Data>
-<Data name="maps"><value>1950,1957.6,1957.4,1957.2</value></Data>
+<Data name="zmax"><value>16</value></Data>
 
 </ExtendedData>
 
