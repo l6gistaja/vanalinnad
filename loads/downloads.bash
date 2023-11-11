@@ -1051,6 +1051,8 @@ dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/vam/v
 
 dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/vam/vam0379/01s/0000163/vam0379_01s_0000163_00026_k4.tif&CNT=1&SDS=0,90&JTL=7,' -a 551 -b 579 -o cache/deiip/Valga_1970.4.jpg
 
+dev/deiip.pl -u 'http://www.ra.ee/fcgi-bin/iipsrv.fcgi?FIF=/mnt/uuskasutus/era/erat-0-6/005/0000051/erat-0-6_005_0000051_00003_k.tif&CNT=1&SDS=0,90&JTL=7,' -a 612 -b 647 -o cache/deiip/Poltsamaa_plmj_1960.jpg
+
 # dev/deiip.pl -u 'http://www.ra.ee' -a  -b  -o cache/deiip/.jpg
 
 

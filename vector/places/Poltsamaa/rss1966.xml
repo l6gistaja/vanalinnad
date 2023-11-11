@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<rss version="2.0">
+<channel>
+<title>Vanalinnad</title>
+
+<item>
+<title>Eesti NSV Põltsamaa rajooni põllumajanduslik kaart</title>
+<guid>ra.ee=ERA.T-6.5.51 leht 3</guid>
+<link>https://www.ra.ee/kaardid/index.php/et/map/view?id=202885</link>
+<pubDate>Fri, 01 Jan 1960 00:00:00 +0000</pubDate>
+</item>
+
+<item>
+<title>(Põltsamaa õhuvõte Maaameti fotolaost)</title>
+<description>Lend C281, kaardileht O3552</description>
+<guid>ID=s3051_O35_52_1966;3662</guid>
+<link>https://fotoladu.maaamet.ee/arhiiv=14591</link>
+<pubDate>Sat, 01 Jan 1966 00:00:00 +0000</pubDate>
+<anchor>1966_3662</anchor>
+</item>
+
+<item>
+<title>(Põltsamaa õhuvõte Maaameti fotolaost)</title>
+<description>Lend C281, kaardileht O3552</description>
+<guid>ID=s3051_O35_52_1966;3663</guid>
+<link>https://fotoladu.maaamet.ee/arhiiv=14592</link>
+<pubDate>Sat, 01 Jan 1966 00:00:00 +0000</pubDate>
+<anchor>1966_3663</anchor>
+</item>
+
+</channel>
+</rss>

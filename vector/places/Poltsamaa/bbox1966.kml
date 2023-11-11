@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://earth.google.com/kml/2.2">
+<Document>
+
+<Placemark id="bbox.1960"><name>1960</name><LineString><coordinates>25.88425951043158,58.62380010852498 25.88425951043158,58.67442925963071 26.00018747112922,58.67442925963071 26.00018747112922,58.62380010852498 25.88425951043158,58.62380010852498</coordinates></LineString></Placemark>
+<Placemark id="gcp1960.1"><name>1960 #1</name><description>1815 459</description><Point><coordinates>25.961867727765696,58.67259837284305</coordinates></Point></Placemark>
+<Placemark id="gcp1960.2"><name>1960 #2</name><description>1153 1221</description><Point><coordinates>25.914479379419735,58.64256380934819</coordinates></Point></Placemark>
+<Placemark id="gcp1960.3"><name>1960 #3</name><description>2117 1603</description><Point><coordinates>25.984082155513455,58.627868581312</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1966_3662"><name>1966_3662</name><LineString><coordinates>25.96153217531021,58.64092136409440 25.96153217531021,58.65872496321400 25.99606558177600,58.65872496321400 25.99606558177600,58.64092136409440 25.96153217531021,58.64092136409440</coordinates></LineString></Placemark>
+<Placemark id="gcp1966_3662.1"><name>1966_3662 #1</name><description>3851 1846</description><Point><coordinates>25.991384072132195,58.651547637778414</coordinates></Point></Placemark>
+<Placemark id="gcp1966_3662.2"><name>1966_3662 #2</name><description>1254 3329</description><Point><coordinates>25.97346691591306,58.64483792682466</coordinates></Point></Placemark>
+<Placemark id="gcp1966_3662.3"><name>1966_3662 #3</name><description>749 534</description><Point><coordinates>25.967480225391537,58.65526477595778</coordinates></Point></Placemark>
+
+<Placemark id="bbox.1966_3663"><name>1966_3663</name><LineString><coordinates>25.94909835713251,58.64058057145789 25.94909835713251,58.65798574758303 25.98259840235123,58.65798574758303 25.98259840235123,58.64058057145789 25.94909835713251,58.64058057145789</coordinates></LineString></Placemark>
+<Placemark id="gcp1966_3663.1"><name>1966_3663 #1</name><description>261 1259</description><Point><coordinates>25.951874151526468,58.65198055207718</coordinates></Point></Placemark>
+<Placemark id="gcp1966_3663.2"><name>1966_3663 #2</name><description>2249 4161</description><Point><coordinates>25.968356328126276,58.64152225944388</coordinates></Point></Placemark>
+<Placemark id="gcp1966_3663.3"><name>1966_3663 #3</name><description>2001 499</description><Point><coordinates>25.964000420686236,58.655410470605666</coordinates></Point></Placemark>
+
+<ExtendedData>
+<Data name="montage"><value>yes</value></Data>
+<Data name="tileext"><value>.jpg</value></Data>
+<Data name="sourcedir"><value>/home/jux/histmaps/places/Poltsamaa/composed/1966/</value></Data>
+<Data name="zmin"><value>12</value></Data>
+<Data name="maps"><value>1960,1966_3663,1966_3662</value></Data>
+<Data name="bbox"><value>25.88425951043158,58.62380010852498,26.00018747112922,58.67442925963071</value></Data>
+<Data name="zmax"><value>16</value></Data>
+
+</ExtendedData>
+
+</Document>
+</kml>
